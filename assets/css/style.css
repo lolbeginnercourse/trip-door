@@ -115,7 +115,13 @@
   .site-footer .brand-copy small { color: #bfbac2; }
   .desktop-nav { display: flex; align-items: center; gap: 6px; }
   .desktop-nav a, .header-compare { min-height: 44px; padding: 10px 14px; display: inline-flex; align-items: center; border: 0; border-radius: var(--radius-sm); color: #3e4148; background: transparent; text-decoration: none; font-weight: 700; }
-  .desktop-nav a[aria-current="page"] { color: var(--category); background: var(--category-soft); }
+  .desktop-nav [data-category-link], .mobile-menu [data-category-link] { --nav-color: #3e4148; --nav-soft: #f2f2f3; color: var(--nav-color); background: var(--nav-soft); }
+  [data-category-link]::before { content: ""; width: 8px; height: 8px; margin-right: 8px; flex: 0 0 auto; border-radius: 50%; background: var(--nav-color); }
+  :is(.desktop-nav, .mobile-menu) [data-category-link="stage"] { --nav-color: var(--stage); --nav-soft: #f6eaf1; }
+  :is(.desktop-nav, .mobile-menu) [data-category-link="esports"] { --nav-color: var(--game); --nav-soft: #e6f3f1; }
+  :is(.desktop-nav, .mobile-menu) [data-category-link="art"] { --nav-color: var(--art); --nav-soft: #f3ece5; }
+  .desktop-nav a[aria-current="page"] { color: #fff; background: var(--nav-color); box-shadow: 0 5px 16px color-mix(in srgb, var(--nav-color) 24%, transparent); }
+  .desktop-nav a[aria-current="page"]::before { background: #fff; }
   .header-compare { border: 1px solid var(--border); cursor: pointer; }
   .header-compare span { margin-left: 6px; }
   .mobile-actions, .mobile-menu { display: none; }
@@ -219,6 +225,9 @@
     .menu-button span { width: 20px; height: 2px; background: var(--text); }
     .mobile-menu { position: fixed; z-index: 49; inset: 96px 0 auto; padding: 18px 16px 28px; display: grid; gap: 6px; border-bottom: 1px solid var(--border); background: white; box-shadow: var(--shadow); }
     .mobile-menu a { min-height: 48px; padding: 11px 12px; border-bottom: 1px solid #ececef; text-decoration: none; font-weight: 700; }
+    .mobile-menu [data-category-link] { border: 1px solid color-mix(in srgb, var(--nav-color) 20%, transparent); border-radius: var(--radius-sm); }
+    .mobile-menu [data-category-link][aria-current="page"] { color: #fff; background: var(--nav-color); }
+    .mobile-menu [data-category-link][aria-current="page"]::before { background: #fff; }
     .home-hero { min-height: 560px; padding-block: 62px; }
     .hero-grid { grid-template-columns: 1fr; }
     .hero-visual { position: absolute; width: 150px; min-height: 210px; right: -28px; bottom: 24px; opacity: .24; }

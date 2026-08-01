@@ -191,7 +191,10 @@
     ui.sort.value = current.sort;
     qa("[data-select-category]").forEach(button => button.setAttribute("aria-pressed", String(button.dataset.selectCategory === category)));
     qa("[data-category-tab]").forEach(button => button.setAttribute("aria-selected", String(button.dataset.categoryTab === category)));
-    qa("[data-category-link]").forEach(link => link.toggleAttribute("aria-current", link.dataset.categoryLink === category));
+    qa("[data-category-link]").forEach(link => {
+      if (link.dataset.categoryLink === category) link.setAttribute("aria-current", "page");
+      else link.removeAttribute("aria-current");
+    });
     renderQuick();
     renderFilters();
     renderResults();
