@@ -1,8 +1,21 @@
 (() => {
   "use strict";
 
+  const HOME_HERO = {
+    label: "EVENT STAY, MADE PERSONAL",
+    title: "泊まる時間も\n体験の一部に",
+    lead: "会場までの近さだけでなく、開演前からイベント後までの過ごし方に合うホテルを探せます。",
+    key: "KEY",
+    visualText: "EVENT\nSTAY\nGUIDE"
+  };
+
   const CATEGORIES = {
     stage: {
+      heroLabel: "STAGE TRIP",
+      heroTitle: "観劇の一日を\nもっと身軽に",
+      heroLead: "身支度、荷物預かり、昼夜公演の間の移動まで。観劇当日の使いやすさからホテルを探せます。",
+      heroKey: "CURTAIN",
+      heroVisualText: "STAGE\nSTAY\nGUIDE",
       label: "STAGE TRIP", shortName: "舞台遠征", title: "観劇の一日を、時間軸で考える",
       lead: "身支度のしやすさ、荷物預かり、グッズを整理できるスペース、昼夜公演の間に戻りやすい立地。",
       description: "開演前・公演の合間・終演後まで、移動や準備がスムーズにつながるホテルを選びます。",
@@ -15,6 +28,11 @@
       quick: [["near","終演後、ホテルへすぐ戻れる"],["baggage","荷物を預けやすい"],["mirror","客室で身支度しやすい"]]
     },
     esports: {
+      heroLabel: "GAME EVENT",
+      heroTitle: "会場から休息まで\n一つの動線に",
+      heroLead: "機材・荷物の運びやすさ、机と電源、食事、入浴まで。イベント前後の動きからホテルを探せます。",
+      heroKey: "READY",
+      heroVisualText: "GAME\nREST\nREADY",
       label: "GAME EVENT", shortName: "eスポーツ", title: "会場から休息まで、一つの動線に",
       lead: "機材や荷物を運びやすく、イベント後の食事と休息までまとめやすい立地。",
       description: "会場へのアクセスに加え、作業しやすい机と電源、食事の取りやすさ、大浴場の有無まで比較できます。",
@@ -27,6 +45,11 @@
       quick: [["near","会場へ移動しやすい"],["food","食事を取りやすい"],["bath","大浴場で休める"]]
     },
     art: {
+      heroLabel: "ART JOURNEY",
+      heroTitle: "展示の余韻を\n客室へ持ち帰る",
+      heroLead: "美術館を巡りやすい立地、建築や館内アート、鑑賞後の静けさからホテルを探せます。",
+      heroKey: "GALLERY",
+      heroVisualText: "ART\nSTAY\nJOURNEY",
       label: "ART JOURNEY", shortName: "アート巡り", title: "展示の余韻を、客室へ持ち帰る",
       lead: "美術館を巡りやすい立地、楽しめる建築や館内アート、図録を広げられる机、鑑賞後に静かに過ごせる客室。",
       description: "展示から街歩き、建築、客室での時間までを、一つの旅としてつなげます。",
@@ -53,6 +76,8 @@
   const q = selector => document.querySelector(selector);
   const qa = selector => [...document.querySelectorAll(selector)];
   const ui = {
+    homeOnly: qa("[data-home-only]"), heroLabel: q("[data-hero-label]"), heroTitle: q("[data-hero-title]"), heroLead: q("[data-hero-lead]"),
+    heroKey: q("[data-hero-key]"), heroVisualText: q("[data-hero-visual-text]"),
     experience: q("[data-experience]"), overviewLabel: q("[data-overview-label]"), overviewTitle: q("[data-overview-title]"), overviewLead: q("[data-overview-lead]"),
     overviewDescription: q("[data-overview-description]"), overviewVisualTitle: q("[data-overview-visual-title]"), overviewVisualText: q("[data-overview-visual-text]"),
     finderTitle: q("[data-finder-title]"), finderDescription: q("[data-finder-description]"), areaLabel: q("[data-area-label]"), styleLabel: q("[data-style-label]"),
@@ -165,14 +190,33 @@
     }));
   }
 
+  function renderHero(config = HOME_HERO) {
+    ui.heroLabel.textContent = config.heroLabel || config.label;
+    ui.heroTitle.textContent = config.heroTitle || config.title;
+    ui.heroLead.textContent = config.heroLead || config.lead;
+    ui.heroKey.textContent = config.heroKey || config.key;
+    ui.heroVisualText.textContent = config.heroVisualText || config.visualText;
+  }
+
+  function showHome() {
+    state.category = null;
+    document.body.removeAttribute("data-category");
+    ui.homeOnly.forEach(section => { section.hidden = false; });
+    ui.experience.hidden = true;
+    renderHero();
+    qa("[data-category-link]").forEach(link => link.removeAttribute("aria-current"));
+  }
+
   function selectCategory(category, { push = true, scroll = false } = {}) {
     if (!CATEGORIES[category]) return;
     state.category = category;
     state.visibleCount = 20;
     document.body.dataset.category = category;
+    ui.homeOnly.forEach(section => { section.hidden = true; });
     ui.experience.hidden = false;
     const config = CATEGORIES[category];
     const current = state.filters[category];
+    renderHero(config);
     ui.overviewLabel.textContent = config.label;
     ui.overviewTitle.textContent = config.title;
     ui.overviewLead.textContent = config.lead;
@@ -199,7 +243,8 @@
     renderFilters();
     renderResults();
     if (push) syncUrl("push");
-    if (scroll) ui.experience.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start" });
+    if (scroll === "top") window.scrollTo({ top: 0, behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
+    else if (scroll) ui.experience.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start" });
     track("category_select", { category });
   }
 
@@ -457,7 +502,7 @@
   document.addEventListener("click", event => {
     const target = event.target.closest("button, a");
     if (!target) return;
-    if (target.dataset.selectCategory) selectCategory(target.dataset.selectCategory, { scroll: true });
+    if (target.dataset.selectCategory) selectCategory(target.dataset.selectCategory, { scroll: "top" });
     if (target.dataset.categoryTab) selectCategory(target.dataset.categoryTab, { scroll: false });
     if (target.dataset.quick) toggleQuick(target.dataset.quick);
     if (target.dataset.removeFilter) removeFilter(target.dataset.removeFilter, target.dataset.filterValue);
@@ -480,7 +525,7 @@
   ui.differencesOnly.addEventListener("change", renderCompare);
   ui.menuButton.addEventListener("click", event => { event.stopPropagation(); setMenu(ui.mobileMenu.hidden); });
   window.addEventListener("scroll", () => q("[data-header]").classList.toggle("is-scrolled", scrollY > 24), { passive: true });
-  window.addEventListener("popstate", () => { parseUrl(); if (state.category) selectCategory(state.category, { push: false }); else { ui.experience.hidden = true; document.body.removeAttribute("data-category"); } });
+  window.addEventListener("popstate", () => { parseUrl(); if (state.category) selectCategory(state.category, { push: false }); else showHome(); });
   document.addEventListener("keydown", event => { if (event.key === "Escape" && !ui.mobileMenu.hidden) setMenu(false); });
   [ui.detailDialog, ui.compareDialog].forEach(dialog => {
     dialog.addEventListener("click", event => { if (event.target === dialog) dialog.close(); });
@@ -501,7 +546,7 @@
       updateCompare();
       parseUrl();
       if (state.category) selectCategory(state.category, { push: false });
-      else ui.experience.hidden = true;
+      else showHome();
       syncUrl();
     } catch (error) {
       console.error("Hotel data could not be loaded", error);
