@@ -344,7 +344,11 @@ function navigate(pageName) {
     renderResults(pageName);
   }
 
-  history.replaceState(null, "", `#${pageName}`);
+  const nextUrl = pageName === "home"
+    ? `${location.pathname}${location.search}`
+    : `#${pageName}`;
+
+  history.replaceState(null, "", nextUrl);
 }
 
 function scoreHotel(hotel, priority) {
