@@ -4,23 +4,23 @@
   const HOME_HERO = {
     label: "EVENT STAY GUIDE",
     title: "泊まる時間も\n体験の一部に",
-    lead: "会場までの近さだけでなく、開演前からイベント後までの過ごし方に合うホテルを探せます。",
+    lead: "会場までの近さだけでなく、開演前からイベント後までの過ごし方に合うホテルを探せます",
     key: "STAYSCENE",
-    visualText: "一日の余韻まで、\n滞在として選ぶ。"
+    visualText: "一日の余韻まで、\n滞在として選ぶ"
   };
 
   const CATEGORIES = {
     stage: {
       heroLabel: "STAGE TRIP",
       heroTitle: "観劇の一日を\nもっと身軽に",
-      heroLead: "身支度、荷物預かり、昼夜公演の間の移動まで。観劇当日の使いやすさからホテルを探せます。",
+      heroLead: "身支度、荷物預かり、昼夜公演の間の移動まで 観劇当日の使いやすさからホテルを探せます",
       heroKey: "CURTAIN",
       heroVisualText: "STAGE\nSTAY\nGUIDE",
       label: "舞台・2.5次元遠征", shortName: "舞台遠征", title: "観劇の一日を、時間軸で考える",
-      lead: "身支度のしやすさ、荷物預かり、グッズを整理できるスペース、昼夜公演の間に戻りやすい立地。",
-      description: "開演前・公演の合間・終演後まで、移動や準備がスムーズにつながるホテルを選びます。",
-      visualTitle: "観劇当日の使いやすさ", visualText: "劇場からの距離だけでは分からない条件まで確認します。",
-      finderTitle: "舞台遠征のホテルを条件から探す", finderDescription: "劇場やエリア、観劇スタイル、優先したい条件を選ぶと、当日の動きに合うホテルを表示します。",
+      lead: "身支度のしやすさ、荷物預かり、グッズを整理できるスペース、昼夜公演の間に戻りやすい立地",
+      description: "開演前・公演の合間・終演後まで、移動や準備がスムーズにつながるホテルを選びます",
+      visualTitle: "観劇当日の使いやすさ", visualText: "劇場からの距離だけでは分からない条件まで確認します",
+      finderTitle: "舞台遠征のホテルを条件から探す", finderDescription: "劇場やエリア、観劇スタイル、優先したい条件を選ぶと、当日の動きに合うホテルを表示します",
       areaLabel: "劇場・エリア", styleLabel: "観劇スタイル", resultsLabel: "舞台遠征の候補", resultsTitle: "観劇遠征に合うホテル",
       areas: [["all","選択してください"],["kanadevia","東京ドームシティ周辺"],["geigeki","東京芸術劇場周辺"],["budokan","日本武道館周辺"]],
       styles: [["all","選択してください"],["solo","一人遠征"],["group","友人と遠征"],["matinee","昼夜公演・複数公演"],["stay","連泊"]],
@@ -30,14 +30,14 @@
     esports: {
       heroLabel: "GAME EVENT",
       heroTitle: "会場から休息まで\n一つの動線に",
-      heroLead: "機材・荷物の運びやすさ、机と電源、食事、入浴まで。イベント前後の動きからホテルを探せます。",
+      heroLead: "機材・荷物の運びやすさ、机と電源、食事、入浴まで イベント前後の動きからホテルを探せます",
       heroKey: "READY",
       heroVisualText: "GAME\nREST\nREADY",
       label: "ゲームイベント遠征", shortName: "eスポーツ", title: "会場から休息まで、一つの動線に",
-      lead: "機材や荷物を運びやすく、イベント後の食事と休息までまとめやすい立地。",
-      description: "会場へのアクセスに加え、作業しやすい机と電源、食事の取りやすさ、大浴場の有無まで比較できます。",
-      visualTitle: "機材と電源", visualText: "参加・観戦スタイルに合わせて、会場の外の時間も整えます。",
-      finderTitle: "eスポーツ遠征のホテルを条件から探す", finderDescription: "イベント会場、参加スタイル、優先したい条件から、機材移動と休息に合うホテルを表示します。",
+      lead: "機材や荷物を運びやすく、イベント後の食事と休息までまとめやすい立地",
+      description: "会場へのアクセスに加え、作業しやすい机と電源、食事の取りやすさ、大浴場の有無まで比較できます",
+      visualTitle: "機材と電源", visualText: "参加・観戦スタイルに合わせて、会場の外の時間も整えます",
+      finderTitle: "eスポーツ遠征のホテルを条件から探す", finderDescription: "イベント会場、参加スタイル、優先したい条件から、機材移動と休息に合うホテルを表示します",
       areaLabel: "イベント会場", styleLabel: "参加スタイル", resultsLabel: "ゲームイベントの候補", resultsTitle: "eスポーツ遠征に合うホテル",
       areas: [["all","選択してください"],["makuhari","幕張メッセ"],["ariake","東京ガーデンシアター"],["bigsite","東京ビッグサイト"]],
       styles: [["all","選択してください"],["player","大会参加"],["spectator","観戦"],["device","機材を持参"],["group","複数人"],["stay","連日参加"]],
@@ -47,14 +47,14 @@
     art: {
       heroLabel: "ART JOURNEY",
       heroTitle: "展示の余韻を\n客室へ持ち帰る",
-      heroLead: "美術館を巡りやすい立地、建築や館内アート、鑑賞後の静けさからホテルを探せます。",
+      heroLead: "美術館を巡りやすい立地、建築や館内アート、鑑賞後の静けさからホテルを探せます",
       heroKey: "GALLERY",
       heroVisualText: "ART\nSTAY\nJOURNEY",
       label: "美術館・アート巡り", shortName: "アート巡り", title: "展示の余韻を、客室へ持ち帰る",
-      lead: "美術館を巡りやすい立地、楽しめる建築や館内アート、図録を広げられる机、鑑賞後に静かに過ごせる客室。",
-      description: "展示から街歩き、建築、客室での時間までを、一つの旅としてつなげます。",
-      visualTitle: "ホテルまで続く、アートの時間", visualText: "鑑賞後の余韻を急がず楽しめる滞在を選びます。",
-      finderTitle: "アート巡りのホテルを条件から探す", finderDescription: "巡りたいエリア、旅のスタイル、滞在中に優先したいことを選ぶと、アート旅に合うホテルを表示します。",
+      lead: "美術館を巡りやすい立地、楽しめる建築や館内アート、図録を広げられる机、鑑賞後に静かに過ごせる客室",
+      description: "展示から街歩き、建築、客室での時間までを、一つの旅としてつなげます",
+      visualTitle: "ホテルまで続く、アートの時間", visualText: "鑑賞後の余韻を急がず楽しめる滞在を選びます",
+      finderTitle: "アート巡りのホテルを条件から探す", finderDescription: "巡りたいエリア、旅のスタイル、滞在中に優先したいことを選ぶと、アート旅に合うホテルを表示します",
       areaLabel: "美術館・エリア", styleLabel: "旅のスタイル", resultsLabel: "アート巡りの候補", resultsTitle: "アート巡りに合うホテル",
       areas: [["all","選択してください"],["ueno","上野公園ミュージアム群"],["sumida","浅草・蔵前・両国"],["roppongi","六本木アートエリア"]],
       styles: [["all","選択してください"],["museum","美術館中心"],["walk","街歩き"],["hotelart","館内アート"],["solo","一人旅"],["quiet","静かな滞在"]],
@@ -372,13 +372,13 @@
     ui.resultState.replaceChildren();
     ui.loadMore.hidden = shown.length >= (current.searched || hasFilters ? matched.length : Math.min(all.length, 3));
     if (!current.searched && !hasFilters) {
-      ui.summary.textContent = "条件を選ぶか、おすすめホテルからご覧ください。";
+      ui.summary.textContent = "条件を選ぶか、おすすめホテルからご覧ください";
     } else if (matched.length) {
-      ui.summary.textContent = `条件に合うホテルが${matched.length}件見つかりました。`;
+      ui.summary.textContent = `条件に合うホテルが${matched.length}件見つかりました`;
     } else {
-      ui.summary.textContent = "条件に合うホテルが見つかりませんでした。";
+      ui.summary.textContent = "条件に合うホテルが見つかりませんでした";
       const panel = el("div", "state-panel");
-      panel.append(el("h3", "", "条件を少し変えてみてください"), el("p", "", "条件を1つ外すと、候補が見つかりやすくなります。"));
+      panel.append(el("h3", "", "条件を少し変えてみてください"), el("p", "", "条件を1つ外すと、候補が見つかりやすくなります"));
       const actions = el("div", "state-actions");
       const remove = el("button", "button button--secondary", "条件を1つ戻す");
       remove.type = "button"; remove.dataset.removeLastFilter = "";
@@ -446,7 +446,7 @@
 
   function toggleCompare(id) {
     if (state.compareIds.includes(id)) state.compareIds = state.compareIds.filter(item => item !== id);
-    else if (state.compareIds.length >= 3) { showNotice("比較できるホテルは3件までです。比較候補から1件外してから追加してください。"); return; }
+    else if (state.compareIds.length >= 3) { showNotice("比較できるホテルは3件までです 比較候補から1件外してから追加してください"); return; }
     else state.compareIds.push(id);
     updateCompare();
     track("compare_toggle", { hotel_id: id, count: state.compareIds.length });
@@ -460,7 +460,7 @@
     const layout = el("div", "detail-layout");
     const visual = el("div", "detail-visual", "HOTEL STAY");
     const content = el("div", "detail-list");
-    [["このホテルが向いている人", hotel.role],["会場までの移動", `${hotel.venueLabel}・${hotel.nearestStation}`],["ホテルでの過ごし方", hotel.summary],["予約前に確認すること", (hotel.statuses || []).filter(item => (Array.isArray(item) ? item[1] : item.state) !== "confirmed").map(item => Array.isArray(item) ? item[0] : item.label).join("、") || "最新の料金・設備を予約サイトでご確認ください。"],["情報確認日", hotel.updatedAt || "情報未確認"]].forEach(([title, text]) => { const section = el("section"); section.append(el("h3", "", title), el("p", "", text || "情報未確認")); content.append(section); });
+    [["このホテルが向いている人", hotel.role],["会場までの移動", `${hotel.venueLabel}・${hotel.nearestStation}`],["ホテルでの過ごし方", hotel.summary],["予約前に確認すること", (hotel.statuses || []).filter(item => (Array.isArray(item) ? item[1] : item.state) !== "confirmed").map(item => Array.isArray(item) ? item[0] : item.label).join("、") || "最新の料金・設備を予約サイトでご確認ください"],["情報確認日", hotel.updatedAt || "情報未確認"]].forEach(([title, text]) => { const section = el("section"); section.append(el("h3", "", title), el("p", "", text || "情報未確認")); content.append(section); });
     const actions = el("div", "detail-actions");
     const compare = el("button", "button button--secondary", state.compareIds.includes(id) ? "比較候補から外す" : "比較候補に追加する"); compare.type = "button"; compare.dataset.toggleCompare = id; actions.append(compare);
     hotel.affiliateLinks.forEach(link => actions.append(makeExternalLink(link)));
@@ -482,7 +482,7 @@
   }
 
   function openCompare(trigger) {
-    if (state.compareIds.length < 2) { showNotice("あと1件追加すると比較できます。"); return; }
+    if (state.compareIds.length < 2) { showNotice("あと1件追加すると比較できます"); return; }
     state.lastTrigger = trigger; renderCompare(); closeOtherDialog(ui.compareDialog); ui.compareDialog.showModal(); document.body.classList.add("is-locked"); track("compare_open", { count: state.compareIds.length });
   }
 
@@ -534,7 +534,7 @@
 
   async function loadHotels() {
     const loading = el("div", "state-panel");
-    loading.append(el("h3", "", "ホテル情報を読み込んでいます"), el("p", "", "少しお待ちください。"));
+    loading.append(el("h3", "", "ホテル情報を読み込んでいます"), el("p", "", "少しお待ちください"));
     ui.resultState.replaceChildren(loading);
     try {
       const response = await fetch("assets/data/hotels.json", { cache: "no-cache" });
@@ -556,7 +556,7 @@
       }
       ui.experience.hidden = false;
       ui.resultState.replaceChildren();
-      const panel = el("div", "state-panel"); panel.append(el("h3", "", "ホテル情報を読み込めませんでした"), el("p", "", "通信環境を確認して、もう一度お試しください。")); const retry = el("button", "button button--secondary", "もう一度読み込む"); retry.type = "button"; retry.addEventListener("click", loadHotels, { once: true }); panel.append(retry); ui.resultState.append(panel);
+      const panel = el("div", "state-panel"); panel.append(el("h3", "", "ホテル情報を読み込めませんでした"), el("p", "", "通信環境を確認して、もう一度お試しください")); const retry = el("button", "button button--secondary", "もう一度読み込む"); retry.type = "button"; retry.addEventListener("click", loadHotels, { once: true }); panel.append(retry); ui.resultState.append(panel);
     }
   }
 
