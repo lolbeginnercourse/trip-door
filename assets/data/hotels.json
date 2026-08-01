@@ -1,0 +1,439 @@
+{
+  "schemaVersion": 1,
+  "hotels": [
+    {
+      "id": "tokyo-dome-hotel",
+      "genre": "stage",
+      "name": "東京ドームホテル",
+      "role": "終演後の移動を最短に",
+      "area": "水道橋・後楽園",
+      "venueLabel": "東京ドームシティ周辺",
+      "venues": [
+        "kanadevia"
+      ],
+      "station": "JR水道橋駅から徒歩約2分",
+      "summary": "終演後すぐ戻れるし、物販後やマチソワ間にホテルへ戻る可能性を残したい人向け。",
+      "styles": [
+        "solo",
+        "group",
+        "matinee",
+        "stay"
+      ],
+      "priorities": [
+        "near",
+        "baggage",
+        "mirror"
+      ],
+      "facts": [
+        "東京ドームシティ内の会場に便利",
+        "チェックイン前の荷物預かりを確認",
+        "客室タイプが豊富"
+      ],
+      "statuses": [
+        [
+          "会場への近さ",
+          "confirmed",
+          "東京ドームシティ内の会場を利用する日に強い"
+        ],
+        [
+          "荷物預かり",
+          "confirmed",
+          "公式案内で事前預かりを確認"
+        ],
+        [
+          "姿見・デスク",
+          "conditional",
+          "客室タイプと写真で確認"
+        ]
+      ],
+      "rakuten": "https://travel.rakuten.co.jp/HOTEL/4805/4805.html",
+      "jalan": "https://www.jalan.net/yad321419/"
+    },
+    {
+      "id": "metropolitan-ikebukuro",
+      "genre": "stage",
+      "name": "ホテルメトロポリタン",
+      "role": "劇場・食事・連泊を池袋に集約",
+      "area": "池袋西口",
+      "venueLabel": "東京芸術劇場周辺",
+      "venues": [
+        "geigeki"
+      ],
+      "station": "JR池袋駅から徒歩約1〜3分",
+      "summary": "劇場、飲食、翌日の移動を池袋にまとめたい遠征向け。友人との宿泊や連泊にも合わせやすい。",
+      "styles": [
+        "solo",
+        "group",
+        "matinee",
+        "stay"
+      ],
+      "priorities": [
+        "near",
+        "station",
+        "baggage",
+        "mirror"
+      ],
+      "facts": [
+        "東京芸術劇場のある西口エリア",
+        "複数の客室タイプ",
+        "周辺の飲食店が豊富"
+      ],
+      "statuses": [
+        [
+          "劇場動線",
+          "confirmed",
+          "池袋西口エリアで移動をまとめやすい"
+        ],
+        [
+          "グループ遠征",
+          "confirmed",
+          "ツインなど複数の客室タイプを選びやすい"
+        ],
+        [
+          "鏡・デスク",
+          "conditional",
+          "予約する客室タイプの写真で確認"
+        ]
+      ],
+      "rakuten": "https://travel.rakuten.co.jp/HOTEL/388/388.html",
+      "jalan": "https://www.jalan.net/yad306290/"
+    },
+    {
+      "id": "monterey-hanzomon",
+      "genre": "stage",
+      "name": "ホテルモントレ半蔵門",
+      "role": "武道館と終演後の静けさ",
+      "area": "半蔵門・九段下",
+      "venueLabel": "日本武道館周辺",
+      "venues": [
+        "budokan"
+      ],
+      "station": "半蔵門駅5番出口の向かい",
+      "summary": "駅前の分かりやすさと、終演後に落ち着いて休める環境を重視する一人遠征向け。",
+      "styles": [
+        "solo",
+        "stay"
+      ],
+      "priorities": [
+        "quiet",
+        "station",
+        "baggage"
+      ],
+      "facts": [
+        "半蔵門駅前",
+        "武道館への徒歩移動を検討可能",
+        "落ち着いた客室デザイン"
+      ],
+      "statuses": [
+        [
+          "駅への近さ",
+          "confirmed",
+          "半蔵門駅出口の向かい"
+        ],
+        [
+          "静かな滞在",
+          "conditional",
+          "部屋位置や階数で周辺音が変わる"
+        ],
+        [
+          "荷物預かり",
+          "conditional",
+          "利用日と時間をホテルへ確認"
+        ]
+      ],
+      "rakuten": "https://travel.rakuten.co.jp/HOTEL/52639/52639.html",
+      "jalan": "https://www.jalan.net/yad384371/"
+    },
+    {
+      "id": "apa-makuhari",
+      "genre": "esports",
+      "name": "アパホテル＆リゾート〈東京ベイ幕張〉",
+      "role": "会場徒歩と大浴場",
+      "area": "海浜幕張",
+      "venueLabel": "幕張メッセ",
+      "venues": [
+        "makuhari"
+      ],
+      "station": "JR海浜幕張駅から徒歩約7分",
+      "summary": "イベント終了後の移動を短くし、大浴場で体を休めたい参加者・観戦者向け。",
+      "styles": [
+        "player",
+        "spectator",
+        "device",
+        "group",
+        "stay"
+      ],
+      "priorities": [
+        "near",
+        "bath",
+        "food"
+      ],
+      "facts": [
+        "幕張メッセ徒歩圏",
+        "大浴場あり",
+        "館内・近隣で食事を取りやすい"
+      ],
+      "statuses": [
+        [
+          "会場への近さ",
+          "confirmed",
+          "幕張メッセ徒歩圏"
+        ],
+        [
+          "大浴場",
+          "confirmed",
+          "イベント後の回復候補"
+        ],
+        [
+          "通信・机",
+          "conditional",
+          "混雑時の速度と客室机を要確認"
+        ]
+      ],
+      "rakuten": "https://travel.rakuten.co.jp/HOTEL/51637/",
+      "jalan": "https://www.jalan.net/yad350664/"
+    },
+    {
+      "id": "springs-makuhari",
+      "genre": "esports",
+      "name": "ホテルスプリングス幕張",
+      "role": "駅近と複数人遠征",
+      "area": "海浜幕張駅北口",
+      "venueLabel": "幕張メッセ",
+      "venues": [
+        "makuhari"
+      ],
+      "station": "JR海浜幕張駅北口から徒歩約2分",
+      "summary": "重い機材・荷物を持って駅から長く歩きたくない人や、複数人で泊まる遠征向け。",
+      "styles": [
+        "player",
+        "device",
+        "group",
+        "stay"
+      ],
+      "priorities": [
+        "station",
+        "desk",
+        "food"
+      ],
+      "facts": [
+        "海浜幕張駅から近い",
+        "ツイン・広めの客室を選びやすい",
+        "幕張メッセへ徒歩移動可能"
+      ],
+      "statuses": [
+        [
+          "駅への近さ",
+          "confirmed",
+          "海浜幕張駅北口から徒歩約2分"
+        ],
+        [
+          "複数人利用",
+          "confirmed",
+          "客室タイプから選択可能"
+        ],
+        [
+          "机・電源",
+          "conditional",
+          "デバイス利用時は客室写真で確認"
+        ]
+      ],
+      "rakuten": "https://travel.rakuten.co.jp/HOTEL/29726/",
+      "jalan": "https://www.jalan.net/yad328843/"
+    },
+    {
+      "id": "villa-fontaine-ariake",
+      "genre": "esports",
+      "name": "ヴィラフォンテーヌ グランド 東京有明",
+      "role": "会場・食事・温浴を有明で完結",
+      "area": "有明・国際展示場",
+      "venueLabel": "東京ガーデンシアター／東京ビッグサイト",
+      "venues": [
+        "ariake",
+        "bigsite"
+      ],
+      "station": "有明駅から徒歩約4分",
+      "summary": "会場、食事、温浴を有明エリア内でまとめたい人や、前泊・連日参加向け。",
+      "styles": [
+        "player",
+        "spectator",
+        "group",
+        "stay"
+      ],
+      "priorities": [
+        "near",
+        "bath",
+        "food",
+        "station"
+      ],
+      "facts": [
+        "東京ガーデンシアターに隣接",
+        "有明ガーデン直結",
+        "温浴施設を利用しやすい"
+      ],
+      "statuses": [
+        [
+          "会場動線",
+          "confirmed",
+          "有明の主要イベント会場に移動しやすい"
+        ],
+        [
+          "食事環境",
+          "confirmed",
+          "商業施設内で選択肢が多い"
+        ],
+        [
+          "机・通信",
+          "conditional",
+          "使用予定の客室タイプで確認"
+        ]
+      ],
+      "rakuten": "https://travel.rakuten.co.jp/HOTEL/178230/178230.html",
+      "jalan": "https://www.jalan.net/yad379750/"
+    },
+    {
+      "id": "nohga-ueno",
+      "genre": "art",
+      "name": "NOHGA HOTEL UENO TOKYO",
+      "role": "上野の美術館巡りと地域文化",
+      "area": "上野",
+      "venueLabel": "上野公園ミュージアム群",
+      "venues": [
+        "ueno"
+      ],
+      "station": "東京メトロ上野駅から徒歩約3分",
+      "summary": "展示だけでなく、上野の街や工芸にも触れたい一人旅向け。落ち着いた滞在を組み立てやすい。",
+      "styles": [
+        "museum",
+        "walk",
+        "solo",
+        "quiet"
+      ],
+      "priorities": [
+        "station",
+        "design",
+        "desk",
+        "quiet",
+        "walk"
+      ],
+      "facts": [
+        "上野駅から近い",
+        "地域の工芸を取り入れた客室",
+        "ライブラリーラウンジ"
+      ],
+      "statuses": [
+        [
+          "美術館へ動きやすい",
+          "confirmed",
+          "上野公園の美術館群へ向かいやすい"
+        ],
+        [
+          "館内デザイン",
+          "confirmed",
+          "地域の工芸を客室に取り入れている"
+        ],
+        [
+          "図録用デスク",
+          "conditional",
+          "客室タイプの机サイズを確認"
+        ]
+      ],
+      "rakuten": "https://travel.rakuten.co.jp/HOTEL/167837/167837.html",
+      "jalan": "https://www.jalan.net/yad302349/"
+    },
+    {
+      "id": "kaika-tokyo",
+      "genre": "art",
+      "name": "KAIKA 東京 by THE SHARE HOTELS",
+      "role": "ホテル自体をアート体験に",
+      "area": "本所・浅草・蔵前",
+      "venueLabel": "浅草・蔵前・両国アート散策",
+      "venues": [
+        "sumida"
+      ],
+      "station": "浅草駅から徒歩約9分",
+      "summary": "アートストレージとホテルが融合した施設。宿泊自体にも作品との出会いを求める人向け。",
+      "styles": [
+        "walk",
+        "hotelart",
+        "solo"
+      ],
+      "priorities": [
+        "design",
+        "walk",
+        "desk"
+      ],
+      "facts": [
+        "アートストレージを併設",
+        "浅草・蔵前・両国を巡りやすい",
+        "宿泊自体がアート体験"
+      ],
+      "statuses": [
+        [
+          "館内アート",
+          "confirmed",
+          "館内で作品との出会いを楽しめる"
+        ],
+        [
+          "街歩き",
+          "confirmed",
+          "周辺の複数エリアを組み合わせやすい"
+        ],
+        [
+          "静けさ",
+          "conditional",
+          "部屋位置や周辺音を予約前に確認"
+        ]
+      ],
+      "rakuten": "https://travel.rakuten.co.jp/HOTEL/178476/178476.html",
+      "jalan": "https://www.jalan.net/yad330083/"
+    },
+    {
+      "id": "remm-roppongi",
+      "genre": "art",
+      "name": "レム六本木",
+      "role": "六本木アート巡りと休息",
+      "area": "六本木",
+      "venueLabel": "六本木アートエリア",
+      "venues": [
+        "roppongi"
+      ],
+      "station": "六本木駅から徒歩約1分",
+      "summary": "鑑賞後の移動を短くし、睡眠と翌日の回復を重視するアート巡り向け。",
+      "styles": [
+        "museum",
+        "solo",
+        "quiet"
+      ],
+      "priorities": [
+        "station",
+        "quiet",
+        "walk"
+      ],
+      "facts": [
+        "六本木駅から近い",
+        "主要美術館を巡りやすい",
+        "休息を重視した滞在"
+      ],
+      "statuses": [
+        [
+          "美術館へ動きやすい",
+          "confirmed",
+          "六本木の主要美術館を巡りやすい"
+        ],
+        [
+          "駅への近さ",
+          "confirmed",
+          "六本木駅から徒歩約1分"
+        ],
+        [
+          "客室の静けさ",
+          "conditional",
+          "部屋位置や階数によって変わる"
+        ]
+      ],
+      "rakuten": "https://travel.rakuten.co.jp/HOTEL/153693/153693.html",
+      "jalan": "https://www.jalan.net/yad382341/"
+    }
+  ]
+}
