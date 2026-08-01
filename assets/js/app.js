@@ -2,11 +2,11 @@
   "use strict";
 
   const HOME_HERO = {
-    label: "EVENT STAY, MADE PERSONAL",
+    label: "EVENT STAY GUIDE",
     title: "泊まる時間も\n体験の一部に",
     lead: "会場までの近さだけでなく、開演前からイベント後までの過ごし方に合うホテルを探せます。",
-    key: "KEY",
-    visualText: "EVENT\nSTAY\nGUIDE"
+    key: "STAYSCENE",
+    visualText: "一日の余韻まで、\n滞在として選ぶ。"
   };
 
   const CATEGORIES = {
@@ -16,12 +16,12 @@
       heroLead: "身支度、荷物預かり、昼夜公演の間の移動まで。観劇当日の使いやすさからホテルを探せます。",
       heroKey: "CURTAIN",
       heroVisualText: "STAGE\nSTAY\nGUIDE",
-      label: "STAGE TRIP", shortName: "舞台遠征", title: "観劇の一日を、時間軸で考える",
+      label: "舞台・2.5次元遠征", shortName: "舞台遠征", title: "観劇の一日を、時間軸で考える",
       lead: "身支度のしやすさ、荷物預かり、グッズを整理できるスペース、昼夜公演の間に戻りやすい立地。",
       description: "開演前・公演の合間・終演後まで、移動や準備がスムーズにつながるホテルを選びます。",
       visualTitle: "観劇当日の使いやすさ", visualText: "劇場からの距離だけでは分からない条件まで確認します。",
       finderTitle: "舞台遠征のホテルを条件から探す", finderDescription: "劇場やエリア、観劇スタイル、優先したい条件を選ぶと、当日の動きに合うホテルを表示します。",
-      areaLabel: "劇場・エリア", styleLabel: "観劇スタイル", resultsLabel: "STAGE HOTEL LIST", resultsTitle: "観劇遠征に合うホテル",
+      areaLabel: "劇場・エリア", styleLabel: "観劇スタイル", resultsLabel: "舞台遠征の候補", resultsTitle: "観劇遠征に合うホテル",
       areas: [["all","選択してください"],["kanadevia","東京ドームシティ周辺"],["geigeki","東京芸術劇場周辺"],["budokan","日本武道館周辺"]],
       styles: [["all","選択してください"],["solo","一人遠征"],["group","友人と遠征"],["matinee","昼夜公演・複数公演"],["stay","連泊"]],
       priorities: [["all","選択してください"],["near","会場への近さ"],["baggage","荷物預かり"],["mirror","客室での身支度"],["quiet","終演後の静けさ"]],
@@ -33,12 +33,12 @@
       heroLead: "機材・荷物の運びやすさ、机と電源、食事、入浴まで。イベント前後の動きからホテルを探せます。",
       heroKey: "READY",
       heroVisualText: "GAME\nREST\nREADY",
-      label: "GAME EVENT", shortName: "eスポーツ", title: "会場から休息まで、一つの動線に",
+      label: "ゲームイベント遠征", shortName: "eスポーツ", title: "会場から休息まで、一つの動線に",
       lead: "機材や荷物を運びやすく、イベント後の食事と休息までまとめやすい立地。",
       description: "会場へのアクセスに加え、作業しやすい机と電源、食事の取りやすさ、大浴場の有無まで比較できます。",
       visualTitle: "機材と電源", visualText: "参加・観戦スタイルに合わせて、会場の外の時間も整えます。",
       finderTitle: "eスポーツ遠征のホテルを条件から探す", finderDescription: "イベント会場、参加スタイル、優先したい条件から、機材移動と休息に合うホテルを表示します。",
-      areaLabel: "イベント会場", styleLabel: "参加スタイル", resultsLabel: "GAME EVENT HOTEL LIST", resultsTitle: "eスポーツ遠征に合うホテル",
+      areaLabel: "イベント会場", styleLabel: "参加スタイル", resultsLabel: "ゲームイベントの候補", resultsTitle: "eスポーツ遠征に合うホテル",
       areas: [["all","選択してください"],["makuhari","幕張メッセ"],["ariake","東京ガーデンシアター"],["bigsite","東京ビッグサイト"]],
       styles: [["all","選択してください"],["player","大会参加"],["spectator","観戦"],["device","機材を持参"],["group","複数人"],["stay","連日参加"]],
       priorities: [["all","選択してください"],["near","会場への近さ"],["desk","机と電源"],["food","食事の取りやすさ"],["bath","大浴場"]],
@@ -50,12 +50,12 @@
       heroLead: "美術館を巡りやすい立地、建築や館内アート、鑑賞後の静けさからホテルを探せます。",
       heroKey: "GALLERY",
       heroVisualText: "ART\nSTAY\nJOURNEY",
-      label: "ART JOURNEY", shortName: "アート巡り", title: "展示の余韻を、客室へ持ち帰る",
+      label: "美術館・アート巡り", shortName: "アート巡り", title: "展示の余韻を、客室へ持ち帰る",
       lead: "美術館を巡りやすい立地、楽しめる建築や館内アート、図録を広げられる机、鑑賞後に静かに過ごせる客室。",
       description: "展示から街歩き、建築、客室での時間までを、一つの旅としてつなげます。",
       visualTitle: "ホテルまで続く、アートの時間", visualText: "鑑賞後の余韻を急がず楽しめる滞在を選びます。",
       finderTitle: "アート巡りのホテルを条件から探す", finderDescription: "巡りたいエリア、旅のスタイル、滞在中に優先したいことを選ぶと、アート旅に合うホテルを表示します。",
-      areaLabel: "美術館・エリア", styleLabel: "旅のスタイル", resultsLabel: "ART JOURNEY HOTEL LIST", resultsTitle: "アート巡りに合うホテル",
+      areaLabel: "美術館・エリア", styleLabel: "旅のスタイル", resultsLabel: "アート巡りの候補", resultsTitle: "アート巡りに合うホテル",
       areas: [["all","選択してください"],["ueno","上野公園ミュージアム群"],["sumida","浅草・蔵前・両国"],["roppongi","六本木アートエリア"]],
       styles: [["all","選択してください"],["museum","美術館中心"],["walk","街歩き"],["hotelart","館内アート"],["solo","一人旅"],["quiet","静かな滞在"]],
       priorities: [["all","選択してください"],["station","美術館を巡りやすい"],["design","建築・館内アート"],["desk","図録を広げやすい"],["quiet","静かな客室"]],

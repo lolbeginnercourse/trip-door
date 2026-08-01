@@ -7,7 +7,7 @@
   <meta name="description" content="舞台遠征、eスポーツイベント、アート巡りのホテルを、会場までの移動や滞在中の過ごし方から比較できるイベント遠征ガイドです。">
   <link rel="canonical" href="https://mainitiworakunisuru.com/">
   <title>STAYSCENE｜イベント遠征のホテル選び</title>
-  <link rel="stylesheet" href="assets/css/style.css?v=20260801-3">
+  <link rel="stylesheet" href="assets/css/style.css?v=20260802-1">
 </head>
 <body>
   <a class="skip-link" href="#main">本文へ移動</a>
@@ -44,45 +44,71 @@
     <section class="home-hero" aria-labelledby="hero-title">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow" data-hero-label>EVENT STAY, MADE PERSONAL</p>
+          <p class="eyebrow" data-hero-label>EVENT STAY GUIDE</p>
           <h1 id="hero-title" data-hero-title>泊まる時間も<br>体験の一部に</h1>
           <p class="hero-lead" data-hero-lead>会場までの近さだけでなく、開演前からイベント後までの過ごし方に合うホテルを探せます。</p>
+          <a class="hero-link" href="#category-heading">遠征の目的から探す <span aria-hidden="true">→</span></a>
         </div>
         <div class="hero-visual" aria-hidden="true">
-          <span class="hero-key" data-hero-key>KEY</span>
-          <span class="hero-door"></span>
-          <p data-hero-visual-text>EVENT<br>STAY<br>GUIDE</p>
+          <p class="hero-visual__title" data-hero-visual-text>一日の余韻まで、<br>滞在として選ぶ。</p>
+          <ol class="stay-timeline">
+            <li><span>BEFORE</span><strong>開演前</strong></li>
+            <li><span>EVENT</span><strong>イベント</strong></li>
+            <li><span>AFTER</span><strong>終了後</strong></li>
+            <li><span>STAY</span><strong>ホテル</strong></li>
+          </ol>
+          <span class="hero-key" data-hero-key>STAYSCENE</span>
         </div>
+      </div>
+    </section>
+
+    <section class="site-purpose" aria-labelledby="purpose-heading" data-home-only>
+      <div class="reading-width">
+        <p class="section-kicker">STAYSCENEについて</p>
+        <h2 id="purpose-heading">会場から近いだけでは、<br>遠征に合うホテルとは限りません。</h2>
+        <p>身支度を整える時間、荷物を預ける場所、イベント後に休める環境。STAYSCENEは、舞台・ゲームイベント・アート巡りそれぞれの一日から、滞在先を選ぶためのガイドです。</p>
       </div>
     </section>
 
     <section class="category-section" aria-labelledby="category-heading" data-home-only>
       <div class="container">
         <div class="section-heading compact">
-          <p class="eyebrow">CHOOSE YOUR TRIP</p>
+          <p class="section-kicker">まず、今回の過ごし方から</p>
           <h2 id="category-heading">遠征の目的を選ぶ</h2>
         </div>
         <div class="category-cards" data-category-cards>
           <button class="category-card category-card--stage" type="button" data-select-category="stage" aria-pressed="false">
-            <span class="category-card__label">STAGE TRIP</span>
-            <strong>舞台・2.5次元遠征</strong>
-            <span>身支度や荷物、公演前後の動きから選ぶ</span>
-            <span class="tag-row"><i>会場動線</i><i>荷物</i><i>身支度</i></span>
-            <span class="category-card__action">このジャンルから探す →</span>
+            <span class="category-card__copy">
+              <span class="category-card__number">01</span>
+              <span class="category-card__label">STAGE</span>
+              <strong>舞台・2.5次元遠征</strong>
+              <span class="category-card__description">身支度や荷物、公演前後の動きまで含めて、観劇の日を落ち着いて過ごせるホテルを選びます。</span>
+              <span class="tag-row"><i>身支度</i><i>荷物預かり</i><i>終演後の移動</i></span>
+              <span class="category-card__action">舞台遠征のホテルを探す <b aria-hidden="true">→</b></span>
+            </span>
+            <span class="category-card__visual category-card__visual--stage" aria-hidden="true"><b>CURTAIN</b><i>18:00</i><small>CHECK IN / SHOW / REST</small></span>
           </button>
           <button class="category-card category-card--esports" type="button" data-select-category="esports" aria-pressed="false">
-            <span class="category-card__label">GAME EVENT</span>
-            <strong>eスポーツ・ゲームイベント遠征</strong>
-            <span>機材、食事、休息まで一つの動線で考える</span>
-            <span class="tag-row"><i>机と電源</i><i>食事</i><i>大浴場</i></span>
-            <span class="category-card__action">このジャンルから探す →</span>
+            <span class="category-card__copy">
+              <span class="category-card__number">02</span>
+              <span class="category-card__label">GAME</span>
+              <strong>ゲームイベント遠征</strong>
+              <span class="category-card__description">長時間のイベント後も無理なく食事と休息を取り、機材や荷物を整えられる滞在先を探します。</span>
+              <span class="tag-row"><i>机と電源</i><i>食事の取りやすさ</i><i>大浴場と休息</i></span>
+              <span class="category-card__action">ゲームイベント向けホテルを探す <b aria-hidden="true">→</b></span>
+            </span>
+            <span class="category-card__visual category-card__visual--esports" aria-hidden="true"><b>RESET</b><i>23:30</i><small>PLAY / EAT / RECOVER</small></span>
           </button>
           <button class="category-card category-card--art" type="button" data-select-category="art" aria-pressed="false">
-            <span class="category-card__label">ART JOURNEY</span>
-            <strong>美術館・アート巡り</strong>
-            <span>展示、街歩き、客室での余韻まで楽しむ</span>
-            <span class="tag-row"><i>美術館を巡りやすい</i><i>館内アート</i><i>静けさ</i></span>
-            <span class="category-card__action">このジャンルから探す →</span>
+            <span class="category-card__copy">
+              <span class="category-card__number">03</span>
+              <span class="category-card__label">ART</span>
+              <strong>美術館・アート巡り</strong>
+              <span class="category-card__description">複数の展示を巡る動線と、鑑賞後の余韻を静かに持ち帰れる客室環境から選びます。</span>
+              <span class="tag-row"><i>複数館への移動</i><i>館内アート</i><i>静かな客室</i></span>
+              <span class="category-card__action">アート巡りの滞在先を探す <b aria-hidden="true">→</b></span>
+            </span>
+            <span class="category-card__visual category-card__visual--art" aria-hidden="true"><b>PAUSE</b><i>15:40</i><small>VIEW / WALK / UNWIND</small></span>
           </button>
         </div>
       </div>
@@ -91,14 +117,14 @@
     <section class="planning-section" aria-labelledby="planning-heading" data-home-only>
       <div class="container planning-grid">
         <div>
-          <p class="eyebrow">BEFORE BOOKING</p>
+          <p class="section-kicker">ホテルを予約する前に</p>
           <h2 id="planning-heading">予約の前に<br>ホテル選びの条件を決める</h2>
           <p>料金や空室を比べる前に、会場までの移動、荷物、食事、休息など、遠征当日に必要な条件からホテルを探せます。</p>
         </div>
         <ol class="planning-steps">
-          <li><span>1</span><strong>遠征の目的を選ぶ</strong></li>
-          <li><span>2</span><strong>当日の動きから絞る</strong></li>
-          <li><span>3</span><strong>候補を並べて比較する</strong></li>
+          <li><span>01</span><div><strong>遠征の目的を選ぶ</strong><p>観劇、ゲームイベント、アート巡りから、今回の過ごし方に近い目的を選びます。</p></div></li>
+          <li><span>02</span><div><strong>当日の動きから絞る</strong><p>会場までの移動、荷物、食事、身支度、休息などから必要な条件を整理します。</p></div></li>
+          <li><span>03</span><div><strong>候補を並べて比較する</strong><p>気になるホテルを保存し、移動や設備の違いを見比べます。</p></div></li>
         </ol>
       </div>
     </section>
@@ -123,7 +149,7 @@
 
         <section class="finder" aria-labelledby="finder-heading">
           <div class="finder-heading">
-            <div><p class="eyebrow">FIND YOUR STAY</p><h2 id="finder-heading" data-finder-title></h2><p data-finder-description></p></div>
+            <div><p class="section-kicker">条件から探す</p><h2 id="finder-heading" data-finder-title></h2><p data-finder-description></p></div>
           </div>
           <form data-search-form>
             <div class="finder-grid">
@@ -174,7 +200,7 @@
 
   <dialog class="detail-dialog" data-detail-dialog aria-labelledby="detail-title">
     <div class="dialog-shell">
-      <header class="dialog-head"><div><p class="eyebrow">HOTEL DETAILS</p><h2 id="detail-title" data-detail-title></h2></div><button class="dialog-close" type="button" data-close-detail aria-label="ホテルの詳細を閉じる">×</button></header>
+      <header class="dialog-head"><div><p class="section-kicker">ホテルの詳細</p><h2 id="detail-title" data-detail-title></h2></div><button class="dialog-close" type="button" data-close-detail aria-label="ホテルの詳細を閉じる">×</button></header>
       <div class="detail-content" data-detail-content></div>
     </div>
   </dialog>
@@ -187,6 +213,6 @@
     </div>
   </dialog>
 
-  <script src="assets/js/app.js?v=20260801-3" defer></script>
+  <script src="assets/js/app.js?v=20260802-1" defer></script>
 </body>
 </html>
