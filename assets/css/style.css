@@ -219,6 +219,7 @@
   .hotel-card h3 .text-button:hover { text-decoration: underline; }
   .hotel-card__location { color: var(--muted); font-size: .86rem; }
   .hotel-card__role { margin: 18px 0 14px; font-weight: 700; }
+  .hotel-card__price { margin: 0 0 14px; color: var(--category); font-weight: 800; }
   .hotel-card__features { margin: 0 0 16px; padding: 0; display: flex; flex-wrap: wrap; list-style: none; color: #4e4c50; font-size: .84rem; }
   .hotel-card__features li { padding: 0 12px; border-left: 1px solid var(--border); }
   .hotel-card__features li:first-child { padding-left: 0; border-left: 0; }

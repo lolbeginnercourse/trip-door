@@ -22,10 +22,10 @@
       visualTitle: "観劇当日の使いやすさ", visualText: "劇場からの距離だけでは分からない条件まで確認します",
       finderTitle: "舞台遠征のホテルを条件から探す", finderDescription: "劇場やエリア、観劇スタイル、優先したい条件を選ぶと、当日の動きに合うホテルを表示します",
       areaLabel: "劇場・エリア", styleLabel: "観劇スタイル", resultsLabel: "舞台遠征の候補", resultsTitle: "観劇遠征に合うホテル",
-      areas: [["all","選択してください"],["kanadevia","東京ドームシティ周辺"],["geigeki","東京芸術劇場周辺"],["budokan","日本武道館周辺"]],
-      styles: [["all","選択してください"],["solo","一人遠征"],["group","友人と遠征"],["matinee","昼夜公演・複数公演"],["stay","連泊"]],
-      priorities: [["all","選択してください"],["near","会場への近さ"],["baggage","荷物預かり"],["mirror","客室での身支度"],["quiet","終演後の静けさ"]],
-      quick: [["near","終演後、ホテルへすぐ戻れる"],["baggage","荷物を預けやすい"],["mirror","客室で身支度しやすい"]]
+      areas: [["all","会場を選択してください"]],
+      styles: [["all","指定なし"]],
+      priorities: [["all","選択してください"],["near","会場への近さ"],["station","最寄り駅情報あり"]],
+      quick: [["near","徒歩・直結の記載あり"],["station","最寄り駅情報あり"]]
     },
     esports: {
       heroLabel: "GAME EVENT",
@@ -70,7 +70,8 @@
     filters: Object.fromEntries(Object.keys(CATEGORIES).map(key => [key, { area: "all", style: "all", priorities: [], sort: "recommended", searched: false }])),
     compareIds: [],
     lastTrigger: null,
-    noticeTimer: null
+    noticeTimer: null,
+    affiliateCache: new Map()
   };
 
   const q = selector => document.querySelector(selector);
@@ -111,6 +112,11 @@
       nearestStation: typeof item.nearestStation === "string" ? item.nearestStation : item.station || "情報未確認",
       affiliateLinks: links.filter(link => link && /^https:\/\//.test(link.url || "")),
       image: item.image || null,
+      priceEstimate: item.priceEstimate || "",
+      priceNumeric: Number(item.priceNumeric) || null,
+      accessEstimate: item.accessEstimate || "",
+      rakutenHotelNo: item.rakutenHotelNo || null,
+      jalanYadNo: item.jalanYadNo || null,
       restScore: Number(item.restScore) || (((item.priorities || []).includes("quiet") || (item.priorities || []).includes("bath")) ? 4 : 3),
       distanceScore: Number(item.distanceScore) || ((item.priorities || []).includes("near") ? 5 : 3)
     };
@@ -317,6 +323,35 @@
     return anchor;
   }
 
+  async function affiliateLinksFor(hotel) {
+    if (hotel.affiliateLinks.length) return hotel.affiliateLinks;
+    if (state.affiliateCache.has(hotel.id)) return state.affiliateCache.get(hotel.id);
+    const pending = (async () => {
+      try {
+        const params = new URLSearchParams({ name: hotel.name });
+        if (hotel.rakutenHotelNo) params.set("rakutenHotelNo", hotel.rakutenHotelNo);
+        if (hotel.jalanYadNo) params.set("jalanYadNo", hotel.jalanYadNo);
+        const response = await fetch(`/api/affiliate-links?${params}`, { headers: { Accept: "application/json" } });
+        if (!response.ok) return [];
+        const data = await response.json();
+        return Array.isArray(data.links)
+          ? data.links.filter(link => link && typeof link.provider === "string" && /^https:\/\//.test(link.url || "")).slice(0, 2)
+          : [];
+      } catch {
+        return [];
+      }
+    })();
+    state.affiliateCache.set(hotel.id, pending);
+    return pending;
+  }
+
+  async function hydrateAffiliateLinks(container, hotel) {
+    const links = await affiliateLinksFor(hotel);
+    if (!container.isConnected || !links.length) return;
+    container.replaceChildren(...links.map(makeExternalLink));
+    container.hidden = false;
+  }
+
   function makeHotelCard(hotel) {
     const card = el("article", "hotel-card");
     card.dataset.hotelId = hotel.id;
@@ -337,6 +372,7 @@
     titleButton.dataset.openDetail = hotel.id;
     title.append(titleButton);
     body.append(title, el("p", "hotel-card__location", `${hotel.area}・${hotel.nearestStation}`), el("p", "hotel-card__role", hotel.role));
+    if (hotel.priceEstimate) body.append(el("p", "hotel-card__price", `料金目安 ${hotel.priceEstimate}`));
     const features = el("ul", "hotel-card__features");
     (hotel.facts || []).slice(0, 3).forEach(fact => features.append(el("li", "", fact)));
     body.append(features);
@@ -351,11 +387,10 @@
     compare.type = "button";
     compare.dataset.toggleCompare = hotel.id;
     actions.append(detail, compare);
-    if (hotel.affiliateLinks.length) {
-      const links = el("div", "external-links");
-      hotel.affiliateLinks.slice(0, 2).forEach(link => links.append(makeExternalLink(link)));
-      actions.append(links);
-    }
+    const links = el("div", "external-links");
+    links.hidden = true;
+    actions.append(links);
+    hydrateAffiliateLinks(links, hotel);
     body.append(actions);
     card.append(visual, body);
     return card;
@@ -460,10 +495,13 @@
     const layout = el("div", "detail-layout");
     const visual = el("div", "detail-visual", "HOTEL STAY");
     const content = el("div", "detail-list");
-    [["このホテルが向いている人", hotel.role],["会場までの移動", `${hotel.venueLabel}・${hotel.nearestStation}`],["ホテルでの過ごし方", hotel.summary],["予約前に確認すること", (hotel.statuses || []).filter(item => (Array.isArray(item) ? item[1] : item.state) !== "confirmed").map(item => Array.isArray(item) ? item[0] : item.label).join("、") || "最新の料金・設備を予約サイトでご確認ください"],["情報確認日", hotel.updatedAt || "情報未確認"]].forEach(([title, text]) => { const section = el("section"); section.append(el("h3", "", title), el("p", "", text || "情報未確認")); content.append(section); });
+    [["このホテルが向いている人", hotel.role],["会場までの移動", `${hotel.venueLabel}・${hotel.nearestStation}`],["料金目安", hotel.priceEstimate],["ホテルでの過ごし方", hotel.summary],["予約前に確認すること", (hotel.statuses || []).filter(item => (Array.isArray(item) ? item[1] : item.state) !== "confirmed").map(item => Array.isArray(item) ? item[0] : item.label).join("、") || "最新の料金・設備を予約サイトでご確認ください"],["情報確認日", hotel.researchedAt || hotel.updatedAt || "情報未確認"]].forEach(([title, text]) => { const section = el("section"); section.append(el("h3", "", title), el("p", "", text || "情報未確認")); content.append(section); });
     const actions = el("div", "detail-actions");
     const compare = el("button", "button button--secondary", state.compareIds.includes(id) ? "比較候補から外す" : "比較候補に追加する"); compare.type = "button"; compare.dataset.toggleCompare = id; actions.append(compare);
-    hotel.affiliateLinks.forEach(link => actions.append(makeExternalLink(link)));
+    const links = el("div", "external-links");
+    links.hidden = true;
+    actions.append(links);
+    hydrateAffiliateLinks(links, hotel);
     content.append(actions); layout.append(visual, content); ui.detailContent.replaceChildren(layout);
     closeOtherDialog(ui.detailDialog); ui.detailDialog.showModal(); document.body.classList.add("is-locked");
     track("hotel_detail_open", { hotel_id: id });
@@ -542,6 +580,13 @@
       const data = await response.json();
       if (!data || !Array.isArray(data.hotels)) throw new Error("Invalid hotel data");
       state.hotels = data.hotels.filter(validHotel).map(normalizeHotel);
+      const stageVenues = [...new Map(
+        state.hotels
+          .filter(hotel => hotel.categories.includes("stage") && hotel.venueId && hotel.venueLabel)
+          .sort((a, b) => (a.venueNumber || 0) - (b.venueNumber || 0))
+          .map(hotel => [hotel.venueId, `${hotel.prefecture || hotel.area}｜${hotel.venueLabel}`])
+      ).entries()];
+      CATEGORIES.stage.areas = [["all", "会場を選択してください"], ...stageVenues];
       state.compareIds = readCompare().filter(id => state.hotels.some(hotel => hotel.id === id));
       updateCompare();
       parseUrl();

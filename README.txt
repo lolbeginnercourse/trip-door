@@ -6,6 +6,8 @@ STAYSCENE 公開用パッケージ
 index.html               ページ本体
 assets/css/style.css     共通・各ジャンル・モバイル用CSS
 assets/js/app.js         検索、詳細、比較、ページ切替、ホテルデータ
+assets/data/hotels.json  舞台250会場を含むホテルデータ
+api/affiliate-links.js   予約サイトの施設照合とリンク返却
 
 確認方法
 --------
@@ -29,3 +31,9 @@ index.htmlをブラウザで開いてください。
 注意
 ----
 ホテル名、アクセス、設備、予約リンクなどの掲載情報は、公開前に必ず公式情報で最終確認してください。
+
+予約リンク用の環境変数
+----------------------
+楽天トラベルは RAKUTEN_APPLICATION_ID、RAKUTEN_ACCESS_KEY、RAKUTEN_AFFILIATE_ID をサーバー側に設定します。
+じゃらんは ValueCommerce のWebサービス商品API用 VALUECOMMERCE_PRODUCT_TOKEN をサーバー側に設定します。
+CLIENT_KEY と CLIENT_SECRET はレポートAPI用のため、商品リンクの取得には使用しません。
