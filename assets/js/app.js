@@ -544,6 +544,11 @@
   document.addEventListener("click", event => {
     const target = event.target.closest("button, a");
     if (!target) return;
+    if (target.hasAttribute("data-hero-link")) {
+      event.preventDefault();
+      const destination = state.category ? ui.finderTitle : q("#category-heading");
+      destination?.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start" });
+    }
     if (target.dataset.selectCategory) selectCategory(target.dataset.selectCategory, { scroll: "top" });
     if (target.dataset.categoryTab) selectCategory(target.dataset.categoryTab, { scroll: false });
     if (target.dataset.quick) toggleQuick(target.dataset.quick);
