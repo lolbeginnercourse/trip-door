@@ -11,11 +11,11 @@
 
   const CATEGORIES = {
     stage: {
-      heroLabel: "STAGE TRIP",
-      heroTitle: "観劇の一日を\nもっと身軽に",
-      heroLead: "身支度、荷物預かり、昼夜公演の間の移動まで 観劇当日の使いやすさからホテルを探せます",
-      heroKey: "CURTAIN",
-      heroVisualText: "STAGE\nSTAY\nGUIDE",
+      heroLabel: "観劇遠征ガイド",
+      heroTitle: "観劇の一日を\nもっと心地よく",
+      heroLead: "身支度や荷物預かり、終演後の移動まで 観劇当日の過ごしやすさからホテルを探せます",
+      heroKey: "観劇遠征",
+      heroVisualText: "観劇\n遠征\nガイド",
       label: "舞台・2.5次元遠征", shortName: "舞台遠征", title: "観劇の一日を、時間軸で考える",
       lead: "身支度のしやすさ、荷物預かり、グッズを整理できるスペース、昼夜公演の間に戻りやすい立地",
       description: "開演前・公演の合間・終演後まで、移動や準備がスムーズにつながるホテルを選びます",
@@ -78,7 +78,7 @@
   const qa = selector => [...document.querySelectorAll(selector)];
   const ui = {
     homeOnly: qa("[data-home-only]"), heroLabel: q("[data-hero-label]"), heroTitle: q("[data-hero-title]"), heroLead: q("[data-hero-lead]"),
-    heroKey: q("[data-hero-key]"), heroVisualText: q("[data-hero-visual-text]"),
+    heroKey: q("[data-hero-key]"), heroVisualText: q("[data-hero-visual-text]"), heroLink: q("[data-hero-link]"),
     experience: q("[data-experience]"), overviewLabel: q("[data-overview-label]"), overviewTitle: q("[data-overview-title]"), overviewLead: q("[data-overview-lead]"),
     overviewDescription: q("[data-overview-description]"), overviewVisualTitle: q("[data-overview-visual-title]"), overviewVisualText: q("[data-overview-visual-text]"),
     finderTitle: q("[data-finder-title]"), finderDescription: q("[data-finder-description]"), areaLabel: q("[data-area-label]"), styleLabel: q("[data-style-label]"),
@@ -210,6 +210,8 @@
     ui.homeOnly.forEach(section => { section.hidden = false; });
     ui.experience.hidden = true;
     renderHero();
+    ui.heroLink.href = "#category-heading";
+    ui.heroLink.firstChild.textContent = "遠征の目的から探す ";
     qa("[data-category-link]").forEach(link => link.removeAttribute("aria-current"));
   }
 
@@ -223,6 +225,8 @@
     const config = CATEGORIES[category];
     const current = state.filters[category];
     renderHero(config);
+    ui.heroLink.href = "#finder-heading";
+    ui.heroLink.firstChild.textContent = `${config.shortName}のホテルを探す `;
     ui.overviewLabel.textContent = config.label;
     ui.overviewTitle.textContent = config.title;
     ui.overviewLead.textContent = config.lead;
