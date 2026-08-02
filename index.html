@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#f7f7f5">
-  <meta name="description" content="舞台遠征、eスポーツイベント、アート巡りのホテルを、会場までの移動や滞在中の過ごし方から比較できるイベント遠征ガイドです">
+  <meta name="description" content="舞台遠征やゲームイベントのホテルを、会場までの移動や滞在中の過ごし方から比較できるイベント遠征ガイドです">
   <link rel="canonical" href="https://mainitiworakunisuru.com/">
   <title>STAYSCENE｜イベント遠征のホテル選び</title>
   <style>
@@ -32,8 +32,6 @@
     --stage-soft: #f4e9ef;
     --game: #0b5f66;
     --game-soft: #e7f1f0;
-    --art: #72502b;
-    --art-soft: #f1eadf;
     --success: #2e6b45;
     --warning: #80520e;
     --danger: #b42318;
@@ -44,7 +42,6 @@
     --radius-lg: 12px;
   }
   body[data-category="esports"] { --category: var(--game); --category-soft: var(--game-soft); }
-  body[data-category="art"] { --category: var(--art); --category-soft: var(--art-soft); }
 }
 
 @layer base {
@@ -155,7 +152,6 @@
   .desktop-nav [data-category-link]:hover::after, .desktop-nav [data-category-link][aria-current="page"]::after { opacity: 1; }
   :is(.desktop-nav, .mobile-menu) [data-category-link="stage"] { --nav-color: var(--stage); }
   :is(.desktop-nav, .mobile-menu) [data-category-link="esports"] { --nav-color: var(--game); }
-  :is(.desktop-nav, .mobile-menu) [data-category-link="art"] { --nav-color: var(--art); }
   .header-compare { border: 1px solid var(--border); border-radius: var(--radius-sm); cursor: pointer; }
   .header-compare span { margin-left: 6px; }
   .mobile-actions, .mobile-menu { display: none; }
@@ -176,7 +172,6 @@
   .category-card:hover .category-card__action b { transform: translateX(5px); }
   .category-card--stage :is(.category-card__label,.category-card__action) { color: var(--stage); }
   .category-card--esports :is(.category-card__label,.category-card__action) { color: var(--game); }
-  .category-card--art :is(.category-card__label,.category-card__action) { color: var(--art); }
   .category-card__visual { position: relative; min-height: 410px; padding: 34px; display: flex; flex-direction: column; justify-content: space-between; color: #fff; overflow: hidden; }
   .category-card__visual::after { content: ""; position: absolute; inset: 28px; border: 1px solid rgba(255,255,255,.38); }
   .category-card__visual b, .category-card__visual i, .category-card__visual small { position: relative; z-index: 1; font-style: normal; }
@@ -185,10 +180,9 @@
   .category-card__visual small { font-size: .68rem; font-weight: 700; }
   .category-card__visual--stage { background: var(--stage); }
   .category-card__visual--esports { background: var(--game); }
-  .category-card__visual--art { background: var(--art); }
   .category-card[aria-pressed="true"] .category-card__copy { border-left: 3px solid var(--category); padding-left: 22px; }
 
-  .category-tabs { position: sticky; z-index: 20; top: 72px; display: grid; grid-template-columns: repeat(3, 1fr); border-bottom: 1px solid var(--border); background: rgba(255,254,253,.96); backdrop-filter: blur(12px); }
+  .category-tabs { position: sticky; z-index: 20; top: 72px; display: grid; grid-template-columns: repeat(2, 1fr); border-bottom: 1px solid var(--border); background: rgba(255,254,253,.96); backdrop-filter: blur(12px); }
   .category-tabs button { min-height: 58px; border: 0; border-bottom: 3px solid transparent; background: transparent; cursor: pointer; font-weight: 700; }
   .category-tabs button[aria-selected="true"] { color: var(--category); border-bottom-color: var(--category); }
   label > span, .sort-control { display: block; color: #34373e; font-size: .85rem; font-weight: 700; }
@@ -409,7 +403,6 @@
       <nav class="desktop-nav" aria-label="メインナビゲーション">
         <a href="/?category=stage" data-category-link="stage">舞台・2.5次元</a>
         <a href="/?category=esports" data-category-link="esports">ゲームイベント</a>
-        <a href="/?category=art" data-category-link="art">美術館・アート</a>
         <button type="button" class="header-compare" data-open-compare>比較候補 <span data-header-compare-count>0</span></button>
       </nav>
       <div class="mobile-actions">
@@ -422,7 +415,6 @@
     <a href="/">トップ</a>
     <a href="/?category=stage" data-category-link="stage">舞台・2.5次元</a>
     <a href="/?category=esports" data-category-link="esports">ゲームイベント</a>
-    <a href="/?category=art" data-category-link="art">美術館・アート</a>
     <a href="#site-policy">サイト方針</a>
     <a href="#booking-note">予約について</a>
   </nav>
@@ -453,7 +445,7 @@
       <div class="reading-width">
         <p class="section-kicker">STAYSCENEについて</p>
         <h2 id="purpose-heading">会場から近いだけでは、<br>遠征に合うホテルとは限りません</h2>
-        <p>身支度を整える時間、荷物を預ける場所、イベント後に休める環境 STAYSCENEは、舞台・ゲームイベント・アート巡りそれぞれの一日から、滞在先を選ぶためのガイドです</p>
+        <p>身支度を整える時間、荷物を預ける場所、イベント後に休める環境 STAYSCENEは、舞台やゲームイベントの一日から、滞在先を選ぶためのガイドです</p>
       </div>
     </section>
 
@@ -486,17 +478,6 @@
             </span>
             <span class="category-card__visual category-card__visual--esports" aria-hidden="true"><b>RESET</b><i>23:30</i><small>PLAY / EAT / RECOVER</small></span>
           </button>
-          <button class="category-card category-card--art" type="button" data-select-category="art" aria-pressed="false">
-            <span class="category-card__copy">
-              <span class="category-card__number">03</span>
-              <span class="category-card__label">ART</span>
-              <strong>美術館・アート巡り</strong>
-              <span class="category-card__description">複数の展示を巡る動線と、鑑賞後の余韻を静かに持ち帰れる客室環境から選びます</span>
-              <span class="tag-row"><i>複数館への移動</i><i>館内アート</i><i>静かな客室</i></span>
-              <span class="category-card__action">アート巡りの滞在先を探す <b aria-hidden="true">→</b></span>
-            </span>
-            <span class="category-card__visual category-card__visual--art" aria-hidden="true"><b>PAUSE</b><i>15:40</i><small>VIEW / WALK / UNWIND</small></span>
-          </button>
         </div>
       </div>
     </section>
@@ -509,7 +490,7 @@
           <p>料金や空室を比べる前に、会場までの移動、荷物、食事、休息など、遠征当日に必要な条件からホテルを探せます</p>
         </div>
         <ol class="planning-steps">
-          <li><span>01</span><div><strong>遠征の目的を選ぶ</strong><p>観劇、ゲームイベント、アート巡りから、今回の過ごし方に近い目的を選びます</p></div></li>
+          <li><span>01</span><div><strong>遠征の目的を選ぶ</strong><p>観劇またはゲームイベントから、今回の過ごし方に近い目的を選びます</p></div></li>
           <li><span>02</span><div><strong>当日の動きから絞る</strong><p>会場までの移動、荷物、食事、身支度、休息などから必要な条件を整理します</p></div></li>
           <li><span>03</span><div><strong>候補を並べて比較する</strong><p>気になるホテルを保存し、移動や設備の違いを見比べます</p></div></li>
         </ol>
@@ -521,7 +502,6 @@
         <div class="category-tabs" role="tablist" aria-label="遠征ジャンル">
           <button type="button" role="tab" data-category-tab="stage" aria-selected="false">舞台<span>遠征</span></button>
           <button type="button" role="tab" data-category-tab="esports" aria-selected="false">eスポーツ</button>
-          <button type="button" role="tab" data-category-tab="art" aria-selected="false">アート<span>巡り</span></button>
         </div>
 
         <section class="category-overview" data-category-overview>

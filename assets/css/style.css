@@ -22,8 +22,6 @@
     --stage-soft: #f4e9ef;
     --game: #0b5f66;
     --game-soft: #e7f1f0;
-    --art: #72502b;
-    --art-soft: #f1eadf;
     --success: #2e6b45;
     --warning: #80520e;
     --danger: #b42318;
@@ -34,7 +32,6 @@
     --radius-lg: 12px;
   }
   body[data-category="esports"] { --category: var(--game); --category-soft: var(--game-soft); }
-  body[data-category="art"] { --category: var(--art); --category-soft: var(--art-soft); }
 }
 
 @layer base {
@@ -145,7 +142,6 @@
   .desktop-nav [data-category-link]:hover::after, .desktop-nav [data-category-link][aria-current="page"]::after { opacity: 1; }
   :is(.desktop-nav, .mobile-menu) [data-category-link="stage"] { --nav-color: var(--stage); }
   :is(.desktop-nav, .mobile-menu) [data-category-link="esports"] { --nav-color: var(--game); }
-  :is(.desktop-nav, .mobile-menu) [data-category-link="art"] { --nav-color: var(--art); }
   .header-compare { border: 1px solid var(--border); border-radius: var(--radius-sm); cursor: pointer; }
   .header-compare span { margin-left: 6px; }
   .mobile-actions, .mobile-menu { display: none; }
@@ -166,7 +162,6 @@
   .category-card:hover .category-card__action b { transform: translateX(5px); }
   .category-card--stage :is(.category-card__label,.category-card__action) { color: var(--stage); }
   .category-card--esports :is(.category-card__label,.category-card__action) { color: var(--game); }
-  .category-card--art :is(.category-card__label,.category-card__action) { color: var(--art); }
   .category-card__visual { position: relative; min-height: 410px; padding: 34px; display: flex; flex-direction: column; justify-content: space-between; color: #fff; overflow: hidden; }
   .category-card__visual::after { content: ""; position: absolute; inset: 28px; border: 1px solid rgba(255,255,255,.38); }
   .category-card__visual b, .category-card__visual i, .category-card__visual small { position: relative; z-index: 1; font-style: normal; }
@@ -175,10 +170,9 @@
   .category-card__visual small { font-size: .68rem; font-weight: 700; }
   .category-card__visual--stage { background: var(--stage); }
   .category-card__visual--esports { background: var(--game); }
-  .category-card__visual--art { background: var(--art); }
   .category-card[aria-pressed="true"] .category-card__copy { border-left: 3px solid var(--category); padding-left: 22px; }
 
-  .category-tabs { position: sticky; z-index: 20; top: 72px; display: grid; grid-template-columns: repeat(3, 1fr); border-bottom: 1px solid var(--border); background: rgba(255,254,253,.96); backdrop-filter: blur(12px); }
+  .category-tabs { position: sticky; z-index: 20; top: 72px; display: grid; grid-template-columns: repeat(2, 1fr); border-bottom: 1px solid var(--border); background: rgba(255,254,253,.96); backdrop-filter: blur(12px); }
   .category-tabs button { min-height: 58px; border: 0; border-bottom: 3px solid transparent; background: transparent; cursor: pointer; font-weight: 700; }
   .category-tabs button[aria-selected="true"] { color: var(--category); border-bottom-color: var(--category); }
   label > span, .sort-control { display: block; color: #34373e; font-size: .85rem; font-weight: 700; }

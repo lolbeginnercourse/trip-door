@@ -43,23 +43,6 @@
       styles: [["all","選択してください"],["player","大会参加"],["spectator","観戦"],["device","機材を持参"],["group","複数人"],["stay","連日参加"]],
       priorities: [["all","選択してください"],["near","会場への近さ"],["desk","机と電源"],["food","食事の取りやすさ"],["bath","大浴場"]],
       quick: [["near","会場へ移動しやすい"],["food","食事を取りやすい"],["bath","大浴場で休める"]]
-    },
-    art: {
-      heroLabel: "ART JOURNEY",
-      heroTitle: "展示の余韻を\n客室へ持ち帰る",
-      heroLead: "美術館を巡りやすい立地、建築や館内アート、鑑賞後の静けさからホテルを探せます",
-      heroKey: "GALLERY",
-      heroVisualText: "ART\nSTAY\nJOURNEY",
-      label: "美術館・アート巡り", shortName: "アート巡り", title: "展示の余韻を、客室へ持ち帰る",
-      lead: "美術館を巡りやすい立地、楽しめる建築や館内アート、図録を広げられる机、鑑賞後に静かに過ごせる客室",
-      description: "展示から街歩き、建築、客室での時間までを、一つの旅としてつなげます",
-      visualTitle: "ホテルまで続く、アートの時間", visualText: "鑑賞後の余韻を急がず楽しめる滞在を選びます",
-      finderTitle: "アート巡りのホテルを条件から探す", finderDescription: "巡りたいエリア、旅のスタイル、滞在中に優先したいことを選ぶと、アート旅に合うホテルを表示します",
-      areaLabel: "美術館・エリア", styleLabel: "旅のスタイル", resultsLabel: "アート巡りの候補", resultsTitle: "アート巡りに合うホテル",
-      areas: [["all","選択してください"],["ueno","上野公園ミュージアム群"],["sumida","浅草・蔵前・両国"],["roppongi","六本木アートエリア"]],
-      styles: [["all","選択してください"],["museum","美術館中心"],["walk","街歩き"],["hotelart","館内アート"],["solo","一人旅"],["quiet","静かな滞在"]],
-      priorities: [["all","選択してください"],["station","美術館を巡りやすい"],["design","建築・館内アート"],["desk","図録を広げやすい"],["quiet","静かな客室"]],
-      quick: [["station","美術館を巡りやすい"],["design","建築や館内アートを楽しめる"],["quiet","静かに過ごせる"]]
     }
   };
 
