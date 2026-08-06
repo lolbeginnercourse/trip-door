@@ -1,0 +1,742 @@
+{
+  "schemaVersion": 3,
+  "complete": true,
+  "phase": "first-pass",
+  "generatedAt": "2026-08-06T21:47:13.762Z",
+  "shardIndex": 15,
+  "shardSize": 25,
+  "start": 375,
+  "end": 400,
+  "totalRecords": 1256,
+  "totalUnique": 750,
+  "processedUnique": 25,
+  "retriedUnique": 0,
+  "skippedMatchedUnique": 0,
+  "retryAttemptsPerRequest": 1,
+  "results": [
+    {
+      "requestKey": "name:リッチモンドホテル青森|青森県|青森",
+      "sourceHotel": {
+        "name": "リッチモンドホテル青森",
+        "prefecture": "青森県",
+        "station": "青森",
+        "area": "青森",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        722
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "80726",
+        "hotelName": "リッチモンドホテル青森",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:アパホテル〈青森駅東〉|青森県|青森",
+      "sourceHotel": {
+        "name": "アパホテル〈青森駅東〉",
+        "prefecture": "青森県",
+        "station": "青森",
+        "area": "青森",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        723
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "146141",
+        "hotelName": "アパホテル〈青森駅東〉",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn青森駅前|青森県|青森",
+      "sourceHotel": {
+        "name": "東横INN青森駅前",
+        "prefecture": "青森県",
+        "station": "青森",
+        "area": "青森",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        724
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "70700",
+        "hotelName": "東横INN青森駅前",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ダイワロイネットホテル山形駅前|山形県|山形",
+      "sourceHotel": {
+        "name": "ダイワロイネットホテル山形駅前",
+        "prefecture": "山形県",
+        "station": "山形",
+        "area": "山形",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        725
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "182853",
+        "hotelName": "ダイワロイネットホテル山形駅前",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルメトロポリタン山形|山形県|山形",
+      "sourceHotel": {
+        "name": "ホテルメトロポリタン山形",
+        "prefecture": "山形県",
+        "station": "山形",
+        "area": "山形",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        726
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "1701",
+        "hotelName": "ホテルメトロポリタン山形",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:コンフォートホテル山形|山形県|山形",
+      "sourceHotel": {
+        "name": "コンフォートホテル山形",
+        "prefecture": "山形県",
+        "station": "山形",
+        "area": "山形",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        727
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "70285",
+        "hotelName": "コンフォートホテル山形",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:リッチモンドホテル山形駅前|山形県|山形",
+      "sourceHotel": {
+        "name": "リッチモンドホテル山形駅前",
+        "prefecture": "山形県",
+        "station": "山形",
+        "area": "山形",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        728
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "68631",
+        "hotelName": "リッチモンドホテル山形駅前",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn山形駅西口|山形県|山形",
+      "sourceHotel": {
+        "name": "東横INN山形駅西口",
+        "prefecture": "山形県",
+        "station": "山形",
+        "area": "山形",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        729
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "41425",
+        "hotelName": "東横INN山形駅西口",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルフォルクローロ高畠|山形県|高畠",
+      "sourceHotel": {
+        "name": "ホテルフォルクローロ高畠",
+        "prefecture": "山形県",
+        "station": "高畠",
+        "area": "南陽・赤湯",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        730
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "1721",
+        "hotelName": "ホテルフォルクローロ高畠<JR東日本ホテルズ>",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルモントビュー米沢|山形県|米沢",
+      "sourceHotel": {
+        "name": "ホテルモントビュー米沢",
+        "prefecture": "山形県",
+        "station": "米沢",
+        "area": "南陽・赤湯",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        731
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "84591",
+        "hotelName": "ホテルモントビュー米沢",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn米沢駅前|山形県|米沢",
+      "sourceHotel": {
+        "name": "東横INN米沢駅前",
+        "prefecture": "山形県",
+        "station": "米沢",
+        "area": "南陽・赤湯",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        732
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "31472",
+        "hotelName": "東横INN米沢駅前",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルルートイン米沢駅東|山形県|米沢",
+      "sourceHotel": {
+        "name": "ホテルルートイン米沢駅東",
+        "prefecture": "山形県",
+        "station": "米沢",
+        "area": "南陽・赤湯",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        733
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "16338",
+        "hotelName": "ホテルルートイン米沢駅東",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ビジネスホテル平成|山形県|米沢",
+      "sourceHotel": {
+        "name": "ビジネスホテル平成",
+        "prefecture": "山形県",
+        "station": "米沢",
+        "area": "南陽・赤湯",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        734
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "20601",
+        "hotelName": "ビジネスホテル平成<山形県>",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテル日航新潟|新潟県|新潟",
+      "sourceHotel": {
+        "name": "ホテル日航新潟",
+        "prefecture": "新潟県",
+        "station": "新潟",
+        "area": "新潟・白山",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        735,
+        740,
+        745
+      ],
+      "duplicateGroupSize": 3,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "16683",
+        "hotelName": "ホテル日航新潟",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:アパホテル&リゾート〈新潟駅前大通〉|新潟県|新潟",
+      "sourceHotel": {
+        "name": "アパホテル&リゾート〈新潟駅前大通〉",
+        "prefecture": "新潟県",
+        "station": "新潟",
+        "area": "新潟・白山",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        736,
+        741,
+        746
+      ],
+      "duplicateGroupSize": 3,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "183212",
+        "hotelName": "アパホテル&リゾート〈新潟駅前大通〉",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:jr東日本ホテルメッツ 新潟|新潟県|新潟",
+      "sourceHotel": {
+        "name": "JR東日本ホテルメッツ 新潟",
+        "prefecture": "新潟県",
+        "station": "新潟",
+        "area": "新潟・白山",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        737,
+        742,
+        747
+      ],
+      "duplicateGroupSize": 3,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "141308",
+        "hotelName": "JR東日本ホテルメッツ新潟",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:コンフォートホテル新潟駅前|新潟県|新潟",
+      "sourceHotel": {
+        "name": "コンフォートホテル新潟駅前",
+        "prefecture": "新潟県",
+        "station": "新潟",
+        "area": "新潟・白山",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        738,
+        743,
+        748
+      ],
+      "duplicateGroupSize": 3,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "73877",
+        "hotelName": "コンフォートホテル新潟駅前",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn新潟古町|新潟県|古町",
+      "sourceHotel": {
+        "name": "東横INN新潟古町",
+        "prefecture": "新潟県",
+        "station": "古町",
+        "area": "新潟・白山",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        739,
+        744,
+        749
+      ],
+      "duplicateGroupSize": 3,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "76498",
+        "hotelName": "東横INN新潟古町",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルニューオータニ長岡|新潟県|長岡",
+      "sourceHotel": {
+        "name": "ホテルニューオータニ長岡",
+        "prefecture": "新潟県",
+        "station": "長岡",
+        "area": "長岡",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        750
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "2104",
+        "hotelName": "ホテルニューオータニ長岡",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:jr東日本ホテルメッツ 長岡|新潟県|長岡",
+      "sourceHotel": {
+        "name": "JR東日本ホテルメッツ 長岡",
+        "prefecture": "新潟県",
+        "station": "長岡",
+        "area": "長岡",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        751
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "1711",
+        "hotelName": "JR東日本ホテルメッツ長岡",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテル法華クラブ新潟長岡|新潟県|長岡",
+      "sourceHotel": {
+        "name": "ホテル法華クラブ新潟長岡",
+        "prefecture": "新潟県",
+        "station": "長岡",
+        "area": "長岡",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        752
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "67349",
+        "hotelName": "ホテル法華クラブ新潟長岡",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルリブマックス新潟長岡駅前|新潟県|長岡",
+      "sourceHotel": {
+        "name": "ホテルリブマックス新潟長岡駅前",
+        "prefecture": "新潟県",
+        "station": "長岡",
+        "area": "長岡",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        753
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "172839",
+        "hotelName": "ホテルリブマックス新潟長岡駅前",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:長岡グランドホテル|新潟県|長岡",
+      "sourceHotel": {
+        "name": "長岡グランドホテル",
+        "prefecture": "新潟県",
+        "station": "長岡",
+        "area": "長岡",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        754
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "9410",
+        "hotelName": "長岡グランドホテル(BBHホテルグループ)",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ダイワロイネットホテル富山駅前|富山県|富山",
+      "sourceHotel": {
+        "name": "ダイワロイネットホテル富山駅前",
+        "prefecture": "富山県",
+        "station": "富山",
+        "area": "富山",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        755,
+        760,
+        765
+      ],
+      "duplicateGroupSize": 3,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "172347",
+        "hotelName": "ダイワロイネットホテル富山駅前",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルjalシティ富山|富山県|富山",
+      "sourceHotel": {
+        "name": "ホテルJALシティ富山",
+        "prefecture": "富山県",
+        "station": "富山",
+        "area": "富山",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        756,
+        761,
+        766
+      ],
+      "duplicateGroupSize": 3,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "183372",
+        "hotelName": "ホテルJALシティ富山",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    }
+  ]
+}
