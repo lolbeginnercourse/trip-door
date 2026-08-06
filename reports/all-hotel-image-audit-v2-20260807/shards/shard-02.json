@@ -1,7 +1,8 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "complete": true,
-  "generatedAt": "2026-08-06T20:21:59.416Z",
+  "phase": "retry",
+  "generatedAt": "2026-08-06T23:37:46.936Z",
   "shardIndex": 2,
   "shardSize": 25,
   "start": 50,
@@ -9,6 +10,9 @@
   "totalRecords": 1256,
   "totalUnique": 750,
   "processedUnique": 25,
+  "retriedUnique": 4,
+  "skippedMatchedUnique": 21,
+  "retryAttemptsPerRequest": 5,
   "results": [
     {
       "requestKey": "name:相鉄フレッサイン 東京六本木|東京都|六本木",
@@ -323,7 +327,8 @@
         "matchedBy": "",
         "matchEvidence": [],
         "transportError": "",
-        "rawExcerpt": ""
+        "rawExcerpt": "",
+        "attemptsUsed": 1
       },
       "affiliate": {
         "httpStatus": 200,
@@ -331,9 +336,17 @@
         "rakutenHotelNo": "",
         "providers": [],
         "transportError": "",
-        "rawExcerpt": ""
+        "rawExcerpt": "",
+        "attemptsUsed": 1
       },
-      "causeCode": "multiple_candidates"
+      "causeCode": "multiple_candidates",
+      "retry": {
+        "attempted": true,
+        "attemptedAt": "2026-08-06T23:35:31.434Z",
+        "previousCauseCode": "multiple_candidates",
+        "previousHasImage": false,
+        "attemptsPerRequest": 5
+      }
     },
     {
       "requestKey": "name:アパホテル〈渋谷道玄坂上〉|東京都|渋谷・神泉",
@@ -424,7 +437,8 @@
         "matchedBy": "",
         "matchEvidence": [],
         "transportError": "",
-        "rawExcerpt": ""
+        "rawExcerpt": "",
+        "attemptsUsed": 1
       },
       "affiliate": {
         "httpStatus": 200,
@@ -432,9 +446,17 @@
         "rakutenHotelNo": "",
         "providers": [],
         "transportError": "",
-        "rawExcerpt": ""
+        "rawExcerpt": "",
+        "attemptsUsed": 1
       },
-      "causeCode": "not_found_by_current_rakuten_search"
+      "causeCode": "not_found_by_current_rakuten_search",
+      "retry": {
+        "attempted": true,
+        "attemptedAt": "2026-08-06T23:35:35.577Z",
+        "previousCauseCode": "not_found_by_current_rakuten_search",
+        "previousHasImage": false,
+        "attemptsPerRequest": 5
+      }
     },
     {
       "requestKey": "name:渋谷東武ホテル|東京都|渋谷",
@@ -580,7 +602,8 @@
         "matchedBy": "",
         "matchEvidence": [],
         "transportError": "",
-        "rawExcerpt": ""
+        "rawExcerpt": "",
+        "attemptsUsed": 3
       },
       "affiliate": {
         "httpStatus": 200,
@@ -588,9 +611,17 @@
         "rakutenHotelNo": "",
         "providers": [],
         "transportError": "",
-        "rawExcerpt": ""
+        "rawExcerpt": "",
+        "attemptsUsed": 1
       },
-      "causeCode": "not_found_by_current_rakuten_search"
+      "causeCode": "not_found_by_current_rakuten_search",
+      "retry": {
+        "attempted": true,
+        "attemptedAt": "2026-08-06T23:37:43.552Z",
+        "previousCauseCode": "not_found_by_current_rakuten_search",
+        "previousHasImage": false,
+        "attemptsPerRequest": 5
+      }
     },
     {
       "requestKey": "name:アパホテル&リゾート〈西新宿五丁目駅タワー〉|東京都|西新宿五丁目",
@@ -622,7 +653,8 @@
         "matchedBy": "",
         "matchEvidence": [],
         "transportError": "",
-        "rawExcerpt": ""
+        "rawExcerpt": "",
+        "attemptsUsed": 1
       },
       "affiliate": {
         "httpStatus": 200,
@@ -630,9 +662,17 @@
         "rakutenHotelNo": "",
         "providers": [],
         "transportError": "",
-        "rawExcerpt": ""
+        "rawExcerpt": "",
+        "attemptsUsed": 1
       },
-      "causeCode": "not_found_by_current_rakuten_search"
+      "causeCode": "not_found_by_current_rakuten_search",
+      "retry": {
+        "attempted": true,
+        "attemptedAt": "2026-08-06T23:37:46.936Z",
+        "previousCauseCode": "not_found_by_current_rakuten_search",
+        "previousHasImage": false,
+        "attemptsPerRequest": 5
+      }
     },
     {
       "requestKey": "name:東急ステイ西新宿|東京都|西新宿五丁目",
