@@ -1,0 +1,767 @@
+{
+  "schemaVersion": 3,
+  "complete": true,
+  "phase": "first-pass",
+  "generatedAt": "2026-08-06T21:54:16.595Z",
+  "shardIndex": 22,
+  "shardSize": 25,
+  "start": 550,
+  "end": 575,
+  "totalRecords": 1256,
+  "totalUnique": 750,
+  "processedUnique": 25,
+  "retriedUnique": 0,
+  "skippedMatchedUnique": 0,
+  "retryAttemptsPerRequest": 1,
+  "results": [
+    {
+      "requestKey": "name:ホテルアベストグランデ高槻|大阪府|高槻",
+      "sourceHotel": {
+        "name": "ホテルアベストグランデ高槻",
+        "prefecture": "大阪府",
+        "station": "高槻",
+        "area": "高槻",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1015
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "179156",
+        "hotelName": "ホテルアベストグランデ高槻 なごみの湯",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:高槻w&mホテル|大阪府|高槻市",
+      "sourceHotel": {
+        "name": "高槻W&Mホテル",
+        "prefecture": "大阪府",
+        "station": "高槻市",
+        "area": "高槻",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1016
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "51185",
+        "hotelName": "高槻W&Mホテル",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ワークホテルアネックス天神の湯|大阪府|高槻",
+      "sourceHotel": {
+        "name": "ワークホテルアネックス天神の湯",
+        "prefecture": "大阪府",
+        "station": "高槻",
+        "area": "高槻",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1017
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 404,
+        "status": "not_found",
+        "hasImage": false,
+        "hotelNo": "",
+        "hotelName": "",
+        "matchedBy": "",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": {
+        "httpStatus": 200,
+        "hasRakuten": false,
+        "rakutenHotelNo": "",
+        "providers": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "causeCode": "not_found_by_current_rakuten_search"
+    },
+    {
+      "requestKey": "name:ホテル トレンド 高槻|大阪府|高槻市",
+      "sourceHotel": {
+        "name": "ホテル トレンド 高槻",
+        "prefecture": "大阪府",
+        "station": "高槻市",
+        "area": "高槻",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1018
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "188186",
+        "hotelName": "ホテルトレンド高槻",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルクレストいばらき|大阪府|茨木",
+      "sourceHotel": {
+        "name": "ホテルクレストいばらき",
+        "prefecture": "大阪府",
+        "station": "茨木",
+        "area": "高槻",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1019
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "8176",
+        "hotelName": "ホテルクレスト いばらき",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:大江戸温泉物語 箕面観光ホテル|大阪府|箕面",
+      "sourceHotel": {
+        "name": "大江戸温泉物語 箕面観光ホテル",
+        "prefecture": "大阪府",
+        "station": "箕面",
+        "area": "箕面船場阪大前",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1020
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 404,
+        "status": "not_found",
+        "hasImage": false,
+        "hotelNo": "",
+        "hotelName": "",
+        "matchedBy": "",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": {
+        "httpStatus": 200,
+        "hasRakuten": false,
+        "rakutenHotelNo": "",
+        "providers": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "causeCode": "not_found_by_current_rakuten_search"
+    },
+    {
+      "requestKey": "name:新大阪江坂東急reiホテル|大阪府|江坂",
+      "sourceHotel": {
+        "name": "新大阪江坂東急REIホテル",
+        "prefecture": "大阪府",
+        "station": "江坂",
+        "area": "箕面船場阪大前",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1021
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "527",
+        "hotelName": "新大阪江坂東急REIホテル",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:サニーストンホテル|大阪府|江坂",
+      "sourceHotel": {
+        "name": "サニーストンホテル",
+        "prefecture": "大阪府",
+        "station": "江坂",
+        "area": "箕面船場阪大前",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1022
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "5585",
+        "hotelName": "サニーストンホテル",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:アパホテル〈新大阪 江坂駅前〉|大阪府|江坂",
+      "sourceHotel": {
+        "name": "アパホテル〈新大阪 江坂駅前〉",
+        "prefecture": "大阪府",
+        "station": "江坂",
+        "area": "箕面船場阪大前",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1023
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "179719",
+        "hotelName": "アパホテル〈新大阪 江坂駅前〉",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルクライトン江坂|大阪府|江坂",
+      "sourceHotel": {
+        "name": "ホテルクライトン江坂",
+        "prefecture": "大阪府",
+        "station": "江坂",
+        "area": "箕面船場阪大前",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1024
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "950",
+        "hotelName": "ホテルクライトン江坂",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:リッチモンドホテル東大阪|大阪府|長田",
+      "sourceHotel": {
+        "name": "リッチモンドホテル東大阪",
+        "prefecture": "大阪府",
+        "station": "長田",
+        "area": "八戸ノ里",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1025
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "1590",
+        "hotelName": "リッチモンドホテル東大阪",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルウィングインターナショナルセレクト東大阪|大阪府|長田",
+      "sourceHotel": {
+        "name": "ホテルウィングインターナショナルセレクト東大阪",
+        "prefecture": "大阪府",
+        "station": "長田",
+        "area": "八戸ノ里",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1026
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 404,
+        "status": "not_found",
+        "hasImage": false,
+        "hotelNo": "",
+        "hotelName": "",
+        "matchedBy": "",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": {
+        "httpStatus": 200,
+        "hasRakuten": false,
+        "rakutenHotelNo": "",
+        "providers": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "causeCode": "not_found_by_current_rakuten_search"
+    },
+    {
+      "requestKey": "name:u・コミュニティホテル|大阪府|河内小阪",
+      "sourceHotel": {
+        "name": "U・コミュニティホテル",
+        "prefecture": "大阪府",
+        "station": "河内小阪",
+        "area": "八戸ノ里",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1027
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "1394",
+        "hotelName": "U・コミュニティホテル(BBHホテルグループ)",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:sekai hotel fuse|大阪府|布施",
+      "sourceHotel": {
+        "name": "SEKAI HOTEL Fuse",
+        "prefecture": "大阪府",
+        "station": "布施",
+        "area": "八戸ノ里",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1028
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 404,
+        "status": "not_found",
+        "hasImage": false,
+        "hotelNo": "",
+        "hotelName": "",
+        "matchedBy": "",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": {
+        "httpStatus": 200,
+        "hasRakuten": false,
+        "rakutenHotelNo": "",
+        "providers": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "causeCode": "not_found_by_current_rakuten_search"
+    },
+    {
+      "requestKey": "name:ホテルセイリュウ|大阪府|石切",
+      "sourceHotel": {
+        "name": "ホテルセイリュウ",
+        "prefecture": "大阪府",
+        "station": "石切",
+        "area": "八戸ノ里",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1029
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "8733",
+        "hotelName": "大阪の絶景温泉旅館 ホテルセイリュウ",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルa.p|大阪府|大阪空港・蛍池",
+      "sourceHotel": {
+        "name": "ホテルA.P",
+        "prefecture": "大阪府",
+        "station": "大阪空港・蛍池",
+        "area": "曽根・豊中",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1030
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "5870",
+        "hotelName": "ホテル A.P(大阪空港前)",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn大阪伊丹空港|大阪府|大阪空港",
+      "sourceHotel": {
+        "name": "東横INN大阪伊丹空港",
+        "prefecture": "大阪府",
+        "station": "大阪空港",
+        "area": "曽根・豊中",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1031
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "130543",
+        "hotelName": "東横INN大阪伊丹空港",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:グリーンリッチホテル大阪空港前|大阪府|大阪空港",
+      "sourceHotel": {
+        "name": "グリーンリッチホテル大阪空港前",
+        "prefecture": "大阪府",
+        "station": "大阪空港",
+        "area": "曽根・豊中",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1032
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "106200",
+        "hotelName": "グリーンリッチホテル大阪空港前 人工温泉・二股湯の華",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:リフテル大阪空港前|大阪府|大阪空港",
+      "sourceHotel": {
+        "name": "リフテル大阪空港前",
+        "prefecture": "大阪府",
+        "station": "大阪空港",
+        "area": "曽根・豊中",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1033
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "149455",
+        "hotelName": "リフテル大阪空港前",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:大阪空港ホテル|大阪府|大阪空港",
+      "sourceHotel": {
+        "name": "大阪空港ホテル",
+        "prefecture": "大阪府",
+        "station": "大阪空港",
+        "area": "曽根・豊中",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1034
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "107624",
+        "hotelName": "大阪空港ホテル",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ラ・ジェント・ホテル大阪ベイ|大阪府|桜島",
+      "sourceHotel": {
+        "name": "ラ・ジェント・ホテル大阪ベイ",
+        "prefecture": "大阪府",
+        "station": "桜島",
+        "area": "桜島・ユニバーサルシティ",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1035
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "158613",
+        "hotelName": "ラ・ジェント・ホテル大阪ベイ",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ザ シンギュラリ ホテル&スカイスパ アット ユニバーサル・スタジオ・ジャパン|大阪府|ユニバーサルシティ",
+      "sourceHotel": {
+        "name": "ザ シンギュラリ ホテル&スカイスパ アット ユニバーサル・スタジオ・ジャパン",
+        "prefecture": "大阪府",
+        "station": "ユニバーサルシティ",
+        "area": "桜島・ユニバーサルシティ",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1036
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "160809",
+        "hotelName": "ザ シンギュラリホテル & スカイスパ アット ユニバーサル・スタジオ・ジャパン",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテル京阪 ユニバーサル・タワー|大阪府|ユニバーサルシティ",
+      "sourceHotel": {
+        "name": "ホテル京阪 ユニバーサル・タワー",
+        "prefecture": "大阪府",
+        "station": "ユニバーサルシティ",
+        "area": "桜島・ユニバーサルシティ",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1037
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "71921",
+        "hotelName": "ホテル京阪 ユニバーサル・タワー",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:オリエンタルホテル ユニバーサル・シティ|大阪府|ユニバーサルシティ",
+      "sourceHotel": {
+        "name": "オリエンタルホテル ユニバーサル・シティ",
+        "prefecture": "大阪府",
+        "station": "ユニバーサルシティ",
+        "area": "桜島・ユニバーサルシティ",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1038
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "182668",
+        "hotelName": "オリエンタルホテル ユニバーサル・シティ",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテル ユニバーサル ポート|大阪府|ユニバーサルシティ",
+      "sourceHotel": {
+        "name": "ホテル ユニバーサル ポート",
+        "prefecture": "大阪府",
+        "station": "ユニバーサルシティ",
+        "area": "桜島・ユニバーサルシティ",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1039
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "38281",
+        "hotelName": "ホテルユニバーサルポート",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    }
+  ]
+}
