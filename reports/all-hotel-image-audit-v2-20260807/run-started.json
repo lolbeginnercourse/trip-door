@@ -1,0 +1,12 @@
+{
+  "phase": "started",
+  "runId": "31127296785",
+  "runAttempt": "1",
+  "event": "pull_request",
+  "headRef": "audit-run/full-hotel-image-audit-v3-20260807",
+  "totalRecords": 1256,
+  "totalUnique": 750,
+  "shardSize": 25,
+  "shardCount": 30,
+  "startedAt": "2026-08-06T20:01:33Z"
+}
