@@ -1,8 +1,8 @@
 {
   "schemaVersion": 3,
   "complete": true,
-  "phase": "first-pass",
-  "generatedAt": "2026-08-06T21:46:24.872Z",
+  "phase": "retry",
+  "generatedAt": "2026-08-06T23:54:43.726Z",
   "shardIndex": 14,
   "shardSize": 25,
   "start": 350,
@@ -10,9 +10,9 @@
   "totalRecords": 1256,
   "totalUnique": 750,
   "processedUnique": 25,
-  "retriedUnique": 0,
-  "skippedMatchedUnique": 0,
-  "retryAttemptsPerRequest": 1,
+  "retriedUnique": 2,
+  "skippedMatchedUnique": 23,
+  "retryAttemptsPerRequest": 5,
   "results": [
     {
       "requestKey": "name:ホテルルートイン仙台泉インター|宮城県|泉区",
@@ -620,7 +620,14 @@
         "rawExcerpt": "",
         "attemptsUsed": 1
       },
-      "causeCode": "not_found_by_current_rakuten_search"
+      "causeCode": "not_found_by_current_rakuten_search",
+      "retry": {
+        "attempted": true,
+        "attemptedAt": "2026-08-06T23:54:38.887Z",
+        "previousCauseCode": "not_found_by_current_rakuten_search",
+        "previousHasImage": false,
+        "attemptsPerRequest": 5
+      }
     },
     {
       "requestKey": "name:ホテルjin盛岡駅前|岩手県|盛岡",
@@ -657,7 +664,14 @@
         "rawExcerpt": "",
         "attemptsUsed": 1
       },
-      "causeCode": "not_found_by_current_rakuten_search"
+      "causeCode": "not_found_by_current_rakuten_search",
+      "retry": {
+        "attempted": true,
+        "attemptedAt": "2026-08-06T23:54:43.725Z",
+        "previousCauseCode": "not_found_by_current_rakuten_search",
+        "previousHasImage": false,
+        "attemptsPerRequest": 5
+      }
     },
     {
       "requestKey": "name:東横inn盛岡駅前|岩手県|盛岡",
