@@ -1,0 +1,451 @@
+/* Approved 2026-08-06 top-page refinement. Scoped to the home view. */
+
+:root {
+  --top-radius-control: 14px;
+  --top-radius-panel: 22px;
+  --top-shadow: 0 18px 46px rgba(39, 31, 37, .10);
+}
+
+.brand-mark,
+.header-compare,
+.icon-button {
+  border-radius: 12px;
+}
+
+body:not([data-category]) .home-hero {
+  min-height: min(700px, calc(100svh - 100px));
+  padding-block: 72px;
+  background: #f4f1ee;
+}
+
+body:not([data-category]) .hero-grid {
+  grid-template-columns: minmax(0, 44fr) minmax(430px, 56fr);
+  gap: clamp(48px, 7vw, 96px);
+}
+
+body:not([data-category]) .hero-link {
+  width: min(300px, 100%);
+  min-height: 58px;
+  margin-top: 30px;
+  padding: 0 22px 0 26px;
+  border: 0;
+  border-radius: 999px;
+  color: #fff;
+  background: var(--stage);
+  box-shadow: 0 12px 28px rgba(113, 53, 84, .20);
+  font-size: 0;
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+
+body:not([data-category]) .hero-link::before {
+  content: "ホテルを探す";
+  font-size: 1rem;
+}
+
+body:not([data-category]) .hero-link span {
+  width: 34px;
+  height: 34px;
+  flex-basis: 34px;
+  color: #fff;
+  background: rgba(255, 255, 255, .14);
+  font-size: 1rem;
+}
+
+body:not([data-category]) .hero-link:hover {
+  box-shadow: 0 16px 34px rgba(113, 53, 84, .26);
+  transform: translateY(-2px);
+}
+
+body:not([data-category]) .hero-visual {
+  border-radius: 24px;
+  box-shadow: var(--top-shadow);
+}
+
+body:not([data-category]) .site-purpose {
+  display: none;
+}
+
+body:not([data-category]) .category-section {
+  padding-block: 76px 96px;
+  background: #fffefd;
+}
+
+body:not([data-category]) .section-heading {
+  max-width: 760px;
+  margin: 0 auto 42px;
+  text-align: center;
+}
+
+body:not([data-category]) .section-heading .section-kicker {
+  margin-bottom: 8px;
+}
+
+body:not([data-category]) .category-cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+body:not([data-category]) .category-card {
+  position: relative;
+  min-height: 310px;
+  padding: 34px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 122px;
+  gap: 24px;
+  border: 0;
+  border-radius: 24px;
+  color: #fff;
+  overflow: hidden;
+  box-shadow: 0 14px 34px rgba(36, 30, 34, .12);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+
+body:not([data-category]) .category-card--stage {
+  background: linear-gradient(145deg, #713554 0%, #7e3d60 100%);
+}
+
+body:not([data-category]) .category-card--esports {
+  background: linear-gradient(145deg, #0b5f66 0%, #116d72 100%);
+}
+
+body:not([data-category]) .category-card:hover {
+  box-shadow: 0 20px 42px rgba(36, 30, 34, .17);
+  transform: translateY(-3px);
+}
+
+body:not([data-category]) .category-card:nth-child(even) .category-card__copy,
+body:not([data-category]) .category-card:nth-child(even) .category-card__visual {
+  order: initial;
+}
+
+body:not([data-category]) .category-card__copy {
+  min-width: 0;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+body:not([data-category]) .category-card__number,
+body:not([data-category]) .tag-row {
+  display: none;
+}
+
+body:not([data-category]) .category-card__label,
+body:not([data-category]) .category-card--stage :is(.category-card__label, .category-card__action),
+body:not([data-category]) .category-card--esports :is(.category-card__label, .category-card__action) {
+  margin-top: 0;
+  color: rgba(255, 255, 255, .82);
+}
+
+body:not([data-category]) .category-card strong {
+  max-width: 390px;
+  margin-top: 10px;
+  color: #fff;
+  font-size: clamp(1.65rem, 2.25vw, 2.15rem);
+  line-height: 1.35;
+}
+
+body:not([data-category]) .category-card__description {
+  max-width: 430px;
+  margin-top: 16px;
+  color: rgba(255, 255, 255, .86);
+  font-size: .95rem;
+  line-height: 1.75;
+}
+
+body:not([data-category]) .category-card__action {
+  width: min(100%, 320px);
+  min-height: 50px;
+  margin-top: auto;
+  padding: 10px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 999px;
+  color: var(--stage) !important;
+  background: #fff;
+  box-shadow: 0 8px 20px rgba(30, 24, 28, .10);
+}
+
+body:not([data-category]) .category-card--esports .category-card__action {
+  color: var(--game) !important;
+}
+
+body:not([data-category]) .category-card__visual {
+  width: 122px;
+  height: 122px;
+  min-height: 0;
+  padding: 24px;
+  display: grid;
+  place-items: center;
+  align-self: start;
+  border-radius: 50%;
+  color: #fff;
+  background: rgba(255, 255, 255, .12) !important;
+  overflow: visible;
+}
+
+body:not([data-category]) .category-card__visual::after {
+  display: none;
+}
+
+body:not([data-category]) .category-card__visual > * {
+  display: none;
+}
+
+body:not([data-category]) .category-card__visual svg {
+  width: 68px;
+  height: 68px;
+  display: block;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  opacity: .9;
+}
+
+body:not([data-category]) .benefit-strip {
+  margin-top: 26px;
+  padding: 18px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  border-radius: 22px;
+  background: #f7f3f0;
+  box-shadow: 0 10px 30px rgba(39, 31, 37, .06);
+}
+
+body:not([data-category]) .benefit-item {
+  min-width: 0;
+  padding: 18px;
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr);
+  gap: 13px;
+  align-items: start;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, .72);
+}
+
+body:not([data-category]) .benefit-icon {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: var(--stage);
+  background: #f4e9ef;
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+body:not([data-category]) .benefit-item:nth-child(2) .benefit-icon {
+  color: var(--game);
+  background: #e7f1f0;
+}
+
+body:not([data-category]) .benefit-item:nth-child(3) .benefit-icon {
+  color: #806342;
+  background: #f1eade;
+}
+
+body:not([data-category]) .benefit-item strong {
+  display: block;
+  font-size: .95rem;
+  line-height: 1.45;
+}
+
+body:not([data-category]) .benefit-item p {
+  margin-top: 5px;
+  color: var(--muted);
+  font-size: .78rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 1023px) {
+  body:not([data-category]) .hero-grid {
+    grid-template-columns: minmax(0, 1fr) minmax(360px, .92fr);
+    gap: 42px;
+  }
+
+  body:not([data-category]) .category-card {
+    grid-template-columns: minmax(0, 1fr) 96px;
+    padding: 28px;
+  }
+
+  body:not([data-category]) .category-card__visual {
+    width: 96px;
+    height: 96px;
+    padding: 20px;
+  }
+
+  body:not([data-category]) .category-card__visual svg {
+    width: 56px;
+    height: 56px;
+  }
+}
+
+@media (max-width: 767px) {
+  .brand-mark {
+    width: 40px;
+    height: 40px;
+    border-radius: 11px;
+  }
+
+  .mobile-actions .icon-button[data-open-compare] {
+    width: auto;
+    min-width: 72px;
+    padding: 0 11px;
+    display: inline-flex;
+    gap: 5px;
+    border-radius: 999px;
+    font-size: .72rem;
+    font-weight: 800;
+  }
+
+  .mobile-actions .icon-button[data-open-compare] span {
+    position: static;
+    min-width: 20px;
+    height: 20px;
+    border-radius: 10px;
+  }
+
+  body:not([data-category]) .home-hero {
+    padding-block: 44px 52px;
+  }
+
+  body:not([data-category]) .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  body:not([data-category]) .hero-copy .eyebrow {
+    margin-bottom: 12px;
+  }
+
+  body:not([data-category]) .hero-lead {
+    margin-top: 18px;
+  }
+
+  body:not([data-category]) .hero-link {
+    width: 100%;
+    min-height: 56px;
+    margin-top: 22px;
+  }
+
+  body:not([data-category]) .hero-visual {
+    min-height: 220px;
+    padding: 26px 20px;
+    border-radius: 20px;
+  }
+
+  body:not([data-category]) .hero-visual__title,
+  body:not([data-category]) .hero-key {
+    display: none;
+  }
+
+  body:not([data-category]) .stay-timeline {
+    margin-block: auto;
+  }
+
+  body:not([data-category]) .category-section {
+    padding-block: 60px 76px;
+  }
+
+  body:not([data-category]) .section-heading {
+    margin-bottom: 30px;
+    text-align: left;
+  }
+
+  body:not([data-category]) .category-cards {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  body:not([data-category]) .category-card {
+    min-height: 260px;
+    padding: 24px;
+    grid-template-columns: minmax(0, 1fr) 78px;
+    gap: 14px;
+    border-radius: 20px;
+  }
+
+  body:not([data-category]) .category-card strong {
+    font-size: 1.45rem;
+  }
+
+  body:not([data-category]) .category-card__description {
+    margin-top: 12px;
+    font-size: .88rem;
+  }
+
+  body:not([data-category]) .category-card__action {
+    width: 100%;
+    min-height: 48px;
+    padding-inline: 16px;
+  }
+
+  body:not([data-category]) .category-card__visual {
+    width: 78px;
+    height: 78px;
+    padding: 16px;
+  }
+
+  body:not([data-category]) .category-card__visual svg {
+    width: 46px;
+    height: 46px;
+  }
+
+  body:not([data-category]) .benefit-strip {
+    margin-top: 16px;
+    padding: 10px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+    border-radius: 18px;
+  }
+
+  body:not([data-category]) .benefit-item {
+    padding: 13px 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    border-radius: 14px;
+    text-align: center;
+  }
+
+  body:not([data-category]) .benefit-icon {
+    width: 38px;
+    height: 38px;
+    font-size: 1rem;
+  }
+
+  body:not([data-category]) .benefit-item strong {
+    font-size: .72rem;
+    line-height: 1.45;
+  }
+
+  body:not([data-category]) .benefit-item p {
+    display: none;
+  }
+}
+
+@media (max-width: 380px) {
+  body:not([data-category]) .category-card {
+    grid-template-columns: minmax(0, 1fr) 64px;
+    padding: 21px;
+  }
+
+  body:not([data-category]) .category-card__visual {
+    width: 64px;
+    height: 64px;
+    padding: 13px;
+  }
+
+  body:not([data-category]) .category-card__visual svg {
+    width: 38px;
+    height: 38px;
+  }
+}
