@@ -1,0 +1,748 @@
+{
+  "schemaVersion": 2,
+  "complete": true,
+  "generatedAt": "2026-08-06T20:26:10.847Z",
+  "shardIndex": 4,
+  "shardSize": 25,
+  "start": 100,
+  "end": 125,
+  "totalRecords": 1256,
+  "totalUnique": 750,
+  "processedUnique": 25,
+  "results": [
+    {
+      "requestKey": "name:ホテルカデンツァ東京|東京都|光が丘",
+      "sourceHotel": {
+        "name": "ホテルカデンツァ東京",
+        "prefecture": "東京都",
+        "station": "光が丘",
+        "area": "練馬",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        246,
+        251,
+        315
+      ],
+      "duplicateGroupSize": 3,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "10988",
+        "hotelName": "ホテルカデンツァ東京",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:和光市東武ホテル|東京都|和光市",
+      "sourceHotel": {
+        "name": "和光市東武ホテル",
+        "prefecture": "東京都",
+        "station": "和光市",
+        "area": "練馬",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        247,
+        252,
+        316
+      ],
+      "duplicateGroupSize": 3,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "178241",
+        "hotelName": "和光市東武ホテル",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn和光市駅前|東京都|和光市",
+      "sourceHotel": {
+        "name": "東横INN和光市駅前",
+        "prefecture": "東京都",
+        "station": "和光市",
+        "area": "練馬",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        248,
+        253,
+        317
+      ],
+      "duplicateGroupSize": 3,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "108352",
+        "hotelName": "東横INN和光市駅前",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:フレックステイイン常盤台|東京都|ときわ台",
+      "sourceHotel": {
+        "name": "フレックステイイン常盤台",
+        "prefecture": "東京都",
+        "station": "ときわ台",
+        "area": "練馬",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        249,
+        254,
+        319
+      ],
+      "duplicateGroupSize": 3,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "28557",
+        "hotelName": "フレックステイイン常盤台",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:吉祥寺東急reiホテル|東京都|吉祥寺",
+      "sourceHotel": {
+        "name": "吉祥寺東急REIホテル",
+        "prefecture": "東京都",
+        "station": "吉祥寺",
+        "area": "吉祥寺",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        255,
+        263,
+        268
+      ],
+      "duplicateGroupSize": 3,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "512",
+        "hotelName": "吉祥寺東急REIホテル",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:吉祥寺エクセルホテル東急|東京都|吉祥寺",
+      "sourceHotel": {
+        "name": "吉祥寺エクセルホテル東急",
+        "prefecture": "東京都",
+        "station": "吉祥寺",
+        "area": "吉祥寺",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        256,
+        264,
+        269
+      ],
+      "duplicateGroupSize": 3,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "184343",
+        "hotelName": "吉祥寺エクセルホテル東急",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:リッチモンドホテル東京武蔵野|東京都|三鷹",
+      "sourceHotel": {
+        "name": "リッチモンドホテル東京武蔵野",
+        "prefecture": "東京都",
+        "station": "三鷹",
+        "area": "吉祥寺",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        257,
+        260,
+        265
+      ],
+      "duplicateGroupSize": 3,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "1351",
+        "hotelName": "リッチモンドホテル東京武蔵野",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:三鷹シティホテル|東京都|三鷹",
+      "sourceHotel": {
+        "name": "三鷹シティホテル",
+        "prefecture": "東京都",
+        "station": "三鷹",
+        "area": "吉祥寺",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        258,
+        261,
+        266
+      ],
+      "duplicateGroupSize": 3,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "135381",
+        "hotelName": "三鷹シティホテル",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:jr東日本ホテルメッツ 武蔵境|東京都|武蔵境",
+      "sourceHotel": {
+        "name": "JR東日本ホテルメッツ 武蔵境",
+        "prefecture": "東京都",
+        "station": "武蔵境",
+        "area": "吉祥寺",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        259,
+        262,
+        267
+      ],
+      "duplicateGroupSize": 3,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "1704",
+        "hotelName": "JR東日本ホテルメッツ武蔵境",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:jr東日本ホテルメッツ 高円寺|東京都|高円寺",
+      "sourceHotel": {
+        "name": "JR東日本ホテルメッツ 高円寺",
+        "prefecture": "東京都",
+        "station": "高円寺",
+        "area": "高円寺",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        270,
+        275,
+        281,
+        286,
+        291,
+        296,
+        301
+      ],
+      "duplicateGroupSize": 7,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "56777",
+        "hotelName": "JR東日本ホテルメッツ高円寺",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ビジネスホテル クレセント|東京都|中野",
+      "sourceHotel": {
+        "name": "ビジネスホテル クレセント",
+        "prefecture": "東京都",
+        "station": "中野",
+        "area": "高円寺",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        271,
+        276,
+        280,
+        285,
+        290,
+        295,
+        300
+      ],
+      "duplicateGroupSize": 7,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "28259",
+        "hotelName": "ビジネスホテル クレセント",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルルートイン東京阿佐ヶ谷|東京都|南阿佐ヶ谷",
+      "sourceHotel": {
+        "name": "ホテルルートイン東京阿佐ヶ谷",
+        "prefecture": "東京都",
+        "station": "南阿佐ヶ谷",
+        "area": "高円寺",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        272,
+        277,
+        282,
+        287,
+        292,
+        297,
+        302
+      ],
+      "duplicateGroupSize": 7,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "1005",
+        "hotelName": "ホテルルートイン東京阿佐ヶ谷",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:スマイルホテル東京阿佐ヶ谷|東京都|阿佐ケ谷",
+      "sourceHotel": {
+        "name": "スマイルホテル東京阿佐ヶ谷",
+        "prefecture": "東京都",
+        "station": "阿佐ケ谷",
+        "area": "高円寺",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        273,
+        278,
+        283,
+        288,
+        293,
+        298,
+        303
+      ],
+      "duplicateGroupSize": 7,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "108651",
+        "hotelName": "スマイルホテル東京阿佐ヶ谷",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:tokio's hotel|東京都|王子",
+      "sourceHotel": {
+        "name": "TOKIO's HOTEL",
+        "prefecture": "東京都",
+        "station": "王子",
+        "area": "王子",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        310
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 404,
+        "status": "not_found",
+        "hasImage": false,
+        "hotelNo": "",
+        "hotelName": "",
+        "matchedBy": "",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": {
+        "httpStatus": 200,
+        "hasRakuten": false,
+        "rakutenHotelNo": "",
+        "providers": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "causeCode": "not_found_by_current_rakuten_search"
+    },
+    {
+      "requestKey": "name:東横inn京浜東北線王子駅北口|東京都|王子",
+      "sourceHotel": {
+        "name": "東横INN京浜東北線王子駅北口",
+        "prefecture": "東京都",
+        "station": "王子",
+        "area": "王子",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        311
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "166449",
+        "hotelName": "東横INN京浜東北線王子駅北口",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:jr東日本ホテルメッツ 赤羽|東京都|赤羽",
+      "sourceHotel": {
+        "name": "JR東日本ホテルメッツ 赤羽",
+        "prefecture": "東京都",
+        "station": "赤羽",
+        "area": "王子",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        312
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "37928",
+        "hotelName": "JR東日本ホテルメッツ赤羽",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルウィングインターナショナル東京赤羽|東京都|赤羽",
+      "sourceHotel": {
+        "name": "ホテルウィングインターナショナル東京赤羽",
+        "prefecture": "東京都",
+        "station": "赤羽",
+        "area": "王子",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        313
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "172058",
+        "hotelName": "KOKO HOTEL 赤羽駅前(旧ホテルウィングインターナショナル東京赤羽)",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station"
+        ],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ダイワロイネットホテル東京赤羽|東京都|赤羽",
+      "sourceHotel": {
+        "name": "ダイワロイネットホテル東京赤羽",
+        "prefecture": "東京都",
+        "station": "赤羽",
+        "area": "王子",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        314
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "108993",
+        "hotelName": "ダイワロイネットホテル東京赤羽",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東急ステイ目黒・祐天寺|東京都|祐天寺",
+      "sourceHotel": {
+        "name": "東急ステイ目黒・祐天寺",
+        "prefecture": "東京都",
+        "station": "祐天寺",
+        "area": "都立大学",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        320
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "41704",
+        "hotelName": "東急ステイ目黒・祐天寺",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルミッドイン目黒駅前|東京都|目黒",
+      "sourceHotel": {
+        "name": "ホテルミッドイン目黒駅前",
+        "prefecture": "東京都",
+        "station": "目黒",
+        "area": "都立大学",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        321
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 404,
+        "status": "not_found",
+        "hasImage": false,
+        "hotelNo": "",
+        "hotelName": "",
+        "matchedBy": "",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": {
+        "httpStatus": 200,
+        "hasRakuten": false,
+        "rakutenHotelNo": "",
+        "providers": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "causeCode": "not_found_by_current_rakuten_search"
+    },
+    {
+      "requestKey": "name:ホテルアベスト目黒|東京都|目黒",
+      "sourceHotel": {
+        "name": "ホテルアベスト目黒",
+        "prefecture": "東京都",
+        "station": "目黒",
+        "area": "都立大学",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        322
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "137045",
+        "hotelName": "ホテルアベスト目黒",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:フレックステイイン多摩川|東京都|新丸子",
+      "sourceHotel": {
+        "name": "フレックステイイン多摩川",
+        "prefecture": "東京都",
+        "station": "新丸子",
+        "area": "都立大学",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        323
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "28900",
+        "hotelName": "フレックステイイン多摩川",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:京王プレッソイン五反田|東京都|五反田",
+      "sourceHotel": {
+        "name": "京王プレッソイン五反田",
+        "prefecture": "東京都",
+        "station": "五反田",
+        "area": "都立大学",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        324
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "29533",
+        "hotelName": "京王プレッソイン五反田",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルマイステイズ蒲田|東京都|蒲田",
+      "sourceHotel": {
+        "name": "ホテルマイステイズ蒲田",
+        "prefecture": "東京都",
+        "station": "蒲田",
+        "area": "蒲田",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        325
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "74696",
+        "hotelName": "ホテルマイステイズ蒲田",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ビジネスイン和|東京都|蒲田",
+      "sourceHotel": {
+        "name": "ビジネスイン和",
+        "prefecture": "東京都",
+        "station": "蒲田",
+        "area": "蒲田",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        326
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "147621",
+        "hotelName": "ビジネスイン和",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    }
+  ]
+}
