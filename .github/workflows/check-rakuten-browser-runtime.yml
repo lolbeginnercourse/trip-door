@@ -1,0 +1,83 @@
+name: Check Rakuten image endpoint as browser
+
+on:
+  push:
+    branches:
+      - agent/strict-rakuten-image-matching-20260807
+    paths:
+      - .github/workflows/check-rakuten-browser-runtime.yml
+
+permissions:
+  contents: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/strict-rakuten-image-matching-20260807
+      - name: Request production image endpoint
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json, urllib.parse, urllib.request, urllib.error
+          name = '東横INN品川港南口天王洲アイル'
+          params = urllib.parse.urlencode({
+              'name': name,
+              'prefecture': '東京都',
+              'area': '天王洲アイル',
+              'station': '天王洲アイル駅',
+              'rakutenHotelNo': '136278'
+          })
+          url = 'https://mainitiworakunisuru.com/api/hotel-image?' + params
+          request = urllib.request.Request(url, headers={
+              'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0 Safari/537.36',
+              'Accept': 'application/json,text/plain,*/*',
+              'Accept-Language': 'ja,en-US;q=0.9,en;q=0.8',
+              'Referer': 'https://mainitiworakunisuru.com/'
+          })
+          result = {'urlPath': '/api/hotel-image', 'name': name}
+          try:
+              with urllib.request.urlopen(request, timeout=30) as response:
+                  body = response.read().decode('utf-8', errors='replace')
+                  result['httpStatus'] = response.status
+                  result['contentType'] = response.headers.get('content-type')
+                  try:
+                      payload = json.loads(body)
+                      image = payload.get('image') or {}
+                      result.update({
+                          'status': payload.get('status'),
+                          'hasImage': bool(image.get('src')),
+                          'hotelNo': image.get('hotelNo'),
+                          'hotelName': image.get('hotelName'),
+                          'matchedBy': image.get('matchedBy'),
+                          'source': image.get('source')
+                      })
+                  except Exception:
+                      result['bodyPreview'] = body[:300]
+          except urllib.error.HTTPError as error:
+              body = error.read().decode('utf-8', errors='replace')
+              result['httpStatus'] = error.code
+              result['contentType'] = error.headers.get('content-type')
+              try:
+                  payload = json.loads(body)
+                  result['status'] = payload.get('status')
+                  result['error'] = payload.get('error')
+              except Exception:
+                  result['bodyPreview'] = body[:300]
+          except Exception as error:
+              result['exception'] = type(error).__name__
+              result['message'] = str(error)[:300]
+          with open('reports/rakuten-browser-runtime.json', 'w', encoding='utf-8') as output:
+              json.dump(result, output, ensure_ascii=False, indent=2)
+              output.write('\n')
+          PY
+      - name: Save result and remove temporary workflow
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reports/rakuten-browser-runtime.json
+          git rm .github/workflows/check-rakuten-browser-runtime.yml
+          git commit -m "Record Rakuten browser runtime check"
+          git push origin HEAD:agent/strict-rakuten-image-matching-20260807
