@@ -1,0 +1,770 @@
+{
+  "schemaVersion": 2,
+  "complete": true,
+  "generatedAt": "2026-08-06T20:02:37.995Z",
+  "shardIndex": 0,
+  "shardSize": 25,
+  "start": 0,
+  "end": 25,
+  "totalRecords": 1256,
+  "totalUnique": 750,
+  "processedUnique": 25,
+  "results": [
+    {
+      "requestKey": "hotelNo:136278",
+      "sourceHotel": {
+        "name": "東横INN品川港南口天王洲アイル",
+        "prefecture": "東京都",
+        "station": "天王洲アイル",
+        "area": "天王洲アイル",
+        "storedRakutenHotelNo": "136278"
+      },
+      "recordIndexes": [
+        0,
+        69,
+        74,
+        341
+      ],
+      "duplicateGroupSize": 4,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "136278",
+        "hotelName": "東横INN品川港南口天王洲アイル",
+        "matchedBy": "hotelNo",
+        "matchEvidence": [
+          "hotelNo"
+        ],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "hotelNo:196160",
+      "sourceHotel": {
+        "name": "ANAホリデイ・イン東京ベイ",
+        "prefecture": "東京都",
+        "station": "天王洲アイル",
+        "area": "天王洲アイル",
+        "storedRakutenHotelNo": "196160"
+      },
+      "recordIndexes": [
+        1
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "196160",
+        "hotelName": "ANAホリデイ・イン東京ベイ by IHG",
+        "matchedBy": "hotelNo",
+        "matchEvidence": [
+          "hotelNo"
+        ],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:スーパーホテル品川・新馬場|東京都|新馬場",
+      "sourceHotel": {
+        "name": "スーパーホテル品川・新馬場",
+        "prefecture": "東京都",
+        "station": "新馬場",
+        "area": "天王洲アイル",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        2,
+        68,
+        73,
+        340
+      ],
+      "duplicateGroupSize": 4,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "147079",
+        "hotelName": "高濃度炭酸泉 七福神の湯 スーパーホテル品川・新馬場",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area"
+        ],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:スーパーホテル品川・青物横丁|東京都|青物横丁",
+      "sourceHotel": {
+        "name": "スーパーホテル品川・青物横丁",
+        "prefecture": "東京都",
+        "station": "青物横丁",
+        "area": "天王洲アイル",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        3,
+        9
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "69219",
+        "hotelName": "高濃度炭酸泉 銀杏の湯 スーパーホテル品川・青物横丁",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "access"
+        ],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn品川青物横丁駅|東京都|青物横丁",
+      "sourceHotel": {
+        "name": "東横INN品川青物横丁駅",
+        "prefecture": "東京都",
+        "station": "青物横丁",
+        "area": "天王洲アイル",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        4,
+        8
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "108390",
+        "hotelName": "東横INN品川青物横丁駅",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:アワーズイン阪急|東京都|大井町",
+      "sourceHotel": {
+        "name": "アワーズイン阪急",
+        "prefecture": "東京都",
+        "station": "大井町",
+        "area": "大井競馬場前・立会川",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        5
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "128577",
+        "hotelName": "アワーズイン阪急",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ヴィアイン品川大井町|東京都|大井町",
+      "sourceHotel": {
+        "name": "ヴィアイン品川大井町",
+        "prefecture": "東京都",
+        "station": "大井町",
+        "area": "大井競馬場前・立会川",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        6
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "74636",
+        "hotelName": "ヴィアイン品川大井町(JR西日本グループ)",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station"
+        ],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルマイステイズプレミア大森|東京都|大森",
+      "sourceHotel": {
+        "name": "ホテルマイステイズプレミア大森",
+        "prefecture": "東京都",
+        "station": "大森",
+        "area": "大井競馬場前・立会川",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        7
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "715",
+        "hotelName": "ホテルマイステイズプレミア大森",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:日本青年館ホテル|東京都|外苑前・国立競技場",
+      "sourceHotel": {
+        "name": "日本青年館ホテル",
+        "prefecture": "東京都",
+        "station": "外苑前・国立競技場",
+        "area": "外苑前・国立競技場",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        10
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "163169",
+        "hotelName": "日本青年館ホテル",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東急ステイ青山プレミア|東京都|外苑前",
+      "sourceHotel": {
+        "name": "東急ステイ青山プレミア",
+        "prefecture": "東京都",
+        "station": "外苑前",
+        "area": "外苑前・国立競技場",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        11
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "70328",
+        "hotelName": "東急ステイ青山プレミア",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルウィングインターナショナルプレミアム東京四谷|東京都|四谷三丁目",
+      "sourceHotel": {
+        "name": "ホテルウィングインターナショナルプレミアム東京四谷",
+        "prefecture": "東京都",
+        "station": "四谷三丁目",
+        "area": "外苑前・国立競技場",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        12
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 404,
+        "status": "not_found",
+        "hasImage": false,
+        "hotelNo": "",
+        "hotelName": "",
+        "matchedBy": "",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": {
+        "httpStatus": 200,
+        "hasRakuten": false,
+        "rakutenHotelNo": "",
+        "providers": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "causeCode": "not_found_by_current_rakuten_search"
+    },
+    {
+      "requestKey": "name:ホテルアジア会館|東京都|青山一丁目・乃木坂",
+      "sourceHotel": {
+        "name": "ホテルアジア会館",
+        "prefecture": "東京都",
+        "station": "青山一丁目・乃木坂",
+        "area": "外苑前・国立競技場",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        13,
+        190,
+        195
+      ],
+      "duplicateGroupSize": 3,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "9580",
+        "hotelName": "ホテルアジア会館",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:the b 赤坂|東京都|赤坂",
+      "sourceHotel": {
+        "name": "the b 赤坂",
+        "prefecture": "東京都",
+        "station": "赤坂",
+        "area": "外苑前・国立競技場",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        14,
+        79,
+        191,
+        196
+      ],
+      "duplicateGroupSize": 4,
+      "image": {
+        "httpStatus": 404,
+        "status": "ambiguous",
+        "hasImage": false,
+        "hotelNo": "",
+        "hotelName": "",
+        "matchedBy": "",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": {
+        "httpStatus": 200,
+        "hasRakuten": false,
+        "rakutenHotelNo": "",
+        "providers": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "causeCode": "multiple_candidates"
+    },
+    {
+      "requestKey": "name:ホテルグランドシティ|東京都|池袋東口",
+      "sourceHotel": {
+        "name": "ホテルグランドシティ",
+        "prefecture": "東京都",
+        "station": "池袋東口",
+        "area": "池袋東口",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        15,
+        20,
+        305,
+        345
+      ],
+      "duplicateGroupSize": 4,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "1128",
+        "hotelName": "ホテルグランドシティ",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルリソル池袋|東京都|東池袋・池袋",
+      "sourceHotel": {
+        "name": "ホテルリソル池袋",
+        "prefecture": "東京都",
+        "station": "東池袋・池袋",
+        "area": "池袋東口",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        16,
+        21,
+        306,
+        346
+      ],
+      "duplicateGroupSize": 4,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "78178",
+        "hotelName": "ホテルリソル池袋",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:京王プレッソイン池袋|東京都|東池袋・池袋",
+      "sourceHotel": {
+        "name": "京王プレッソイン池袋",
+        "prefecture": "東京都",
+        "station": "東池袋・池袋",
+        "area": "池袋東口",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        17,
+        22,
+        307,
+        347
+      ],
+      "duplicateGroupSize": 4,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "27972",
+        "hotelName": "京王プレッソイン池袋",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:del style 池袋東口 by daiwa roynet hotel|東京都|池袋東口",
+      "sourceHotel": {
+        "name": "DEL style 池袋東口 by Daiwa Roynet Hotel",
+        "prefecture": "東京都",
+        "station": "池袋東口",
+        "area": "池袋東口",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        18,
+        23,
+        308,
+        348
+      ],
+      "duplicateGroupSize": 4,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "181677",
+        "hotelName": "DEL style 池袋東口 by Daiwa Roynet Hotel",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:第一イン池袋|東京都|池袋東口",
+      "sourceHotel": {
+        "name": "第一イン池袋",
+        "prefecture": "東京都",
+        "station": "池袋東口",
+        "area": "池袋東口",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        19,
+        24,
+        309,
+        349
+      ],
+      "duplicateGroupSize": 4,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "610",
+        "hotelName": "第一イン池袋",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:リッチモンドホテル東京水道橋|東京都|水道橋・後楽園",
+      "sourceHotel": {
+        "name": "リッチモンドホテル東京水道橋",
+        "prefecture": "東京都",
+        "station": "水道橋・後楽園",
+        "area": "水道橋・後楽園",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        25,
+        30
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "146928",
+        "hotelName": "リッチモンドホテル東京水道橋",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルウィングインターナショナル後楽園|東京都|水道橋・後楽園",
+      "sourceHotel": {
+        "name": "ホテルウィングインターナショナル後楽園",
+        "prefecture": "東京都",
+        "station": "水道橋・後楽園",
+        "area": "水道橋・後楽園",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        26,
+        31
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 404,
+        "status": "not_found",
+        "hasImage": false,
+        "hotelNo": "",
+        "hotelName": "",
+        "matchedBy": "",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": {
+        "httpStatus": 200,
+        "hasRakuten": false,
+        "rakutenHotelNo": "",
+        "providers": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "causeCode": "not_found_by_current_rakuten_search"
+    },
+    {
+      "requestKey": "name:the b 水道橋|東京都|水道橋・春日",
+      "sourceHotel": {
+        "name": "the b 水道橋",
+        "prefecture": "東京都",
+        "station": "水道橋・春日",
+        "area": "水道橋・後楽園",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        27,
+        32
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "148955",
+        "hotelName": "the b 水道橋(ザビー すいどうばし)",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area"
+        ],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:sequence suidobashi|東京都|水道橋",
+      "sourceHotel": {
+        "name": "sequence SUIDOBASHI",
+        "prefecture": "東京都",
+        "station": "水道橋",
+        "area": "水道橋・後楽園",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        28,
+        33
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "181148",
+        "hotelName": "sequence SUIDOBASHI",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルメトロポリタン エドモント|東京都|飯田橋・水道橋",
+      "sourceHotel": {
+        "name": "ホテルメトロポリタン エドモント",
+        "prefecture": "東京都",
+        "station": "飯田橋・水道橋",
+        "area": "水道橋・後楽園",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        29,
+        34
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "391",
+        "hotelName": "ホテルメトロポリタン エドモント",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルサンライト新宿|東京都|新宿三丁目",
+      "sourceHotel": {
+        "name": "ホテルサンライト新宿",
+        "prefecture": "東京都",
+        "station": "新宿三丁目",
+        "area": "新宿・西武新宿",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        35,
+        160,
+        175,
+        180,
+        185
+      ],
+      "duplicateGroupSize": 5,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "1026",
+        "hotelName": "ホテル サンライト新宿",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:新宿アーバンホテル|東京都|新宿三丁目・東新宿",
+      "sourceHotel": {
+        "name": "新宿アーバンホテル",
+        "prefecture": "東京都",
+        "station": "新宿三丁目・東新宿",
+        "area": "新宿・西武新宿",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        36,
+        161,
+        176,
+        181,
+        186
+      ],
+      "duplicateGroupSize": 5,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "41389",
+        "hotelName": "新宿アーバンホテル",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    }
+  ]
+}
