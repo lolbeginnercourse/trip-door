@@ -1,7 +1,8 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "complete": true,
-  "generatedAt": "2026-08-06T20:25:07.524Z",
+  "phase": "retry",
+  "generatedAt": "2026-08-06T23:41:07.336Z",
   "shardIndex": 3,
   "shardSize": 25,
   "start": 75,
@@ -9,6 +10,9 @@
   "totalRecords": 1256,
   "totalUnique": 750,
   "processedUnique": 25,
+  "retriedUnique": 2,
+  "skippedMatchedUnique": 23,
+  "retryAttemptsPerRequest": 5,
   "results": [
     {
       "requestKey": "name:東横inn池袋北口1|東京都|池袋北口",
@@ -651,7 +655,8 @@
         "matchedBy": "",
         "matchEvidence": [],
         "transportError": "",
-        "rawExcerpt": ""
+        "rawExcerpt": "",
+        "attemptsUsed": 1
       },
       "affiliate": {
         "httpStatus": 200,
@@ -659,9 +664,17 @@
         "rakutenHotelNo": "",
         "providers": [],
         "transportError": "",
-        "rawExcerpt": ""
+        "rawExcerpt": "",
+        "attemptsUsed": 1
       },
-      "causeCode": "not_found_by_current_rakuten_search"
+      "causeCode": "not_found_by_current_rakuten_search",
+      "retry": {
+        "attempted": true,
+        "attemptedAt": "2026-08-06T23:37:58.649Z",
+        "previousCauseCode": "not_found_by_current_rakuten_search",
+        "previousHasImage": false,
+        "attemptsPerRequest": 5
+      }
     },
     {
       "requestKey": "name:スカイハートホテル小岩|東京都|小岩",
@@ -686,7 +699,8 @@
         "matchedBy": "",
         "matchEvidence": [],
         "transportError": "",
-        "rawExcerpt": ""
+        "rawExcerpt": "",
+        "attemptsUsed": 4
       },
       "affiliate": {
         "httpStatus": 200,
@@ -694,9 +708,17 @@
         "rakutenHotelNo": "",
         "providers": [],
         "transportError": "",
-        "rawExcerpt": ""
+        "rawExcerpt": "",
+        "attemptsUsed": 1
       },
-      "causeCode": "not_found_by_current_rakuten_search"
+      "causeCode": "not_found_by_current_rakuten_search",
+      "retry": {
+        "attempted": true,
+        "attemptedAt": "2026-08-06T23:41:07.335Z",
+        "previousCauseCode": "not_found_by_current_rakuten_search",
+        "previousHasImage": false,
+        "attemptsPerRequest": 5
+      }
     },
     {
       "requestKey": "name:フレックステイイン江古田|東京都|江古田・新江古田",
