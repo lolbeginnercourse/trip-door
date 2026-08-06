@@ -1,0 +1,162 @@
+name: Retry hotel image audit failures
+run-name: Retry failed hotel image lookups after full first pass
+
+on:
+  workflow_run:
+    workflows: ["Full hotel image audit PR"]
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: retry-hotel-image-audit-after-first-pass
+  cancel-in-progress: false
+
+env:
+  AUDIT_BRANCH: audit/hotel-image-coverage-v2-20260807
+  REPORT_DIR: reports/all-hotel-image-audit-v2-20260807
+  SHARD_SIZE: "25"
+
+jobs:
+  prepare:
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.head_branch == 'audit-run/full-hotel-image-audit-v3-20260807'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    outputs:
+      shards: ${{ steps.matrix.outputs.shards }}
+    steps:
+      - name: Build retry matrix
+        id: matrix
+        shell: bash
+        run: echo 'shards=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29]' >> "$GITHUB_OUTPUT"
+
+  retry-shards:
+    name: Retry shard ${{ matrix.shard }}
+    needs: prepare
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    strategy:
+      fail-fast: false
+      max-parallel: 1
+      matrix:
+        shard: ${{ fromJSON(needs.prepare.outputs.shards) }}
+    steps:
+      - name: Check out latest audit branch
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          git init .
+          git remote add origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          git fetch origin "${AUDIT_BRANCH}"
+          git checkout -B "${AUDIT_BRANCH}" FETCH_HEAD
+
+      - name: Complete missing first-pass shard once
+        env:
+          SHARD_INDEX: ${{ matrix.shard }}
+          AUDIT_PHASE: first-pass
+          RETRY_ATTEMPTS: "1"
+          REQUEST_INTERVAL_MS: "1300"
+          REQUEST_TIMEOUT_MS: "20000"
+        shell: bash
+        run: |
+          set -euo pipefail
+          FILE="${REPORT_DIR}/shards/shard-$(printf '%02d' "${SHARD_INDEX}").json"
+          if [ ! -s "${FILE}" ]; then
+            node scripts/audit-hotel-images-shard.mjs
+          fi
+
+      - name: Retry only first-pass failures
+        env:
+          SHARD_INDEX: ${{ matrix.shard }}
+          AUDIT_PHASE: retry
+          RETRY_ATTEMPTS: "5"
+          REQUEST_INTERVAL_MS: "1300"
+          REQUEST_TIMEOUT_MS: "20000"
+        run: node scripts/audit-hotel-images-shard.mjs
+
+      - name: Validate and save retry checkpoint
+        env:
+          SHARD_INDEX: ${{ matrix.shard }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          FILE="${REPORT_DIR}/shards/shard-$(printf '%02d' "${SHARD_INDEX}").json"
+          node -e 'const fs=require("fs");const p=JSON.parse(fs.readFileSync(process.argv[1],"utf8"));if(p.complete!==true||p.phase!=="retry"||p.shardIndex!==Number(process.argv[2])||p.processedUnique<1||p.processedUnique>25)throw new Error("Invalid retry shard");console.log(`Retry shard ${p.shardIndex}: retried ${p.retriedUnique}, skipped matched ${p.skippedMatchedUnique}`);' "${FILE}" "${SHARD_INDEX}"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "${REPORT_DIR}/shards"
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git commit -m "Retry hotel image audit shard ${SHARD_INDEX}"
+          git push origin "HEAD:${AUDIT_BRANCH}"
+
+  aggregate:
+    needs: [prepare, retry-shards]
+    if: ${{ always() && needs.prepare.result == 'success' && needs.retry-shards.result == 'success' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out completed retry branch
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          git init .
+          git remote add origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          git fetch origin "${AUDIT_BRANCH}"
+          git checkout -B "${AUDIT_BRANCH}" FETCH_HEAD
+
+      - name: Verify 30 retry shards
+        shell: bash
+        run: |
+          set -euo pipefail
+          node - <<'NODE'
+          const fs=require('fs');
+          const path=require('path');
+          const dir=path.join(process.env.REPORT_DIR,'shards');
+          const files=fs.readdirSync(dir).filter(name=>/^shard-\d+\.json$/.test(name)).sort();
+          if(files.length!==30)throw new Error(`Expected 30 shards, got ${files.length}`);
+          files.forEach((name,index)=>{
+            const p=JSON.parse(fs.readFileSync(path.join(dir,name),'utf8'));
+            if(p.complete!==true||p.phase!=="retry"||p.shardIndex!==index)throw new Error(`Invalid ${name}`);
+          });
+          console.log('All 30 shards completed first pass and retry pass.');
+          NODE
+
+      - name: Merge final retry results
+        env:
+          EXPECTED_TOTAL_UNIQUE: "750"
+        run: node scripts/audit-hotel-images-merge.mjs
+
+      - name: Verify final totals
+        shell: bash
+        run: |
+          set -euo pipefail
+          node - <<'NODE'
+          const fs=require('fs');
+          const dir=process.env.REPORT_DIR;
+          const summary=JSON.parse(fs.readFileSync(`${dir}/summary.json`,'utf8'));
+          const progress=JSON.parse(fs.readFileSync(`${dir}/progress.json`,'utf8'));
+          if(progress.phase!=="complete"||progress.processedUnique!==750)throw new Error('Final retry audit incomplete');
+          if(summary.uniqueRequestKeys!==750||summary.uniqueMatched+summary.uniqueFailed!==750)throw new Error('Final totals do not add up');
+          console.log(`Final: matched ${summary.uniqueMatched}, failed ${summary.uniqueFailed}`);
+          NODE
+
+      - name: Save final two-pass audit
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "${REPORT_DIR}"
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git commit -m 'Complete two-pass hotel image audit'
+          git push origin "HEAD:${AUDIT_BRANCH}"
