@@ -1,0 +1,748 @@
+{
+  "schemaVersion": 3,
+  "complete": true,
+  "phase": "first-pass",
+  "generatedAt": "2026-08-06T21:46:24.872Z",
+  "shardIndex": 14,
+  "shardSize": 25,
+  "start": 350,
+  "end": 375,
+  "totalRecords": 1256,
+  "totalUnique": 750,
+  "processedUnique": 25,
+  "retriedUnique": 0,
+  "skippedMatchedUnique": 0,
+  "retryAttemptsPerRequest": 1,
+  "results": [
+    {
+      "requestKey": "name:ホテルルートイン仙台泉インター|宮城県|泉区",
+      "sourceHotel": {
+        "name": "ホテルルートイン仙台泉インター",
+        "prefecture": "宮城県",
+        "station": "泉区",
+        "area": "泉中央",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        681
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "70847",
+        "hotelName": "ホテルルートイン仙台泉インター",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:スマイルホテル仙台泉インター|宮城県|泉区",
+      "sourceHotel": {
+        "name": "スマイルホテル仙台泉インター",
+        "prefecture": "宮城県",
+        "station": "泉区",
+        "area": "泉中央",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        682
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "41760",
+        "hotelName": "スマイルホテル仙台泉インター",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルグリーンシティ|宮城県|北仙台",
+      "sourceHotel": {
+        "name": "ホテルグリーンシティ",
+        "prefecture": "宮城県",
+        "station": "北仙台",
+        "area": "泉中央",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        683,
+        690
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "5111",
+        "hotelName": "ホテル グリーンシティ",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ダイワロイネットホテル郡山駅前|福島県|郡山",
+      "sourceHotel": {
+        "name": "ダイワロイネットホテル郡山駅前",
+        "prefecture": "福島県",
+        "station": "郡山",
+        "area": "郡山",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        695
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "158751",
+        "hotelName": "ダイワロイネットホテル郡山駅前",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルグローバルビュー郡山|福島県|郡山",
+      "sourceHotel": {
+        "name": "ホテルグローバルビュー郡山",
+        "prefecture": "福島県",
+        "station": "郡山",
+        "area": "郡山",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        696
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "53174",
+        "hotelName": "ホテルグローバルビュー郡山",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:コンフォートホテル郡山|福島県|郡山",
+      "sourceHotel": {
+        "name": "コンフォートホテル郡山",
+        "prefecture": "福島県",
+        "station": "郡山",
+        "area": "郡山",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        697
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "51245",
+        "hotelName": "コンフォートホテル郡山(2026年3月31日 リニューアル)",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn郡山|福島県|郡山",
+      "sourceHotel": {
+        "name": "東横INN郡山",
+        "prefecture": "福島県",
+        "station": "郡山",
+        "area": "郡山",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        698
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "68538",
+        "hotelName": "東横INN郡山",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:アパホテル〈郡山駅前〉|福島県|郡山",
+      "sourceHotel": {
+        "name": "アパホテル〈郡山駅前〉",
+        "prefecture": "福島県",
+        "station": "郡山",
+        "area": "郡山",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        699
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "70327",
+        "hotelName": "アパホテル〈郡山駅前〉",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルルートインいわき駅前|福島県|いわき",
+      "sourceHotel": {
+        "name": "ホテルルートインいわき駅前",
+        "prefecture": "福島県",
+        "station": "いわき",
+        "area": "いわき",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        700
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "72846",
+        "hotelName": "ホテルルートインいわき駅前",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横innいわき駅前|福島県|いわき",
+      "sourceHotel": {
+        "name": "東横INNいわき駅前",
+        "prefecture": "福島県",
+        "station": "いわき",
+        "area": "いわき",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        701
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "108321",
+        "hotelName": "東横INNいわき駅前",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:サンライズインいわき|福島県|いわき",
+      "sourceHotel": {
+        "name": "サンライズインいわき",
+        "prefecture": "福島県",
+        "station": "いわき",
+        "area": "いわき",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        702
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "147022",
+        "hotelName": "サンライズインいわき",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:グランパークホテル パネックスいわき|福島県|いわき",
+      "sourceHotel": {
+        "name": "グランパークホテル パネックスいわき",
+        "prefecture": "福島県",
+        "station": "いわき",
+        "area": "いわき",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        703
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "104620",
+        "hotelName": "グランパークホテル パネックスいわき",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルセレクトインいわき駅前|福島県|いわき",
+      "sourceHotel": {
+        "name": "ホテルセレクトインいわき駅前",
+        "prefecture": "福島県",
+        "station": "いわき",
+        "area": "いわき",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        704
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "74539",
+        "hotelName": "ホテルセレクトインいわき駅前",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:リッチモンドホテル秋田駅前|秋田県|秋田",
+      "sourceHotel": {
+        "name": "リッチモンドホテル秋田駅前",
+        "prefecture": "秋田県",
+        "station": "秋田",
+        "area": "秋田",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        705
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "73983",
+        "hotelName": "リッチモンドホテル秋田駅前",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルメトロポリタン秋田|秋田県|秋田",
+      "sourceHotel": {
+        "name": "ホテルメトロポリタン秋田",
+        "prefecture": "秋田県",
+        "station": "秋田",
+        "area": "秋田",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        706
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "1476",
+        "hotelName": "ホテルメトロポリタン秋田",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:anaクラウンプラザホテル秋田|秋田県|秋田",
+      "sourceHotel": {
+        "name": "ANAクラウンプラザホテル秋田",
+        "prefecture": "秋田県",
+        "station": "秋田",
+        "area": "秋田",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        707
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "564",
+        "hotelName": "ANAクラウンプラザホテル秋田 by IHG",
+        "matchedBy": "normalizedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:コンフォートホテル秋田|秋田県|秋田",
+      "sourceHotel": {
+        "name": "コンフォートホテル秋田",
+        "prefecture": "秋田県",
+        "station": "秋田",
+        "area": "秋田",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        708
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "52846",
+        "hotelName": "コンフォートホテル秋田",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn秋田駅東口|秋田県|秋田",
+      "sourceHotel": {
+        "name": "東横INN秋田駅東口",
+        "prefecture": "秋田県",
+        "station": "秋田",
+        "area": "秋田",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        709
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "39502",
+        "hotelName": "東横INN秋田駅東口",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:リッチモンドホテル盛岡駅前|岩手県|盛岡",
+      "sourceHotel": {
+        "name": "リッチモンドホテル盛岡駅前",
+        "prefecture": "岩手県",
+        "station": "盛岡",
+        "area": "盛岡",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        710,
+        715
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "181404",
+        "hotelName": "リッチモンドホテル盛岡駅前",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ダイワロイネットホテル盛岡駅前|岩手県|盛岡",
+      "sourceHotel": {
+        "name": "ダイワロイネットホテル盛岡駅前",
+        "prefecture": "岩手県",
+        "station": "盛岡",
+        "area": "盛岡",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        711,
+        716
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "183248",
+        "hotelName": "ダイワロイネットホテル盛岡駅前",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルメトロポリタン盛岡 new wing|岩手県|盛岡",
+      "sourceHotel": {
+        "name": "ホテルメトロポリタン盛岡 NEW WING",
+        "prefecture": "岩手県",
+        "station": "盛岡",
+        "area": "盛岡",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        712,
+        717
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 404,
+        "status": "not_found",
+        "hasImage": false,
+        "hotelNo": "",
+        "hotelName": "",
+        "matchedBy": "",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": {
+        "httpStatus": 200,
+        "hasRakuten": false,
+        "rakutenHotelNo": "",
+        "providers": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "causeCode": "not_found_by_current_rakuten_search"
+    },
+    {
+      "requestKey": "name:ホテルjin盛岡駅前|岩手県|盛岡",
+      "sourceHotel": {
+        "name": "ホテルJIN盛岡駅前",
+        "prefecture": "岩手県",
+        "station": "盛岡",
+        "area": "盛岡",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        713,
+        718
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 404,
+        "status": "not_found",
+        "hasImage": false,
+        "hotelNo": "",
+        "hotelName": "",
+        "matchedBy": "",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": {
+        "httpStatus": 200,
+        "hasRakuten": false,
+        "rakutenHotelNo": "",
+        "providers": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "causeCode": "not_found_by_current_rakuten_search"
+    },
+    {
+      "requestKey": "name:東横inn盛岡駅前|岩手県|盛岡",
+      "sourceHotel": {
+        "name": "東横INN盛岡駅前",
+        "prefecture": "岩手県",
+        "station": "盛岡",
+        "area": "盛岡",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        714,
+        719
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "73876",
+        "hotelName": "東横INN盛岡駅前",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ダイワロイネットホテル青森|青森県|青森",
+      "sourceHotel": {
+        "name": "ダイワロイネットホテル青森",
+        "prefecture": "青森県",
+        "station": "青森",
+        "area": "青森",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        720
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "167605",
+        "hotelName": "ダイワロイネットホテル青森",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルjalシティ青森|青森県|青森",
+      "sourceHotel": {
+        "name": "ホテルJALシティ青森",
+        "prefecture": "青森県",
+        "station": "青森",
+        "area": "青森",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        721
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "1482",
+        "hotelName": "ホテルJALシティ青森",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    }
+  ]
+}
