@@ -1,0 +1,772 @@
+{
+  "schemaVersion": 3,
+  "complete": true,
+  "phase": "first-pass",
+  "generatedAt": "2026-08-06T21:45:22.583Z",
+  "shardIndex": 13,
+  "shardSize": 25,
+  "start": 325,
+  "end": 350,
+  "totalRecords": 1256,
+  "totalUnique": 750,
+  "processedUnique": 25,
+  "retriedUnique": 0,
+  "skippedMatchedUnique": 0,
+  "retryAttemptsPerRequest": 1,
+  "results": [
+    {
+      "requestKey": "name:プレミアホテル-cabin president-函館|北海道|函館",
+      "sourceHotel": {
+        "name": "プレミアホテル-CABIN PRESIDENT-函館",
+        "prefecture": "北海道",
+        "station": "函館",
+        "area": "函館・湯の川",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        656
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "4932",
+        "hotelName": "プレミアホテル-CABIN PRESIDENT-函館",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn北海道函館駅前朝市|北海道|函館",
+      "sourceHotel": {
+        "name": "東横INN北海道函館駅前朝市",
+        "prefecture": "北海道",
+        "station": "函館",
+        "area": "函館・湯の川",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        657
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 404,
+        "status": "not_found",
+        "hasImage": false,
+        "hotelNo": "",
+        "hotelName": "",
+        "matchedBy": "",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": {
+        "httpStatus": 200,
+        "hasRakuten": false,
+        "rakutenHotelNo": "",
+        "providers": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "causeCode": "not_found_by_current_rakuten_search"
+    },
+    {
+      "requestKey": "name:ホテルリソル函館|北海道|函館",
+      "sourceHotel": {
+        "name": "ホテルリソル函館",
+        "prefecture": "北海道",
+        "station": "函館",
+        "area": "函館・湯の川",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        658
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "5000",
+        "hotelName": "ホテルリソル函館",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:フレックステイイン函館駅前|北海道|函館",
+      "sourceHotel": {
+        "name": "フレックステイイン函館駅前",
+        "prefecture": "北海道",
+        "station": "函館",
+        "area": "函館・湯の川",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        659
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 404,
+        "status": "not_found",
+        "hasImage": false,
+        "hotelNo": "",
+        "hotelName": "",
+        "matchedBy": "",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": {
+        "httpStatus": 200,
+        "hasRakuten": false,
+        "rakutenHotelNo": "",
+        "providers": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "causeCode": "not_found_by_current_rakuten_search"
+    },
+    {
+      "requestKey": "name:jrイン帯広|北海道|帯広",
+      "sourceHotel": {
+        "name": "JRイン帯広",
+        "prefecture": "北海道",
+        "station": "帯広",
+        "area": "帯広",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        660
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 404,
+        "status": "not_found",
+        "hasImage": false,
+        "hotelNo": "",
+        "hotelName": "",
+        "matchedBy": "",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": {
+        "httpStatus": 200,
+        "hasRakuten": false,
+        "rakutenHotelNo": "",
+        "providers": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "causeCode": "not_found_by_current_rakuten_search"
+    },
+    {
+      "requestKey": "name:リッチモンドホテル帯広駅前|北海道|帯広",
+      "sourceHotel": {
+        "name": "リッチモンドホテル帯広駅前",
+        "prefecture": "北海道",
+        "station": "帯広",
+        "area": "帯広",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        661
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "70757",
+        "hotelName": "リッチモンドホテル帯広駅前",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルグランテラス帯広|北海道|帯広",
+      "sourceHotel": {
+        "name": "ホテルグランテラス帯広",
+        "prefecture": "北海道",
+        "station": "帯広",
+        "area": "帯広",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        662
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 404,
+        "status": "ambiguous",
+        "hasImage": false,
+        "hotelNo": "",
+        "hotelName": "",
+        "matchedBy": "",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": {
+        "httpStatus": 200,
+        "hasRakuten": false,
+        "rakutenHotelNo": "",
+        "providers": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "causeCode": "multiple_candidates"
+    },
+    {
+      "requestKey": "name:コンフォートホテル帯広|北海道|帯広",
+      "sourceHotel": {
+        "name": "コンフォートホテル帯広",
+        "prefecture": "北海道",
+        "station": "帯広",
+        "area": "帯広",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        663
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "76807",
+        "hotelName": "コンフォートホテル帯広",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横innとかち・帯広駅前|北海道|帯広",
+      "sourceHotel": {
+        "name": "東横INNとかち・帯広駅前",
+        "prefecture": "北海道",
+        "station": "帯広",
+        "area": "帯広",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        664
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "108348",
+        "hotelName": "東横INNとかち・帯広駅前",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:anaクラウンプラザホテル釧路|北海道|釧路",
+      "sourceHotel": {
+        "name": "ANAクラウンプラザホテル釧路",
+        "prefecture": "北海道",
+        "station": "釧路",
+        "area": "釧路",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        665
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "891",
+        "hotelName": "ANAクラウンプラザホテル釧路 by IHG",
+        "matchedBy": "normalizedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:コンフォートホテル釧路|北海道|釧路",
+      "sourceHotel": {
+        "name": "コンフォートホテル釧路",
+        "prefecture": "北海道",
+        "station": "釧路",
+        "area": "釧路",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        666
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "84903",
+        "hotelName": "コンフォートホテル釧路",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:スーパーホテル釧路駅前|北海道|釧路",
+      "sourceHotel": {
+        "name": "スーパーホテル釧路駅前",
+        "prefecture": "北海道",
+        "station": "釧路",
+        "area": "釧路",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        667
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "70737",
+        "hotelName": "天然温泉 白鳥の湯 スーパーホテル釧路駅前",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn釧路十字街|北海道|釧路",
+      "sourceHotel": {
+        "name": "東横INN釧路十字街",
+        "prefecture": "北海道",
+        "station": "釧路",
+        "area": "釧路",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        668
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "37916",
+        "hotelName": "東横INN釧路十字街",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルルートイン釧路駅前|北海道|釧路",
+      "sourceHotel": {
+        "name": "ホテルルートイン釧路駅前",
+        "prefecture": "北海道",
+        "station": "釧路",
+        "area": "釧路",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        669
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "67485",
+        "hotelName": "ホテルルートイン釧路駅前",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルjalシティ仙台|宮城県|仙台",
+      "sourceHotel": {
+        "name": "ホテルJALシティ仙台",
+        "prefecture": "宮城県",
+        "station": "仙台",
+        "area": "仙台・榴ケ岡",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        670,
+        684
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "1665",
+        "hotelName": "ホテルJALシティ仙台",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ダイワロイネットホテル仙台西口 premier|宮城県|仙台",
+      "sourceHotel": {
+        "name": "ダイワロイネットホテル仙台西口 PREMIER",
+        "prefecture": "宮城県",
+        "station": "仙台",
+        "area": "仙台・榴ケ岡",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        671
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "183802",
+        "hotelName": "ダイワロイネットホテル仙台西口 PREMIER",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:コンフォートホテル仙台西口|宮城県|仙台",
+      "sourceHotel": {
+        "name": "コンフォートホテル仙台西口",
+        "prefecture": "宮城県",
+        "station": "仙台",
+        "area": "仙台・榴ケ岡",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        672
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "67093",
+        "hotelName": "コンフォートホテル仙台西口(2026年4月17日 リニューアル)",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:アパホテル〈tkp仙台駅北〉|宮城県|仙台",
+      "sourceHotel": {
+        "name": "アパホテル〈TKP仙台駅北〉",
+        "prefecture": "宮城県",
+        "station": "仙台",
+        "area": "仙台・榴ケ岡",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        673
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "168213",
+        "hotelName": "アパホテル〈TKP仙台駅北〉",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn仙台東口1号館|宮城県|仙台",
+      "sourceHotel": {
+        "name": "東横INN仙台東口1号館",
+        "prefecture": "宮城県",
+        "station": "仙台",
+        "area": "仙台・榴ケ岡",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        674
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "67447",
+        "hotelName": "東横INN仙台東口1号館",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテル定禅寺|宮城県|勾当台公園",
+      "sourceHotel": {
+        "name": "ホテル定禅寺",
+        "prefecture": "宮城県",
+        "station": "勾当台公園",
+        "area": "勾当台公園",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        675,
+        685,
+        692
+      ],
+      "duplicateGroupSize": 3,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "15618",
+        "hotelName": "ホテル定禅寺",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:アパホテル〈仙台勾当台公園〉|宮城県|勾当台公園",
+      "sourceHotel": {
+        "name": "アパホテル〈仙台勾当台公園〉",
+        "prefecture": "宮城県",
+        "station": "勾当台公園",
+        "area": "勾当台公園",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        676,
+        686,
+        691
+      ],
+      "duplicateGroupSize": 3,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "68125",
+        "hotelName": "アパホテル〈仙台勾当台公園〉",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルプレミアムグリーンソブリン|宮城県|勾当台公園",
+      "sourceHotel": {
+        "name": "ホテルプレミアムグリーンソブリン",
+        "prefecture": "宮城県",
+        "station": "勾当台公園",
+        "area": "勾当台公園",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        677,
+        687,
+        693
+      ],
+      "duplicateGroupSize": 3,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "39197",
+        "hotelName": "ホテルプレミアムグリーンソブリン",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルグリーンセレク|宮城県|広瀬通",
+      "sourceHotel": {
+        "name": "ホテルグリーンセレク",
+        "prefecture": "宮城県",
+        "station": "広瀬通",
+        "area": "勾当台公園",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        678,
+        688
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "54283",
+        "hotelName": "ホテルグリーンセレク",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:三井ガーデンホテル仙台|宮城県|広瀬通",
+      "sourceHotel": {
+        "name": "三井ガーデンホテル仙台",
+        "prefecture": "宮城県",
+        "station": "広瀬通",
+        "area": "勾当台公園",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        679,
+        689,
+        694
+      ],
+      "duplicateGroupSize": 3,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "79378",
+        "hotelName": "三井ガーデンホテル仙台",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:仙台ロイヤルパークホテル|宮城県|泉中央・泉区",
+      "sourceHotel": {
+        "name": "仙台ロイヤルパークホテル",
+        "prefecture": "宮城県",
+        "station": "泉中央・泉区",
+        "area": "泉中央",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        680
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "1538",
+        "hotelName": "仙台ロイヤルパークホテル",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    }
+  ]
+}
