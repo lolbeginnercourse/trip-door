@@ -52,9 +52,52 @@ jobs:
         id: prepare
         run: node scripts/audit-hotel-images-prepare.mjs
 
+  mark-started:
+    needs: prepare
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out audit branch
+        uses: actions/checkout@v5
+        with:
+          ref: ${{ env.AUDIT_BRANCH }}
+          fetch-depth: 0
+
+      - name: Save run start checkpoint
+        env:
+          TOTAL_RECORDS: ${{ needs.prepare.outputs.total_records }}
+          TOTAL_UNIQUE: ${{ needs.prepare.outputs.total_unique }}
+          SHARD_COUNT: ${{ needs.prepare.outputs.shard_count }}
+        run: |
+          mkdir -p "${REPORT_DIR}"
+          cat > "${REPORT_DIR}/run-started.json" <<JSON
+          {
+            "phase": "started",
+            "runId": "${GITHUB_RUN_ID}",
+            "runAttempt": "${GITHUB_RUN_ATTEMPT}",
+            "triggerCommit": "${GITHUB_SHA}",
+            "totalRecords": ${TOTAL_RECORDS},
+            "totalUnique": ${TOTAL_UNIQUE},
+            "shardSize": ${SHARD_SIZE},
+            "shardCount": ${SHARD_COUNT},
+            "startedAt": "$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          }
+          JSON
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "${REPORT_DIR}/run-started.json"
+          if git diff --cached --quiet; then
+            echo "Start checkpoint already current."
+            exit 0
+          fi
+          git commit -m "Start robust hotel image audit"
+          git push origin "HEAD:${AUDIT_BRANCH}"
+
   audit-shards:
     name: Audit shard ${{ matrix.shard }}
-    needs: prepare
+    needs:
+      - prepare
+      - mark-started
     runs-on: ubuntu-latest
     timeout-minutes: 25
     strategy:
@@ -94,8 +137,9 @@ jobs:
   aggregate:
     needs:
       - prepare
+      - mark-started
       - audit-shards
-    if: ${{ always() && needs.prepare.result == 'success' && needs.audit-shards.result == 'success' }}
+    if: ${{ always() && needs.prepare.result == 'success' && needs.mark-started.result == 'success' && needs.audit-shards.result == 'success' }}
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
