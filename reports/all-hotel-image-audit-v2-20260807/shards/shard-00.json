@@ -1,7 +1,8 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "complete": true,
-  "generatedAt": "2026-08-06T20:02:37.995Z",
+  "phase": "retry",
+  "generatedAt": "2026-08-06T23:34:56.729Z",
   "shardIndex": 0,
   "shardSize": 25,
   "start": 0,
@@ -9,6 +10,9 @@
   "totalRecords": 1256,
   "totalUnique": 750,
   "processedUnique": 25,
+  "retriedUnique": 3,
+  "skippedMatchedUnique": 22,
+  "retryAttemptsPerRequest": 5,
   "results": [
     {
       "requestKey": "hotelNo:136278",
@@ -325,7 +329,8 @@
         "matchedBy": "",
         "matchEvidence": [],
         "transportError": "",
-        "rawExcerpt": ""
+        "rawExcerpt": "",
+        "attemptsUsed": 1
       },
       "affiliate": {
         "httpStatus": 200,
@@ -333,9 +338,17 @@
         "rakutenHotelNo": "",
         "providers": [],
         "transportError": "",
-        "rawExcerpt": ""
+        "rawExcerpt": "",
+        "attemptsUsed": 1
       },
-      "causeCode": "not_found_by_current_rakuten_search"
+      "causeCode": "not_found_by_current_rakuten_search",
+      "retry": {
+        "attempted": true,
+        "attemptedAt": "2026-08-06T23:34:47.491Z",
+        "previousCauseCode": "not_found_by_current_rakuten_search",
+        "previousHasImage": false,
+        "attemptsPerRequest": 5
+      }
     },
     {
       "requestKey": "name:ホテルアジア会館|東京都|青山一丁目・乃木坂",
@@ -391,7 +404,8 @@
         "matchedBy": "",
         "matchEvidence": [],
         "transportError": "",
-        "rawExcerpt": ""
+        "rawExcerpt": "",
+        "attemptsUsed": 1
       },
       "affiliate": {
         "httpStatus": 200,
@@ -399,9 +413,17 @@
         "rakutenHotelNo": "",
         "providers": [],
         "transportError": "",
-        "rawExcerpt": ""
+        "rawExcerpt": "",
+        "attemptsUsed": 1
       },
-      "causeCode": "multiple_candidates"
+      "causeCode": "multiple_candidates",
+      "retry": {
+        "attempted": true,
+        "attemptedAt": "2026-08-06T23:34:52.617Z",
+        "previousCauseCode": "multiple_candidates",
+        "previousHasImage": false,
+        "attemptsPerRequest": 5
+      }
     },
     {
       "requestKey": "name:ホテルグランドシティ|東京都|池袋東口",
@@ -604,7 +626,8 @@
         "matchedBy": "",
         "matchEvidence": [],
         "transportError": "",
-        "rawExcerpt": ""
+        "rawExcerpt": "",
+        "attemptsUsed": 1
       },
       "affiliate": {
         "httpStatus": 200,
@@ -612,9 +635,17 @@
         "rakutenHotelNo": "",
         "providers": [],
         "transportError": "",
-        "rawExcerpt": ""
+        "rawExcerpt": "",
+        "attemptsUsed": 1
       },
-      "causeCode": "not_found_by_current_rakuten_search"
+      "causeCode": "not_found_by_current_rakuten_search",
+      "retry": {
+        "attempted": true,
+        "attemptedAt": "2026-08-06T23:34:56.729Z",
+        "previousCauseCode": "not_found_by_current_rakuten_search",
+        "previousHasImage": false,
+        "attemptsPerRequest": 5
+      }
     },
     {
       "requestKey": "name:the b 水道橋|東京都|水道橋・春日",
