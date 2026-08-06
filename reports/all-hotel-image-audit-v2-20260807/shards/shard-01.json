@@ -1,8 +1,8 @@
 {
   "schemaVersion": 3,
   "complete": true,
-  "phase": "first-pass",
-  "generatedAt": "2026-08-06T23:28:30.734Z",
+  "phase": "retry",
+  "generatedAt": "2026-08-06T23:35:11.100Z",
   "shardIndex": 1,
   "shardSize": 25,
   "start": 25,
@@ -11,8 +11,8 @@
   "totalUnique": 750,
   "processedUnique": 25,
   "retriedUnique": 0,
-  "skippedMatchedUnique": 0,
-  "retryAttemptsPerRequest": 1,
+  "skippedMatchedUnique": 25,
+  "retryAttemptsPerRequest": 5,
   "results": [
     {
       "requestKey": "name:ホテルアマネク新宿歌舞伎町|東京都|新宿・西武新宿",
