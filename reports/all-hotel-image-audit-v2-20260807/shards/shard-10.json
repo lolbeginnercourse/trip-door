@@ -1,0 +1,756 @@
+{
+  "schemaVersion": 3,
+  "complete": true,
+  "phase": "first-pass",
+  "generatedAt": "2026-08-06T23:33:31.182Z",
+  "shardIndex": 10,
+  "shardSize": 25,
+  "start": 250,
+  "end": 275,
+  "totalRecords": 1256,
+  "totalUnique": 750,
+  "processedUnique": 25,
+  "retriedUnique": 0,
+  "skippedMatchedUnique": 0,
+  "retryAttemptsPerRequest": 1,
+  "results": [
+    {
+      "requestKey": "name:東横inn北戸田駅東口|埼玉県|北戸田",
+      "sourceHotel": {
+        "name": "東横INN北戸田駅東口",
+        "prefecture": "埼玉県",
+        "station": "北戸田",
+        "area": "戸田",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        550
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "184514",
+        "hotelName": "東横INN北戸田駅東口",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn西川口駅|埼玉県|西川口",
+      "sourceHotel": {
+        "name": "東横INN西川口駅",
+        "prefecture": "埼玉県",
+        "station": "西川口",
+        "area": "戸田",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        551
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "146559",
+        "hotelName": "東横INN西川口駅",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:西川口ステーションホテル ステイラウンジ|埼玉県|西川口",
+      "sourceHotel": {
+        "name": "西川口ステーションホテル ステイラウンジ",
+        "prefecture": "埼玉県",
+        "station": "西川口",
+        "area": "戸田",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        552
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "19390",
+        "hotelName": "西川口ステーションホテル ステイラウンジ",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルリブマックス西川口駅前|埼玉県|西川口",
+      "sourceHotel": {
+        "name": "ホテルリブマックス西川口駅前",
+        "prefecture": "埼玉県",
+        "station": "西川口",
+        "area": "戸田",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        553
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 404,
+        "status": "not_found",
+        "hasImage": false,
+        "hotelNo": "",
+        "hotelName": "",
+        "matchedBy": "",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": {
+        "httpStatus": 200,
+        "hasRakuten": false,
+        "rakutenHotelNo": "",
+        "providers": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "causeCode": "not_found_by_current_rakuten_search"
+    },
+    {
+      "requestKey": "name:西川口ウィークリー|埼玉県|西川口",
+      "sourceHotel": {
+        "name": "西川口ウィークリー",
+        "prefecture": "埼玉県",
+        "station": "西川口",
+        "area": "戸田",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        554
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "129509",
+        "hotelName": "ホテル西川口ウィークリー",
+        "matchedBy": "normalizedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:和光市東武ホテル|埼玉県|和光市",
+      "sourceHotel": {
+        "name": "和光市東武ホテル",
+        "prefecture": "埼玉県",
+        "station": "和光市",
+        "area": "和光市",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        555
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "178241",
+        "hotelName": "和光市東武ホテル",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn北朝霞駅西口|埼玉県|北朝霞",
+      "sourceHotel": {
+        "name": "東横INN北朝霞駅西口",
+        "prefecture": "埼玉県",
+        "station": "北朝霞",
+        "area": "和光市",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        556,
+        578
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "184671",
+        "hotelName": "東横INN北朝霞駅西口",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:スマイルホテル北朝霞|埼玉県|北朝霞",
+      "sourceHotel": {
+        "name": "スマイルホテル北朝霞",
+        "prefecture": "埼玉県",
+        "station": "北朝霞",
+        "area": "和光市",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        557,
+        579
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "584",
+        "hotelName": "スマイルホテル北朝霞",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルカデンツァ東京|埼玉県|光が丘",
+      "sourceHotel": {
+        "name": "ホテルカデンツァ東京",
+        "prefecture": "埼玉県",
+        "station": "光が丘",
+        "area": "和光市",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        558,
+        574
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "10988",
+        "hotelName": "ホテルカデンツァ東京",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルヒルトップ|埼玉県|成増",
+      "sourceHotel": {
+        "name": "ホテルヒルトップ",
+        "prefecture": "埼玉県",
+        "station": "成増",
+        "area": "和光市",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        559
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "20610",
+        "hotelName": "ホテル ヒルトップ",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:川越東武ホテル|埼玉県|川越",
+      "sourceHotel": {
+        "name": "川越東武ホテル",
+        "prefecture": "埼玉県",
+        "station": "川越",
+        "area": "川越",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        560
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "178703",
+        "hotelName": "川越東武ホテル",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:川越プリンスホテル|埼玉県|本川越",
+      "sourceHotel": {
+        "name": "川越プリンスホテル",
+        "prefecture": "埼玉県",
+        "station": "本川越",
+        "area": "川越",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        561
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "29539",
+        "hotelName": "川越プリンスホテル",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:スーパーホテル埼玉・川越|埼玉県|本川越",
+      "sourceHotel": {
+        "name": "スーパーホテル埼玉・川越",
+        "prefecture": "埼玉県",
+        "station": "本川越",
+        "area": "川越",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        562
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "172568",
+        "hotelName": "スーパーホテル埼玉・川越 天然温泉 赤城の湯",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:川越第一ホテル|埼玉県|川越",
+      "sourceHotel": {
+        "name": "川越第一ホテル",
+        "prefecture": "埼玉県",
+        "station": "川越",
+        "area": "川越",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        563
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "40686",
+        "hotelName": "川越第一ホテル",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:川越湯遊ランド・ホテル三光|埼玉県|本川越",
+      "sourceHotel": {
+        "name": "川越湯遊ランド・ホテル三光",
+        "prefecture": "埼玉県",
+        "station": "本川越",
+        "area": "川越",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        564
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 404,
+        "status": "not_found",
+        "hasImage": false,
+        "hotelNo": "",
+        "hotelName": "",
+        "matchedBy": "",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": {
+        "httpStatus": 200,
+        "hasRakuten": false,
+        "rakutenHotelNo": "",
+        "providers": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "causeCode": "not_found_by_current_rakuten_search"
+    },
+    {
+      "requestKey": "name:東横inn三郷中央駅前|埼玉県|三郷中央",
+      "sourceHotel": {
+        "name": "東横INN三郷中央駅前",
+        "prefecture": "埼玉県",
+        "station": "三郷中央",
+        "area": "三郷",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        565
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "176677",
+        "hotelName": "東横INN三郷中央駅前",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルサンクローバー三郷|埼玉県|三郷",
+      "sourceHotel": {
+        "name": "ホテルサンクローバー三郷",
+        "prefecture": "埼玉県",
+        "station": "三郷",
+        "area": "三郷",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        566
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "182300",
+        "hotelName": "ホテルサンクローバー三郷",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn八潮駅前|埼玉県|八潮",
+      "sourceHotel": {
+        "name": "東横INN八潮駅前",
+        "prefecture": "埼玉県",
+        "station": "八潮",
+        "area": "三郷",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        567
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "108625",
+        "hotelName": "東横INN八潮駅前",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルサンオーク柏の葉|埼玉県|柏の葉キャンパス",
+      "sourceHotel": {
+        "name": "ホテルサンオーク柏の葉",
+        "prefecture": "埼玉県",
+        "station": "柏の葉キャンパス",
+        "area": "三郷",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        568
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "147388",
+        "hotelName": "ホテルサンオーク柏の葉",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルルートイン柏南|埼玉県|柏",
+      "sourceHotel": {
+        "name": "ホテルルートイン柏南",
+        "prefecture": "埼玉県",
+        "station": "柏",
+        "area": "三郷",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        569
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 404,
+        "status": "location_unverified",
+        "hasImage": false,
+        "hotelNo": "",
+        "hotelName": "",
+        "matchedBy": "",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": {
+        "httpStatus": 200,
+        "hasRakuten": false,
+        "rakutenHotelNo": "",
+        "providers": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "causeCode": "location_unverified"
+    },
+    {
+      "requestKey": "name:所沢パークホテル|埼玉県|所沢",
+      "sourceHotel": {
+        "name": "所沢パークホテル",
+        "prefecture": "埼玉県",
+        "station": "所沢",
+        "area": "航空公園・所沢",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        570,
+        575
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "8297",
+        "hotelName": "所沢パークホテル",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:久米川ウィングホテル|埼玉県|久米川",
+      "sourceHotel": {
+        "name": "久米川ウィングホテル",
+        "prefecture": "埼玉県",
+        "station": "久米川",
+        "area": "航空公園・所沢",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        571,
+        576
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "6281",
+        "hotelName": "久米川ウィングホテル",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ビジネスホテル マーキュリー|埼玉県|久米川",
+      "sourceHotel": {
+        "name": "ビジネスホテル マーキュリー",
+        "prefecture": "埼玉県",
+        "station": "久米川",
+        "area": "航空公園・所沢",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        572,
+        577
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "37398",
+        "hotelName": "ビジネスホテル マーキュリー",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテル セントピア|埼玉県|久米川",
+      "sourceHotel": {
+        "name": "ホテル セントピア",
+        "prefecture": "埼玉県",
+        "station": "久米川",
+        "area": "航空公園・所沢",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        573
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "9143",
+        "hotelName": "ホテル セントピア",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ダイワロイネットホテル水戸|茨城県|水戸",
+      "sourceHotel": {
+        "name": "ダイワロイネットホテル水戸",
+        "prefecture": "茨城県",
+        "station": "水戸",
+        "area": "水戸",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        580,
+        585
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "44177",
+        "hotelName": "ダイワロイネットホテル水戸",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    }
+  ]
+}
