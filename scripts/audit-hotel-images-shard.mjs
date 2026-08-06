@@ -8,8 +8,11 @@ const SHARD_INDEX = Number(process.env.SHARD_INDEX);
 const SHARD_SIZE = Number(process.env.SHARD_SIZE || 25);
 const REQUEST_INTERVAL_MS = Number(process.env.REQUEST_INTERVAL_MS || 1300);
 const REQUEST_TIMEOUT_MS = Number(process.env.REQUEST_TIMEOUT_MS || 20000);
-const RETRY_ATTEMPTS = Number(process.env.RETRY_ATTEMPTS || 5);
-const AUDIT_TOKEN = `matrix-${SHARD_INDEX}-${Date.now()}`;
+const AUDIT_PHASE = String(process.env.AUDIT_PHASE || "first-pass").trim().toLowerCase();
+const RETRY_ATTEMPTS = AUDIT_PHASE === "retry"
+  ? Number(process.env.RETRY_ATTEMPTS || 5)
+  : 1;
+const AUDIT_TOKEN = `${AUDIT_PHASE}-${SHARD_INDEX}-${Date.now()}`;
 
 const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
 
@@ -86,7 +89,7 @@ async function fetchJsonWithRetry(url) {
           Accept: "application/json",
           Origin: ORIGIN,
           Referer: `${ORIGIN}/`,
-          "User-Agent": "trip-door-hotel-image-audit/2.0"
+          "User-Agent": `trip-door-hotel-image-audit/3.0-${AUDIT_PHASE}`
         }
       });
       const raw = await response.text();
@@ -100,7 +103,8 @@ async function fetchJsonWithRetry(url) {
       last = {
         httpStatus: response.status,
         data,
-        rawExcerpt: data ? "" : raw.slice(0, 300)
+        rawExcerpt: data ? "" : raw.slice(0, 300),
+        attemptsUsed: attempt
       };
 
       if (![429, 500, 502, 503, 504].includes(response.status)) return last;
@@ -116,7 +120,8 @@ async function fetchJsonWithRetry(url) {
         data: null,
         error: error?.name === "AbortError"
           ? `timeout_after_${REQUEST_TIMEOUT_MS}ms`
-          : String(error?.message || error)
+          : String(error?.message || error),
+        attemptsUsed: attempt
       };
       if (attempt === RETRY_ATTEMPTS) return last;
       await sleep(Math.min(30000, 1500 * (2 ** (attempt - 1))));
@@ -142,7 +147,8 @@ function summarizeImageResponse(response) {
       ? image.matchEvidence.map(text).filter(Boolean)
       : [],
     transportError: text(response?.error),
-    rawExcerpt: text(response?.rawExcerpt)
+    rawExcerpt: text(response?.rawExcerpt),
+    attemptsUsed: Number(response?.attemptsUsed || 0)
   };
 }
 
@@ -155,7 +161,8 @@ function summarizeAffiliateResponse(response) {
     rakutenHotelNo: text(rakuten?.hotelNo),
     providers: links.map(link => text(link?.provider)).filter(Boolean),
     transportError: text(response?.error),
-    rawExcerpt: text(response?.rawExcerpt)
+    rawExcerpt: text(response?.rawExcerpt),
+    attemptsUsed: Number(response?.attemptsUsed || 0)
   };
 }
 
@@ -176,37 +183,7 @@ function causeCode(image, affiliate) {
   return "other_error";
 }
 
-if (!Number.isInteger(SHARD_INDEX) || SHARD_INDEX < 0) {
-  throw new Error(`Invalid SHARD_INDEX: ${SHARD_INDEX}`);
-}
-if (!Number.isInteger(SHARD_SIZE) || SHARD_SIZE < 1 || SHARD_SIZE > 100) {
-  throw new Error(`Invalid SHARD_SIZE: ${SHARD_SIZE}`);
-}
-
-const payload = JSON.parse(fs.readFileSync(DATA_PATH, "utf8"));
-const hotels = normalizeHotels(payload);
-if (hotels.length === 0) throw new Error("No hotel records found.");
-
-const groups = new Map();
-for (let index = 0; index < hotels.length; index += 1) {
-  const hotel = hotels[index];
-  const key = requestKey(hotel);
-  if (!groups.has(key)) groups.set(key, { key, hotel, recordIndexes: [] });
-  groups.get(key).recordIndexes.push(index);
-}
-
-const groupList = [...groups.values()];
-const start = SHARD_INDEX * SHARD_SIZE;
-const end = Math.min(groupList.length, start + SHARD_SIZE);
-const shardGroups = groupList.slice(start, end);
-
-if (shardGroups.length === 0) {
-  throw new Error(`Shard ${SHARD_INDEX} is outside total unique groups ${groupList.length}.`);
-}
-
-const results = [];
-for (let offset = 0; offset < shardGroups.length; offset += 1) {
-  const group = shardGroups[offset];
+async function auditGroup(group, previousResult = null) {
   const imageResponse = await fetchJsonWithRetry(imageUrlFor(group.hotel));
   const image = summarizeImageResponse(imageResponse);
   await sleep(REQUEST_INTERVAL_MS);
@@ -233,17 +210,100 @@ for (let offset = 0; offset < shardGroups.length; offset += 1) {
     affiliate,
     causeCode: causeCode(image, affiliate)
   };
-  results.push(row);
-  console.log(`Shard ${SHARD_INDEX}: ${offset + 1}/${shardGroups.length} ${row.causeCode}`);
+
+  if (AUDIT_PHASE === "retry") {
+    row.retry = {
+      attempted: true,
+      attemptedAt: new Date().toISOString(),
+      previousCauseCode: text(previousResult?.causeCode || "missing_first_pass_result"),
+      previousHasImage: Boolean(previousResult?.image?.hasImage),
+      attemptsPerRequest: RETRY_ATTEMPTS
+    };
+  }
+
+  return row;
+}
+
+if (!Number.isInteger(SHARD_INDEX) || SHARD_INDEX < 0) {
+  throw new Error(`Invalid SHARD_INDEX: ${SHARD_INDEX}`);
+}
+if (!Number.isInteger(SHARD_SIZE) || SHARD_SIZE < 1 || SHARD_SIZE > 100) {
+  throw new Error(`Invalid SHARD_SIZE: ${SHARD_SIZE}`);
+}
+if (!Number.isInteger(RETRY_ATTEMPTS) || RETRY_ATTEMPTS < 1 || RETRY_ATTEMPTS > 10) {
+  throw new Error(`Invalid RETRY_ATTEMPTS: ${RETRY_ATTEMPTS}`);
+}
+if (!["first-pass", "retry"].includes(AUDIT_PHASE)) {
+  throw new Error(`Invalid AUDIT_PHASE: ${AUDIT_PHASE}`);
+}
+
+const payload = JSON.parse(fs.readFileSync(DATA_PATH, "utf8"));
+const hotels = normalizeHotels(payload);
+if (hotels.length === 0) throw new Error("No hotel records found.");
+
+const groups = new Map();
+for (let index = 0; index < hotels.length; index += 1) {
+  const hotel = hotels[index];
+  const key = requestKey(hotel);
+  if (!groups.has(key)) groups.set(key, { key, hotel, recordIndexes: [] });
+  groups.get(key).recordIndexes.push(index);
+}
+
+const groupList = [...groups.values()];
+const start = SHARD_INDEX * SHARD_SIZE;
+const end = Math.min(groupList.length, start + SHARD_SIZE);
+const shardGroups = groupList.slice(start, end);
+
+if (shardGroups.length === 0) {
+  throw new Error(`Shard ${SHARD_INDEX} is outside total unique groups ${groupList.length}.`);
 }
 
 const shardDir = path.join(REPORT_DIR, "shards");
 fs.mkdirSync(shardDir, { recursive: true });
 const outputPath = path.join(shardDir, `shard-${String(SHARD_INDEX).padStart(2, "0")}.json`);
 
+let previousPayload = null;
+if (AUDIT_PHASE === "retry") {
+  if (!fs.existsSync(outputPath)) {
+    throw new Error(`Retry requires an existing first-pass shard: ${outputPath}`);
+  }
+  previousPayload = JSON.parse(fs.readFileSync(outputPath, "utf8"));
+  if (!Array.isArray(previousPayload?.results)) {
+    throw new Error(`Invalid first-pass shard: ${outputPath}`);
+  }
+}
+
+const previousByKey = new Map(
+  Array.isArray(previousPayload?.results)
+    ? previousPayload.results.map(row => [row.requestKey, row])
+    : []
+);
+
+const results = [];
+let retriedUnique = 0;
+let skippedMatchedUnique = 0;
+
+for (let offset = 0; offset < shardGroups.length; offset += 1) {
+  const group = shardGroups[offset];
+  const previousResult = previousByKey.get(group.key) || null;
+
+  if (AUDIT_PHASE === "retry" && previousResult?.causeCode === "matched" && previousResult?.image?.hasImage) {
+    results.push(previousResult);
+    skippedMatchedUnique += 1;
+    console.log(`Shard ${SHARD_INDEX}: ${offset + 1}/${shardGroups.length} skip_matched`);
+    continue;
+  }
+
+  const row = await auditGroup(group, previousResult);
+  if (AUDIT_PHASE === "retry") retriedUnique += 1;
+  results.push(row);
+  console.log(`Shard ${SHARD_INDEX}: ${offset + 1}/${shardGroups.length} ${AUDIT_PHASE} ${row.causeCode}`);
+}
+
 fs.writeFileSync(outputPath, `${JSON.stringify({
-  schemaVersion: 2,
+  schemaVersion: 3,
   complete: true,
+  phase: AUDIT_PHASE,
   generatedAt: new Date().toISOString(),
   shardIndex: SHARD_INDEX,
   shardSize: SHARD_SIZE,
@@ -252,6 +312,9 @@ fs.writeFileSync(outputPath, `${JSON.stringify({
   totalRecords: hotels.length,
   totalUnique: groupList.length,
   processedUnique: results.length,
+  retriedUnique,
+  skippedMatchedUnique,
+  retryAttemptsPerRequest: RETRY_ATTEMPTS,
   results
 }, null, 2)}\n`, "utf8");
 
