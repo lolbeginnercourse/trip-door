@@ -1,0 +1,50 @@
+/* Single-field prefecture to venue finder. */
+
+.finder-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.finder-grid label {
+  min-width: 0;
+}
+
+.finder-field--destination select[data-selection-mode="prefecture"] {
+  background-color: #fff;
+}
+
+.finder-field--destination select[data-selection-mode="venue"] {
+  border-color: color-mix(in srgb, var(--category) 42%, var(--border));
+  background-color: color-mix(in srgb, var(--category-soft) 34%, #fff);
+}
+
+.search-submit:disabled,
+.search-submit:disabled:hover,
+.search-submit:disabled:focus-visible {
+  color: #fff;
+  background: #b9aeb3;
+  border-color: #b9aeb3;
+  box-shadow: none;
+  cursor: not-allowed;
+  transform: none;
+}
+
+@media (max-width: 980px) and (min-width: 768px) {
+  .finder-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .finder-field--destination {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 767px) {
+  .finder-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .search-submit {
+    width: 100%;
+    min-height: 54px;
+  }
+}
