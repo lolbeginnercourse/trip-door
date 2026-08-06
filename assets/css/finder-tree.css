@@ -1,0 +1,191 @@
+/* Tree-style selector for the prefecture and venue field only. */
+
+.finder-field--destination {
+  position: relative;
+}
+
+.destination-native-select {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
+  clip-path: inset(50%) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+.destination-tree {
+  position: relative;
+  width: 100%;
+}
+
+.destination-tree__trigger {
+  width: 100%;
+  min-height: 54px;
+  padding: 0 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  color: var(--ink);
+  background: #fff;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.destination-tree__trigger:hover,
+.destination-tree__trigger:focus-visible,
+.destination-tree.is-open .destination-tree__trigger {
+  border-color: color-mix(in srgb, var(--category) 52%, var(--border));
+  outline: none;
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--category-soft) 72%, transparent);
+}
+
+.destination-tree__trigger:disabled {
+  color: #8a817a;
+  background: #f3f0ed;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.destination-tree__trigger-text {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.destination-tree__trigger-icon {
+  flex: 0 0 auto;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.destination-tree__panel {
+  position: absolute;
+  z-index: 80;
+  top: calc(100% + 8px);
+  left: 0;
+  width: min(520px, calc(100vw - 32px));
+  max-height: min(520px, 65vh);
+  padding: 12px;
+  overflow-y: auto;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 20px 44px rgba(35, 28, 32, .18);
+}
+
+.destination-tree__panel[hidden] {
+  display: none;
+}
+
+.destination-tree__group-label {
+  margin: 10px 10px 6px;
+  color: var(--muted);
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: .04em;
+}
+
+.destination-tree__group-label:first-child {
+  margin-top: 2px;
+}
+
+.destination-tree__prefecture,
+.destination-tree__venue {
+  width: 100%;
+  min-height: 44px;
+  border: 0;
+  border-radius: 9px;
+  color: var(--ink);
+  background: transparent;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.destination-tree__prefecture {
+  position: relative;
+  padding: 10px 40px 10px 12px;
+  font-weight: 750;
+}
+
+.destination-tree__prefecture::after {
+  content: "›";
+  position: absolute;
+  top: 50%;
+  right: 14px;
+  transform: translateY(-50%);
+  color: var(--category);
+  font-size: 1.25rem;
+}
+
+.destination-tree__prefecture.is-expanded {
+  color: var(--category);
+  background: color-mix(in srgb, var(--category-soft) 58%, #fff);
+}
+
+.destination-tree__prefecture.is-expanded::after {
+  content: "⌃";
+  font-size: .9rem;
+}
+
+.destination-tree__prefecture:hover,
+.destination-tree__prefecture:focus-visible,
+.destination-tree__venue:hover,
+.destination-tree__venue:focus-visible {
+  outline: none;
+  background: color-mix(in srgb, var(--category-soft) 52%, #fff);
+}
+
+.destination-tree__venues {
+  margin: 6px 0 6px 14px;
+  padding-left: 10px;
+}
+
+.destination-tree__venue {
+  padding: 10px 12px 10px 20px;
+  font-size: .94rem;
+}
+
+.destination-tree__venue[aria-current="true"] {
+  color: var(--category);
+  background: color-mix(in srgb, var(--category-soft) 72%, #fff);
+  font-weight: 800;
+}
+
+.destination-tree__empty {
+  margin: 8px;
+  padding: 14px;
+  border-radius: 9px;
+  color: var(--muted);
+  background: #f7f4f2;
+  font-size: .86rem;
+}
+
+@media (max-width: 767px) {
+  .destination-tree__panel {
+    position: fixed;
+    z-index: 120;
+    top: auto;
+    right: 12px;
+    bottom: 12px;
+    left: 12px;
+    width: auto;
+    max-height: min(70vh, 560px);
+    border-radius: 18px;
+    padding: 14px;
+  }
+
+  .destination-tree__prefecture,
+  .destination-tree__venue {
+    min-height: 48px;
+  }
+}
