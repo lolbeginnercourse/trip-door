@@ -7,7 +7,7 @@
   const observedCards = new WeakSet();
   const queue = [];
   const MAX_CONCURRENT = 2;
-  const MIN_START_INTERVAL_MS = 350;
+  const MIN_START_INTERVAL_MS = 500;
   let activeRequests = 0;
   let lastStartedAt = 0;
   let hotelMapPromise;
@@ -32,10 +32,19 @@
     return hotelMapPromise;
   }
 
+  function normalizedKeyPart(value) {
+    return String(value || "").normalize("NFKC").trim().toLowerCase();
+  }
+
   function requestKey(hotel) {
     const hotelNo = String(hotel?.rakutenHotelNo || "").trim();
     if (/^\d{1,12}$/.test(hotelNo)) return `hotelNo:${hotelNo}`;
-    return `name:${String(hotel?.name || "").normalize("NFKC").trim().toLowerCase()}`;
+    const location = hotel?.station || hotel?.area || "";
+    return `name:${[
+      normalizedKeyPart(hotel?.name),
+      normalizedKeyPart(hotel?.prefecture),
+      normalizedKeyPart(location)
+    ].join("|")}`;
   }
 
   function scheduleRequest(task) {
@@ -64,13 +73,22 @@
     }, wait);
   }
 
+  function addParam(params, key, value) {
+    const text = String(value || "").trim();
+    if (text) params.set(key, text);
+  }
+
   function fetchImageData(hotel) {
     const key = requestKey(hotel);
     if (requestCache.has(key)) return requestCache.get(key);
 
     const pending = scheduleRequest(async () => {
       const params = new URLSearchParams();
-      if (hotel?.name) params.set("name", hotel.name);
+      addParam(params, "name", hotel?.name);
+      addParam(params, "prefecture", hotel?.prefecture);
+      addParam(params, "area", hotel?.area);
+      addParam(params, "station", hotel?.station);
+      addParam(params, "accessEstimate", hotel?.accessEstimate);
       const hotelNo = String(hotel?.rakutenHotelNo || "").trim();
       if (/^\d{1,12}$/.test(hotelNo)) params.set("rakutenHotelNo", hotelNo);
       const response = await fetch(`${API_URL}?${params}`, { headers: { Accept: "application/json" } });
