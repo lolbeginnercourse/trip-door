@@ -1,9 +1,9 @@
 {
   "runId": "31127296785",
-  "runAttempt": "1",
+  "runAttempt": "2",
   "prepare": "success",
   "markStarted": "success",
-  "shards": "abandoned",
-  "aggregate": "skipped",
-  "updatedAt": "2026-08-06T22:01:29Z"
+  "shards": "success",
+  "aggregate": "success",
+  "updatedAt": "2026-08-06T23:33:52Z"
 }
