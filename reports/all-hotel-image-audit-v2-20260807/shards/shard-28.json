@@ -1,0 +1,747 @@
+{
+  "schemaVersion": 3,
+  "complete": true,
+  "phase": "first-pass",
+  "generatedAt": "2026-08-06T22:00:09.683Z",
+  "shardIndex": 28,
+  "shardSize": 25,
+  "start": 700,
+  "end": 725,
+  "totalRecords": 1256,
+  "totalUnique": 750,
+  "processedUnique": 25,
+  "retriedUnique": 0,
+  "skippedMatchedUnique": 0,
+  "retryAttemptsPerRequest": 1,
+  "results": [
+    {
+      "requestKey": "name:ホテル博多プレイス|福岡県|博多ふ頭",
+      "sourceHotel": {
+        "name": "ホテル博多プレイス",
+        "prefecture": "福岡県",
+        "station": "博多ふ頭",
+        "area": "天神・須崎公園",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1190,
+        1195
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "76358",
+        "hotelName": "ホテル博多プレイス",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ザ・ワンファイブマリン福岡|福岡県|呉服町",
+      "sourceHotel": {
+        "name": "ザ・ワンファイブマリン福岡",
+        "prefecture": "福岡県",
+        "station": "呉服町",
+        "area": "天神・須崎公園",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1191,
+        1196
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "1620",
+        "hotelName": "ザ・ワンファイブマリン福岡",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルニューガイア上呉服|福岡県|呉服町",
+      "sourceHotel": {
+        "name": "ホテルニューガイア上呉服",
+        "prefecture": "福岡県",
+        "station": "呉服町",
+        "area": "天神・須崎公園",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1192,
+        1197
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "153161",
+        "hotelName": "ホテルニューガイア博多メッセ南(旧 ホテルニューガイア上呉服)",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルオークラ福岡|福岡県|中洲川端",
+      "sourceHotel": {
+        "name": "ホテルオークラ福岡",
+        "prefecture": "福岡県",
+        "station": "中洲川端",
+        "area": "天神・須崎公園",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1194,
+        1199
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "2604",
+        "hotelName": "ホテルオークラ福岡",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:jr九州ステーションホテル小倉|福岡県|小倉",
+      "sourceHotel": {
+        "name": "JR九州ステーションホテル小倉",
+        "prefecture": "福岡県",
+        "station": "小倉",
+        "area": "小倉",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1200,
+        1205
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "974",
+        "hotelName": "JR九州ステーションホテル小倉",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ダイワロイネットホテル小倉駅前|福岡県|小倉",
+      "sourceHotel": {
+        "name": "ダイワロイネットホテル小倉駅前",
+        "prefecture": "福岡県",
+        "station": "小倉",
+        "area": "小倉",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1201,
+        1206
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "151178",
+        "hotelName": "ダイワロイネットホテル小倉駅前",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:クインテッサホテル小倉 comic & books|福岡県|小倉",
+      "sourceHotel": {
+        "name": "クインテッサホテル小倉 Comic & Books",
+        "prefecture": "福岡県",
+        "station": "小倉",
+        "area": "小倉",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1202,
+        1207
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "187453",
+        "hotelName": "クインテッサホテル小倉 Comic&Books",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:コンフォートホテル小倉|福岡県|小倉",
+      "sourceHotel": {
+        "name": "コンフォートホテル小倉",
+        "prefecture": "福岡県",
+        "station": "小倉",
+        "area": "小倉",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1203,
+        1208
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "71937",
+        "hotelName": "コンフォートホテル小倉",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn小倉駅新幹線口|福岡県|小倉",
+      "sourceHotel": {
+        "name": "東横INN小倉駅新幹線口",
+        "prefecture": "福岡県",
+        "station": "小倉",
+        "area": "小倉",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1204,
+        1209
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "108386",
+        "hotelName": "東横INN小倉駅新幹線口",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ザ・セレクトン久留米|福岡県|久留米",
+      "sourceHotel": {
+        "name": "ザ・セレクトン久留米",
+        "prefecture": "福岡県",
+        "station": "久留米",
+        "area": "久留米",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1210
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "178227",
+        "hotelName": "ザ・セレクトン久留米",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:グリーンリッチホテル久留米|福岡県|久留米",
+      "sourceHotel": {
+        "name": "グリーンリッチホテル久留米",
+        "prefecture": "福岡県",
+        "station": "久留米",
+        "area": "久留米",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1211
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "172633",
+        "hotelName": "グリーンリッチホテル久留米 天然温泉・有馬六ツ門の湯",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:久留米ワシントンホテルプラザ|福岡県|久留米",
+      "sourceHotel": {
+        "name": "久留米ワシントンホテルプラザ",
+        "prefecture": "福岡県",
+        "station": "久留米",
+        "area": "久留米",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1212
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "438",
+        "hotelName": "久留米ワシントンホテルプラザ",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn西鉄久留米駅東口|福岡県|久留米",
+      "sourceHotel": {
+        "name": "東横INN西鉄久留米駅東口",
+        "prefecture": "福岡県",
+        "station": "久留米",
+        "area": "久留米",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1213
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "68686",
+        "hotelName": "東横INN西鉄久留米駅東口",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルエスプリ|福岡県|久留米",
+      "sourceHotel": {
+        "name": "ホテルエスプリ",
+        "prefecture": "福岡県",
+        "station": "久留米",
+        "area": "久留米",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1214
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "68074",
+        "hotelName": "久留米ホテルエスプリ",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:koko hotel premier 熊本|熊本県|桜町",
+      "sourceHotel": {
+        "name": "KOKO HOTEL Premier 熊本",
+        "prefecture": "熊本県",
+        "station": "桜町",
+        "area": "熊本・桜町",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1215,
+        1220
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "184121",
+        "hotelName": "KOKO HOTEL Premier 熊本",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ダイワロイネットホテル熊本銀座通り premier|熊本県|熊本",
+      "sourceHotel": {
+        "name": "ダイワロイネットホテル熊本銀座通り PREMIER",
+        "prefecture": "熊本県",
+        "station": "熊本",
+        "area": "熊本・桜町",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1216,
+        1221
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "183440",
+        "hotelName": "ダイワロイネットホテル熊本銀座通り PREMIER",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:三井ガーデンホテル熊本|熊本県|熊本",
+      "sourceHotel": {
+        "name": "三井ガーデンホテル熊本",
+        "prefecture": "熊本県",
+        "station": "熊本",
+        "area": "熊本・桜町",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1217,
+        1222
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "1365",
+        "hotelName": "三井ガーデンホテル熊本",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:コンフォートホテル熊本新市街|熊本県|熊本",
+      "sourceHotel": {
+        "name": "コンフォートホテル熊本新市街",
+        "prefecture": "熊本県",
+        "station": "熊本",
+        "area": "熊本・桜町",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1218,
+        1223
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "70372",
+        "hotelName": "コンフォートホテル熊本新市街",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn熊本桜町バスターミナル前|熊本県|桜町",
+      "sourceHotel": {
+        "name": "東横INN熊本桜町バスターミナル前",
+        "prefecture": "熊本県",
+        "station": "桜町",
+        "area": "熊本・桜町",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1219,
+        1224
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "28655",
+        "hotelName": "東横INN熊本桜町バスターミナル前",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:jr九州ホテル ブラッサム大分|大分県|大分",
+      "sourceHotel": {
+        "name": "JR九州ホテル ブラッサム大分",
+        "prefecture": "大分県",
+        "station": "大分",
+        "area": "大分",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1225
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "147712",
+        "hotelName": "JR九州ホテルブラッサム大分",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ダイワロイネットホテル大分|大分県|大分",
+      "sourceHotel": {
+        "name": "ダイワロイネットホテル大分",
+        "prefecture": "大分県",
+        "station": "大分",
+        "area": "大分",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1226
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "70923",
+        "hotelName": "ダイワロイネットホテル大分",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテル日航大分 オアシスタワー|大分県|大分",
+      "sourceHotel": {
+        "name": "ホテル日航大分 オアシスタワー",
+        "prefecture": "大分県",
+        "station": "大分",
+        "area": "大分",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1227
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "1801",
+        "hotelName": "ホテル日航大分 オアシスタワー",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ドーミーイン大分|大分県|大分",
+      "sourceHotel": {
+        "name": "ドーミーイン大分",
+        "prefecture": "大分県",
+        "station": "大分",
+        "area": "大分",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1228
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "166556",
+        "hotelName": "天然温泉 白糸の湯 ドーミーイン大分(ドーミーイン・御宿野乃 ホテルズグループ)",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn大分駅前|大分県|大分",
+      "sourceHotel": {
+        "name": "東横INN大分駅前",
+        "prefecture": "大分県",
+        "station": "大分",
+        "area": "大分",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1229
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "70194",
+        "hotelName": "東横INN大分駅前",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:jr九州ホテル長崎|長崎県|長崎",
+      "sourceHotel": {
+        "name": "JR九州ホテル長崎",
+        "prefecture": "長崎県",
+        "station": "長崎",
+        "area": "長崎・浦上",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1230
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "6124",
+        "hotelName": "JR九州ホテル長崎",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    }
+  ]
+}
