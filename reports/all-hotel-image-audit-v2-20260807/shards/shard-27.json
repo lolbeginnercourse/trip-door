@@ -1,0 +1,757 @@
+{
+  "schemaVersion": 3,
+  "complete": true,
+  "phase": "first-pass",
+  "generatedAt": "2026-08-06T21:59:16.209Z",
+  "shardIndex": 27,
+  "shardSize": 25,
+  "start": 675,
+  "end": 700,
+  "totalRecords": 1256,
+  "totalUnique": 750,
+  "processedUnique": 25,
+  "retriedUnique": 0,
+  "skippedMatchedUnique": 0,
+  "retryAttemptsPerRequest": 1,
+  "results": [
+    {
+      "requestKey": "name:jrホテルクレメント高松|香川県|高松",
+      "sourceHotel": {
+        "name": "JRホテルクレメント高松",
+        "prefecture": "香川県",
+        "station": "高松",
+        "area": "高松",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1160
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "14862",
+        "hotelName": "JRホテルクレメント高松",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ダイワロイネットホテル高松|香川県|高松",
+      "sourceHotel": {
+        "name": "ダイワロイネットホテル高松",
+        "prefecture": "香川県",
+        "station": "高松",
+        "area": "高松",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1161
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "136268",
+        "hotelName": "ダイワロイネットホテル高松",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:コンフォートホテル高松|香川県|高松",
+      "sourceHotel": {
+        "name": "コンフォートホテル高松",
+        "prefecture": "香川県",
+        "station": "高松",
+        "area": "高松",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1162
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "183297",
+        "hotelName": "コンフォートホテル高松",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ドーミーイン高松中央公園前|香川県|高松",
+      "sourceHotel": {
+        "name": "ドーミーイン高松中央公園前",
+        "prefecture": "香川県",
+        "station": "高松",
+        "area": "高松",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1163
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "167716",
+        "hotelName": "天然温泉 玉藻の湯 ドーミーイン高松中央公園前(ドーミーイン・御宿野乃 ホテルズグループ)",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn高松兵庫町|香川県|高松",
+      "sourceHotel": {
+        "name": "東横INN高松兵庫町",
+        "prefecture": "香川県",
+        "station": "高松",
+        "area": "高松",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1164
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "108319",
+        "hotelName": "東横INN高松兵庫町",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:jrホテルクレメント徳島|徳島県|徳島",
+      "sourceHotel": {
+        "name": "JRホテルクレメント徳島",
+        "prefecture": "徳島県",
+        "station": "徳島",
+        "area": "徳島",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1165
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "4721",
+        "hotelName": "JRホテルクレメント徳島",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ダイワロイネットホテル徳島駅前|徳島県|徳島",
+      "sourceHotel": {
+        "name": "ダイワロイネットホテル徳島駅前",
+        "prefecture": "徳島県",
+        "station": "徳島",
+        "area": "徳島",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1166
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "149130",
+        "hotelName": "ダイワロイネットホテル徳島駅前",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:スマイルホテル徳島|徳島県|徳島",
+      "sourceHotel": {
+        "name": "スマイルホテル徳島",
+        "prefecture": "徳島県",
+        "station": "徳島",
+        "area": "徳島",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1167
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "532",
+        "hotelName": "スマイルホテル徳島",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn徳島駅前|徳島県|徳島",
+      "sourceHotel": {
+        "name": "東横INN徳島駅前",
+        "prefecture": "徳島県",
+        "station": "徳島",
+        "area": "徳島",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1168
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "108376",
+        "hotelName": "東横INN徳島駅前",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルサンルート徳島|徳島県|徳島",
+      "sourceHotel": {
+        "name": "ホテルサンルート徳島",
+        "prefecture": "徳島県",
+        "station": "徳島",
+        "area": "徳島",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1169
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "79371",
+        "hotelName": "ホテルサンルート徳島",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:anaクラウンプラザホテル松山|愛媛県|松山",
+      "sourceHotel": {
+        "name": "ANAクラウンプラザホテル松山",
+        "prefecture": "愛媛県",
+        "station": "松山",
+        "area": "松山",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1170
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "220",
+        "hotelName": "ANAクラウンプラザホテル松山 by IHG",
+        "matchedBy": "normalizedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ダイワロイネットホテル松山|愛媛県|松山",
+      "sourceHotel": {
+        "name": "ダイワロイネットホテル松山",
+        "prefecture": "愛媛県",
+        "station": "松山",
+        "area": "松山",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1171
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "151213",
+        "hotelName": "ダイワロイネットホテル松山",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:コンフォートホテル松山|愛媛県|松山",
+      "sourceHotel": {
+        "name": "コンフォートホテル松山",
+        "prefecture": "愛媛県",
+        "station": "松山",
+        "area": "松山",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1172
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "180563",
+        "hotelName": "コンフォートホテル松山",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルマイステイズ松山|愛媛県|松山",
+      "sourceHotel": {
+        "name": "ホテルマイステイズ松山",
+        "prefecture": "愛媛県",
+        "station": "松山",
+        "area": "松山",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1173
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "6276",
+        "hotelName": "ホテルマイステイズ松山",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:松山東急reiホテル|愛媛県|松山",
+      "sourceHotel": {
+        "name": "松山東急REIホテル",
+        "prefecture": "愛媛県",
+        "station": "松山",
+        "area": "松山",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1174
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 404,
+        "status": "not_found",
+        "hasImage": false,
+        "hotelNo": "",
+        "hotelName": "",
+        "matchedBy": "",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": {
+        "httpStatus": 200,
+        "hasRakuten": false,
+        "rakutenHotelNo": "",
+        "providers": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "causeCode": "not_found_by_current_rakuten_search"
+    },
+    {
+      "requestKey": "name:ザ クラウンパレス新阪急高知|高知県|高知",
+      "sourceHotel": {
+        "name": "ザ クラウンパレス新阪急高知",
+        "prefecture": "高知県",
+        "station": "高知",
+        "area": "高知",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1175
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "1436",
+        "hotelName": "ザ クラウンパレス高知(旧:ザ クラウンパレス新阪急高知)",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ドーミーイン高知|高知県|高知",
+      "sourceHotel": {
+        "name": "ドーミーイン高知",
+        "prefecture": "高知県",
+        "station": "高知",
+        "area": "高知",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1176
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "165939",
+        "hotelName": "天然温泉 紺碧の湯 ドーミーイン高知(ドーミーイン・御宿野乃 ホテルズグループ)",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:コンフォートホテル高知|高知県|高知",
+      "sourceHotel": {
+        "name": "コンフォートホテル高知",
+        "prefecture": "高知県",
+        "station": "高知",
+        "area": "高知",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1177
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "167682",
+        "hotelName": "コンフォートホテル高知",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:リッチモンドホテル高知|高知県|高知",
+      "sourceHotel": {
+        "name": "リッチモンドホテル高知",
+        "prefecture": "高知県",
+        "station": "高知",
+        "area": "高知",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1178
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "67907",
+        "hotelName": "リッチモンドホテル高知",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:西鉄イン高知 はりまや橋|高知県|高知",
+      "sourceHotel": {
+        "name": "西鉄イン高知 はりまや橋",
+        "prefecture": "高知県",
+        "station": "高知",
+        "area": "高知",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1179
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "70876",
+        "hotelName": "西鉄イン高知 はりまや橋",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:三井ガーデンホテル福岡祇園|福岡県|祇園",
+      "sourceHotel": {
+        "name": "三井ガーデンホテル福岡祇園",
+        "prefecture": "福岡県",
+        "station": "祇園",
+        "area": "中洲川端",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1180,
+        1185
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "172316",
+        "hotelName": "三井ガーデンホテル福岡祇園",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:西鉄ホテル クルーム博多祇園 櫛田神社前|福岡県|祇園",
+      "sourceHotel": {
+        "name": "西鉄ホテル クルーム博多祇園 櫛田神社前",
+        "prefecture": "福岡県",
+        "station": "祇園",
+        "area": "中洲川端",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1181,
+        1186
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "184730",
+        "hotelName": "西鉄ホテルクルーム博多祇園 櫛田神社前",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルリソルトリニティ博多|福岡県|中洲川端",
+      "sourceHotel": {
+        "name": "ホテルリソルトリニティ博多",
+        "prefecture": "福岡県",
+        "station": "中洲川端",
+        "area": "中洲川端",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1182,
+        1187
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "130169",
+        "hotelName": "ホテルリソルトリニティ博多",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルオリエンタルエクスプレス福岡中洲川端|福岡県|中洲川端",
+      "sourceHotel": {
+        "name": "ホテルオリエンタルエクスプレス福岡中洲川端",
+        "prefecture": "福岡県",
+        "station": "中洲川端",
+        "area": "中洲川端",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1183,
+        1188,
+        1193,
+        1198
+      ],
+      "duplicateGroupSize": 4,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "182181",
+        "hotelName": "ホテルオリエンタルエクスプレス福岡中洲川端",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルウィングインターナショナルセレクト博多駅前|福岡県|博多",
+      "sourceHotel": {
+        "name": "ホテルウィングインターナショナルセレクト博多駅前",
+        "prefecture": "福岡県",
+        "station": "博多",
+        "area": "中洲川端",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1184,
+        1189
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 404,
+        "status": "not_found",
+        "hasImage": false,
+        "hotelNo": "",
+        "hotelName": "",
+        "matchedBy": "",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": {
+        "httpStatus": 200,
+        "hasRakuten": false,
+        "rakutenHotelNo": "",
+        "providers": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "causeCode": "not_found_by_current_rakuten_search"
+    }
+  ]
+}
