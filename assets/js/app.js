@@ -248,8 +248,9 @@
       const canSearch = Boolean(getCategory()) && mode === "venue" && !area.disabled && area.value !== "all" && area.value !== "__back__";
       submit.disabled = !canSearch;
       submit.setAttribute("aria-disabled", String(!canSearch));
-      if (!canSearch) submit.textContent = mode === "prefecture" ? "都道府県を選んでください" : "会場を選ぶとホテルを表示";
-      else if (/都道府県を選んでください|会場を選ぶとホテルを表示/.test(submit.textContent)) submit.textContent = "条件に合うホテルを見る";
+      const disabledText = mode === "prefecture" ? "都道府県を選んでください" : "会場を選ぶとホテルを表示";
+      if (!canSearch && submit.textContent !== disabledText) submit.textContent = disabledText;
+      else if (canSearch && /都道府県を選んでください|会場を選ぶとホテルを表示/.test(submit.textContent)) submit.textContent = "条件に合うホテルを見る";
     };
 
     const dispatchCoreReset = () => {
@@ -334,7 +335,7 @@
         return;
       }
 
-      if (mode === "venue" && value !== "all") {
+      if (mode === "venue") {
         setTimeout(() => {
           syncSupplementalUrl();
           updateButtonState();
