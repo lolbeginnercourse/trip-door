@@ -177,3 +177,5 @@ module.exports = async function handler(req, res) {
   while (cache.size > 1500) cache.delete(cache.keys().next().value);
   return sendJson(res, 200, body, "public, s-maxage=86400, stale-while-revalidate=604800");
 };
+
+module.exports.findRakuten = findRakuten;
