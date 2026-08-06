@@ -1,0 +1,774 @@
+{
+  "schemaVersion": 3,
+  "complete": true,
+  "phase": "first-pass",
+  "generatedAt": "2026-08-06T21:56:23.404Z",
+  "shardIndex": 24,
+  "shardSize": 25,
+  "start": 600,
+  "end": 625,
+  "totalRecords": 1256,
+  "totalUnique": 750,
+  "processedUnique": 25,
+  "retriedUnique": 0,
+  "skippedMatchedUnique": 0,
+  "retryAttemptsPerRequest": 1,
+  "results": [
+    {
+      "requestKey": "name:ホテルウィングインターナショナルプレミアム京都三条|京都府|三条・東山",
+      "sourceHotel": {
+        "name": "ホテルウィングインターナショナルプレミアム京都三条",
+        "prefecture": "京都府",
+        "station": "三条・東山",
+        "area": "岡崎・東山",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1075,
+        1080
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 404,
+        "status": "not_found",
+        "hasImage": false,
+        "hotelNo": "",
+        "hotelName": "",
+        "matchedBy": "",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": {
+        "httpStatus": 200,
+        "hasRakuten": false,
+        "rakutenHotelNo": "",
+        "providers": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "causeCode": "not_found_by_current_rakuten_search"
+    },
+    {
+      "requestKey": "name:ホテルマテリアル|京都府|東山",
+      "sourceHotel": {
+        "name": "ホテルマテリアル",
+        "prefecture": "京都府",
+        "station": "東山",
+        "area": "岡崎・東山",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1076,
+        1081
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 404,
+        "status": "not_found",
+        "hasImage": false,
+        "hotelNo": "",
+        "hotelName": "",
+        "matchedBy": "",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": {
+        "httpStatus": 200,
+        "hasRakuten": false,
+        "rakutenHotelNo": "",
+        "providers": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "causeCode": "not_found_by_current_rakuten_search"
+    },
+    {
+      "requestKey": "name:ウェスティン都ホテル京都|京都府|蹴上",
+      "sourceHotel": {
+        "name": "ウェスティン都ホテル京都",
+        "prefecture": "京都府",
+        "station": "蹴上",
+        "area": "岡崎・東山",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1077,
+        1082
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "1167",
+        "hotelName": "ウェスティン都ホテル京都",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルレガスタ京都東山三条|京都府|東山",
+      "sourceHotel": {
+        "name": "ホテルレガスタ京都東山三条",
+        "prefecture": "京都府",
+        "station": "東山",
+        "area": "岡崎・東山",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1078,
+        1083
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 404,
+        "status": "not_found",
+        "hasImage": false,
+        "hotelNo": "",
+        "hotelName": "",
+        "matchedBy": "",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": {
+        "httpStatus": 200,
+        "hasRakuten": false,
+        "rakutenHotelNo": "",
+        "providers": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "causeCode": "not_found_by_current_rakuten_search"
+    },
+    {
+      "requestKey": "name:タッセルホテル三条白川|京都府|東山",
+      "sourceHotel": {
+        "name": "タッセルホテル三条白川",
+        "prefecture": "京都府",
+        "station": "東山",
+        "area": "岡崎・東山",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1079,
+        1084
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "178952",
+        "hotelName": "タッセルホテル 三条白川",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:都ホテル 京都八条|京都府|京都",
+      "sourceHotel": {
+        "name": "都ホテル 京都八条",
+        "prefecture": "京都府",
+        "station": "京都",
+        "area": "京都駅",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1085
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "1160",
+        "hotelName": "都ホテル京都八条",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ダイワロイネットホテル京都テラス八条 premier|京都府|京都",
+      "sourceHotel": {
+        "name": "ダイワロイネットホテル京都テラス八条 PREMIER",
+        "prefecture": "京都府",
+        "station": "京都",
+        "area": "京都駅",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1086
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "173030",
+        "hotelName": "ダイワロイネットホテル京都テラス八条 PREMIER",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ヴィアインプライム京都駅八条口|京都府|京都",
+      "sourceHotel": {
+        "name": "ヴィアインプライム京都駅八条口",
+        "prefecture": "京都府",
+        "station": "京都",
+        "area": "京都駅",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1087
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "172160",
+        "hotelName": "ヴィアインプライム京都駅八条口(JR西日本グループ)",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテル京阪 京都グランデ|京都府|京都",
+      "sourceHotel": {
+        "name": "ホテル京阪 京都グランデ",
+        "prefecture": "京都府",
+        "station": "京都",
+        "area": "京都駅",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1088
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "4979",
+        "hotelName": "ホテル京阪 京都グランデ",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:アパホテル〈京都駅東〉|京都府|京都",
+      "sourceHotel": {
+        "name": "アパホテル〈京都駅東〉",
+        "prefecture": "京都府",
+        "station": "京都",
+        "area": "京都駅",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1089
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "176597",
+        "hotelName": "アパホテル〈京都駅東〉",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルミュッセ京都四条河原町名鉄|京都府|河原町",
+      "sourceHotel": {
+        "name": "ホテルミュッセ京都四条河原町名鉄",
+        "prefecture": "京都府",
+        "station": "河原町",
+        "area": "祇園四条",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1090
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "180445",
+        "hotelName": "ホテルミュッセ京都四条河原町名鉄",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:京都セントラルイン|京都府|河原町",
+      "sourceHotel": {
+        "name": "京都セントラルイン",
+        "prefecture": "京都府",
+        "station": "河原町",
+        "area": "祇園四条",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1091
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "181394",
+        "hotelName": "京都セントラルイン",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルフォルツァ京都四条河原町|京都府|河原町",
+      "sourceHotel": {
+        "name": "ホテルフォルツァ京都四条河原町",
+        "prefecture": "京都府",
+        "station": "河原町",
+        "area": "祇園四条",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1092
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "182567",
+        "hotelName": "FORZA ホテルフォルツァ京都四条河原町",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:トラベロッジ京都四条河原町|京都府|河原町",
+      "sourceHotel": {
+        "name": "トラベロッジ京都四条河原町",
+        "prefecture": "京都府",
+        "station": "河原町",
+        "area": "祇園四条",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1093
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "187966",
+        "hotelName": "トラベロッジ京都四条河原町",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:アパホテル〈京都祇園〉excellent|京都府|祇園四条",
+      "sourceHotel": {
+        "name": "アパホテル〈京都祇園〉EXCELLENT",
+        "prefecture": "京都府",
+        "station": "祇園四条",
+        "area": "祇園四条",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1094
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "1834",
+        "hotelName": "アパホテル〈京都祇園〉EXCELLENT(2026年3月23日リニューアルオープン)",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテル日航奈良|奈良県|奈良",
+      "sourceHotel": {
+        "name": "ホテル日航奈良",
+        "prefecture": "奈良県",
+        "station": "奈良",
+        "area": "奈良",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1095
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "1791",
+        "hotelName": "ホテル日航奈良",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ダイワロイネットホテル奈良|奈良県|奈良",
+      "sourceHotel": {
+        "name": "ダイワロイネットホテル奈良",
+        "prefecture": "奈良県",
+        "station": "奈良",
+        "area": "奈良",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1096
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "176685",
+        "hotelName": "天然温泉 奈良若草の湯 ダイワロイネットホテル奈良",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:天然温泉 吉野桜の湯 御宿 野乃 奈良|奈良県|奈良",
+      "sourceHotel": {
+        "name": "天然温泉 吉野桜の湯 御宿 野乃 奈良",
+        "prefecture": "奈良県",
+        "station": "奈良",
+        "area": "奈良",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1097
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "164657",
+        "hotelName": "天然温泉 吉野桜の湯 御宿 野乃奈良(ドーミーイン・御宿野乃 ホテルズグループ)",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:コンフォートホテル奈良|奈良県|奈良",
+      "sourceHotel": {
+        "name": "コンフォートホテル奈良",
+        "prefecture": "奈良県",
+        "station": "奈良",
+        "area": "奈良",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1098
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "70284",
+        "hotelName": "コンフォートホテル奈良",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn近鉄奈良駅前|奈良県|近鉄奈良",
+      "sourceHotel": {
+        "name": "東横INN近鉄奈良駅前",
+        "prefecture": "奈良県",
+        "station": "近鉄奈良",
+        "area": "奈良",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1099
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "147566",
+        "hotelName": "東横INN近鉄奈良駅前",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:びわ湖ホテル|滋賀県|びわ湖浜大津",
+      "sourceHotel": {
+        "name": "びわ湖ホテル",
+        "prefecture": "滋賀県",
+        "station": "びわ湖浜大津",
+        "area": "大津・びわ湖浜大津",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1100
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 502,
+        "status": "502",
+        "hasImage": false,
+        "hotelNo": "",
+        "hotelName": "",
+        "matchedBy": "",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": {
+        "httpStatus": 200,
+        "hasRakuten": false,
+        "rakutenHotelNo": "",
+        "providers": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "causeCode": "temporary_upstream_error"
+    },
+    {
+      "requestKey": "name:hotel 講 大津百町|滋賀県|大津",
+      "sourceHotel": {
+        "name": "HOTEL 講 大津百町",
+        "prefecture": "滋賀県",
+        "station": "大津",
+        "area": "大津・びわ湖浜大津",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1101
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "176623",
+        "hotelName": "HOTEL 講 大津百町",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn京都琵琶湖大津|滋賀県|大津",
+      "sourceHotel": {
+        "name": "東横INN京都琵琶湖大津",
+        "prefecture": "滋賀県",
+        "station": "大津",
+        "area": "大津・びわ湖浜大津",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1102
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "108420",
+        "hotelName": "東横INN京都琵琶湖大津",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルテトラ大津.京都|滋賀県|大津",
+      "sourceHotel": {
+        "name": "ホテルテトラ大津.京都",
+        "prefecture": "滋賀県",
+        "station": "大津",
+        "area": "大津・びわ湖浜大津",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1103
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "5443",
+        "hotelName": "ホテルテトラ大津.京都",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:びわ湖大津プリンスホテル|滋賀県|大津",
+      "sourceHotel": {
+        "name": "びわ湖大津プリンスホテル",
+        "prefecture": "滋賀県",
+        "station": "大津",
+        "area": "大津・びわ湖浜大津",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1104
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "16068",
+        "hotelName": "びわ湖大津プリンスホテル",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    }
+  ]
+}
