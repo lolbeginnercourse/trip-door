@@ -11,7 +11,7 @@
   };
 
   appendStylesheet("assets/css/top-refresh.css?v=20260806-1", "top-refresh-style");
-  appendStylesheet("assets/css/finder-two-step.css?v=20260806-1", "finder-two-step-style");
+  appendStylesheet("assets/css/finder-single-select.css?v=20260806-1", "finder-two-step-style");
 
   const PREFECTURE_GROUPS = [
     ["主要遠征エリア", ["東京都", "大阪府", "神奈川県", "愛知県", "千葉県", "埼玉県", "兵庫県", "福岡県"]],
@@ -47,6 +47,12 @@
     ["福岡", "福岡県"], ["博多", "福岡県"], ["熊本", "熊本県"], ["鹿児島", "鹿児島県"], ["那覇", "沖縄県"]
   ];
 
+  const venueCollator = new Intl.Collator("ja-JP", {
+    usage: "sort",
+    sensitivity: "base",
+    numeric: true
+  });
+
   const stageIcon = `
     <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false">
       <path d="M9 16c7 0 13-2 18-6v23c0 11-7 19-18 22C-2 52-9 44-9 33V10c5 4 11 6 18 6Z" transform="translate(16 0)" />
@@ -68,53 +74,30 @@
     history.replaceState(history.state, "", `${url.pathname}${url.search}${url.hash}`);
   }
 
-  function installTwoStepFinderMarkup() {
-    const grid = document.querySelector(".finder-grid");
-    const area = document.querySelector("[data-area-select]");
-    const areaField = area?.closest("label");
-    if (!grid || !area || !areaField) return;
-
-    areaField.classList.add("finder-field", "finder-field--venue");
-    const areaLabel = document.querySelector("[data-area-label]");
-    if (areaLabel) areaLabel.textContent = "会場";
-
-    if (document.querySelector("[data-prefecture-select]")) return;
-    const prefectureField = document.createElement("label");
-    prefectureField.className = "finder-field finder-field--prefecture";
-    const label = document.createElement("span");
-    label.textContent = "都道府県";
-    const select = document.createElement("select");
-    select.name = "prefecture";
-    select.dataset.prefectureSelect = "";
-    select.disabled = true;
-    const option = document.createElement("option");
-    option.value = "all";
-    option.textContent = "都道府県を選択してください";
-    select.append(option);
-    prefectureField.append(label, select);
-    grid.insertBefore(prefectureField, areaField);
-  }
-
   function inferPrefecture(label) {
     const direct = ALL_PREFECTURES.find(prefecture => label.includes(prefecture));
     if (direct) return direct;
     return PREFECTURE_HINTS.find(([keyword]) => label.includes(keyword))?.[1] || "その他";
   }
 
-  function installTwoStepFinder() {
+  function installSingleSelectFinder() {
     const form = document.querySelector("[data-search-form]");
-    const prefecture = document.querySelector("[data-prefecture-select]");
     const area = document.querySelector("[data-area-select]");
     const areaLabel = document.querySelector("[data-area-label]");
     const submit = document.querySelector("[data-search-submit]");
     const finderDescription = document.querySelector("[data-finder-description]");
-    if (!form || !prefecture || !area || !submit || form.dataset.twoStepInstalled === "true") return;
-    form.dataset.twoStepInstalled = "true";
+    if (!form || !area || !submit || form.dataset.singleSelectInstalled === "true") return;
+
+    form.dataset.singleSelectInstalled = "true";
+    area.closest("label")?.classList.add("finder-field", "finder-field--destination");
+    if (areaLabel) areaLabel.textContent = "都道府県・会場";
 
     const sourceOptionsByCategory = new Map();
     const selectedPrefectureByCategory = new Map();
-    let activeCategory = null;
-    let restoreFromUrl = true;
+    let activeCategory = "";
+    let mode = "prefecture";
+    let rendering = false;
+    let passCoreChange = false;
     let scheduled = false;
     let areaObserver;
 
@@ -128,18 +111,18 @@
     };
 
     const parseAreaOptions = category => [...area.options]
-      .filter(option => option.value && option.value !== "all")
+      .filter(option => option.value && option.value !== "all" && !option.value.startsWith("__"))
       .map((option, index) => {
         const rawLabel = option.textContent.trim();
         const separator = rawLabel.search(/[｜|]/);
         const explicitPrefecture = separator >= 0 ? rawLabel.slice(0, separator).trim() : "";
         const venueLabel = separator >= 0 ? rawLabel.slice(separator + 1).trim() : rawLabel;
-        const prefectureName = explicitPrefecture || (category === "esports" ? ESPORTS_PREFECTURES[option.value] : "") || inferPrefecture(rawLabel);
-        return { value: option.value, label: venueLabel, prefecture: prefectureName, order: index };
+        const prefecture = explicitPrefecture || ESPORTS_PREFECTURES[option.value] || inferPrefecture(rawLabel);
+        return { value: option.value, label: venueLabel, prefecture, order: index };
       });
 
     const captureSourceOptions = category => {
-      if (!category) return false;
+      if (!category || rendering) return false;
       const options = parseAreaOptions(category);
       if (!options.length) return false;
       sourceOptionsByCategory.set(category, options);
@@ -149,6 +132,7 @@
     const observeArea = () => {
       areaObserver?.disconnect();
       areaObserver = new MutationObserver(() => {
+        if (rendering) return;
         const category = getCategory();
         if (captureSourceOptions(category)) scheduleRebuild();
         else updateButtonState();
@@ -156,26 +140,30 @@
       areaObserver.observe(area, { childList: true, subtree: true });
     };
 
-    const replaceAreaOptions = nodes => {
+    const replaceOptions = nodes => {
+      rendering = true;
       areaObserver?.disconnect();
       area.replaceChildren(...nodes);
+      rendering = false;
       observeArea();
     };
 
     const availablePrefectures = options => new Set(options.map(option => option.prefecture));
 
-    const populatePrefectures = (options, selectedName) => {
+    const renderPrefectureList = options => {
+      mode = "prefecture";
+      area.dataset.selectionMode = "prefecture";
       const available = availablePrefectures(options);
       const nodes = [makeOption("all", options.length ? "都道府県を選択してください" : "選択できる会場がありません")];
       const added = new Set();
 
       PREFECTURE_GROUPS.forEach(([groupLabel, names]) => {
-        const groupNames = names.filter(name => available.has(name));
-        if (!groupNames.length) return;
+        const matching = names.filter(name => available.has(name));
+        if (!matching.length) return;
         const group = document.createElement("optgroup");
         group.label = groupLabel;
-        groupNames.forEach(name => {
-          const option = makeOption(PREFECTURE_SLUGS[name], name, name === selectedName);
+        matching.forEach(name => {
+          const option = makeOption(`__prefecture__:${PREFECTURE_SLUGS[name] || "other"}`, name);
           option.dataset.prefecture = name;
           group.append(option);
           added.add(name);
@@ -183,61 +171,68 @@
         nodes.push(group);
       });
 
-      const remaining = [...available].filter(name => !added.has(name));
+      const remaining = [...available].filter(name => !added.has(name)).sort(venueCollator.compare);
       if (remaining.length) {
         const group = document.createElement("optgroup");
         group.label = "その他";
         remaining.forEach(name => {
-          const slug = PREFECTURE_SLUGS[name] || "other";
-          const option = makeOption(slug, name, name === selectedName);
+          const option = makeOption(`__prefecture__:${PREFECTURE_SLUGS[name] || "other"}`, name);
           option.dataset.prefecture = name;
           group.append(option);
         });
         nodes.push(group);
       }
 
-      prefecture.replaceChildren(...nodes);
-      prefecture.disabled = options.length === 0;
-      if (!selectedName || !available.has(selectedName)) prefecture.value = "all";
+      replaceOptions(nodes);
+      area.disabled = options.length === 0;
+      area.value = "all";
+      updateButtonState();
     };
 
-    const populateVenues = (options, prefectureName, selectedVenue) => {
-      if (!prefectureName) {
-        replaceAreaOptions([makeOption("all", options.length ? "先に都道府県を選択してください" : "選択できる会場がありません")]);
-        area.disabled = true;
-        return;
-      }
-
-      const venues = options.filter(option => option.prefecture === prefectureName).sort((a, b) => a.order - b.order);
-      const nodes = [makeOption("all", "会場を選択してください")];
+    const renderVenueList = (options, prefectureName, selectedVenue = "") => {
+      mode = "venue";
+      area.dataset.selectionMode = "venue";
+      area.dataset.prefecture = prefectureName;
+      const venues = options
+        .filter(option => option.prefecture === prefectureName)
+        .sort((a, b) => venueCollator.compare(a.label, b.label) || a.order - b.order);
+      const nodes = [
+        makeOption("all", `${prefectureName}の会場を選択してください`),
+        makeOption("__back__", "← 都道府県を選び直す")
+      ];
       venues.forEach(venue => nodes.push(makeOption(venue.value, venue.label, venue.value === selectedVenue)));
-      replaceAreaOptions(nodes);
+      replaceOptions(nodes);
       area.disabled = venues.length === 0;
-      if (!venues.some(venue => venue.value === selectedVenue)) area.value = "all";
+      area.value = venues.some(venue => venue.value === selectedVenue) ? selectedVenue : "all";
+      updateButtonState();
     };
 
-    const selectedPrefectureName = () => prefecture.selectedOptions[0]?.dataset.prefecture || SLUG_PREFECTURES[prefecture.value] || "";
-
-    const prefectureFromUrl = category => {
+    const selectedPrefectureFromUrl = category => {
       const url = new URL(window.location.href);
       if (url.searchParams.get("category") !== category) return "";
       return SLUG_PREFECTURES[url.searchParams.get("prefecture")] || "";
     };
 
+    const selectedVenueFromUrl = category => {
+      const url = new URL(window.location.href);
+      if (url.searchParams.get("category") !== category) return "";
+      return url.searchParams.get("area") || url.searchParams.get("venue") || "";
+    };
+
     const updateFinderCopy = category => {
-      if (areaLabel) areaLabel.textContent = "会場";
+      if (areaLabel) areaLabel.textContent = "都道府県・会場";
       if (!finderDescription) return;
       finderDescription.textContent = category === "esports"
-        ? "都道府県、イベント会場、参加スタイル、優先したい条件を選ぶと、機材移動と休息に合うホテルを表示します"
-        : "都道府県、会場、観劇スタイル、優先したい条件を選ぶと、当日の動きに合うホテルを表示します";
+        ? "都道府県を選び、続けて同じ欄からイベント会場を選択してください 会場は名前順で表示します"
+        : "都道府県を選び、続けて同じ欄から会場を選択してください 会場は名前順で表示します";
     };
 
     const syncSupplementalUrl = () => {
       const category = getCategory();
       if (!category) return;
       const url = new URL(window.location.href);
-      const prefectureName = selectedPrefectureName();
-      const venue = !area.disabled && area.value !== "all" ? area.value : "";
+      const prefectureName = area.dataset.prefecture || selectedPrefectureByCategory.get(category) || "";
+      const venue = mode === "venue" && area.value !== "all" && area.value !== "__back__" ? area.value : "";
 
       if (prefectureName) url.searchParams.set("prefecture", PREFECTURE_SLUGS[prefectureName] || "other");
       else url.searchParams.delete("prefecture");
@@ -250,82 +245,110 @@
     };
 
     const updateButtonState = () => {
-      const canSearch = Boolean(getCategory()) && !area.disabled && area.value !== "all";
+      const canSearch = Boolean(getCategory()) && mode === "venue" && !area.disabled && area.value !== "all" && area.value !== "__back__";
       submit.disabled = !canSearch;
       submit.setAttribute("aria-disabled", String(!canSearch));
-      if (!canSearch && submit.textContent !== "会場を選ぶとホテルを表示") {
-        submit.textContent = "会場を選ぶとホテルを表示";
-      } else if (canSearch && submit.textContent === "会場を選ぶとホテルを表示") {
-        submit.textContent = "条件に合うホテルを見る";
-      }
+      if (!canSearch) submit.textContent = mode === "prefecture" ? "都道府県を選んでください" : "会場を選ぶとホテルを表示";
+      else if (/都道府県を選んでください|会場を選ぶとホテルを表示/.test(submit.textContent)) submit.textContent = "条件に合うホテルを見る";
+    };
+
+    const dispatchCoreReset = () => {
+      passCoreChange = true;
+      area.value = "all";
+      area.dispatchEvent(new Event("change", { bubbles: true }));
+      passCoreChange = false;
     };
 
     const rebuild = () => {
       scheduled = false;
       const category = getCategory();
       if (!category) {
-        activeCategory = null;
+        activeCategory = "";
+        return;
+      }
+
+      const options = sourceOptionsByCategory.get(category) || [];
+      if (!options.length) {
+        updateButtonState();
         return;
       }
 
       const categoryChanged = category !== activeCategory;
       activeCategory = category;
-      const options = sourceOptionsByCategory.get(category) || [];
-      const selectedVenue = area.value !== "all" ? area.value : "";
-      const venuePrefecture = options.find(option => option.value === selectedVenue)?.prefecture || "";
-      const rememberedPrefecture = selectedPrefectureByCategory.get(category) || "";
-      const urlPrefecture = restoreFromUrl ? prefectureFromUrl(category) : "";
-      const selectedName = venuePrefecture || urlPrefecture || (!categoryChanged ? selectedPrefectureName() : "") || rememberedPrefecture;
-      const validName = availablePrefectures(options).has(selectedName) ? selectedName : "";
-
-      populatePrefectures(options, validName);
-      populateVenues(options, validName, selectedVenue);
-      if (validName) selectedPrefectureByCategory.set(category, validName);
-      else selectedPrefectureByCategory.delete(category);
       updateFinderCopy(category);
-      restoreFromUrl = false;
+
+      const currentValue = options.some(option => option.value === area.value) ? area.value : "";
+      const urlVenue = selectedVenueFromUrl(category);
+      const selectedVenue = currentValue || (options.some(option => option.value === urlVenue) ? urlVenue : "");
+      const venuePrefecture = options.find(option => option.value === selectedVenue)?.prefecture || "";
+      const urlPrefecture = selectedPrefectureFromUrl(category);
+      const remembered = selectedPrefectureByCategory.get(category) || "";
+      const selectedPrefecture = venuePrefecture || urlPrefecture || (!categoryChanged ? area.dataset.prefecture || "" : "") || remembered;
+
+      if (selectedPrefecture && availablePrefectures(options).has(selectedPrefecture)) {
+        selectedPrefectureByCategory.set(category, selectedPrefecture);
+        renderVenueList(options, selectedPrefecture, selectedVenue);
+      } else {
+        selectedPrefectureByCategory.delete(category);
+        delete area.dataset.prefecture;
+        renderPrefectureList(options);
+      }
       syncSupplementalUrl();
-      updateButtonState();
     };
 
     function scheduleRebuild() {
       if (scheduled) return;
       scheduled = true;
-      queueMicrotask(rebuild);
+      setTimeout(rebuild, 0);
     }
 
-    observeArea();
-
-    prefecture.addEventListener("change", () => {
+    area.addEventListener("change", event => {
+      if (passCoreChange) return;
       const category = getCategory();
       const options = sourceOptionsByCategory.get(category) || [];
-      const name = selectedPrefectureName();
-      if (name) selectedPrefectureByCategory.set(category, name);
-      else selectedPrefectureByCategory.delete(category);
-      populateVenues(options, name, "");
-      area.value = "all";
-      area.dispatchEvent(new Event("change", { bubbles: true }));
-      syncSupplementalUrl();
-      updateButtonState();
-    });
+      const value = area.value;
 
-    area.addEventListener("change", () => {
-      const category = getCategory();
-      const options = sourceOptionsByCategory.get(category) || [];
-      const matched = options.find(option => option.value === area.value);
-      if (matched && selectedPrefectureName() !== matched.prefecture) {
-        populatePrefectures(options, matched.prefecture);
-        selectedPrefectureByCategory.set(category, matched.prefecture);
+      if (mode === "prefecture" && value.startsWith("__prefecture__:")) {
+        event.stopImmediatePropagation();
+        const prefectureName = area.selectedOptions[0]?.dataset.prefecture || SLUG_PREFECTURES[value.split(":")[1]] || "";
+        if (!prefectureName) return;
+        selectedPrefectureByCategory.set(category, prefectureName);
+        renderVenueList(options, prefectureName);
+        dispatchCoreReset();
+        syncSupplementalUrl();
+        area.focus();
+        return;
       }
-      syncSupplementalUrl();
-      updateButtonState();
-    });
+
+      if (mode === "venue" && value === "__back__") {
+        event.stopImmediatePropagation();
+        selectedPrefectureByCategory.delete(category);
+        delete area.dataset.prefecture;
+        renderPrefectureList(options);
+        dispatchCoreReset();
+        const url = new URL(window.location.href);
+        url.searchParams.delete("prefecture");
+        url.searchParams.delete("venue");
+        history.replaceState(history.state, "", `${url.pathname}${url.search}${url.hash}`);
+        area.focus();
+        return;
+      }
+
+      if (mode === "venue" && value !== "all") {
+        setTimeout(() => {
+          syncSupplementalUrl();
+          updateButtonState();
+        }, 0);
+      } else {
+        updateButtonState();
+      }
+    }, true);
 
     form.addEventListener("submit", event => {
       if (!submit.disabled) return;
       event.preventDefault();
       event.stopImmediatePropagation();
-      (prefecture.value === "all" ? prefecture : area).focus();
+      area.focus();
     }, true);
 
     document.addEventListener("click", event => {
@@ -333,23 +356,20 @@
       if (!target) return;
       if (target.dataset.selectCategory || target.dataset.categoryTab) scheduleRebuild();
       if (target.hasAttribute("data-clear-filters")) {
-        queueMicrotask(() => {
+        setTimeout(() => {
           const category = getCategory();
           selectedPrefectureByCategory.delete(category);
+          delete area.dataset.prefecture;
           const url = new URL(window.location.href);
           url.searchParams.delete("prefecture");
           url.searchParams.delete("venue");
           history.replaceState(history.state, "", `${url.pathname}${url.search}${url.hash}`);
-          restoreFromUrl = false;
-          rebuild();
-        });
+          scheduleRebuild();
+        }, 0);
       }
     });
 
-    window.addEventListener("popstate", () => {
-      restoreFromUrl = true;
-      setTimeout(scheduleRebuild, 0);
-    });
+    window.addEventListener("popstate", () => setTimeout(scheduleRebuild, 0));
 
     const bodyObserver = new MutationObserver(() => scheduleRebuild());
     bodyObserver.observe(document.body, { attributes: true, attributeFilter: ["data-category"] });
@@ -357,6 +377,7 @@
     const submitObserver = new MutationObserver(updateButtonState);
     submitObserver.observe(submit, { childList: true, characterData: true, subtree: true });
 
+    observeArea();
     captureSourceOptions(getCategory());
     scheduleRebuild();
   }
@@ -442,11 +463,10 @@
     addBenefits();
     updateMobileCompare();
     installDirectFinderNavigation();
-    installTwoStepFinder();
+    installSingleSelectFinder();
   }
 
   normalizeVenueUrlParameter();
-  installTwoStepFinderMarkup();
 
   const core = document.createElement("script");
   core.src = "assets/js/app-core.js?v=20260806-1";
