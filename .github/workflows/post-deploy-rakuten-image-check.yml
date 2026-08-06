@@ -1,0 +1,86 @@
+name: Check deployed Rakuten image matching
+
+on:
+  push:
+    branches:
+      - audit/strict-rakuten-image-matching-20260807
+    paths:
+      - .github/workflows/post-deploy-rakuten-image-check.yml
+
+permissions:
+  contents: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: audit/strict-rakuten-image-matching-20260807
+      - name: Check production with real hotel records
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json, urllib.parse, urllib.request, urllib.error
+          with open('assets/data/hotels.json', encoding='utf-8') as f:
+              raw = json.load(f)
+          hotels = raw if isinstance(raw, list) else raw.get('hotels', [])
+          targets = []
+          for target_id in ('stage-001-1', 'stage-001-3'):
+              hotel = next(item for item in hotels if item.get('id') == target_id)
+              params = {
+                  'name': hotel.get('name', ''),
+                  'prefecture': hotel.get('prefecture', ''),
+                  'area': hotel.get('area', ''),
+                  'station': hotel.get('station', ''),
+                  'accessEstimate': hotel.get('accessEstimate', '')
+              }
+              if hotel.get('rakutenHotelNo'):
+                  params['rakutenHotelNo'] = str(hotel['rakutenHotelNo'])
+              url = 'https://mainitiworakunisuru.com/api/hotel-image?' + urllib.parse.urlencode(params)
+              request = urllib.request.Request(url, headers={
+                  'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0 Safari/537.36',
+                  'Accept': 'application/json,text/plain,*/*',
+                  'Accept-Language': 'ja,en-US;q=0.9,en;q=0.8',
+                  'Referer': 'https://mainitiworakunisuru.com/'
+              })
+              result = {'id': target_id, 'name': hotel.get('name'), 'hasStoredHotelNo': bool(hotel.get('rakutenHotelNo'))}
+              try:
+                  with urllib.request.urlopen(request, timeout=30) as response:
+                      payload = json.loads(response.read().decode('utf-8'))
+                      image = payload.get('image') or {}
+                      result.update({
+                          'httpStatus': response.status,
+                          'status': payload.get('status'),
+                          'hasImage': bool(image.get('src')),
+                          'hotelNo': image.get('hotelNo'),
+                          'hotelName': image.get('hotelName'),
+                          'matchedBy': image.get('matchedBy'),
+                          'matchEvidence': image.get('matchEvidence'),
+                          'source': image.get('source')
+                      })
+              except urllib.error.HTTPError as error:
+                  body = error.read().decode('utf-8', errors='replace')
+                  result['httpStatus'] = error.code
+                  try:
+                      payload = json.loads(body)
+                      result['status'] = payload.get('status')
+                      result['error'] = payload.get('error')
+                  except Exception:
+                      result['bodyPreview'] = body[:200]
+              except Exception as error:
+                  result['exception'] = type(error).__name__
+                  result['message'] = str(error)[:200]
+              targets.append(result)
+          with open('reports/post-deploy-rakuten-image-check.json', 'w', encoding='utf-8') as output:
+              json.dump({'checks': targets}, output, ensure_ascii=False, indent=2)
+              output.write('\n')
+          PY
+      - name: Save result and remove temporary workflow
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reports/post-deploy-rakuten-image-check.json
+          git rm .github/workflows/post-deploy-rakuten-image-check.yml
+          git commit -m "Record deployed Rakuten image check"
+          git push origin HEAD:audit/strict-rakuten-image-matching-20260807
