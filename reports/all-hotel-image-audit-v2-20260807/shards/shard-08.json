@@ -1,0 +1,757 @@
+{
+  "schemaVersion": 3,
+  "complete": true,
+  "phase": "first-pass",
+  "generatedAt": "2026-08-06T23:31:22.477Z",
+  "shardIndex": 8,
+  "shardSize": 25,
+  "start": 200,
+  "end": 225,
+  "totalRecords": 1256,
+  "totalUnique": 750,
+  "processedUnique": 25,
+  "retriedUnique": 0,
+  "skippedMatchedUnique": 0,
+  "retryAttemptsPerRequest": 1,
+  "results": [
+    {
+      "requestKey": "name:グランドホテル神奈中 平塚|神奈川県|平塚",
+      "sourceHotel": {
+        "name": "グランドホテル神奈中 平塚",
+        "prefecture": "神奈川県",
+        "station": "平塚",
+        "area": "平塚",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        469
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "2766",
+        "hotelName": "グランドホテル神奈中・平塚",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:日和ホテル舞浜|千葉県|舞浜・新浦安",
+      "sourceHotel": {
+        "name": "日和ホテル舞浜",
+        "prefecture": "千葉県",
+        "station": "舞浜・新浦安",
+        "area": "舞浜・新浦安",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        470
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 404,
+        "status": "not_found",
+        "hasImage": false,
+        "hotelNo": "",
+        "hotelName": "",
+        "matchedBy": "",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": {
+        "httpStatus": 200,
+        "hasRakuten": false,
+        "rakutenHotelNo": "",
+        "providers": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "causeCode": "not_found_by_current_rakuten_search"
+    },
+    {
+      "requestKey": "name:ホテルマイステイズ舞浜|千葉県|舞浜",
+      "sourceHotel": {
+        "name": "ホテルマイステイズ舞浜",
+        "prefecture": "千葉県",
+        "station": "舞浜",
+        "area": "舞浜・新浦安",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        471
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "39203",
+        "hotelName": "ホテルマイステイズ舞浜",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:変なホテル舞浜 東京ベイ|千葉県|舞浜",
+      "sourceHotel": {
+        "name": "変なホテル舞浜 東京ベイ",
+        "prefecture": "千葉県",
+        "station": "舞浜",
+        "area": "舞浜・新浦安",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        472
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "160670",
+        "hotelName": "変なホテル舞浜 東京ベイ",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ラ・ジェント・ホテル東京ベイ|千葉県|新浦安",
+      "sourceHotel": {
+        "name": "ラ・ジェント・ホテル東京ベイ",
+        "prefecture": "千葉県",
+        "station": "新浦安",
+        "area": "舞浜・新浦安",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        473,
+        508
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "158612",
+        "hotelName": "ラ・ジェント・ホテル東京ベイ",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:オリエンタルホテル東京ベイ|千葉県|新浦安",
+      "sourceHotel": {
+        "name": "オリエンタルホテル東京ベイ",
+        "prefecture": "千葉県",
+        "station": "新浦安",
+        "area": "舞浜・新浦安",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        474,
+        509
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "1238",
+        "hotelName": "オリエンタルホテル東京ベイ",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:アパホテル&リゾート〈東京ベイ幕張〉|千葉県|海浜幕張",
+      "sourceHotel": {
+        "name": "アパホテル&リゾート〈東京ベイ幕張〉",
+        "prefecture": "千葉県",
+        "station": "海浜幕張",
+        "area": "海浜幕張",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        475
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "51637",
+        "hotelName": "アパホテル&リゾート〈東京ベイ幕張〉",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルスプリングス幕張プレミア|千葉県|海浜幕張",
+      "sourceHotel": {
+        "name": "ホテルスプリングス幕張プレミア",
+        "prefecture": "千葉県",
+        "station": "海浜幕張",
+        "area": "海浜幕張",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        476
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "191532",
+        "hotelName": "ホテルスプリングス幕張プレミア",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルフランクス|千葉県|海浜幕張",
+      "sourceHotel": {
+        "name": "ホテルフランクス",
+        "prefecture": "千葉県",
+        "station": "海浜幕張",
+        "area": "海浜幕張",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        477
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "4929",
+        "hotelName": "ホテルフランクス",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルグリーンタワー幕張|千葉県|海浜幕張",
+      "sourceHotel": {
+        "name": "ホテルグリーンタワー幕張",
+        "prefecture": "千葉県",
+        "station": "海浜幕張",
+        "area": "海浜幕張",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        478
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "1520",
+        "hotelName": "ホテルグリーンタワー幕張",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルニューオータニ幕張|千葉県|海浜幕張",
+      "sourceHotel": {
+        "name": "ホテルニューオータニ幕張",
+        "prefecture": "千葉県",
+        "station": "海浜幕張",
+        "area": "海浜幕張",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        479
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "1609",
+        "hotelName": "ホテルニューオータニ幕張",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:市川グランドホテル|千葉県|市川",
+      "sourceHotel": {
+        "name": "市川グランドホテル",
+        "prefecture": "千葉県",
+        "station": "市川",
+        "area": "本八幡・市川",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        480
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "1936",
+        "hotelName": "市川グランドホテル(BBHホテルグループ)",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:スーパーホテル東西線・市川・妙典駅前|千葉県|妙典",
+      "sourceHotel": {
+        "name": "スーパーホテル東西線・市川・妙典駅前",
+        "prefecture": "千葉県",
+        "station": "妙典",
+        "area": "本八幡・市川",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        481
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "40250",
+        "hotelName": "スーパーホテル東西線・市川・妙典駅前",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn西船橋原木インター|千葉県|原木中山",
+      "sourceHotel": {
+        "name": "東横INN西船橋原木インター",
+        "prefecture": "千葉県",
+        "station": "原木中山",
+        "area": "本八幡・市川",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        482
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "176678",
+        "hotelName": "東横INN西船橋原木インター",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:jr東日本ホテルメッツ 船橋|千葉県|船橋",
+      "sourceHotel": {
+        "name": "JR東日本ホテルメッツ 船橋",
+        "prefecture": "千葉県",
+        "station": "船橋",
+        "area": "本八幡・市川",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        483,
+        515
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "165054",
+        "hotelName": "JR東日本ホテルメッツ船橋",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:cvs・bay hotel|千葉県|市川塩浜",
+      "sourceHotel": {
+        "name": "CVS・BAY HOTEL",
+        "prefecture": "千葉県",
+        "station": "市川塩浜",
+        "area": "本八幡・市川",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        484
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 404,
+        "status": "ambiguous",
+        "hasImage": false,
+        "hotelNo": "",
+        "hotelName": "",
+        "matchedBy": "",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": {
+        "httpStatus": 200,
+        "hasRakuten": false,
+        "rakutenHotelNo": "",
+        "providers": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "causeCode": "multiple_candidates"
+    },
+    {
+      "requestKey": "name:東横inn松戸駅東口|千葉県|松戸",
+      "sourceHotel": {
+        "name": "東横INN松戸駅東口",
+        "prefecture": "千葉県",
+        "station": "松戸",
+        "area": "新八柱・八柱",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        485
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "166149",
+        "hotelName": "東横INN松戸駅東口",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルルートイン北松戸駅前|千葉県|北松戸",
+      "sourceHotel": {
+        "name": "ホテルルートイン北松戸駅前",
+        "prefecture": "千葉県",
+        "station": "北松戸",
+        "area": "新八柱・八柱",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        486
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "11258",
+        "hotelName": "ホテルルートイン北松戸駅前",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:新松戸ステーションホテル|千葉県|新松戸",
+      "sourceHotel": {
+        "name": "新松戸ステーションホテル",
+        "prefecture": "千葉県",
+        "station": "新松戸",
+        "area": "新八柱・八柱",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        487
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "7829",
+        "hotelName": "アーバンホテル東京 新松戸(旧:新松戸ステーションホテル)",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:相鉄フレッサイン 千葉柏|千葉県|柏",
+      "sourceHotel": {
+        "name": "相鉄フレッサイン 千葉柏",
+        "prefecture": "千葉県",
+        "station": "柏",
+        "area": "新八柱・八柱",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        488,
+        510
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "136279",
+        "hotelName": "相鉄フレッサイン 千葉柏",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ザ・クレストホテル柏|千葉県|柏",
+      "sourceHotel": {
+        "name": "ザ・クレストホテル柏",
+        "prefecture": "千葉県",
+        "station": "柏",
+        "area": "新八柱・八柱",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        489,
+        511
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "11178",
+        "hotelName": "ザ・クレストホテル柏",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ダイワロイネットホテル千葉中央|千葉県|千葉中央",
+      "sourceHotel": {
+        "name": "ダイワロイネットホテル千葉中央",
+        "prefecture": "千葉県",
+        "station": "千葉中央",
+        "area": "本千葉・県庁前",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        490,
+        495,
+        500
+      ],
+      "duplicateGroupSize": 3,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "166219",
+        "hotelName": "ダイワロイネットホテル千葉中央",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:京成ホテルミラマーレ|千葉県|千葉中央",
+      "sourceHotel": {
+        "name": "京成ホテルミラマーレ",
+        "prefecture": "千葉県",
+        "station": "千葉中央",
+        "area": "本千葉・県庁前",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        491,
+        496,
+        501
+      ],
+      "duplicateGroupSize": 3,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "16169",
+        "hotelName": "京成ホテルミラマーレ",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:アパホテル〈千葉中央駅前〉|千葉県|千葉中央",
+      "sourceHotel": {
+        "name": "アパホテル〈千葉中央駅前〉",
+        "prefecture": "千葉県",
+        "station": "千葉中央",
+        "area": "本千葉・県庁前",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        492,
+        497,
+        502
+      ],
+      "duplicateGroupSize": 3,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "182195",
+        "hotelName": "アパホテル〈千葉中央駅前〉",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ベッセルイン千葉駅前|千葉県|千葉",
+      "sourceHotel": {
+        "name": "ベッセルイン千葉駅前",
+        "prefecture": "千葉県",
+        "station": "千葉",
+        "area": "本千葉・県庁前",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        493,
+        498,
+        503
+      ],
+      "duplicateGroupSize": 3,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "168546",
+        "hotelName": "ベッセルイン千葉駅前|サウナ付大浴場(千葉・京成千葉・幕張)",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    }
+  ]
+}
