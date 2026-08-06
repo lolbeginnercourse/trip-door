@@ -347,3 +347,5 @@ module.exports = async function handler(req, res) {
     return sendJson(res, 502, { image: null, error: "upstream_unavailable" });
   }
 };
+
+module.exports.findImage = findImage;
