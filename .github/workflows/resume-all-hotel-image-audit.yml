@@ -12,7 +12,7 @@ permissions:
 
 concurrency:
   group: full-hotel-image-audit
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   audit:
@@ -27,6 +27,16 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
+      - name: Record audit start
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          mkdir -p reports/all-hotel-image-audit-20260807
+          printf '{"status":"running","startedAt":"%s","processed":0,"totalRecords":1256}\n' "$(date -u +%Y-%m-%dT%H:%M:%SZ)" > reports/all-hotel-image-audit-20260807/progress.json
+          git add reports/all-hotel-image-audit-20260807/progress.json
+          git commit -m "Start full hotel image audit" || true
+          git push origin HEAD:audit/all-hotel-image-coverage-20260807
       - name: Run full 1,256-record audit
         env:
           IMAGE_INTERVAL_MS: "1150"
@@ -35,8 +45,6 @@ jobs:
       - name: Save audit reports
         shell: bash
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add reports/all-hotel-image-audit-20260807
           git rm -f .github/workflows/audit-all-hotel-images.yml
           git commit -m "Complete full hotel image coverage audit"
