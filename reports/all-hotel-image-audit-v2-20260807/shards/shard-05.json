@@ -1,7 +1,8 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "complete": true,
-  "generatedAt": "2026-08-06T20:27:09.687Z",
+  "phase": "retry",
+  "generatedAt": "2026-08-06T23:41:42.278Z",
   "shardIndex": 5,
   "shardSize": 25,
   "start": 125,
@@ -9,6 +10,9 @@
   "totalRecords": 1256,
   "totalUnique": 750,
   "processedUnique": 25,
+  "retriedUnique": 1,
+  "skippedMatchedUnique": 24,
+  "retryAttemptsPerRequest": 5,
   "results": [
     {
       "requestKey": "name:グランパークホテル パネックス東京|東京都|蒲田",
@@ -172,7 +176,8 @@
         "matchedBy": "",
         "matchEvidence": [],
         "transportError": "",
-        "rawExcerpt": ""
+        "rawExcerpt": "",
+        "attemptsUsed": 1
       },
       "affiliate": {
         "httpStatus": 200,
@@ -180,9 +185,17 @@
         "rakutenHotelNo": "",
         "providers": [],
         "transportError": "",
-        "rawExcerpt": ""
+        "rawExcerpt": "",
+        "attemptsUsed": 1
       },
-      "causeCode": "not_found_by_current_rakuten_search"
+      "causeCode": "not_found_by_current_rakuten_search",
+      "retry": {
+        "attempted": true,
+        "attemptedAt": "2026-08-06T23:41:42.277Z",
+        "previousCauseCode": "not_found_by_current_rakuten_search",
+        "previousHasImage": false,
+        "attemptsPerRequest": 5
+      }
     },
     {
       "requestKey": "name:the kanzashi tokyo asakusa|東京都|浅草",
