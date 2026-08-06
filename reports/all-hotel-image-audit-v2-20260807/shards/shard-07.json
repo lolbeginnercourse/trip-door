@@ -1,0 +1,740 @@
+{
+  "schemaVersion": 3,
+  "complete": true,
+  "phase": "first-pass",
+  "generatedAt": "2026-08-06T23:30:27.789Z",
+  "shardIndex": 7,
+  "shardSize": 25,
+  "start": 175,
+  "end": 200,
+  "totalRecords": 1256,
+  "totalUnique": 750,
+  "processedUnique": 25,
+  "retriedUnique": 0,
+  "skippedMatchedUnique": 0,
+  "retryAttemptsPerRequest": 1,
+  "results": [
+    {
+      "requestKey": "name:東横inn町田駅小田急線東口|神奈川県|町田",
+      "sourceHotel": {
+        "name": "東横INN町田駅小田急線東口",
+        "prefecture": "神奈川県",
+        "station": "町田",
+        "area": "新百合ヶ丘",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        443
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "108332",
+        "hotelName": "東横INN町田駅小田急線東口",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテル新宿屋|神奈川県|町田",
+      "sourceHotel": {
+        "name": "ホテル新宿屋",
+        "prefecture": "神奈川県",
+        "station": "町田",
+        "area": "新百合ヶ丘",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        444
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "9237",
+        "hotelName": "ホテル新宿屋<町田市>",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "station"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:小田急ホテルセンチュリー相模大野|神奈川県|相模大野",
+      "sourceHotel": {
+        "name": "小田急ホテルセンチュリー相模大野",
+        "prefecture": "神奈川県",
+        "station": "相模大野",
+        "area": "相模大野",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        445
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "5409",
+        "hotelName": "小田急ホテルセンチュリー相模大野",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルクラウンヒルズ相模原|神奈川県|相模原",
+      "sourceHotel": {
+        "name": "ホテルクラウンヒルズ相模原",
+        "prefecture": "神奈川県",
+        "station": "相模原",
+        "area": "相模大野",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        446,
+        454
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "39165",
+        "hotelName": "ホテルクラウンヒルズ相模原駅前(BBHホテルグループ)",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルウィングインターナショナル相模原|神奈川県|上溝",
+      "sourceHotel": {
+        "name": "ホテルウィングインターナショナル相模原",
+        "prefecture": "神奈川県",
+        "station": "上溝",
+        "area": "相模大野",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        447
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 502,
+        "status": "502",
+        "hasImage": false,
+        "hotelNo": "",
+        "hotelName": "",
+        "matchedBy": "",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": {
+        "httpStatus": 200,
+        "hasRakuten": false,
+        "rakutenHotelNo": "",
+        "providers": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "causeCode": "temporary_upstream_error"
+    },
+    {
+      "requestKey": "name:東横inn jr横浜線相模原駅前|神奈川県|相模原",
+      "sourceHotel": {
+        "name": "東横INN JR横浜線相模原駅前",
+        "prefecture": "神奈川県",
+        "station": "相模原",
+        "area": "相模大野",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        448
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "73949",
+        "hotelName": "東横INNJR横浜線相模原駅前",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:アパホテル〈相模原 古淵駅前〉|神奈川県|古淵",
+      "sourceHotel": {
+        "name": "アパホテル〈相模原 古淵駅前〉",
+        "prefecture": "神奈川県",
+        "station": "古淵",
+        "area": "相模大野",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        449
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "165986",
+        "hotelName": "アパホテル〈相模原 古淵駅前〉",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:アパホテル〈相模原 橋本駅前〉|神奈川県|橋本",
+      "sourceHotel": {
+        "name": "アパホテル〈相模原 橋本駅前〉",
+        "prefecture": "神奈川県",
+        "station": "橋本",
+        "area": "橋本",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        450
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "143287",
+        "hotelName": "アパホテル〈相模原 橋本駅前〉",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:アイホテル橋本|神奈川県|橋本",
+      "sourceHotel": {
+        "name": "アイホテル橋本",
+        "prefecture": "神奈川県",
+        "station": "橋本",
+        "area": "橋本",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        451
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 404,
+        "status": "not_found",
+        "hasImage": false,
+        "hotelNo": "",
+        "hotelName": "",
+        "matchedBy": "",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": {
+        "httpStatus": 200,
+        "hasRakuten": false,
+        "rakutenHotelNo": "",
+        "providers": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "causeCode": "not_found_by_current_rakuten_search"
+    },
+    {
+      "requestKey": "name:橋本パークホテル|神奈川県|橋本",
+      "sourceHotel": {
+        "name": "橋本パークホテル",
+        "prefecture": "神奈川県",
+        "station": "橋本",
+        "area": "橋本",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        452
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "4618",
+        "hotelName": "橋本パークホテル",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn京王線橋本駅北口|神奈川県|橋本",
+      "sourceHotel": {
+        "name": "東横INN京王線橋本駅北口",
+        "prefecture": "神奈川県",
+        "station": "橋本",
+        "area": "橋本",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        453
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "108626",
+        "hotelName": "東横INN京王線橋本駅北口",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:相鉄フレッサイン 鎌倉大船駅笠間口|神奈川県|大船",
+      "sourceHotel": {
+        "name": "相鉄フレッサイン 鎌倉大船駅笠間口",
+        "prefecture": "神奈川県",
+        "station": "大船",
+        "area": "大船",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        455
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "68499",
+        "hotelName": "相鉄フレッサイン 鎌倉大船駅笠間口",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:相鉄フレッサイン 鎌倉大船駅東口|神奈川県|大船",
+      "sourceHotel": {
+        "name": "相鉄フレッサイン 鎌倉大船駅東口",
+        "prefecture": "神奈川県",
+        "station": "大船",
+        "area": "大船",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        456
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "176985",
+        "hotelName": "相鉄フレッサイン鎌倉大船駅東口",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:jr東日本ホテルメッツ かまくら大船|神奈川県|大船",
+      "sourceHotel": {
+        "name": "JR東日本ホテルメッツ かまくら大船",
+        "prefecture": "神奈川県",
+        "station": "大船",
+        "area": "大船",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        457
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "15391",
+        "hotelName": "JR東日本ホテルメッツかまくら大船",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルメトロポリタン鎌倉|神奈川県|鎌倉",
+      "sourceHotel": {
+        "name": "ホテルメトロポリタン鎌倉",
+        "prefecture": "神奈川県",
+        "station": "鎌倉",
+        "area": "大船",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        458
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "177689",
+        "hotelName": "ホテルメトロポリタン鎌倉",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:スマイルホテル湘南藤沢|神奈川県|藤沢",
+      "sourceHotel": {
+        "name": "スマイルホテル湘南藤沢",
+        "prefecture": "神奈川県",
+        "station": "藤沢",
+        "area": "大船",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        459
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "179094",
+        "hotelName": "スマイルホテル湘南藤沢",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn小田原駅東口|神奈川県|小田原",
+      "sourceHotel": {
+        "name": "東横INN小田原駅東口",
+        "prefecture": "神奈川県",
+        "station": "小田原",
+        "area": "小田原",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        460
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "167118",
+        "hotelName": "東横INN小田原駅東口",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:天成園 小田原駅 別館|神奈川県|小田原",
+      "sourceHotel": {
+        "name": "天成園 小田原駅 別館",
+        "prefecture": "神奈川県",
+        "station": "小田原",
+        "area": "小田原",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        461
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "181948",
+        "hotelName": "天成園 小田原駅 別館",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:小田原ターミナルホテル|神奈川県|小田原",
+      "sourceHotel": {
+        "name": "小田原ターミナルホテル",
+        "prefecture": "神奈川県",
+        "station": "小田原",
+        "area": "小田原",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        462
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "172860",
+        "hotelName": "小田原ターミナルホテル",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルクニミ小田原|神奈川県|小田原",
+      "sourceHotel": {
+        "name": "ホテルクニミ小田原",
+        "prefecture": "神奈川県",
+        "station": "小田原",
+        "area": "小田原",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        463
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "106102",
+        "hotelName": "ホテルクニミ小田原",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ビジネスホテル伊勢|神奈川県|小田原",
+      "sourceHotel": {
+        "name": "ビジネスホテル伊勢",
+        "prefecture": "神奈川県",
+        "station": "小田原",
+        "area": "小田原",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        464
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "6138",
+        "hotelName": "ビジネスホテル 伊勢",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn湘南平塚駅北口1|神奈川県|平塚",
+      "sourceHotel": {
+        "name": "東横INN湘南平塚駅北口1",
+        "prefecture": "神奈川県",
+        "station": "平塚",
+        "area": "平塚",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        465
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "108380",
+        "hotelName": "東横INN湘南平塚駅北口1",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn湘南平塚駅北口2|神奈川県|平塚",
+      "sourceHotel": {
+        "name": "東横INN湘南平塚駅北口2",
+        "prefecture": "神奈川県",
+        "station": "平塚",
+        "area": "平塚",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        466
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "130230",
+        "hotelName": "東横INN湘南平塚駅北口2",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:3s hotel hiratsuka|神奈川県|平塚",
+      "sourceHotel": {
+        "name": "3S HOTEL HIRATSUKA",
+        "prefecture": "神奈川県",
+        "station": "平塚",
+        "area": "平塚",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        467
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "69375",
+        "hotelName": "3S HOTEL HIRATSUKA",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルリブマックスbudget平塚駅前|神奈川県|平塚",
+      "sourceHotel": {
+        "name": "ホテルリブマックスBUDGET平塚駅前",
+        "prefecture": "神奈川県",
+        "station": "平塚",
+        "area": "平塚",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        468
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "109410",
+        "hotelName": "ホテルリブマックスBUDGET平塚駅前",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    }
+  ]
+}
