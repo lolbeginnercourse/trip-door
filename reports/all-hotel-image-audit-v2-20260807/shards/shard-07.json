@@ -1,8 +1,8 @@
 {
   "schemaVersion": 3,
   "complete": true,
-  "phase": "first-pass",
-  "generatedAt": "2026-08-06T23:30:27.789Z",
+  "phase": "retry",
+  "generatedAt": "2026-08-06T23:50:27.137Z",
   "shardIndex": 7,
   "shardSize": 25,
   "start": 175,
@@ -10,9 +10,9 @@
   "totalRecords": 1256,
   "totalUnique": 750,
   "processedUnique": 25,
-  "retriedUnique": 0,
-  "skippedMatchedUnique": 0,
-  "retryAttemptsPerRequest": 1,
+  "retriedUnique": 2,
+  "skippedMatchedUnique": 23,
+  "retryAttemptsPerRequest": 5,
   "results": [
     {
       "requestKey": "name:東横inn町田駅小田急線東口|神奈川県|町田",
@@ -155,7 +155,7 @@
         "matchEvidence": [],
         "transportError": "",
         "rawExcerpt": "",
-        "attemptsUsed": 1
+        "attemptsUsed": 5
       },
       "affiliate": {
         "httpStatus": 200,
@@ -166,7 +166,14 @@
         "rawExcerpt": "",
         "attemptsUsed": 1
       },
-      "causeCode": "temporary_upstream_error"
+      "causeCode": "temporary_upstream_error",
+      "retry": {
+        "attempted": true,
+        "attemptedAt": "2026-08-06T23:50:24.386Z",
+        "previousCauseCode": "temporary_upstream_error",
+        "previousHasImage": false,
+        "attemptsPerRequest": 5
+      }
     },
     {
       "requestKey": "name:東横inn jr横浜線相模原駅前|神奈川県|相模原",
@@ -286,7 +293,14 @@
         "rawExcerpt": "",
         "attemptsUsed": 1
       },
-      "causeCode": "not_found_by_current_rakuten_search"
+      "causeCode": "not_found_by_current_rakuten_search",
+      "retry": {
+        "attempted": true,
+        "attemptedAt": "2026-08-06T23:50:27.137Z",
+        "previousCauseCode": "not_found_by_current_rakuten_search",
+        "previousHasImage": false,
+        "attemptsPerRequest": 5
+      }
     },
     {
       "requestKey": "name:橋本パークホテル|神奈川県|橋本",
