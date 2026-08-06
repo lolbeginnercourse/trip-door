@@ -9,35 +9,273 @@ permissions:
   contents: write
   pull-requests: read
 
+concurrency:
+  group: full-hotel-image-audit-v3
+  cancel-in-progress: false
+
+env:
+  AUDIT_BRANCH: audit/hotel-image-coverage-v2-20260807
+  REPORT_DIR: reports/all-hotel-image-audit-v2-20260807
+  SHARD_SIZE: "25"
+  EXPECTED_RECORDS: "1256"
+  EXPECTED_UNIQUE: "750"
+
 jobs:
-  smoke:
-    if: github.head_ref == 'audit-run/workflow-smoke-v2-20260807'
+  prepare:
+    if: github.head_ref == 'audit-run/full-hotel-image-audit-v3-20260807'
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 10
+    outputs:
+      total_records: ${{ steps.prepare.outputs.total_records }}
+      total_unique: ${{ steps.prepare.outputs.total_unique }}
+      shard_count: ${{ steps.prepare.outputs.shard_count }}
+      shards: ${{ steps.prepare.outputs.shards }}
+    steps:
+      - name: Check out audit branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ env.AUDIT_BRANCH }}
+          persist-credentials: false
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Validate audit scripts
+        run: |
+          set -euo pipefail
+          node --check scripts/audit-hotel-images-prepare.mjs
+          node --check scripts/audit-hotel-images-shard.mjs
+          node --check scripts/audit-hotel-images-merge.mjs
+
+      - name: Prepare dynamic shard matrix
+        id: prepare
+        run: node scripts/audit-hotel-images-prepare.mjs
+
+      - name: Verify expected data size
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "${{ steps.prepare.outputs.total_records }}" = "${EXPECTED_RECORDS}"
+          test "${{ steps.prepare.outputs.total_unique }}" = "${EXPECTED_UNIQUE}"
+          test "${{ steps.prepare.outputs.shard_count }}" = "30"
+          echo "Verified ${EXPECTED_RECORDS} records and ${EXPECTED_UNIQUE} unique facilities."
+
+  mark-started:
+    needs: prepare
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - name: Check out audit result branch
         uses: actions/checkout@v4
         with:
-          ref: audit/hotel-image-coverage-v2-20260807
+          ref: ${{ env.AUDIT_BRANCH }}
           fetch-depth: 0
 
-      - name: Save workflow start proof
+      - name: Save run start checkpoint
+        env:
+          TOTAL_RECORDS: ${{ needs.prepare.outputs.total_records }}
+          TOTAL_UNIQUE: ${{ needs.prepare.outputs.total_unique }}
+          SHARD_COUNT: ${{ needs.prepare.outputs.shard_count }}
         shell: bash
         run: |
           set -euo pipefail
-          mkdir -p reports/all-hotel-image-audit-v2-20260807
-          cat > reports/all-hotel-image-audit-v2-20260807/workflow-smoke.json <<JSON
+          mkdir -p "${REPORT_DIR}"
+          cat > "${REPORT_DIR}/run-started.json" <<JSON
           {
-            "status": "ok",
+            "phase": "started",
             "runId": "${GITHUB_RUN_ID}",
             "runAttempt": "${GITHUB_RUN_ATTEMPT}",
             "event": "${GITHUB_EVENT_NAME}",
             "headRef": "${GITHUB_HEAD_REF}",
+            "totalRecords": ${TOTAL_RECORDS},
+            "totalUnique": ${TOTAL_UNIQUE},
+            "shardSize": ${SHARD_SIZE},
+            "shardCount": ${SHARD_COUNT},
             "startedAt": "$(date -u +%Y-%m-%dT%H:%M:%SZ)"
           }
           JSON
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add reports/all-hotel-image-audit-v2-20260807/workflow-smoke.json
-          git commit -m 'Confirm registered hotel audit workflow'
-          git push origin HEAD:audit/hotel-image-coverage-v2-20260807
+          git add "${REPORT_DIR}/run-started.json"
+          if git diff --cached --quiet; then
+            echo 'Start checkpoint already current.'
+            exit 0
+          fi
+          git commit -m 'Start full hotel image audit v3'
+          git push origin "HEAD:${AUDIT_BRANCH}"
+
+  audit-shards:
+    name: Audit shard ${{ matrix.shard }}
+    needs: [prepare, mark-started]
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    strategy:
+      fail-fast: false
+      max-parallel: 1
+      matrix:
+        shard: ${{ fromJSON(needs.prepare.outputs.shards) }}
+    steps:
+      - name: Check out audit branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ env.AUDIT_BRANCH }}
+          persist-credentials: false
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Audit one 25-facility shard
+        env:
+          SHARD_INDEX: ${{ matrix.shard }}
+          REQUEST_INTERVAL_MS: "1300"
+          REQUEST_TIMEOUT_MS: "20000"
+          RETRY_ATTEMPTS: "5"
+        run: node scripts/audit-hotel-images-shard.mjs
+
+      - name: Validate shard output
+        env:
+          SHARD_INDEX: ${{ matrix.shard }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          FILE="${REPORT_DIR}/shards/shard-$(printf '%02d' "${SHARD_INDEX}").json"
+          test -s "${FILE}"
+          node -e 'const fs=require("fs");const p=JSON.parse(fs.readFileSync(process.argv[1],"utf8"));if(p.complete!==true||p.processedUnique<1||p.processedUnique>25)throw new Error("Invalid shard output");console.log(`Validated shard ${p.shardIndex}: ${p.processedUnique} facilities`);' "${FILE}"
+
+      - name: Upload shard result
+        uses: actions/upload-artifact@v4
+        with:
+          name: hotel-image-audit-v3-shard-${{ matrix.shard }}
+          path: ${{ env.REPORT_DIR }}/shards/shard-*.json
+          if-no-files-found: error
+          retention-days: 7
+          compression-level: 6
+
+  aggregate:
+    needs: [prepare, mark-started, audit-shards]
+    if: ${{ always() && needs.prepare.result == 'success' && needs.mark-started.result == 'success' && needs.audit-shards.result == 'success' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out audit result branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ env.AUDIT_BRANCH }}
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Clear previous temporary shards
+        run: rm -rf "${REPORT_DIR}/shards"
+
+      - name: Download all shard artifacts
+        uses: actions/download-artifact@v4
+        with:
+          pattern: hotel-image-audit-v3-shard-*
+          path: ${{ env.REPORT_DIR }}/shards
+          merge-multiple: true
+
+      - name: Verify all 30 shard files exist
+        shell: bash
+        run: |
+          set -euo pipefail
+          COUNT=$(find "${REPORT_DIR}/shards" -maxdepth 1 -type f -name 'shard-*.json' | wc -l)
+          test "${COUNT}" = "30"
+          echo 'All 30 shard artifacts are present.'
+
+      - name: Merge and validate all results
+        env:
+          EXPECTED_TOTAL_UNIQUE: ${{ needs.prepare.outputs.total_unique }}
+        run: node scripts/audit-hotel-images-merge.mjs
+
+      - name: Verify final completion
+        shell: bash
+        run: |
+          set -euo pipefail
+          node - <<'NODE'
+          const fs = require('fs');
+          const dir = process.env.REPORT_DIR;
+          const summary = JSON.parse(fs.readFileSync(`${dir}/summary.json`, 'utf8'));
+          const progress = JSON.parse(fs.readFileSync(`${dir}/progress.json`, 'utf8'));
+          if (progress.phase !== 'complete') throw new Error('Audit is not complete.');
+          if (progress.processedUnique !== 750) throw new Error(`Expected 750 processed facilities, got ${progress.processedUnique}.`);
+          if (summary.totalRecords !== 1256) throw new Error(`Expected 1256 records, got ${summary.totalRecords}.`);
+          if (summary.uniqueRequestKeys !== 750) throw new Error(`Expected 750 unique facilities, got ${summary.uniqueRequestKeys}.`);
+          if (summary.uniqueMatched + summary.uniqueFailed !== 750) throw new Error('Final facility totals do not add up.');
+          console.log(`Verified all ${summary.uniqueRequestKeys} facilities.`);
+          NODE
+
+      - name: Save completed audit to audit branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "${REPORT_DIR}"
+          if git diff --cached --quiet; then
+            echo 'Completed audit is already saved.'
+            exit 0
+          fi
+          git commit -m 'Complete full hotel image audit v3'
+          git push origin "HEAD:${AUDIT_BRANCH}"
+
+      - name: Upload final report
+        uses: actions/upload-artifact@v4
+        with:
+          name: hotel-image-audit-v3-final
+          path: |
+            ${{ env.REPORT_DIR }}/summary.json
+            ${{ env.REPORT_DIR }}/progress.json
+            ${{ env.REPORT_DIR }}/failures.csv
+            ${{ env.REPORT_DIR }}/solution-plan.md
+          if-no-files-found: error
+          retention-days: 30
+
+  record-status:
+    needs: [prepare, mark-started, audit-shards, aggregate]
+    if: ${{ always() && needs.prepare.result != 'skipped' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out audit result branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ env.AUDIT_BRANCH }}
+          fetch-depth: 0
+
+      - name: Save workflow status
+        env:
+          PREPARE_RESULT: ${{ needs.prepare.result }}
+          START_RESULT: ${{ needs.mark-started.result }}
+          SHARDS_RESULT: ${{ needs.audit-shards.result }}
+          AGGREGATE_RESULT: ${{ needs.aggregate.result }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "${REPORT_DIR}"
+          cat > "${REPORT_DIR}/run-status.json" <<JSON
+          {
+            "runId": "${GITHUB_RUN_ID}",
+            "runAttempt": "${GITHUB_RUN_ATTEMPT}",
+            "prepare": "${PREPARE_RESULT}",
+            "markStarted": "${START_RESULT}",
+            "shards": "${SHARDS_RESULT}",
+            "aggregate": "${AGGREGATE_RESULT}",
+            "updatedAt": "$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          }
+          JSON
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "${REPORT_DIR}/run-status.json"
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git commit -m 'Record full hotel image audit status'
+          git push origin "HEAD:${AUDIT_BRANCH}"
