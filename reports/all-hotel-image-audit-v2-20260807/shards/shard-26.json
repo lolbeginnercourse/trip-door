@@ -1,0 +1,754 @@
+{
+  "schemaVersion": 3,
+  "complete": true,
+  "phase": "first-pass",
+  "generatedAt": "2026-08-06T21:58:17.313Z",
+  "shardIndex": 26,
+  "shardSize": 25,
+  "start": 650,
+  "end": 675,
+  "totalRecords": 1256,
+  "totalUnique": 750,
+  "processedUnique": 25,
+  "retriedUnique": 0,
+  "skippedMatchedUnique": 0,
+  "retryAttemptsPerRequest": 1,
+  "results": [
+    {
+      "requestKey": "name:呉阪急ホテル|広島県|呉",
+      "sourceHotel": {
+        "name": "呉阪急ホテル",
+        "prefecture": "広島県",
+        "station": "呉",
+        "area": "呉",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1135
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "7470",
+        "hotelName": "呉阪急ホテル",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:コンフォートホテル呉|広島県|呉",
+      "sourceHotel": {
+        "name": "コンフォートホテル呉",
+        "prefecture": "広島県",
+        "station": "呉",
+        "area": "呉",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1136
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "78130",
+        "hotelName": "コンフォートホテル呉",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:クレイトンベイホテル|広島県|呉",
+      "sourceHotel": {
+        "name": "クレイトンベイホテル",
+        "prefecture": "広島県",
+        "station": "呉",
+        "area": "呉",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1137
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "17718",
+        "hotelName": "クレイトンベイホテル",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:呉森沢ホテル|広島県|呉",
+      "sourceHotel": {
+        "name": "呉森沢ホテル",
+        "prefecture": "広島県",
+        "station": "呉",
+        "area": "呉",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1138
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 502,
+        "status": "502",
+        "hasImage": false,
+        "hotelNo": "",
+        "hotelName": "",
+        "matchedBy": "",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": {
+        "httpStatus": 200,
+        "hasRakuten": false,
+        "rakutenHotelNo": "",
+        "providers": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "causeCode": "temporary_upstream_error"
+    },
+    {
+      "requestKey": "name:ビジネスホテルごとう@net|広島県|呉",
+      "sourceHotel": {
+        "name": "ビジネスホテルごとう@NET",
+        "prefecture": "広島県",
+        "station": "呉",
+        "area": "呉",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1139
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "70815",
+        "hotelName": "ビジネスホテルごとう@NET",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:福山ニューキャッスルホテル|広島県|福山",
+      "sourceHotel": {
+        "name": "福山ニューキャッスルホテル",
+        "prefecture": "広島県",
+        "station": "福山",
+        "area": "福山",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1140
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "614",
+        "hotelName": "福山ニューキャッスルホテル",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ダイワロイネットホテル福山駅前|広島県|福山",
+      "sourceHotel": {
+        "name": "ダイワロイネットホテル福山駅前",
+        "prefecture": "広島県",
+        "station": "福山",
+        "area": "福山",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1141
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "179871",
+        "hotelName": "ダイワロイネットホテル福山駅前",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:リッチモンドホテル福山駅前|広島県|福山",
+      "sourceHotel": {
+        "name": "リッチモンドホテル福山駅前",
+        "prefecture": "広島県",
+        "station": "福山",
+        "area": "福山",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1142
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "109493",
+        "hotelName": "リッチモンドホテル福山駅前",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ベッセルイン福山駅北口|広島県|福山",
+      "sourceHotel": {
+        "name": "ベッセルイン福山駅北口",
+        "prefecture": "広島県",
+        "station": "福山",
+        "area": "福山",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1143
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "15087",
+        "hotelName": "ベッセルイン福山駅北口(福山城前・福山2号店)",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテル1-2-3福山|広島県|福山",
+      "sourceHotel": {
+        "name": "ホテル1-2-3福山",
+        "prefecture": "広島県",
+        "station": "福山",
+        "area": "福山",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1144
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "15010",
+        "hotelName": "ホテル1-2-3福山",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:コンフォートホテル新山口|山口県|新山口",
+      "sourceHotel": {
+        "name": "コンフォートホテル新山口",
+        "prefecture": "山口県",
+        "station": "新山口",
+        "area": "新山口",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1145
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "68223",
+        "hotelName": "コンフォートホテル新山口",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn新山口駅新幹線口|山口県|新山口",
+      "sourceHotel": {
+        "name": "東横INN新山口駅新幹線口",
+        "prefecture": "山口県",
+        "station": "新山口",
+        "area": "新山口",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1146
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "31414",
+        "hotelName": "東横INN新山口駅新幹線口",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルアクティブ!山口|山口県|新山口",
+      "sourceHotel": {
+        "name": "ホテルアクティブ!山口",
+        "prefecture": "山口県",
+        "station": "新山口",
+        "area": "新山口",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1147
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 404,
+        "status": "not_found",
+        "hasImage": false,
+        "hotelNo": "",
+        "hotelName": "",
+        "matchedBy": "",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": {
+        "httpStatus": 200,
+        "hasRakuten": false,
+        "rakutenHotelNo": "",
+        "providers": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "causeCode": "not_found_by_current_rakuten_search"
+    },
+    {
+      "requestKey": "name:ロイヤルイン新山口駅前|山口県|新山口",
+      "sourceHotel": {
+        "name": "ロイヤルイン新山口駅前",
+        "prefecture": "山口県",
+        "station": "新山口",
+        "area": "新山口",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1148
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "15182",
+        "hotelName": "ロイヤルイン新山口駅前",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:山口グランドホテル|山口県|新山口",
+      "sourceHotel": {
+        "name": "山口グランドホテル",
+        "prefecture": "山口県",
+        "station": "新山口",
+        "area": "新山口",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1149
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "8289",
+        "hotelName": "山口グランドホテル",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:松江エクセルホテル東急|島根県|松江",
+      "sourceHotel": {
+        "name": "松江エクセルホテル東急",
+        "prefecture": "島根県",
+        "station": "松江",
+        "area": "松江",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1150
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "529",
+        "hotelName": "松江エクセルホテル東急",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ドーミーインexpress松江|島根県|松江",
+      "sourceHotel": {
+        "name": "ドーミーインEXPRESS松江",
+        "prefecture": "島根県",
+        "station": "松江",
+        "area": "松江",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1151
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "137858",
+        "hotelName": "ドーミーインEXPRESS松江(ドーミーイン・御宿野乃 ホテルズグループ)",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルルートイン松江|島根県|松江",
+      "sourceHotel": {
+        "name": "ホテルルートイン松江",
+        "prefecture": "島根県",
+        "station": "松江",
+        "area": "松江",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1152
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "20727",
+        "hotelName": "天然温泉「旅人の湯」ホテルルートイン松江",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:松江アーバンホテル|島根県|松江",
+      "sourceHotel": {
+        "name": "松江アーバンホテル",
+        "prefecture": "島根県",
+        "station": "松江",
+        "area": "松江",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1153
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "5694",
+        "hotelName": "松江アーバンホテル",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn松江駅前|島根県|松江",
+      "sourceHotel": {
+        "name": "東横INN松江駅前",
+        "prefecture": "島根県",
+        "station": "松江",
+        "area": "松江",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1154
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "39764",
+        "hotelName": "東横INN松江駅前",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:anaクラウンプラザホテル米子|鳥取県|米子",
+      "sourceHotel": {
+        "name": "ANAクラウンプラザホテル米子",
+        "prefecture": "鳥取県",
+        "station": "米子",
+        "area": "米子",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1155
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "18358",
+        "hotelName": "ANAクラウンプラザホテル米子 by IHG",
+        "matchedBy": "normalizedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:グリーンリッチホテル米子駅前|鳥取県|米子",
+      "sourceHotel": {
+        "name": "グリーンリッチホテル米子駅前",
+        "prefecture": "鳥取県",
+        "station": "米子",
+        "area": "米子",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1156
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "177821",
+        "hotelName": "グリーンリッチホテル米子駅前 人工温泉・二股湯の華",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn米子駅前|鳥取県|米子",
+      "sourceHotel": {
+        "name": "東横INN米子駅前",
+        "prefecture": "鳥取県",
+        "station": "米子",
+        "area": "米子",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1157
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "108324",
+        "hotelName": "東横INN米子駅前",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルハーベストイン米子|鳥取県|米子",
+      "sourceHotel": {
+        "name": "ホテルハーベストイン米子",
+        "prefecture": "鳥取県",
+        "station": "米子",
+        "area": "米子",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1158
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "814",
+        "hotelName": "ホテルハーベストイン米子",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:米子ワシントンホテルプラザ|鳥取県|米子",
+      "sourceHotel": {
+        "name": "米子ワシントンホテルプラザ",
+        "prefecture": "鳥取県",
+        "station": "米子",
+        "area": "米子",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1159
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "430",
+        "hotelName": "米子ワシントンホテルプラザ",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    }
+  ]
+}
