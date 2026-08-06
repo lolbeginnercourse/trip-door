@@ -33,20 +33,23 @@ jobs:
       shard_count: ${{ steps.prepare.outputs.shard_count }}
       shards: ${{ steps.prepare.outputs.shards }}
     steps:
-      - name: Check out audit branch
-        uses: actions/checkout@v4
-        with:
-          ref: ${{ env.AUDIT_BRANCH }}
-          persist-credentials: false
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: "22"
-
-      - name: Validate audit scripts
+      - name: Check out audit branch without external actions
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
         run: |
           set -euo pipefail
+          git init .
+          git remote add origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          git fetch --depth=1 origin "${AUDIT_BRANCH}"
+          git checkout -B "${AUDIT_BRANCH}" FETCH_HEAD
+
+      - name: Verify runner and audit scripts
+        shell: bash
+        run: |
+          set -euo pipefail
+          node --version
+          node -e 'const major=Number(process.versions.node.split(".")[0]);if(major<20)throw new Error(`Node 20+ required, got ${process.version}`)'
           node --check scripts/audit-hotel-images-prepare.mjs
           node --check scripts/audit-hotel-images-shard.mjs
           node --check scripts/audit-hotel-images-merge.mjs
@@ -70,10 +73,15 @@ jobs:
     timeout-minutes: 10
     steps:
       - name: Check out audit result branch
-        uses: actions/checkout@v4
-        with:
-          ref: ${{ env.AUDIT_BRANCH }}
-          fetch-depth: 0
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          git init .
+          git remote add origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          git fetch origin "${AUDIT_BRANCH}"
+          git checkout -B "${AUDIT_BRANCH}" FETCH_HEAD
 
       - name: Save run start checkpoint
         env:
@@ -119,18 +127,35 @@ jobs:
       matrix:
         shard: ${{ fromJSON(needs.prepare.outputs.shards) }}
     steps:
-      - name: Check out audit branch
-        uses: actions/checkout@v4
-        with:
-          ref: ${{ env.AUDIT_BRANCH }}
-          persist-credentials: false
+      - name: Check out latest audit branch
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          git init .
+          git remote add origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          git fetch origin "${AUDIT_BRANCH}"
+          git checkout -B "${AUDIT_BRANCH}" FETCH_HEAD
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: "22"
+      - name: Check saved shard
+        id: saved
+        env:
+          SHARD_INDEX: ${{ matrix.shard }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          FILE="${REPORT_DIR}/shards/shard-$(printf '%02d' "${SHARD_INDEX}").json"
+          if [ -s "${FILE}" ] && node -e 'const fs=require("fs");const p=JSON.parse(fs.readFileSync(process.argv[1],"utf8"));if(p.complete!==true||p.shardIndex!==Number(process.argv[2])||p.processedUnique<1||p.processedUnique>25)process.exit(1)' "${FILE}" "${SHARD_INDEX}"; then
+            echo 'complete=true' >> "${GITHUB_OUTPUT}"
+            echo "Shard ${SHARD_INDEX} is already saved and valid."
+          else
+            rm -f "${FILE}"
+            echo 'complete=false' >> "${GITHUB_OUTPUT}"
+          fi
 
       - name: Audit one 25-facility shard
+        if: steps.saved.outputs.complete != 'true'
         env:
           SHARD_INDEX: ${{ matrix.shard }}
           REQUEST_INTERVAL_MS: "1300"
@@ -139,6 +164,7 @@ jobs:
         run: node scripts/audit-hotel-images-shard.mjs
 
       - name: Validate shard output
+        if: steps.saved.outputs.complete != 'true'
         env:
           SHARD_INDEX: ${{ matrix.shard }}
         shell: bash
@@ -146,16 +172,20 @@ jobs:
           set -euo pipefail
           FILE="${REPORT_DIR}/shards/shard-$(printf '%02d' "${SHARD_INDEX}").json"
           test -s "${FILE}"
-          node -e 'const fs=require("fs");const p=JSON.parse(fs.readFileSync(process.argv[1],"utf8"));if(p.complete!==true||p.processedUnique<1||p.processedUnique>25)throw new Error("Invalid shard output");console.log(`Validated shard ${p.shardIndex}: ${p.processedUnique} facilities`);' "${FILE}"
+          node -e 'const fs=require("fs");const p=JSON.parse(fs.readFileSync(process.argv[1],"utf8"));if(p.complete!==true||p.shardIndex!==Number(process.argv[2])||p.processedUnique<1||p.processedUnique>25)throw new Error("Invalid shard output");console.log(`Validated shard ${p.shardIndex}: ${p.processedUnique} facilities`);' "${FILE}" "${SHARD_INDEX}"
 
-      - name: Upload shard result
-        uses: actions/upload-artifact@v4
-        with:
-          name: hotel-image-audit-v3-shard-${{ matrix.shard }}
-          path: ${{ env.REPORT_DIR }}/shards/shard-*.json
-          if-no-files-found: error
-          retention-days: 7
-          compression-level: 6
+      - name: Save shard checkpoint to audit branch
+        if: steps.saved.outputs.complete != 'true'
+        env:
+          SHARD_INDEX: ${{ matrix.shard }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "${REPORT_DIR}/shards"
+          git commit -m "Save hotel image audit shard ${SHARD_INDEX}"
+          git push origin "HEAD:${AUDIT_BRANCH}"
 
   aggregate:
     needs: [prepare, mark-started, audit-shards]
@@ -163,34 +193,35 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
-      - name: Check out audit result branch
-        uses: actions/checkout@v4
-        with:
-          ref: ${{ env.AUDIT_BRANCH }}
-          fetch-depth: 0
+      - name: Check out completed audit branch
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          git init .
+          git remote add origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          git fetch origin "${AUDIT_BRANCH}"
+          git checkout -B "${AUDIT_BRANCH}" FETCH_HEAD
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: "22"
-
-      - name: Clear previous temporary shards
-        run: rm -rf "${REPORT_DIR}/shards"
-
-      - name: Download all shard artifacts
-        uses: actions/download-artifact@v4
-        with:
-          pattern: hotel-image-audit-v3-shard-*
-          path: ${{ env.REPORT_DIR }}/shards
-          merge-multiple: true
-
-      - name: Verify all 30 shard files exist
+      - name: Verify all 30 saved shard files
         shell: bash
         run: |
           set -euo pipefail
           COUNT=$(find "${REPORT_DIR}/shards" -maxdepth 1 -type f -name 'shard-*.json' | wc -l)
           test "${COUNT}" = "30"
-          echo 'All 30 shard artifacts are present.'
+          node - <<'NODE'
+          const fs=require('fs');
+          const path=require('path');
+          const dir=path.join(process.env.REPORT_DIR,'shards');
+          const files=fs.readdirSync(dir).filter(name=>/^shard-\d+\.json$/.test(name)).sort();
+          if(files.length!==30)throw new Error(`Expected 30 shards, got ${files.length}`);
+          files.forEach((name,index)=>{
+            const p=JSON.parse(fs.readFileSync(path.join(dir,name),'utf8'));
+            if(p.complete!==true||p.shardIndex!==index||p.processedUnique<1||p.processedUnique>25)throw new Error(`Invalid ${name}`);
+          });
+          console.log('All 30 saved shards are complete and ordered.');
+          NODE
 
       - name: Merge and validate all results
         env:
@@ -228,18 +259,6 @@ jobs:
           git commit -m 'Complete full hotel image audit v3'
           git push origin "HEAD:${AUDIT_BRANCH}"
 
-      - name: Upload final report
-        uses: actions/upload-artifact@v4
-        with:
-          name: hotel-image-audit-v3-final
-          path: |
-            ${{ env.REPORT_DIR }}/summary.json
-            ${{ env.REPORT_DIR }}/progress.json
-            ${{ env.REPORT_DIR }}/failures.csv
-            ${{ env.REPORT_DIR }}/solution-plan.md
-          if-no-files-found: error
-          retention-days: 30
-
   record-status:
     needs: [prepare, mark-started, audit-shards, aggregate]
     if: ${{ always() && needs.prepare.result != 'skipped' }}
@@ -247,10 +266,15 @@ jobs:
     timeout-minutes: 10
     steps:
       - name: Check out audit result branch
-        uses: actions/checkout@v4
-        with:
-          ref: ${{ env.AUDIT_BRANCH }}
-          fetch-depth: 0
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          git init .
+          git remote add origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          git fetch origin "${AUDIT_BRANCH}"
+          git checkout -B "${AUDIT_BRANCH}" FETCH_HEAD
 
       - name: Save workflow status
         env:
