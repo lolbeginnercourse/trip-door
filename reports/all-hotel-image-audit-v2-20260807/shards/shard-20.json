@@ -1,0 +1,770 @@
+{
+  "schemaVersion": 3,
+  "complete": true,
+  "phase": "first-pass",
+  "generatedAt": "2026-08-06T21:52:14.526Z",
+  "shardIndex": 20,
+  "shardSize": 25,
+  "start": 500,
+  "end": 525,
+  "totalRecords": 1256,
+  "totalUnique": 750,
+  "processedUnique": 25,
+  "retriedUnique": 0,
+  "skippedMatchedUnique": 0,
+  "retryAttemptsPerRequest": 1,
+  "results": [
+    {
+      "requestKey": "name:オークラアクトシティホテル浜松|静岡県|浜松",
+      "sourceHotel": {
+        "name": "オークラアクトシティホテル浜松",
+        "prefecture": "静岡県",
+        "station": "浜松",
+        "area": "浜松",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        910
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "2055",
+        "hotelName": "オークラアクトシティホテル浜松(オークラホテルズ&リゾーツ)",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ダイワロイネットホテル浜松|静岡県|浜松",
+      "sourceHotel": {
+        "name": "ダイワロイネットホテル浜松",
+        "prefecture": "静岡県",
+        "station": "浜松",
+        "area": "浜松",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        911
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "128343",
+        "hotelName": "ダイワロイネットホテル浜松",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:コンフォートホテル浜松|静岡県|浜松",
+      "sourceHotel": {
+        "name": "コンフォートホテル浜松",
+        "prefecture": "静岡県",
+        "station": "浜松",
+        "area": "浜松",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        912
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "80815",
+        "hotelName": "コンフォートホテル浜松",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:リッチモンドホテル浜松|静岡県|浜松",
+      "sourceHotel": {
+        "name": "リッチモンドホテル浜松",
+        "prefecture": "静岡県",
+        "station": "浜松",
+        "area": "浜松",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        913
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "15856",
+        "hotelName": "リッチモンドホテル浜松",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn浜松駅北口|静岡県|浜松",
+      "sourceHotel": {
+        "name": "東横INN浜松駅北口",
+        "prefecture": "静岡県",
+        "station": "浜松",
+        "area": "浜松",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        914
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "108326",
+        "hotelName": "東横INN浜松駅北口",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:富士山三島東急ホテル|静岡県|三島",
+      "sourceHotel": {
+        "name": "富士山三島東急ホテル",
+        "prefecture": "静岡県",
+        "station": "三島",
+        "area": "三島",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        915
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "179020",
+        "hotelName": "富士山三島東急ホテル",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ドーミーイン三島|静岡県|三島",
+      "sourceHotel": {
+        "name": "ドーミーイン三島",
+        "prefecture": "静岡県",
+        "station": "三島",
+        "area": "三島",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        916
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "128491",
+        "hotelName": "天然温泉 富嶽の湯 ドーミーイン三島",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn富士山三島駅|静岡県|三島",
+      "sourceHotel": {
+        "name": "東横INN富士山三島駅",
+        "prefecture": "静岡県",
+        "station": "三島",
+        "area": "三島",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        917
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "108385",
+        "hotelName": "東横INN富士山三島駅",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルジーハイブ三島|静岡県|三島",
+      "sourceHotel": {
+        "name": "ホテルジーハイブ三島",
+        "prefecture": "静岡県",
+        "station": "三島",
+        "area": "三島",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        918
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 404,
+        "status": "not_found",
+        "hasImage": false,
+        "hotelNo": "",
+        "hotelName": "",
+        "matchedBy": "",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": {
+        "httpStatus": 200,
+        "hasRakuten": false,
+        "rakutenHotelNo": "",
+        "providers": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "causeCode": "not_found_by_current_rakuten_search"
+    },
+    {
+      "requestKey": "name:ホテルマッシモ三島|静岡県|三島",
+      "sourceHotel": {
+        "name": "ホテルマッシモ三島",
+        "prefecture": "静岡県",
+        "station": "三島",
+        "area": "三島",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        919
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "51243",
+        "hotelName": "ホテルマッシモ三島",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ダイワロイネットホテルぬまづ|静岡県|沼津",
+      "sourceHotel": {
+        "name": "ダイワロイネットホテルぬまづ",
+        "prefecture": "静岡県",
+        "station": "沼津",
+        "area": "沼津",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        920
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "145391",
+        "hotelName": "ダイワロイネットホテルぬまづ",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルミワ|静岡県|沼津",
+      "sourceHotel": {
+        "name": "ホテルミワ",
+        "prefecture": "静岡県",
+        "station": "沼津",
+        "area": "沼津",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        921
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 404,
+        "status": "not_found",
+        "hasImage": false,
+        "hotelNo": "",
+        "hotelName": "",
+        "matchedBy": "",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": {
+        "httpStatus": 200,
+        "hasRakuten": false,
+        "rakutenHotelNo": "",
+        "providers": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "causeCode": "not_found_by_current_rakuten_search"
+    },
+    {
+      "requestKey": "name:ココチホテル沼津|静岡県|沼津",
+      "sourceHotel": {
+        "name": "ココチホテル沼津",
+        "prefecture": "静岡県",
+        "station": "沼津",
+        "area": "沼津",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        922
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "136199",
+        "hotelName": "ココチホテル沼津",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn富士山沼津駅北口2|静岡県|沼津",
+      "sourceHotel": {
+        "name": "東横INN富士山沼津駅北口2",
+        "prefecture": "静岡県",
+        "station": "沼津",
+        "area": "沼津",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        923
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "108401",
+        "hotelName": "東横INN富士山沼津駅北口2",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:静鉄ホテルプレジオ沼津|静岡県|沼津",
+      "sourceHotel": {
+        "name": "静鉄ホテルプレジオ沼津",
+        "prefecture": "静岡県",
+        "station": "沼津",
+        "area": "沼津",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        924
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "145425",
+        "hotelName": "静鉄ホテルプレジオ沼津",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテル西村|静岡県|富士",
+      "sourceHotel": {
+        "name": "ホテル西村",
+        "prefecture": "静岡県",
+        "station": "富士",
+        "area": "富士",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        925
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 404,
+        "status": "not_found",
+        "hasImage": false,
+        "hotelNo": "",
+        "hotelName": "",
+        "matchedBy": "",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": {
+        "httpStatus": 200,
+        "hasRakuten": false,
+        "rakutenHotelNo": "",
+        "providers": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "causeCode": "not_found_by_current_rakuten_search"
+    },
+    {
+      "requestKey": "name:くれたけイン富士山|静岡県|富士",
+      "sourceHotel": {
+        "name": "くれたけイン富士山",
+        "prefecture": "静岡県",
+        "station": "富士",
+        "area": "富士",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        926
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "129671",
+        "hotelName": "くれたけイン富士山",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルルートイン富士中央公園東|静岡県|富士",
+      "sourceHotel": {
+        "name": "ホテルルートイン富士中央公園東",
+        "prefecture": "静岡県",
+        "station": "富士",
+        "area": "富士",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        927
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "158683",
+        "hotelName": "ホテルルートイン富士中央公園東",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn新富士駅南口|静岡県|新富士",
+      "sourceHotel": {
+        "name": "東横INN新富士駅南口",
+        "prefecture": "静岡県",
+        "station": "新富士",
+        "area": "富士",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        928
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "167224",
+        "hotelName": "東横INN新富士駅南口",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:abホテル富士|静岡県|富士",
+      "sourceHotel": {
+        "name": "ABホテル富士",
+        "prefecture": "静岡県",
+        "station": "富士",
+        "area": "富士",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        929
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "165086",
+        "hotelName": "ABホテル富士",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテル阪急レスパイア大阪|大阪府|大阪・梅田",
+      "sourceHotel": {
+        "name": "ホテル阪急レスパイア大阪",
+        "prefecture": "大阪府",
+        "station": "大阪・梅田",
+        "area": "梅田",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        930,
+        935,
+        940,
+        975,
+        1000
+      ],
+      "duplicateGroupSize": 5,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "176713",
+        "hotelName": "ホテル阪急レスパイア大阪",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルインターゲート大阪 梅田|大阪府|大阪・梅田",
+      "sourceHotel": {
+        "name": "ホテルインターゲート大阪 梅田",
+        "prefecture": "大阪府",
+        "station": "大阪・梅田",
+        "area": "梅田",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        931,
+        936,
+        941,
+        976,
+        1001
+      ],
+      "duplicateGroupSize": 5,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "181403",
+        "hotelName": "ホテルインターゲート大阪 梅田",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:アパホテル&リゾート〈大阪梅田駅タワー〉|大阪府|梅田",
+      "sourceHotel": {
+        "name": "アパホテル&リゾート〈大阪梅田駅タワー〉",
+        "prefecture": "大阪府",
+        "station": "梅田",
+        "area": "梅田",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        932,
+        937,
+        942,
+        977,
+        1002
+      ],
+      "duplicateGroupSize": 5,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "184030",
+        "hotelName": "アパホテル&リゾート〈大阪梅田駅タワー〉",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルモントレ ル・フレール大阪|大阪府|北新地・梅田",
+      "sourceHotel": {
+        "name": "ホテルモントレ ル・フレール大阪",
+        "prefecture": "大阪府",
+        "station": "北新地・梅田",
+        "area": "梅田",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        933,
+        938,
+        943,
+        978,
+        1003
+      ],
+      "duplicateGroupSize": 5,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "166424",
+        "hotelName": "ホテルモントレ ル・フレール大阪",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ハートンホテル西梅田|大阪府|西梅田",
+      "sourceHotel": {
+        "name": "ハートンホテル西梅田",
+        "prefecture": "大阪府",
+        "station": "西梅田",
+        "area": "梅田",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        934,
+        939,
+        944,
+        979,
+        1004
+      ],
+      "duplicateGroupSize": 5,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "1008",
+        "hotelName": "ハートンホテル西梅田",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    }
+  ]
+}
