@@ -1,0 +1,769 @@
+{
+  "schemaVersion": 3,
+  "complete": true,
+  "phase": "first-pass",
+  "generatedAt": "2026-08-06T21:48:10.857Z",
+  "shardIndex": 16,
+  "shardSize": 25,
+  "start": 400,
+  "end": 425,
+  "totalRecords": 1256,
+  "totalUnique": 750,
+  "processedUnique": 25,
+  "retriedUnique": 0,
+  "skippedMatchedUnique": 0,
+  "retryAttemptsPerRequest": 1,
+  "results": [
+    {
+      "requestKey": "name:富山エクセルホテル東急|富山県|富山",
+      "sourceHotel": {
+        "name": "富山エクセルホテル東急",
+        "prefecture": "富山県",
+        "station": "富山",
+        "area": "富山",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        757,
+        762,
+        767
+      ],
+      "duplicateGroupSize": 3,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "520",
+        "hotelName": "富山エクセルホテル東急",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:コンフォートホテル富山駅前|富山県|富山",
+      "sourceHotel": {
+        "name": "コンフォートホテル富山駅前",
+        "prefecture": "富山県",
+        "station": "富山",
+        "area": "富山",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        758,
+        763,
+        768
+      ],
+      "duplicateGroupSize": 3,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "67092",
+        "hotelName": "コンフォートホテル富山駅前",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn富山駅新幹線口2|富山県|富山",
+      "sourceHotel": {
+        "name": "東横INN富山駅新幹線口2",
+        "prefecture": "富山県",
+        "station": "富山",
+        "area": "富山",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        759,
+        764,
+        769
+      ],
+      "duplicateGroupSize": 3,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "166150",
+        "hotelName": "東横INN富山駅新幹線口2",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルフォルツァ金沢|石川県|金沢",
+      "sourceHotel": {
+        "name": "ホテルフォルツァ金沢",
+        "prefecture": "石川県",
+        "station": "金沢",
+        "area": "金沢・兼六園",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        770,
+        775,
+        780
+      ],
+      "duplicateGroupSize": 3,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "177000",
+        "hotelName": "FORZA ホテルフォルツァ金沢",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:三井ガーデンホテル金沢|石川県|金沢",
+      "sourceHotel": {
+        "name": "三井ガーデンホテル金沢",
+        "prefecture": "石川県",
+        "station": "金沢",
+        "area": "金沢・兼六園",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        771,
+        776,
+        781
+      ],
+      "duplicateGroupSize": 3,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "167963",
+        "hotelName": "三井ガーデンホテル金沢",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東急ステイ金沢|石川県|金沢",
+      "sourceHotel": {
+        "name": "東急ステイ金沢",
+        "prefecture": "石川県",
+        "station": "金沢",
+        "area": "金沢・兼六園",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        772,
+        777,
+        782
+      ],
+      "duplicateGroupSize": 3,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "177762",
+        "hotelName": "東急ステイ金沢",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルインターゲート金沢|石川県|金沢",
+      "sourceHotel": {
+        "name": "ホテルインターゲート金沢",
+        "prefecture": "石川県",
+        "station": "金沢",
+        "area": "金沢・兼六園",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        773,
+        778,
+        783
+      ],
+      "duplicateGroupSize": 3,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "168622",
+        "hotelName": "ホテルインターゲート金沢",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn金沢兼六園香林坊|石川県|香林坊",
+      "sourceHotel": {
+        "name": "東横INN金沢兼六園香林坊",
+        "prefecture": "石川県",
+        "station": "香林坊",
+        "area": "金沢・兼六園",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        774,
+        779,
+        784
+      ],
+      "duplicateGroupSize": 3,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "54213",
+        "hotelName": "東横INN金沢兼六園香林坊",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:コートヤード・バイ・マリオット福井|福井県|福井",
+      "sourceHotel": {
+        "name": "コートヤード・バイ・マリオット福井",
+        "prefecture": "福井県",
+        "station": "福井",
+        "area": "福井",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        785,
+        790
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "189079",
+        "hotelName": "コートヤード・バイ・マリオット福井",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルフジタ福井|福井県|福井",
+      "sourceHotel": {
+        "name": "ホテルフジタ福井",
+        "prefecture": "福井県",
+        "station": "福井",
+        "area": "福井",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        786,
+        791
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "181073",
+        "hotelName": "ホテルフジタ福井",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ドーミーインpremium福井|福井県|福井",
+      "sourceHotel": {
+        "name": "ドーミーインPREMIUM福井",
+        "prefecture": "福井県",
+        "station": "福井",
+        "area": "福井",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        787,
+        792
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "172494",
+        "hotelName": "天然温泉 羽二重の湯 ドーミーインPREMIUM福井(ドーミーイン・御宿野乃 ホテルズグループ)",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:福井マンテンホテル駅前|福井県|福井",
+      "sourceHotel": {
+        "name": "福井マンテンホテル駅前",
+        "prefecture": "福井県",
+        "station": "福井",
+        "area": "福井",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        788,
+        793
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "151361",
+        "hotelName": "福井マンテンホテル駅前(マンテンホテルグループ)",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn福井駅前|福井県|福井",
+      "sourceHotel": {
+        "name": "東横INN福井駅前",
+        "prefecture": "福井県",
+        "station": "福井",
+        "area": "福井",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        789,
+        794
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "68558",
+        "hotelName": "東横INN福井駅前",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:天然温泉 勝運の湯 ドーミーイン甲府丸の内|山梨県|甲府",
+      "sourceHotel": {
+        "name": "天然温泉 勝運の湯 ドーミーイン甲府丸の内",
+        "prefecture": "山梨県",
+        "station": "甲府",
+        "area": "甲府",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        795
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "163071",
+        "hotelName": "天然温泉 勝運の湯 ドーミーイン甲府丸の内(ドーミーイン・御宿野乃 ホテルズグループ)",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn甲府駅南口2|山梨県|甲府",
+      "sourceHotel": {
+        "name": "東横INN甲府駅南口2",
+        "prefecture": "山梨県",
+        "station": "甲府",
+        "area": "甲府",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        796
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "108361",
+        "hotelName": "東横INN甲府駅南口2",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:古名屋ホテル|山梨県|甲府",
+      "sourceHotel": {
+        "name": "古名屋ホテル",
+        "prefecture": "山梨県",
+        "station": "甲府",
+        "area": "甲府",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        797
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "2493",
+        "hotelName": "古名屋ホテル",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:甲府ワシントンホテルプラザ|山梨県|甲府",
+      "sourceHotel": {
+        "name": "甲府ワシントンホテルプラザ",
+        "prefecture": "山梨県",
+        "station": "甲府",
+        "area": "甲府",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        798
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "416",
+        "hotelName": "甲府ワシントンホテルプラザ",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルフリースタイル|山梨県|甲府",
+      "sourceHotel": {
+        "name": "ホテルフリースタイル",
+        "prefecture": "山梨県",
+        "station": "甲府",
+        "area": "甲府",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        799
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 404,
+        "status": "not_found",
+        "hasImage": false,
+        "hotelNo": "",
+        "hotelName": "",
+        "matchedBy": "",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": {
+        "httpStatus": 200,
+        "hasRakuten": false,
+        "rakutenHotelNo": "",
+        "providers": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "causeCode": "not_found_by_current_rakuten_search"
+    },
+    {
+      "requestKey": "name:河口湖ホテル|山梨県|河口湖",
+      "sourceHotel": {
+        "name": "河口湖ホテル",
+        "prefecture": "山梨県",
+        "station": "河口湖",
+        "area": "河口湖",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        800
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "84812",
+        "hotelName": "河口湖ホテル",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn富士河口湖大橋|山梨県|河口湖",
+      "sourceHotel": {
+        "name": "東横INN富士河口湖大橋",
+        "prefecture": "山梨県",
+        "station": "河口湖",
+        "area": "河口湖",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        801
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "172450",
+        "hotelName": "東横INN富士河口湖大橋",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルルートイン河口湖|山梨県|河口湖",
+      "sourceHotel": {
+        "name": "ホテルルートイン河口湖",
+        "prefecture": "山梨県",
+        "station": "河口湖",
+        "area": "河口湖",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        802
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "1778",
+        "hotelName": "河口湖天然温泉「霊水の湯」ホテルルートイン河口湖",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:haostay|山梨県|河口湖",
+      "sourceHotel": {
+        "name": "HAOSTAY",
+        "prefecture": "山梨県",
+        "station": "河口湖",
+        "area": "河口湖",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        803
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "178575",
+        "hotelName": "HAOSTAY",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:富士河口湖リゾートホテル|山梨県|河口湖",
+      "sourceHotel": {
+        "name": "富士河口湖リゾートホテル",
+        "prefecture": "山梨県",
+        "station": "河口湖",
+        "area": "河口湖",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        804
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "173220",
+        "hotelName": "富士河口湖リゾートホテル",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:いろはグランホテル松本駅前|長野県|松本",
+      "sourceHotel": {
+        "name": "いろはグランホテル松本駅前",
+        "prefecture": "長野県",
+        "station": "松本",
+        "area": "松本",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        805,
+        810
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "172342",
+        "hotelName": "いろはグランホテル松本駅前",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:リッチモンドホテル松本|長野県|松本",
+      "sourceHotel": {
+        "name": "リッチモンドホテル松本",
+        "prefecture": "長野県",
+        "station": "松本",
+        "area": "松本",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        806,
+        811
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "11283",
+        "hotelName": "リッチモンドホテル松本",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    }
+  ]
+}
