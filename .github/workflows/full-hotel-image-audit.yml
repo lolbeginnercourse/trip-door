@@ -1,0 +1,166 @@
+name: Full hotel image audit
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/audit-runs/full-hotel-image-audit.trigger
+
+permissions:
+  contents: write
+
+concurrency:
+  group: full-hotel-image-audit-v2
+  cancel-in-progress: false
+
+env:
+  AUDIT_BRANCH: audit/hotel-image-coverage-v2-20260807
+  REPORT_DIR: reports/all-hotel-image-audit-v2-20260807
+  SHARD_SIZE: "25"
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    outputs:
+      total_records: ${{ steps.prepare.outputs.total_records }}
+      total_unique: ${{ steps.prepare.outputs.total_unique }}
+      shard_count: ${{ steps.prepare.outputs.shard_count }}
+      shards: ${{ steps.prepare.outputs.shards }}
+    steps:
+      - name: Check out audit branch
+        uses: actions/checkout@v5
+        with:
+          ref: ${{ env.AUDIT_BRANCH }}
+          persist-credentials: false
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: "22"
+          package-manager-cache: false
+
+      - name: Validate audit scripts
+        run: |
+          node --check scripts/audit-hotel-images-prepare.mjs
+          node --check scripts/audit-hotel-images-shard.mjs
+          node --check scripts/audit-hotel-images-merge.mjs
+
+      - name: Prepare dynamic shard matrix
+        id: prepare
+        run: node scripts/audit-hotel-images-prepare.mjs
+
+  audit-shards:
+    name: Audit shard ${{ matrix.shard }}
+    needs: prepare
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    strategy:
+      fail-fast: false
+      max-parallel: 1
+      matrix:
+        shard: ${{ fromJSON(needs.prepare.outputs.shards) }}
+    steps:
+      - name: Check out audit branch
+        uses: actions/checkout@v5
+        with:
+          ref: ${{ env.AUDIT_BRANCH }}
+          persist-credentials: false
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: "22"
+          package-manager-cache: false
+
+      - name: Audit one shard
+        env:
+          SHARD_INDEX: ${{ matrix.shard }}
+          REQUEST_INTERVAL_MS: "1300"
+          REQUEST_TIMEOUT_MS: "20000"
+          RETRY_ATTEMPTS: "5"
+        run: node scripts/audit-hotel-images-shard.mjs
+
+      - name: Upload shard result
+        uses: actions/upload-artifact@v6
+        with:
+          name: hotel-image-audit-shard-${{ matrix.shard }}
+          path: ${{ env.REPORT_DIR }}/shards/shard-*.json
+          if-no-files-found: error
+          retention-days: 7
+
+  aggregate:
+    needs:
+      - prepare
+      - audit-shards
+    if: ${{ always() && needs.prepare.result == 'success' && needs.audit-shards.result == 'success' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out audit branch
+        uses: actions/checkout@v5
+        with:
+          ref: ${{ env.AUDIT_BRANCH }}
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: "22"
+          package-manager-cache: false
+
+      - name: Clear previous shard directory
+        run: rm -rf "${REPORT_DIR}/shards"
+
+      - name: Download all shard artifacts
+        uses: actions/download-artifact@v5
+        with:
+          pattern: hotel-image-audit-shard-*
+          path: ${{ env.REPORT_DIR }}/shards
+          merge-multiple: true
+
+      - name: Merge and validate all results
+        env:
+          EXPECTED_TOTAL_UNIQUE: ${{ needs.prepare.outputs.total_unique }}
+        run: node scripts/audit-hotel-images-merge.mjs
+
+      - name: Verify completion
+        env:
+          EXPECTED_TOTAL_UNIQUE: ${{ needs.prepare.outputs.total_unique }}
+        run: |
+          node - <<'NODE'
+          const fs = require("fs");
+          const summary = JSON.parse(fs.readFileSync(`${process.env.REPORT_DIR}/summary.json`, "utf8"));
+          const progress = JSON.parse(fs.readFileSync(`${process.env.REPORT_DIR}/progress.json`, "utf8"));
+          if (progress.phase !== "complete") throw new Error("Audit is not complete.");
+          if (summary.uniqueRequestKeys !== Number(process.env.EXPECTED_TOTAL_UNIQUE)) {
+            throw new Error(`Expected ${process.env.EXPECTED_TOTAL_UNIQUE}, got ${summary.uniqueRequestKeys}`);
+          }
+          console.log(`Verified ${summary.uniqueRequestKeys} unique facilities.`);
+          NODE
+
+      - name: Save completed audit to audit branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "${REPORT_DIR}"
+          if git diff --cached --quiet; then
+            echo "Audit result already saved."
+            exit 0
+          fi
+          git commit -m "Complete robust hotel image audit"
+          git push origin "HEAD:${AUDIT_BRANCH}"
+
+      - name: Upload final report
+        uses: actions/upload-artifact@v6
+        with:
+          name: hotel-image-audit-final
+          path: |
+            ${{ env.REPORT_DIR }}/summary.json
+            ${{ env.REPORT_DIR }}/progress.json
+            ${{ env.REPORT_DIR }}/failures.csv
+            ${{ env.REPORT_DIR }}/solution-plan.md
+          if-no-files-found: error
+          retention-days: 30
