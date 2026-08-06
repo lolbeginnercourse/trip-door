@@ -1,0 +1,44 @@
+name: Audit hotel location fields
+
+on:
+  push:
+    branches:
+      - agent/strict-rakuten-image-matching-20260807
+    paths:
+      - .github/workflows/audit-hotel-location-fields.yml
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/strict-rakuten-image-matching-20260807
+      - name: Inspect hotel data schema
+        run: |
+          node <<'NODE'
+          const fs = require('fs');
+          const raw = JSON.parse(fs.readFileSync('assets/data/hotels.json', 'utf8'));
+          const hotels = Array.isArray(raw) ? raw : Array.isArray(raw.hotels) ? raw.hotels : [];
+          const fields = ['id','name','area','prefecture','address','address1','address2','nearestStation','access','rakutenHotelNo','affiliateLinks'];
+          const counts = Object.fromEntries(fields.map(field => [field, hotels.filter(h => {
+            const value = h?.[field];
+            return Array.isArray(value) ? value.length > 0 : value !== null && value !== undefined && String(value).trim() !== '';
+          }).length]));
+          const topLevelKeys = [...new Set(hotels.flatMap(h => Object.keys(h || {})))].sort();
+          const samples = hotels.slice(0, 12).map(h => Object.fromEntries(fields.filter(f => h?.[f] !== undefined).map(f => [f, h[f]])));
+          const report = { total: hotels.length, counts, topLevelKeys, samples };
+          fs.mkdirSync('reports', { recursive: true });
+          fs.writeFileSync('reports/hotel-location-fields.json', JSON.stringify(report, null, 2) + '\n');
+          NODE
+      - name: Save report and remove temporary workflow
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "4189823+github-actions[bot]@users.noreply.github.com"
+          git add reports/hotel-location-fields.json
+          git rm .github/workflows/audit-hotel-location-fields.yml
+          git commit -m "Record hotel location field audit"
+          git push origin HEAD:agent/strict-rakuten-image-matching-20260807
