@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-06T23:33:43.268Z",
+  "totalRecords": 1256,
+  "uniqueRequestKeys": 750,
+  "duplicateRecordsSharingRequests": 506,
+  "recordsMatched": 1164,
+  "recordsFailed": 92,
+  "recordSuccessRate": 92.68,
+  "uniqueMatched": 694,
+  "uniqueFailed": 56,
+  "recordCountsByCause": {
+    "matched": 1164,
+    "not_found_by_current_rakuten_search": 71,
+    "multiple_candidates": 9,
+    "temporary_upstream_error": 9,
+    "location_unverified": 3
+  },
+  "uniqueCountsByCause": {
+    "matched": 694,
+    "not_found_by_current_rakuten_search": 42,
+    "multiple_candidates": 4,
+    "temporary_upstream_error": 7,
+    "location_unverified": 3
+  },
+  "recordCountsByStatus": {
+    "502": 9,
+    "matched": 1164,
+    "not_found": 71,
+    "ambiguous": 9,
+    "location_unverified": 3
+  },
+  "uniqueCountsByStatus": {
+    "502": 7,
+    "matched": 694,
+    "not_found": 42,
+    "ambiguous": 4,
+    "location_unverified": 3
+  },
+  "recordCountsByMatchedBy": {
+    "hotelNo": 16,
+    "containedNameLocation": 140,
+    "exactName": 1001,
+    "normalizedNameLocation": 7
+  },
+  "uniqueCountsByMatchedBy": {
+    "hotelNo": 6,
+    "containedNameLocation": 103,
+    "exactName": 578,
+    "normalizedNameLocation": 7
+  },
+  "failedUniqueWithRakutenAffiliateLink": 2,
+  "failedUniqueWithoutRakutenAffiliateLink": 54,
+  "shardCount": 30
+}
