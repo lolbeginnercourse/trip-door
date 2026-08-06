@@ -1,0 +1,760 @@
+{
+  "schemaVersion": 3,
+  "complete": true,
+  "phase": "first-pass",
+  "generatedAt": "2026-08-06T21:49:07.144Z",
+  "shardIndex": 17,
+  "shardSize": 25,
+  "start": 425,
+  "end": 450,
+  "totalRecords": 1256,
+  "totalUnique": 750,
+  "processedUnique": 25,
+  "retriedUnique": 0,
+  "skippedMatchedUnique": 0,
+  "retryAttemptsPerRequest": 1,
+  "results": [
+    {
+      "requestKey": "name:プレミアホテル-cabin-松本|長野県|松本",
+      "sourceHotel": {
+        "name": "プレミアホテル-CABIN-松本",
+        "prefecture": "長野県",
+        "station": "松本",
+        "area": "松本",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        807,
+        812
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 404,
+        "status": "not_found",
+        "hasImage": false,
+        "hotelNo": "",
+        "hotelName": "",
+        "matchedBy": "",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": {
+        "httpStatus": 200,
+        "hasRakuten": false,
+        "rakutenHotelNo": "",
+        "providers": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "causeCode": "not_found_by_current_rakuten_search"
+    },
+    {
+      "requestKey": "name:エースイン松本|長野県|松本",
+      "sourceHotel": {
+        "name": "エースイン松本",
+        "prefecture": "長野県",
+        "station": "松本",
+        "area": "松本",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        808,
+        813
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "14664",
+        "hotelName": "エースイン松本",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn松本駅前本町|長野県|松本",
+      "sourceHotel": {
+        "name": "東横INN松本駅前本町",
+        "prefecture": "長野県",
+        "station": "松本",
+        "area": "松本",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        809,
+        814
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "67273",
+        "hotelName": "東横INN松本駅前本町",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルメトロポリタン長野|長野県|長野",
+      "sourceHotel": {
+        "name": "ホテルメトロポリタン長野",
+        "prefecture": "長野県",
+        "station": "長野",
+        "area": "長野",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        815
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "806",
+        "hotelName": "ホテルメトロポリタン長野",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:長野東急reiホテル|長野県|長野",
+      "sourceHotel": {
+        "name": "長野東急REIホテル",
+        "prefecture": "長野県",
+        "station": "長野",
+        "area": "長野",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        816
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "158552",
+        "hotelName": "長野東急REIホテル",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:チサングランド長野|長野県|長野",
+      "sourceHotel": {
+        "name": "チサングランド長野",
+        "prefecture": "長野県",
+        "station": "長野",
+        "area": "長野",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        817
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "627",
+        "hotelName": "チサングランド長野",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn長野駅善光寺口|長野県|長野",
+      "sourceHotel": {
+        "name": "東横INN長野駅善光寺口",
+        "prefecture": "長野県",
+        "station": "長野",
+        "area": "長野",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        818
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "108383",
+        "hotelName": "東横INN長野駅善光寺口",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:相鉄フレッサイン 長野駅善光寺口|長野県|長野",
+      "sourceHotel": {
+        "name": "相鉄フレッサイン 長野駅善光寺口",
+        "prefecture": "長野県",
+        "station": "長野",
+        "area": "長野",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        819
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "107609",
+        "hotelName": "相鉄フレッサイン長野駅善光寺口",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:西鉄ホテル クルーム名古屋|愛知県|久屋大通",
+      "sourceHotel": {
+        "name": "西鉄ホテル クルーム名古屋",
+        "prefecture": "愛知県",
+        "station": "久屋大通",
+        "area": "栄",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        820,
+        830,
+        845,
+        850
+      ],
+      "duplicateGroupSize": 4,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "167718",
+        "hotelName": "西鉄ホテル クルーム名古屋",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ベッセルイン栄駅前|愛知県|栄",
+      "sourceHotel": {
+        "name": "ベッセルイン栄駅前",
+        "prefecture": "愛知県",
+        "station": "栄",
+        "area": "栄",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        821,
+        831,
+        846,
+        851
+      ],
+      "duplicateGroupSize": 4,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "167500",
+        "hotelName": "ベッセルイン栄駅前(名古屋・栄)",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルマイステイズ名古屋錦|愛知県|栄",
+      "sourceHotel": {
+        "name": "ホテルマイステイズ名古屋錦",
+        "prefecture": "愛知県",
+        "station": "栄",
+        "area": "栄",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        822,
+        832,
+        847,
+        852
+      ],
+      "duplicateGroupSize": 4,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "167168",
+        "hotelName": "ホテルマイステイズ名古屋錦",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:コンフォートイン名古屋栄駅前|愛知県|栄",
+      "sourceHotel": {
+        "name": "コンフォートイン名古屋栄駅前",
+        "prefecture": "愛知県",
+        "station": "栄",
+        "area": "栄",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        823,
+        833,
+        848,
+        853
+      ],
+      "duplicateGroupSize": 4,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "188251",
+        "hotelName": "コンフォートイン名古屋栄駅前",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:アパホテル〈名古屋栄駅前〉excellent|愛知県|栄",
+      "sourceHotel": {
+        "name": "アパホテル〈名古屋栄駅前〉EXCELLENT",
+        "prefecture": "愛知県",
+        "station": "栄",
+        "area": "栄",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        824,
+        834,
+        849,
+        854
+      ],
+      "duplicateGroupSize": 4,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "17704",
+        "hotelName": "アパホテル〈名古屋栄駅前〉EXCELLENT",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:リッチモンドホテル名古屋納屋橋|愛知県|伏見",
+      "sourceHotel": {
+        "name": "リッチモンドホテル名古屋納屋橋",
+        "prefecture": "愛知県",
+        "station": "伏見",
+        "area": "伏見",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        825
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "28356",
+        "hotelName": "リッチモンドホテル名古屋納屋橋",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルjalシティ名古屋 錦|愛知県|伏見",
+      "sourceHotel": {
+        "name": "ホテルJALシティ名古屋 錦",
+        "prefecture": "愛知県",
+        "station": "伏見",
+        "area": "伏見",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        826
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "168454",
+        "hotelName": "ホテルJALシティ名古屋 錦",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:名古屋クラウンホテル|愛知県|伏見",
+      "sourceHotel": {
+        "name": "名古屋クラウンホテル",
+        "prefecture": "愛知県",
+        "station": "伏見",
+        "area": "伏見",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        827
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "622",
+        "hotelName": "─都心の天然温泉─ 名古屋クラウンホテル",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ハミルトンホテル ブラック|愛知県|伏見",
+      "sourceHotel": {
+        "name": "ハミルトンホテル ブラック",
+        "prefecture": "愛知県",
+        "station": "伏見",
+        "area": "伏見",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        828
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "970",
+        "hotelName": "ハミルトンホテル -ブラック-",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:コンフォートホテル名古屋伏見|愛知県|伏見",
+      "sourceHotel": {
+        "name": "コンフォートホテル名古屋伏見",
+        "prefecture": "愛知県",
+        "station": "伏見",
+        "area": "伏見",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        829
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "165806",
+        "hotelName": "コンフォートホテル名古屋伏見",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:名古屋笠寺ホテル|愛知県|笠寺",
+      "sourceHotel": {
+        "name": "名古屋笠寺ホテル",
+        "prefecture": "愛知県",
+        "station": "笠寺",
+        "area": "港区役所・東海通",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        835
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "447",
+        "hotelName": "SPA RESORT 名古屋笠寺ホテル",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:コンフォートホテル名古屋金山|愛知県|金山",
+      "sourceHotel": {
+        "name": "コンフォートホテル名古屋金山",
+        "prefecture": "愛知県",
+        "station": "金山",
+        "area": "港区役所・東海通",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        836,
+        841
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "182852",
+        "hotelName": "コンフォートホテル名古屋金山",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:名鉄イン名古屋金山|愛知県|金山",
+      "sourceHotel": {
+        "name": "名鉄イン名古屋金山",
+        "prefecture": "愛知県",
+        "station": "金山",
+        "area": "港区役所・東海通",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        837,
+        842
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "29845",
+        "hotelName": "名鉄イン名古屋金山",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:サイプレスガーデンホテル|愛知県|金山",
+      "sourceHotel": {
+        "name": "サイプレスガーデンホテル",
+        "prefecture": "愛知県",
+        "station": "金山",
+        "area": "港区役所・東海通",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        838,
+        843
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "6109",
+        "hotelName": "サイプレスガーデンホテル",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルルートイン名古屋東別院|愛知県|東別院",
+      "sourceHotel": {
+        "name": "ホテルルートイン名古屋東別院",
+        "prefecture": "愛知県",
+        "station": "東別院",
+        "area": "港区役所・東海通",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        839
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "20685",
+        "hotelName": "ホテルルートイン名古屋東別院",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:anaクラウンプラザホテルグランコート名古屋|愛知県|金山",
+      "sourceHotel": {
+        "name": "ANAクラウンプラザホテルグランコート名古屋",
+        "prefecture": "愛知県",
+        "station": "金山",
+        "area": "金山",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        840
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "1659",
+        "hotelName": "ANAクラウンプラザホテルグランコート名古屋 by IHG",
+        "matchedBy": "normalizedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルリブマックス名古屋金山|愛知県|金山",
+      "sourceHotel": {
+        "name": "ホテルリブマックス名古屋金山",
+        "prefecture": "愛知県",
+        "station": "金山",
+        "area": "金山",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        844
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "179019",
+        "hotelName": "ホテルリブマックス名古屋金山",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    }
+  ]
+}
