@@ -1,8 +1,8 @@
 {
   "schemaVersion": 3,
   "complete": true,
-  "phase": "first-pass",
-  "generatedAt": "2026-08-06T21:51:09.669Z",
+  "phase": "retry",
+  "generatedAt": "2026-08-06T23:55:49.920Z",
   "shardIndex": 19,
   "shardSize": 25,
   "start": 475,
@@ -11,8 +11,8 @@
   "totalUnique": 750,
   "processedUnique": 25,
   "retriedUnique": 0,
-  "skippedMatchedUnique": 0,
-  "retryAttemptsPerRequest": 1,
+  "skippedMatchedUnique": 25,
+  "retryAttemptsPerRequest": 5,
   "results": [
     {
       "requestKey": "name:ダイワロイネットホテル岐阜|岐阜県|岐阜",
