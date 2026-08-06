@@ -1,0 +1,735 @@
+{
+  "schemaVersion": 3,
+  "complete": true,
+  "phase": "first-pass",
+  "generatedAt": "2026-08-06T21:50:07.405Z",
+  "shardIndex": 18,
+  "shardSize": 25,
+  "start": 450,
+  "end": 475,
+  "totalRecords": 1256,
+  "totalUnique": 750,
+  "processedUnique": 25,
+  "retriedUnique": 0,
+  "skippedMatchedUnique": 0,
+  "retryAttemptsPerRequest": 1,
+  "results": [
+    {
+      "requestKey": "name:ホテルメルパルク名古屋|愛知県|千種",
+      "sourceHotel": {
+        "name": "ホテルメルパルク名古屋",
+        "prefecture": "愛知県",
+        "station": "千種",
+        "area": "千種",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        855
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "10897",
+        "hotelName": "ホテル メルパルク名古屋",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルルートイン名古屋今池駅前|愛知県|今池",
+      "sourceHotel": {
+        "name": "ホテルルートイン名古屋今池駅前",
+        "prefecture": "愛知県",
+        "station": "今池",
+        "area": "千種",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        856
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "108224",
+        "hotelName": "ホテルルートイン名古屋今池駅前",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルルブラ王山|愛知県|池下",
+      "sourceHotel": {
+        "name": "ホテルルブラ王山",
+        "prefecture": "愛知県",
+        "station": "池下",
+        "area": "千種",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        857
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "18904",
+        "hotelName": "ホテル ルブラ王山",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルマイステイズ名古屋栄|愛知県|栄",
+      "sourceHotel": {
+        "name": "ホテルマイステイズ名古屋栄",
+        "prefecture": "愛知県",
+        "station": "栄",
+        "area": "千種",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        858
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "4758",
+        "hotelName": "ホテルマイステイズ名古屋栄",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:名古屋東急ホテル|愛知県|栄",
+      "sourceHotel": {
+        "name": "名古屋東急ホテル",
+        "prefecture": "愛知県",
+        "station": "栄",
+        "area": "千種",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        859
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "846",
+        "hotelName": "名古屋東急ホテル",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルアソシア豊橋|愛知県|豊橋",
+      "sourceHotel": {
+        "name": "ホテルアソシア豊橋",
+        "prefecture": "愛知県",
+        "station": "豊橋",
+        "area": "豊橋",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        860,
+        865
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "6042",
+        "hotelName": "ホテルアソシア豊橋",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:コンフォートホテル豊橋|愛知県|豊橋",
+      "sourceHotel": {
+        "name": "コンフォートホテル豊橋",
+        "prefecture": "愛知県",
+        "station": "豊橋",
+        "area": "豊橋",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        861,
+        866
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "158616",
+        "hotelName": "コンフォートホテル豊橋",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn豊橋駅東口|愛知県|豊橋",
+      "sourceHotel": {
+        "name": "東横INN豊橋駅東口",
+        "prefecture": "愛知県",
+        "station": "豊橋",
+        "area": "豊橋",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        862,
+        867
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "108328",
+        "hotelName": "東横INN豊橋駅東口",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ジャストインプレミアム豊橋駅新幹線口|愛知県|豊橋",
+      "sourceHotel": {
+        "name": "ジャストインプレミアム豊橋駅新幹線口",
+        "prefecture": "愛知県",
+        "station": "豊橋",
+        "area": "豊橋",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        863,
+        868
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "168620",
+        "hotelName": "ジャストインプレミアム豊橋駅新幹線口",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルアークリッシュ豊橋|愛知県|豊橋",
+      "sourceHotel": {
+        "name": "ホテルアークリッシュ豊橋",
+        "prefecture": "愛知県",
+        "station": "豊橋",
+        "area": "豊橋",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        864,
+        869
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "71922",
+        "hotelName": "ホテルアークリッシュ豊橋",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:名鉄イン刈谷|愛知県|刈谷",
+      "sourceHotel": {
+        "name": "名鉄イン刈谷",
+        "prefecture": "愛知県",
+        "station": "刈谷",
+        "area": "刈谷",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        870
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "68603",
+        "hotelName": "名鉄イン刈谷",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:コンフォートホテル刈谷|愛知県|刈谷",
+      "sourceHotel": {
+        "name": "コンフォートホテル刈谷",
+        "prefecture": "愛知県",
+        "station": "刈谷",
+        "area": "刈谷",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        871
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "109398",
+        "hotelName": "コンフォートホテル刈谷",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:アクセスイン刈谷|愛知県|刈谷",
+      "sourceHotel": {
+        "name": "アクセスイン刈谷",
+        "prefecture": "愛知県",
+        "station": "刈谷",
+        "area": "刈谷",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        872
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "70872",
+        "hotelName": "アクセスイン刈谷",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:エースイン刈谷|愛知県|刈谷",
+      "sourceHotel": {
+        "name": "エースイン刈谷",
+        "prefecture": "愛知県",
+        "station": "刈谷",
+        "area": "刈谷",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        873
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "13882",
+        "hotelName": "エースイン刈谷",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn三河安城駅新幹線南口1|愛知県|三河安城",
+      "sourceHotel": {
+        "name": "東横INN三河安城駅新幹線南口1",
+        "prefecture": "愛知県",
+        "station": "三河安城",
+        "area": "刈谷",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        874
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "108360",
+        "hotelName": "東横INN三河安城駅新幹線南口1",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ザ・カトーホテル|愛知県|太田川",
+      "sourceHotel": {
+        "name": "ザ・カトーホテル",
+        "prefecture": "愛知県",
+        "station": "太田川",
+        "area": "太田川",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        875
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "78246",
+        "hotelName": "ザ・カトーホテル",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ルートイングランティア東海 spa & relaxation|愛知県|太田川",
+      "sourceHotel": {
+        "name": "ルートイングランティア東海 Spa & Relaxation",
+        "prefecture": "愛知県",
+        "station": "太田川",
+        "area": "太田川",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        876
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "181256",
+        "hotelName": "ルートイングランティア東海 Spa&Relaxation",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東海シティホテル|愛知県|太田川",
+      "sourceHotel": {
+        "name": "東海シティホテル",
+        "prefecture": "愛知県",
+        "station": "太田川",
+        "area": "太田川",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        877
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "108671",
+        "hotelName": "東海シティホテル",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:abホテル東海太田川|愛知県|太田川",
+      "sourceHotel": {
+        "name": "ABホテル東海太田川",
+        "prefecture": "愛知県",
+        "station": "太田川",
+        "area": "太田川",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        878
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "167699",
+        "hotelName": "ABホテル東海太田川",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:アズイン大府|愛知県|大府",
+      "sourceHotel": {
+        "name": "アズイン大府",
+        "prefecture": "愛知県",
+        "station": "大府",
+        "area": "太田川",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        879
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "19835",
+        "hotelName": "アズイン大府",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ダイワロイネットホテル名古屋太閤通口|愛知県|名古屋",
+      "sourceHotel": {
+        "name": "ダイワロイネットホテル名古屋太閤通口",
+        "prefecture": "愛知県",
+        "station": "名古屋",
+        "area": "名古屋・ささしまライブ",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        880
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "153417",
+        "hotelName": "ダイワロイネットホテル名古屋太閤通口",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ヴィアイン名古屋新幹線口|愛知県|名古屋",
+      "sourceHotel": {
+        "name": "ヴィアイン名古屋新幹線口",
+        "prefecture": "愛知県",
+        "station": "名古屋",
+        "area": "名古屋・ささしまライブ",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        881
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "141916",
+        "hotelName": "ヴィアイン名古屋新幹線口(JR西日本グループ)",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:名鉄イン名古屋駅前|愛知県|名古屋",
+      "sourceHotel": {
+        "name": "名鉄イン名古屋駅前",
+        "prefecture": "愛知県",
+        "station": "名古屋",
+        "area": "名古屋・ささしまライブ",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        882
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "67937",
+        "hotelName": "名鉄イン名古屋駅前",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:コンフォートホテル名古屋名駅南|愛知県|名古屋",
+      "sourceHotel": {
+        "name": "コンフォートホテル名古屋名駅南",
+        "prefecture": "愛知県",
+        "station": "名古屋",
+        "area": "名古屋・ささしまライブ",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        883
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 404,
+        "status": "not_found",
+        "hasImage": false,
+        "hotelNo": "",
+        "hotelName": "",
+        "matchedBy": "",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": {
+        "httpStatus": 200,
+        "hasRakuten": false,
+        "rakutenHotelNo": "",
+        "providers": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "causeCode": "not_found_by_current_rakuten_search"
+    },
+    {
+      "requestKey": "name:相鉄フレッサイン 名古屋駅桜通口|愛知県|名古屋",
+      "sourceHotel": {
+        "name": "相鉄フレッサイン 名古屋駅桜通口",
+        "prefecture": "愛知県",
+        "station": "名古屋",
+        "area": "名古屋・ささしまライブ",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        884
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "177937",
+        "hotelName": "相鉄フレッサイン 名古屋駅桜通口",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    }
+  ]
+}
