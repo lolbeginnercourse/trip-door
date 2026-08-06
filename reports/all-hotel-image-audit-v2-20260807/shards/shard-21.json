@@ -1,0 +1,782 @@
+{
+  "schemaVersion": 3,
+  "complete": true,
+  "phase": "first-pass",
+  "generatedAt": "2026-08-06T21:53:14.338Z",
+  "shardIndex": 21,
+  "shardSize": 25,
+  "start": 525,
+  "end": 550,
+  "totalRecords": 1256,
+  "totalUnique": 750,
+  "processedUnique": 25,
+  "retriedUnique": 0,
+  "skippedMatchedUnique": 0,
+  "retryAttemptsPerRequest": 1,
+  "results": [
+    {
+      "requestKey": "name:ホテル京阪 天満橋駅前|大阪府|天満橋",
+      "sourceHotel": {
+        "name": "ホテル京阪 天満橋駅前",
+        "prefecture": "大阪府",
+        "station": "天満橋",
+        "area": "森ノ宮・大阪城公園",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        945,
+        950,
+        955,
+        985,
+        990,
+        995
+      ],
+      "duplicateGroupSize": 6,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "181857",
+        "hotelName": "ホテル京阪 天満橋駅前",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:アパホテル〈大阪谷町四丁目駅前〉|大阪府|谷町四丁目",
+      "sourceHotel": {
+        "name": "アパホテル〈大阪谷町四丁目駅前〉",
+        "prefecture": "大阪府",
+        "station": "谷町四丁目",
+        "area": "森ノ宮・大阪城公園",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        946,
+        951,
+        956,
+        986,
+        991,
+        996
+      ],
+      "duplicateGroupSize": 6,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "50188",
+        "hotelName": "アパホテル〈大阪谷町四丁目駅前〉",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテル・ザ・ルーテル|大阪府|谷町四丁目",
+      "sourceHotel": {
+        "name": "ホテル・ザ・ルーテル",
+        "prefecture": "大阪府",
+        "station": "谷町四丁目",
+        "area": "森ノ宮・大阪城公園",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        947,
+        952,
+        957,
+        987,
+        992,
+        997
+      ],
+      "duplicateGroupSize": 6,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "13698",
+        "hotelName": "ホテル・ザ・ルーテル",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:kkrホテル大阪|大阪府|森ノ宮",
+      "sourceHotel": {
+        "name": "KKRホテル大阪",
+        "prefecture": "大阪府",
+        "station": "森ノ宮",
+        "area": "森ノ宮・大阪城公園",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        948,
+        953,
+        958,
+        988,
+        993,
+        998
+      ],
+      "duplicateGroupSize": 6,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "6128",
+        "hotelName": "KKRホテル大阪(国家公務員共済組合連合会大阪共済会館)",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルモントレ ラ・スール大阪|大阪府|京橋・大阪ビジネスパーク",
+      "sourceHotel": {
+        "name": "ホテルモントレ ラ・スール大阪",
+        "prefecture": "大阪府",
+        "station": "京橋・大阪ビジネスパーク",
+        "area": "森ノ宮・大阪城公園",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        949,
+        954,
+        959,
+        989,
+        994,
+        999
+      ],
+      "duplicateGroupSize": 6,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "38808",
+        "hotelName": "ホテルモントレ ラ・スール大阪",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:都シティ 大阪天王寺|大阪府|天王寺",
+      "sourceHotel": {
+        "name": "都シティ 大阪天王寺",
+        "prefecture": "大阪府",
+        "station": "天王寺",
+        "area": "大阪上本町・谷町九丁目",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        960,
+        980
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "1145",
+        "hotelName": "都シティ 大阪天王寺",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ヴィアインあべの天王寺|大阪府|天王寺",
+      "sourceHotel": {
+        "name": "ヴィアインあべの天王寺",
+        "prefecture": "大阪府",
+        "station": "天王寺",
+        "area": "大阪上本町・谷町九丁目",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        961,
+        981
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "160787",
+        "hotelName": "ヴィアインあべの天王寺(JR西日本グループ)",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:アパホテル〈天王寺駅前〉|大阪府|天王寺",
+      "sourceHotel": {
+        "name": "アパホテル〈天王寺駅前〉",
+        "prefecture": "大阪府",
+        "station": "天王寺",
+        "area": "大阪上本町・谷町九丁目",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        962,
+        982
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "52875",
+        "hotelName": "アパホテル〈天王寺駅前〉",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn大阪阿倍野天王寺|大阪府|天王寺",
+      "sourceHotel": {
+        "name": "東横INN大阪阿倍野天王寺",
+        "prefecture": "大阪府",
+        "station": "天王寺",
+        "area": "大阪上本町・谷町九丁目",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        963,
+        983
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 404,
+        "status": "not_found",
+        "hasImage": false,
+        "hotelNo": "",
+        "hotelName": "",
+        "matchedBy": "",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": {
+        "httpStatus": 200,
+        "hasRakuten": false,
+        "rakutenHotelNo": "",
+        "providers": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "causeCode": "not_found_by_current_rakuten_search"
+    },
+    {
+      "requestKey": "name:ホテルトラスティ大阪阿倍野|大阪府|天王寺",
+      "sourceHotel": {
+        "name": "ホテルトラスティ大阪阿倍野",
+        "prefecture": "大阪府",
+        "station": "天王寺",
+        "area": "大阪上本町・谷町九丁目",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        964,
+        984
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "136011",
+        "hotelName": "ホテルトラスティ大阪阿倍野",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:相鉄フレッサイン 大阪なんば駅前|大阪府|なんば",
+      "sourceHotel": {
+        "name": "相鉄フレッサイン 大阪なんば駅前",
+        "prefecture": "大阪府",
+        "station": "なんば",
+        "area": "なんば・道頓堀",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        965,
+        1005
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "173011",
+        "hotelName": "相鉄フレッサイン 大阪なんば駅前",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルグレイスリー大阪なんば|大阪府|なんば",
+      "sourceHotel": {
+        "name": "ホテルグレイスリー大阪なんば",
+        "prefecture": "大阪府",
+        "station": "なんば",
+        "area": "なんば・道頓堀",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        966,
+        1006
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "172267",
+        "hotelName": "ホテルグレイスリー大阪なんば",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:アパホテル〈なんば駅東〉|大阪府|なんば",
+      "sourceHotel": {
+        "name": "アパホテル〈なんば駅東〉",
+        "prefecture": "大阪府",
+        "station": "なんば",
+        "area": "なんば・道頓堀",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        967,
+        1007
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "160874",
+        "hotelName": "アパホテル〈なんば駅東〉",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルヒラリーズ|大阪府|なんば",
+      "sourceHotel": {
+        "name": "ホテルヒラリーズ",
+        "prefecture": "大阪府",
+        "station": "なんば",
+        "area": "なんば・道頓堀",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        968,
+        1008
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "65443",
+        "hotelName": "ホテル ヒラリーズ",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn大阪なんば|大阪府|なんば",
+      "sourceHotel": {
+        "name": "東横INN大阪なんば",
+        "prefecture": "大阪府",
+        "station": "なんば",
+        "area": "なんば・道頓堀",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        969,
+        1009
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "187493",
+        "hotelName": "東横INN大阪なんば",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ヴィアインプライム心斎橋四ツ橋|大阪府|四ツ橋",
+      "sourceHotel": {
+        "name": "ヴィアインプライム心斎橋四ツ橋",
+        "prefecture": "大阪府",
+        "station": "四ツ橋",
+        "area": "本町・四ツ橋",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        970
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "172449",
+        "hotelName": "ヴィアインプライム心斎橋四ツ橋(JR西日本グループ)",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ハートンホテル心斎橋|大阪府|心斎橋",
+      "sourceHotel": {
+        "name": "ハートンホテル心斎橋",
+        "prefecture": "大阪府",
+        "station": "心斎橋",
+        "area": "本町・四ツ橋",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        971
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "145",
+        "hotelName": "ハートンホテル心斎橋",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルマイステイズ心斎橋|大阪府|心斎橋",
+      "sourceHotel": {
+        "name": "ホテルマイステイズ心斎橋",
+        "prefecture": "大阪府",
+        "station": "心斎橋",
+        "area": "本町・四ツ橋",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        972
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "17986",
+        "hotelName": "ホテルマイステイズ心斎橋",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:コンフォートホテル大阪心斎橋|大阪府|心斎橋",
+      "sourceHotel": {
+        "name": "コンフォートホテル大阪心斎橋",
+        "prefecture": "大阪府",
+        "station": "心斎橋",
+        "area": "本町・四ツ橋",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        973
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "16006",
+        "hotelName": "コンフォートホテル大阪心斎橋",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:相鉄フレッサイン 大阪心斎橋|大阪府|心斎橋",
+      "sourceHotel": {
+        "name": "相鉄フレッサイン 大阪心斎橋",
+        "prefecture": "大阪府",
+        "station": "心斎橋",
+        "area": "本町・四ツ橋",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        974
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "167892",
+        "hotelName": "相鉄フレッサイン 大阪心斎橋",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテル アゴーラ リージェンシー 大阪堺|大阪府|堺",
+      "sourceHotel": {
+        "name": "ホテル アゴーラ リージェンシー 大阪堺",
+        "prefecture": "大阪府",
+        "station": "堺",
+        "area": "堺",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1010
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "105",
+        "hotelName": "ホテル アゴーラ リージェンシー 大阪堺",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ダイワロイネットホテル大阪堺東|大阪府|堺東",
+      "sourceHotel": {
+        "name": "ダイワロイネットホテル大阪堺東",
+        "prefecture": "大阪府",
+        "station": "堺東",
+        "area": "堺",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1011
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 404,
+        "status": "not_found",
+        "hasImage": false,
+        "hotelNo": "",
+        "hotelName": "",
+        "matchedBy": "",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": {
+        "httpStatus": 200,
+        "hasRakuten": false,
+        "rakutenHotelNo": "",
+        "providers": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "causeCode": "not_found_by_current_rakuten_search"
+    },
+    {
+      "requestKey": "name:コンフォートホテル堺|大阪府|堺",
+      "sourceHotel": {
+        "name": "コンフォートホテル堺",
+        "prefecture": "大阪府",
+        "station": "堺",
+        "area": "堺",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1012
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "38650",
+        "hotelName": "コンフォートホテル堺",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:くれたけイン南海堺駅前|大阪府|堺",
+      "sourceHotel": {
+        "name": "くれたけイン南海堺駅前",
+        "prefecture": "大阪府",
+        "station": "堺",
+        "area": "堺",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1013
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "167871",
+        "hotelName": "くれたけイン南海堺駅前",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルサンプラザ堺|大阪府|堺",
+      "sourceHotel": {
+        "name": "ホテルサンプラザ堺",
+        "prefecture": "大阪府",
+        "station": "堺",
+        "area": "堺",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1014
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "159",
+        "hotelName": "ホテルサンプラザ堺 本館",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    }
+  ]
+}
