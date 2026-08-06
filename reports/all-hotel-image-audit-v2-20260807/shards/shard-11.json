@@ -1,8 +1,8 @@
 {
   "schemaVersion": 3,
   "complete": true,
-  "phase": "first-pass",
-  "generatedAt": "2026-08-06T21:43:19.900Z",
+  "phase": "retry",
+  "generatedAt": "2026-08-06T23:52:40.811Z",
   "shardIndex": 11,
   "shardSize": 25,
   "start": 275,
@@ -11,8 +11,8 @@
   "totalUnique": 750,
   "processedUnique": 25,
   "retriedUnique": 0,
-  "skippedMatchedUnique": 0,
-  "retryAttemptsPerRequest": 1,
+  "skippedMatchedUnique": 25,
+  "retryAttemptsPerRequest": 5,
   "results": [
     {
       "requestKey": "name:jr東日本ホテルメッツ 水戸|茨城県|水戸",
