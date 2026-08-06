@@ -1,0 +1,112 @@
+name: Audit Rakuten image coverage
+
+on:
+  push:
+    branches:
+      - audit/strict-rakuten-image-matching-20260807
+    paths:
+      - .github/workflows/audit-rakuten-image-coverage.yml
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: audit/strict-rakuten-image-matching-20260807
+      - name: Compare image and affiliate matching
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json, time, urllib.parse, urllib.request, urllib.error
+          with open('assets/data/hotels.json', encoding='utf-8') as f:
+              raw = json.load(f)
+          hotels = raw if isinstance(raw, list) else raw.get('hotels', [])
+          unique = []
+          seen = set()
+          for hotel in hotels:
+              if hotel.get('rakutenHotelNo'):
+                  continue
+              key = (hotel.get('name'), hotel.get('prefecture'), hotel.get('station'))
+              if key in seen:
+                  continue
+              seen.add(key)
+              unique.append(hotel)
+              if len(unique) >= 15:
+                  break
+
+          headers = {
+              'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150.0.0.0 Safari/537.36',
+              'Accept': 'application/json,text/plain,*/*',
+              'Accept-Language': 'ja,en-US;q=0.9,en;q=0.8',
+              'Referer': 'https://mainitiworakunisuru.com/'
+          }
+
+          def fetch_json(path, params):
+              url = 'https://mainitiworakunisuru.com' + path + '?' + urllib.parse.urlencode(params)
+              request = urllib.request.Request(url, headers=headers)
+              try:
+                  with urllib.request.urlopen(request, timeout=30) as response:
+                      return response.status, json.loads(response.read().decode('utf-8'))
+              except urllib.error.HTTPError as error:
+                  body = error.read().decode('utf-8', errors='replace')
+                  try:
+                      return error.code, json.loads(body)
+                  except Exception:
+                      return error.code, {'bodyPreview': body[:120]}
+              except Exception as error:
+                  return None, {'exception': type(error).__name__, 'message': str(error)[:120]}
+
+          checks = []
+          for hotel in unique:
+              image_params = {
+                  'name': hotel.get('name', ''),
+                  'prefecture': hotel.get('prefecture', ''),
+                  'area': hotel.get('area', ''),
+                  'station': hotel.get('station', ''),
+                  'accessEstimate': hotel.get('accessEstimate', '')
+              }
+              image_http, image_payload = fetch_json('/api/hotel-image', image_params)
+              time.sleep(1)
+              affiliate_http, affiliate_payload = fetch_json('/api/affiliate-links', {'name': hotel.get('name', '')})
+              time.sleep(1)
+              image = image_payload.get('image') or {}
+              links = affiliate_payload.get('links') if isinstance(affiliate_payload.get('links'), list) else []
+              checks.append({
+                  'id': hotel.get('id'),
+                  'name': hotel.get('name'),
+                  'prefecture': hotel.get('prefecture'),
+                  'station': hotel.get('station'),
+                  'imageHttp': image_http,
+                  'imageStatus': image_payload.get('status'),
+                  'hasImage': bool(image.get('src')),
+                  'imageHotelNo': image.get('hotelNo'),
+                  'imageHotelName': image.get('hotelName'),
+                  'matchedBy': image.get('matchedBy'),
+                  'affiliateHttp': affiliate_http,
+                  'affiliateProviders': [link.get('provider') for link in links],
+                  'affiliateCount': len(links)
+              })
+
+          summary = {
+              'tested': len(checks),
+              'imageMatched': sum(1 for item in checks if item['hasImage']),
+              'rakutenAffiliateMatched': sum(1 for item in checks if '楽天トラベル' in item['affiliateProviders']),
+              'affiliateAnyMatched': sum(1 for item in checks if item['affiliateCount'] > 0),
+              'imageMissButRakutenLink': sum(1 for item in checks if not item['hasImage'] and '楽天トラベル' in item['affiliateProviders'])
+          }
+          with open('reports/rakuten-image-coverage-audit.json', 'w', encoding='utf-8') as output:
+              json.dump({'summary': summary, 'checks': checks}, output, ensure_ascii=False, indent=2)
+              output.write('\n')
+          PY
+      - name: Save report and remove temporary workflow
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reports/rakuten-image-coverage-audit.json
+          git rm .github/workflows/audit-rakuten-image-coverage.yml
+          git commit -m "Record Rakuten image coverage audit"
+          git push origin HEAD:audit/strict-rakuten-image-matching-20260807
