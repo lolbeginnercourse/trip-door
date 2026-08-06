@@ -1,0 +1,727 @@
+{
+  "schemaVersion": 2,
+  "complete": true,
+  "generatedAt": "2026-08-06T20:27:09.687Z",
+  "shardIndex": 5,
+  "shardSize": 25,
+  "start": 125,
+  "end": 150,
+  "totalRecords": 1256,
+  "totalUnique": 750,
+  "processedUnique": 25,
+  "results": [
+    {
+      "requestKey": "name:グランパークホテル パネックス東京|東京都|蒲田",
+      "sourceHotel": {
+        "name": "グランパークホテル パネックス東京",
+        "prefecture": "東京都",
+        "station": "蒲田",
+        "area": "蒲田",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        327
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "5385",
+        "hotelName": "グランパークホテル パネックス東京",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:アパホテル〈蒲田駅東〉|東京都|蒲田・京急蒲田",
+      "sourceHotel": {
+        "name": "アパホテル〈蒲田駅東〉",
+        "prefecture": "東京都",
+        "station": "蒲田・京急蒲田",
+        "area": "蒲田",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        328
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "158707",
+        "hotelName": "アパホテル〈蒲田駅東〉",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:アーヴェストホテル蒲田|東京都|蒲田",
+      "sourceHotel": {
+        "name": "アーヴェストホテル蒲田",
+        "prefecture": "東京都",
+        "station": "蒲田",
+        "area": "蒲田",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        329
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "191518",
+        "hotelName": "アーヴェストホテル蒲田",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテル トレンド 浅草|東京都|浅草",
+      "sourceHotel": {
+        "name": "ホテル トレンド 浅草",
+        "prefecture": "東京都",
+        "station": "浅草",
+        "area": "浅草",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        330,
+        335
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "153681",
+        "hotelName": "ホテルトレンド浅草",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "hotelNo:162808",
+      "sourceHotel": {
+        "name": "アパホテル〈浅草 田原町駅前〉",
+        "prefecture": "東京都",
+        "station": "田原町・浅草",
+        "area": "浅草",
+        "storedRakutenHotelNo": "162808"
+      },
+      "recordIndexes": [
+        331,
+        336
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "162808",
+        "hotelName": "アパホテル〈浅草 田原町駅前〉",
+        "matchedBy": "hotelNo",
+        "matchEvidence": [
+          "hotelNo"
+        ],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルウィングインターナショナルセレクト浅草駒形|東京都|浅草・蔵前",
+      "sourceHotel": {
+        "name": "ホテルウィングインターナショナルセレクト浅草駒形",
+        "prefecture": "東京都",
+        "station": "浅草・蔵前",
+        "area": "浅草",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        332,
+        337
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 404,
+        "status": "not_found",
+        "hasImage": false,
+        "hotelNo": "",
+        "hotelName": "",
+        "matchedBy": "",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": {
+        "httpStatus": 200,
+        "hasRakuten": false,
+        "rakutenHotelNo": "",
+        "providers": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "causeCode": "not_found_by_current_rakuten_search"
+    },
+    {
+      "requestKey": "name:the kanzashi tokyo asakusa|東京都|浅草",
+      "sourceHotel": {
+        "name": "THE KANZASHI TOKYO ASAKUSA",
+        "prefecture": "東京都",
+        "station": "浅草",
+        "area": "浅草",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        333,
+        338
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "182336",
+        "hotelName": "THE KANZASHI TOKYO ASAKUSA(ザ カンザシ 東京 浅草)",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area"
+        ],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテル京阪 浅草|東京都|浅草(つくばエクスプレス)",
+      "sourceHotel": {
+        "name": "ホテル京阪 浅草",
+        "prefecture": "東京都",
+        "station": "浅草(つくばエクスプレス)",
+        "area": "浅草",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        334,
+        339
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "80619",
+        "hotelName": "ホテル京阪 浅草",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:アパホテル〈品川 泉岳寺駅前〉|東京都|泉岳寺",
+      "sourceHotel": {
+        "name": "アパホテル〈品川 泉岳寺駅前〉",
+        "prefecture": "東京都",
+        "station": "泉岳寺",
+        "area": "新馬場・北品川",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        342
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "149341",
+        "hotelName": "アパホテル〈品川 泉岳寺駅前〉",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:京急exホテル高輪|東京都|品川",
+      "sourceHotel": {
+        "name": "京急EXホテル高輪",
+        "prefecture": "東京都",
+        "station": "品川",
+        "area": "新馬場・北品川",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        343
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "135404",
+        "hotelName": "京急EXホテル高輪(2026年2月27日リニューアルオープン)",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station"
+        ],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:アパホテル〈上野駅前〉|東京都|上野",
+      "sourceHotel": {
+        "name": "アパホテル〈上野駅前〉",
+        "prefecture": "東京都",
+        "station": "上野",
+        "area": "上野・稲荷町",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        350
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "182687",
+        "hotelName": "アパホテル〈上野駅前〉",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:上野ホテル|東京都|上野・入谷",
+      "sourceHotel": {
+        "name": "上野ホテル",
+        "prefecture": "東京都",
+        "station": "上野・入谷",
+        "area": "上野・稲荷町",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        351
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "193896",
+        "hotelName": "茶庵上野ホテル ^",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area"
+        ],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ベッセルイン上野入谷駅前|東京都|入谷",
+      "sourceHotel": {
+        "name": "ベッセルイン上野入谷駅前",
+        "prefecture": "東京都",
+        "station": "入谷",
+        "area": "上野・稲荷町",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        352,
+        367
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "15314",
+        "hotelName": "ベッセルイン上野入谷駅前(上野・入谷・鶯谷)",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area"
+        ],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルセレッソ|東京都|鶯谷・日暮里",
+      "sourceHotel": {
+        "name": "ホテルセレッソ",
+        "prefecture": "東京都",
+        "station": "鶯谷・日暮里",
+        "area": "上野・稲荷町",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        353,
+        366
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "1127",
+        "hotelName": "ホテル セレッソ",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn鶯谷駅前|東京都|鶯谷",
+      "sourceHotel": {
+        "name": "東横INN鶯谷駅前",
+        "prefecture": "東京都",
+        "station": "鶯谷",
+        "area": "上野・稲荷町",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        354,
+        365
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "108362",
+        "hotelName": "東横INN鶯谷駅前",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルエミシア東京立川|東京都|立川",
+      "sourceHotel": {
+        "name": "ホテルエミシア東京立川",
+        "prefecture": "東京都",
+        "station": "立川",
+        "area": "立川",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        355
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "262",
+        "hotelName": "ホテルエミシア東京立川",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:立川リージェントホテル|東京都|立川",
+      "sourceHotel": {
+        "name": "立川リージェントホテル",
+        "prefecture": "東京都",
+        "station": "立川",
+        "area": "立川",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        356
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "28338",
+        "hotelName": "立川リージェントホテル",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルマイステイズ立川|東京都|立川",
+      "sourceHotel": {
+        "name": "ホテルマイステイズ立川",
+        "prefecture": "東京都",
+        "station": "立川",
+        "area": "立川",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        357
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "18818",
+        "hotelName": "ホテルマイステイズ立川",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:スーパーホテル東京・jr立川北口|東京都|立川",
+      "sourceHotel": {
+        "name": "スーパーホテル東京・JR立川北口",
+        "prefecture": "東京都",
+        "station": "立川",
+        "area": "立川",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        358
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "69218",
+        "hotelName": "炭酸泉 うたたねの湯 スーパーホテル東京・JR立川北口",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area"
+        ],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:jr東日本ホテルメッツ 立川|東京都|立川",
+      "sourceHotel": {
+        "name": "JR東日本ホテルメッツ 立川",
+        "prefecture": "東京都",
+        "station": "立川",
+        "area": "立川",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        359
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "72800",
+        "hotelName": "JR東日本ホテルメッツ立川",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:京急exイン 羽田イノベーションシティ|東京都|天空橋",
+      "sourceHotel": {
+        "name": "京急EXイン 羽田イノベーションシティ",
+        "prefecture": "東京都",
+        "station": "天空橋",
+        "area": "天空橋",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        360
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "179145",
+        "hotelName": "京急EXイン 羽田イノベーションシティ",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "hotelNo:187424",
+      "sourceHotel": {
+        "name": "ホテルメトロポリタン 羽田",
+        "prefecture": "東京都",
+        "station": "天空橋",
+        "area": "天空橋",
+        "storedRakutenHotelNo": "187424"
+      },
+      "recordIndexes": [
+        361
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "187424",
+        "hotelName": "ホテルメトロポリタン羽田",
+        "matchedBy": "hotelNo",
+        "matchEvidence": [
+          "hotelNo"
+        ],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:京急exイン 羽田|東京都|天空橋・穴守稲荷",
+      "sourceHotel": {
+        "name": "京急EXイン 羽田",
+        "prefecture": "東京都",
+        "station": "天空橋・穴守稲荷",
+        "area": "天空橋",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        362
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "163029",
+        "hotelName": "京急EXイン羽田",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルjalシティ羽田 東京|東京都|穴守稲荷",
+      "sourceHotel": {
+        "name": "ホテルJALシティ羽田 東京",
+        "prefecture": "東京都",
+        "station": "穴守稲荷",
+        "area": "天空橋",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        363
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "31778",
+        "hotelName": "ホテルJALシティ羽田 東京",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:変なホテル東京 羽田|東京都|大鳥居",
+      "sourceHotel": {
+        "name": "変なホテル東京 羽田",
+        "prefecture": "東京都",
+        "station": "大鳥居",
+        "area": "天空橋",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        364
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "165755",
+        "hotelName": "変なホテル東京 羽田",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    }
+  ]
+}
