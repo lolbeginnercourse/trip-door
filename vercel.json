@@ -1,5 +1,10 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
+  "functions": {
+    "api/full-image-audit.js": {
+      "maxDuration": 60
+    }
+  },
   "routes": [
     {
       "src": "^/(.*)$",
