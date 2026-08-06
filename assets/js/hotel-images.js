@@ -84,6 +84,7 @@
 
     const pending = scheduleRequest(async () => {
       const params = new URLSearchParams();
+      params.set("matchVersion", "2");
       addParam(params, "name", hotel?.name);
       addParam(params, "prefecture", hotel?.prefecture);
       addParam(params, "area", hotel?.area);
