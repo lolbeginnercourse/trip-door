@@ -1,0 +1,731 @@
+{
+  "schemaVersion": 2,
+  "complete": true,
+  "generatedAt": "2026-08-06T20:25:07.524Z",
+  "shardIndex": 3,
+  "shardSize": 25,
+  "start": 75,
+  "end": 100,
+  "totalRecords": 1256,
+  "totalUnique": 750,
+  "processedUnique": 25,
+  "results": [
+    {
+      "requestKey": "name:東横inn池袋北口1|東京都|池袋北口",
+      "sourceHotel": {
+        "name": "東横INN池袋北口1",
+        "prefecture": "東京都",
+        "station": "池袋北口",
+        "area": "池袋西口",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        138,
+        143,
+        148
+      ],
+      "duplicateGroupSize": 3,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "108416",
+        "hotelName": "東横INN池袋北口1",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルメトロポリタン|東京都|池袋西口",
+      "sourceHotel": {
+        "name": "ホテルメトロポリタン",
+        "prefecture": "東京都",
+        "station": "池袋西口",
+        "area": "池袋西口",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        139,
+        144,
+        149
+      ],
+      "duplicateGroupSize": 3,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "388",
+        "hotelName": "ホテルメトロポリタン",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルサンルートプラザ新宿|東京都|新宿南口",
+      "sourceHotel": {
+        "name": "ホテルサンルートプラザ新宿",
+        "prefecture": "東京都",
+        "station": "新宿南口",
+        "area": "新宿南口",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        165,
+        170
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "18297",
+        "hotelName": "ホテルサンルートプラザ新宿",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:jr九州ホテル ブラッサム新宿|東京都|新宿南口",
+      "sourceHotel": {
+        "name": "JR九州ホテル ブラッサム新宿",
+        "prefecture": "東京都",
+        "station": "新宿南口",
+        "area": "新宿南口",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        166,
+        171
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "146877",
+        "hotelName": "JR九州ホテルブラッサム新宿",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:新宿ワシントンホテル 本館|東京都|都庁前・新宿",
+      "sourceHotel": {
+        "name": "新宿ワシントンホテル 本館",
+        "prefecture": "東京都",
+        "station": "都庁前・新宿",
+        "area": "新宿南口",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        168,
+        173
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "658",
+        "hotelName": "新宿ワシントンホテル 本館",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルローズガーデン新宿|東京都|西新宿",
+      "sourceHotel": {
+        "name": "ホテルローズガーデン新宿",
+        "prefecture": "東京都",
+        "station": "西新宿",
+        "area": "新宿南口",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        169,
+        174
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "53328",
+        "hotelName": "ホテルローズガーデン新宿",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルモントレ赤坂|東京都|赤坂見附・青山一丁目",
+      "sourceHotel": {
+        "name": "ホテルモントレ赤坂",
+        "prefecture": "東京都",
+        "station": "赤坂見附・青山一丁目",
+        "area": "赤坂",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        192,
+        197
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "54866",
+        "hotelName": "ホテルモントレ赤坂",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:赤坂アーバンホテル|東京都|溜池山王・赤坂",
+      "sourceHotel": {
+        "name": "赤坂アーバンホテル",
+        "prefecture": "東京都",
+        "station": "溜池山王・赤坂",
+        "area": "赤坂",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        193,
+        198
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "158329",
+        "hotelName": "赤坂アーバンホテル",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:アパホテル〈赤坂見附〉|東京都|赤坂見附",
+      "sourceHotel": {
+        "name": "アパホテル〈赤坂見附〉",
+        "prefecture": "東京都",
+        "station": "赤坂見附",
+        "area": "赤坂",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        194,
+        199
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "31951",
+        "hotelName": "アパホテル〈赤坂見附〉",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:アーバイン東京・上野 北千住|東京都|北千住",
+      "sourceHotel": {
+        "name": "アーバイン東京・上野 北千住",
+        "prefecture": "東京都",
+        "station": "北千住",
+        "area": "北千住",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        220,
+        227
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "165196",
+        "hotelName": "アーバイン東京・上野 北千住",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテル ココ・グラン北千住|東京都|北千住",
+      "sourceHotel": {
+        "name": "ホテル ココ・グラン北千住",
+        "prefecture": "東京都",
+        "station": "北千住",
+        "area": "北千住",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        221,
+        228
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "73894",
+        "hotelName": "ホテル ココ・グラン北千住",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "hotelNo:172477",
+      "sourceHotel": {
+        "name": "ホテルリブマックス東京綾瀬駅前",
+        "prefecture": "東京都",
+        "station": "綾瀬",
+        "area": "北千住",
+        "storedRakutenHotelNo": "172477"
+      },
+      "recordIndexes": [
+        222,
+        226
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "172477",
+        "hotelName": "ホテルリブマックス東京綾瀬駅前",
+        "matchedBy": "hotelNo",
+        "matchEvidence": [
+          "hotelNo"
+        ],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:スマイルホテル東京綾瀬駅前|東京都|綾瀬",
+      "sourceHotel": {
+        "name": "スマイルホテル東京綾瀬駅前",
+        "prefecture": "東京都",
+        "station": "綾瀬",
+        "area": "北千住",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        223,
+        225
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "6093",
+        "hotelName": "スマイルホテル東京綾瀬駅前",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルセイルズ|東京都|三ノ輪",
+      "sourceHotel": {
+        "name": "ホテルセイルズ",
+        "prefecture": "東京都",
+        "station": "三ノ輪",
+        "area": "北千住",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        224,
+        229
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "180320",
+        "hotelName": "ホテルセイルズ",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:くれたけイン東京船堀|東京都|船堀",
+      "sourceHotel": {
+        "name": "くれたけイン東京船堀",
+        "prefecture": "東京都",
+        "station": "船堀",
+        "area": "船堀",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        230
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "149093",
+        "hotelName": "くれたけイン東京船堀",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:レンブラントスタイル東京西葛西|東京都|西葛西",
+      "sourceHotel": {
+        "name": "レンブラントスタイル東京西葛西",
+        "prefecture": "東京都",
+        "station": "西葛西",
+        "area": "船堀",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        231
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "161025",
+        "hotelName": "全館禁煙 レンブラントスタイル東京西葛西グランデ",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station"
+        ],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:アパホテル〈tkp東京西葛西〉|東京都|西葛西",
+      "sourceHotel": {
+        "name": "アパホテル〈TKP東京西葛西〉",
+        "prefecture": "東京都",
+        "station": "西葛西",
+        "area": "船堀",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        232
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "165001",
+        "hotelName": "アパホテル〈TKP東京西葛西〉",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:変なホテル東京 西葛西|東京都|西葛西",
+      "sourceHotel": {
+        "name": "変なホテル東京 西葛西",
+        "prefecture": "東京都",
+        "station": "西葛西",
+        "area": "船堀",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        233
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "164859",
+        "hotelName": "変なホテル東京 西葛西",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn東西線西葛西|東京都|西葛西",
+      "sourceHotel": {
+        "name": "東横INN東西線西葛西",
+        "prefecture": "東京都",
+        "station": "西葛西",
+        "area": "船堀",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        234
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "70356",
+        "hotelName": "東横INN東西線西葛西",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:スマイルホテル東京新小岩|東京都|新小岩",
+      "sourceHotel": {
+        "name": "スマイルホテル東京新小岩",
+        "prefecture": "東京都",
+        "station": "新小岩",
+        "area": "新小岩",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        235,
+        240
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "18938",
+        "hotelName": "スマイルホテル東京新小岩",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:スーパーホテル東京・jr新小岩|東京都|新小岩",
+      "sourceHotel": {
+        "name": "スーパーホテル東京・JR新小岩",
+        "prefecture": "東京都",
+        "station": "新小岩",
+        "area": "新小岩",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        236,
+        241
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "141609",
+        "hotelName": "スーパーホテル東京・JR新小岩",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:サイプレスイン東京|東京都|新小岩",
+      "sourceHotel": {
+        "name": "サイプレスイン東京",
+        "prefecture": "東京都",
+        "station": "新小岩",
+        "area": "新小岩",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        237,
+        242
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "78182",
+        "hotelName": "サイプレスイン東京",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:jr東日本ホテルメッツ プレミア 亀戸|東京都|亀戸",
+      "sourceHotel": {
+        "name": "JR東日本ホテルメッツ プレミア 亀戸",
+        "prefecture": "東京都",
+        "station": "亀戸",
+        "area": "新小岩",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        238,
+        243
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 404,
+        "status": "not_found",
+        "hasImage": false,
+        "hotelNo": "",
+        "hotelName": "",
+        "matchedBy": "",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": {
+        "httpStatus": 200,
+        "hasRakuten": false,
+        "rakutenHotelNo": "",
+        "providers": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "causeCode": "not_found_by_current_rakuten_search"
+    },
+    {
+      "requestKey": "name:スカイハートホテル小岩|東京都|小岩",
+      "sourceHotel": {
+        "name": "スカイハートホテル小岩",
+        "prefecture": "東京都",
+        "station": "小岩",
+        "area": "新小岩",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        239,
+        244
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 404,
+        "status": "not_found",
+        "hasImage": false,
+        "hotelNo": "",
+        "hotelName": "",
+        "matchedBy": "",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": {
+        "httpStatus": 200,
+        "hasRakuten": false,
+        "rakutenHotelNo": "",
+        "providers": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "causeCode": "not_found_by_current_rakuten_search"
+    },
+    {
+      "requestKey": "name:フレックステイイン江古田|東京都|江古田・新江古田",
+      "sourceHotel": {
+        "name": "フレックステイイン江古田",
+        "prefecture": "東京都",
+        "station": "江古田・新江古田",
+        "area": "練馬",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        245,
+        250,
+        318
+      ],
+      "duplicateGroupSize": 3,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "20579",
+        "hotelName": "フレックステイイン江古田",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    }
+  ]
+}
