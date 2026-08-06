@@ -1,0 +1,43 @@
+name: Full hotel image audit PR
+
+on:
+  pull_request:
+    types: [opened, reopened, synchronize]
+    branches: [main]
+
+permissions:
+  contents: write
+  pull-requests: read
+
+jobs:
+  smoke:
+    if: github.head_ref == 'audit-run/workflow-smoke-v2-20260807'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out audit result branch
+        uses: actions/checkout@v4
+        with:
+          ref: audit/hotel-image-coverage-v2-20260807
+          fetch-depth: 0
+
+      - name: Save workflow start proof
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p reports/all-hotel-image-audit-v2-20260807
+          cat > reports/all-hotel-image-audit-v2-20260807/workflow-smoke.json <<JSON
+          {
+            "status": "ok",
+            "runId": "${GITHUB_RUN_ID}",
+            "runAttempt": "${GITHUB_RUN_ATTEMPT}",
+            "event": "${GITHUB_EVENT_NAME}",
+            "headRef": "${GITHUB_HEAD_REF}",
+            "startedAt": "$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          }
+          JSON
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add reports/all-hotel-image-audit-v2-20260807/workflow-smoke.json
+          git commit -m 'Confirm registered hotel audit workflow'
+          git push origin HEAD:audit/hotel-image-coverage-v2-20260807
