@@ -1,0 +1,50 @@
+name: Enable hotel images preview
+
+on:
+  push:
+    branches:
+      - agent/rakuten-hotel-images-20260806
+    paths:
+      - .github/workflows/enable-hotel-images-preview.yml
+
+permissions:
+  contents: write
+
+jobs:
+  enable:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out working branch
+        uses: actions/checkout@v4
+        with:
+          ref: agent/rakuten-hotel-images-20260806
+
+      - name: Add the isolated hotel image loader
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          path = Path("index.html")
+          content = path.read_text(encoding="utf-8")
+          marker = '  <script src="assets/js/finder-tree.js?v=20260806-1" defer></script>'
+          addition = marker + '\n  <script src="assets/js/hotel-images.js?v=20260806-1" defer></script>'
+          if 'assets/js/hotel-images.js?v=20260806-1' in content:
+              raise SystemExit("Hotel image loader is already enabled.")
+          if marker not in content:
+              raise SystemExit("Expected finder-tree script tag was not found.")
+          path.write_text(content.replace(marker, addition, 1), encoding="utf-8")
+          PY
+
+          node --check assets/js/hotel-images.js
+          node --check api/hotel-image.js
+
+      - name: Commit and remove temporary workflow
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm .github/workflows/enable-hotel-images-preview.yml
+          git add index.html
+          git commit -m "Enable strict hotel image loading"
+          git push origin HEAD:agent/rakuten-hotel-images-20260806
