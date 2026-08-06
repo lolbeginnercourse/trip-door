@@ -1,8 +1,8 @@
 {
   "schemaVersion": 3,
   "complete": true,
-  "phase": "first-pass",
-  "generatedAt": "2026-08-06T21:45:22.583Z",
+  "phase": "retry",
+  "generatedAt": "2026-08-06T23:54:24.108Z",
   "shardIndex": 13,
   "shardSize": 25,
   "start": 325,
@@ -10,9 +10,9 @@
   "totalRecords": 1256,
   "totalUnique": 750,
   "processedUnique": 25,
-  "retriedUnique": 0,
-  "skippedMatchedUnique": 0,
-  "retryAttemptsPerRequest": 1,
+  "retriedUnique": 4,
+  "skippedMatchedUnique": 21,
+  "retryAttemptsPerRequest": 5,
   "results": [
     {
       "requestKey": "name:プレミアホテル-cabin president-函館|北海道|函館",
@@ -76,7 +76,14 @@
         "rawExcerpt": "",
         "attemptsUsed": 1
       },
-      "causeCode": "not_found_by_current_rakuten_search"
+      "causeCode": "not_found_by_current_rakuten_search",
+      "retry": {
+        "attempted": true,
+        "attemptedAt": "2026-08-06T23:53:08.953Z",
+        "previousCauseCode": "not_found_by_current_rakuten_search",
+        "previousHasImage": false,
+        "attemptsPerRequest": 5
+      }
     },
     {
       "requestKey": "name:ホテルリソル函館|北海道|函館",
@@ -129,7 +136,7 @@
         "matchEvidence": [],
         "transportError": "",
         "rawExcerpt": "",
-        "attemptsUsed": 1
+        "attemptsUsed": 2
       },
       "affiliate": {
         "httpStatus": 200,
@@ -140,7 +147,14 @@
         "rawExcerpt": "",
         "attemptsUsed": 1
       },
-      "causeCode": "not_found_by_current_rakuten_search"
+      "causeCode": "not_found_by_current_rakuten_search",
+      "retry": {
+        "attempted": true,
+        "attemptedAt": "2026-08-06T23:54:15.453Z",
+        "previousCauseCode": "not_found_by_current_rakuten_search",
+        "previousHasImage": false,
+        "attemptsPerRequest": 5
+      }
     },
     {
       "requestKey": "name:jrイン帯広|北海道|帯広",
@@ -176,7 +190,14 @@
         "rawExcerpt": "",
         "attemptsUsed": 1
       },
-      "causeCode": "not_found_by_current_rakuten_search"
+      "causeCode": "not_found_by_current_rakuten_search",
+      "retry": {
+        "attempted": true,
+        "attemptedAt": "2026-08-06T23:54:20.144Z",
+        "previousCauseCode": "not_found_by_current_rakuten_search",
+        "previousHasImage": false,
+        "attemptsPerRequest": 5
+      }
     },
     {
       "requestKey": "name:リッチモンドホテル帯広駅前|北海道|帯広",
@@ -240,7 +261,14 @@
         "rawExcerpt": "",
         "attemptsUsed": 1
       },
-      "causeCode": "multiple_candidates"
+      "causeCode": "multiple_candidates",
+      "retry": {
+        "attempted": true,
+        "attemptedAt": "2026-08-06T23:54:24.108Z",
+        "previousCauseCode": "multiple_candidates",
+        "previousHasImage": false,
+        "attemptsPerRequest": 5
+      }
     },
     {
       "requestKey": "name:コンフォートホテル帯広|北海道|帯広",
