@@ -1,8 +1,8 @@
 {
   "schemaVersion": 3,
   "complete": true,
-  "phase": "first-pass",
-  "generatedAt": "2026-08-06T23:33:31.182Z",
+  "phase": "retry",
+  "generatedAt": "2026-08-06T23:52:19.574Z",
   "shardIndex": 10,
   "shardSize": 25,
   "start": 250,
@@ -10,9 +10,9 @@
   "totalRecords": 1256,
   "totalUnique": 750,
   "processedUnique": 25,
-  "retriedUnique": 0,
-  "skippedMatchedUnique": 0,
-  "retryAttemptsPerRequest": 1,
+  "retriedUnique": 3,
+  "skippedMatchedUnique": 22,
+  "retryAttemptsPerRequest": 5,
   "results": [
     {
       "requestKey": "name:東横inn北戸田駅東口|埼玉県|北戸田",
@@ -132,7 +132,14 @@
         "rawExcerpt": "",
         "attemptsUsed": 1
       },
-      "causeCode": "not_found_by_current_rakuten_search"
+      "causeCode": "not_found_by_current_rakuten_search",
+      "retry": {
+        "attempted": true,
+        "attemptedAt": "2026-08-06T23:52:13.983Z",
+        "previousCauseCode": "not_found_by_current_rakuten_search",
+        "previousHasImage": false,
+        "attemptsPerRequest": 5
+      }
     },
     {
       "requestKey": "name:西川口ウィークリー|埼玉県|西川口",
@@ -458,7 +465,14 @@
         "rawExcerpt": "",
         "attemptsUsed": 1
       },
-      "causeCode": "not_found_by_current_rakuten_search"
+      "causeCode": "not_found_by_current_rakuten_search",
+      "retry": {
+        "attempted": true,
+        "attemptedAt": "2026-08-06T23:52:16.804Z",
+        "previousCauseCode": "not_found_by_current_rakuten_search",
+        "previousHasImage": false,
+        "attemptsPerRequest": 5
+      }
     },
     {
       "requestKey": "name:東横inn三郷中央駅前|埼玉県|三郷中央",
@@ -606,7 +620,14 @@
         "rawExcerpt": "",
         "attemptsUsed": 1
       },
-      "causeCode": "location_unverified"
+      "causeCode": "location_unverified",
+      "retry": {
+        "attempted": true,
+        "attemptedAt": "2026-08-06T23:52:19.574Z",
+        "previousCauseCode": "location_unverified",
+        "previousHasImage": false,
+        "attemptsPerRequest": 5
+      }
     },
     {
       "requestKey": "name:所沢パークホテル|埼玉県|所沢",
