@@ -1,4 +1,4 @@
-name: Refresh single-select finder cache
+name: Publish finalized single-select finder
 
 on:
   push:
@@ -11,13 +11,13 @@ permissions:
   contents: write
 
 jobs:
-  update-index-version:
+  publish:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Update only the app script version
+      - name: Update cache version and remove temporary workflows
         shell: bash
         run: |
           python - <<'PY'
@@ -25,8 +25,8 @@ jobs:
 
           path = Path("index.html")
           content = path.read_text(encoding="utf-8")
-          old = "assets/js/app.js?v=20260806-2"
-          new = "assets/js/app.js?v=20260806-3"
+          old = "assets/js/app.js?v=20260806-3"
+          new = "assets/js/app.js?v=20260806-4"
 
           if old not in content:
               raise SystemExit("Expected app.js version was not found; no file was changed.")
@@ -34,12 +34,11 @@ jobs:
           path.write_text(content.replace(old, new, 1), encoding="utf-8")
           PY
 
-      - name: Commit the cache-version change
-        shell: bash
-        run: |
+          node --check assets/js/app.js
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm .github/workflows/bust-single-select-cache.yml
+          git rm -f .github/workflows/fix-single-select-runtime.yml
           git add index.html
-          git diff --cached --quiet && exit 0
-          git commit -m "Load single-select destination finder"
+          git commit -m "Publish finalized single-select finder"
           git push
