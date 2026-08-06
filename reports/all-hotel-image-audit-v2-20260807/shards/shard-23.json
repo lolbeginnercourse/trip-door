@@ -1,0 +1,754 @@
+{
+  "schemaVersion": 3,
+  "complete": true,
+  "phase": "first-pass",
+  "generatedAt": "2026-08-06T21:55:17.128Z",
+  "shardIndex": 23,
+  "shardSize": 25,
+  "start": 575,
+  "end": 600,
+  "totalRecords": 1256,
+  "totalUnique": 750,
+  "processedUnique": 25,
+  "retriedUnique": 0,
+  "skippedMatchedUnique": 0,
+  "retryAttemptsPerRequest": 1,
+  "results": [
+    {
+      "requestKey": "name:anaクラウンプラザホテル神戸|兵庫県|新神戸",
+      "sourceHotel": {
+        "name": "ANAクラウンプラザホテル神戸",
+        "prefecture": "兵庫県",
+        "station": "新神戸",
+        "area": "新神戸",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1040
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "164",
+        "hotelName": "ANAクラウンプラザホテル神戸 by IHG",
+        "matchedBy": "normalizedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルピエナ神戸|兵庫県|三宮・新神戸",
+      "sourceHotel": {
+        "name": "ホテルピエナ神戸",
+        "prefecture": "兵庫県",
+        "station": "三宮・新神戸",
+        "area": "新神戸",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1041
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "214",
+        "hotelName": "ホテルピエナ神戸",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:神戸北野ホテル|兵庫県|北野・三宮",
+      "sourceHotel": {
+        "name": "神戸北野ホテル",
+        "prefecture": "兵庫県",
+        "station": "北野・三宮",
+        "area": "新神戸",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1042
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "5506",
+        "hotelName": "神戸北野ホテル",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:コンフォートホテルera神戸三宮|兵庫県|三宮",
+      "sourceHotel": {
+        "name": "コンフォートホテルERA神戸三宮",
+        "prefecture": "兵庫県",
+        "station": "三宮",
+        "area": "新神戸",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1043,
+        1047,
+        1062
+      ],
+      "duplicateGroupSize": 3,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "167683",
+        "hotelName": "コンフォートホテルERA神戸三宮",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルサンルートソプラ神戸アネッサ|兵庫県|新開地",
+      "sourceHotel": {
+        "name": "ホテルサンルートソプラ神戸アネッサ",
+        "prefecture": "兵庫県",
+        "station": "新開地",
+        "area": "新神戸",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1044,
+        1058
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "158366",
+        "hotelName": "ホテルサンルートソプラ神戸アネッサ",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:神戸ルミナスホテル三宮|兵庫県|三宮",
+      "sourceHotel": {
+        "name": "神戸ルミナスホテル三宮",
+        "prefecture": "兵庫県",
+        "station": "三宮",
+        "area": "三宮",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1045,
+        1060
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "166545",
+        "hotelName": "神戸ルミナスホテル三宮",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ダイワロイネットホテル神戸三宮 premier|兵庫県|三宮",
+      "sourceHotel": {
+        "name": "ダイワロイネットホテル神戸三宮 PREMIER",
+        "prefecture": "兵庫県",
+        "station": "三宮",
+        "area": "三宮",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1046,
+        1061
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "183491",
+        "hotelName": "ダイワロイネットホテル神戸三宮 PREMIER",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:レムプラス神戸三宮|兵庫県|三宮",
+      "sourceHotel": {
+        "name": "レムプラス神戸三宮",
+        "prefecture": "兵庫県",
+        "station": "三宮",
+        "area": "三宮",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1048,
+        1063
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "181517",
+        "hotelName": "レムプラス神戸三宮",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:相鉄フレッサイン 神戸三宮|兵庫県|三宮",
+      "sourceHotel": {
+        "name": "相鉄フレッサイン 神戸三宮",
+        "prefecture": "兵庫県",
+        "station": "三宮",
+        "area": "三宮",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1049,
+        1064
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "172261",
+        "hotelName": "相鉄フレッサイン 神戸三宮",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルヒューイット甲子園|兵庫県|甲子園",
+      "sourceHotel": {
+        "name": "ホテルヒューイット甲子園",
+        "prefecture": "兵庫県",
+        "station": "甲子園",
+        "area": "西宮北口",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1050
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "1845",
+        "hotelName": "ホテルヒューイット甲子園",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテル甲子園|兵庫県|甲子園",
+      "sourceHotel": {
+        "name": "ホテル甲子園",
+        "prefecture": "兵庫県",
+        "station": "甲子園",
+        "area": "西宮北口",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1051
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "50762",
+        "hotelName": "ホテル甲子園<兵庫県>",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:都ホテル 尼崎|兵庫県|尼崎",
+      "sourceHotel": {
+        "name": "都ホテル 尼崎",
+        "prefecture": "兵庫県",
+        "station": "尼崎",
+        "area": "西宮北口",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1052,
+        1070
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "198",
+        "hotelName": "都ホテル 尼崎",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルヴィスキオ尼崎|兵庫県|尼崎",
+      "sourceHotel": {
+        "name": "ホテルヴィスキオ尼崎",
+        "prefecture": "兵庫県",
+        "station": "尼崎",
+        "area": "西宮北口",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1053,
+        1071
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "1607",
+        "hotelName": "ホテルヴィスキオ尼崎byGRANVIA",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ワイズホテル阪神尼崎駅前|兵庫県|尼崎",
+      "sourceHotel": {
+        "name": "ワイズホテル阪神尼崎駅前",
+        "prefecture": "兵庫県",
+        "station": "尼崎",
+        "area": "西宮北口",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1054,
+        1073
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "161094",
+        "hotelName": "ワイズホテル 阪神尼崎駅前",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:神戸ホテルジュラク|兵庫県|神戸",
+      "sourceHotel": {
+        "name": "神戸ホテルジュラク",
+        "prefecture": "兵庫県",
+        "station": "神戸",
+        "area": "大倉山・神戸",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1055
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "181293",
+        "hotelName": "神戸ホテルジュラク",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:センチュリオンホテル グランド神戸駅前|兵庫県|神戸",
+      "sourceHotel": {
+        "name": "センチュリオンホテル グランド神戸駅前",
+        "prefecture": "兵庫県",
+        "station": "神戸",
+        "area": "大倉山・神戸",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1056
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "153695",
+        "hotelName": "センチュリオンホテル グランド 神戸駅前",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:神戸シティガーデンズホテル|兵庫県|神戸",
+      "sourceHotel": {
+        "name": "神戸シティガーデンズホテル",
+        "prefecture": "兵庫県",
+        "station": "神戸",
+        "area": "大倉山・神戸",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1057
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "1641",
+        "hotelName": "神戸シティガーデンズホテル(旧:ホテル神戸四州園)",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルクラウンパレス神戸|兵庫県|神戸",
+      "sourceHotel": {
+        "name": "ホテルクラウンパレス神戸",
+        "prefecture": "兵庫県",
+        "station": "神戸",
+        "area": "大倉山・神戸",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1059
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 404,
+        "status": "not_found",
+        "hasImage": false,
+        "hotelNo": "",
+        "hotelName": "",
+        "matchedBy": "",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": {
+        "httpStatus": 200,
+        "hasRakuten": false,
+        "rakutenHotelNo": "",
+        "providers": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "causeCode": "not_found_by_current_rakuten_search"
+    },
+    {
+      "requestKey": "name:ホテルモントレ姫路|兵庫県|姫路",
+      "sourceHotel": {
+        "name": "ホテルモントレ姫路",
+        "prefecture": "兵庫県",
+        "station": "姫路",
+        "area": "姫路",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1065
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "163181",
+        "hotelName": "ホテルモントレ姫路",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ダイワロイネットホテル姫路|兵庫県|姫路",
+      "sourceHotel": {
+        "name": "ダイワロイネットホテル姫路",
+        "prefecture": "兵庫県",
+        "station": "姫路",
+        "area": "姫路",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1066
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "167604",
+        "hotelName": "ダイワロイネットホテル姫路",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:リッチモンドホテル姫路|兵庫県|姫路",
+      "sourceHotel": {
+        "name": "リッチモンドホテル姫路",
+        "prefecture": "兵庫県",
+        "station": "姫路",
+        "area": "姫路",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1067
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "166197",
+        "hotelName": "リッチモンドホテル姫路",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:コンフォートホテル姫路|兵庫県|姫路",
+      "sourceHotel": {
+        "name": "コンフォートホテル姫路",
+        "prefecture": "兵庫県",
+        "station": "姫路",
+        "area": "姫路",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1068
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "44384",
+        "hotelName": "コンフォートホテル姫路(2026年3月31日 リニューアル)",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn姫路駅新幹線南口|兵庫県|姫路",
+      "sourceHotel": {
+        "name": "東横INN姫路駅新幹線南口",
+        "prefecture": "兵庫県",
+        "station": "姫路",
+        "area": "姫路",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1069
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "108393",
+        "hotelName": "東横INN姫路駅新幹線南口",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:尼崎プラザホテル 阪神尼崎|兵庫県|尼崎",
+      "sourceHotel": {
+        "name": "尼崎プラザホテル 阪神尼崎",
+        "prefecture": "兵庫県",
+        "station": "尼崎",
+        "area": "尼崎",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1072
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "39125",
+        "hotelName": "尼崎プラザホテル 阪神尼崎",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn阪神尼崎駅前|兵庫県|尼崎",
+      "sourceHotel": {
+        "name": "東横INN阪神尼崎駅前",
+        "prefecture": "兵庫県",
+        "station": "尼崎",
+        "area": "尼崎",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1074
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "108399",
+        "hotelName": "東横INN阪神尼崎駅前",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    }
+  ]
+}
