@@ -1,0 +1,792 @@
+{
+  "schemaVersion": 3,
+  "complete": true,
+  "phase": "first-pass",
+  "generatedAt": "2026-08-06T23:29:30.355Z",
+  "shardIndex": 6,
+  "shardSize": 25,
+  "start": 150,
+  "end": 175,
+  "totalRecords": 1256,
+  "totalUnique": 750,
+  "processedUnique": 25,
+  "retriedUnique": 0,
+  "skippedMatchedUnique": 0,
+  "retryAttemptsPerRequest": 1,
+  "results": [
+    {
+      "requestKey": "name:アパホテル〈tkp日暮里駅前〉|東京都|日暮里",
+      "sourceHotel": {
+        "name": "アパホテル〈TKP日暮里駅前〉",
+        "prefecture": "東京都",
+        "station": "日暮里",
+        "area": "鶯谷",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        368
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "158522",
+        "hotelName": "アパホテル〈TKP日暮里駅前〉",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:アルモントホテル日暮里|東京都|日暮里",
+      "sourceHotel": {
+        "name": "アルモントホテル日暮里",
+        "prefecture": "東京都",
+        "station": "日暮里",
+        "area": "鶯谷",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        369
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "182417",
+        "hotelName": "アルモントホテル日暮里(ALMONT HOTEL NIPPORI)",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルjalシティ関内 横浜|神奈川県|日本大通り",
+      "sourceHotel": {
+        "name": "ホテルJALシティ関内 横浜",
+        "prefecture": "神奈川県",
+        "station": "日本大通り",
+        "area": "日本大通り・山下町",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        370,
+        375,
+        395,
+        400,
+        405
+      ],
+      "duplicateGroupSize": 5,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "53714",
+        "hotelName": "ホテルJALシティ関内 横浜",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:コンフォートホテル横浜関内|神奈川県|関内",
+      "sourceHotel": {
+        "name": "コンフォートホテル横浜関内",
+        "prefecture": "神奈川県",
+        "station": "関内",
+        "area": "日本大通り・山下町",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        371,
+        376,
+        396,
+        401,
+        406
+      ],
+      "duplicateGroupSize": 5,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "38530",
+        "hotelName": "コンフォートホテル横浜関内(2026年3月31日 リニューアル)",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ダイワロイネットホテル横浜公園|神奈川県|日本大通り・関内",
+      "sourceHotel": {
+        "name": "ダイワロイネットホテル横浜公園",
+        "prefecture": "神奈川県",
+        "station": "日本大通り・関内",
+        "area": "日本大通り・山下町",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        372,
+        377,
+        397,
+        402,
+        407
+      ],
+      "duplicateGroupSize": 5,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "80777",
+        "hotelName": "ダイワロイネットホテル横浜公園",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルルートイン横浜馬車道|神奈川県|馬車道",
+      "sourceHotel": {
+        "name": "ホテルルートイン横浜馬車道",
+        "prefecture": "神奈川県",
+        "station": "馬車道",
+        "area": "日本大通り・山下町",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        373,
+        378,
+        398,
+        403,
+        408
+      ],
+      "duplicateGroupSize": 5,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "68268",
+        "hotelName": "ホテルルートイン横浜馬車道",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:アパホテル〈横浜関内〉|神奈川県|関内",
+      "sourceHotel": {
+        "name": "アパホテル〈横浜関内〉",
+        "prefecture": "神奈川県",
+        "station": "関内",
+        "area": "日本大通り・山下町",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        374,
+        379,
+        399,
+        404,
+        409
+      ],
+      "duplicateGroupSize": 5,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "32077",
+        "hotelName": "アパホテル〈横浜関内〉",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:横浜桜木町ワシントンホテル|神奈川県|桜木町",
+      "sourceHotel": {
+        "name": "横浜桜木町ワシントンホテル",
+        "prefecture": "神奈川県",
+        "station": "桜木町",
+        "area": "みなとみらい・桜木町",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        380,
+        385,
+        390,
+        410,
+        415
+      ],
+      "duplicateGroupSize": 5,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "5242",
+        "hotelName": "横浜桜木町ワシントンホテル",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ニューオータニイン横浜プレミアム|神奈川県|桜木町",
+      "sourceHotel": {
+        "name": "ニューオータニイン横浜プレミアム",
+        "prefecture": "神奈川県",
+        "station": "桜木町",
+        "area": "みなとみらい・桜木町",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        381,
+        386,
+        391,
+        411,
+        416
+      ],
+      "duplicateGroupSize": 5,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "104678",
+        "hotelName": "ニューオータニイン横浜プレミアム",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:相鉄フレッサイン 横浜桜木町|神奈川県|馬車道",
+      "sourceHotel": {
+        "name": "相鉄フレッサイン 横浜桜木町",
+        "prefecture": "神奈川県",
+        "station": "馬車道",
+        "area": "みなとみらい・桜木町",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        382,
+        387,
+        392,
+        412,
+        417
+      ],
+      "duplicateGroupSize": 5,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "141111",
+        "hotelName": "相鉄フレッサイン 横浜桜木町",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ファーイーストビレッジホテル横浜|神奈川県|桜木町・関内",
+      "sourceHotel": {
+        "name": "ファーイーストビレッジホテル横浜",
+        "prefecture": "神奈川県",
+        "station": "桜木町・関内",
+        "area": "みなとみらい・桜木町",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        383,
+        388,
+        393,
+        413,
+        418
+      ],
+      "duplicateGroupSize": 5,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "182565",
+        "hotelName": "ファーイーストビレッジホテル横浜",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:jr東日本ホテルメッツ プレミア 横浜桜木町|神奈川県|桜木町",
+      "sourceHotel": {
+        "name": "JR東日本ホテルメッツ プレミア 横浜桜木町",
+        "prefecture": "神奈川県",
+        "station": "桜木町",
+        "area": "みなとみらい・桜木町",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        384,
+        389,
+        394,
+        414,
+        419
+      ],
+      "duplicateGroupSize": 5,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "179286",
+        "hotelName": "JR東日本ホテルメッツ プレミア 横浜桜木町",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:メルキュール横須賀|神奈川県|汐入",
+      "sourceHotel": {
+        "name": "メルキュール横須賀",
+        "prefecture": "神奈川県",
+        "station": "汐入",
+        "area": "汐入・横須賀中央",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        420,
+        425
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 502,
+        "status": "502",
+        "hasImage": false,
+        "hotelNo": "",
+        "hotelName": "",
+        "matchedBy": "",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": {
+        "httpStatus": 200,
+        "hasRakuten": true,
+        "rakutenHotelNo": "84673",
+        "providers": [
+          "楽天トラベル"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "causeCode": "temporary_upstream_error"
+    },
+    {
+      "requestKey": "name:ホテルニューヨコスカ|神奈川県|横須賀中央",
+      "sourceHotel": {
+        "name": "ホテルニューヨコスカ",
+        "prefecture": "神奈川県",
+        "station": "横須賀中央",
+        "area": "汐入・横須賀中央",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        421,
+        426
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "497",
+        "hotelName": "ホテルニューヨコスカ",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:セントラルホテル横須賀|神奈川県|横須賀中央",
+      "sourceHotel": {
+        "name": "セントラルホテル横須賀",
+        "prefecture": "神奈川県",
+        "station": "横須賀中央",
+        "area": "汐入・横須賀中央",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        422,
+        427
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 404,
+        "status": "not_found",
+        "hasImage": false,
+        "hotelNo": "",
+        "hotelName": "",
+        "matchedBy": "",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": {
+        "httpStatus": 200,
+        "hasRakuten": false,
+        "rakutenHotelNo": "",
+        "providers": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "causeCode": "not_found_by_current_rakuten_search"
+    },
+    {
+      "requestKey": "name:ホテルハーバー横須賀|神奈川県|汐入",
+      "sourceHotel": {
+        "name": "ホテルハーバー横須賀",
+        "prefecture": "神奈川県",
+        "station": "汐入",
+        "area": "汐入・横須賀中央",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        423,
+        428
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "17907",
+        "hotelName": "ホテル ハーバー横須賀",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテル横須賀|神奈川県|横須賀中央",
+      "sourceHotel": {
+        "name": "ホテル横須賀",
+        "prefecture": "神奈川県",
+        "station": "横須賀中央",
+        "area": "汐入・横須賀中央",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        424,
+        429
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "31889",
+        "hotelName": "ホテル 横須賀",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:川崎日航ホテル|神奈川県|川崎",
+      "sourceHotel": {
+        "name": "川崎日航ホテル",
+        "prefecture": "神奈川県",
+        "station": "川崎",
+        "area": "川崎",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        430,
+        435
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "2056",
+        "hotelName": "川崎日航ホテル",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:jr東日本ホテルメッツ 川崎|神奈川県|川崎",
+      "sourceHotel": {
+        "name": "JR東日本ホテルメッツ 川崎",
+        "prefecture": "神奈川県",
+        "station": "川崎",
+        "area": "川崎",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        431,
+        436
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "1708",
+        "hotelName": "JR東日本ホテルメッツ川崎",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:相鉄フレッサイン 川崎駅東口|神奈川県|川崎",
+      "sourceHotel": {
+        "name": "相鉄フレッサイン 川崎駅東口",
+        "prefecture": "神奈川県",
+        "station": "川崎",
+        "area": "川崎",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        432,
+        437
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "51214",
+        "hotelName": "相鉄フレッサイン 川崎駅東口",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ダイワロイネットホテル川崎|神奈川県|川崎",
+      "sourceHotel": {
+        "name": "ダイワロイネットホテル川崎",
+        "prefecture": "神奈川県",
+        "station": "川崎",
+        "area": "川崎",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        433,
+        438
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "72861",
+        "hotelName": "ダイワロイネットホテル川崎",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn川崎駅前市役所通|神奈川県|川崎",
+      "sourceHotel": {
+        "name": "東横INN川崎駅前市役所通",
+        "prefecture": "神奈川県",
+        "station": "川崎",
+        "area": "川崎",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        434,
+        439
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "108398",
+        "hotelName": "東横INN川崎駅前市役所通",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルモリノ新百合丘|神奈川県|新百合ヶ丘",
+      "sourceHotel": {
+        "name": "ホテルモリノ新百合丘",
+        "prefecture": "神奈川県",
+        "station": "新百合ヶ丘",
+        "area": "新百合ヶ丘",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        440
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "1310",
+        "hotelName": "ホテルモリノ新百合丘",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルリソル町田|神奈川県|町田",
+      "sourceHotel": {
+        "name": "ホテルリソル町田",
+        "prefecture": "神奈川県",
+        "station": "町田",
+        "area": "新百合ヶ丘",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        441
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "11355",
+        "hotelName": "ホテルリソル町田",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:レンブラントホテル東京町田|神奈川県|町田",
+      "sourceHotel": {
+        "name": "レンブラントホテル東京町田",
+        "prefecture": "神奈川県",
+        "station": "町田",
+        "area": "新百合ヶ丘",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        442
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "15546",
+        "hotelName": "レンブラントホテル東京町田",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    }
+  ]
+}
