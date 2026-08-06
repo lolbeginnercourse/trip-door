@@ -1,0 +1,748 @@
+{
+  "schemaVersion": 3,
+  "complete": true,
+  "phase": "first-pass",
+  "generatedAt": "2026-08-06T21:51:09.669Z",
+  "shardIndex": 19,
+  "shardSize": 25,
+  "start": 475,
+  "end": 500,
+  "totalRecords": 1256,
+  "totalUnique": 750,
+  "processedUnique": 25,
+  "retriedUnique": 0,
+  "skippedMatchedUnique": 0,
+  "retryAttemptsPerRequest": 1,
+  "results": [
+    {
+      "requestKey": "name:ダイワロイネットホテル岐阜|岐阜県|岐阜",
+      "sourceHotel": {
+        "name": "ダイワロイネットホテル岐阜",
+        "prefecture": "岐阜県",
+        "station": "岐阜",
+        "area": "岐阜",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        885
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "52250",
+        "hotelName": "ダイワロイネットホテル岐阜",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルリソル岐阜|岐阜県|岐阜",
+      "sourceHotel": {
+        "name": "ホテルリソル岐阜",
+        "prefecture": "岐阜県",
+        "station": "岐阜",
+        "area": "岐阜",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        886
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "885",
+        "hotelName": "ホテルリソル岐阜",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ドーミーイン岐阜駅前|岐阜県|岐阜",
+      "sourceHotel": {
+        "name": "ドーミーイン岐阜駅前",
+        "prefecture": "岐阜県",
+        "station": "岐阜",
+        "area": "岐阜",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        887
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "139796",
+        "hotelName": "天然温泉 金華の湯 ドーミーイン岐阜駅前(ドーミーイン・御宿野乃 ホテルズグループ)",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:コンフォートホテル岐阜|岐阜県|岐阜",
+      "sourceHotel": {
+        "name": "コンフォートホテル岐阜",
+        "prefecture": "岐阜県",
+        "station": "岐阜",
+        "area": "岐阜",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        888
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "20562",
+        "hotelName": "コンフォートホテル岐阜(2026年3月31日 リニューアル)",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn岐阜|岐阜県|岐阜",
+      "sourceHotel": {
+        "name": "東横INN岐阜",
+        "prefecture": "岐阜県",
+        "station": "岐阜",
+        "area": "岐阜",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        889
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "199136",
+        "hotelName": "東横INN岐阜",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルルートイン多治見インター|岐阜県|多治見",
+      "sourceHotel": {
+        "name": "ホテルルートイン多治見インター",
+        "prefecture": "岐阜県",
+        "station": "多治見",
+        "area": "多治見",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        890
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "20537",
+        "hotelName": "多治見天然温泉「旅人の湯」ホテルルートイン多治見インター",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:オースタット国際ホテル多治見|岐阜県|多治見",
+      "sourceHotel": {
+        "name": "オースタット国際ホテル多治見",
+        "prefecture": "岐阜県",
+        "station": "多治見",
+        "area": "多治見",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        891
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "9289",
+        "hotelName": "オースタット国際ホテル多治見(BBHホテルグループ)",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテル多治見ヒルズ マイルーム店|岐阜県|多治見",
+      "sourceHotel": {
+        "name": "ホテル多治見ヒルズ マイルーム店",
+        "prefecture": "岐阜県",
+        "station": "多治見",
+        "area": "多治見",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        892
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "14898",
+        "hotelName": "ホテル多治見ヒルズ マイルーム店(BBHホテルグループ)",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテル多治見ヒルズ リバーサイド店|岐阜県|多治見",
+      "sourceHotel": {
+        "name": "ホテル多治見ヒルズ リバーサイド店",
+        "prefecture": "岐阜県",
+        "station": "多治見",
+        "area": "多治見",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        893
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "14626",
+        "hotelName": "ホテル多治見ヒルズ リバーサイド店(BBHホテルグループ)",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:くれたけインプレミアム多治見駅前|岐阜県|多治見",
+      "sourceHotel": {
+        "name": "くれたけインプレミアム多治見駅前",
+        "prefecture": "岐阜県",
+        "station": "多治見",
+        "area": "多治見",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        894
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "184798",
+        "hotelName": "くれたけインプレミアム多治見駅前",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルグリーンパーク津|三重県|津",
+      "sourceHotel": {
+        "name": "ホテルグリーンパーク津",
+        "prefecture": "三重県",
+        "station": "津",
+        "area": "津",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        895
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "9211",
+        "hotelName": "ホテルグリーンパーク津",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ドーミーイン津|三重県|津",
+      "sourceHotel": {
+        "name": "ドーミーイン津",
+        "prefecture": "三重県",
+        "station": "津",
+        "area": "津",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        896
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "74629",
+        "hotelName": "天然温泉 けやきの湯 ドーミーイン津(ドーミーイン・御宿野乃 ホテルズグループ)",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:三交イン津駅前|三重県|津",
+      "sourceHotel": {
+        "name": "三交イン津駅前",
+        "prefecture": "三重県",
+        "station": "津",
+        "area": "津",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        897
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "149326",
+        "hotelName": "三交イン津駅前~四季乃湯~",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn津駅西口|三重県|津",
+      "sourceHotel": {
+        "name": "東横INN津駅西口",
+        "prefecture": "三重県",
+        "station": "津",
+        "area": "津",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        898
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "163110",
+        "hotelName": "東横INN津駅西口",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルルートイン津駅南|三重県|津",
+      "sourceHotel": {
+        "name": "ホテルルートイン津駅南",
+        "prefecture": "三重県",
+        "station": "津",
+        "area": "津",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        899
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "1841",
+        "hotelName": "ホテルルートイン津駅南 -国道23号-",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:都ホテル 四日市|三重県|近鉄四日市",
+      "sourceHotel": {
+        "name": "都ホテル 四日市",
+        "prefecture": "三重県",
+        "station": "近鉄四日市",
+        "area": "四日市",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        900
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "1149",
+        "hotelName": "都ホテル 四日市",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:三交イン四日市駅前|三重県|近鉄四日市",
+      "sourceHotel": {
+        "name": "三交イン四日市駅前",
+        "prefecture": "三重県",
+        "station": "近鉄四日市",
+        "area": "四日市",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        901
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "104687",
+        "hotelName": "三交イン四日市駅前",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:コンフォートホテル四日市|三重県|近鉄四日市",
+      "sourceHotel": {
+        "name": "コンフォートホテル四日市",
+        "prefecture": "三重県",
+        "station": "近鉄四日市",
+        "area": "四日市",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        902
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "184483",
+        "hotelName": "コンフォートホテル四日市",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn近鉄四日市駅北口|三重県|近鉄四日市",
+      "sourceHotel": {
+        "name": "東横INN近鉄四日市駅北口",
+        "prefecture": "三重県",
+        "station": "近鉄四日市",
+        "area": "四日市",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        903
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "158665",
+        "hotelName": "東横INN近鉄四日市駅北口",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルリブマックス四日市駅前|三重県|近鉄四日市",
+      "sourceHotel": {
+        "name": "ホテルリブマックス四日市駅前",
+        "prefecture": "三重県",
+        "station": "近鉄四日市",
+        "area": "四日市",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        904
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "167908",
+        "hotelName": "ホテルリブマックス四日市駅前",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルクエスト清水|静岡県|清水",
+      "sourceHotel": {
+        "name": "ホテルクエスト清水",
+        "prefecture": "静岡県",
+        "station": "清水",
+        "area": "清水",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        905
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "9188",
+        "hotelName": "ホテルクエスト清水",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn静岡清水駅前|静岡県|清水",
+      "sourceHotel": {
+        "name": "東横INN静岡清水駅前",
+        "prefecture": "静岡県",
+        "station": "清水",
+        "area": "清水",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        906
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "172222",
+        "hotelName": "東横INN静岡清水駅前",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:シーグランデ清水ステーションホテル|静岡県|清水",
+      "sourceHotel": {
+        "name": "シーグランデ清水ステーションホテル",
+        "prefecture": "静岡県",
+        "station": "清水",
+        "area": "清水",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        907
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "676",
+        "hotelName": "シーグランデ清水ステーションホテル",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルマイステイズ清水|静岡県|清水",
+      "sourceHotel": {
+        "name": "ホテルマイステイズ清水",
+        "prefecture": "静岡県",
+        "station": "清水",
+        "area": "清水",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        908
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "56850",
+        "hotelName": "ホテルマイステイズ清水",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:清水シティホテル|静岡県|清水",
+      "sourceHotel": {
+        "name": "清水シティホテル",
+        "prefecture": "静岡県",
+        "station": "清水",
+        "area": "清水",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        909
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "5396",
+        "hotelName": "清水シティホテル",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    }
+  ]
+}
