@@ -1,0 +1,790 @@
+{
+  "schemaVersion": 3,
+  "complete": true,
+  "phase": "first-pass",
+  "generatedAt": "2026-08-06T23:28:30.734Z",
+  "shardIndex": 1,
+  "shardSize": 25,
+  "start": 25,
+  "end": 50,
+  "totalRecords": 1256,
+  "totalUnique": 750,
+  "processedUnique": 25,
+  "retriedUnique": 0,
+  "skippedMatchedUnique": 0,
+  "retryAttemptsPerRequest": 1,
+  "results": [
+    {
+      "requestKey": "name:ホテルアマネク新宿歌舞伎町|東京都|新宿・西武新宿",
+      "sourceHotel": {
+        "name": "ホテルアマネク新宿歌舞伎町",
+        "prefecture": "東京都",
+        "station": "新宿・西武新宿",
+        "area": "新宿・西武新宿",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        37,
+        162,
+        177,
+        182,
+        187
+      ],
+      "duplicateGroupSize": 5,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "184865",
+        "hotelName": "ホテルアマネク新宿歌舞伎町",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn新宿歌舞伎町|東京都|東新宿・西武新宿",
+      "sourceHotel": {
+        "name": "東横INN新宿歌舞伎町",
+        "prefecture": "東京都",
+        "station": "東新宿・西武新宿",
+        "area": "新宿・西武新宿",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        38,
+        163,
+        178,
+        183,
+        188
+      ],
+      "duplicateGroupSize": 5,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "108351",
+        "hotelName": "東横INN新宿歌舞伎町",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:プレミアホテル-cabin-新宿|東京都|西武新宿・東新宿",
+      "sourceHotel": {
+        "name": "プレミアホテル-CABIN-新宿",
+        "prefecture": "東京都",
+        "station": "西武新宿・東新宿",
+        "area": "新宿・西武新宿",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        39,
+        164,
+        179,
+        184,
+        189
+      ],
+      "duplicateGroupSize": 5,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "858",
+        "hotelName": "プレミアホテル-CABIN-新宿",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテル ヴィラフォンテーヌ グランド 東京有明|東京都|有明・国際展示場",
+      "sourceHotel": {
+        "name": "ホテル ヴィラフォンテーヌ グランド 東京有明",
+        "prefecture": "東京都",
+        "station": "有明・国際展示場",
+        "area": "有明・国際展示場",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        40
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "178230",
+        "hotelName": "住友不動産ホテル ヴィラフォンテーヌグランド東京有明",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:相鉄グランドフレッサ 東京ベイ有明|東京都|国際展示場・東京ビッグサイト",
+      "sourceHotel": {
+        "name": "相鉄グランドフレッサ 東京ベイ有明",
+        "prefecture": "東京都",
+        "station": "国際展示場・東京ビッグサイト",
+        "area": "有明・国際展示場",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        41
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "76373",
+        "hotelName": "相鉄グランドフレッサ東京ベイ有明",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ファーイーストビレッジホテル東京有明|東京都|有明テニスの森",
+      "sourceHotel": {
+        "name": "ファーイーストビレッジホテル東京有明",
+        "prefecture": "東京都",
+        "station": "有明テニスの森",
+        "area": "有明・国際展示場",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        42
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "176773",
+        "hotelName": "ファーイーストビレッジホテル東京有明",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東京ベイ有明ワシントンホテル|東京都|国際展示場",
+      "sourceHotel": {
+        "name": "東京ベイ有明ワシントンホテル",
+        "prefecture": "東京都",
+        "station": "国際展示場",
+        "area": "有明・国際展示場",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        43
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "1177",
+        "hotelName": "東京ベイ有明ワシントンホテル",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルjalシティ東京 豊洲|東京都|市場前",
+      "sourceHotel": {
+        "name": "ホテルJALシティ東京 豊洲",
+        "prefecture": "東京都",
+        "station": "市場前",
+        "area": "有明・国際展示場",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        44
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "176833",
+        "hotelName": "ホテルJALシティ東京 豊洲",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:レム日比谷|東京都|有楽町・日比谷",
+      "sourceHotel": {
+        "name": "レム日比谷",
+        "prefecture": "東京都",
+        "station": "有楽町・日比谷",
+        "area": "日比谷・有楽町",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        45,
+        59,
+        60,
+        80,
+        90,
+        95,
+        100,
+        109,
+        204
+      ],
+      "duplicateGroupSize": 9,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "68107",
+        "hotelName": "レム日比谷",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:銀座ベルビューホテル|東京都|有楽町・銀座",
+      "sourceHotel": {
+        "name": "銀座ベルビューホテル",
+        "prefecture": "東京都",
+        "station": "有楽町・銀座",
+        "area": "日比谷・有楽町",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        46,
+        58,
+        61,
+        81,
+        91,
+        96,
+        101,
+        108,
+        203
+      ],
+      "duplicateGroupSize": 9,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "15041",
+        "hotelName": "銀座ベルビューホテル",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "hotelNo:172591",
+      "sourceHotel": {
+        "name": "ダイワロイネットホテル新橋",
+        "prefecture": "東京都",
+        "station": "新橋",
+        "area": "日比谷・有楽町",
+        "storedRakutenHotelNo": "172591"
+      },
+      "recordIndexes": [
+        47,
+        62,
+        82,
+        92,
+        97,
+        102
+      ],
+      "duplicateGroupSize": 6,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "172591",
+        "hotelName": "ダイワロイネットホテル新橋",
+        "matchedBy": "hotelNo",
+        "matchEvidence": [
+          "hotelNo"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:相鉄フレッサイン 新橋日比谷口|東京都|新橋・内幸町",
+      "sourceHotel": {
+        "name": "相鉄フレッサイン 新橋日比谷口",
+        "prefecture": "東京都",
+        "station": "新橋・内幸町",
+        "area": "日比谷・有楽町",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        48,
+        63,
+        83,
+        93,
+        98,
+        103
+      ],
+      "duplicateGroupSize": 6,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "140984",
+        "hotelName": "相鉄フレッサイン 新橋日比谷口",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:銀座国際ホテル|東京都|新橋・銀座",
+      "sourceHotel": {
+        "name": "銀座国際ホテル",
+        "prefecture": "東京都",
+        "station": "新橋・銀座",
+        "area": "日比谷・有楽町",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        49,
+        64,
+        84,
+        94,
+        99,
+        104
+      ],
+      "duplicateGroupSize": 6,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "864",
+        "hotelName": "銀座国際ホテル",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn日本橋浜町明治座前|東京都|浜町",
+      "sourceHotel": {
+        "name": "東横INN日本橋浜町明治座前",
+        "prefecture": "東京都",
+        "station": "浜町",
+        "area": "浜町・人形町",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        50
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "108322",
+        "hotelName": "東横INN日本橋浜町明治座前",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:アパホテル〈人形町駅北〉|東京都|人形町",
+      "sourceHotel": {
+        "name": "アパホテル〈人形町駅北〉",
+        "prefecture": "東京都",
+        "station": "人形町",
+        "area": "浜町・人形町",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        51
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "129632",
+        "hotelName": "アパホテル〈人形町駅北〉",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:コンフォートホテル東京東日本橋|東京都|馬喰町・東日本橋",
+      "sourceHotel": {
+        "name": "コンフォートホテル東京東日本橋",
+        "prefecture": "東京都",
+        "station": "馬喰町・東日本橋",
+        "area": "浜町・人形町",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        52
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "70295",
+        "hotelName": "コンフォートホテル東京東日本橋",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルヴィラフォンテーヌ東京日本橋箱崎|東京都|水天宮前",
+      "sourceHotel": {
+        "name": "ホテルヴィラフォンテーヌ東京日本橋箱崎",
+        "prefecture": "東京都",
+        "station": "水天宮前",
+        "area": "浜町・人形町",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        53
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "80765",
+        "hotelName": "住友不動産ホテル ヴィラフォンテーヌ東京日本橋箱崎",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:hamacho hotel tokyo|東京都|浜町・水天宮前",
+      "sourceHotel": {
+        "name": "HAMACHO HOTEL TOKYO",
+        "prefecture": "東京都",
+        "station": "浜町・水天宮前",
+        "area": "浜町・人形町",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        54
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "171899",
+        "hotelName": "HAMACHO HOTEL TOKYO(浜町ホテル 東京)",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area",
+          "access"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:相鉄フレッサイン 銀座三丁目|東京都|銀座・東銀座",
+      "sourceHotel": {
+        "name": "相鉄フレッサイン 銀座三丁目",
+        "prefecture": "東京都",
+        "station": "銀座・東銀座",
+        "area": "東銀座・新橋",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        55,
+        105,
+        200
+      ],
+      "duplicateGroupSize": 3,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "164568",
+        "hotelName": "相鉄フレッサイン 銀座三丁目",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルモントレ銀座|東京都|銀座一丁目",
+      "sourceHotel": {
+        "name": "ホテルモントレ銀座",
+        "prefecture": "東京都",
+        "station": "銀座一丁目",
+        "area": "東銀座・新橋",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        56,
+        106,
+        201
+      ],
+      "duplicateGroupSize": 3,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "5002",
+        "hotelName": "ホテルモントレ銀座",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ダイワロイネットホテル東京京橋 premier|東京都|京橋・東京",
+      "sourceHotel": {
+        "name": "ダイワロイネットホテル東京京橋 PREMIER",
+        "prefecture": "東京都",
+        "station": "京橋・東京",
+        "area": "東銀座・新橋",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        57,
+        107,
+        202
+      ],
+      "duplicateGroupSize": 3,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "178610",
+        "hotelName": "ダイワロイネットホテル東京京橋 PREMIER",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:品川プリンスホテル イーストタワー|東京都|品川",
+      "sourceHotel": {
+        "name": "品川プリンスホテル イーストタワー",
+        "prefecture": "東京都",
+        "station": "品川",
+        "area": "品川",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        65,
+        70,
+        344
+      ],
+      "duplicateGroupSize": 3,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "171983",
+        "hotelName": "品川プリンスホテル イーストタワー",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:京急exホテル高輪|東京都|品川・高輪台",
+      "sourceHotel": {
+        "name": "京急EXホテル高輪",
+        "prefecture": "東京都",
+        "station": "品川・高輪台",
+        "area": "品川",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        66,
+        71
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "135404",
+        "hotelName": "京急EXホテル高輪(2026年2月27日リニューアルオープン)",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area",
+          "access"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:アパホテル〈品川 泉岳寺駅前〉|東京都|泉岳寺・高輪ゲートウェイ",
+      "sourceHotel": {
+        "name": "アパホテル〈品川 泉岳寺駅前〉",
+        "prefecture": "東京都",
+        "station": "泉岳寺・高輪ゲートウェイ",
+        "area": "品川",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        67,
+        72
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "149341",
+        "hotelName": "アパホテル〈品川 泉岳寺駅前〉",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:レム六本木|東京都|六本木",
+      "sourceHotel": {
+        "name": "レム六本木",
+        "prefecture": "東京都",
+        "station": "六本木",
+        "area": "六本木",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        75
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "153693",
+        "hotelName": "レム六本木",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    }
+  ]
+}
