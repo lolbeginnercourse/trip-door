@@ -1,0 +1,64 @@
+name: Finalize strict Rakuten image matching
+
+on:
+  push:
+    branches:
+      - agent/strict-rakuten-image-matching-20260807
+    paths:
+      - .github/workflows/finalize-rakuten-image-matching.yml
+
+permissions:
+  contents: write
+
+jobs:
+  finalize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/strict-rakuten-image-matching-20260807
+      - name: Add official credit and update cache version
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          path = Path('index.html')
+          text = path.read_text(encoding='utf-8')
+          old_script = '<script src="assets/js/hotel-images.js?v=20260806-1" defer></script>'
+          new_script = '<script src="assets/js/hotel-images.js?v=20260807-1" defer></script>'
+          if old_script not in text and new_script not in text:
+              raise SystemExit('Hotel image script marker not found')
+          text = text.replace(old_script, new_script, 1)
+          old_footer = '<div class="container footer-bottom">© 2026 STAYSCENE</div>'
+          new_footer = '''<div class="container footer-bottom">\n      <span>© 2026 STAYSCENE</span>\n      <!-- Rakuten Web Services Attribution Snippet FROM HERE -->\n      <a href="https://developers.rakuten.com/" target="_blank">Supported by Rakuten Developers</a>\n      <!-- Rakuten Web Services Attribution Snippet TO HERE -->\n    </div>'''
+          if 'Supported by Rakuten Developers' not in text:
+              if old_footer not in text:
+                  raise SystemExit('Footer marker not found')
+              text = text.replace(old_footer, new_footer, 1)
+          path.write_text(text, encoding='utf-8')
+          PY
+          node --check api/hotel-image.js
+          node --check assets/js/hotel-images.js
+      - name: Record verification
+        shell: bash
+        run: |
+          node <<'NODE'
+          const fs = require('fs');
+          const index = fs.readFileSync('index.html', 'utf8');
+          const verification = {
+            apiSyntax: true,
+            browserSyntax: true,
+            cacheVersion: index.includes('assets/js/hotel-images.js?v=20260807-1'),
+            rakutenCredit: index.includes('Supported by Rakuten Developers')
+          };
+          fs.mkdirSync('reports', { recursive: true });
+          fs.writeFileSync('reports/strict-rakuten-image-verification.json', JSON.stringify(verification, null, 2) + '\n');
+          NODE
+      - name: Save changes and remove temporary workflow
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html reports/strict-rakuten-image-verification.json
+          git rm .github/workflows/finalize-rakuten-image-matching.yml
+          git commit -m "Finalize strict Rakuten image matching"
+          git push origin HEAD:agent/strict-rakuten-image-matching-20260807
