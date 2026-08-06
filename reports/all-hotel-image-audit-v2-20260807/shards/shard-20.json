@@ -1,8 +1,8 @@
 {
   "schemaVersion": 3,
   "complete": true,
-  "phase": "first-pass",
-  "generatedAt": "2026-08-06T21:52:14.526Z",
+  "phase": "retry",
+  "generatedAt": "2026-08-06T23:56:29.300Z",
   "shardIndex": 20,
   "shardSize": 25,
   "start": 500,
@@ -10,9 +10,9 @@
   "totalRecords": 1256,
   "totalUnique": 750,
   "processedUnique": 25,
-  "retriedUnique": 0,
-  "skippedMatchedUnique": 0,
-  "retryAttemptsPerRequest": 1,
+  "retriedUnique": 3,
+  "skippedMatchedUnique": 22,
+  "retryAttemptsPerRequest": 5,
   "results": [
     {
       "requestKey": "name:オークラアクトシティホテル浜松|静岡県|浜松",
@@ -280,7 +280,14 @@
         "rawExcerpt": "",
         "attemptsUsed": 1
       },
-      "causeCode": "not_found_by_current_rakuten_search"
+      "causeCode": "not_found_by_current_rakuten_search",
+      "retry": {
+        "attempted": true,
+        "attemptedAt": "2026-08-06T23:56:19.458Z",
+        "previousCauseCode": "not_found_by_current_rakuten_search",
+        "previousHasImage": false,
+        "attemptsPerRequest": 5
+      }
     },
     {
       "requestKey": "name:ホテルマッシモ三島|静岡県|三島",
@@ -372,7 +379,14 @@
         "rawExcerpt": "",
         "attemptsUsed": 1
       },
-      "causeCode": "not_found_by_current_rakuten_search"
+      "causeCode": "not_found_by_current_rakuten_search",
+      "retry": {
+        "attempted": true,
+        "attemptedAt": "2026-08-06T23:56:24.375Z",
+        "previousCauseCode": "not_found_by_current_rakuten_search",
+        "previousHasImage": false,
+        "attemptsPerRequest": 5
+      }
     },
     {
       "requestKey": "name:ココチホテル沼津|静岡県|沼津",
@@ -492,7 +506,14 @@
         "rawExcerpt": "",
         "attemptsUsed": 1
       },
-      "causeCode": "not_found_by_current_rakuten_search"
+      "causeCode": "not_found_by_current_rakuten_search",
+      "retry": {
+        "attempted": true,
+        "attemptedAt": "2026-08-06T23:56:29.300Z",
+        "previousCauseCode": "not_found_by_current_rakuten_search",
+        "previousHasImage": false,
+        "attemptsPerRequest": 5
+      }
     },
     {
       "requestKey": "name:くれたけイン富士山|静岡県|富士",
