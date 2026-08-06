@@ -1,0 +1,84 @@
+name: Verify Rakuten image runtime
+
+on:
+  push:
+    branches:
+      - agent/strict-rakuten-image-matching-20260807
+    paths:
+      - .github/workflows/verify-rakuten-image-runtime.yml
+
+permissions:
+  contents: write
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: agent/strict-rakuten-image-matching-20260807
+      - name: Inspect fields and production endpoint
+        shell: bash
+        run: |
+          node <<'NODE'
+          const fs = require('fs');
+          const raw = JSON.parse(fs.readFileSync('assets/data/hotels.json', 'utf8'));
+          const hotels = Array.isArray(raw) ? raw : Array.isArray(raw.hotels) ? raw.hotels : [];
+          const count = key => hotels.filter(h => {
+            const v = h?.[key];
+            return Array.isArray(v) ? v.length : v !== null && v !== undefined && String(v).trim() !== '';
+          }).length;
+          fs.mkdirSync('reports', { recursive: true });
+          fs.writeFileSync('/tmp/field-counts.json', JSON.stringify({
+            total: hotels.length,
+            prefecture: count('prefecture'),
+            area: count('area'),
+            station: count('station'),
+            accessEstimate: count('accessEstimate'),
+            rakutenHotelNo: count('rakutenHotelNo')
+          }, null, 2));
+          NODE
+          python - <<'PY'
+          import json, urllib.parse, urllib.request, urllib.error
+          names = [
+            '東横INN品川港南口天王洲アイル',
+            'スーパーホテル品川・新馬場'
+          ]
+          results = []
+          for name in names:
+            url = 'https://mainitiworakunisuru.com/api/hotel-image?name=' + urllib.parse.quote(name)
+            try:
+              with urllib.request.urlopen(url, timeout=30) as r:
+                payload = json.loads(r.read().decode('utf-8'))
+                image = payload.get('image') or {}
+                results.append({
+                  'name': name,
+                  'httpStatus': r.status,
+                  'status': payload.get('status'),
+                  'hasImage': bool(image.get('src')),
+                  'hotelNo': image.get('hotelNo'),
+                  'hotelName': image.get('hotelName'),
+                  'matchedBy': image.get('matchedBy'),
+                  'source': image.get('source')
+                })
+            except urllib.error.HTTPError as e:
+              try:
+                payload = json.loads(e.read().decode('utf-8'))
+              except Exception:
+                payload = {}
+              results.append({'name': name, 'httpStatus': e.code, 'status': payload.get('status'), 'hasImage': False})
+            except Exception as e:
+              results.append({'name': name, 'error': type(e).__name__, 'message': str(e)[:200], 'hasImage': False})
+          fields = json.load(open('/tmp/field-counts.json', encoding='utf-8'))
+          with open('reports/rakuten-image-runtime.json', 'w', encoding='utf-8') as f:
+            json.dump({'fields': fields, 'productionChecks': results}, f, ensure_ascii=False, indent=2)
+            f.write('\n')
+          PY
+      - name: Save verification and remove temporary workflow
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reports/rakuten-image-runtime.json
+          git rm .github/workflows/verify-rakuten-image-runtime.yml
+          git commit -m "Record Rakuten image runtime verification"
+          git push origin HEAD:agent/strict-rakuten-image-matching-20260807
