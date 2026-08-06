@@ -1,0 +1,54 @@
+name: Full hotel image audit PR
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    branches: [main]
+
+permissions:
+  contents: write
+  pull-requests: read
+
+concurrency:
+  group: full-hotel-image-audit-pr
+  cancel-in-progress: false
+
+jobs:
+  audit:
+    if: github.head_ref == 'audit/all-hotel-image-coverage-20260807'
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - name: Check out audit branch
+        uses: actions/checkout@v4
+        with:
+          ref: audit/all-hotel-image-coverage-20260807
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Check existing result
+        id: existing
+        shell: bash
+        run: |
+          if [ -f reports/all-hotel-image-audit-20260807/summary.json ]; then
+            echo 'done=true' >> "$GITHUB_OUTPUT"
+          else
+            echo 'done=false' >> "$GITHUB_OUTPUT"
+          fi
+      - name: Run full 1,256-record audit
+        if: steps.existing.outputs.done != 'true'
+        env:
+          IMAGE_INTERVAL_MS: '1150'
+          AFFILIATE_INTERVAL_MS: '1700'
+        run: node scripts/audit-all-hotel-images.mjs
+      - name: Save reports
+        if: steps.existing.outputs.done != 'true'
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add reports/all-hotel-image-audit-20260807
+          git rm -f .github/workflows/audit-all-hotel-images.yml
+          git commit -m 'Complete full hotel image coverage audit'
+          git push origin HEAD:audit/all-hotel-image-coverage-20260807
