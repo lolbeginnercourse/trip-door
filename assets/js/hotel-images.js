@@ -85,19 +85,20 @@
 
   function setImage(card, visual, imageData, hotel) {
     if (!card.isConnected || !visual.isConnected || !imageData?.src || visual.querySelector("img")) return;
+    const fallback = visual.firstElementChild?.cloneNode(true) || document.createTextNode("HOTEL STAY");
     const image = new Image(800, 500);
     image.loading = "lazy";
     image.decoding = "async";
-    image.src = imageData.src;
     image.alt = imageData.alt || `${hotel.name || "ホテル"}の施設画像`;
     image.addEventListener("load", () => {
-      if (!card.isConnected || visual.querySelector("img")) return;
-      visual.replaceChildren(image);
       card.dataset.hotelImageStatus = "loaded";
     }, { once: true });
     image.addEventListener("error", () => {
+      if (visual.isConnected && visual.contains(image)) visual.replaceChildren(fallback);
       card.dataset.hotelImageStatus = "unavailable";
     }, { once: true });
+    image.src = imageData.src;
+    visual.replaceChildren(image);
   }
 
   async function hydrateCard(card) {
