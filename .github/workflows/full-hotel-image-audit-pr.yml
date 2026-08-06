@@ -9,10 +9,6 @@ permissions:
   contents: write
   pull-requests: read
 
-concurrency:
-  group: full-hotel-image-audit-pr
-  cancel-in-progress: true
-
 jobs:
   audit:
     if: github.head_ref == 'audit/all-hotel-image-coverage-20260807'
