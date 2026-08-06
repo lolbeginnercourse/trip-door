@@ -1,0 +1,27 @@
+{
+  "checks": [
+    {
+      "id": "stage-001-1",
+      "name": "東横INN品川港南口天王洲アイル",
+      "hasStoredHotelNo": true,
+      "httpStatus": 200,
+      "status": "matched",
+      "hasImage": true,
+      "hotelNo": "136278",
+      "hotelName": "東横ＩＮＮ品川港南口天王洲アイル",
+      "matchedBy": "hotelNo",
+      "matchEvidence": [
+        "hotelNo"
+      ],
+      "source": "rakuten-travel-api"
+    },
+    {
+      "id": "stage-001-3",
+      "name": "スーパーホテル品川・新馬場",
+      "hasStoredHotelNo": false,
+      "httpStatus": 404,
+      "status": "not_found",
+      "error": null
+    }
+  ]
+}
