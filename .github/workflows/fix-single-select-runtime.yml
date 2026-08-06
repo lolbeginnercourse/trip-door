@@ -1,0 +1,81 @@
+name: Finalize single-select finder
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/fix-single-select-runtime.yml
+
+permissions:
+  contents: write
+
+jobs:
+  finalize:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Apply runtime safeguards
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          app = Path("assets/js/app.js")
+          content = app.read_text(encoding="utf-8")
+
+          old_button = '''      if (!canSearch) submit.textContent = mode === "prefecture" ? "都道府県を選んでください" : "会場を選ぶとホテルを表示";
+      else if (/都道府県を選んでください|会場を選ぶとホテルを表示/.test(submit.textContent)) submit.textContent = "条件に合うホテルを見る";'''
+          new_button = '''      const disabledText = mode === "prefecture" ? "都道府県を選んでください" : "会場を選ぶとホテルを表示";
+      if (!canSearch && submit.textContent !== disabledText) submit.textContent = disabledText;
+      else if (canSearch && /都道府県を選んでください|会場を選ぶとホテルを表示/.test(submit.textContent)) submit.textContent = "条件に合うホテルを見る";'''
+
+          old_change = '''      if (mode === "venue" && value !== "all") {
+        setTimeout(() => {
+          syncSupplementalUrl();
+          updateButtonState();
+        }, 0);
+      } else {
+        updateButtonState();
+      }'''
+          new_change = '''      if (mode === "venue") {
+        setTimeout(() => {
+          syncSupplementalUrl();
+          updateButtonState();
+        }, 0);
+      } else {
+        updateButtonState();
+      }'''
+
+          if old_button not in content:
+              raise SystemExit("Button safeguard target was not found.")
+          if old_change not in content:
+              raise SystemExit("Venue URL target was not found.")
+
+          content = content.replace(old_button, new_button, 1)
+          content = content.replace(old_change, new_change, 1)
+          app.write_text(content, encoding="utf-8")
+
+          index = Path("index.html")
+          html = index.read_text(encoding="utf-8")
+          old_version = "assets/js/app.js?v=20260806-3"
+          new_version = "assets/js/app.js?v=20260806-4"
+          if old_version not in html:
+              raise SystemExit("Expected app.js cache version was not found.")
+          index.write_text(html.replace(old_version, new_version, 1), encoding="utf-8")
+          PY
+
+          node --check assets/js/app.js
+
+      - name: Remove temporary workflows and commit
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm .github/workflows/bust-single-select-cache.yml
+          git rm .github/workflows/fix-single-select-runtime.yml
+          git add assets/js/app.js index.html
+          git commit -m "Finalize single-select destination finder"
+          git push
