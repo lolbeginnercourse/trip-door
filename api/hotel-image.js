@@ -51,15 +51,19 @@ function relaxedComparableName(value) {
     .replace(/byihg/g, "");
 }
 
+function rawLocationParts(value) {
+  return String(value || "")
+    .normalize("NFKC")
+    .split(/[\s・･\/／、,，]+/)
+    .map(part => part.trim().replace(/駅(?:周辺|近く|前)?$/u, ""))
+    .filter(part => compactText(part).length >= 2);
+}
+
 function locationTokens(value) {
-  const raw = String(value || "").normalize("NFKC");
-  const pieces = raw.split(/[\s・･\/／、,，]+/).map(part => part.trim()).filter(Boolean);
   const tokens = new Set();
-  for (const piece of pieces) {
-    const compact = compactText(piece);
+  for (const part of rawLocationParts(value)) {
+    const compact = compactText(part);
     if (compact.length >= 2) tokens.add(compact);
-    const withoutStation = compact.replace(/駅(?:周辺|近く|前)?$/u, "");
-    if (withoutStation.length >= 2) tokens.add(withoutStation);
   }
   return [...tokens];
 }
@@ -120,9 +124,19 @@ function rakutenBasicInfo(entry) {
   return null;
 }
 
+function deduplicateCandidates(candidates) {
+  const unique = new Map();
+  for (const candidate of candidates) {
+    const key = String(candidate?.hotelNo || "");
+    if (key && !unique.has(key)) unique.set(key, candidate);
+  }
+  return [...unique.values()];
+}
+
 function locationScore(candidate, context) {
   const address = `${candidate?.address1 || ""} ${candidate?.address2 || ""}`;
   const access = String(candidate?.access || "");
+  const nearestStation = String(candidate?.nearestStation || "");
   const hotelName = String(candidate?.hotelName || "");
   const evidence = [];
   let score = 0;
@@ -133,13 +147,13 @@ function locationScore(candidate, context) {
   }
 
   const stationTokens = locationTokens(context.station);
-  if (stationTokens.length && containsToken(`${address} ${access} ${hotelName}`, stationTokens)) {
+  if (stationTokens.length && containsToken(`${address} ${access} ${nearestStation} ${hotelName}`, stationTokens)) {
     score += 5;
     evidence.push("station");
   }
 
   const areaTokens = locationTokens(context.area);
-  if (areaTokens.length && containsToken(`${address} ${access} ${hotelName}`, areaTokens)) {
+  if (areaTokens.length && containsToken(`${address} ${access} ${nearestStation} ${hotelName}`, areaTokens)) {
     score += 2;
     evidence.push("area");
   }
@@ -180,38 +194,10 @@ function imageFromMatch(match, matchedBy, evidence = []) {
   };
 }
 
-async function findImage(context) {
-  const applicationId = process.env.RAKUTEN_APPLICATION_ID;
-  const accessKey = process.env.RAKUTEN_ACCESS_KEY;
-  const affiliateId = process.env.RAKUTEN_AFFILIATE_ID;
-  if (!applicationId || !accessKey) return { status: "not_configured", image: null };
-
-  const url = new URL(context.hotelNo ? RAKUTEN_SIMPLE_ENDPOINT : RAKUTEN_KEYWORD_ENDPOINT);
-  url.searchParams.set("applicationId", applicationId);
-  url.searchParams.set("accessKey", accessKey);
-  if (affiliateId) url.searchParams.set("affiliateId", affiliateId);
-  url.searchParams.set("format", "json");
-  url.searchParams.set("formatVersion", "2");
-  url.searchParams.set("responseType", "middle");
-  url.searchParams.set("hotelThumbnailSize", "3");
-  url.searchParams.set("hits", context.hotelNo ? "1" : "10");
-  if (context.hotelNo) {
-    url.searchParams.set("hotelNo", context.hotelNo);
-  } else {
-    url.searchParams.set("keyword", context.name);
-    url.searchParams.set("searchField", "1");
-  }
-
-  const data = await fetchJson(url, { Origin: SITE_ORIGIN, Referer: `${SITE_ORIGIN}/` });
-  const candidates = (Array.isArray(data.hotels) ? data.hotels : []).map(rakutenBasicInfo).filter(Boolean);
-
-  if (context.hotelNo) {
-    const match = candidates.find(item => String(item.hotelNo) === context.hotelNo);
-    return { status: match ? "matched" : "not_found", image: match ? imageFromMatch(match, "hotelNo", ["hotelNo"]) : null };
-  }
-
+function matchCandidates(candidates, context) {
+  const uniqueCandidates = deduplicateCandidates(candidates);
   const strictExpected = strictComparableName(context.name);
-  const strictMatches = candidates.filter(item => strictExpected && strictComparableName(item.hotelName) === strictExpected);
+  const strictMatches = uniqueCandidates.filter(item => strictExpected && strictComparableName(item.hotelName) === strictExpected);
   if (strictMatches.length === 1) {
     return { status: "matched", image: imageFromMatch(strictMatches[0], "exactName", []) };
   }
@@ -222,14 +208,92 @@ async function findImage(context) {
   }
 
   const relaxedExpected = relaxedComparableName(context.name);
-  const relaxedMatches = candidates.filter(item => relaxedExpected && relaxedComparableName(item.hotelName) === relaxedExpected);
+  const relaxedMatches = uniqueCandidates.filter(item => relaxedExpected && relaxedComparableName(item.hotelName) === relaxedExpected);
   if (relaxedMatches.length) {
     const selected = selectByLocation(relaxedMatches, context, 4);
-    if (!selected) return { status: relaxedMatches.length > 1 ? "ambiguous" : "location_unverified", image: null };
-    return { status: "matched", image: imageFromMatch(selected.candidate, "normalizedNameLocation", selected.evidence) };
+    if (selected) {
+      return { status: "matched", image: imageFromMatch(selected.candidate, "normalizedNameLocation", selected.evidence) };
+    }
+  }
+
+  const containedMatches = uniqueCandidates.filter(item => {
+    const candidateName = strictComparableName(item.hotelName);
+    return strictExpected.length >= 5 && candidateName.length >= 5
+      && (candidateName.includes(strictExpected) || strictExpected.includes(candidateName));
+  });
+  if (containedMatches.length) {
+    const selected = selectByLocation(containedMatches, context, 4);
+    if (selected) {
+      return { status: "matched", image: imageFromMatch(selected.candidate, "containedNameLocation", selected.evidence) };
+    }
+    return { status: containedMatches.length > 1 ? "ambiguous" : "location_unverified", image: null };
   }
 
   return { status: "not_found", image: null };
+}
+
+function applyCommonParameters(url, credentials) {
+  url.searchParams.set("applicationId", credentials.applicationId);
+  url.searchParams.set("accessKey", credentials.accessKey);
+  if (credentials.affiliateId) url.searchParams.set("affiliateId", credentials.affiliateId);
+  url.searchParams.set("format", "json");
+  url.searchParams.set("formatVersion", "2");
+  url.searchParams.set("responseType", "middle");
+  url.searchParams.set("hotelThumbnailSize", "3");
+}
+
+async function fetchHotelByNumber(hotelNo, credentials) {
+  const url = new URL(RAKUTEN_SIMPLE_ENDPOINT);
+  applyCommonParameters(url, credentials);
+  url.searchParams.set("hits", "1");
+  url.searchParams.set("hotelNo", hotelNo);
+  const data = await fetchJson(url, { Origin: SITE_ORIGIN, Referer: `${SITE_ORIGIN}/` });
+  return (Array.isArray(data.hotels) ? data.hotels : []).map(rakutenBasicInfo).filter(Boolean);
+}
+
+async function searchHotels(keyword, credentials) {
+  const url = new URL(RAKUTEN_KEYWORD_ENDPOINT);
+  applyCommonParameters(url, credentials);
+  url.searchParams.set("hits", "30");
+  url.searchParams.set("keyword", keyword);
+  url.searchParams.set("searchField", "1");
+  const data = await fetchJson(url, { Origin: SITE_ORIGIN, Referer: `${SITE_ORIGIN}/` });
+  return (Array.isArray(data.hotels) ? data.hotels : []).map(rakutenBasicInfo).filter(Boolean);
+}
+
+async function findImage(context) {
+  const credentials = {
+    applicationId: process.env.RAKUTEN_APPLICATION_ID,
+    accessKey: process.env.RAKUTEN_ACCESS_KEY,
+    affiliateId: process.env.RAKUTEN_AFFILIATE_ID
+  };
+  if (!credentials.applicationId || !credentials.accessKey) return { status: "not_configured", image: null };
+
+  if (context.hotelNo) {
+    const candidates = await fetchHotelByNumber(context.hotelNo, credentials);
+    const match = candidates.find(item => String(item.hotelNo) === context.hotelNo);
+    return { status: match ? "matched" : "not_found", image: match ? imageFromMatch(match, "hotelNo", ["hotelNo"]) : null };
+  }
+
+  const allCandidates = [];
+  let successfulSearches = 0;
+  const queries = [context.name, ...rawLocationParts(context.station).slice(0, 2)];
+  const uniqueQueries = [...new Set(queries.filter(Boolean))];
+
+  for (const query of uniqueQueries) {
+    try {
+      const candidates = await searchHotels(query, credentials);
+      successfulSearches += 1;
+      allCandidates.push(...candidates);
+      const currentMatch = matchCandidates(allCandidates, context);
+      if (currentMatch.image) return currentMatch;
+    } catch {
+      // Try the next conservative query. A result is returned only after strict local matching.
+    }
+  }
+
+  if (!successfulSearches) throw new Error("all_upstreams_failed");
+  return matchCandidates(allCandidates, context);
 }
 
 module.exports = async function handler(req, res) {
@@ -257,7 +321,8 @@ module.exports = async function handler(req, res) {
     context.hotelNo || "",
     context.prefecture || "",
     context.station || "",
-    context.area || ""
+    context.area || "",
+    "fallback-v2"
   ]);
   const cached = cache.get(cacheKey);
   if (cached?.expiresAt > Date.now()) {
@@ -273,7 +338,7 @@ module.exports = async function handler(req, res) {
     const statusCode = found ? 200 : 404;
     const cacheControl = found
       ? "public, s-maxage=604800, stale-while-revalidate=2592000"
-      : "public, s-maxage=86400, stale-while-revalidate=604800";
+      : "public, s-maxage=21600, stale-while-revalidate=86400";
     const body = { image: result.image, status: result.status };
     cache.set(cacheKey, { body, statusCode, cacheControl, expiresAt: Date.now() + CACHE_TTL_MS });
     while (cache.size > 2000) cache.delete(cache.keys().next().value);
