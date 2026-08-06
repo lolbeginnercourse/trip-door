@@ -1,0 +1,35 @@
+name: Hotel audit smoke test
+
+on:
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  smoke:
+    if: github.head_ref == 'audit-run/full-hotel-image-audit-v2-20260807'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out audit result branch
+        uses: actions/checkout@v4
+        with:
+          ref: audit/hotel-image-coverage-v2-20260807
+          fetch-depth: 0
+
+      - name: Save smoke marker
+        run: |
+          mkdir -p reports/all-hotel-image-audit-v2-20260807
+          printf '{"status":"ok","runId":"%s","startedAt":"%s"}\n' "${GITHUB_RUN_ID}" "$(date -u +%Y-%m-%dT%H:%M:%SZ)" > reports/all-hotel-image-audit-v2-20260807/smoke.json
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reports/all-hotel-image-audit-v2-20260807/smoke.json
+          git commit -m "Confirm hotel audit workflow start"
+          git push origin HEAD:audit/hotel-image-coverage-v2-20260807
