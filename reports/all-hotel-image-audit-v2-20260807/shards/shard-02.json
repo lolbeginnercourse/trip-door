@@ -1,0 +1,785 @@
+{
+  "schemaVersion": 2,
+  "complete": true,
+  "generatedAt": "2026-08-06T20:21:59.416Z",
+  "shardIndex": 2,
+  "shardSize": 25,
+  "start": 50,
+  "end": 75,
+  "totalRecords": 1256,
+  "totalUnique": 750,
+  "processedUnique": 25,
+  "results": [
+    {
+      "requestKey": "name:相鉄フレッサイン 東京六本木|東京都|六本木",
+      "sourceHotel": {
+        "name": "相鉄フレッサイン 東京六本木",
+        "prefecture": "東京都",
+        "station": "六本木",
+        "area": "六本木",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        76
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "163072",
+        "hotelName": "相鉄フレッサイン 東京六本木",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:コンフォートイン東京六本木|東京都|六本木",
+      "sourceHotel": {
+        "name": "コンフォートイン東京六本木",
+        "prefecture": "東京都",
+        "station": "六本木",
+        "area": "六本木",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        77
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "181523",
+        "hotelName": "コンフォートイン東京六本木",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:アパホテル〈六本木six〉|東京都|六本木一丁目",
+      "sourceHotel": {
+        "name": "アパホテル〈六本木SIX〉",
+        "prefecture": "東京都",
+        "station": "六本木一丁目",
+        "area": "六本木",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        78
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "180334",
+        "hotelName": "アパホテル〈六本木SIX〉",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルヴィラフォンテーヌ東京大手町|東京都|大手町・神田",
+      "sourceHotel": {
+        "name": "ホテルヴィラフォンテーヌ東京大手町",
+        "prefecture": "東京都",
+        "station": "大手町・神田",
+        "area": "大手町",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        85
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "80761",
+        "hotelName": "住友不動産ホテル ヴィラフォンテーヌ東京大手町",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area"
+        ],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:相鉄フレッサイン 神田大手町|東京都|神田・大手町",
+      "sourceHotel": {
+        "name": "相鉄フレッサイン 神田大手町",
+        "prefecture": "東京都",
+        "station": "神田・大手町",
+        "area": "大手町",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        86
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "181179",
+        "hotelName": "相鉄フレッサイン 神田大手町",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:グランドセントラルホテル|東京都|神田",
+      "sourceHotel": {
+        "name": "グランドセントラルホテル",
+        "prefecture": "東京都",
+        "station": "神田",
+        "area": "大手町",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        87
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "5309",
+        "hotelName": "グランドセントラルホテル<東京都>",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station"
+        ],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn東京大手町a1|東京都|大手町・神田",
+      "sourceHotel": {
+        "name": "東横INN東京大手町A1",
+        "prefecture": "東京都",
+        "station": "大手町・神田",
+        "area": "大手町",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        88
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "160825",
+        "hotelName": "東横INN東京大手町",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area"
+        ],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:アパホテル〈神田神保町駅東〉|東京都|神保町・小川町",
+      "sourceHotel": {
+        "name": "アパホテル〈神田神保町駅東〉",
+        "prefecture": "東京都",
+        "station": "神保町・小川町",
+        "area": "大手町",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        89
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "147585",
+        "hotelName": "アパホテル〈神田神保町駅東〉",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:the b 三軒茶屋|東京都|三軒茶屋",
+      "sourceHotel": {
+        "name": "the b 三軒茶屋",
+        "prefecture": "東京都",
+        "station": "三軒茶屋",
+        "area": "三軒茶屋",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        110,
+        150,
+        155
+      ],
+      "duplicateGroupSize": 3,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "1746",
+        "hotelName": "the b 三軒茶屋(ザビー さんげんぢゃや)",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area"
+        ],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東急ステイ用賀|東京都|用賀",
+      "sourceHotel": {
+        "name": "東急ステイ用賀",
+        "prefecture": "東京都",
+        "station": "用賀",
+        "area": "三軒茶屋",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        111,
+        151,
+        156
+      ],
+      "duplicateGroupSize": 3,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "41705",
+        "hotelName": "東急ステイ用賀",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東急ステイ渋谷|東京都|神泉・渋谷",
+      "sourceHotel": {
+        "name": "東急ステイ渋谷",
+        "prefecture": "東京都",
+        "station": "神泉・渋谷",
+        "area": "三軒茶屋",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        112,
+        152,
+        157
+      ],
+      "duplicateGroupSize": 3,
+      "image": {
+        "httpStatus": 404,
+        "status": "ambiguous",
+        "hasImage": false,
+        "hotelNo": "",
+        "hotelName": "",
+        "matchedBy": "",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": {
+        "httpStatus": 200,
+        "hasRakuten": false,
+        "rakutenHotelNo": "",
+        "providers": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "causeCode": "multiple_candidates"
+    },
+    {
+      "requestKey": "name:アパホテル〈渋谷道玄坂上〉|東京都|渋谷・神泉",
+      "sourceHotel": {
+        "name": "アパホテル〈渋谷道玄坂上〉",
+        "prefecture": "東京都",
+        "station": "渋谷・神泉",
+        "area": "三軒茶屋",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        113,
+        118,
+        123,
+        153,
+        158,
+        208,
+        213,
+        218
+      ],
+      "duplicateGroupSize": 8,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "138039",
+        "hotelName": "アパホテル〈渋谷道玄坂上〉",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:オリンピックイン渋谷|東京都|池尻大橋",
+      "sourceHotel": {
+        "name": "オリンピックイン渋谷",
+        "prefecture": "東京都",
+        "station": "池尻大橋",
+        "area": "三軒茶屋",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        114,
+        154,
+        159
+      ],
+      "duplicateGroupSize": 3,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "183333",
+        "hotelName": "オリンピックイン渋谷",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:the onefive tokyo shibuya|東京都|渋谷・原宿",
+      "sourceHotel": {
+        "name": "The OneFive Tokyo Shibuya",
+        "prefecture": "東京都",
+        "station": "渋谷・原宿",
+        "area": "渋谷",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        115,
+        120,
+        205,
+        210,
+        215
+      ],
+      "duplicateGroupSize": 5,
+      "image": {
+        "httpStatus": 404,
+        "status": "not_found",
+        "hasImage": false,
+        "hotelNo": "",
+        "hotelName": "",
+        "matchedBy": "",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": {
+        "httpStatus": 200,
+        "hasRakuten": false,
+        "rakutenHotelNo": "",
+        "providers": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "causeCode": "not_found_by_current_rakuten_search"
+    },
+    {
+      "requestKey": "name:渋谷東武ホテル|東京都|渋谷",
+      "sourceHotel": {
+        "name": "渋谷東武ホテル",
+        "prefecture": "東京都",
+        "station": "渋谷",
+        "area": "渋谷",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        116,
+        121,
+        206,
+        211,
+        216
+      ],
+      "duplicateGroupSize": 5,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "1770",
+        "hotelName": "渋谷東武ホテル",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:渋谷クレストンホテル|東京都|渋谷・神泉",
+      "sourceHotel": {
+        "name": "渋谷クレストンホテル",
+        "prefecture": "東京都",
+        "station": "渋谷・神泉",
+        "area": "渋谷",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        117,
+        122,
+        207,
+        212,
+        217
+      ],
+      "duplicateGroupSize": 5,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "19745",
+        "hotelName": "渋谷クレストンホテル",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:jr東日本ホテルメッツ 渋谷|東京都|渋谷",
+      "sourceHotel": {
+        "name": "JR東日本ホテルメッツ 渋谷",
+        "prefecture": "東京都",
+        "station": "渋谷",
+        "area": "渋谷",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        119,
+        124,
+        209,
+        214,
+        219
+      ],
+      "duplicateGroupSize": 5,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "14112",
+        "hotelName": "JR東日本ホテルメッツ渋谷",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:art hotels shibuya|東京都|初台・幡ヶ谷",
+      "sourceHotel": {
+        "name": "ART HOTELS SHIBUYA",
+        "prefecture": "東京都",
+        "station": "初台・幡ヶ谷",
+        "area": "初台",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        125,
+        130
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "184606",
+        "hotelName": "ART HOTELS SHIBUYA",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:the knot tokyo shinjuku|東京都|都庁前・西新宿五丁目",
+      "sourceHotel": {
+        "name": "THE KNOT TOKYO Shinjuku",
+        "prefecture": "東京都",
+        "station": "都庁前・西新宿五丁目",
+        "area": "初台",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        126,
+        131
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 404,
+        "status": "not_found",
+        "hasImage": false,
+        "hotelNo": "",
+        "hotelName": "",
+        "matchedBy": "",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": {
+        "httpStatus": 200,
+        "hasRakuten": false,
+        "rakutenHotelNo": "",
+        "providers": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "causeCode": "not_found_by_current_rakuten_search"
+    },
+    {
+      "requestKey": "name:アパホテル&リゾート〈西新宿五丁目駅タワー〉|東京都|西新宿五丁目",
+      "sourceHotel": {
+        "name": "アパホテル&リゾート〈西新宿五丁目駅タワー〉",
+        "prefecture": "東京都",
+        "station": "西新宿五丁目",
+        "area": "初台",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        127,
+        132,
+        274,
+        279,
+        284,
+        289,
+        294,
+        299,
+        304
+      ],
+      "duplicateGroupSize": 9,
+      "image": {
+        "httpStatus": 404,
+        "status": "not_found",
+        "hasImage": false,
+        "hotelNo": "",
+        "hotelName": "",
+        "matchedBy": "",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": {
+        "httpStatus": 200,
+        "hasRakuten": false,
+        "rakutenHotelNo": "",
+        "providers": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "causeCode": "not_found_by_current_rakuten_search"
+    },
+    {
+      "requestKey": "name:東急ステイ西新宿|東京都|西新宿五丁目",
+      "sourceHotel": {
+        "name": "東急ステイ西新宿",
+        "prefecture": "東京都",
+        "station": "西新宿五丁目",
+        "area": "初台",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        128,
+        133
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "84559",
+        "hotelName": "東急ステイ西新宿",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:京王プレッソイン新宿|東京都|新宿・都庁前",
+      "sourceHotel": {
+        "name": "京王プレッソイン新宿",
+        "prefecture": "東京都",
+        "station": "新宿・都庁前",
+        "area": "初台",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        129,
+        134,
+        167,
+        172
+      ],
+      "duplicateGroupSize": 4,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "38126",
+        "hotelName": "京王プレッソイン新宿",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルサンシティ池袋|東京都|池袋西口",
+      "sourceHotel": {
+        "name": "ホテルサンシティ池袋",
+        "prefecture": "東京都",
+        "station": "池袋西口",
+        "area": "池袋西口",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        135,
+        140,
+        145
+      ],
+      "duplicateGroupSize": 3,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "7599",
+        "hotelName": "ホテルサンシティ池袋",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルアーバン|東京都|池袋西口",
+      "sourceHotel": {
+        "name": "ホテルアーバン",
+        "prefecture": "東京都",
+        "station": "池袋西口",
+        "area": "池袋西口",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        136,
+        141,
+        146
+      ],
+      "duplicateGroupSize": 3,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "17743",
+        "hotelName": "ホテル アーバン<HOTEL URBAN>",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture"
+        ],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:スーパーホテルpremier池袋天然温泉|東京都|池袋西口・北口",
+      "sourceHotel": {
+        "name": "スーパーホテルPremier池袋天然温泉",
+        "prefecture": "東京都",
+        "station": "池袋西口・北口",
+        "area": "池袋西口",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        137,
+        142,
+        147
+      ],
+      "duplicateGroupSize": 3,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "184443",
+        "hotelName": "スーパーホテルPremier池袋天然温泉",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": ""
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    }
+  ]
+}
