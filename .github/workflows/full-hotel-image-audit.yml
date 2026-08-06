@@ -7,6 +7,15 @@ on:
       - main
     paths:
       - .github/audit-runs/full-hotel-image-audit.trigger
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
+    branches:
+      - main
+    paths:
+      - .github/audit-runs/full-hotel-image-audit.trigger
 
 permissions:
   contents: write
