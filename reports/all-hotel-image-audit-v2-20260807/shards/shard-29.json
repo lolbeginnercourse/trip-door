@@ -1,0 +1,772 @@
+{
+  "schemaVersion": 3,
+  "complete": true,
+  "phase": "first-pass",
+  "generatedAt": "2026-08-06T22:01:19.687Z",
+  "shardIndex": 29,
+  "shardSize": 25,
+  "start": 725,
+  "end": 750,
+  "totalRecords": 1256,
+  "totalUnique": 750,
+  "processedUnique": 25,
+  "retriedUnique": 0,
+  "skippedMatchedUnique": 0,
+  "retryAttemptsPerRequest": 1,
+  "results": [
+    {
+      "requestKey": "name:ホテルフォルツァ長崎|長崎県|長崎",
+      "sourceHotel": {
+        "name": "ホテルフォルツァ長崎",
+        "prefecture": "長崎県",
+        "station": "長崎",
+        "area": "長崎・浦上",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1231
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "145485",
+        "hotelName": "FORZA ホテルフォルツァ長崎",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ドーミーインpremium長崎駅前|長崎県|長崎",
+      "sourceHotel": {
+        "name": "ドーミーインPREMIUM長崎駅前",
+        "prefecture": "長崎県",
+        "station": "長崎",
+        "area": "長崎・浦上",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1232
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "179673",
+        "hotelName": "天然温泉 鶴港の湯 ドーミーインPREMIUM長崎駅前(ドーミーイン・御宿野乃 ホテルズグループ)",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:リッチモンドホテル長崎思案橋|長崎県|思案橋",
+      "sourceHotel": {
+        "name": "リッチモンドホテル長崎思案橋",
+        "prefecture": "長崎県",
+        "station": "思案橋",
+        "area": "長崎・浦上",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1233
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "63866",
+        "hotelName": "リッチモンドホテル長崎思案橋",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn長崎駅前|長崎県|長崎",
+      "sourceHotel": {
+        "name": "東横INN長崎駅前",
+        "prefecture": "長崎県",
+        "station": "長崎",
+        "area": "長崎・浦上",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1234
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "28696",
+        "hotelName": "東横INN長崎駅前",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:jr九州ホテル宮崎|宮崎県|宮崎",
+      "sourceHotel": {
+        "name": "JR九州ホテル宮崎",
+        "prefecture": "宮崎県",
+        "station": "宮崎",
+        "area": "宮崎",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1235
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "135382",
+        "hotelName": "JR九州ホテル宮崎",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:コンフォートホテル宮崎|宮崎県|宮崎",
+      "sourceHotel": {
+        "name": "コンフォートホテル宮崎",
+        "prefecture": "宮崎県",
+        "station": "宮崎",
+        "area": "宮崎",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1236
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "167692",
+        "hotelName": "コンフォートホテル宮崎",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ドーミーイン宮崎|宮崎県|宮崎",
+      "sourceHotel": {
+        "name": "ドーミーイン宮崎",
+        "prefecture": "宮崎県",
+        "station": "宮崎",
+        "area": "宮崎",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1237
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "162643",
+        "hotelName": "天然温泉 日向の湯 ドーミーイン宮崎(ドーミーイン・御宿野乃 ホテルズグループ)",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:リッチモンドホテル宮崎駅前|宮崎県|宮崎",
+      "sourceHotel": {
+        "name": "リッチモンドホテル宮崎駅前",
+        "prefecture": "宮崎県",
+        "station": "宮崎",
+        "area": "宮崎",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1238
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "14993",
+        "hotelName": "リッチモンドホテル宮崎駅前",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn宮崎駅前|宮崎県|宮崎",
+      "sourceHotel": {
+        "name": "東横INN宮崎駅前",
+        "prefecture": "宮崎県",
+        "station": "宮崎",
+        "area": "宮崎",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1239
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "41166",
+        "hotelName": "東横INN宮崎駅前",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:jr九州ホテル鹿児島|鹿児島県|鹿児島中央",
+      "sourceHotel": {
+        "name": "JR九州ホテル鹿児島",
+        "prefecture": "鹿児島県",
+        "station": "鹿児島中央",
+        "area": "鹿児島",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1240
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "11031",
+        "hotelName": "JR九州ホテル鹿児島",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ソラリア西鉄ホテル鹿児島|鹿児島県|鹿児島中央",
+      "sourceHotel": {
+        "name": "ソラリア西鉄ホテル鹿児島",
+        "prefecture": "鹿児島県",
+        "station": "鹿児島中央",
+        "area": "鹿児島",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1241
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "135892",
+        "hotelName": "ソラリア西鉄ホテル鹿児島",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ダイワロイネットホテル鹿児島天文館 premier|鹿児島県|天文館",
+      "sourceHotel": {
+        "name": "ダイワロイネットホテル鹿児島天文館 PREMIER",
+        "prefecture": "鹿児島県",
+        "station": "天文館",
+        "area": "鹿児島",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1242
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "183844",
+        "hotelName": "ダイワロイネットホテル鹿児島天文館 PREMIER",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:リッチモンドホテル鹿児島金生町|鹿児島県|天文館",
+      "sourceHotel": {
+        "name": "リッチモンドホテル鹿児島金生町",
+        "prefecture": "鹿児島県",
+        "station": "天文館",
+        "area": "鹿児島",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1243
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "20548",
+        "hotelName": "リッチモンドホテル鹿児島金生町",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn鹿児島中央駅東口|鹿児島県|鹿児島中央",
+      "sourceHotel": {
+        "name": "東横INN鹿児島中央駅東口",
+        "prefecture": "鹿児島県",
+        "station": "鹿児島中央",
+        "area": "鹿児島",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1244
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "108378",
+        "hotelName": "東横INN鹿児島中央駅東口",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテル コレクティブ|沖縄県|国際通り",
+      "sourceHotel": {
+        "name": "ホテル コレクティブ",
+        "prefecture": "沖縄県",
+        "station": "国際通り",
+        "area": "那覇・国際通り",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1245
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "172986",
+        "hotelName": "ホテルコレクティブ",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ダイワロイネットホテル那覇国際通り|沖縄県|牧志",
+      "sourceHotel": {
+        "name": "ダイワロイネットホテル那覇国際通り",
+        "prefecture": "沖縄県",
+        "station": "牧志",
+        "area": "那覇・国際通り",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1246
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 502,
+        "status": "502",
+        "hasImage": false,
+        "hotelNo": "",
+        "hotelName": "",
+        "matchedBy": "",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": {
+        "httpStatus": 200,
+        "hasRakuten": true,
+        "rakutenHotelNo": "128440",
+        "providers": [
+          "楽天トラベル"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "causeCode": "temporary_upstream_error"
+    },
+    {
+      "requestKey": "name:ホテルグレイスリー那覇|沖縄県|国際通り",
+      "sourceHotel": {
+        "name": "ホテルグレイスリー那覇",
+        "prefecture": "沖縄県",
+        "station": "国際通り",
+        "area": "那覇・国際通り",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1247
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "149369",
+        "hotelName": "ホテルグレイスリー那覇",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:コンフォートイン那覇泊港|沖縄県|美栄橋",
+      "sourceHotel": {
+        "name": "コンフォートイン那覇泊港",
+        "prefecture": "沖縄県",
+        "station": "美栄橋",
+        "area": "那覇・国際通り",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1248
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "182682",
+        "hotelName": "コンフォートイン那覇泊港",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn沖縄那覇国際通り美栄橋駅|沖縄県|美栄橋",
+      "sourceHotel": {
+        "name": "東横INN沖縄那覇国際通り美栄橋駅",
+        "prefecture": "沖縄県",
+        "station": "美栄橋",
+        "area": "那覇・国際通り",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1249
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 502,
+        "status": "502",
+        "hasImage": false,
+        "hotelNo": "",
+        "hotelName": "",
+        "matchedBy": "",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": {
+        "httpStatus": 200,
+        "hasRakuten": false,
+        "rakutenHotelNo": "",
+        "providers": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "causeCode": "temporary_upstream_error"
+    },
+    {
+      "requestKey": "name:アパホテル&リゾート〈東京ベイ幕張〉||jr海浜幕張駅から徒歩約7分",
+      "sourceHotel": {
+        "name": "アパホテル&リゾート〈東京ベイ幕張〉",
+        "prefecture": "",
+        "station": "JR海浜幕張駅から徒歩約7分",
+        "area": "海浜幕張",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1250
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "51637",
+        "hotelName": "アパホテル&リゾート〈東京ベイ幕張〉",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルスプリングス幕張||jr海浜幕張駅北口から徒歩約2分",
+      "sourceHotel": {
+        "name": "ホテルスプリングス幕張",
+        "prefecture": "",
+        "station": "JR海浜幕張駅北口から徒歩約2分",
+        "area": "海浜幕張駅北口",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1251
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "29726",
+        "hotelName": "ホテルスプリングス幕張",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ヴィラフォンテーヌ グランド 東京有明||有明駅から徒歩約4分",
+      "sourceHotel": {
+        "name": "ヴィラフォンテーヌ グランド 東京有明",
+        "prefecture": "",
+        "station": "有明駅から徒歩約4分",
+        "area": "有明・国際展示場",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1252
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 404,
+        "status": "location_unverified",
+        "hasImage": false,
+        "hotelNo": "",
+        "hotelName": "",
+        "matchedBy": "",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": {
+        "httpStatus": 200,
+        "hasRakuten": false,
+        "rakutenHotelNo": "",
+        "providers": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "causeCode": "location_unverified"
+    },
+    {
+      "requestKey": "name:nohga hotel ueno tokyo||東京メトロ上野駅から徒歩約3分",
+      "sourceHotel": {
+        "name": "NOHGA HOTEL UENO TOKYO",
+        "prefecture": "",
+        "station": "東京メトロ上野駅から徒歩約3分",
+        "area": "上野",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1253
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 404,
+        "status": "location_unverified",
+        "hasImage": false,
+        "hotelNo": "",
+        "hotelName": "",
+        "matchedBy": "",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": {
+        "httpStatus": 200,
+        "hasRakuten": false,
+        "rakutenHotelNo": "",
+        "providers": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "causeCode": "location_unverified"
+    },
+    {
+      "requestKey": "name:kaika 東京 by the share hotels||浅草駅から徒歩約9分",
+      "sourceHotel": {
+        "name": "KAIKA 東京 by THE SHARE HOTELS",
+        "prefecture": "",
+        "station": "浅草駅から徒歩約9分",
+        "area": "本所・浅草・蔵前",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1254
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 404,
+        "status": "not_found",
+        "hasImage": false,
+        "hotelNo": "",
+        "hotelName": "",
+        "matchedBy": "",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": {
+        "httpStatus": 200,
+        "hasRakuten": false,
+        "rakutenHotelNo": "",
+        "providers": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "causeCode": "not_found_by_current_rakuten_search"
+    },
+    {
+      "requestKey": "name:レム六本木||六本木駅から徒歩約1分",
+      "sourceHotel": {
+        "name": "レム六本木",
+        "prefecture": "",
+        "station": "六本木駅から徒歩約1分",
+        "area": "六本木",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1255
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "153693",
+        "hotelName": "レム六本木",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    }
+  ]
+}
