@@ -1,0 +1,753 @@
+{
+  "schemaVersion": 3,
+  "complete": true,
+  "phase": "first-pass",
+  "generatedAt": "2026-08-06T21:44:16.824Z",
+  "shardIndex": 12,
+  "shardSize": 25,
+  "start": 300,
+  "end": 325,
+  "totalRecords": 1256,
+  "totalUnique": 750,
+  "processedUnique": 25,
+  "retriedUnique": 0,
+  "skippedMatchedUnique": 0,
+  "retryAttemptsPerRequest": 1,
+  "results": [
+    {
+      "requestKey": "name:ホテルルートインgrand太田駅前|群馬県|太田",
+      "sourceHotel": {
+        "name": "ホテルルートインGrand太田駅前",
+        "prefecture": "群馬県",
+        "station": "太田",
+        "area": "太田",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        616
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "173117",
+        "hotelName": "ホテルルートインGrand太田駅前",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:太田グランドホテル|群馬県|太田",
+      "sourceHotel": {
+        "name": "太田グランドホテル",
+        "prefecture": "群馬県",
+        "station": "太田",
+        "area": "太田",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        617
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "15450",
+        "hotelName": "太田グランドホテル",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:パールホテル太田|群馬県|太田",
+      "sourceHotel": {
+        "name": "パールホテル太田",
+        "prefecture": "群馬県",
+        "station": "太田",
+        "area": "太田",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        618
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "11365",
+        "hotelName": "パールホテル太田",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルモンテローザ太田|群馬県|太田",
+      "sourceHotel": {
+        "name": "ホテルモンテローザ太田",
+        "prefecture": "群馬県",
+        "station": "太田",
+        "area": "太田",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        619
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "7811",
+        "hotelName": "ホテルモンテローザ太田",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn桐生駅南口|群馬県|桐生",
+      "sourceHotel": {
+        "name": "東横INN桐生駅南口",
+        "prefecture": "群馬県",
+        "station": "桐生",
+        "area": "桐生",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        620
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "75279",
+        "hotelName": "東横INN桐生駅南口",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:エースホテル|群馬県|桐生",
+      "sourceHotel": {
+        "name": "エースホテル",
+        "prefecture": "群馬県",
+        "station": "桐生",
+        "area": "桐生",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        621
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "19363",
+        "hotelName": "庭の、桐生エースホテル",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:パークイン桐生|群馬県|桐生",
+      "sourceHotel": {
+        "name": "パークイン桐生",
+        "prefecture": "群馬県",
+        "station": "桐生",
+        "area": "桐生",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        622
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "8983",
+        "hotelName": "パークイン桐生",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:桐生グランドホテル|群馬県|新桐生",
+      "sourceHotel": {
+        "name": "桐生グランドホテル",
+        "prefecture": "群馬県",
+        "station": "新桐生",
+        "area": "桐生",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        623
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "7168",
+        "hotelName": "桐生グランドホテル",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ビジネスホテル西桐生|群馬県|西桐生",
+      "sourceHotel": {
+        "name": "ビジネスホテル西桐生",
+        "prefecture": "群馬県",
+        "station": "西桐生",
+        "area": "桐生",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        624
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "25123",
+        "hotelName": "ビジネスホテル西桐生",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:jrイン札幌北2条|北海道|札幌・大通",
+      "sourceHotel": {
+        "name": "JRイン札幌北2条",
+        "prefecture": "北海道",
+        "station": "札幌・大通",
+        "area": "札幌・大通",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        625,
+        630,
+        635,
+        640
+      ],
+      "duplicateGroupSize": 4,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "179085",
+        "hotelName": "JRイン札幌北2条",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ザ ノット 札幌|北海道|大通・すすきの",
+      "sourceHotel": {
+        "name": "ザ ノット 札幌",
+        "prefecture": "北海道",
+        "station": "大通・すすきの",
+        "area": "札幌・大通",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        626,
+        631,
+        636,
+        641
+      ],
+      "duplicateGroupSize": 4,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "178396",
+        "hotelName": "ザ ノット 札幌",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:札幌ビューホテル大通公園|北海道|大通",
+      "sourceHotel": {
+        "name": "札幌ビューホテル大通公園",
+        "prefecture": "北海道",
+        "station": "大通",
+        "area": "札幌・大通",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        627,
+        632,
+        637,
+        642
+      ],
+      "duplicateGroupSize": 4,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "1430",
+        "hotelName": "札幌ビューホテル大通公園",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東急ステイ札幌大通|北海道|大通",
+      "sourceHotel": {
+        "name": "東急ステイ札幌大通",
+        "prefecture": "北海道",
+        "station": "大通",
+        "area": "札幌・大通",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        628,
+        633,
+        638,
+        643
+      ],
+      "duplicateGroupSize": 4,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "167979",
+        "hotelName": "東急ステイ札幌大通",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルウィングインターナショナル札幌すすきの|北海道|すすきの",
+      "sourceHotel": {
+        "name": "ホテルウィングインターナショナル札幌すすきの",
+        "prefecture": "北海道",
+        "station": "すすきの",
+        "area": "札幌・大通",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        629,
+        634,
+        639,
+        644
+      ],
+      "duplicateGroupSize": 4,
+      "image": {
+        "httpStatus": 404,
+        "status": "not_found",
+        "hasImage": false,
+        "hotelNo": "",
+        "hotelName": "",
+        "matchedBy": "",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": {
+        "httpStatus": 200,
+        "hasRakuten": false,
+        "rakutenHotelNo": "",
+        "providers": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "causeCode": "not_found_by_current_rakuten_search"
+    },
+    {
+      "requestKey": "name:ベッセルイン札幌中島公園|北海道|中島公園",
+      "sourceHotel": {
+        "name": "ベッセルイン札幌中島公園",
+        "prefecture": "北海道",
+        "station": "中島公園",
+        "area": "中島公園・すすきの",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        645
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "139991",
+        "hotelName": "ベッセルイン札幌中島公園(すすきの徒歩圏内)",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:イビススタイルズ札幌|北海道|中島公園",
+      "sourceHotel": {
+        "name": "イビススタイルズ札幌",
+        "prefecture": "北海道",
+        "station": "中島公園",
+        "area": "中島公園・すすきの",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        646
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "109107",
+        "hotelName": "イビススタイルズ札幌",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルマイステイズ札幌中島公園|北海道|中島公園",
+      "sourceHotel": {
+        "name": "ホテルマイステイズ札幌中島公園",
+        "prefecture": "北海道",
+        "station": "中島公園",
+        "area": "中島公園・すすきの",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        647
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "9603",
+        "hotelName": "ホテルマイステイズ札幌中島公園",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:クインテッサホテル札幌|北海道|中島公園",
+      "sourceHotel": {
+        "name": "クインテッサホテル札幌",
+        "prefecture": "北海道",
+        "station": "中島公園",
+        "area": "中島公園・すすきの",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        648
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "410",
+        "hotelName": "クインテッサホテル札幌",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ダイワロイネットホテル札幌中島公園|北海道|中島公園",
+      "sourceHotel": {
+        "name": "ダイワロイネットホテル札幌中島公園",
+        "prefecture": "北海道",
+        "station": "中島公園",
+        "area": "中島公園・すすきの",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        649
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "183892",
+        "hotelName": "ダイワロイネットホテル札幌中島公園",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:jrイン旭川|北海道|旭川",
+      "sourceHotel": {
+        "name": "JRイン旭川",
+        "prefecture": "北海道",
+        "station": "旭川",
+        "area": "旭川",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        650
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "147739",
+        "hotelName": "JRイン旭川",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルウィングインターナショナル旭川駅前|北海道|旭川",
+      "sourceHotel": {
+        "name": "ホテルウィングインターナショナル旭川駅前",
+        "prefecture": "北海道",
+        "station": "旭川",
+        "area": "旭川",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        651
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "172612",
+        "hotelName": "KOKO HOTEL 旭川駅前(旧ホテルウィングインターナショナル旭川駅前)",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ワイズホテル旭川駅前|北海道|旭川",
+      "sourceHotel": {
+        "name": "ワイズホテル旭川駅前",
+        "prefecture": "北海道",
+        "station": "旭川",
+        "area": "旭川",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        652
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "166948",
+        "hotelName": "ワイズホテル 旭川駅前",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn旭川駅前一条通|北海道|旭川",
+      "sourceHotel": {
+        "name": "東横INN旭川駅前一条通",
+        "prefecture": "北海道",
+        "station": "旭川",
+        "area": "旭川",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        653
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "108350",
+        "hotelName": "東横INN旭川駅前一条通",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:コートホテル旭川|北海道|旭川",
+      "sourceHotel": {
+        "name": "コートホテル旭川",
+        "prefecture": "北海道",
+        "station": "旭川",
+        "area": "旭川",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        654
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "855",
+        "hotelName": "コートホテル旭川",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:jrイン函館|北海道|函館",
+      "sourceHotel": {
+        "name": "JRイン函館",
+        "prefecture": "北海道",
+        "station": "函館",
+        "area": "函館・湯の川",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        655
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "177807",
+        "hotelName": "JRイン函館",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    }
+  ]
+}
