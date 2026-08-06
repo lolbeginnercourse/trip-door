@@ -1,0 +1,743 @@
+{
+  "schemaVersion": 3,
+  "complete": true,
+  "phase": "first-pass",
+  "generatedAt": "2026-08-06T21:43:19.900Z",
+  "shardIndex": 11,
+  "shardSize": 25,
+  "start": 275,
+  "end": 300,
+  "totalRecords": 1256,
+  "totalUnique": 750,
+  "processedUnique": 25,
+  "retriedUnique": 0,
+  "skippedMatchedUnique": 0,
+  "retryAttemptsPerRequest": 1,
+  "results": [
+    {
+      "requestKey": "name:jr東日本ホテルメッツ 水戸|茨城県|水戸",
+      "sourceHotel": {
+        "name": "JR東日本ホテルメッツ 水戸",
+        "prefecture": "茨城県",
+        "station": "水戸",
+        "area": "水戸",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        581,
+        586
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "1707",
+        "hotelName": "JR東日本ホテルメッツ水戸",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:水戸京成ホテル|茨城県|水戸",
+      "sourceHotel": {
+        "name": "水戸京成ホテル",
+        "prefecture": "茨城県",
+        "station": "水戸",
+        "area": "水戸",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        582,
+        587
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "925",
+        "hotelName": "水戸京成ホテル",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:アパホテル〈水戸駅前〉|茨城県|水戸",
+      "sourceHotel": {
+        "name": "アパホテル〈水戸駅前〉",
+        "prefecture": "茨城県",
+        "station": "水戸",
+        "area": "水戸",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        583,
+        588
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "151370",
+        "hotelName": "アパホテル〈水戸駅前〉",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn水戸駅南口|茨城県|水戸",
+      "sourceHotel": {
+        "name": "東横INN水戸駅南口",
+        "prefecture": "茨城県",
+        "station": "水戸",
+        "area": "水戸",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        584,
+        589
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "52989",
+        "hotelName": "東横INN水戸駅南口",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ダイワロイネットホテルつくば|茨城県|つくば",
+      "sourceHotel": {
+        "name": "ダイワロイネットホテルつくば",
+        "prefecture": "茨城県",
+        "station": "つくば",
+        "area": "つくば",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        590
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "79343",
+        "hotelName": "ダイワロイネットホテルつくば",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテル日航つくば|茨城県|つくば",
+      "sourceHotel": {
+        "name": "ホテル日航つくば",
+        "prefecture": "茨城県",
+        "station": "つくば",
+        "area": "つくば",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        591
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "1302",
+        "hotelName": "ホテル日航つくば",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルjalシティつくば|茨城県|つくば",
+      "sourceHotel": {
+        "name": "ホテルJALシティつくば",
+        "prefecture": "茨城県",
+        "station": "つくば",
+        "area": "つくば",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        592
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "3166",
+        "hotelName": "ホテルJALシティつくば",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn研究学園駅前|茨城県|研究学園",
+      "sourceHotel": {
+        "name": "東横INN研究学園駅前",
+        "prefecture": "茨城県",
+        "station": "研究学園",
+        "area": "つくば",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        593
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "108422",
+        "hotelName": "東横INN研究学園駅前",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルマークワンつくば研究学園|茨城県|研究学園",
+      "sourceHotel": {
+        "name": "ホテルマークワンつくば研究学園",
+        "prefecture": "茨城県",
+        "station": "研究学園",
+        "area": "つくば",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        594
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "109034",
+        "hotelName": "ホテルマークワンつくば研究学園",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:jr東日本ホテルメッツ 宇都宮|栃木県|宇都宮",
+      "sourceHotel": {
+        "name": "JR東日本ホテルメッツ 宇都宮",
+        "prefecture": "栃木県",
+        "station": "宇都宮",
+        "area": "宇都宮",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        595,
+        600
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "136222",
+        "hotelName": "JR東日本ホテルメッツ宇都宮",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ダイワロイネットホテル宇都宮|栃木県|宇都宮",
+      "sourceHotel": {
+        "name": "ダイワロイネットホテル宇都宮",
+        "prefecture": "栃木県",
+        "station": "宇都宮",
+        "area": "宇都宮",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        596,
+        601
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "141067",
+        "hotelName": "ダイワロイネットホテル宇都宮",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:リッチモンドホテル宇都宮駅前|栃木県|宇都宮",
+      "sourceHotel": {
+        "name": "リッチモンドホテル宇都宮駅前",
+        "prefecture": "栃木県",
+        "station": "宇都宮",
+        "area": "宇都宮",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        597,
+        602
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "37936",
+        "hotelName": "リッチモンドホテル宇都宮駅前",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:スマイルホテル宇都宮西口駅前|栃木県|宇都宮",
+      "sourceHotel": {
+        "name": "スマイルホテル宇都宮西口駅前",
+        "prefecture": "栃木県",
+        "station": "宇都宮",
+        "area": "宇都宮",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        598,
+        603
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "177520",
+        "hotelName": "スマイルホテル宇都宮西口駅前",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn宇都宮駅前1|栃木県|宇都宮",
+      "sourceHotel": {
+        "name": "東横INN宇都宮駅前1",
+        "prefecture": "栃木県",
+        "station": "宇都宮",
+        "area": "宇都宮",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        599,
+        604
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "108346",
+        "hotelName": "東横INN宇都宮駅前1",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルメトロポリタン高崎|群馬県|高崎",
+      "sourceHotel": {
+        "name": "ホテルメトロポリタン高崎",
+        "prefecture": "群馬県",
+        "station": "高崎",
+        "area": "高崎",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        605
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "1700",
+        "hotelName": "ホテルメトロポリタン高崎",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルココ・グラン高崎|群馬県|高崎",
+      "sourceHotel": {
+        "name": "ホテルココ・グラン高崎",
+        "prefecture": "群馬県",
+        "station": "高崎",
+        "area": "高崎",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        606
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "136287",
+        "hotelName": "ホテルココ・グラン高崎",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:アパホテル〈高崎駅前〉|群馬県|高崎",
+      "sourceHotel": {
+        "name": "アパホテル〈高崎駅前〉",
+        "prefecture": "群馬県",
+        "station": "高崎",
+        "area": "高崎",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        607
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "28283",
+        "hotelName": "アパホテル〈高崎駅前〉(2026年2月リニューアル)",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn高崎駅西口1|群馬県|高崎",
+      "sourceHotel": {
+        "name": "東横INN高崎駅西口1",
+        "prefecture": "群馬県",
+        "station": "高崎",
+        "area": "高崎",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        608
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "67375",
+        "hotelName": "東横INN高崎駅西口1",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ドーミーイン高崎|群馬県|高崎",
+      "sourceHotel": {
+        "name": "ドーミーイン高崎",
+        "prefecture": "群馬県",
+        "station": "高崎",
+        "area": "高崎",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        609
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "76405",
+        "hotelName": "榛名の湯 ドーミーイン高崎",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:天然温泉 妙義の湯 ドーミーイン前橋|群馬県|前橋",
+      "sourceHotel": {
+        "name": "天然温泉 妙義の湯 ドーミーイン前橋",
+        "prefecture": "群馬県",
+        "station": "前橋",
+        "area": "前橋",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        610
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "172226",
+        "hotelName": "天然温泉 妙義の湯 ドーミーイン前橋(ドーミーイン・御宿野乃 ホテルズグループ)",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:コンフォートホテル前橋|群馬県|前橋",
+      "sourceHotel": {
+        "name": "コンフォートホテル前橋",
+        "prefecture": "群馬県",
+        "station": "前橋",
+        "area": "前橋",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        611
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "78160",
+        "hotelName": "コンフォートホテル前橋",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:アパホテル〈前橋駅北〉|群馬県|前橋",
+      "sourceHotel": {
+        "name": "アパホテル〈前橋駅北〉",
+        "prefecture": "群馬県",
+        "station": "前橋",
+        "area": "前橋",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        612
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "9645",
+        "hotelName": "アパホテル〈前橋駅北〉",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn前橋駅前|群馬県|前橋",
+      "sourceHotel": {
+        "name": "東横INN前橋駅前",
+        "prefecture": "群馬県",
+        "station": "前橋",
+        "area": "前橋",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        613
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "70236",
+        "hotelName": "東横INN前橋駅前",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:前橋ホテルルカ|群馬県|前橋",
+      "sourceHotel": {
+        "name": "前橋ホテルルカ",
+        "prefecture": "群馬県",
+        "station": "前橋",
+        "area": "前橋",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        614
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "53093",
+        "hotelName": "前橋ホテル",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn群馬太田駅南口|群馬県|太田",
+      "sourceHotel": {
+        "name": "東横INN群馬太田駅南口",
+        "prefecture": "群馬県",
+        "station": "太田",
+        "area": "太田",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        615
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "129377",
+        "hotelName": "東横INN群馬太田駅南口",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    }
+  ]
+}
