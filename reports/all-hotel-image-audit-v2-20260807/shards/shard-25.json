@@ -1,0 +1,742 @@
+{
+  "schemaVersion": 3,
+  "complete": true,
+  "phase": "first-pass",
+  "generatedAt": "2026-08-06T21:57:18.488Z",
+  "shardIndex": 25,
+  "shardSize": 25,
+  "start": 625,
+  "end": 650,
+  "totalRecords": 1256,
+  "totalUnique": 750,
+  "processedUnique": 25,
+  "retriedUnique": 0,
+  "skippedMatchedUnique": 0,
+  "retryAttemptsPerRequest": 1,
+  "results": [
+    {
+      "requestKey": "name:ダイワロイネットホテル和歌山|和歌山県|和歌山",
+      "sourceHotel": {
+        "name": "ダイワロイネットホテル和歌山",
+        "prefecture": "和歌山県",
+        "station": "和歌山",
+        "area": "和歌山",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1105
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "31375",
+        "hotelName": "ダイワロイネットホテル和歌山",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:天然温泉 紀州の湯 ドーミーインpremium和歌山|和歌山県|和歌山",
+      "sourceHotel": {
+        "name": "天然温泉 紀州の湯 ドーミーインPREMIUM和歌山",
+        "prefecture": "和歌山県",
+        "station": "和歌山",
+        "area": "和歌山",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1106
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "136994",
+        "hotelName": "天然温泉 紀州の湯 ドーミーインPREMIUM和歌山(ドーミーイン・御宿野乃 ホテルズグループ)",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:コンフォートホテル和歌山|和歌山県|和歌山",
+      "sourceHotel": {
+        "name": "コンフォートホテル和歌山",
+        "prefecture": "和歌山県",
+        "station": "和歌山",
+        "area": "和歌山",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1107
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "149215",
+        "hotelName": "コンフォートホテル和歌山(2026年3月30日 リニューアル)",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルグランヴィア和歌山|和歌山県|和歌山",
+      "sourceHotel": {
+        "name": "ホテルグランヴィア和歌山",
+        "prefecture": "和歌山県",
+        "station": "和歌山",
+        "area": "和歌山",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1108
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "1191",
+        "hotelName": "ホテルグランヴィア和歌山",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn jr和歌山駅東口|和歌山県|和歌山",
+      "sourceHotel": {
+        "name": "東横INN JR和歌山駅東口",
+        "prefecture": "和歌山県",
+        "station": "和歌山",
+        "area": "和歌山",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1109
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "108421",
+        "hotelName": "東横INNJR和歌山駅東口",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:三井ガーデンホテル岡山|岡山県|岡山",
+      "sourceHotel": {
+        "name": "三井ガーデンホテル岡山",
+        "prefecture": "岡山県",
+        "station": "岡山",
+        "area": "岡山",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1110
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "4926",
+        "hotelName": "三井ガーデンホテル岡山(2026年8月 全館リニューアルオープン)",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ダイワロイネットホテル岡山駅前|岡山県|岡山",
+      "sourceHotel": {
+        "name": "ダイワロイネットホテル岡山駅前",
+        "prefecture": "岡山県",
+        "station": "岡山",
+        "area": "岡山",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1111
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "68206",
+        "hotelName": "ダイワロイネットホテル岡山駅前",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルグランヴィア岡山|岡山県|岡山",
+      "sourceHotel": {
+        "name": "ホテルグランヴィア岡山",
+        "prefecture": "岡山県",
+        "station": "岡山",
+        "area": "岡山",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1112
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "822",
+        "hotelName": "ホテルグランヴィア岡山",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ヴィアイン岡山|岡山県|岡山",
+      "sourceHotel": {
+        "name": "ヴィアイン岡山",
+        "prefecture": "岡山県",
+        "station": "岡山",
+        "area": "岡山",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1113
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "139447",
+        "hotelName": "ヴィアイン岡山(JR西日本グループ)",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station",
+          "area"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:東横inn岡山駅西口広場|岡山県|岡山",
+      "sourceHotel": {
+        "name": "東横INN岡山駅西口広場",
+        "prefecture": "岡山県",
+        "station": "岡山",
+        "area": "岡山",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1114
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "108366",
+        "hotelName": "東横INN岡山駅西口広場",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:倉敷アイビースクエア|岡山県|倉敷",
+      "sourceHotel": {
+        "name": "倉敷アイビースクエア",
+        "prefecture": "岡山県",
+        "station": "倉敷",
+        "area": "倉敷",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1115
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "8957",
+        "hotelName": "倉敷アイビースクエア",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ロイヤルパークホテル倉敷|岡山県|倉敷",
+      "sourceHotel": {
+        "name": "ロイヤルパークホテル倉敷",
+        "prefecture": "岡山県",
+        "station": "倉敷",
+        "area": "倉敷",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1116
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "181244",
+        "hotelName": "ロイヤルパークホテル倉敷",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:センチュリオンホテル&スパ倉敷|岡山県|倉敷",
+      "sourceHotel": {
+        "name": "センチュリオンホテル&スパ倉敷",
+        "prefecture": "岡山県",
+        "station": "倉敷",
+        "area": "倉敷",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1117
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "162970",
+        "hotelName": "センチュリオンホテル&スパ倉敷",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:天然温泉 阿智の湯 ドーミーイン倉敷|岡山県|倉敷",
+      "sourceHotel": {
+        "name": "天然温泉 阿智の湯 ドーミーイン倉敷",
+        "prefecture": "岡山県",
+        "station": "倉敷",
+        "area": "倉敷",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1118
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "72042",
+        "hotelName": "天然温泉 阿智の湯 ドーミーイン倉敷",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:アパホテル〈倉敷駅前〉|岡山県|倉敷",
+      "sourceHotel": {
+        "name": "アパホテル〈倉敷駅前〉",
+        "prefecture": "岡山県",
+        "station": "倉敷",
+        "area": "倉敷",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1119
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "75332",
+        "hotelName": "アパホテル〈倉敷駅前〉",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:三井ガーデンホテル広島|広島県|広島・中区",
+      "sourceHotel": {
+        "name": "三井ガーデンホテル広島",
+        "prefecture": "広島県",
+        "station": "広島・中区",
+        "area": "広島・中区",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1120,
+        1130
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "1594",
+        "hotelName": "三井ガーデンホテル広島",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ダイワロイネットホテル広島|広島県|広島・中区",
+      "sourceHotel": {
+        "name": "ダイワロイネットホテル広島",
+        "prefecture": "広島県",
+        "station": "広島・中区",
+        "area": "広島・中区",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1121,
+        1131
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "74750",
+        "hotelName": "ダイワロイネットホテル広島",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルインターゲート広島|広島県|広島・中区",
+      "sourceHotel": {
+        "name": "ホテルインターゲート広島",
+        "prefecture": "広島県",
+        "station": "広島・中区",
+        "area": "広島・中区",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1122,
+        1132
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "168417",
+        "hotelName": "ホテルインターゲート広島",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテル法華クラブ広島|広島県|広島・中区",
+      "sourceHotel": {
+        "name": "ホテル法華クラブ広島",
+        "prefecture": "広島県",
+        "station": "広島・中区",
+        "area": "広島・中区",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1123,
+        1133
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "120",
+        "hotelName": "ホテル法華クラブ広島",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:コンフォートホテル広島大手町|広島県|中電前",
+      "sourceHotel": {
+        "name": "コンフォートホテル広島大手町",
+        "prefecture": "広島県",
+        "station": "中電前",
+        "area": "広島・中区",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1124,
+        1134
+      ],
+      "duplicateGroupSize": 2,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "53739",
+        "hotelName": "コンフォートホテル広島大手町",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルスイート広島 白島|広島県|白島",
+      "sourceHotel": {
+        "name": "ホテルスイート広島 白島",
+        "prefecture": "広島県",
+        "station": "白島",
+        "area": "白島・新白島",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1125
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "181059",
+        "hotelName": "ホテルスイート広島 白島",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ヴィアインプライム広島新幹線口|広島県|広島",
+      "sourceHotel": {
+        "name": "ヴィアインプライム広島新幹線口",
+        "prefecture": "広島県",
+        "station": "広島",
+        "area": "白島・新白島",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1126
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "178452",
+        "hotelName": "ヴィアインプライム広島新幹線口<紅葉の湯>(JR西日本グループ)",
+        "matchedBy": "containedNameLocation",
+        "matchEvidence": [
+          "prefecture",
+          "station"
+        ],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ダイワロイネットホテル広島駅前|広島県|広島",
+      "sourceHotel": {
+        "name": "ダイワロイネットホテル広島駅前",
+        "prefecture": "広島県",
+        "station": "広島",
+        "area": "白島・新白島",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1127
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "172592",
+        "hotelName": "ダイワロイネットホテル広島駅前",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:アパホテル〈広島駅前大橋〉|広島県|広島",
+      "sourceHotel": {
+        "name": "アパホテル〈広島駅前大橋〉",
+        "prefecture": "広島県",
+        "station": "広島",
+        "area": "白島・新白島",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1128
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "153290",
+        "hotelName": "アパホテル〈広島駅前大橋〉",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    },
+    {
+      "requestKey": "name:ホテルグランヴィア広島|広島県|広島",
+      "sourceHotel": {
+        "name": "ホテルグランヴィア広島",
+        "prefecture": "広島県",
+        "station": "広島",
+        "area": "白島・新白島",
+        "storedRakutenHotelNo": ""
+      },
+      "recordIndexes": [
+        1129
+      ],
+      "duplicateGroupSize": 1,
+      "image": {
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "1366",
+        "hotelName": "ホテルグランヴィア広島",
+        "matchedBy": "exactName",
+        "matchEvidence": [],
+        "transportError": "",
+        "rawExcerpt": "",
+        "attemptsUsed": 1
+      },
+      "affiliate": null,
+      "causeCode": "matched"
+    }
+  ]
+}
