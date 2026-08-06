@@ -1,8 +1,8 @@
 {
   "schemaVersion": 3,
   "complete": true,
-  "phase": "first-pass",
-  "generatedAt": "2026-08-06T21:49:07.144Z",
+  "phase": "retry",
+  "generatedAt": "2026-08-06T23:55:27.455Z",
   "shardIndex": 17,
   "shardSize": 25,
   "start": 425,
@@ -10,9 +10,9 @@
   "totalRecords": 1256,
   "totalUnique": 750,
   "processedUnique": 25,
-  "retriedUnique": 0,
-  "skippedMatchedUnique": 0,
-  "retryAttemptsPerRequest": 1,
+  "retriedUnique": 1,
+  "skippedMatchedUnique": 24,
+  "retryAttemptsPerRequest": 5,
   "results": [
     {
       "requestKey": "name:プレミアホテル-cabin-松本|長野県|松本",
@@ -49,7 +49,14 @@
         "rawExcerpt": "",
         "attemptsUsed": 1
       },
-      "causeCode": "not_found_by_current_rakuten_search"
+      "causeCode": "not_found_by_current_rakuten_search",
+      "retry": {
+        "attempted": true,
+        "attemptedAt": "2026-08-06T23:55:27.399Z",
+        "previousCauseCode": "not_found_by_current_rakuten_search",
+        "previousHasImage": false,
+        "attemptsPerRequest": 5
+      }
     },
     {
       "requestKey": "name:エースイン松本|長野県|松本",
