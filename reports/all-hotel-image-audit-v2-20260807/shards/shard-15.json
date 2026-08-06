@@ -1,8 +1,8 @@
 {
   "schemaVersion": 3,
   "complete": true,
-  "phase": "first-pass",
-  "generatedAt": "2026-08-06T21:47:13.762Z",
+  "phase": "retry",
+  "generatedAt": "2026-08-06T23:54:57.409Z",
   "shardIndex": 15,
   "shardSize": 25,
   "start": 375,
@@ -11,8 +11,8 @@
   "totalUnique": 750,
   "processedUnique": 25,
   "retriedUnique": 0,
-  "skippedMatchedUnique": 0,
-  "retryAttemptsPerRequest": 1,
+  "skippedMatchedUnique": 25,
+  "retryAttemptsPerRequest": 5,
   "results": [
     {
       "requestKey": "name:リッチモンドホテル青森|青森県|青森",
