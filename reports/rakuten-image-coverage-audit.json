@@ -1,0 +1,256 @@
+{
+  "summary": {
+    "tested": 15,
+    "imageMatched": 10,
+    "rakutenAffiliateMatched": 10,
+    "affiliateAnyMatched": 10,
+    "imageMissButRakutenLink": 0
+  },
+  "checks": [
+    {
+      "id": "stage-001-3",
+      "name": "スーパーホテル品川・新馬場",
+      "prefecture": "東京都",
+      "station": "新馬場",
+      "imageHttp": 404,
+      "imageStatus": "not_found",
+      "hasImage": false,
+      "imageHotelNo": null,
+      "imageHotelName": null,
+      "matchedBy": null,
+      "affiliateHttp": 200,
+      "affiliateProviders": [],
+      "affiliateCount": 0
+    },
+    {
+      "id": "stage-001-4",
+      "name": "スーパーホテル品川・青物横丁",
+      "prefecture": "東京都",
+      "station": "青物横丁",
+      "imageHttp": 404,
+      "imageStatus": "not_found",
+      "hasImage": false,
+      "imageHotelNo": null,
+      "imageHotelName": null,
+      "matchedBy": null,
+      "affiliateHttp": 200,
+      "affiliateProviders": [],
+      "affiliateCount": 0
+    },
+    {
+      "id": "stage-001-5",
+      "name": "東横INN品川青物横丁駅",
+      "prefecture": "東京都",
+      "station": "青物横丁",
+      "imageHttp": 200,
+      "imageStatus": "matched",
+      "hasImage": true,
+      "imageHotelNo": "108390",
+      "imageHotelName": "東横ＩＮＮ品川青物横丁駅",
+      "matchedBy": "exactName",
+      "affiliateHttp": 200,
+      "affiliateProviders": [
+        "楽天トラベル"
+      ],
+      "affiliateCount": 1
+    },
+    {
+      "id": "stage-002-1",
+      "name": "アワーズイン阪急",
+      "prefecture": "東京都",
+      "station": "大井町",
+      "imageHttp": 200,
+      "imageStatus": "matched",
+      "hasImage": true,
+      "imageHotelNo": "128577",
+      "imageHotelName": "アワーズイン阪急",
+      "matchedBy": "exactName",
+      "affiliateHttp": 200,
+      "affiliateProviders": [
+        "楽天トラベル"
+      ],
+      "affiliateCount": 1
+    },
+    {
+      "id": "stage-002-2",
+      "name": "ヴィアイン品川大井町",
+      "prefecture": "東京都",
+      "station": "大井町",
+      "imageHttp": 404,
+      "imageStatus": "not_found",
+      "hasImage": false,
+      "imageHotelNo": null,
+      "imageHotelName": null,
+      "matchedBy": null,
+      "affiliateHttp": 200,
+      "affiliateProviders": [],
+      "affiliateCount": 0
+    },
+    {
+      "id": "stage-002-3",
+      "name": "ホテルマイステイズプレミア大森",
+      "prefecture": "東京都",
+      "station": "大森",
+      "imageHttp": 200,
+      "imageStatus": "matched",
+      "hasImage": true,
+      "imageHotelNo": "715",
+      "imageHotelName": "ホテルマイステイズプレミア大森",
+      "matchedBy": "exactName",
+      "affiliateHttp": 200,
+      "affiliateProviders": [
+        "楽天トラベル"
+      ],
+      "affiliateCount": 1
+    },
+    {
+      "id": "stage-003-1",
+      "name": "日本青年館ホテル",
+      "prefecture": "東京都",
+      "station": "外苑前・国立競技場",
+      "imageHttp": 200,
+      "imageStatus": "matched",
+      "hasImage": true,
+      "imageHotelNo": "163169",
+      "imageHotelName": "日本青年館ホテル",
+      "matchedBy": "exactName",
+      "affiliateHttp": 200,
+      "affiliateProviders": [
+        "楽天トラベル"
+      ],
+      "affiliateCount": 1
+    },
+    {
+      "id": "stage-003-2",
+      "name": "東急ステイ青山プレミア",
+      "prefecture": "東京都",
+      "station": "外苑前",
+      "imageHttp": 200,
+      "imageStatus": "matched",
+      "hasImage": true,
+      "imageHotelNo": "70328",
+      "imageHotelName": "東急ステイ青山プレミア",
+      "matchedBy": "exactName",
+      "affiliateHttp": 200,
+      "affiliateProviders": [
+        "楽天トラベル"
+      ],
+      "affiliateCount": 1
+    },
+    {
+      "id": "stage-003-3",
+      "name": "ホテルウィングインターナショナルプレミアム東京四谷",
+      "prefecture": "東京都",
+      "station": "四谷三丁目",
+      "imageHttp": 502,
+      "imageStatus": 502,
+      "hasImage": false,
+      "imageHotelNo": null,
+      "imageHotelName": null,
+      "matchedBy": null,
+      "affiliateHttp": 200,
+      "affiliateProviders": [],
+      "affiliateCount": 0
+    },
+    {
+      "id": "stage-003-4",
+      "name": "ホテルアジア会館",
+      "prefecture": "東京都",
+      "station": "青山一丁目・乃木坂",
+      "imageHttp": 200,
+      "imageStatus": "matched",
+      "hasImage": true,
+      "imageHotelNo": "9580",
+      "imageHotelName": "ホテルアジア会館",
+      "matchedBy": "exactName",
+      "affiliateHttp": 200,
+      "affiliateProviders": [
+        "楽天トラベル"
+      ],
+      "affiliateCount": 1
+    },
+    {
+      "id": "stage-003-5",
+      "name": "the b 赤坂",
+      "prefecture": "東京都",
+      "station": "赤坂",
+      "imageHttp": 404,
+      "imageStatus": "not_found",
+      "hasImage": false,
+      "imageHotelNo": null,
+      "imageHotelName": null,
+      "matchedBy": null,
+      "affiliateHttp": 200,
+      "affiliateProviders": [],
+      "affiliateCount": 0
+    },
+    {
+      "id": "stage-004-1",
+      "name": "ホテルグランドシティ",
+      "prefecture": "東京都",
+      "station": "池袋東口",
+      "imageHttp": 200,
+      "imageStatus": "matched",
+      "hasImage": true,
+      "imageHotelNo": "1128",
+      "imageHotelName": "ホテルグランドシティ",
+      "matchedBy": "exactName",
+      "affiliateHttp": 200,
+      "affiliateProviders": [
+        "楽天トラベル"
+      ],
+      "affiliateCount": 1
+    },
+    {
+      "id": "stage-004-2",
+      "name": "ホテルリソル池袋",
+      "prefecture": "東京都",
+      "station": "東池袋・池袋",
+      "imageHttp": 200,
+      "imageStatus": "matched",
+      "hasImage": true,
+      "imageHotelNo": "78178",
+      "imageHotelName": "ホテルリソル池袋",
+      "matchedBy": "exactName",
+      "affiliateHttp": 200,
+      "affiliateProviders": [
+        "楽天トラベル"
+      ],
+      "affiliateCount": 1
+    },
+    {
+      "id": "stage-004-3",
+      "name": "京王プレッソイン池袋",
+      "prefecture": "東京都",
+      "station": "東池袋・池袋",
+      "imageHttp": 200,
+      "imageStatus": "matched",
+      "hasImage": true,
+      "imageHotelNo": "27972",
+      "imageHotelName": "京王プレッソイン池袋",
+      "matchedBy": "exactName",
+      "affiliateHttp": 200,
+      "affiliateProviders": [
+        "楽天トラベル"
+      ],
+      "affiliateCount": 1
+    },
+    {
+      "id": "stage-004-4",
+      "name": "DEL style 池袋東口 by Daiwa Roynet Hotel",
+      "prefecture": "東京都",
+      "station": "池袋東口",
+      "imageHttp": 200,
+      "imageStatus": "matched",
+      "hasImage": true,
+      "imageHotelNo": "181677",
+      "imageHotelName": "ＤＥＬ　ｓｔｙｌｅ　池袋東口　ｂｙ　Ｄａｉｗａ　Ｒｏｙｎｅｔ　Ｈｏｔｅｌ",
+      "matchedBy": "exactName",
+      "affiliateHttp": 200,
+      "affiliateProviders": [
+        "楽天トラベル"
+      ],
+      "affiliateCount": 1
+    }
+  ]
+}
