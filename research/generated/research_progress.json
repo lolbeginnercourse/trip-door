@@ -4,17 +4,17 @@
   "remaining_count": 0,
   "max_research_no": 750,
   "status_counts": {
-    "verified": 286,
-    "needs_review": 407,
-    "partial": 57
+    "verified": 565,
+    "needs_review": 115,
+    "partial": 70
   },
   "warning_counts": {
-    "venue_access_unverified": 345,
-    "transit_missing_station": 345,
-    "hotel_walk_unverified": 333,
-    "hotel_station_differs_from_existing": 68,
-    "transit_parse_failed": 54
+    "hotel_station_differs_from_existing": 74,
+    "transit_parse_failed": 63,
+    "venue_access_unverified": 51,
+    "transit_missing_station": 51,
+    "hotel_walk_unverified": 45
   },
   "complete": true,
-  "updated_at": "2026-08-07T20:34:51+09:00"
+  "updated_at": "2026-08-07T21:02:00+09:00"
 }

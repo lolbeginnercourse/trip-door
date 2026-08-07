@@ -2,19 +2,19 @@
   "target_count": 750,
   "shard_file_count": 10,
   "patch_rows_read": 750,
-  "changed_rows": 750,
+  "changed_rows": 740,
   "before_status_counts": {
-    "verified": 10,
-    "needs_review": 725,
-    "partial": 15
+    "verified": 286,
+    "needs_review": 407,
+    "partial": 57
   },
   "after_status_counts": {
-    "verified": 115,
-    "needs_review": 617,
-    "partial": 18
+    "verified": 398,
+    "needs_review": 322,
+    "partial": 30
   },
-  "upgraded_to_verified": 105,
-  "upgraded_needs_review_to_partial": 13,
-  "remaining_needs_review": 617,
-  "merged_at": "2026-08-07T20:28:56+09:00"
+  "upgraded_to_verified": 112,
+  "upgraded_needs_review_to_partial": 9,
+  "remaining_needs_review": 322,
+  "merged_at": "2026-08-07T20:55:43+09:00"
 }
