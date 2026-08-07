@@ -12,7 +12,7 @@
 
   appendStylesheet("assets/css/top-refresh.css?v=20260806-1", "top-refresh-style");
   appendStylesheet("assets/css/finder-single-select.css?v=20260806-1", "finder-two-step-style");
-  appendStylesheet("assets/css/hotel-detail.css?v=20260808-1", "hotel-detail-style");
+  appendStylesheet("assets/css/hotel-detail.css?v=20260808-2", "hotel-detail-style");
 
   const PREFECTURE_GROUPS = [
     ["主要遠征エリア", ["東京都", "大阪府", "神奈川県", "愛知県", "千葉県", "埼玉県", "兵庫県", "福岡県"]],
@@ -471,13 +471,13 @@
   normalizeVenueUrlParameter();
 
   const core = document.createElement("script");
-  core.src = "assets/js/app-core.js?v=20260806-1";
+  core.src = "assets/js/app-core.js?v=20260808-2";
   core.async = false;
   core.onload = () => {
     applyTopRefresh();
     if (document.querySelector("script[data-hotel-detail-script]")) return;
     const detail = document.createElement("script");
-    detail.src = "assets/js/hotel-detail.js?v=20260808-1";
+    detail.src = "assets/js/hotel-detail.js?v=20260808-2";
     detail.async = false;
     detail.dataset.hotelDetailScript = "";
     detail.onerror = () => console.error("Hotel detail enhancement could not be loaded.");
