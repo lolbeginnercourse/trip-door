@@ -1,8 +1,8 @@
 {
   "schemaVersion": 3,
   "complete": true,
-  "phase": "first-pass",
-  "generatedAt": "2026-08-06T21:59:16.209Z",
+  "phase": "retry",
+  "generatedAt": "2026-08-07T00:08:26.090Z",
   "shardIndex": 27,
   "shardSize": 25,
   "start": 675,
@@ -10,9 +10,9 @@
   "totalRecords": 1256,
   "totalUnique": 750,
   "processedUnique": 25,
-  "retriedUnique": 0,
-  "skippedMatchedUnique": 0,
-  "retryAttemptsPerRequest": 1,
+  "retriedUnique": 2,
+  "skippedMatchedUnique": 23,
+  "retryAttemptsPerRequest": 5,
   "results": [
     {
       "requestKey": "name:jrホテルクレメント高松|香川県|高松",
@@ -448,7 +448,14 @@
         "rawExcerpt": "",
         "attemptsUsed": 1
       },
-      "causeCode": "not_found_by_current_rakuten_search"
+      "causeCode": "not_found_by_current_rakuten_search",
+      "retry": {
+        "attempted": true,
+        "attemptedAt": "2026-08-07T00:08:22.171Z",
+        "previousCauseCode": "not_found_by_current_rakuten_search",
+        "previousHasImage": false,
+        "attemptsPerRequest": 5
+      }
     },
     {
       "requestKey": "name:ザ クラウンパレス新阪急高知|高知県|高知",
@@ -751,7 +758,14 @@
         "rawExcerpt": "",
         "attemptsUsed": 1
       },
-      "causeCode": "not_found_by_current_rakuten_search"
+      "causeCode": "not_found_by_current_rakuten_search",
+      "retry": {
+        "attempted": true,
+        "attemptedAt": "2026-08-07T00:08:26.090Z",
+        "previousCauseCode": "not_found_by_current_rakuten_search",
+        "previousHasImage": false,
+        "attemptsPerRequest": 5
+      }
     }
   ]
 }
