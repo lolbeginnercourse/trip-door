@@ -1,10 +1,14 @@
 "use strict";
 
+const { findHotelOverride } = require("./_hotel-image-overrides");
+
 const RAKUTEN_KEYWORD_ENDPOINT = "https://openapi.rakuten.co.jp/engine/api/Travel/KeywordHotelSearch/20260731";
 const RAKUTEN_SIMPLE_ENDPOINT = "https://openapi.rakuten.co.jp/engine/api/Travel/SimpleHotelSearch/20260731";
 const SITE_ORIGIN = "https://mainitiworakunisuru.com";
 const CACHE_TTL_MS = 7 * 24 * 60 * 60 * 1000;
+const NEGATIVE_CACHE_TTL_MS = 6 * 60 * 60 * 1000;
 const REQUEST_TIMEOUT_MS = 8000;
+const UPSTREAM_ATTEMPTS = 2;
 const cache = new Map();
 const requests = new Map();
 
@@ -37,18 +41,17 @@ function compactText(value) {
     .normalize("NFKC")
     .toLowerCase()
     .replace(/&/g, "and")
-    .replace(/[\s・･\.·,，、\-‐‑–—―ー_()（）【】\[\]「」『』〈〉《》<>]/g, "");
-}
-
-function strictComparableName(value) {
-  return compactText(value);
+    .replace(/びわ湖/g, "琵琶湖")
+    .replace(/[\s・･\.·,，、!！'’`´\-‐‑–—―ー_()（）【】\[\]「」『』〈〉《》<>]/g, "");
 }
 
 function relaxedComparableName(value) {
   return compactText(value)
     .replace(/ホテル/g, "")
     .replace(/hotel/g, "")
-    .replace(/byihg/g, "");
+    .replace(/byihg/g, "")
+    .replace(/プレミアム/g, "")
+    .replace(/プレミア/g, "");
 }
 
 function rawLocationParts(value) {
@@ -60,17 +63,12 @@ function rawLocationParts(value) {
 }
 
 function locationTokens(value) {
-  const tokens = new Set();
-  for (const part of rawLocationParts(value)) {
-    const compact = compactText(part);
-    if (compact.length >= 2) tokens.add(compact);
-  }
-  return [...tokens];
+  return [...new Set(rawLocationParts(value).map(compactText).filter(token => token.length >= 2))];
 }
 
 function containsToken(haystack, tokens) {
   const compact = compactText(haystack);
-  return tokens.some(token => token.length >= 2 && compact.includes(token));
+  return tokens.some(token => compact.includes(token));
 }
 
 function safeImageUrl(value) {
@@ -102,19 +100,32 @@ function rateLimited(req) {
   return current.count > 90;
 }
 
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
 async function fetchJson(url, headers = {}) {
-  const controller = new AbortController();
-  const timeout = setTimeout(() => controller.abort(), REQUEST_TIMEOUT_MS);
-  try {
-    const response = await fetch(url, {
-      headers: { Accept: "application/json", ...headers },
-      signal: controller.signal
-    });
-    if (!response.ok) throw new Error(`upstream_${response.status}`);
-    return response.json();
-  } finally {
-    clearTimeout(timeout);
+  let lastError = null;
+  for (let attempt = 1; attempt <= UPSTREAM_ATTEMPTS; attempt += 1) {
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), REQUEST_TIMEOUT_MS);
+    try {
+      const response = await fetch(url, {
+        headers: { Accept: "application/json", ...headers },
+        signal: controller.signal
+      });
+      if (response.ok) return response.json();
+      lastError = new Error(`upstream_${response.status}`);
+      if (![429, 500, 502, 503, 504].includes(response.status) || attempt === UPSTREAM_ATTEMPTS) throw lastError;
+    } catch (error) {
+      lastError = error;
+      if (attempt === UPSTREAM_ATTEMPTS) throw error;
+    } finally {
+      clearTimeout(timeout);
+    }
+    await sleep(350 * attempt);
   }
+  throw lastError || new Error("upstream_failed");
 }
 
 function rakutenBasicInfo(entry) {
@@ -142,7 +153,7 @@ function locationScore(candidate, context) {
   let score = 0;
 
   if (context.prefecture && compactText(address).includes(compactText(context.prefecture))) {
-    score += 4;
+    score += 6;
     evidence.push("prefecture");
   }
 
@@ -167,7 +178,7 @@ function locationScore(candidate, context) {
   return { score, evidence };
 }
 
-function selectByLocation(candidates, context, minimumScore) {
+function selectByLocation(candidates, context, minimumScore = 4) {
   const ranked = candidates
     .map(candidate => ({ candidate, ...locationScore(candidate, context) }))
     .sort((a, b) => b.score - a.score);
@@ -194,38 +205,44 @@ function imageFromMatch(match, matchedBy, evidence = []) {
   };
 }
 
+function expectedNames(context) {
+  return [...new Set([context.name, ...(context.expectedNames || [])].filter(Boolean))];
+}
+
 function matchCandidates(candidates, context) {
   const uniqueCandidates = deduplicateCandidates(candidates);
-  const strictExpected = strictComparableName(context.name);
-  const strictMatches = uniqueCandidates.filter(item => strictExpected && strictComparableName(item.hotelName) === strictExpected);
+  const names = expectedNames(context);
+  const strictExpected = new Set(names.map(compactText).filter(Boolean));
+  const strictMatches = uniqueCandidates.filter(item => strictExpected.has(compactText(item.hotelName)));
+
   if (strictMatches.length === 1) {
     return { status: "matched", image: imageFromMatch(strictMatches[0], "exactName", []) };
   }
   if (strictMatches.length > 1) {
-    const selected = selectByLocation(strictMatches, context, 4);
+    const selected = selectByLocation(strictMatches, context, context.prefecture ? 6 : 4);
     if (!selected) return { status: "ambiguous", image: null };
     return { status: "matched", image: imageFromMatch(selected.candidate, "exactNameLocation", selected.evidence) };
   }
 
-  const relaxedExpected = relaxedComparableName(context.name);
-  const relaxedMatches = uniqueCandidates.filter(item => relaxedExpected && relaxedComparableName(item.hotelName) === relaxedExpected);
-  if (relaxedMatches.length) {
-    const selected = selectByLocation(relaxedMatches, context, 4);
-    if (selected) {
-      return { status: "matched", image: imageFromMatch(selected.candidate, "normalizedNameLocation", selected.evidence) };
-    }
+  const relaxedExpected = new Set(names.map(relaxedComparableName).filter(value => value.length >= 3));
+  const relaxedMatches = uniqueCandidates.filter(item => relaxedExpected.has(relaxedComparableName(item.hotelName)));
+  if (relaxedMatches.length === 1) {
+    const selected = selectByLocation(relaxedMatches, context, context.prefecture ? 6 : 0) || { candidate: relaxedMatches[0], evidence: [] };
+    return { status: "matched", image: imageFromMatch(selected.candidate, "normalizedNameLocation", selected.evidence) };
+  }
+  if (relaxedMatches.length > 1) {
+    const selected = selectByLocation(relaxedMatches, context, context.prefecture ? 6 : 4);
+    if (selected) return { status: "matched", image: imageFromMatch(selected.candidate, "normalizedNameLocation", selected.evidence) };
   }
 
+  const strictList = [...strictExpected].filter(value => value.length >= 5);
   const containedMatches = uniqueCandidates.filter(item => {
-    const candidateName = strictComparableName(item.hotelName);
-    return strictExpected.length >= 5 && candidateName.length >= 5
-      && (candidateName.includes(strictExpected) || strictExpected.includes(candidateName));
+    const candidateName = compactText(item.hotelName);
+    return strictList.some(expected => candidateName.length >= 5 && (candidateName.includes(expected) || expected.includes(candidateName)));
   });
   if (containedMatches.length) {
-    const selected = selectByLocation(containedMatches, context, 4);
-    if (selected) {
-      return { status: "matched", image: imageFromMatch(selected.candidate, "containedNameLocation", selected.evidence) };
-    }
+    const selected = selectByLocation(containedMatches, context, context.prefecture ? 6 : 4);
+    if (selected) return { status: "matched", image: imageFromMatch(selected.candidate, "containedNameLocation", selected.evidence) };
     return { status: containedMatches.length > 1 ? "ambiguous" : "location_unverified", image: null };
   }
 
@@ -261,7 +278,28 @@ async function searchHotels(keyword, credentials) {
   return (Array.isArray(data.hotels) ? data.hotels : []).map(rakutenBasicInfo).filter(Boolean);
 }
 
-async function findImage(context) {
+function buildSearchQueries(context, override) {
+  const original = String(context.name || "").normalize("NFKC").trim();
+  const variants = [original, ...(override?.expectedNames || [])];
+  if (original) {
+    variants.push(
+      original.replace(/&/g, "＆"),
+      original.replace(/[〈〉<>【】\[\]「」『』()（）]/g, " "),
+      original.replace(/[!！'’`´]/g, " "),
+      original.replace(/[\-‐‑–—―ー]/g, " "),
+      original.replace(/\s+/g, ""),
+      original.replace(/びわ湖/g, "琵琶湖"),
+      original.replace(/東横INN/gi, "東横イン"),
+      original.replace(/The OneFive/gi, "ワンファイブ"),
+      original.replace(/X\s*wave/gi, "クロスウェーブ"),
+      original.replace(/ホテルウィングインターナショナル/g, "ホテルウィング"),
+      original.replace(/JR東日本ホテルメッツ\s*プレミア/gi, "JR東日本ホテルメッツ")
+    );
+  }
+  return [...new Set(variants.map(value => String(value || "").replace(/\s+/g, " ").trim()).filter(value => value.length >= 2))].slice(0, 12);
+}
+
+async function findImage(inputContext) {
   const credentials = {
     applicationId: process.env.RAKUTEN_APPLICATION_ID,
     accessKey: process.env.RAKUTEN_ACCESS_KEY,
@@ -269,18 +307,25 @@ async function findImage(context) {
   };
   if (!credentials.applicationId || !credentials.accessKey) return { status: "not_configured", image: null };
 
+  const override = findHotelOverride(inputContext);
+  const context = {
+    ...inputContext,
+    hotelNo: inputContext.hotelNo || override?.hotelNo || null,
+    expectedNames: override?.expectedNames || []
+  };
+
   if (context.hotelNo) {
     const candidates = await fetchHotelByNumber(context.hotelNo, credentials);
     const match = candidates.find(item => String(item.hotelNo) === context.hotelNo);
-    return { status: match ? "matched" : "not_found", image: match ? imageFromMatch(match, "hotelNo", ["hotelNo"]) : null };
+    return {
+      status: match ? "matched" : "not_found",
+      image: match ? imageFromMatch(match, override ? "hotelNoOverride" : "hotelNo", [override ? "override" : "hotelNo"]) : null
+    };
   }
 
   const allCandidates = [];
   let successfulSearches = 0;
-  const queries = [context.name, ...rawLocationParts(context.station).slice(0, 2)];
-  const uniqueQueries = [...new Set(queries.filter(Boolean))];
-
-  for (const query of uniqueQueries) {
+  for (const query of buildSearchQueries(context, override)) {
     try {
       const candidates = await searchHotels(query, credentials);
       successfulSearches += 1;
@@ -288,7 +333,7 @@ async function findImage(context) {
       const currentMatch = matchCandidates(allCandidates, context);
       if (currentMatch.image) return currentMatch;
     } catch {
-      // Try the next conservative query. A result is returned only after strict local matching.
+      // Continue with the next conservative name variant.
     }
   }
 
@@ -322,7 +367,7 @@ module.exports = async function handler(req, res) {
     context.prefecture || "",
     context.station || "",
     context.area || "",
-    "fallback-v2"
+    "resolution-v3"
   ]);
   const cached = cache.get(cacheKey);
   if (cached?.expiresAt > Date.now()) {
@@ -331,16 +376,19 @@ module.exports = async function handler(req, res) {
 
   try {
     const result = await findImage(context);
-    if (result.status === "not_configured") {
-      return sendJson(res, 503, { image: null, status: result.status });
-    }
+    if (result.status === "not_configured") return sendJson(res, 503, { image: null, status: result.status });
     const found = Boolean(result.image);
     const statusCode = found ? 200 : 404;
     const cacheControl = found
       ? "public, s-maxage=604800, stale-while-revalidate=2592000"
       : "public, s-maxage=21600, stale-while-revalidate=86400";
     const body = { image: result.image, status: result.status };
-    cache.set(cacheKey, { body, statusCode, cacheControl, expiresAt: Date.now() + CACHE_TTL_MS });
+    cache.set(cacheKey, {
+      body,
+      statusCode,
+      cacheControl,
+      expiresAt: Date.now() + (found ? CACHE_TTL_MS : NEGATIVE_CACHE_TTL_MS)
+    });
     while (cache.size > 2000) cache.delete(cache.keys().next().value);
     return sendJson(res, statusCode, body, cacheControl);
   } catch {
