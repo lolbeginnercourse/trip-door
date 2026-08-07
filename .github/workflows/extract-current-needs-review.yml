@@ -1,0 +1,56 @@
+name: Extract current remaining hotel research rows
+
+on:
+  push:
+    branches:
+      - research/hotel-details-750-20260807
+    paths:
+      - .github/workflows/extract-current-needs-review.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research/hotel-details-750-20260807
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Extract current needs_review rows
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          src=Path('research/generated/hotel_detail_research_750.jsonl')
+          rows=[json.loads(x) for x in src.read_text(encoding='utf-8').splitlines() if x.strip()]
+          out=[]
+          for r in rows:
+              if r.get('verification_status')=='needs_review':
+                  out.append({
+                    'id':r.get('id'),'research_no':r.get('research_no'),'hotel_name':r.get('hotel_name'),'venue_name':r.get('venue_name'),
+                    'hotel_nearest_station':r.get('hotel_nearest_station'),'venue_nearest_station':r.get('venue_nearest_station'),
+                    'hotel_to_station_walk_min':r.get('hotel_to_station_walk_min'),'venue_station_to_venue_walk_min':r.get('venue_station_to_venue_walk_min'),
+                    'station_to_station_min':r.get('station_to_station_min'),'transfer_count':r.get('transfer_count'),
+                    'direct_to_venue_mode':r.get('direct_to_venue_mode'),'direct_to_venue_min':r.get('direct_to_venue_min'),
+                    'hotel_source_url':r.get('hotel_source_url'),'venue_source_url':r.get('venue_source_url'),'transit_source_url':r.get('transit_source_url'),
+                    'warnings':r.get('warnings') or []
+                  })
+          Path('research/generated/current_needs_review.json').write_text(json.dumps(out,ensure_ascii=False,indent=2),encoding='utf-8')
+          Path('research/generated/current_needs_review.tsv').write_text('\n'.join('\t'.join(str(x.get(k) or '') for k in ['id','research_no','hotel_name','venue_name','hotel_nearest_station','venue_nearest_station']) for x in out)+'\n',encoding='utf-8')
+          print('remaining',len(out))
+          PY
+      - name: Commit extracted rows
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f research/generated/current_needs_review.json research/generated/current_needs_review.tsv
+          if ! git diff --cached --quiet; then
+            git commit -m "Extract current needs_review hotel rows"
+            git push origin HEAD:research/hotel-details-750-20260807
+          fi
