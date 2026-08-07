@@ -1,0 +1,14 @@
+{
+  "target_count": 750,
+  "processed_count": 25,
+  "batch_start": 1,
+  "batch_end": 25,
+  "hotel_cache_count": 19,
+  "venue_cache_count": 9,
+  "status_counts": {
+    "verified": 3,
+    "partial": 3,
+    "needs_review": 19
+  },
+  "updated_at": "2026-08-07T16:01:14+09:00"
+}
