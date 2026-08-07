@@ -2,7 +2,7 @@
   "schemaVersion": 3,
   "complete": true,
   "phase": "retry",
-  "generatedAt": "2026-08-07T00:03:25.713Z",
+  "generatedAt": "2026-08-07T07:12:55.801Z",
   "shardIndex": 24,
   "shardSize": 25,
   "start": 600,
@@ -29,8 +29,8 @@
       ],
       "duplicateGroupSize": 2,
       "image": {
-        "httpStatus": 404,
-        "status": "not_found",
+        "httpStatus": 502,
+        "status": "502",
         "hasImage": false,
         "hotelNo": "",
         "hotelName": "",
@@ -38,7 +38,7 @@
         "matchEvidence": [],
         "transportError": "",
         "rawExcerpt": "",
-        "attemptsUsed": 1
+        "attemptsUsed": 5
       },
       "affiliate": {
         "httpStatus": 200,
@@ -49,10 +49,10 @@
         "rawExcerpt": "",
         "attemptsUsed": 1
       },
-      "causeCode": "not_found_by_current_rakuten_search",
+      "causeCode": "temporary_upstream_error",
       "retry": {
         "attempted": true,
-        "attemptedAt": "2026-08-06T23:58:03.011Z",
+        "attemptedAt": "2026-08-07T07:04:33.273Z",
         "previousCauseCode": "not_found_by_current_rakuten_search",
         "previousHasImage": false,
         "attemptsPerRequest": 5
@@ -73,8 +73,8 @@
       ],
       "duplicateGroupSize": 2,
       "image": {
-        "httpStatus": 404,
-        "status": "not_found",
+        "httpStatus": 502,
+        "status": "502",
         "hasImage": false,
         "hotelNo": "",
         "hotelName": "",
@@ -82,7 +82,7 @@
         "matchEvidence": [],
         "transportError": "",
         "rawExcerpt": "",
-        "attemptsUsed": 2
+        "attemptsUsed": 5
       },
       "affiliate": {
         "httpStatus": 200,
@@ -93,10 +93,10 @@
         "rawExcerpt": "",
         "attemptsUsed": 1
       },
-      "causeCode": "not_found_by_current_rakuten_search",
+      "causeCode": "temporary_upstream_error",
       "retry": {
         "attempted": true,
-        "attemptedAt": "2026-08-06T23:59:09.565Z",
+        "attemptedAt": "2026-08-07T07:08:43.821Z",
         "previousCauseCode": "not_found_by_current_rakuten_search",
         "previousHasImage": false,
         "attemptsPerRequest": 5
@@ -146,8 +146,8 @@
       ],
       "duplicateGroupSize": 2,
       "image": {
-        "httpStatus": 404,
-        "status": "not_found",
+        "httpStatus": 502,
+        "status": "502",
         "hasImage": false,
         "hotelNo": "",
         "hotelName": "",
@@ -155,7 +155,7 @@
         "matchEvidence": [],
         "transportError": "",
         "rawExcerpt": "",
-        "attemptsUsed": 1
+        "attemptsUsed": 5
       },
       "affiliate": {
         "httpStatus": 200,
@@ -166,10 +166,10 @@
         "rawExcerpt": "",
         "attemptsUsed": 1
       },
-      "causeCode": "not_found_by_current_rakuten_search",
+      "causeCode": "temporary_upstream_error",
       "retry": {
         "attempted": true,
-        "attemptedAt": "2026-08-06T23:59:14.238Z",
+        "attemptedAt": "2026-08-07T07:12:54.157Z",
         "previousCauseCode": "not_found_by_current_rakuten_search",
         "previousHasImage": false,
         "attemptsPerRequest": 5
@@ -657,30 +657,24 @@
       ],
       "duplicateGroupSize": 1,
       "image": {
-        "httpStatus": 502,
-        "status": "502",
-        "hasImage": false,
-        "hotelNo": "",
-        "hotelName": "",
-        "matchedBy": "",
-        "matchEvidence": [],
-        "transportError": "",
-        "rawExcerpt": "",
-        "attemptsUsed": 5
-      },
-      "affiliate": {
         "httpStatus": 200,
-        "hasRakuten": false,
-        "rakutenHotelNo": "",
-        "providers": [],
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "4843",
+        "hotelName": "琵琶湖ホテル",
+        "matchedBy": "hotelNoOverride",
+        "matchEvidence": [
+          "override"
+        ],
         "transportError": "",
         "rawExcerpt": "",
         "attemptsUsed": 1
       },
-      "causeCode": "temporary_upstream_error",
+      "affiliate": null,
+      "causeCode": "matched",
       "retry": {
         "attempted": true,
-        "attemptedAt": "2026-08-07T00:03:25.713Z",
+        "attemptedAt": "2026-08-07T07:12:55.801Z",
         "previousCauseCode": "temporary_upstream_error",
         "previousHasImage": false,
         "attemptsPerRequest": 5
