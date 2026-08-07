@@ -1,0 +1,45 @@
+name: Extract current unresolved hotel routes
+
+on:
+  push:
+    branches:
+      - research/hotel-details-750-20260807
+    paths:
+      - .github/workflows/extract-current-unresolved-10.yml
+
+permissions:
+  contents: write
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research/hotel-details-750-20260807
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Extract first ten unresolved rows
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          src = Path('research/generated/hotel_detail_research_750.jsonl')
+          rows = [json.loads(x) for x in src.read_text(encoding='utf-8').splitlines() if x.strip()]
+          unresolved = [r for r in rows if r.get('verification_status') == 'needs_review' and 'transit_parse_failed' in (r.get('warnings') or [])]
+          out = unresolved[:10]
+          Path('research/generated/current_unresolved_10.json').write_text(json.dumps(out, ensure_ascii=False, indent=2), encoding='utf-8')
+          Path('research/generated/current_unresolved_count.json').write_text(json.dumps({'count': len(unresolved)}, ensure_ascii=False, indent=2), encoding='utf-8')
+          print('unresolved', len(unresolved), 'extracted', len(out))
+          PY
+      - name: Commit extraction
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f research/generated/current_unresolved_10.json research/generated/current_unresolved_count.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Extract current unresolved hotel routes"
+            git push origin HEAD:research/hotel-details-750-20260807
+          fi
