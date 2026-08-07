@@ -1,0 +1,205 @@
+{
+  "remaining_count": 26,
+  "batch": [
+    {
+      "research_no": 254,
+      "id": "stage-085-2",
+      "hotel_name": "ホテルニューヨコスカ",
+      "venue_name": "横須賀芸術劇場",
+      "prefecture": "神奈川県",
+      "area": "汐入・横須賀中央",
+      "hotel_nearest_station": "横須賀中央",
+      "hotel_to_station_walk_min": 5,
+      "hotel_source_url": "https://map.apahotel.com/map/160",
+      "venue_nearest_station": "京浜急行汐入",
+      "venue_station_to_venue_walk_min": 1,
+      "venue_source_url": "https://www.yokosuka-arts.or.jp/information/access/",
+      "station_to_station_min": null,
+      "transfer_count": null,
+      "access_display": "横須賀中央駅まで徒歩5分",
+      "warnings": [
+        "transit_parse_failed"
+      ]
+    },
+    {
+      "research_no": 255,
+      "id": "stage-085-3",
+      "hotel_name": "セントラルホテル横須賀",
+      "venue_name": "横須賀芸術劇場",
+      "prefecture": "神奈川県",
+      "area": "汐入・横須賀中央",
+      "hotel_nearest_station": "横須賀中央",
+      "hotel_to_station_walk_min": 1,
+      "hotel_source_url": "https://www.instagram.com/central_hotel_yokosuka/",
+      "venue_nearest_station": "京浜急行汐入",
+      "venue_station_to_venue_walk_min": 1,
+      "venue_source_url": "https://www.yokosuka-arts.or.jp/information/access/",
+      "station_to_station_min": null,
+      "transfer_count": null,
+      "access_display": "横須賀中央駅まで徒歩1分",
+      "warnings": [
+        "transit_parse_failed"
+      ]
+    },
+    {
+      "research_no": 320,
+      "id": "stage-107-2",
+      "hotel_name": "JR東日本ホテルメッツ 浦和",
+      "venue_name": "さいたま市文化センター 大ホール",
+      "prefecture": "埼玉県",
+      "area": "南浦和",
+      "hotel_nearest_station": "浦和",
+      "hotel_to_station_walk_min": 1,
+      "hotel_source_url": "https://www.hotelmets.jp/urawa/",
+      "venue_nearest_station": "路線",
+      "venue_station_to_venue_walk_min": 7,
+      "venue_source_url": "https://www.mapion.co.jp/phonebook/M04101/11108/0000UWB1_001pa/",
+      "station_to_station_min": null,
+      "transfer_count": null,
+      "access_display": "浦和駅まで徒歩1分",
+      "warnings": [
+        "transit_parse_failed"
+      ]
+    },
+    {
+      "research_no": 321,
+      "id": "stage-107-3",
+      "hotel_name": "浦和ワシントンホテル",
+      "venue_name": "さいたま市文化センター 大ホール",
+      "prefecture": "埼玉県",
+      "area": "南浦和",
+      "hotel_nearest_station": "浦和",
+      "hotel_to_station_walk_min": 3,
+      "hotel_source_url": "https://washington-hotels.jp/urawa/page/notice.html#:~:text=%E6%B5%A6%E5%92%8C%E3%83%AF%E3%82%B7%E3%83%B3%E3%83%88%E3%83%B3%E3%83%9B%E3%83%86%E3%83%AB%E3%80%90%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88,%E9%A7%85%E8%A5%BF%E5%8F%A3%20%E5%BE%92%E6%AD%A93%E5%88%86",
+      "venue_nearest_station": "路線",
+      "venue_station_to_venue_walk_min": 7,
+      "venue_source_url": "https://www.mapion.co.jp/phonebook/M04101/11108/0000UWB1_001pa/",
+      "station_to_station_min": null,
+      "transfer_count": null,
+      "access_display": "浦和駅まで徒歩3分",
+      "warnings": [
+        "transit_parse_failed"
+      ]
+    },
+    {
+      "research_no": 331,
+      "id": "stage-111-1",
+      "hotel_name": "東横INN北戸田駅東口",
+      "venue_name": "戸田市文化会館",
+      "prefecture": "埼玉県",
+      "area": "戸田",
+      "hotel_nearest_station": "北戸田",
+      "hotel_to_station_walk_min": 2,
+      "hotel_source_url": "https://www.toyoko-inn.com/search/detail/00343/",
+      "venue_nearest_station": "各",
+      "venue_station_to_venue_walk_min": 10,
+      "venue_source_url": "https://toda-zaidan.org/bunkakaikan/shisetsu_bk/access_bk/",
+      "station_to_station_min": null,
+      "transfer_count": null,
+      "access_display": "北戸田駅まで徒歩2分",
+      "warnings": [
+        "transit_parse_failed"
+      ]
+    },
+    {
+      "research_no": 376,
+      "id": "stage-126-1",
+      "hotel_name": "JRイン札幌北2条",
+      "venue_name": "札幌文化芸術劇場 hitaru",
+      "prefecture": "北海道",
+      "area": "札幌・大通",
+      "hotel_nearest_station": "札幌・大通",
+      "hotel_to_station_walk_min": 2,
+      "hotel_source_url": "https://www.gutabi.jp/hotel/base/936#:~:text=%E5%9C%B0%E4%B8%8B%E9%89%84%E6%9D%B1%E8%B1%8A%E7%B7%9A%E3%81%AE%E3%81%95%E3%81%A3%E3%81%BD%E3%82%8D,%E3%83%93%E3%82%B8%E3%83%8D%E3%82%B9%E5%88%A9%E7%94%A8%E3%81%AB%E3%82%82%E4%BE%BF%E5%88%A9%EF%BC%81",
+      "venue_nearest_station": "札駅から大通",
+      "venue_station_to_venue_walk_min": 10,
+      "venue_source_url": "https://www.bushikaku.net/expedition/venue/access/060097/",
+      "station_to_station_min": null,
+      "transfer_count": null,
+      "access_display": "札幌・大通駅まで徒歩2分",
+      "warnings": [
+        "transit_parse_failed"
+      ]
+    },
+    {
+      "research_no": 377,
+      "id": "stage-126-2",
+      "hotel_name": "ザ ノット 札幌",
+      "venue_name": "札幌文化芸術劇場 hitaru",
+      "prefecture": "北海道",
+      "area": "札幌・大通",
+      "hotel_nearest_station": "大通・すすきの",
+      "hotel_to_station_walk_min": 5,
+      "hotel_source_url": "https://ja.planetofhotels.com/ri-ben-/zha-huang-shi-/tao-house-di-xia-tie-karatu-bu-yue-30miao-zha-huang-da-tong-susukinoyi-zhi-tong-kong-gang-yaxiao-zun",
+      "venue_nearest_station": "札駅から大通",
+      "venue_station_to_venue_walk_min": 10,
+      "venue_source_url": "https://www.bushikaku.net/expedition/venue/access/060097/",
+      "station_to_station_min": null,
+      "transfer_count": null,
+      "access_display": "大通・すすきの駅まで徒歩5分",
+      "warnings": [
+        "transit_parse_failed"
+      ]
+    },
+    {
+      "research_no": 400,
+      "id": "stage-134-1",
+      "hotel_name": "ANAクラウンプラザホテル釧路",
+      "venue_name": "コーチャンフォー釧路文化ホール 大ホール",
+      "prefecture": "北海道",
+      "area": "釧路",
+      "hotel_nearest_station": "釧路",
+      "hotel_to_station_walk_min": 1,
+      "hotel_source_url": "https://www.anacpkushiro.com/access",
+      "venue_nearest_station": "新富士",
+      "venue_station_to_venue_walk_min": 34,
+      "venue_source_url": "https://www.mapion.co.jp/phonebook/M04101/01206/0000KCRS_001pa/",
+      "station_to_station_min": null,
+      "transfer_count": null,
+      "access_display": "釧路駅まで徒歩1分",
+      "warnings": [
+        "transit_parse_failed"
+      ]
+    },
+    {
+      "research_no": 401,
+      "id": "stage-134-2",
+      "hotel_name": "コンフォートホテル釧路",
+      "venue_name": "コーチャンフォー釧路文化ホール 大ホール",
+      "prefecture": "北海道",
+      "area": "釧路",
+      "hotel_nearest_station": "釧路",
+      "hotel_to_station_walk_min": 2,
+      "hotel_source_url": "https://www.choice-hotels.jp/hotel/kushiro/access/",
+      "venue_nearest_station": "新富士",
+      "venue_station_to_venue_walk_min": 34,
+      "venue_source_url": "https://www.mapion.co.jp/phonebook/M04101/01206/0000KCRS_001pa/",
+      "station_to_station_min": null,
+      "transfer_count": null,
+      "access_display": "釧路駅まで徒歩2分",
+      "warnings": [
+        "transit_parse_failed"
+      ]
+    },
+    {
+      "research_no": 402,
+      "id": "stage-134-3",
+      "hotel_name": "スーパーホテル釧路駅前",
+      "venue_name": "コーチャンフォー釧路文化ホール 大ホール",
+      "prefecture": "北海道",
+      "area": "釧路",
+      "hotel_nearest_station": "釧路",
+      "hotel_to_station_walk_min": 1,
+      "hotel_source_url": "https://www.superhotel.co.jp/s_hotels/kushiroekimae/",
+      "venue_nearest_station": "新富士",
+      "venue_station_to_venue_walk_min": 34,
+      "venue_source_url": "https://www.mapion.co.jp/phonebook/M04101/01206/0000KCRS_001pa/",
+      "station_to_station_min": null,
+      "transfer_count": null,
+      "access_display": "釧路駅まで徒歩1分",
+      "warnings": [
+        "transit_parse_failed"
+      ]
+    }
+  ]
+}
