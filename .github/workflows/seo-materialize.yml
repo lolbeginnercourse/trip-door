@@ -1,0 +1,53 @@
+name: SEO materialize generated pages
+
+on:
+  push:
+    branches:
+      - agent/seo-static-pages
+    paths:
+      - ".github/workflows/seo-materialize.yml"
+      - "assets/data/hotels.json"
+      - "assets/data/seo-venues.json"
+      - "assets/css/seo-pages.css"
+      - "scripts/build-seo-pages.mjs"
+      - "scripts/validate-seo-data.mjs"
+
+permissions:
+  contents: write
+
+jobs:
+  materialize:
+    if: ${{ !contains(github.event.head_commit.message, '[seo-generated]') }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout work branch
+        uses: actions/checkout@v4
+        with:
+          ref: agent/seo-static-pages
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Validate source data
+        run: node scripts/validate-seo-data.mjs
+
+      - name: Generate static SEO pages
+        run: node scripts/build-seo-pages.mjs
+
+      - name: Commit generated outputs once
+        shell: bash
+        run: |
+          git add index.html sitemap.xml stage esports
+          if git diff --cached --quiet; then
+            echo "Generated outputs are already current."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Materialize static SEO pages [seo-generated]"
+          git push origin HEAD:agent/seo-static-pages
