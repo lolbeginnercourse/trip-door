@@ -156,6 +156,20 @@
 
     const badge = el("span", "hd-mode-badge", modeLabel(access.mode));
     card.append(copy, badge);
+
+    const facts = el("div", "hd-access-facts");
+    const addFact = (label, value) => {
+      if (!value) return;
+      const item = el("div", "hd-access-fact");
+      item.append(el("span", "hd-access-fact__label", label), el("strong", "", value));
+      facts.append(item);
+    };
+    if (Number.isFinite(access.hotelWalkMin) && access.hotelStation) addFact(`${access.hotelStation}駅まで`, `徒歩${access.hotelWalkMin}分`);
+    if (Number.isFinite(access.transferCount)) addFact("乗換", `${access.transferCount}回`);
+    if (access.venueStation) addFact("会場最寄り", `${access.venueStation}駅`);
+    if (Number.isFinite(access.venueWalkMin)) addFact("駅から会場", `徒歩${access.venueWalkMin}分`);
+    if (facts.childElementCount) card.append(facts);
+
     if (access.note) card.append(el("p", "hd-access__note", access.note));
     return card;
   };
@@ -330,11 +344,11 @@
     const route = renderRoute(detail);
     if (route) shell.append(route);
 
-    const stay = renderStay(detail);
-    if (stay) shell.append(stay);
-
     const fit = renderFit(detail);
     if (fit) shell.append(fit);
+
+    const stay = renderStay(detail);
+    if (stay) shell.append(stay);
 
     shell.append(renderChecks(detail));
 
