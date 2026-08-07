@@ -1,23 +1,11 @@
 {
-  "target_count": 46,
-  "unique_route_pair_count": 33,
+  "target_count": 36,
+  "unique_route_pair_count": 24,
   "route_pairs": [
-    {
-      "route": "の -> 千代田線・日比谷線・都営三田線日比谷",
-      "ids": [
-        "stage-010-2"
-      ]
-    },
     {
       "route": "三宮・新神戸 -> 山麓",
       "ids": [
         "stage-209-2"
-      ]
-    },
-    {
-      "route": "中野 -> 路線",
-      "ids": [
-        "stage-060-1"
       ]
     },
     {
@@ -33,12 +21,6 @@
       ]
     },
     {
-      "route": "南阿佐ヶ谷 -> 路線",
-      "ids": [
-        "stage-060-3"
-      ]
-    },
-    {
       "route": "呉 -> ◇JR呉",
       "ids": [
         "stage-228-3"
@@ -49,19 +31,6 @@
       "ids": [
         "stage-250-1",
         "stage-250-3"
-      ]
-    },
-    {
-      "route": "大井町 -> 最寄",
-      "ids": [
-        "stage-002-1",
-        "stage-002-2"
-      ]
-    },
-    {
-      "route": "大森 -> 最寄",
-      "ids": [
-        "stage-002-3"
       ]
     },
     {
@@ -81,12 +50,6 @@
       "route": "広島・中区 -> HBGホールから広島",
       "ids": [
         "stage-225-2"
-      ]
-    },
-    {
-      "route": "新橋 -> 千代田線・日比谷線・都営三田線日比谷",
-      "ids": [
-        "stage-010-3"
       ]
     },
     {
@@ -141,12 +104,6 @@
       ]
     },
     {
-      "route": "渋谷・神泉 -> さくらホールは渋谷",
-      "ids": [
-        "stage-043-3"
-      ]
-    },
-    {
       "route": "牧志 -> 県庁前",
       "ids": [
         "stage-250-2"
@@ -164,12 +121,6 @@
         "stage-229-1",
         "stage-229-2",
         "stage-229-3"
-      ]
-    },
-    {
-      "route": "赤羽 -> 路線",
-      "ids": [
-        "stage-063-3"
       ]
     },
     {
@@ -206,14 +157,7 @@
       "ids": [
         "stage-079-3"
       ]
-    },
-    {
-      "route": "高円寺 -> 路線",
-      "ids": [
-        "stage-060-2"
-      ]
     }
   ],
-  "mode": "ordinary_web_search_not_parser",
-  "generated_at": "2026-08-07T23:16:44+09:00"
+  "mode": "ordinary_web_search_not_parser"
 }
