@@ -9,6 +9,9 @@
   "published_record_count": 1256,
   "unique_published_hotel_name_count": 745,
   "unique_venue_id_count": 250,
+  "target_detail_record_count": 750,
+  "target_unique_hotel_name_count": 466,
+  "target_unique_venue_count": 250,
   "keys": [
     {
       "key": "accessEstimate",
