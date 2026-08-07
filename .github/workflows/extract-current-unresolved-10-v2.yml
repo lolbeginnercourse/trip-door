@@ -1,4 +1,4 @@
-name: Extract current unresolved route batch v2
+name: Apply ordinary web route batch
 
 on:
   push:
@@ -11,7 +11,7 @@ permissions:
   contents: write
 
 jobs:
-  extract:
+  apply:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -21,32 +21,165 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Extract first 10 unresolved rows
+      - name: Apply researched route corrections
         run: |
           python - <<'PY'
           import json
           from pathlib import Path
+          checked='2026-08-08T01:04:47+09:00'
+          patches={
+            'stage-085-2': {
+              'hotel_nearest_station':'汐入','hotel_to_station_walk_min':5,
+              'hotel_source_url':'https://www.hotelnewyokosuka.co.jp/hotel_newyokosuka/access/',
+              'venue_nearest_station':'汐入','venue_station_to_venue_walk_min':1,
+              'venue_source_url':'https://www.yokosuka-arts.or.jp/information/access/',
+              'station_to_station_min':0,'transfer_count':0,
+              'transit_source_url':'https://www.yokosuka-arts.or.jp/information/access/',
+              'total_access_min':6,'access_display':'汐入駅まで徒歩約5分＋同駅から会場徒歩1分（計約6分）',
+              'verification_status':'verified','warnings':[],
+              'ordinary_web_verified_at':checked,
+              'ordinary_web_evidence':'ホテル公式で汐入駅・横須賀中央駅から各徒歩約5分。会場公式で汐入駅から徒歩1分。同一駅を採用。'
+            },
+            'stage-085-3': {
+              'hotel_nearest_station':'横須賀中央','hotel_to_station_walk_min':1,
+              'hotel_source_url':'https://www.central-wedding.com/access/',
+              'venue_nearest_station':'汐入','venue_station_to_venue_walk_min':1,
+              'venue_source_url':'https://www.yokosuka-arts.or.jp/information/access/',
+              'station_to_station_min':1,'transfer_count':0,
+              'transit_source_url':'https://transit.yahoo.co.jp/search/result/%E6%A8%AA%E9%A0%88%E8%B3%80%E4%B8%AD%E5%A4%AE-%E6%B1%90%E5%85%A5',
+              'total_access_min':3,'access_display':'横須賀中央駅まで徒歩1分＋京急で汐入駅まで約1分＋会場徒歩1分（計約3分）',
+              'verification_status':'verified','warnings':[],
+              'ordinary_web_verified_at':checked,
+              'ordinary_web_evidence':'ホテル公式で横須賀中央駅徒歩1分、会場公式で汐入駅徒歩1分。通常検索の乗換案内で横須賀中央→汐入は1分・乗換0回。'
+            },
+            'stage-107-2': {
+              'hotel_nearest_station':'浦和','hotel_to_station_walk_min':1,
+              'hotel_source_url':'https://www.hotelmets.jp/urawa/',
+              'venue_nearest_station':'南浦和','venue_station_to_venue_walk_min':7,
+              'venue_source_url':'https://saitama-culture.jp/culturecenter/',
+              'station_to_station_min':3,'transfer_count':0,
+              'transit_source_url':'https://transit.yahoo.co.jp/search/result/%E6%B5%A6%E5%92%8C-%E5%8D%97%E6%B5%A6%E5%92%8C',
+              'total_access_min':11,'access_display':'浦和駅まで徒歩1分＋JRで南浦和駅まで約3分＋会場徒歩7分（計約11分）',
+              'verification_status':'verified','warnings':[],
+              'ordinary_web_verified_at':checked,
+              'ordinary_web_evidence':'ホテル公式で浦和駅徒歩1分、会場公式で南浦和駅西口徒歩7分。通常検索の乗換案内で浦和→南浦和3分・乗換0回。'
+            },
+            'stage-107-3': {
+              'hotel_nearest_station':'浦和','hotel_to_station_walk_min':3,
+              'hotel_source_url':'https://washington-hotels.jp/urawa/urawa.html',
+              'venue_nearest_station':'南浦和','venue_station_to_venue_walk_min':7,
+              'venue_source_url':'https://saitama-culture.jp/culturecenter/',
+              'station_to_station_min':3,'transfer_count':0,
+              'transit_source_url':'https://transit.yahoo.co.jp/search/result/%E6%B5%A6%E5%92%8C-%E5%8D%97%E6%B5%A6%E5%92%8C',
+              'total_access_min':13,'access_display':'浦和駅徒歩3分＋JRで南浦和駅まで約3分＋会場徒歩7分（経路約13分）※ホテルは営業終了',
+              'verification_status':'partial','warnings':['hotel_closed_since_2025-08-31'],
+              'ordinary_web_verified_at':checked,
+              'ordinary_web_evidence':'経路は確定。ただしホテル公式で2025年8月31日に営業終了を確認したため verified にはしない。'
+            },
+            'stage-111-1': {
+              'hotel_nearest_station':'北戸田','hotel_to_station_walk_min':2,
+              'hotel_source_url':'https://www.toyoko-inn.com/search/detail/00343/',
+              'venue_nearest_station':'戸田','venue_station_to_venue_walk_min':10,
+              'venue_source_url':'https://www.city.toda.saitama.jp/soshiki/194/bunka-sport-access-kaikan.html',
+              'station_to_station_min':1,'transfer_count':0,
+              'transit_source_url':'https://transit.yahoo.co.jp/search/result/%E5%8C%97%E6%88%B8%E7%94%B0-%E6%88%B8%E7%94%B0%28%E5%9F%BC%E7%8E%89%E7%9C%8C%29',
+              'total_access_min':13,'access_display':'北戸田駅まで徒歩2分＋JRで戸田駅まで約1分＋会場徒歩約10分（計約13分）',
+              'verification_status':'verified','warnings':[],
+              'ordinary_web_verified_at':checked,
+              'ordinary_web_evidence':'東横INN公式で北戸田駅東口徒歩2分、戸田市公式で文化会館は戸田駅東口徒歩約10分。通常検索の乗換案内で北戸田→戸田は最短1分・乗換0回。'
+            },
+            'stage-126-1': {
+              'hotel_nearest_station':'さっぽろ','hotel_to_station_walk_min':2,
+              'hotel_source_url':'https://www.jr-inn.jp/north2/access/',
+              'venue_nearest_station':'大通','venue_station_to_venue_walk_min':2,
+              'venue_source_url':'https://www.sapporo-community-plaza.jp/travelers-accsess_route.html',
+              'station_to_station_min':1,'transfer_count':0,
+              'transit_source_url':'https://transit.yahoo.co.jp/search/result/%E3%81%95%E3%81%A3%E3%81%BD%E3%82%8D-%E5%A4%A7%E9%80%9A',
+              'total_access_min':5,'access_display':'さっぽろ駅まで徒歩約2分＋地下鉄で大通駅まで約1分＋会場まで約2分（計約5分）',
+              'verification_status':'verified','warnings':[],
+              'ordinary_web_verified_at':checked,
+              'ordinary_web_evidence':'ホテル公式ルートと宿泊施設情報で地下鉄さっぽろ駅至近、hitaru公式で大通駅30番出口直結。通常検索の乗換案内でさっぽろ→大通は最短1分・乗換0回。'
+            },
+            'stage-126-2': {
+              'hotel_nearest_station':'大通','hotel_to_station_walk_min':5,
+              'hotel_source_url':'https://hotel-the-knot.jp/sapporo/access/',
+              'venue_nearest_station':'大通','venue_station_to_venue_walk_min':2,
+              'venue_source_url':'https://www.sapporo-community-plaza.jp/travelers-accsess_route.html',
+              'station_to_station_min':0,'transfer_count':0,
+              'transit_source_url':'https://www.sapporo-community-plaza.jp/travelers-accsess_route.html',
+              'total_access_min':7,'access_display':'大通駅まで徒歩約5分＋同駅から会場まで約2分（計約7分）',
+              'verification_status':'verified','warnings':[],
+              'ordinary_web_verified_at':checked,
+              'ordinary_web_evidence':'THE KNOT公式で大通駅南出口徒歩約5分、hitaru公式で大通駅30番出口直結。同一駅として処理。'
+            },
+            'stage-134-1': {
+              'hotel_nearest_station':'釧路','hotel_to_station_walk_min':15,
+              'hotel_source_url':'https://www.anacpkushiro.com/access',
+              'venue_nearest_station':'釧路','venue_station_to_venue_walk_min':None,
+              'venue_source_url':'https://www.kushiro-bunka.or.jp/hall/access.html',
+              'station_to_station_min':None,'transfer_count':None,
+              'transit_source_url':'https://www.kushiro-bunka.or.jp/hall/access.html',
+              'total_access_min':None,'access_display':'JR釧路駅から会場へタクシー約10分（ホテルは釧路駅から徒歩約15分）',
+              'verification_status':'partial','warnings':['non_rail_access_taxi_recommended'],
+              'ordinary_web_verified_at':checked,
+              'ordinary_web_evidence':'会場公式は釧路駅からタクシー約10分を案内。ホテルは通常検索で釧路駅徒歩15分を確認。新富士駅徒歩34分という旧抽出は採用しない。'
+            },
+            'stage-134-2': {
+              'hotel_nearest_station':'釧路','hotel_to_station_walk_min':2,
+              'hotel_source_url':'https://www.choice-hotels.jp/hotel/kushiro/access/',
+              'venue_nearest_station':'釧路','venue_station_to_venue_walk_min':None,
+              'venue_source_url':'https://www.kushiro-bunka.or.jp/hall/access.html',
+              'station_to_station_min':None,'transfer_count':None,
+              'transit_source_url':'https://www.kushiro-bunka.or.jp/hall/access.html',
+              'total_access_min':None,'access_display':'ホテルは釧路駅徒歩約2分。釧路駅から会場へタクシー約10分',
+              'verification_status':'partial','warnings':['non_rail_access_taxi_recommended'],
+              'ordinary_web_verified_at':checked,
+              'ordinary_web_evidence':'ホテル公式で釧路駅徒歩約2分。会場公式で釧路駅からタクシー約10分。新富士駅徒歩34分という旧抽出は採用しない。'
+            },
+            'stage-134-3': {
+              'hotel_nearest_station':'釧路','hotel_to_station_walk_min':1,
+              'hotel_source_url':'https://www.superhotel.co.jp/s_hotels/kushiroekimae/',
+              'venue_nearest_station':'釧路','venue_station_to_venue_walk_min':None,
+              'venue_source_url':'https://www.kushiro-bunka.or.jp/hall/access.html',
+              'station_to_station_min':None,'transfer_count':None,
+              'transit_source_url':'https://www.kushiro-bunka.or.jp/hall/access.html',
+              'total_access_min':None,'access_display':'ホテルは釧路駅徒歩約1分。釧路駅から会場へタクシー約10分',
+              'verification_status':'partial','warnings':['non_rail_access_taxi_recommended'],
+              'ordinary_web_verified_at':checked,
+              'ordinary_web_evidence':'宿泊情報で釧路駅徒歩約1分、会場公式で釧路駅からタクシー約10分。新富士駅徒歩34分という旧抽出は採用しない。'
+            }
+          }
           src=Path('research/generated/hotel_detail_research_750.jsonl')
           rows=[]
           for line in src.read_text(encoding='utf-8').splitlines():
               if not line.strip(): continue
               r=json.loads(line)
-              if r.get('verification_status')=='needs_review' and 'transit_parse_failed' in (r.get('warnings') or []):
-                  rows.append(r)
-          compact=[]
+              if r.get('id') in patches:
+                  r.update(patches[r['id']])
+              rows.append(r)
+          src.write_text('\n'.join(json.dumps(r,ensure_ascii=False,separators=(',',':')) for r in rows)+'\n',encoding='utf-8')
+          from collections import Counter
+          sc=Counter(r.get('verification_status') for r in rows)
+          wc=Counter(w for r in rows for w in (r.get('warnings') or []))
+          validation={
+            'row_count':len(rows),'unique_id_count':len({r.get('id') for r in rows}),
+            'status_counts':dict(sc),'warning_counts':dict(wc),'complete':len(rows)==750,
+            'verification_mode':'ordinary_web_search_manual_batches'
+          }
+          Path('research/generated/final_validation.json').write_text(json.dumps(validation,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          remaining=[r for r in rows if r.get('verification_status')=='needs_review' and 'transit_parse_failed' in (r.get('warnings') or [])]
           keep=['research_no','id','hotel_name','venue_name','prefecture','area','hotel_nearest_station','hotel_to_station_walk_min','hotel_source_url','venue_nearest_station','venue_station_to_venue_walk_min','venue_source_url','station_to_station_min','transfer_count','access_display','warnings']
-          for r in rows[:10]:
-              compact.append({k:r.get(k) for k in keep})
-          payload={'remaining_count':len(rows),'batch':compact}
+          payload={'remaining_count':len(remaining),'batch':[{k:r.get(k) for k in keep} for r in remaining[:10]]}
           Path('research/generated/current_unresolved_10_min.json').write_text(json.dumps(payload,ensure_ascii=False,indent=2),encoding='utf-8')
-          print(json.dumps(payload,ensure_ascii=False))
+          print(json.dumps(validation,ensure_ascii=False))
+          print(json.dumps({'remaining_count':len(remaining)},ensure_ascii=False))
           PY
-      - name: Commit extracted batch
+      - name: Commit researched batch
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -f research/generated/current_unresolved_10_min.json
+          git add -f research/generated/hotel_detail_research_750.jsonl research/generated/final_validation.json research/generated/current_unresolved_10_min.json
           if ! git diff --cached --quiet; then
-            git commit -m "Extract compact unresolved route batch"
+            git commit -m "Resolve 10 hotel routes via ordinary web research"
             git push origin HEAD:research/hotel-details-750-20260807
           fi
