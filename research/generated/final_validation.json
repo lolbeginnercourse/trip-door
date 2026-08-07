@@ -2,17 +2,14 @@
   "row_count": 750,
   "unique_id_count": 750,
   "status_counts": {
-    "verified": 565,
-    "needs_review": 115,
+    "verified": 610,
+    "needs_review": 70,
     "partial": 70
   },
   "warning_counts": {
-    "transit_parse_failed": 63,
-    "hotel_station_differs_from_existing": 74,
-    "hotel_walk_unverified": 45,
-    "venue_access_unverified": 51,
-    "transit_missing_station": 51
+    "transit_parse_failed": 70,
+    "hotel_station_differs_from_existing": 76
   },
   "complete": true,
-  "verification_mode": "10_parallel_web_shards"
+  "verification_mode": "needs_review_10_parallel_recheck"
 }
