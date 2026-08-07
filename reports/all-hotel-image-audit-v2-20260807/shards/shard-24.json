@@ -1,8 +1,8 @@
 {
   "schemaVersion": 3,
   "complete": true,
-  "phase": "first-pass",
-  "generatedAt": "2026-08-06T21:56:23.404Z",
+  "phase": "retry",
+  "generatedAt": "2026-08-07T00:03:25.713Z",
   "shardIndex": 24,
   "shardSize": 25,
   "start": 600,
@@ -10,9 +10,9 @@
   "totalRecords": 1256,
   "totalUnique": 750,
   "processedUnique": 25,
-  "retriedUnique": 0,
-  "skippedMatchedUnique": 0,
-  "retryAttemptsPerRequest": 1,
+  "retriedUnique": 4,
+  "skippedMatchedUnique": 21,
+  "retryAttemptsPerRequest": 5,
   "results": [
     {
       "requestKey": "name:ホテルウィングインターナショナルプレミアム京都三条|京都府|三条・東山",
@@ -49,7 +49,14 @@
         "rawExcerpt": "",
         "attemptsUsed": 1
       },
-      "causeCode": "not_found_by_current_rakuten_search"
+      "causeCode": "not_found_by_current_rakuten_search",
+      "retry": {
+        "attempted": true,
+        "attemptedAt": "2026-08-06T23:58:03.011Z",
+        "previousCauseCode": "not_found_by_current_rakuten_search",
+        "previousHasImage": false,
+        "attemptsPerRequest": 5
+      }
     },
     {
       "requestKey": "name:ホテルマテリアル|京都府|東山",
@@ -75,7 +82,7 @@
         "matchEvidence": [],
         "transportError": "",
         "rawExcerpt": "",
-        "attemptsUsed": 1
+        "attemptsUsed": 2
       },
       "affiliate": {
         "httpStatus": 200,
@@ -86,7 +93,14 @@
         "rawExcerpt": "",
         "attemptsUsed": 1
       },
-      "causeCode": "not_found_by_current_rakuten_search"
+      "causeCode": "not_found_by_current_rakuten_search",
+      "retry": {
+        "attempted": true,
+        "attemptedAt": "2026-08-06T23:59:09.565Z",
+        "previousCauseCode": "not_found_by_current_rakuten_search",
+        "previousHasImage": false,
+        "attemptsPerRequest": 5
+      }
     },
     {
       "requestKey": "name:ウェスティン都ホテル京都|京都府|蹴上",
@@ -152,7 +166,14 @@
         "rawExcerpt": "",
         "attemptsUsed": 1
       },
-      "causeCode": "not_found_by_current_rakuten_search"
+      "causeCode": "not_found_by_current_rakuten_search",
+      "retry": {
+        "attempted": true,
+        "attemptedAt": "2026-08-06T23:59:14.238Z",
+        "previousCauseCode": "not_found_by_current_rakuten_search",
+        "previousHasImage": false,
+        "attemptsPerRequest": 5
+      }
     },
     {
       "requestKey": "name:タッセルホテル三条白川|京都府|東山",
@@ -645,7 +666,7 @@
         "matchEvidence": [],
         "transportError": "",
         "rawExcerpt": "",
-        "attemptsUsed": 1
+        "attemptsUsed": 5
       },
       "affiliate": {
         "httpStatus": 200,
@@ -656,7 +677,14 @@
         "rawExcerpt": "",
         "attemptsUsed": 1
       },
-      "causeCode": "temporary_upstream_error"
+      "causeCode": "temporary_upstream_error",
+      "retry": {
+        "attempted": true,
+        "attemptedAt": "2026-08-07T00:03:25.713Z",
+        "previousCauseCode": "temporary_upstream_error",
+        "previousHasImage": false,
+        "attemptsPerRequest": 5
+      }
     },
     {
       "requestKey": "name:hotel 講 大津百町|滋賀県|大津",
