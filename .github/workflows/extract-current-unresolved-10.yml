@@ -31,6 +31,11 @@ jobs:
           unresolved = [r for r in rows if r.get('verification_status') == 'needs_review' and 'transit_parse_failed' in (r.get('warnings') or [])]
           out = unresolved[:10]
           Path('research/generated/current_unresolved_10.json').write_text(json.dumps(out, ensure_ascii=False, indent=2), encoding='utf-8')
+          fields = ['id','research_no','hotel_name','venue_name','hotel_nearest_station','hotel_to_station_walk_min','venue_nearest_station','venue_station_to_venue_walk_min','hotel_source_url','venue_source_url']
+          lines=['\t'.join(fields)]
+          for r in out:
+              lines.append('\t'.join(str(r.get(k) if r.get(k) is not None else '') for k in fields))
+          Path('research/generated/current_unresolved_10.tsv').write_text('\n'.join(lines)+'\n', encoding='utf-8')
           Path('research/generated/current_unresolved_count.json').write_text(json.dumps({'count': len(unresolved)}, ensure_ascii=False, indent=2), encoding='utf-8')
           print('unresolved', len(unresolved), 'extracted', len(out))
           PY
@@ -38,7 +43,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -f research/generated/current_unresolved_10.json research/generated/current_unresolved_count.json
+          git add -f research/generated/current_unresolved_10.json research/generated/current_unresolved_10.tsv research/generated/current_unresolved_count.json
           if ! git diff --cached --quiet; then
             git commit -m "Extract current unresolved hotel routes"
             git push origin HEAD:research/hotel-details-750-20260807
