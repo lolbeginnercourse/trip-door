@@ -1,0 +1,470 @@
+{
+  "source": "assets/data/hotels.json",
+  "top_level_type": "dict",
+  "candidate_collections": {
+    "hotels": 1256
+  },
+  "selected_collection": "hotels",
+  "record_count": 1256,
+  "keys": [
+    {
+      "key": "accessEstimate",
+      "present": 1250,
+      "types": {
+        "str": 1250
+      }
+    },
+    {
+      "key": "accuracy",
+      "present": 1250,
+      "types": {
+        "str": 1250
+      }
+    },
+    {
+      "key": "area",
+      "present": 1256,
+      "types": {
+        "str": 1256
+      }
+    },
+    {
+      "key": "calculationReason",
+      "present": 1250,
+      "types": {
+        "str": 1250
+      }
+    },
+    {
+      "key": "cancellationEstimate",
+      "present": 1250,
+      "types": {
+        "str": 1250
+      }
+    },
+    {
+      "key": "facts",
+      "present": 1256,
+      "types": {
+        "list": 1256
+      }
+    },
+    {
+      "key": "genre",
+      "present": 1256,
+      "types": {
+        "str": 1256
+      }
+    },
+    {
+      "key": "hotelMapUrl",
+      "present": 1250,
+      "types": {
+        "str": 1250
+      }
+    },
+    {
+      "key": "id",
+      "present": 1256,
+      "types": {
+        "str": 1256
+      }
+    },
+    {
+      "key": "isPublished",
+      "present": 1250,
+      "types": {
+        "bool": 1250
+      }
+    },
+    {
+      "key": "jalan",
+      "present": 6,
+      "types": {
+        "str": 6
+      }
+    },
+    {
+      "key": "jalanPriceEstimate",
+      "present": 1250,
+      "types": {
+        "str": 1250
+      }
+    },
+    {
+      "key": "jalanYadNo",
+      "present": 1250,
+      "types": {
+        "str": 17,
+        "NoneType": 1233
+      }
+    },
+    {
+      "key": "name",
+      "present": 1256,
+      "types": {
+        "str": 1256
+      }
+    },
+    {
+      "key": "planEstimate",
+      "present": 1250,
+      "types": {
+        "str": 1250
+      }
+    },
+    {
+      "key": "prefecture",
+      "present": 1250,
+      "types": {
+        "str": 1250
+      }
+    },
+    {
+      "key": "priceEstimate",
+      "present": 1250,
+      "types": {
+        "str": 1250
+      }
+    },
+    {
+      "key": "priceNumeric",
+      "present": 1250,
+      "types": {
+        "int": 1250
+      }
+    },
+    {
+      "key": "priceRangeEstimate",
+      "present": 1250,
+      "types": {
+        "str": 1250
+      }
+    },
+    {
+      "key": "priorities",
+      "present": 1256,
+      "types": {
+        "list": 1256
+      }
+    },
+    {
+      "key": "rakuten",
+      "present": 6,
+      "types": {
+        "str": 6
+      }
+    },
+    {
+      "key": "rakutenHotelNo",
+      "present": 1250,
+      "types": {
+        "str": 16,
+        "NoneType": 1234
+      }
+    },
+    {
+      "key": "rakutenPriceEstimate",
+      "present": 1250,
+      "types": {
+        "str": 1250
+      }
+    },
+    {
+      "key": "rank",
+      "present": 1250,
+      "types": {
+        "int": 1250
+      }
+    },
+    {
+      "key": "researchedAt",
+      "present": 1250,
+      "types": {
+        "str": 1250
+      }
+    },
+    {
+      "key": "role",
+      "present": 1256,
+      "types": {
+        "str": 1256
+      }
+    },
+    {
+      "key": "roomTypeEstimate",
+      "present": 1250,
+      "types": {
+        "str": 1250
+      }
+    },
+    {
+      "key": "station",
+      "present": 1256,
+      "types": {
+        "str": 1256
+      }
+    },
+    {
+      "key": "statuses",
+      "present": 1256,
+      "types": {
+        "list": 1256
+      }
+    },
+    {
+      "key": "styles",
+      "present": 1256,
+      "types": {
+        "list": 1256
+      }
+    },
+    {
+      "key": "summary",
+      "present": 1256,
+      "types": {
+        "str": 1256
+      }
+    },
+    {
+      "key": "venueId",
+      "present": 1250,
+      "types": {
+        "str": 1250
+      }
+    },
+    {
+      "key": "venueLabel",
+      "present": 1256,
+      "types": {
+        "str": 1256
+      }
+    },
+    {
+      "key": "venueMapUrl",
+      "present": 1250,
+      "types": {
+        "str": 1250
+      }
+    },
+    {
+      "key": "venueMemo",
+      "present": 1250,
+      "types": {
+        "str": 1250
+      }
+    },
+    {
+      "key": "venueNumber",
+      "present": 1250,
+      "types": {
+        "int": 1250
+      }
+    },
+    {
+      "key": "venueOfficialUrl",
+      "present": 1250,
+      "types": {
+        "str": 1250
+      }
+    },
+    {
+      "key": "venues",
+      "present": 1256,
+      "types": {
+        "list": 1256
+      }
+    }
+  ],
+  "sample_records": [
+    {
+      "id": "stage-001-1",
+      "genre": "stage",
+      "name": "東横INN品川港南口天王洲アイル",
+      "role": "天王洲 銀河劇場周辺の候補1",
+      "area": "天王洲アイル",
+      "prefecture": "東京都",
+      "venueLabel": "天王洲 銀河劇場",
+      "venueId": "stage-001",
+      "venueNumber": 1,
+      "rank": 1,
+      "venues": [
+        "stage-001"
+      ],
+      "station": "天王洲アイル",
+      "accessEstimate": "会場と同じ天王洲アイル地区・徒歩圏",
+      "summary": "エコノミー・立地係数1.10・土曜/お盆補正指定日の確定在庫価格ではなく、安い~標準客室の予約目安",
+      "styles": [
+        "solo",
+        "group",
+        "matinee",
+        "stay"
+      ],
+      "priorities": [
+        "near",
+        "station"
+      ],
+      "facts": [
+        "会場と同じ天王洲アイル地区・徒歩圏",
+        "料金目安 13,500円(目安)",
+        "料金幅 約11,500~16,500円"
+      ],
+      "statuses": [
+        [
+          "会場へのアクセス",
+          "check",
+          "会場と同じ天王洲アイル地区・徒歩圏"
+        ],
+        [
+          "料金目安",
+          "check",
+          "13,500円(目安)"
+        ]
+      ],
+      "priceEstimate": "13,500円(目安)",
+      "priceRangeEstimate": "約11,500~16,500円",
+      "rakutenPriceEstimate": "13,500円(目安)",
+      "jalanPriceEstimate": "13,500円(目安)",
+      "priceNumeric": 13500,
+      "planEstimate": "素泊まり・スタンダード/室数限定セールの安い一般客室",
+      "roomTypeEstimate": "シングル/セミダブルの一般客室(1名利用)",
+      "cancellationEstimate": "プランごとに異なる通常プランは前日~当日から取消料が発生する場合が多い早割・事前決済・セールは返金不可の場合あり予約画面の条件を優先",
+      "researchedAt": "2026-08-01 17:51 JST",
+      "accuracy": "A:当該ホテルの公開料金帯で補正",
+      "calculationReason": "エコノミー・立地係数1.10・土曜/お盆補正指定日の確定在庫価格ではなく、安い~標準客室の予約目安",
+      "hotelMapUrl": "https://www.google.com/maps/search/?api=1&query=東横INN品川港南口天王洲アイル",
+      "venueMapUrl": "https://www.google.com/maps/search/?api=1&query=天王洲+銀河劇場",
+      "venueOfficialUrl": "https://www.google.com/search?q=天王洲+銀河劇場+公式",
+      "venueMemo": "",
+      "rakutenHotelNo": "136278",
+      "jalanYadNo": "390736",
+      "isPublished": true
+    },
+    {
+      "id": "stage-001-2",
+      "genre": "stage",
+      "name": "ANAホリデイ・イン東京ベイ",
+      "role": "天王洲 銀河劇場周辺の候補2",
+      "area": "天王洲アイル",
+      "prefecture": "東京都",
+      "venueLabel": "天王洲 銀河劇場",
+      "venueId": "stage-001",
+      "venueNumber": 1,
+      "rank": 2,
+      "venues": [
+        "stage-001"
+      ],
+      "station": "天王洲アイル",
+      "accessEstimate": "天王洲アイル駅周辺・徒歩圏",
+      "summary": "プレミアム・立地係数1.10・土曜/お盆補正指定日の確定在庫価格ではなく、安い~標準客室の予約目安",
+      "styles": [
+        "solo",
+        "group",
+        "matinee",
+        "stay"
+      ],
+      "priorities": [
+        "near",
+        "station"
+      ],
+      "facts": [
+        "天王洲アイル駅周辺・徒歩圏",
+        "料金目安 31,500円(目安)",
+        "料金幅 約26,500~38,500円"
+      ],
+      "statuses": [
+        [
+          "会場へのアクセス",
+          "check",
+          "天王洲アイル駅周辺・徒歩圏"
+        ],
+        [
+          "料金目安",
+          "check",
+          "31,500円(目安)"
+        ]
+      ],
+      "priceEstimate": "31,500円(目安)",
+      "priceRangeEstimate": "約26,500~38,500円",
+      "rakutenPriceEstimate": "31,500円(目安)",
+      "jalanPriceEstimate": "31,500円(目安)",
+      "priceNumeric": 31500,
+      "planEstimate": "素泊まり・スタンダード/期間限定セールの一般客室",
+      "roomTypeEstimate": "スタンダードダブル/ツインの一般客室(1名利用)",
+      "cancellationEstimate": "プランごとに異なる通常プランは前日~当日から取消料が発生する場合が多い早割・事前決済・セールは返金不可の場合あり予約画面の条件を優先",
+      "researchedAt": "2026-08-01 17:51 JST",
+      "accuracy": "A:当該ホテルの公開料金帯で補正",
+      "calculationReason": "プレミアム・立地係数1.10・土曜/お盆補正指定日の確定在庫価格ではなく、安い~標準客室の予約目安",
+      "hotelMapUrl": "https://www.google.com/maps/search/?api=1&query=ANAホリデイ・イン東京ベイ",
+      "venueMapUrl": "https://www.google.com/maps/search/?api=1&query=天王洲+銀河劇場",
+      "venueOfficialUrl": "https://www.google.com/search?q=天王洲+銀河劇場+公式",
+      "venueMemo": "",
+      "rakutenHotelNo": "196160",
+      "jalanYadNo": "349696",
+      "isPublished": true
+    },
+    {
+      "id": "stage-001-3",
+      "genre": "stage",
+      "name": "スーパーホテル品川・新馬場",
+      "role": "天王洲 銀河劇場周辺の候補3",
+      "area": "天王洲アイル",
+      "prefecture": "東京都",
+      "venueLabel": "天王洲 銀河劇場",
+      "venueId": "stage-001",
+      "venueNumber": 1,
+      "rank": 3,
+      "venues": [
+        "stage-001"
+      ],
+      "station": "新馬場",
+      "accessEstimate": "徒歩または1駅移動",
+      "summary": "エコノミー・立地係数1.10・土曜/お盆補正指定日の確定在庫価格ではなく、安い~標準客室の予約目安",
+      "styles": [
+        "solo",
+        "group",
+        "matinee",
+        "stay"
+      ],
+      "priorities": [
+        "near",
+        "station"
+      ],
+      "facts": [
+        "徒歩または1駅移動",
+        "料金目安 13,500円(目安)",
+        "料金幅 約11,500~16,500円"
+      ],
+      "statuses": [
+        [
+          "会場へのアクセス",
+          "check",
+          "徒歩または1駅移動"
+        ],
+        [
+          "料金目安",
+          "check",
+          "13,500円(目安)"
+        ]
+      ],
+      "priceEstimate": "13,500円(目安)",
+      "priceRangeEstimate": "約11,500~16,500円",
+      "rakutenPriceEstimate": "13,500円(目安)",
+      "jalanPriceEstimate": "13,500円(目安)",
+      "priceNumeric": 13500,
+      "planEstimate": "素泊まり・スタンダード/室数限定セールの安い一般客室",
+      "roomTypeEstimate": "シングル/セミダブルの一般客室(1名利用)",
+      "cancellationEstimate": "プランごとに異なる通常プランは前日~当日から取消料が発生する場合が多い早割・事前決済・セールは返金不可の場合あり予約画面の条件を優先",
+      "researchedAt": "2026-08-01 17:51 JST",
+      "accuracy": "C:ホテル格・立地・周辺相場による概算",
+      "calculationReason": "エコノミー・立地係数1.10・土曜/お盆補正指定日の確定在庫価格ではなく、安い~標準客室の予約目安",
+      "hotelMapUrl": "https://www.google.com/maps/search/?api=1&query=スーパーホテル品川・新馬場",
+      "venueMapUrl": "https://www.google.com/maps/search/?api=1&query=天王洲+銀河劇場",
+      "venueOfficialUrl": "https://www.google.com/search?q=天王洲+銀河劇場+公式",
+      "venueMemo": "",
+      "rakutenHotelNo": null,
+      "jalanYadNo": null,
+      "isPublished": true
+    }
+  ]
+}
