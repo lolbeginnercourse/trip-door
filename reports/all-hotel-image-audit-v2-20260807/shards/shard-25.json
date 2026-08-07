@@ -1,8 +1,8 @@
 {
   "schemaVersion": 3,
   "complete": true,
-  "phase": "first-pass",
-  "generatedAt": "2026-08-06T21:57:18.488Z",
+  "phase": "retry",
+  "generatedAt": "2026-08-07T00:03:38.403Z",
   "shardIndex": 25,
   "shardSize": 25,
   "start": 625,
@@ -11,8 +11,8 @@
   "totalUnique": 750,
   "processedUnique": 25,
   "retriedUnique": 0,
-  "skippedMatchedUnique": 0,
-  "retryAttemptsPerRequest": 1,
+  "skippedMatchedUnique": 25,
+  "retryAttemptsPerRequest": 5,
   "results": [
     {
       "requestKey": "name:ダイワロイネットホテル和歌山|和歌山県|和歌山",
