@@ -2,7 +2,7 @@
   "schemaVersion": 3,
   "complete": true,
   "phase": "retry",
-  "generatedAt": "2026-08-07T00:09:21.798Z",
+  "generatedAt": "2026-08-07T07:26:51.223Z",
   "shardIndex": 29,
   "shardSize": 25,
   "start": 725,
@@ -10,8 +10,8 @@
   "totalRecords": 1256,
   "totalUnique": 750,
   "processedUnique": 25,
-  "retriedUnique": 5,
-  "skippedMatchedUnique": 20,
+  "retriedUnique": 4,
+  "skippedMatchedUnique": 21,
   "retryAttemptsPerRequest": 5,
   "results": [
     {
@@ -551,8 +551,8 @@
       ],
       "duplicateGroupSize": 1,
       "image": {
-        "httpStatus": 404,
-        "status": "not_found",
+        "httpStatus": 502,
+        "status": "502",
         "hasImage": false,
         "hotelNo": "",
         "hotelName": "",
@@ -560,7 +560,7 @@
         "matchEvidence": [],
         "transportError": "",
         "rawExcerpt": "",
-        "attemptsUsed": 1
+        "attemptsUsed": 5
       },
       "affiliate": {
         "httpStatus": 200,
@@ -571,11 +571,11 @@
         "rawExcerpt": "",
         "attemptsUsed": 1
       },
-      "causeCode": "not_found_by_current_rakuten_search",
+      "causeCode": "temporary_upstream_error",
       "retry": {
         "attempted": true,
-        "attemptedAt": "2026-08-07T00:09:10.827Z",
-        "previousCauseCode": "temporary_upstream_error",
+        "attemptedAt": "2026-08-07T07:26:43.326Z",
+        "previousCauseCode": "not_found_by_current_rakuten_search",
         "previousHasImage": false,
         "attemptsPerRequest": 5
       }
@@ -650,30 +650,24 @@
       ],
       "duplicateGroupSize": 1,
       "image": {
-        "httpStatus": 404,
-        "status": "location_unverified",
-        "hasImage": false,
-        "hotelNo": "",
-        "hotelName": "",
-        "matchedBy": "",
-        "matchEvidence": [],
-        "transportError": "",
-        "rawExcerpt": "",
-        "attemptsUsed": 1
-      },
-      "affiliate": {
         "httpStatus": 200,
-        "hasRakuten": false,
-        "rakutenHotelNo": "",
-        "providers": [],
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "178230",
+        "hotelName": "住友不動産ホテル ヴィラフォンテーヌグランド東京有明",
+        "matchedBy": "hotelNoOverride",
+        "matchEvidence": [
+          "override"
+        ],
         "transportError": "",
         "rawExcerpt": "",
         "attemptsUsed": 1
       },
-      "causeCode": "location_unverified",
+      "affiliate": null,
+      "causeCode": "matched",
       "retry": {
         "attempted": true,
-        "attemptedAt": "2026-08-07T00:09:14.751Z",
+        "attemptedAt": "2026-08-07T07:26:45.019Z",
         "previousCauseCode": "location_unverified",
         "previousHasImage": false,
         "attemptsPerRequest": 5
@@ -693,30 +687,24 @@
       ],
       "duplicateGroupSize": 1,
       "image": {
-        "httpStatus": 404,
-        "status": "location_unverified",
-        "hasImage": false,
-        "hotelNo": "",
-        "hotelName": "",
-        "matchedBy": "",
-        "matchEvidence": [],
-        "transportError": "",
-        "rawExcerpt": "",
-        "attemptsUsed": 1
-      },
-      "affiliate": {
         "httpStatus": 200,
-        "hasRakuten": false,
-        "rakutenHotelNo": "",
-        "providers": [],
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "167837",
+        "hotelName": "NOHGA HOTEL UENO TOKYO(ノーガホテル上野東京)",
+        "matchedBy": "hotelNoOverride",
+        "matchEvidence": [
+          "override"
+        ],
         "transportError": "",
         "rawExcerpt": "",
         "attemptsUsed": 1
       },
-      "causeCode": "location_unverified",
+      "affiliate": null,
+      "causeCode": "matched",
       "retry": {
         "attempted": true,
-        "attemptedAt": "2026-08-07T00:09:18.237Z",
+        "attemptedAt": "2026-08-07T07:26:46.707Z",
         "previousCauseCode": "location_unverified",
         "previousHasImage": false,
         "attemptsPerRequest": 5
@@ -759,7 +747,7 @@
       "causeCode": "not_found_by_current_rakuten_search",
       "retry": {
         "attempted": true,
-        "attemptedAt": "2026-08-07T00:09:21.798Z",
+        "attemptedAt": "2026-08-07T07:26:51.223Z",
         "previousCauseCode": "not_found_by_current_rakuten_search",
         "previousHasImage": false,
         "attemptsPerRequest": 5
