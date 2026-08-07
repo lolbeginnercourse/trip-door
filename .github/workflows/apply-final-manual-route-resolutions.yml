@@ -1,0 +1,82 @@
+name: Apply final manual route resolutions
+
+on:
+  push:
+    branches:
+      - research/hotel-details-750-20260807
+    paths:
+      - research/generated/manual_resolution_batch_final6.json
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research/hotel-details-750-20260807
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Apply evidence-backed manual resolutions
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          from datetime import datetime, timezone, timedelta
+
+          data_path=Path('research/generated/hotel_detail_research_750.jsonl')
+          patch_path=Path('research/generated/manual_resolution_batch_final6.json')
+          rows=[json.loads(x) for x in data_path.read_text(encoding='utf-8').splitlines() if x.strip()]
+          patches={x['id']:x for x in json.loads(patch_path.read_text(encoding='utf-8'))}
+          jst=timezone(timedelta(hours=9))
+          now=datetime.now(jst).isoformat(timespec='seconds')
+          seen=set()
+          for r in rows:
+              p=patches.get(r.get('id'))
+              if not p:
+                  continue
+              seen.add(r['id'])
+              for k,v in p.items():
+                  if k!='id':
+                      r[k]=v
+              r['warnings']=[w for w in (r.get('warnings') or []) if w!='transit_parse_failed']
+              r['verification_status']='verified' if not r['warnings'] else 'partial'
+              r['checked_at']=now
+              r['manual_web_checked_at']=now
+              r['verification_method']='ordinary_web_search_manual'
+          missing=set(patches)-seen
+          if missing:
+              raise SystemExit(f'Patch IDs missing from dataset: {sorted(missing)}')
+          if len(rows)!=750 or len({r.get('id') for r in rows})!=750:
+              raise SystemExit('750-row structural validation failed')
+          data_path.write_text('\n'.join(json.dumps(r,ensure_ascii=False,separators=(',',':')) for r in rows)+'\n',encoding='utf-8')
+          from collections import Counter
+          status=Counter(r.get('verification_status') for r in rows)
+          warns=Counter(w for r in rows for w in (r.get('warnings') or []))
+          final={
+            'row_count':len(rows),
+            'unique_id_count':len({r.get('id') for r in rows}),
+            'status_counts':dict(status),
+            'warning_counts':dict(warns),
+            'complete':len(rows)==750 and len({r.get('id') for r in rows})==750,
+            'verification_mode':'ordinary_web_search_manual_final6',
+            'updated_at':now
+          }
+          Path('research/generated/final_validation.json').write_text(json.dumps(final,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          Path('research/generated/current_needs_review.json').write_text(json.dumps([r for r in rows if r.get('verification_status')=='needs_review'],ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          print(json.dumps(final,ensure_ascii=False,indent=2))
+          PY
+      - name: Commit updated research data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f research/generated/hotel_detail_research_750.jsonl research/generated/final_validation.json research/generated/current_needs_review.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Resolve final 6 hotel routes with ordinary web research"
+            git push origin HEAD:research/hotel-details-750-20260807
+          fi
