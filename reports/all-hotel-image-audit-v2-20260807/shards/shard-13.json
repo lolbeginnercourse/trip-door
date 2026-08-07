@@ -2,7 +2,7 @@
   "schemaVersion": 3,
   "complete": true,
   "phase": "retry",
-  "generatedAt": "2026-08-06T23:54:24.108Z",
+  "generatedAt": "2026-08-07T06:03:00.742Z",
   "shardIndex": 13,
   "shardSize": 25,
   "start": 325,
@@ -56,8 +56,8 @@
       ],
       "duplicateGroupSize": 1,
       "image": {
-        "httpStatus": 404,
-        "status": "not_found",
+        "httpStatus": 502,
+        "status": "502",
         "hasImage": false,
         "hotelNo": "",
         "hotelName": "",
@@ -65,7 +65,7 @@
         "matchEvidence": [],
         "transportError": "",
         "rawExcerpt": "",
-        "attemptsUsed": 1
+        "attemptsUsed": 5
       },
       "affiliate": {
         "httpStatus": 200,
@@ -76,10 +76,10 @@
         "rawExcerpt": "",
         "attemptsUsed": 1
       },
-      "causeCode": "not_found_by_current_rakuten_search",
+      "causeCode": "temporary_upstream_error",
       "retry": {
         "attempted": true,
-        "attemptedAt": "2026-08-06T23:53:08.953Z",
+        "attemptedAt": "2026-08-07T05:54:38.171Z",
         "previousCauseCode": "not_found_by_current_rakuten_search",
         "previousHasImage": false,
         "attemptsPerRequest": 5
@@ -127,8 +127,8 @@
       ],
       "duplicateGroupSize": 1,
       "image": {
-        "httpStatus": 404,
-        "status": "not_found",
+        "httpStatus": 502,
+        "status": "502",
         "hasImage": false,
         "hotelNo": "",
         "hotelName": "",
@@ -136,7 +136,7 @@
         "matchEvidence": [],
         "transportError": "",
         "rawExcerpt": "",
-        "attemptsUsed": 2
+        "attemptsUsed": 5
       },
       "affiliate": {
         "httpStatus": 200,
@@ -147,10 +147,10 @@
         "rawExcerpt": "",
         "attemptsUsed": 1
       },
-      "causeCode": "not_found_by_current_rakuten_search",
+      "causeCode": "temporary_upstream_error",
       "retry": {
         "attempted": true,
-        "attemptedAt": "2026-08-06T23:54:15.453Z",
+        "attemptedAt": "2026-08-07T05:58:48.644Z",
         "previousCauseCode": "not_found_by_current_rakuten_search",
         "previousHasImage": false,
         "attemptsPerRequest": 5
@@ -170,8 +170,8 @@
       ],
       "duplicateGroupSize": 1,
       "image": {
-        "httpStatus": 404,
-        "status": "not_found",
+        "httpStatus": 502,
+        "status": "502",
         "hasImage": false,
         "hotelNo": "",
         "hotelName": "",
@@ -179,7 +179,7 @@
         "matchEvidence": [],
         "transportError": "",
         "rawExcerpt": "",
-        "attemptsUsed": 1
+        "attemptsUsed": 5
       },
       "affiliate": {
         "httpStatus": 200,
@@ -190,10 +190,10 @@
         "rawExcerpt": "",
         "attemptsUsed": 1
       },
-      "causeCode": "not_found_by_current_rakuten_search",
+      "causeCode": "temporary_upstream_error",
       "retry": {
         "attempted": true,
-        "attemptedAt": "2026-08-06T23:54:20.144Z",
+        "attemptedAt": "2026-08-07T06:02:59.026Z",
         "previousCauseCode": "not_found_by_current_rakuten_search",
         "previousHasImage": false,
         "attemptsPerRequest": 5
@@ -241,30 +241,24 @@
       ],
       "duplicateGroupSize": 1,
       "image": {
-        "httpStatus": 404,
-        "status": "ambiguous",
-        "hasImage": false,
-        "hotelNo": "",
-        "hotelName": "",
-        "matchedBy": "",
-        "matchEvidence": [],
-        "transportError": "",
-        "rawExcerpt": "",
-        "attemptsUsed": 1
-      },
-      "affiliate": {
         "httpStatus": 200,
-        "hasRakuten": false,
-        "rakutenHotelNo": "",
-        "providers": [],
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "500",
+        "hotelName": "薬湯風呂 ホテルグランテラス帯広(BBHホテルグループ)",
+        "matchedBy": "hotelNoOverride",
+        "matchEvidence": [
+          "override"
+        ],
         "transportError": "",
         "rawExcerpt": "",
         "attemptsUsed": 1
       },
-      "causeCode": "multiple_candidates",
+      "affiliate": null,
+      "causeCode": "matched",
       "retry": {
         "attempted": true,
-        "attemptedAt": "2026-08-06T23:54:24.108Z",
+        "attemptedAt": "2026-08-07T06:03:00.741Z",
         "previousCauseCode": "multiple_candidates",
         "previousHasImage": false,
         "attemptsPerRequest": 5
