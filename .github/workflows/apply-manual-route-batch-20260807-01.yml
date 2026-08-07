@@ -1,0 +1,88 @@
+name: Apply manual route research batch 01
+
+on:
+  push:
+    branches:
+      - research/hotel-details-750-20260807
+    paths:
+      - .github/workflows/apply-manual-route-batch-20260807-01.yml
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research/hotel-details-750-20260807
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Apply researched route corrections
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          from datetime import datetime, timezone, timedelta
+
+          jst = timezone(timedelta(hours=9))
+          checked = datetime.now(jst).isoformat(timespec='seconds')
+          corrections = {
+            'stage-068-1': dict(hotel_nearest_station='つくばエクスプレス浅草', hotel_to_station_walk_min=3, venue_nearest_station='つくばエクスプレス浅草', venue_station_to_venue_walk_min=3, station_to_station_min=0, transfer_count=0, total_access_min=6, hotel_source_url='https://hotel-trend.jp/asakusa/access', venue_source_url='https://www.hanayashiki-kagekijo.com/access/', transit_source_url='https://hotel-trend.jp/asakusa/access', access_display='つくばエクスプレス浅草駅経由・合計約6分（ホテル徒歩3分＋駅間0分＋会場徒歩3分）', manual_route_note='ホテル・会場ともつくばエクスプレス浅草駅を利用。同一駅として駅間0分。'),
+            'stage-068-2': dict(hotel_nearest_station='つくばエクスプレス浅草', hotel_to_station_walk_min=8, venue_nearest_station='つくばエクスプレス浅草', venue_station_to_venue_walk_min=3, station_to_station_min=0, transfer_count=0, total_access_min=11, hotel_source_url='https://www.apahotel.com/hotel/syutoken/tokyo/asakusa-tawaramachi-ekimae/pamphlet/', venue_source_url='https://www.hanayashiki-kagekijo.com/access/', transit_source_url='https://www.apahotel.com/hotel/syutoken/tokyo/asakusa-tawaramachi-ekimae/pamphlet/', access_display='つくばエクスプレス浅草駅経由・合計約11分（ホテル徒歩8分＋駅間0分＋会場徒歩3分）', manual_route_note='ホテル・会場ともつくばエクスプレス浅草駅を利用。同一駅として駅間0分。'),
+            'stage-068-3': dict(hotel_nearest_station='東京メトロ銀座線 浅草', hotel_to_station_walk_min=3, venue_nearest_station='東京メトロ銀座線 浅草', venue_station_to_venue_walk_min=5, station_to_station_min=0, transfer_count=0, total_access_min=8, hotel_source_url='https://www.hotelwing.co.jp/select/asakusa/', venue_source_url='https://www.hanayashiki-kagekijo.com/access/', transit_source_url='https://www.hotelwing.co.jp/select/asakusa/', access_display='東京メトロ銀座線浅草駅経由・合計約8分（ホテル徒歩3分＋駅間0分＋会場徒歩5分）', manual_route_note='ホテル・会場とも東京メトロ銀座線浅草駅を利用。同一駅として駅間0分。'),
+            'stage-077-3': dict(hotel_nearest_station='馬車道', hotel_to_station_walk_min=2, venue_nearest_station='みなとみらい', venue_station_to_venue_walk_min=7, station_to_station_min=2, transfer_count=0, total_access_min=11, hotel_source_url='https://sotetsu-hotels.com/fresa-inn/sakuragicho/access/', venue_source_url='https://pia-arena-mm.jp/access/', transit_source_url='https://ekitan.com/transit/route/sf-9314/st-9313', access_display='馬車道駅→みなとみらい駅・合計約11分（ホテル徒歩2分＋電車2分＋会場徒歩7分、乗換0回）', manual_route_note='みなとみらい線を1駅利用。'),
+            'stage-079-1': dict(hotel_nearest_station='馬車道', hotel_to_station_walk_min=3, venue_nearest_station='新高島', venue_station_to_venue_walk_min=2, station_to_station_min=3, transfer_count=0, total_access_min=8, hotel_source_url='https://washington-hotels.jp/yokohama/access/', venue_source_url='https://www.zepp.co.jp/hall/yokohama/', transit_source_url='https://ekitan.com/transit/route/sf-9314/st-9312', access_display='馬車道駅→新高島駅・合計約8分（ホテル徒歩3分＋電車3分＋会場徒歩2分、乗換0回）', manual_route_note='ホテルは馬車道駅も公式最寄り。みなとみらい線で新高島へ直通。'),
+            'stage-079-2': dict(hotel_nearest_station='みなとみらい', hotel_to_station_walk_min=10, venue_nearest_station='新高島', venue_station_to_venue_walk_min=2, station_to_station_min=2, transfer_count=0, total_access_min=14, hotel_source_url='https://www.newotani-innyokohama.jp/access/', venue_source_url='https://www.zepp.co.jp/hall/yokohama/', transit_source_url='https://ekitan.com/transit/route/sf-9313/st-9312', access_display='みなとみらい駅→新高島駅・合計約14分（ホテル徒歩10分＋電車2分＋会場徒歩2分、乗換0回）', manual_route_note='ホテル公式の最寄り候補みなとみらい駅を利用し、みなとみらい線で新高島へ1駅。'),
+            'stage-079-3': dict(hotel_nearest_station='馬車道', hotel_to_station_walk_min=2, venue_nearest_station='新高島', venue_station_to_venue_walk_min=2, station_to_station_min=3, transfer_count=0, total_access_min=7, hotel_source_url='https://sotetsu-hotels.com/fresa-inn/sakuragicho/access/', venue_source_url='https://www.zepp.co.jp/hall/yokohama/', transit_source_url='https://ekitan.com/transit/route/sf-9314/st-9312', access_display='馬車道駅→新高島駅・合計約7分（ホテル徒歩2分＋電車3分＋会場徒歩2分、乗換0回）', manual_route_note='みなとみらい線で新高島へ直通。'),
+            'stage-080-1': dict(hotel_nearest_station='JR関内', hotel_to_station_walk_min=10, venue_nearest_station='JR関内', venue_station_to_venue_walk_min=6, station_to_station_min=0, transfer_count=0, total_access_min=16, hotel_source_url='https://www.kannai-yokohama.jalcity.co.jp/access/', venue_source_url='https://yokohama-buntai.jp/wp-includes/file/pdf/%E6%A8%AA%E6%B5%9CBUNTAI%E5%88%A9%E7%94%A8%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E3%81%94%E6%A1%88%E5%86%85_2026%E5%B9%B41%E6%9C%88_20260107.pdf', transit_source_url='https://www.kannai-yokohama.jalcity.co.jp/access/', access_display='JR関内駅経由・合計約16分（ホテル徒歩10分＋駅間0分＋会場徒歩6分）', manual_route_note='ホテル・会場ともJR関内駅を公式アクセスとして案内。同一駅として駅間0分。'),
+            'stage-080-2': dict(hotel_nearest_station='横浜市営地下鉄 関内', hotel_to_station_walk_min=1, venue_nearest_station='横浜市営地下鉄 関内', venue_station_to_venue_walk_min=5, station_to_station_min=0, transfer_count=0, total_access_min=6, hotel_source_url='https://www.choice-hotels.jp/hotel/kannai/access/', venue_source_url='https://yokohama-buntai.jp/wp-includes/file/pdf/%E6%A8%AA%E6%B5%9CBUNTAI%E5%88%A9%E7%94%A8%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E3%81%94%E6%A1%88%E5%86%85_2026%E5%B9%B41%E6%9C%88_20260107.pdf', transit_source_url='https://www.choice-hotels.jp/hotel/kannai/access/', access_display='横浜市営地下鉄関内駅経由・合計約6分（ホテル徒歩1分＋駅間0分＋会場徒歩5分）', manual_route_note='ホテル・会場とも横浜市営地下鉄関内駅を公式アクセスとして案内。同一駅として駅間0分。'),
+            'stage-080-3': dict(hotel_nearest_station='横浜市営地下鉄 関内', hotel_to_station_walk_min=5, venue_nearest_station='横浜市営地下鉄 関内', venue_station_to_venue_walk_min=5, station_to_station_min=0, transfer_count=0, total_access_min=10, hotel_source_url='https://www.daiwaroynet.jp/yokohama-koen/access/', venue_source_url='https://yokohama-buntai.jp/wp-includes/file/pdf/%E6%A8%AA%E6%B5%9CBUNTAI%E5%88%A9%E7%94%A8%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E3%81%94%E6%A1%88%E5%86%85_2026%E5%B9%B41%E6%9C%88_20260107.pdf', transit_source_url='https://www.daiwaroynet.jp/yokohama-koen/access/', access_display='横浜市営地下鉄関内駅経由・合計約10分（ホテル徒歩5分＋駅間0分＋会場徒歩5分）', manual_route_note='ホテル・会場とも横浜市営地下鉄関内駅を公式アクセスとして案内。同一駅として駅間0分。'),
+          }
+
+          p = Path('research/generated/hotel_detail_research_750.jsonl')
+          rows = [json.loads(x) for x in p.read_text(encoding='utf-8').splitlines() if x.strip()]
+          found=set()
+          for r in rows:
+              cid=r.get('id')
+              if cid not in corrections:
+                  continue
+              found.add(cid)
+              r.update(corrections[cid])
+              r['warnings']=[w for w in (r.get('warnings') or []) if w != 'transit_parse_failed']
+              r['verification_status']='verified'
+              r['checked_at']=checked
+              r['manual_route_verified_at']=checked
+              r['manual_route_verification_mode']='ordinary_web_search'
+          missing=set(corrections)-found
+          if missing:
+              raise SystemExit(f'Missing IDs: {sorted(missing)}')
+          p.write_text('\n'.join(json.dumps(r, ensure_ascii=False, separators=(',', ':')) for r in rows)+'\n', encoding='utf-8')
+
+          from collections import Counter
+          status=Counter(r.get('verification_status') for r in rows)
+          warnings=Counter(w for r in rows for w in (r.get('warnings') or []))
+          validation={
+            'row_count':len(rows),
+            'unique_id_count':len({r.get('id') for r in rows}),
+            'status_counts':dict(status),
+            'warning_counts':dict(warnings),
+            'complete':len(rows)==750 and len({r.get('id') for r in rows})==750,
+            'verification_mode':'ordinary_web_search_manual_batches'
+          }
+          Path('research/generated/final_validation.json').write_text(json.dumps(validation, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')
+          Path('research/generated/manual_route_batch_01_applied.json').write_text(json.dumps({'checked_at':checked,'ids':sorted(corrections),'sources':'hotel/venue official + Ekitan where rail travel required'}, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')
+          print(json.dumps(validation, ensure_ascii=False, indent=2))
+          PY
+      - name: Commit researched corrections
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f research/generated/hotel_detail_research_750.jsonl research/generated/final_validation.json research/generated/manual_route_batch_01_applied.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Resolve 10 hotel routes by ordinary web research"
+            git push origin HEAD:research/hotel-details-750-20260807
+          fi
