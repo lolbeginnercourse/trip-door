@@ -1,0 +1,16 @@
+{
+  "checked_at": "2026-08-08T00:06:20+09:00",
+  "ids": [
+    "stage-068-1",
+    "stage-068-2",
+    "stage-068-3",
+    "stage-077-3",
+    "stage-079-1",
+    "stage-079-2",
+    "stage-079-3",
+    "stage-080-1",
+    "stage-080-2",
+    "stage-080-3"
+  ],
+  "sources": "hotel/venue official + Ekitan where rail travel required"
+}
