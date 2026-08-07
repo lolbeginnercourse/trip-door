@@ -1,0 +1,83 @@
+name: Extract remaining manual route search targets
+
+on:
+  push:
+    branches:
+      - research/hotel-details-750-20260807
+    paths:
+      - .github/workflows/extract-manual-route-targets.yml
+
+permissions:
+  contents: write
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research/hotel-details-750-20260807
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Extract rows that still need ordinary web route research
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          from datetime import datetime, timezone, timedelta
+
+          src=Path('research/generated/hotel_detail_research_750.jsonl')
+          rows=[json.loads(line) for line in src.read_text(encoding='utf-8').splitlines() if line.strip()]
+          targets=[]
+          for r in rows:
+              warnings=r.get('warnings') or []
+              if r.get('verification_status')=='needs_review' and 'transit_parse_failed' in warnings:
+                  targets.append({
+                      'id':r.get('id'),
+                      'research_no':r.get('research_no'),
+                      'hotel_name':r.get('hotel_name'),
+                      'venue_name':r.get('venue_name'),
+                      'hotel_nearest_station':r.get('hotel_nearest_station'),
+                      'venue_nearest_station':r.get('venue_nearest_station'),
+                      'hotel_to_station_walk_min':r.get('hotel_to_station_walk_min'),
+                      'venue_station_to_venue_walk_min':r.get('venue_station_to_venue_walk_min'),
+                      'hotel_source_url':r.get('hotel_source_url'),
+                      'venue_source_url':r.get('venue_source_url'),
+                      'transit_source_url':r.get('transit_source_url'),
+                      'warnings':warnings,
+                  })
+
+          pairs={}
+          for t in targets:
+              key=(t.get('hotel_nearest_station'),t.get('venue_nearest_station'))
+              k=' -> '.join(str(x or '') for x in key)
+              pairs.setdefault(k,[]).append(t['id'])
+
+          out=Path('research/generated/manual_route_search_targets.json')
+          out.write_text(json.dumps(targets,ensure_ascii=False,indent=2),encoding='utf-8')
+          jst=timezone(timedelta(hours=9))
+          summary={
+              'target_count':len(targets),
+              'unique_route_pair_count':len(pairs),
+              'route_pairs':[{'route':k,'ids':v} for k,v in sorted(pairs.items())],
+              'mode':'ordinary_web_search_not_parser',
+              'generated_at':datetime.now(jst).isoformat(timespec='seconds'),
+          }
+          Path('research/generated/manual_route_search_summary.json').write_text(json.dumps(summary,ensure_ascii=False,indent=2),encoding='utf-8')
+          print(json.dumps(summary,ensure_ascii=False,indent=2))
+          if len(targets) != 70:
+              raise SystemExit(f'Expected 70 remaining transit parser failures, got {len(targets)}')
+          PY
+      - name: Commit extracted targets
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f research/generated/manual_route_search_targets.json research/generated/manual_route_search_summary.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Extract 70 routes for ordinary web research"
+            git push origin HEAD:research/hotel-details-750-20260807
+          fi
