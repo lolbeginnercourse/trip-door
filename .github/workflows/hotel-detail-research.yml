@@ -1,4 +1,4 @@
-name: Research hotel details 750
+name: Research hotel details 750 fresh web
 
 on:
   push:
@@ -13,6 +13,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: hotel-detail-research-750-fresh
+  cancel-in-progress: true
+
 jobs:
   research:
     runs-on: ubuntu-latest
@@ -24,29 +28,48 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Repair existing 1-25 transit routes
+
+      - name: Reset previous research outputs
         run: |
-          python scripts/repair_transit_routes.py || true
-          python scripts/summarize_hotel_research.py || true
-      - name: Continue research 26-750 with checkpoints
+          rm -f research/generated/hotel_access_cache.jsonl
+          rm -f research/generated/venue_access_cache.jsonl
+          rm -f research/generated/hotel_detail_research_750.jsonl
+          rm -f research/generated/research_progress.json
+          rm -f research/generated/research_run_status.json
+          mkdir -p research/generated
+          python - <<'PY'
+          import json
+          from datetime import datetime, timezone
+          from pathlib import Path
+          Path('research/generated/fresh_research_manifest.json').write_text(json.dumps({
+              'mode':'fresh_web_research',
+              'target_count':750,
+              'reuse_previous_research':False,
+              'started_at_utc':datetime.now(timezone.utc).isoformat(),
+              'note':'Hotel/venue access facts are researched again from web sources. Existing cached research outputs are deleted before batch 1.'
+          },ensure_ascii=False,indent=2),encoding='utf-8')
+          PY
+
+      - name: Research all 750 from the web with checkpoints
         shell: bash
         run: |
           set -u
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          for start in $(seq 26 25 726); do
+          for start in $(seq 1 25 726); do
             end=$((start + 24))
             if [ "$end" -gt 750 ]; then end=750; fi
-            echo "===== Research batch ${start}-${end} ====="
+            echo "===== Fresh web research batch ${start}-${end} ====="
 
             set +e
             python scripts/research_hotel_details.py --start "$start" --end "$end" > "research_${start}_${end}.log" 2>&1
             code=$?
             set -e
+
             if [ "$code" -ne 0 ]; then
-              echo "First attempt failed with exit ${code}; retrying batch ${start}-${end}"
-              tail -n 120 "research_${start}_${end}.log" || true
+              echo "First attempt failed with exit ${code}; retrying ${start}-${end}"
+              tail -n 150 "research_${start}_${end}.log" || true
               set +e
               python scripts/research_hotel_details.py --start "$start" --end "$end" >> "research_${start}_${end}.log" 2>&1
               code=$?
@@ -63,31 +86,51 @@ jobs:
           start,end,code=map(int,sys.argv[1:])
           log=Path(f'research_{start}_{end}.log')
           Path('research/generated/research_run_status.json').write_text(json.dumps({
+              'mode':'fresh_web_research',
               'latest_batch_start':start,
               'latest_batch_end':end,
               'latest_exit_code':code,
               'checked_at_utc':datetime.now(timezone.utc).isoformat(),
-              'log_tail':log.read_text(encoding='utf-8',errors='ignore')[-16000:] if log.exists() else '',
+              'log_tail':log.read_text(encoding='utf-8',errors='ignore')[-18000:] if log.exists() else ''
           },ensure_ascii=False,indent=2),encoding='utf-8')
           PY
 
-            git add -f research/generated/hotel_access_cache.jsonl research/generated/venue_access_cache.jsonl research/generated/hotel_detail_research_750.jsonl research/generated/research_progress.json research/generated/research_run_status.json 2>/dev/null || true
+            git add -f research/generated/hotel_access_cache.jsonl research/generated/venue_access_cache.jsonl research/generated/hotel_detail_research_750.jsonl research/generated/research_progress.json research/generated/research_run_status.json research/generated/fresh_research_manifest.json 2>/dev/null || true
             if ! git diff --cached --quiet; then
-              git commit -m "Hotel detail research checkpoint ${start}-${end}"
+              git commit -m "Fresh hotel web research checkpoint ${start}-${end}"
               git push
             fi
 
-            echo "===== Finished batch ${start}-${end} ====="
+            if [ "$code" -ne 0 ]; then
+              echo "Batch ${start}-${end} still has an execution error after retry; checkpoint saved and continuing."
+            fi
           done
 
-      - name: Final research summary
+      - name: Final validation
         if: always()
+        shell: bash
         run: |
           python scripts/repair_transit_routes.py || true
           python scripts/summarize_hotel_research.py || true
-          cat research/generated/research_progress.json || true
-          git add -f research/generated/hotel_access_cache.jsonl research/generated/venue_access_cache.jsonl research/generated/hotel_detail_research_750.jsonl research/generated/research_progress.json research/generated/research_run_status.json 2>/dev/null || true
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          result=Path('research/generated/hotel_detail_research_750.jsonl')
+          rows=[]
+          if result.exists():
+              for line in result.read_text(encoding='utf-8').splitlines():
+                  if line.strip(): rows.append(json.loads(line))
+          status={}
+          for row in rows:
+              status[row.get('verification_status','unknown')]=status.get(row.get('verification_status','unknown'),0)+1
+          summary={'row_count':len(rows),'status_counts':status,'complete':len(rows)==750}
+          Path('research/generated/final_validation.json').write_text(json.dumps(summary,ensure_ascii=False,indent=2),encoding='utf-8')
+          print(json.dumps(summary,ensure_ascii=False,indent=2))
+          if len(rows) != 750:
+              raise SystemExit(f'Expected 750 researched rows, got {len(rows)}')
+          PY
+          git add -f research/generated/*.json research/generated/*.jsonl 2>/dev/null || true
           if ! git diff --cached --quiet; then
-            git commit -m "Finalize hotel detail research collection"
+            git commit -m "Finalize fresh web research for 750 hotel details"
             git push
           fi
