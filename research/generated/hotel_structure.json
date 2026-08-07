@@ -6,6 +6,9 @@
   },
   "selected_collection": "hotels",
   "record_count": 1256,
+  "published_record_count": 1256,
+  "unique_published_hotel_name_count": 745,
+  "unique_venue_id_count": 250,
   "keys": [
     {
       "key": "accessEstimate",
