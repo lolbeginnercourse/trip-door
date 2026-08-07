@@ -325,7 +325,8 @@
       "matchedBy": "",
       "matchEvidence": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "affiliate": {
       "httpStatus": 200,
@@ -333,7 +334,8 @@
       "rakutenHotelNo": "",
       "providers": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "causeCode": "not_found_by_current_rakuten_search"
   },
@@ -380,7 +382,8 @@
       "matchedBy": "",
       "matchEvidence": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "affiliate": {
       "httpStatus": 200,
@@ -388,7 +391,8 @@
       "rakutenHotelNo": "",
       "providers": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "causeCode": "multiple_candidates"
   },
@@ -675,7 +679,8 @@
       "matchedBy": "",
       "matchEvidence": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "affiliate": {
       "httpStatus": 200,
@@ -683,7 +688,8 @@
       "rakutenHotelNo": "",
       "providers": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "causeCode": "not_found_by_current_rakuten_search"
   },
@@ -806,7 +812,8 @@
       "matchedBy": "",
       "matchEvidence": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "affiliate": {
       "httpStatus": 200,
@@ -814,7 +821,8 @@
       "rakutenHotelNo": "",
       "providers": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "causeCode": "not_found_by_current_rakuten_search"
   },
@@ -2042,7 +2050,8 @@
       "matchedBy": "",
       "matchEvidence": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "affiliate": {
       "httpStatus": 200,
@@ -2050,7 +2059,8 @@
       "rakutenHotelNo": "",
       "providers": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "causeCode": "multiple_candidates"
   },
@@ -2889,7 +2899,8 @@
       "matchedBy": "",
       "matchEvidence": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "affiliate": {
       "httpStatus": 200,
@@ -2897,7 +2908,8 @@
       "rakutenHotelNo": "",
       "providers": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "causeCode": "multiple_candidates"
   },
@@ -2968,7 +2980,8 @@
       "matchedBy": "",
       "matchEvidence": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "affiliate": {
       "httpStatus": 200,
@@ -2976,7 +2989,8 @@
       "rakutenHotelNo": "",
       "providers": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "causeCode": "not_found_by_current_rakuten_search"
   },
@@ -3095,7 +3109,8 @@
       "matchedBy": "",
       "matchEvidence": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "affiliate": {
       "httpStatus": 200,
@@ -3103,7 +3118,8 @@
       "rakutenHotelNo": "",
       "providers": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "causeCode": "not_found_by_current_rakuten_search"
   },
@@ -3246,7 +3262,8 @@
       "matchedBy": "",
       "matchEvidence": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 3
     },
     "affiliate": {
       "httpStatus": 200,
@@ -3254,7 +3271,8 @@
       "rakutenHotelNo": "",
       "providers": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "causeCode": "not_found_by_current_rakuten_search"
   },
@@ -3277,7 +3295,8 @@
       "matchedBy": "",
       "matchEvidence": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "affiliate": {
       "httpStatus": 200,
@@ -3285,7 +3304,8 @@
       "rakutenHotelNo": "",
       "providers": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "causeCode": "not_found_by_current_rakuten_search"
   },
@@ -3380,7 +3400,8 @@
       "matchedBy": "",
       "matchEvidence": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 3
     },
     "affiliate": {
       "httpStatus": 200,
@@ -3388,7 +3409,8 @@
       "rakutenHotelNo": "",
       "providers": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "causeCode": "not_found_by_current_rakuten_search"
   },
@@ -3411,7 +3433,8 @@
       "matchedBy": "",
       "matchEvidence": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "affiliate": {
       "httpStatus": 200,
@@ -3419,7 +3442,8 @@
       "rakutenHotelNo": "",
       "providers": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "causeCode": "not_found_by_current_rakuten_search"
   },
@@ -3908,7 +3932,8 @@
       "matchedBy": "",
       "matchEvidence": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "affiliate": {
       "httpStatus": 200,
@@ -3916,7 +3941,8 @@
       "rakutenHotelNo": "",
       "providers": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "causeCode": "multiple_candidates"
   },
@@ -4039,7 +4065,8 @@
       "matchedBy": "",
       "matchEvidence": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "affiliate": {
       "httpStatus": 200,
@@ -4047,7 +4074,8 @@
       "rakutenHotelNo": "",
       "providers": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "causeCode": "multiple_candidates"
   },
@@ -4874,7 +4902,8 @@
       "matchedBy": "",
       "matchEvidence": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "affiliate": {
       "httpStatus": 200,
@@ -4882,7 +4911,8 @@
       "rakutenHotelNo": "",
       "providers": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "causeCode": "multiple_candidates"
   },
@@ -5001,7 +5031,8 @@
       "matchedBy": "",
       "matchEvidence": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "affiliate": {
       "httpStatus": 200,
@@ -5009,7 +5040,8 @@
       "rakutenHotelNo": "",
       "providers": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "causeCode": "multiple_candidates"
   },
@@ -5229,7 +5261,8 @@
       "matchedBy": "",
       "matchEvidence": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "affiliate": {
       "httpStatus": 200,
@@ -5237,7 +5270,8 @@
       "rakutenHotelNo": "",
       "providers": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "causeCode": "not_found_by_current_rakuten_search"
   },
@@ -5356,7 +5390,8 @@
       "matchedBy": "",
       "matchEvidence": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "affiliate": {
       "httpStatus": 200,
@@ -5364,7 +5399,8 @@
       "rakutenHotelNo": "",
       "providers": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "causeCode": "not_found_by_current_rakuten_search"
   },
@@ -5483,7 +5519,8 @@
       "matchedBy": "",
       "matchEvidence": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "affiliate": {
       "httpStatus": 200,
@@ -5491,7 +5528,8 @@
       "rakutenHotelNo": "",
       "providers": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "causeCode": "not_found_by_current_rakuten_search"
   },
@@ -6049,7 +6087,8 @@
       "matchedBy": "",
       "matchEvidence": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "affiliate": {
       "httpStatus": 200,
@@ -6057,7 +6096,8 @@
       "rakutenHotelNo": "",
       "providers": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "causeCode": "not_found_by_current_rakuten_search"
   },
@@ -6080,7 +6120,8 @@
       "matchedBy": "",
       "matchEvidence": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 4
     },
     "affiliate": {
       "httpStatus": 200,
@@ -6088,7 +6129,8 @@
       "rakutenHotelNo": "",
       "providers": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "causeCode": "not_found_by_current_rakuten_search"
   },
@@ -6183,7 +6225,8 @@
       "matchedBy": "",
       "matchEvidence": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "affiliate": {
       "httpStatus": 200,
@@ -6191,7 +6234,8 @@
       "rakutenHotelNo": "",
       "providers": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "causeCode": "not_found_by_current_rakuten_search"
   },
@@ -6214,7 +6258,8 @@
       "matchedBy": "",
       "matchEvidence": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 4
     },
     "affiliate": {
       "httpStatus": 200,
@@ -6222,7 +6267,8 @@
       "rakutenHotelNo": "",
       "providers": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "causeCode": "not_found_by_current_rakuten_search"
   },
@@ -6941,7 +6987,8 @@
       "matchedBy": "",
       "matchEvidence": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "affiliate": {
       "httpStatus": 200,
@@ -6949,7 +6996,8 @@
       "rakutenHotelNo": "",
       "providers": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "causeCode": "not_found_by_current_rakuten_search"
   },
@@ -7068,7 +7116,8 @@
       "matchedBy": "",
       "matchEvidence": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "affiliate": {
       "httpStatus": 200,
@@ -7076,7 +7125,8 @@
       "rakutenHotelNo": "",
       "providers": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "causeCode": "not_found_by_current_rakuten_search"
   },
@@ -7195,7 +7245,8 @@
       "matchedBy": "",
       "matchEvidence": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "affiliate": {
       "httpStatus": 200,
@@ -7203,7 +7254,8 @@
       "rakutenHotelNo": "",
       "providers": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "causeCode": "not_found_by_current_rakuten_search"
   },
@@ -7322,7 +7374,8 @@
       "matchedBy": "",
       "matchEvidence": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "affiliate": {
       "httpStatus": 200,
@@ -7330,7 +7383,8 @@
       "rakutenHotelNo": "",
       "providers": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "causeCode": "not_found_by_current_rakuten_search"
   },
@@ -7449,7 +7503,8 @@
       "matchedBy": "",
       "matchEvidence": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "affiliate": {
       "httpStatus": 200,
@@ -7457,7 +7512,8 @@
       "rakutenHotelNo": "",
       "providers": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "causeCode": "not_found_by_current_rakuten_search"
   },
@@ -7576,7 +7632,8 @@
       "matchedBy": "",
       "matchEvidence": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "affiliate": {
       "httpStatus": 200,
@@ -7584,7 +7641,8 @@
       "rakutenHotelNo": "",
       "providers": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "causeCode": "not_found_by_current_rakuten_search"
   },
@@ -7703,7 +7761,8 @@
       "matchedBy": "",
       "matchEvidence": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "affiliate": {
       "httpStatus": 200,
@@ -7711,7 +7770,8 @@
       "rakutenHotelNo": "",
       "providers": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "causeCode": "not_found_by_current_rakuten_search"
   },
@@ -7854,7 +7914,8 @@
       "matchedBy": "",
       "matchEvidence": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "affiliate": {
       "httpStatus": 200,
@@ -7862,7 +7923,8 @@
       "rakutenHotelNo": "",
       "providers": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "causeCode": "not_found_by_current_rakuten_search"
   },
@@ -8128,7 +8190,8 @@
       "matchedBy": "",
       "matchEvidence": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "affiliate": {
       "httpStatus": 200,
@@ -8136,7 +8199,8 @@
       "rakutenHotelNo": "",
       "providers": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "causeCode": "not_found_by_current_rakuten_search"
   },
@@ -8401,7 +8465,8 @@
       "matchedBy": "",
       "matchEvidence": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "affiliate": {
       "httpStatus": 200,
@@ -8409,7 +8474,8 @@
       "rakutenHotelNo": "",
       "providers": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "causeCode": "not_found_by_current_rakuten_search"
   },
@@ -8534,7 +8600,8 @@
       "matchedBy": "",
       "matchEvidence": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "affiliate": {
       "httpStatus": 200,
@@ -8542,7 +8609,8 @@
       "rakutenHotelNo": "",
       "providers": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "causeCode": "not_found_by_current_rakuten_search"
   },
@@ -10636,7 +10704,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -10779,7 +10847,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -11352,7 +11420,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -13551,8 +13619,8 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:浦和ワシントンホテル|埼玉県|浦和",
     "image": {
-      "httpStatus": 502,
-      "status": "502",
+      "httpStatus": 404,
+      "status": "not_found",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -13560,7 +13628,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 2
     },
     "affiliate": {
       "httpStatus": 200,
@@ -13571,7 +13639,7 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "temporary_upstream_error"
+    "causeCode": "not_found_by_current_rakuten_search"
   },
   {
     "index": 533,
@@ -13915,8 +13983,8 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:浦和ワシントンホテル|埼玉県|浦和",
     "image": {
-      "httpStatus": 502,
-      "status": "502",
+      "httpStatus": 404,
+      "status": "not_found",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -13924,7 +13992,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 2
     },
     "affiliate": {
       "httpStatus": 200,
@@ -13935,7 +14003,7 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "temporary_upstream_error"
+    "causeCode": "not_found_by_current_rakuten_search"
   },
   {
     "index": 547,
@@ -16856,7 +16924,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 2
     },
     "affiliate": {
       "httpStatus": 200,
@@ -27666,7 +27734,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 2
     },
     "affiliate": {
       "httpStatus": 200,
@@ -27815,7 +27883,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 2
     },
     "affiliate": {
       "httpStatus": 200,
@@ -28325,7 +28393,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -29302,7 +29370,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -32099,29 +32167,19 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:ダイワロイネットホテル那覇国際通り|沖縄県|牧志",
     "image": {
-      "httpStatus": 502,
-      "status": "502",
-      "hasImage": false,
-      "hotelNo": "",
-      "hotelName": "",
-      "matchedBy": "",
+      "httpStatus": 200,
+      "status": "matched",
+      "hasImage": true,
+      "hotelNo": "128440",
+      "hotelName": "ダイワロイネットホテル那覇国際通り",
+      "matchedBy": "exactName",
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "affiliate": {
-      "httpStatus": 200,
-      "hasRakuten": true,
-      "rakutenHotelNo": "128440",
-      "providers": [
-        "楽天トラベル"
-      ],
-      "transportError": "",
-      "rawExcerpt": "",
-      "attemptsUsed": 1
-    },
-    "causeCode": "temporary_upstream_error"
+    "affiliate": null,
+    "causeCode": "matched"
   },
   {
     "index": 1247,
@@ -32184,8 +32242,8 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:東横inn沖縄那覇国際通り美栄橋駅|沖縄県|美栄橋",
     "image": {
-      "httpStatus": 502,
-      "status": "502",
+      "httpStatus": 404,
+      "status": "not_found",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -32204,7 +32262,7 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "temporary_upstream_error"
+    "causeCode": "not_found_by_current_rakuten_search"
   },
   {
     "index": 1250,

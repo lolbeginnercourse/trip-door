@@ -314,7 +314,8 @@
       "matchedBy": "",
       "matchEvidence": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "affiliate": {
       "httpStatus": 200,
@@ -322,9 +323,17 @@
       "rakutenHotelNo": "",
       "providers": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "not_found_by_current_rakuten_search",
+    "retry": {
+      "attempted": true,
+      "attemptedAt": "2026-08-06T23:34:47.491Z",
+      "previousCauseCode": "not_found_by_current_rakuten_search",
+      "previousHasImage": false,
+      "attemptsPerRequest": 5
+    }
   },
   "name:ホテルアジア会館|東京都|青山一丁目・乃木坂": {
     "requestKey": "name:ホテルアジア会館|東京都|青山一丁目・乃木坂",
@@ -380,7 +389,8 @@
       "matchedBy": "",
       "matchEvidence": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "affiliate": {
       "httpStatus": 200,
@@ -388,9 +398,17 @@
       "rakutenHotelNo": "",
       "providers": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
-    "causeCode": "multiple_candidates"
+    "causeCode": "multiple_candidates",
+    "retry": {
+      "attempted": true,
+      "attemptedAt": "2026-08-06T23:34:52.617Z",
+      "previousCauseCode": "multiple_candidates",
+      "previousHasImage": false,
+      "attemptsPerRequest": 5
+    }
   },
   "name:ホテルグランドシティ|東京都|池袋東口": {
     "requestKey": "name:ホテルグランドシティ|東京都|池袋東口",
@@ -593,7 +611,8 @@
       "matchedBy": "",
       "matchEvidence": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "affiliate": {
       "httpStatus": 200,
@@ -601,9 +620,17 @@
       "rakutenHotelNo": "",
       "providers": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "not_found_by_current_rakuten_search",
+    "retry": {
+      "attempted": true,
+      "attemptedAt": "2026-08-06T23:34:56.729Z",
+      "previousCauseCode": "not_found_by_current_rakuten_search",
+      "previousHasImage": false,
+      "attemptsPerRequest": 5
+    }
   },
   "name:the b 水道橋|東京都|水道橋・春日": {
     "requestKey": "name:the b 水道橋|東京都|水道橋・春日",
@@ -1840,7 +1867,8 @@
       "matchedBy": "",
       "matchEvidence": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "affiliate": {
       "httpStatus": 200,
@@ -1848,9 +1876,17 @@
       "rakutenHotelNo": "",
       "providers": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
-    "causeCode": "multiple_candidates"
+    "causeCode": "multiple_candidates",
+    "retry": {
+      "attempted": true,
+      "attemptedAt": "2026-08-06T23:35:31.434Z",
+      "previousCauseCode": "multiple_candidates",
+      "previousHasImage": false,
+      "attemptsPerRequest": 5
+    }
   },
   "name:アパホテル〈渋谷道玄坂上〉|東京都|渋谷・神泉": {
     "requestKey": "name:アパホテル〈渋谷道玄坂上〉|東京都|渋谷・神泉",
@@ -1941,7 +1977,8 @@
       "matchedBy": "",
       "matchEvidence": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "affiliate": {
       "httpStatus": 200,
@@ -1949,9 +1986,17 @@
       "rakutenHotelNo": "",
       "providers": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "not_found_by_current_rakuten_search",
+    "retry": {
+      "attempted": true,
+      "attemptedAt": "2026-08-06T23:35:35.577Z",
+      "previousCauseCode": "not_found_by_current_rakuten_search",
+      "previousHasImage": false,
+      "attemptsPerRequest": 5
+    }
   },
   "name:渋谷東武ホテル|東京都|渋谷": {
     "requestKey": "name:渋谷東武ホテル|東京都|渋谷",
@@ -2097,7 +2142,8 @@
       "matchedBy": "",
       "matchEvidence": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 3
     },
     "affiliate": {
       "httpStatus": 200,
@@ -2105,9 +2151,17 @@
       "rakutenHotelNo": "",
       "providers": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "not_found_by_current_rakuten_search",
+    "retry": {
+      "attempted": true,
+      "attemptedAt": "2026-08-06T23:37:43.552Z",
+      "previousCauseCode": "not_found_by_current_rakuten_search",
+      "previousHasImage": false,
+      "attemptsPerRequest": 5
+    }
   },
   "name:アパホテル&リゾート〈西新宿五丁目駅タワー〉|東京都|西新宿五丁目": {
     "requestKey": "name:アパホテル&リゾート〈西新宿五丁目駅タワー〉|東京都|西新宿五丁目",
@@ -2139,7 +2193,8 @@
       "matchedBy": "",
       "matchEvidence": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "affiliate": {
       "httpStatus": 200,
@@ -2147,9 +2202,17 @@
       "rakutenHotelNo": "",
       "providers": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "not_found_by_current_rakuten_search",
+    "retry": {
+      "attempted": true,
+      "attemptedAt": "2026-08-06T23:37:46.936Z",
+      "previousCauseCode": "not_found_by_current_rakuten_search",
+      "previousHasImage": false,
+      "attemptsPerRequest": 5
+    }
   },
   "name:東急ステイ西新宿|東京都|西新宿五丁目": {
     "requestKey": "name:東急ステイ西新宿|東京都|西新宿五丁目",
@@ -2939,7 +3002,8 @@
       "matchedBy": "",
       "matchEvidence": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "affiliate": {
       "httpStatus": 200,
@@ -2947,9 +3011,17 @@
       "rakutenHotelNo": "",
       "providers": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "not_found_by_current_rakuten_search",
+    "retry": {
+      "attempted": true,
+      "attemptedAt": "2026-08-06T23:37:58.649Z",
+      "previousCauseCode": "not_found_by_current_rakuten_search",
+      "previousHasImage": false,
+      "attemptsPerRequest": 5
+    }
   },
   "name:スカイハートホテル小岩|東京都|小岩": {
     "requestKey": "name:スカイハートホテル小岩|東京都|小岩",
@@ -2974,7 +3046,8 @@
       "matchedBy": "",
       "matchEvidence": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 4
     },
     "affiliate": {
       "httpStatus": 200,
@@ -2982,9 +3055,17 @@
       "rakutenHotelNo": "",
       "providers": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "not_found_by_current_rakuten_search",
+    "retry": {
+      "attempted": true,
+      "attemptedAt": "2026-08-06T23:41:07.335Z",
+      "previousCauseCode": "not_found_by_current_rakuten_search",
+      "previousHasImage": false,
+      "attemptsPerRequest": 5
+    }
   },
   "name:フレックステイイン江古田|東京都|江古田・新江古田": {
     "requestKey": "name:フレックステイイン江古田|東京都|江古田・新江古田",
@@ -3430,7 +3511,8 @@
       "matchedBy": "",
       "matchEvidence": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "affiliate": {
       "httpStatus": 200,
@@ -3438,9 +3520,17 @@
       "rakutenHotelNo": "",
       "providers": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "not_found_by_current_rakuten_search",
+    "retry": {
+      "attempted": true,
+      "attemptedAt": "2026-08-06T23:41:24.701Z",
+      "previousCauseCode": "not_found_by_current_rakuten_search",
+      "previousHasImage": false,
+      "attemptsPerRequest": 5
+    }
   },
   "name:東横inn京浜東北線王子駅北口|東京都|王子": {
     "requestKey": "name:東横inn京浜東北線王子駅北口|東京都|王子",
@@ -3602,7 +3692,8 @@
       "matchedBy": "",
       "matchEvidence": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "affiliate": {
       "httpStatus": 200,
@@ -3610,9 +3701,17 @@
       "rakutenHotelNo": "",
       "providers": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "not_found_by_current_rakuten_search",
+    "retry": {
+      "attempted": true,
+      "attemptedAt": "2026-08-06T23:41:29.770Z",
+      "previousCauseCode": "not_found_by_current_rakuten_search",
+      "previousHasImage": false,
+      "attemptsPerRequest": 5
+    }
   },
   "name:ホテルアベスト目黒|東京都|目黒": {
     "requestKey": "name:ホテルアベスト目黒|東京都|目黒",
@@ -3911,7 +4010,8 @@
       "matchedBy": "",
       "matchEvidence": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
     "affiliate": {
       "httpStatus": 200,
@@ -3919,9 +4019,17 @@
       "rakutenHotelNo": "",
       "providers": [],
       "transportError": "",
-      "rawExcerpt": ""
+      "rawExcerpt": "",
+      "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "not_found_by_current_rakuten_search",
+    "retry": {
+      "attempted": true,
+      "attemptedAt": "2026-08-06T23:41:42.277Z",
+      "previousCauseCode": "not_found_by_current_rakuten_search",
+      "previousHasImage": false,
+      "attemptsPerRequest": 5
+    }
   },
   "name:the kanzashi tokyo asakusa|東京都|浅草": {
     "requestKey": "name:the kanzashi tokyo asakusa|東京都|浅草",
@@ -4868,7 +4976,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -4881,7 +4989,14 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "temporary_upstream_error"
+    "causeCode": "temporary_upstream_error",
+    "retry": {
+      "attempted": true,
+      "attemptedAt": "2026-08-06T23:46:01.510Z",
+      "previousCauseCode": "temporary_upstream_error",
+      "previousHasImage": false,
+      "attemptsPerRequest": 5
+    }
   },
   "name:ホテルニューヨコスカ|神奈川県|横須賀中央": {
     "requestKey": "name:ホテルニューヨコスカ|神奈川県|横須賀中央",
@@ -4947,7 +5062,14 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "not_found_by_current_rakuten_search",
+    "retry": {
+      "attempted": true,
+      "attemptedAt": "2026-08-06T23:46:04.404Z",
+      "previousCauseCode": "not_found_by_current_rakuten_search",
+      "previousHasImage": false,
+      "attemptsPerRequest": 5
+    }
   },
   "name:ホテルハーバー横須賀|神奈川県|汐入": {
     "requestKey": "name:ホテルハーバー横須賀|神奈川県|汐入",
@@ -5377,7 +5499,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -5388,7 +5510,14 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "temporary_upstream_error"
+    "causeCode": "temporary_upstream_error",
+    "retry": {
+      "attempted": true,
+      "attemptedAt": "2026-08-06T23:50:24.386Z",
+      "previousCauseCode": "temporary_upstream_error",
+      "previousHasImage": false,
+      "attemptsPerRequest": 5
+    }
   },
   "name:東横inn jr横浜線相模原駅前|神奈川県|相模原": {
     "requestKey": "name:東横inn jr横浜線相模原駅前|神奈川県|相模原",
@@ -5508,7 +5637,14 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "not_found_by_current_rakuten_search",
+    "retry": {
+      "attempted": true,
+      "attemptedAt": "2026-08-06T23:50:27.137Z",
+      "previousCauseCode": "not_found_by_current_rakuten_search",
+      "previousHasImage": false,
+      "attemptsPerRequest": 5
+    }
   },
   "name:橋本パークホテル|神奈川県|橋本": {
     "requestKey": "name:橋本パークホテル|神奈川県|橋本",
@@ -6020,7 +6156,14 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "not_found_by_current_rakuten_search",
+    "retry": {
+      "attempted": true,
+      "attemptedAt": "2026-08-06T23:50:40.808Z",
+      "previousCauseCode": "not_found_by_current_rakuten_search",
+      "previousHasImage": false,
+      "attemptsPerRequest": 5
+    }
   },
   "name:ホテルマイステイズ舞浜|千葉県|舞浜": {
     "requestKey": "name:ホテルマイステイズ舞浜|千葉県|舞浜",
@@ -6427,7 +6570,14 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "multiple_candidates"
+    "causeCode": "multiple_candidates",
+    "retry": {
+      "attempted": true,
+      "attemptedAt": "2026-08-06T23:50:43.656Z",
+      "previousCauseCode": "multiple_candidates",
+      "previousHasImage": false,
+      "attemptsPerRequest": 5
+    }
   },
   "name:東横inn松戸駅東口|千葉県|松戸": {
     "requestKey": "name:東横inn松戸駅東口|千葉県|松戸",
@@ -6961,7 +7111,14 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "not_found_by_current_rakuten_search",
+    "retry": {
+      "attempted": true,
+      "attemptedAt": "2026-08-06T23:50:56.271Z",
+      "previousCauseCode": "not_found_by_current_rakuten_search",
+      "previousHasImage": false,
+      "attemptsPerRequest": 5
+    }
   },
   "name:ホテル トレンド 船橋|千葉県|船橋": {
     "requestKey": "name:ホテル トレンド 船橋|千葉県|船橋",
@@ -7249,8 +7406,8 @@
     ],
     "duplicateGroupSize": 2,
     "image": {
-      "httpStatus": 502,
-      "status": "502",
+      "httpStatus": 404,
+      "status": "not_found",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -7258,7 +7415,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 2
     },
     "affiliate": {
       "httpStatus": 200,
@@ -7269,7 +7426,14 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "temporary_upstream_error"
+    "causeCode": "not_found_by_current_rakuten_search",
+    "retry": {
+      "attempted": true,
+      "attemptedAt": "2026-08-06T23:52:01.701Z",
+      "previousCauseCode": "temporary_upstream_error",
+      "previousHasImage": false,
+      "attemptsPerRequest": 5
+    }
   },
   "name:ロイヤルパインズホテル浦和|埼玉県|浦和": {
     "requestKey": "name:ロイヤルパインズホテル浦和|埼玉県|浦和",
@@ -7568,7 +7732,14 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "not_found_by_current_rakuten_search",
+    "retry": {
+      "attempted": true,
+      "attemptedAt": "2026-08-06T23:52:13.983Z",
+      "previousCauseCode": "not_found_by_current_rakuten_search",
+      "previousHasImage": false,
+      "attemptsPerRequest": 5
+    }
   },
   "name:西川口ウィークリー|埼玉県|西川口": {
     "requestKey": "name:西川口ウィークリー|埼玉県|西川口",
@@ -7894,7 +8065,14 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "not_found_by_current_rakuten_search",
+    "retry": {
+      "attempted": true,
+      "attemptedAt": "2026-08-06T23:52:16.804Z",
+      "previousCauseCode": "not_found_by_current_rakuten_search",
+      "previousHasImage": false,
+      "attemptsPerRequest": 5
+    }
   },
   "name:東横inn三郷中央駅前|埼玉県|三郷中央": {
     "requestKey": "name:東横inn三郷中央駅前|埼玉県|三郷中央",
@@ -8042,7 +8220,14 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "location_unverified"
+    "causeCode": "location_unverified",
+    "retry": {
+      "attempted": true,
+      "attemptedAt": "2026-08-06T23:52:19.574Z",
+      "previousCauseCode": "location_unverified",
+      "previousHasImage": false,
+      "attemptsPerRequest": 5
+    }
   },
   "name:所沢パークホテル|埼玉県|所沢": {
     "requestKey": "name:所沢パークホテル|埼玉県|所沢",
@@ -9330,7 +9515,14 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "not_found_by_current_rakuten_search",
+    "retry": {
+      "attempted": true,
+      "attemptedAt": "2026-08-06T23:52:55.640Z",
+      "previousCauseCode": "not_found_by_current_rakuten_search",
+      "previousHasImage": false,
+      "attemptsPerRequest": 5
+    }
   },
   "name:ベッセルイン札幌中島公園|北海道|中島公園": {
     "requestKey": "name:ベッセルイン札幌中島公園|北海道|中島公園",
@@ -9710,7 +9902,14 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "not_found_by_current_rakuten_search",
+    "retry": {
+      "attempted": true,
+      "attemptedAt": "2026-08-06T23:53:08.953Z",
+      "previousCauseCode": "not_found_by_current_rakuten_search",
+      "previousHasImage": false,
+      "attemptsPerRequest": 5
+    }
   },
   "name:ホテルリソル函館|北海道|函館": {
     "requestKey": "name:ホテルリソル函館|北海道|函館",
@@ -9763,7 +9962,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 2
     },
     "affiliate": {
       "httpStatus": 200,
@@ -9774,7 +9973,14 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "not_found_by_current_rakuten_search",
+    "retry": {
+      "attempted": true,
+      "attemptedAt": "2026-08-06T23:54:15.453Z",
+      "previousCauseCode": "not_found_by_current_rakuten_search",
+      "previousHasImage": false,
+      "attemptsPerRequest": 5
+    }
   },
   "name:jrイン帯広|北海道|帯広": {
     "requestKey": "name:jrイン帯広|北海道|帯広",
@@ -9810,7 +10016,14 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "not_found_by_current_rakuten_search",
+    "retry": {
+      "attempted": true,
+      "attemptedAt": "2026-08-06T23:54:20.144Z",
+      "previousCauseCode": "not_found_by_current_rakuten_search",
+      "previousHasImage": false,
+      "attemptsPerRequest": 5
+    }
   },
   "name:リッチモンドホテル帯広駅前|北海道|帯広": {
     "requestKey": "name:リッチモンドホテル帯広駅前|北海道|帯広",
@@ -9874,7 +10087,14 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "multiple_candidates"
+    "causeCode": "multiple_candidates",
+    "retry": {
+      "attempted": true,
+      "attemptedAt": "2026-08-06T23:54:24.108Z",
+      "previousCauseCode": "multiple_candidates",
+      "previousHasImage": false,
+      "attemptsPerRequest": 5
+    }
   },
   "name:コンフォートホテル帯広|北海道|帯広": {
     "requestKey": "name:コンフォートホテル帯広|北海道|帯広",
@@ -11008,7 +11228,14 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "not_found_by_current_rakuten_search",
+    "retry": {
+      "attempted": true,
+      "attemptedAt": "2026-08-06T23:54:38.887Z",
+      "previousCauseCode": "not_found_by_current_rakuten_search",
+      "previousHasImage": false,
+      "attemptsPerRequest": 5
+    }
   },
   "name:ホテルjin盛岡駅前|岩手県|盛岡": {
     "requestKey": "name:ホテルjin盛岡駅前|岩手県|盛岡",
@@ -11045,7 +11272,14 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "not_found_by_current_rakuten_search",
+    "retry": {
+      "attempted": true,
+      "attemptedAt": "2026-08-06T23:54:43.725Z",
+      "previousCauseCode": "not_found_by_current_rakuten_search",
+      "previousHasImage": false,
+      "attemptsPerRequest": 5
+    }
   },
   "name:東横inn盛岡駅前|岩手県|盛岡": {
     "requestKey": "name:東横inn盛岡駅前|岩手県|盛岡",
@@ -12403,7 +12637,14 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "not_found_by_current_rakuten_search",
+    "retry": {
+      "attempted": true,
+      "attemptedAt": "2026-08-06T23:55:11.700Z",
+      "previousCauseCode": "not_found_by_current_rakuten_search",
+      "previousHasImage": false,
+      "attemptsPerRequest": 5
+    }
   },
   "name:河口湖ホテル|山梨県|河口湖": {
     "requestKey": "name:河口湖ホテル|山梨県|河口湖",
@@ -12642,7 +12883,14 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "not_found_by_current_rakuten_search",
+    "retry": {
+      "attempted": true,
+      "attemptedAt": "2026-08-06T23:55:27.399Z",
+      "previousCauseCode": "not_found_by_current_rakuten_search",
+      "previousHasImage": false,
+      "attemptsPerRequest": 5
+    }
   },
   "name:エースイン松本|長野県|松本": {
     "requestKey": "name:エースイン松本|長野県|松本",
@@ -14036,7 +14284,14 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "not_found_by_current_rakuten_search",
+    "retry": {
+      "attempted": true,
+      "attemptedAt": "2026-08-06T23:55:42.440Z",
+      "previousCauseCode": "not_found_by_current_rakuten_search",
+      "previousHasImage": false,
+      "attemptsPerRequest": 5
+    }
   },
   "name:相鉄フレッサイン 名古屋駅桜通口|愛知県|名古屋": {
     "requestKey": "name:相鉄フレッサイン 名古屋駅桜通口|愛知県|名古屋",
@@ -15062,7 +15317,14 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "not_found_by_current_rakuten_search",
+    "retry": {
+      "attempted": true,
+      "attemptedAt": "2026-08-06T23:56:19.458Z",
+      "previousCauseCode": "not_found_by_current_rakuten_search",
+      "previousHasImage": false,
+      "attemptsPerRequest": 5
+    }
   },
   "name:ホテルマッシモ三島|静岡県|三島": {
     "requestKey": "name:ホテルマッシモ三島|静岡県|三島",
@@ -15154,7 +15416,14 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "not_found_by_current_rakuten_search",
+    "retry": {
+      "attempted": true,
+      "attemptedAt": "2026-08-06T23:56:24.375Z",
+      "previousCauseCode": "not_found_by_current_rakuten_search",
+      "previousHasImage": false,
+      "attemptsPerRequest": 5
+    }
   },
   "name:ココチホテル沼津|静岡県|沼津": {
     "requestKey": "name:ココチホテル沼津|静岡県|沼津",
@@ -15274,7 +15543,14 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "not_found_by_current_rakuten_search",
+    "retry": {
+      "attempted": true,
+      "attemptedAt": "2026-08-06T23:56:29.300Z",
+      "previousCauseCode": "not_found_by_current_rakuten_search",
+      "previousHasImage": false,
+      "attemptsPerRequest": 5
+    }
   },
   "name:くれたけイン富士山|静岡県|富士": {
     "requestKey": "name:くれたけイン富士山|静岡県|富士",
@@ -15842,7 +16118,14 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "not_found_by_current_rakuten_search",
+    "retry": {
+      "attempted": true,
+      "attemptedAt": "2026-08-06T23:56:58.548Z",
+      "previousCauseCode": "not_found_by_current_rakuten_search",
+      "previousHasImage": false,
+      "attemptsPerRequest": 5
+    }
   },
   "name:ホテルトラスティ大阪阿倍野|大阪府|天王寺": {
     "requestKey": "name:ホテルトラスティ大阪阿倍野|大阪府|天王寺",
@@ -16224,7 +16507,14 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "not_found_by_current_rakuten_search",
+    "retry": {
+      "attempted": true,
+      "attemptedAt": "2026-08-06T23:57:03.522Z",
+      "previousCauseCode": "not_found_by_current_rakuten_search",
+      "previousHasImage": false,
+      "attemptsPerRequest": 5
+    }
   },
   "name:コンフォートホテル堺|大阪府|堺": {
     "requestKey": "name:コンフォートホテル堺|大阪府|堺",
@@ -16406,7 +16696,14 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "not_found_by_current_rakuten_search",
+    "retry": {
+      "attempted": true,
+      "attemptedAt": "2026-08-06T23:57:22.754Z",
+      "previousCauseCode": "not_found_by_current_rakuten_search",
+      "previousHasImage": false,
+      "attemptsPerRequest": 5
+    }
   },
   "name:ホテル トレンド 高槻|大阪府|高槻市": {
     "requestKey": "name:ホテル トレンド 高槻|大阪府|高槻市",
@@ -16498,7 +16795,14 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "not_found_by_current_rakuten_search",
+    "retry": {
+      "attempted": true,
+      "attemptedAt": "2026-08-06T23:57:27.856Z",
+      "previousCauseCode": "not_found_by_current_rakuten_search",
+      "previousHasImage": false,
+      "attemptsPerRequest": 5
+    }
   },
   "name:新大阪江坂東急reiホテル|大阪府|江坂": {
     "requestKey": "name:新大阪江坂東急reiホテル|大阪府|江坂",
@@ -16674,7 +16978,14 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "not_found_by_current_rakuten_search",
+    "retry": {
+      "attempted": true,
+      "attemptedAt": "2026-08-06T23:57:31.870Z",
+      "previousCauseCode": "not_found_by_current_rakuten_search",
+      "previousHasImage": false,
+      "attemptsPerRequest": 5
+    }
   },
   "name:u・コミュニティホテル|大阪府|河内小阪": {
     "requestKey": "name:u・コミュニティホテル|大阪府|河内小阪",
@@ -16741,7 +17052,14 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "not_found_by_current_rakuten_search",
+    "retry": {
+      "attempted": true,
+      "attemptedAt": "2026-08-06T23:57:35.281Z",
+      "previousCauseCode": "not_found_by_current_rakuten_search",
+      "previousHasImage": false,
+      "attemptsPerRequest": 5
+    }
   },
   "name:ホテルセイリュウ|大阪府|石切": {
     "requestKey": "name:ホテルセイリュウ|大阪府|石切",
@@ -17595,7 +17913,14 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "not_found_by_current_rakuten_search",
+    "retry": {
+      "attempted": true,
+      "attemptedAt": "2026-08-06T23:57:50.291Z",
+      "previousCauseCode": "not_found_by_current_rakuten_search",
+      "previousHasImage": false,
+      "attemptsPerRequest": 5
+    }
   },
   "name:ホテルモントレ姫路|兵庫県|姫路": {
     "requestKey": "name:ホテルモントレ姫路|兵庫県|姫路",
@@ -17832,7 +18157,14 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "not_found_by_current_rakuten_search",
+    "retry": {
+      "attempted": true,
+      "attemptedAt": "2026-08-06T23:58:03.011Z",
+      "previousCauseCode": "not_found_by_current_rakuten_search",
+      "previousHasImage": false,
+      "attemptsPerRequest": 5
+    }
   },
   "name:ホテルマテリアル|京都府|東山": {
     "requestKey": "name:ホテルマテリアル|京都府|東山",
@@ -17858,7 +18190,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 2
     },
     "affiliate": {
       "httpStatus": 200,
@@ -17869,7 +18201,14 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "not_found_by_current_rakuten_search",
+    "retry": {
+      "attempted": true,
+      "attemptedAt": "2026-08-06T23:59:09.565Z",
+      "previousCauseCode": "not_found_by_current_rakuten_search",
+      "previousHasImage": false,
+      "attemptsPerRequest": 5
+    }
   },
   "name:ウェスティン都ホテル京都|京都府|蹴上": {
     "requestKey": "name:ウェスティン都ホテル京都|京都府|蹴上",
@@ -17935,7 +18274,14 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "not_found_by_current_rakuten_search",
+    "retry": {
+      "attempted": true,
+      "attemptedAt": "2026-08-06T23:59:14.238Z",
+      "previousCauseCode": "not_found_by_current_rakuten_search",
+      "previousHasImage": false,
+      "attemptsPerRequest": 5
+    }
   },
   "name:タッセルホテル三条白川|京都府|東山": {
     "requestKey": "name:タッセルホテル三条白川|京都府|東山",
@@ -18428,7 +18774,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -18439,7 +18785,14 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "temporary_upstream_error"
+    "causeCode": "temporary_upstream_error",
+    "retry": {
+      "attempted": true,
+      "attemptedAt": "2026-08-07T00:03:25.713Z",
+      "previousCauseCode": "temporary_upstream_error",
+      "previousHasImage": false,
+      "attemptsPerRequest": 5
+    }
   },
   "name:hotel 講 大津百町|滋賀県|大津": {
     "requestKey": "name:hotel 講 大津百町|滋賀県|大津",
@@ -19384,7 +19737,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -19395,7 +19748,14 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "temporary_upstream_error"
+    "causeCode": "temporary_upstream_error",
+    "retry": {
+      "attempted": true,
+      "attemptedAt": "2026-08-07T00:08:03.336Z",
+      "previousCauseCode": "temporary_upstream_error",
+      "previousHasImage": false,
+      "attemptsPerRequest": 5
+    }
   },
   "name:ビジネスホテルごとう@net|広島県|呉": {
     "requestKey": "name:ビジネスホテルごとう@net|広島県|呉",
@@ -19659,7 +20019,14 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "not_found_by_current_rakuten_search",
+    "retry": {
+      "attempted": true,
+      "attemptedAt": "2026-08-07T00:08:07.303Z",
+      "previousCauseCode": "not_found_by_current_rakuten_search",
+      "previousHasImage": false,
+      "attemptsPerRequest": 5
+    }
   },
   "name:ロイヤルイン新山口駅前|山口県|新山口": {
     "requestKey": "name:ロイヤルイン新山口駅前|山口県|新山口",
@@ -20447,7 +20814,14 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "not_found_by_current_rakuten_search",
+    "retry": {
+      "attempted": true,
+      "attemptedAt": "2026-08-07T00:08:22.171Z",
+      "previousCauseCode": "not_found_by_current_rakuten_search",
+      "previousHasImage": false,
+      "attemptsPerRequest": 5
+    }
   },
   "name:ザ クラウンパレス新阪急高知|高知県|高知": {
     "requestKey": "name:ザ クラウンパレス新阪急高知|高知県|高知",
@@ -20750,7 +21124,14 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "not_found_by_current_rakuten_search",
+    "retry": {
+      "attempted": true,
+      "attemptedAt": "2026-08-07T00:08:26.090Z",
+      "previousCauseCode": "not_found_by_current_rakuten_search",
+      "previousHasImage": false,
+      "attemptsPerRequest": 5
+    }
   },
   "name:ホテル博多プレイス|福岡県|博多ふ頭": {
     "requestKey": "name:ホテル博多プレイス|福岡県|博多ふ頭",
@@ -21927,29 +22308,26 @@
     ],
     "duplicateGroupSize": 1,
     "image": {
-      "httpStatus": 502,
-      "status": "502",
-      "hasImage": false,
-      "hotelNo": "",
-      "hotelName": "",
-      "matchedBy": "",
+      "httpStatus": 200,
+      "status": "matched",
+      "hasImage": true,
+      "hotelNo": "128440",
+      "hotelName": "ダイワロイネットホテル那覇国際通り",
+      "matchedBy": "exactName",
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "affiliate": {
-      "httpStatus": 200,
-      "hasRakuten": true,
-      "rakutenHotelNo": "128440",
-      "providers": [
-        "楽天トラベル"
-      ],
-      "transportError": "",
-      "rawExcerpt": "",
-      "attemptsUsed": 1
-    },
-    "causeCode": "temporary_upstream_error"
+    "affiliate": null,
+    "causeCode": "matched",
+    "retry": {
+      "attempted": true,
+      "attemptedAt": "2026-08-07T00:09:05.980Z",
+      "previousCauseCode": "temporary_upstream_error",
+      "previousHasImage": false,
+      "attemptsPerRequest": 5
+    }
   },
   "name:ホテルグレイスリー那覇|沖縄県|国際通り": {
     "requestKey": "name:ホテルグレイスリー那覇|沖縄県|国際通り",
@@ -22021,8 +22399,8 @@
     ],
     "duplicateGroupSize": 1,
     "image": {
-      "httpStatus": 502,
-      "status": "502",
+      "httpStatus": 404,
+      "status": "not_found",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -22041,7 +22419,14 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "temporary_upstream_error"
+    "causeCode": "not_found_by_current_rakuten_search",
+    "retry": {
+      "attempted": true,
+      "attemptedAt": "2026-08-07T00:09:10.827Z",
+      "previousCauseCode": "temporary_upstream_error",
+      "previousHasImage": false,
+      "attemptsPerRequest": 5
+    }
   },
   "name:アパホテル&リゾート〈東京ベイ幕張〉||jr海浜幕張駅から徒歩約7分": {
     "requestKey": "name:アパホテル&リゾート〈東京ベイ幕張〉||jr海浜幕張駅から徒歩約7分",
@@ -22133,7 +22518,14 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "location_unverified"
+    "causeCode": "location_unverified",
+    "retry": {
+      "attempted": true,
+      "attemptedAt": "2026-08-07T00:09:14.751Z",
+      "previousCauseCode": "location_unverified",
+      "previousHasImage": false,
+      "attemptsPerRequest": 5
+    }
   },
   "name:nohga hotel ueno tokyo||東京メトロ上野駅から徒歩約3分": {
     "requestKey": "name:nohga hotel ueno tokyo||東京メトロ上野駅から徒歩約3分",
@@ -22169,7 +22561,14 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "location_unverified"
+    "causeCode": "location_unverified",
+    "retry": {
+      "attempted": true,
+      "attemptedAt": "2026-08-07T00:09:18.237Z",
+      "previousCauseCode": "location_unverified",
+      "previousHasImage": false,
+      "attemptsPerRequest": 5
+    }
   },
   "name:kaika 東京 by the share hotels||浅草駅から徒歩約9分": {
     "requestKey": "name:kaika 東京 by the share hotels||浅草駅から徒歩約9分",
@@ -22205,7 +22604,14 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "not_found_by_current_rakuten_search",
+    "retry": {
+      "attempted": true,
+      "attemptedAt": "2026-08-07T00:09:21.798Z",
+      "previousCauseCode": "not_found_by_current_rakuten_search",
+      "previousHasImage": false,
+      "attemptsPerRequest": 5
+    }
   },
   "name:レム六本木||六本木駅から徒歩約1分": {
     "requestKey": "name:レム六本木||六本木駅から徒歩約1分",
