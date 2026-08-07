@@ -56,8 +56,12 @@ jobs:
               k=' -> '.join(str(x or '') for x in key)
               pairs.setdefault(k,[]).append(t['id'])
 
-          out=Path('research/generated/manual_route_search_targets.json')
-          out.write_text(json.dumps(targets,ensure_ascii=False,indent=2),encoding='utf-8')
+          Path('research/generated/manual_route_search_targets.json').write_text(json.dumps(targets,ensure_ascii=False,indent=2),encoding='utf-8')
+          compact=[]
+          for t in targets:
+              compact.append('\t'.join(str(t.get(k) or '') for k in ('id','hotel_name','venue_name','hotel_nearest_station','venue_nearest_station')))
+          Path('research/generated/manual_route_search_targets.tsv').write_text('\n'.join(compact)+'\n',encoding='utf-8')
+
           jst=timezone(timedelta(hours=9))
           summary={
               'target_count':len(targets),
@@ -76,7 +80,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -f research/generated/manual_route_search_targets.json research/generated/manual_route_search_summary.json
+          git add -f research/generated/manual_route_search_targets.json research/generated/manual_route_search_targets.tsv research/generated/manual_route_search_summary.json
           if ! git diff --cached --quiet; then
             git commit -m "Extract 70 routes for ordinary web research"
             git push origin HEAD:research/hotel-details-750-20260807
