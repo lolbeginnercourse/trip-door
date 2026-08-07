@@ -2,14 +2,14 @@
   "row_count": 750,
   "unique_id_count": 750,
   "status_counts": {
-    "verified": 610,
-    "needs_review": 70,
-    "partial": 70
+    "verified": 632,
+    "needs_review": 46,
+    "partial": 72
   },
   "warning_counts": {
-    "transit_parse_failed": 70,
+    "transit_parse_failed": 46,
     "hotel_station_differs_from_existing": 76
   },
   "complete": true,
-  "verification_mode": "needs_review_10_parallel_recheck"
+  "verification_mode": "ordinary_web_search_manual_batches"
 }
