@@ -1,0 +1,172 @@
+name: Fast audit hotel details 750
+
+on:
+  push:
+    branches:
+      - audit/hotel-details-750-fast-20260808
+    paths:
+      - .github/workflows/fast-audit-hotel-details-750.yml
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: audit/hotel-details-750-fast-20260808
+      - name: Run fast sanity audit
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json, re
+          from collections import Counter, defaultdict
+          from pathlib import Path
+          from urllib.parse import urlparse
+
+          p = json.loads(Path('assets/data/hotel-details.json').read_text(encoding='utf-8'))
+          b = json.loads(Path('assets/data/hotels.json').read_text(encoding='utf-8'))
+          records = p.get('records') or {}
+          base_rows = [x for x in b.get('hotels', []) if isinstance(x, dict)]
+          base = {x.get('id'): x for x in base_rows if x.get('id')}
+
+          issues = defaultdict(list)
+          counts = Counter()
+          ids = list(records)
+          counts['records'] = len(records)
+          counts['unique_ids'] = len(set(ids))
+
+          by_venue = defaultdict(list)
+          junk_station_exact = {'最寄','最寄り','の','路線','各','山麓','国際通り','same','unknown','情報未確認'}
+          junk_station_frag = ('一番近い','から広島','札駅から','◇','｢','は三鷹','は前橋','は米子','TXつくば','京浜急行汐入','ＪＲ金沢','ＪＲ福山')
+
+          def add(kind, rid, msg):
+              issues[kind].append({'id': rid, 'message': msg})
+
+          def valid_url(u):
+              try:
+                  q=urlparse(u)
+                  return q.scheme in ('http','https') and bool(q.netloc)
+              except Exception:
+                  return False
+
+          for rid, r in records.items():
+              if not isinstance(r, dict):
+                  add('invalid_record', rid, 'not object'); continue
+              venue_id = r.get('venueId')
+              by_venue[venue_id].append(r)
+              for key in ('id','hotelName','venueName','venueId','rank','coverage','availability','access','checkedAt'):
+                  if r.get(key) in (None,''):
+                      add('missing_required', rid, key)
+              if r.get('id') != rid:
+                  add('id_mismatch', rid, f"record.id={r.get('id')}")
+              if r.get('rank') not in (1,2,3):
+                  add('bad_rank', rid, str(r.get('rank')))
+              if r.get('coverage') not in ('complete','limited'):
+                  add('bad_coverage', rid, str(r.get('coverage')))
+              if r.get('availability') not in ('active','closed'):
+                  add('bad_availability', rid, str(r.get('availability')))
+
+              br = base.get(rid)
+              if not br:
+                  add('missing_base', rid, 'not in hotels.json')
+              else:
+                  if br.get('name') and r.get('hotelName') != br.get('name'):
+                      add('hotel_name_mismatch', rid, f"{r.get('hotelName')} != {br.get('name')}")
+                  if br.get('venueId') and r.get('venueId') != br.get('venueId'):
+                      add('venue_id_mismatch', rid, f"{r.get('venueId')} != {br.get('venueId')}")
+                  if br.get('venueLabel') and r.get('venueName') != br.get('venueLabel'):
+                      add('venue_name_mismatch', rid, f"{r.get('venueName')} != {br.get('venueLabel')}")
+                  if br.get('rank') is not None and r.get('rank') != br.get('rank'):
+                      add('rank_mismatch', rid, f"{r.get('rank')} != {br.get('rank')}")
+                  for key in ('prefecture','area'):
+                      if br.get(key) and r.get(key) and r.get(key) != br.get(key):
+                          add('geo_mismatch', rid, f"{key}: {r.get(key)} != {br.get(key)}")
+
+              srcs = r.get('sources') or []
+              if not srcs:
+                  add('missing_sources', rid, 'none')
+              for s in srcs:
+                  if not valid_url((s or {}).get('url')):
+                      add('invalid_source_url', rid, str((s or {}).get('url')))
+
+              a = r.get('access') or {}
+              hero=a.get('heroMin'); direct=a.get('directMin'); hw=a.get('hotelWalkMin'); sm=a.get('stationMin'); vw=a.get('venueWalkMin'); tr=a.get('transferCount')
+              numeric=[('heroMin',hero,1,240),('directMin',direct,1,240),('hotelWalkMin',hw,0,90),('stationMin',sm,0,240),('venueWalkMin',vw,0,90),('transferCount',tr,0,8)]
+              for k,v,lo,hi in numeric:
+                  if v is not None and (not isinstance(v,(int,float)) or isinstance(v,bool) or v<lo or v>hi):
+                      add('out_of_range', rid, f'{k}={v}')
+              if r.get('coverage')=='limited' and hero is not None:
+                  add('partial_has_hero', rid, f'heroMin={hero}')
+              if r.get('coverage')=='complete' and hero is None:
+                  add('complete_missing_hero', rid, 'heroMin missing')
+              hs=(a.get('hotelStation') or '').strip(); vs=(a.get('venueStation') or '').strip()
+              for label,st in [('hotelStation',hs),('venueStation',vs)]:
+                  if st:
+                      if st in junk_station_exact or any(x in st for x in junk_station_frag) or len(st)>35:
+                          add('suspicious_station', rid, f'{label}={st}')
+              if hs and vs and hs==vs:
+                  if sm not in (None,0): add('same_station_nonzero_time', rid, f'{hs}: stationMin={sm}')
+                  if tr not in (None,0): add('same_station_transfer', rid, f'{hs}: transferCount={tr}')
+              if isinstance(hw,(int,float)) and hw>45: add('long_hotel_walk', rid, f'{hw} min')
+              if isinstance(vw,(int,float)) and vw>45: add('long_venue_walk', rid, f'{vw} min')
+              if isinstance(sm,(int,float)) and sm>150: add('long_rail_time', rid, f'{sm} min')
+              if isinstance(tr,(int,float)) and tr>4: add('many_transfers', rid, f'{tr}')
+
+              steps=a.get('routeSteps') or []
+              if not steps:
+                  add('missing_route_steps', rid, 'none')
+              else:
+                  places=[x.get('label') for x in steps if isinstance(x,dict) and x.get('kind')=='place']
+                  if places and places[0] != r.get('hotelName'): add('route_start_mismatch', rid, str(places[0]))
+                  if places and places[-1] != r.get('venueName'): add('route_end_mismatch', rid, str(places[-1]))
+
+              stay=r.get('stay') or {}
+              if not stay.get('priceEstimate'): add('missing_price_estimate', rid, 'none')
+              pe=str(stay.get('priceEstimate') or '')
+              if pe and not re.search(r'\d', pe): add('suspicious_price', rid, pe)
+
+          counts['venues'] = len([k for k in by_venue if k])
+          for vid, rows in by_venue.items():
+              if not vid:
+                  continue
+              ranks=sorted(x.get('rank') for x in rows if x.get('rank') is not None)
+              if len(rows)!=3 or ranks != [1,2,3]:
+                  issues['venue_rank_structure'].append({'venueId':vid,'count':len(rows),'ranks':ranks})
+              names=[x.get('hotelName') for x in rows]
+              if len(set(names)) != len(names):
+                  issues['duplicate_hotel_in_venue'].append({'venueId':vid,'hotels':names})
+
+          counts['complete'] = sum(1 for r in records.values() if r.get('coverage')=='complete')
+          counts['limited'] = sum(1 for r in records.values() if r.get('coverage')=='limited')
+          counts['active'] = sum(1 for r in records.values() if r.get('availability')=='active')
+          counts['closed'] = sum(1 for r in records.values() if r.get('availability')=='closed')
+          counts['with_hero'] = sum(1 for r in records.values() if (r.get('access') or {}).get('heroMin') is not None)
+          counts['with_sources'] = sum(1 for r in records.values() if r.get('sources'))
+
+          severe_keys = ['invalid_record','missing_required','id_mismatch','bad_rank','bad_coverage','bad_availability','missing_base','hotel_name_mismatch','venue_id_mismatch','venue_name_mismatch','rank_mismatch','missing_sources','invalid_source_url','out_of_range','partial_has_hero','venue_rank_structure','duplicate_hotel_in_venue']
+          warning_keys = [k for k in issues if k not in severe_keys]
+          report = {
+              'scope':'fast_static_sanity_check_all_750_not_full_external_reverification',
+              'counts':dict(counts),
+              'severeIssueCount':sum(len(issues.get(k,[])) for k in severe_keys),
+              'warningIssueCount':sum(len(issues.get(k,[])) for k in warning_keys),
+              'issueCounts':{k:len(v) for k,v in sorted(issues.items())},
+              'issues':{k:v[:100] for k,v in sorted(issues.items())},
+              'passCoreStructure': counts['records']==750 and counts['unique_ids']==750 and counts['venues']==250 and sum(len(issues.get(k,[])) for k in severe_keys)==0,
+          }
+          Path('research/generated/fast_audit_750.json').parent.mkdir(parents=True, exist_ok=True)
+          Path('research/generated/fast_audit_750.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          print(json.dumps(report,ensure_ascii=False,indent=2))
+          PY
+      - name: Commit report
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add research/generated/fast_audit_750.json
+          git commit -m "Record fast sanity audit for 750 hotel details"
+          git push origin HEAD:audit/hotel-details-750-fast-20260808
