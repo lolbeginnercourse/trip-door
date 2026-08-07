@@ -1,0 +1,42 @@
+name: SEO inventory
+
+on:
+  push:
+    branches:
+      - agent/seo-static-pages
+    paths:
+      - "assets/data/hotels.json"
+      - "assets/data/seo-venues.json"
+      - "scripts/seo-inventory.mjs"
+      - ".github/workflows/seo-inventory.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  inventory:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Build SEO inventory
+        run: node scripts/seo-inventory.mjs
+
+      - name: Show summary
+        run: cat artifacts/seo-inventory/summary.txt
+
+      - name: Upload inventory
+        uses: actions/upload-artifact@v4
+        with:
+          name: seo-inventory
+          path: artifacts/seo-inventory/
+          if-no-files-found: error
+          retention-days: 7
