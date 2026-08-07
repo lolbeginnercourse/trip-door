@@ -283,14 +283,22 @@ async function writePage(file, content) {
 async function patchTopPage() {
   const file = path.join(ROOT, "index.html");
   const original = await fs.readFile(file, "utf8");
-  const stageMatches = (original.match(/href="\/\?category=stage"/g) || []).length;
-  const esportsMatches = (original.match(/href="\/\?category=esports"/g) || []).length;
-  if (!stageMatches || !esportsMatches) throw new Error("Expected category query links were not found in index.html");
+  const oldStageMatches = (original.match(/href="\/\?category=stage"/g) || []).length;
+  const oldEsportsMatches = (original.match(/href="\/\?category=esports"/g) || []).length;
+  const staticStageMatches = (original.match(/href="\/stage\/"/g) || []).length;
+  const staticEsportsMatches = (original.match(/href="\/esports\/"/g) || []).length;
+  if (!oldStageMatches && !staticStageMatches) throw new Error("No stage category links were found in index.html");
+  if (!oldEsportsMatches && !staticEsportsMatches) throw new Error("No esports category links were found in index.html");
   const updated = original
     .replaceAll('href="/?category=stage"', 'href="/stage/"')
     .replaceAll('href="/?category=esports"', 'href="/esports/"');
   await fs.writeFile(file, updated, "utf8");
-  return { stageMatches, esportsMatches };
+  return {
+    oldStageMatches,
+    oldEsportsMatches,
+    staticStageMatchesAfter: (updated.match(/href="\/stage\/"/g) || []).length,
+    staticEsportsMatchesAfter: (updated.match(/href="\/esports\/"/g) || []).length
+  };
 }
 
 function sitemapXml(urls) {
