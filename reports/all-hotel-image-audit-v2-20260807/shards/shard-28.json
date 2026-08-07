@@ -1,8 +1,8 @@
 {
   "schemaVersion": 3,
   "complete": true,
-  "phase": "first-pass",
-  "generatedAt": "2026-08-06T22:00:09.683Z",
+  "phase": "retry",
+  "generatedAt": "2026-08-07T00:08:36.489Z",
   "shardIndex": 28,
   "shardSize": 25,
   "start": 700,
@@ -11,8 +11,8 @@
   "totalUnique": 750,
   "processedUnique": 25,
   "retriedUnique": 0,
-  "skippedMatchedUnique": 0,
-  "retryAttemptsPerRequest": 1,
+  "skippedMatchedUnique": 25,
+  "retryAttemptsPerRequest": 5,
   "results": [
     {
       "requestKey": "name:ホテル博多プレイス|福岡県|博多ふ頭",
