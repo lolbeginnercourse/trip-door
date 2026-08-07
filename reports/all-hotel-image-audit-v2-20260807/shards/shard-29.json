@@ -1,8 +1,8 @@
 {
   "schemaVersion": 3,
   "complete": true,
-  "phase": "first-pass",
-  "generatedAt": "2026-08-06T22:01:19.687Z",
+  "phase": "retry",
+  "generatedAt": "2026-08-07T00:09:21.798Z",
   "shardIndex": 29,
   "shardSize": 25,
   "start": 725,
@@ -10,9 +10,9 @@
   "totalRecords": 1256,
   "totalUnique": 750,
   "processedUnique": 25,
-  "retriedUnique": 0,
-  "skippedMatchedUnique": 0,
-  "retryAttemptsPerRequest": 1,
+  "retriedUnique": 5,
+  "skippedMatchedUnique": 20,
+  "retryAttemptsPerRequest": 5,
   "results": [
     {
       "requestKey": "name:ホテルフォルツァ長崎|長崎県|長崎",
@@ -460,29 +460,26 @@
       ],
       "duplicateGroupSize": 1,
       "image": {
-        "httpStatus": 502,
-        "status": "502",
-        "hasImage": false,
-        "hotelNo": "",
-        "hotelName": "",
-        "matchedBy": "",
+        "httpStatus": 200,
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "128440",
+        "hotelName": "ダイワロイネットホテル那覇国際通り",
+        "matchedBy": "exactName",
         "matchEvidence": [],
         "transportError": "",
         "rawExcerpt": "",
         "attemptsUsed": 1
       },
-      "affiliate": {
-        "httpStatus": 200,
-        "hasRakuten": true,
-        "rakutenHotelNo": "128440",
-        "providers": [
-          "楽天トラベル"
-        ],
-        "transportError": "",
-        "rawExcerpt": "",
-        "attemptsUsed": 1
-      },
-      "causeCode": "temporary_upstream_error"
+      "affiliate": null,
+      "causeCode": "matched",
+      "retry": {
+        "attempted": true,
+        "attemptedAt": "2026-08-07T00:09:05.980Z",
+        "previousCauseCode": "temporary_upstream_error",
+        "previousHasImage": false,
+        "attemptsPerRequest": 5
+      }
     },
     {
       "requestKey": "name:ホテルグレイスリー那覇|沖縄県|国際通り",
@@ -554,8 +551,8 @@
       ],
       "duplicateGroupSize": 1,
       "image": {
-        "httpStatus": 502,
-        "status": "502",
+        "httpStatus": 404,
+        "status": "not_found",
         "hasImage": false,
         "hotelNo": "",
         "hotelName": "",
@@ -574,7 +571,14 @@
         "rawExcerpt": "",
         "attemptsUsed": 1
       },
-      "causeCode": "temporary_upstream_error"
+      "causeCode": "not_found_by_current_rakuten_search",
+      "retry": {
+        "attempted": true,
+        "attemptedAt": "2026-08-07T00:09:10.827Z",
+        "previousCauseCode": "temporary_upstream_error",
+        "previousHasImage": false,
+        "attemptsPerRequest": 5
+      }
     },
     {
       "requestKey": "name:アパホテル&リゾート〈東京ベイ幕張〉||jr海浜幕張駅から徒歩約7分",
@@ -666,7 +670,14 @@
         "rawExcerpt": "",
         "attemptsUsed": 1
       },
-      "causeCode": "location_unverified"
+      "causeCode": "location_unverified",
+      "retry": {
+        "attempted": true,
+        "attemptedAt": "2026-08-07T00:09:14.751Z",
+        "previousCauseCode": "location_unverified",
+        "previousHasImage": false,
+        "attemptsPerRequest": 5
+      }
     },
     {
       "requestKey": "name:nohga hotel ueno tokyo||東京メトロ上野駅から徒歩約3分",
@@ -702,7 +713,14 @@
         "rawExcerpt": "",
         "attemptsUsed": 1
       },
-      "causeCode": "location_unverified"
+      "causeCode": "location_unverified",
+      "retry": {
+        "attempted": true,
+        "attemptedAt": "2026-08-07T00:09:18.237Z",
+        "previousCauseCode": "location_unverified",
+        "previousHasImage": false,
+        "attemptsPerRequest": 5
+      }
     },
     {
       "requestKey": "name:kaika 東京 by the share hotels||浅草駅から徒歩約9分",
@@ -738,7 +756,14 @@
         "rawExcerpt": "",
         "attemptsUsed": 1
       },
-      "causeCode": "not_found_by_current_rakuten_search"
+      "causeCode": "not_found_by_current_rakuten_search",
+      "retry": {
+        "attempted": true,
+        "attemptedAt": "2026-08-07T00:09:21.798Z",
+        "previousCauseCode": "not_found_by_current_rakuten_search",
+        "previousHasImage": false,
+        "attemptsPerRequest": 5
+      }
     },
     {
       "requestKey": "name:レム六本木||六本木駅から徒歩約1分",
