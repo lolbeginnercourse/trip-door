@@ -2,7 +2,7 @@
   "schemaVersion": 3,
   "complete": true,
   "phase": "retry",
-  "generatedAt": "2026-08-06T23:34:56.729Z",
+  "generatedAt": "2026-08-07T04:52:18.906Z",
   "shardIndex": 0,
   "shardSize": 25,
   "start": 0,
@@ -321,30 +321,24 @@
       ],
       "duplicateGroupSize": 1,
       "image": {
-        "httpStatus": 404,
-        "status": "not_found",
-        "hasImage": false,
-        "hotelNo": "",
-        "hotelName": "",
-        "matchedBy": "",
-        "matchEvidence": [],
-        "transportError": "",
-        "rawExcerpt": "",
-        "attemptsUsed": 1
-      },
-      "affiliate": {
         "httpStatus": 200,
-        "hasRakuten": false,
-        "rakutenHotelNo": "",
-        "providers": [],
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "146864",
+        "hotelName": "KOKO HOTEL 新宿四谷",
+        "matchedBy": "hotelNoOverride",
+        "matchEvidence": [
+          "override"
+        ],
         "transportError": "",
         "rawExcerpt": "",
         "attemptsUsed": 1
       },
-      "causeCode": "not_found_by_current_rakuten_search",
+      "affiliate": null,
+      "causeCode": "matched",
       "retry": {
         "attempted": true,
-        "attemptedAt": "2026-08-06T23:34:47.491Z",
+        "attemptedAt": "2026-08-07T04:52:15.087Z",
         "previousCauseCode": "not_found_by_current_rakuten_search",
         "previousHasImage": false,
         "attemptsPerRequest": 5
@@ -396,30 +390,24 @@
       ],
       "duplicateGroupSize": 4,
       "image": {
-        "httpStatus": 404,
-        "status": "ambiguous",
-        "hasImage": false,
-        "hotelNo": "",
-        "hotelName": "",
-        "matchedBy": "",
-        "matchEvidence": [],
-        "transportError": "",
-        "rawExcerpt": "",
-        "attemptsUsed": 1
-      },
-      "affiliate": {
         "httpStatus": 200,
-        "hasRakuten": false,
-        "rakutenHotelNo": "",
-        "providers": [],
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "240",
+        "hotelName": "the b 赤坂(ザビー あかさか)",
+        "matchedBy": "hotelNoOverride",
+        "matchEvidence": [
+          "override"
+        ],
         "transportError": "",
         "rawExcerpt": "",
         "attemptsUsed": 1
       },
-      "causeCode": "multiple_candidates",
+      "affiliate": null,
+      "causeCode": "matched",
       "retry": {
         "attempted": true,
-        "attemptedAt": "2026-08-06T23:34:52.617Z",
+        "attemptedAt": "2026-08-07T04:52:17.155Z",
         "previousCauseCode": "multiple_candidates",
         "previousHasImage": false,
         "attemptsPerRequest": 5
@@ -618,30 +606,24 @@
       ],
       "duplicateGroupSize": 2,
       "image": {
-        "httpStatus": 404,
-        "status": "not_found",
-        "hasImage": false,
-        "hotelNo": "",
-        "hotelName": "",
-        "matchedBy": "",
-        "matchEvidence": [],
-        "transportError": "",
-        "rawExcerpt": "",
-        "attemptsUsed": 1
-      },
-      "affiliate": {
         "httpStatus": 200,
-        "hasRakuten": false,
-        "rakutenHotelNo": "",
-        "providers": [],
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "462",
+        "hotelName": "KOKO HOTEL 後楽園",
+        "matchedBy": "hotelNoOverride",
+        "matchEvidence": [
+          "override"
+        ],
         "transportError": "",
         "rawExcerpt": "",
         "attemptsUsed": 1
       },
-      "causeCode": "not_found_by_current_rakuten_search",
+      "affiliate": null,
+      "causeCode": "matched",
       "retry": {
         "attempted": true,
-        "attemptedAt": "2026-08-06T23:34:56.729Z",
+        "attemptedAt": "2026-08-07T04:52:18.906Z",
         "previousCauseCode": "not_found_by_current_rakuten_search",
         "previousHasImage": false,
         "attemptsPerRequest": 5
