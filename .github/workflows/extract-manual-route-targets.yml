@@ -60,7 +60,7 @@ jobs:
           compact=[]
           for t in targets:
               compact.append('\t'.join(str(t.get(k) or '') for k in ('id','hotel_name','venue_name','hotel_nearest_station','venue_nearest_station')))
-          Path('research/generated/manual_route_search_targets.tsv').write_text('\n'.join(compact)+'\n',encoding='utf-8')
+          Path('research/generated/manual_route_search_targets.tsv').write_text('\n'.join(compact)+('\n' if compact else ''),encoding='utf-8')
 
           jst=timezone(timedelta(hours=9))
           summary={
@@ -72,8 +72,6 @@ jobs:
           }
           Path('research/generated/manual_route_search_summary.json').write_text(json.dumps(summary,ensure_ascii=False,indent=2),encoding='utf-8')
           print(json.dumps(summary,ensure_ascii=False,indent=2))
-          if len(targets) != 70:
-              raise SystemExit(f'Expected 70 remaining transit parser failures, got {len(targets)}')
           PY
       - name: Commit extracted targets
         shell: bash
@@ -82,6 +80,6 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -f research/generated/manual_route_search_targets.json research/generated/manual_route_search_targets.tsv research/generated/manual_route_search_summary.json
           if ! git diff --cached --quiet; then
-            git commit -m "Extract 70 routes for ordinary web research"
+            git commit -m "Refresh routes for ordinary web research"
             git push origin HEAD:research/hotel-details-750-20260807
           fi
