@@ -317,27 +317,21 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:ホテルウィングインターナショナルプレミアム東京四谷|東京都|四谷三丁目",
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
-      "hasImage": false,
-      "hotelNo": "",
-      "hotelName": "",
-      "matchedBy": "",
-      "matchEvidence": [],
-      "transportError": "",
-      "rawExcerpt": "",
-      "attemptsUsed": 1
-    },
-    "affiliate": {
       "httpStatus": 200,
-      "hasRakuten": false,
-      "rakutenHotelNo": "",
-      "providers": [],
+      "status": "matched",
+      "hasImage": true,
+      "hotelNo": "146864",
+      "hotelName": "KOKO HOTEL 新宿四谷",
+      "matchedBy": "hotelNoOverride",
+      "matchEvidence": [
+        "override"
+      ],
       "transportError": "",
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "affiliate": null,
+    "causeCode": "matched"
   },
   {
     "index": 13,
@@ -374,27 +368,21 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:the b 赤坂|東京都|赤坂",
     "image": {
-      "httpStatus": 404,
-      "status": "ambiguous",
-      "hasImage": false,
-      "hotelNo": "",
-      "hotelName": "",
-      "matchedBy": "",
-      "matchEvidence": [],
-      "transportError": "",
-      "rawExcerpt": "",
-      "attemptsUsed": 1
-    },
-    "affiliate": {
       "httpStatus": 200,
-      "hasRakuten": false,
-      "rakutenHotelNo": "",
-      "providers": [],
+      "status": "matched",
+      "hasImage": true,
+      "hotelNo": "240",
+      "hotelName": "the b 赤坂(ザビー あかさか)",
+      "matchedBy": "hotelNoOverride",
+      "matchEvidence": [
+        "override"
+      ],
       "transportError": "",
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "multiple_candidates"
+    "affiliate": null,
+    "causeCode": "matched"
   },
   {
     "index": 15,
@@ -671,27 +659,21 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:ホテルウィングインターナショナル後楽園|東京都|水道橋・後楽園",
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
-      "hasImage": false,
-      "hotelNo": "",
-      "hotelName": "",
-      "matchedBy": "",
-      "matchEvidence": [],
-      "transportError": "",
-      "rawExcerpt": "",
-      "attemptsUsed": 1
-    },
-    "affiliate": {
       "httpStatus": 200,
-      "hasRakuten": false,
-      "rakutenHotelNo": "",
-      "providers": [],
+      "status": "matched",
+      "hasImage": true,
+      "hotelNo": "462",
+      "hotelName": "KOKO HOTEL 後楽園",
+      "matchedBy": "hotelNoOverride",
+      "matchEvidence": [
+        "override"
+      ],
       "transportError": "",
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "affiliate": null,
+    "causeCode": "matched"
   },
   {
     "index": 27,
@@ -804,27 +786,21 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:ホテルウィングインターナショナル後楽園|東京都|水道橋・後楽園",
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
-      "hasImage": false,
-      "hotelNo": "",
-      "hotelName": "",
-      "matchedBy": "",
-      "matchEvidence": [],
-      "transportError": "",
-      "rawExcerpt": "",
-      "attemptsUsed": 1
-    },
-    "affiliate": {
       "httpStatus": 200,
-      "hasRakuten": false,
-      "rakutenHotelNo": "",
-      "providers": [],
+      "status": "matched",
+      "hasImage": true,
+      "hotelNo": "462",
+      "hotelName": "KOKO HOTEL 後楽園",
+      "matchedBy": "hotelNoOverride",
+      "matchEvidence": [
+        "override"
+      ],
       "transportError": "",
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "affiliate": null,
+    "causeCode": "matched"
   },
   {
     "index": 32,
@@ -2042,27 +2018,21 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:the b 赤坂|東京都|赤坂",
     "image": {
-      "httpStatus": 404,
-      "status": "ambiguous",
-      "hasImage": false,
-      "hotelNo": "",
-      "hotelName": "",
-      "matchedBy": "",
-      "matchEvidence": [],
-      "transportError": "",
-      "rawExcerpt": "",
-      "attemptsUsed": 1
-    },
-    "affiliate": {
       "httpStatus": 200,
-      "hasRakuten": false,
-      "rakutenHotelNo": "",
-      "providers": [],
+      "status": "matched",
+      "hasImage": true,
+      "hotelNo": "240",
+      "hotelName": "the b 赤坂(ザビー あかさか)",
+      "matchedBy": "hotelNoOverride",
+      "matchEvidence": [
+        "override"
+      ],
       "transportError": "",
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "multiple_candidates"
+    "affiliate": null,
+    "causeCode": "matched"
   },
   {
     "index": 80,
@@ -2891,27 +2861,21 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:東急ステイ渋谷|東京都|神泉・渋谷",
     "image": {
-      "httpStatus": 404,
-      "status": "ambiguous",
-      "hasImage": false,
-      "hotelNo": "",
-      "hotelName": "",
-      "matchedBy": "",
-      "matchEvidence": [],
-      "transportError": "",
-      "rawExcerpt": "",
-      "attemptsUsed": 1
-    },
-    "affiliate": {
       "httpStatus": 200,
-      "hasRakuten": false,
-      "rakutenHotelNo": "",
-      "providers": [],
+      "status": "matched",
+      "hasImage": true,
+      "hotelNo": "41708",
+      "hotelName": "東急ステイ渋谷 (道玄坂上)",
+      "matchedBy": "hotelNoOverride",
+      "matchEvidence": [
+        "override"
+      ],
       "transportError": "",
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "multiple_candidates"
+    "affiliate": null,
+    "causeCode": "matched"
   },
   {
     "index": 113,
@@ -2972,8 +2936,8 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:the onefive tokyo shibuya|東京都|渋谷・原宿",
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -2981,7 +2945,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -2992,7 +2956,7 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "temporary_upstream_error"
   },
   {
     "index": 116,
@@ -3101,8 +3065,8 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:the onefive tokyo shibuya|東京都|渋谷・原宿",
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -3110,7 +3074,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -3121,7 +3085,7 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "temporary_upstream_error"
   },
   {
     "index": 121,
@@ -3254,27 +3218,21 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:the knot tokyo shinjuku|東京都|都庁前・西新宿五丁目",
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
-      "hasImage": false,
-      "hotelNo": "",
-      "hotelName": "",
-      "matchedBy": "",
-      "matchEvidence": [],
-      "transportError": "",
-      "rawExcerpt": "",
-      "attemptsUsed": 3
-    },
-    "affiliate": {
       "httpStatus": 200,
-      "hasRakuten": false,
-      "rakutenHotelNo": "",
-      "providers": [],
+      "status": "matched",
+      "hasImage": true,
+      "hotelNo": "167724",
+      "hotelName": "ザ ノット 東京新宿",
+      "matchedBy": "hotelNoOverride",
+      "matchEvidence": [
+        "override"
+      ],
       "transportError": "",
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "affiliate": null,
+    "causeCode": "matched"
   },
   {
     "index": 127,
@@ -3287,8 +3245,8 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:アパホテル&リゾート〈西新宿五丁目駅タワー〉|東京都|西新宿五丁目",
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -3296,7 +3254,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -3307,7 +3265,7 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "temporary_upstream_error"
   },
   {
     "index": 128,
@@ -3392,27 +3350,21 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:the knot tokyo shinjuku|東京都|都庁前・西新宿五丁目",
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
-      "hasImage": false,
-      "hotelNo": "",
-      "hotelName": "",
-      "matchedBy": "",
-      "matchEvidence": [],
-      "transportError": "",
-      "rawExcerpt": "",
-      "attemptsUsed": 3
-    },
-    "affiliate": {
       "httpStatus": 200,
-      "hasRakuten": false,
-      "rakutenHotelNo": "",
-      "providers": [],
+      "status": "matched",
+      "hasImage": true,
+      "hotelNo": "167724",
+      "hotelName": "ザ ノット 東京新宿",
+      "matchedBy": "hotelNoOverride",
+      "matchEvidence": [
+        "override"
+      ],
       "transportError": "",
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "affiliate": null,
+    "causeCode": "matched"
   },
   {
     "index": 132,
@@ -3425,8 +3377,8 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:アパホテル&リゾート〈西新宿五丁目駅タワー〉|東京都|西新宿五丁目",
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -3434,7 +3386,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -3445,7 +3397,7 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "temporary_upstream_error"
   },
   {
     "index": 133,
@@ -3924,27 +3876,21 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:東急ステイ渋谷|東京都|神泉・渋谷",
     "image": {
-      "httpStatus": 404,
-      "status": "ambiguous",
-      "hasImage": false,
-      "hotelNo": "",
-      "hotelName": "",
-      "matchedBy": "",
-      "matchEvidence": [],
-      "transportError": "",
-      "rawExcerpt": "",
-      "attemptsUsed": 1
-    },
-    "affiliate": {
       "httpStatus": 200,
-      "hasRakuten": false,
-      "rakutenHotelNo": "",
-      "providers": [],
+      "status": "matched",
+      "hasImage": true,
+      "hotelNo": "41708",
+      "hotelName": "東急ステイ渋谷 (道玄坂上)",
+      "matchedBy": "hotelNoOverride",
+      "matchEvidence": [
+        "override"
+      ],
       "transportError": "",
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "multiple_candidates"
+    "affiliate": null,
+    "causeCode": "matched"
   },
   {
     "index": 153,
@@ -4057,27 +4003,21 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:東急ステイ渋谷|東京都|神泉・渋谷",
     "image": {
-      "httpStatus": 404,
-      "status": "ambiguous",
-      "hasImage": false,
-      "hotelNo": "",
-      "hotelName": "",
-      "matchedBy": "",
-      "matchEvidence": [],
-      "transportError": "",
-      "rawExcerpt": "",
-      "attemptsUsed": 1
-    },
-    "affiliate": {
       "httpStatus": 200,
-      "hasRakuten": false,
-      "rakutenHotelNo": "",
-      "providers": [],
+      "status": "matched",
+      "hasImage": true,
+      "hotelNo": "41708",
+      "hotelName": "東急ステイ渋谷 (道玄坂上)",
+      "matchedBy": "hotelNoOverride",
+      "matchEvidence": [
+        "override"
+      ],
       "transportError": "",
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "multiple_candidates"
+    "affiliate": null,
+    "causeCode": "matched"
   },
   {
     "index": 158,
@@ -4894,27 +4834,21 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:the b 赤坂|東京都|赤坂",
     "image": {
-      "httpStatus": 404,
-      "status": "ambiguous",
-      "hasImage": false,
-      "hotelNo": "",
-      "hotelName": "",
-      "matchedBy": "",
-      "matchEvidence": [],
-      "transportError": "",
-      "rawExcerpt": "",
-      "attemptsUsed": 1
-    },
-    "affiliate": {
       "httpStatus": 200,
-      "hasRakuten": false,
-      "rakutenHotelNo": "",
-      "providers": [],
+      "status": "matched",
+      "hasImage": true,
+      "hotelNo": "240",
+      "hotelName": "the b 赤坂(ザビー あかさか)",
+      "matchedBy": "hotelNoOverride",
+      "matchEvidence": [
+        "override"
+      ],
       "transportError": "",
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "multiple_candidates"
+    "affiliate": null,
+    "causeCode": "matched"
   },
   {
     "index": 192,
@@ -5023,27 +4957,21 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:the b 赤坂|東京都|赤坂",
     "image": {
-      "httpStatus": 404,
-      "status": "ambiguous",
-      "hasImage": false,
-      "hotelNo": "",
-      "hotelName": "",
-      "matchedBy": "",
-      "matchEvidence": [],
-      "transportError": "",
-      "rawExcerpt": "",
-      "attemptsUsed": 1
-    },
-    "affiliate": {
       "httpStatus": 200,
-      "hasRakuten": false,
-      "rakutenHotelNo": "",
-      "providers": [],
+      "status": "matched",
+      "hasImage": true,
+      "hotelNo": "240",
+      "hotelName": "the b 赤坂(ザビー あかさか)",
+      "matchedBy": "hotelNoOverride",
+      "matchEvidence": [
+        "override"
+      ],
       "transportError": "",
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "multiple_candidates"
+    "affiliate": null,
+    "causeCode": "matched"
   },
   {
     "index": 197,
@@ -5253,8 +5181,8 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:the onefive tokyo shibuya|東京都|渋谷・原宿",
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -5262,7 +5190,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -5273,7 +5201,7 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "temporary_upstream_error"
   },
   {
     "index": 206,
@@ -5382,8 +5310,8 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:the onefive tokyo shibuya|東京都|渋谷・原宿",
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -5391,7 +5319,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -5402,7 +5330,7 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "temporary_upstream_error"
   },
   {
     "index": 211,
@@ -5511,8 +5439,8 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:the onefive tokyo shibuya|東京都|渋谷・原宿",
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -5520,7 +5448,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -5531,7 +5459,7 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "temporary_upstream_error"
   },
   {
     "index": 216,
@@ -6079,8 +6007,8 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:jr東日本ホテルメッツ プレミア 亀戸|東京都|亀戸",
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -6088,7 +6016,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -6099,7 +6027,7 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "temporary_upstream_error"
   },
   {
     "index": 239,
@@ -6112,8 +6040,8 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:スカイハートホテル小岩|東京都|小岩",
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -6121,7 +6049,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 4
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -6132,7 +6060,7 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "temporary_upstream_error"
   },
   {
     "index": 240,
@@ -6217,8 +6145,8 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:jr東日本ホテルメッツ プレミア 亀戸|東京都|亀戸",
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -6226,7 +6154,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -6237,7 +6165,7 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "temporary_upstream_error"
   },
   {
     "index": 244,
@@ -6250,8 +6178,8 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:スカイハートホテル小岩|東京都|小岩",
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -6259,7 +6187,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 4
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -6270,7 +6198,7 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "temporary_upstream_error"
   },
   {
     "index": 245,
@@ -6979,8 +6907,8 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:アパホテル&リゾート〈西新宿五丁目駅タワー〉|東京都|西新宿五丁目",
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -6988,7 +6916,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -6999,7 +6927,7 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "temporary_upstream_error"
   },
   {
     "index": 275,
@@ -7108,8 +7036,8 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:アパホテル&リゾート〈西新宿五丁目駅タワー〉|東京都|西新宿五丁目",
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -7117,7 +7045,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -7128,7 +7056,7 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "temporary_upstream_error"
   },
   {
     "index": 280,
@@ -7237,8 +7165,8 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:アパホテル&リゾート〈西新宿五丁目駅タワー〉|東京都|西新宿五丁目",
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -7246,7 +7174,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -7257,7 +7185,7 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "temporary_upstream_error"
   },
   {
     "index": 285,
@@ -7366,8 +7294,8 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:アパホテル&リゾート〈西新宿五丁目駅タワー〉|東京都|西新宿五丁目",
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -7375,7 +7303,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -7386,7 +7314,7 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "temporary_upstream_error"
   },
   {
     "index": 290,
@@ -7495,8 +7423,8 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:アパホテル&リゾート〈西新宿五丁目駅タワー〉|東京都|西新宿五丁目",
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -7504,7 +7432,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -7515,7 +7443,7 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "temporary_upstream_error"
   },
   {
     "index": 295,
@@ -7624,8 +7552,8 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:アパホテル&リゾート〈西新宿五丁目駅タワー〉|東京都|西新宿五丁目",
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -7633,7 +7561,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -7644,7 +7572,7 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "temporary_upstream_error"
   },
   {
     "index": 300,
@@ -7753,8 +7681,8 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:アパホテル&リゾート〈西新宿五丁目駅タワー〉|東京都|西新宿五丁目",
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -7762,7 +7690,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -7773,7 +7701,7 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "temporary_upstream_error"
   },
   {
     "index": 305,
@@ -7906,27 +7834,19 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:tokio's hotel|東京都|王子",
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
-      "hasImage": false,
-      "hotelNo": "",
-      "hotelName": "",
-      "matchedBy": "",
+      "httpStatus": 200,
+      "status": "matched",
+      "hasImage": true,
+      "hotelNo": "16772",
+      "hotelName": "TOKIO’s HOTEL",
+      "matchedBy": "exactName",
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "affiliate": {
-      "httpStatus": 200,
-      "hasRakuten": false,
-      "rakutenHotelNo": "",
-      "providers": [],
-      "transportError": "",
-      "rawExcerpt": "",
-      "attemptsUsed": 1
-    },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "affiliate": null,
+    "causeCode": "matched"
   },
   {
     "index": 311,
@@ -8182,8 +8102,8 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:ホテルミッドイン目黒駅前|東京都|目黒",
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -8191,7 +8111,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -8202,7 +8122,7 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "temporary_upstream_error"
   },
   {
     "index": 322,
@@ -8457,8 +8377,8 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:ホテルウィングインターナショナルセレクト浅草駒形|東京都|浅草・蔵前",
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -8466,7 +8386,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -8477,7 +8397,7 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "temporary_upstream_error"
   },
   {
     "index": 333,
@@ -8592,8 +8512,8 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:ホテルウィングインターナショナルセレクト浅草駒形|東京都|浅草・蔵前",
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -8601,7 +8521,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -8612,7 +8532,7 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "temporary_upstream_error"
   },
   {
     "index": 338,
@@ -10695,29 +10615,21 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:メルキュール横須賀|神奈川県|汐入",
     "image": {
-      "httpStatus": 502,
-      "status": "502",
-      "hasImage": false,
-      "hotelNo": "",
-      "hotelName": "",
-      "matchedBy": "",
-      "matchEvidence": [],
-      "transportError": "",
-      "rawExcerpt": "",
-      "attemptsUsed": 5
-    },
-    "affiliate": {
       "httpStatus": 200,
-      "hasRakuten": true,
-      "rakutenHotelNo": "84673",
-      "providers": [
-        "楽天トラベル"
+      "status": "matched",
+      "hasImage": true,
+      "hotelNo": "84673",
+      "hotelName": "メルキュールホテル横須賀",
+      "matchedBy": "hotelNoOverride",
+      "matchEvidence": [
+        "override"
       ],
       "transportError": "",
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "temporary_upstream_error"
+    "affiliate": null,
+    "causeCode": "matched"
   },
   {
     "index": 421,
@@ -10755,8 +10667,8 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:セントラルホテル横須賀|神奈川県|横須賀中央",
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -10764,7 +10676,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -10775,7 +10687,7 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "temporary_upstream_error"
   },
   {
     "index": 423,
@@ -10838,29 +10750,21 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:メルキュール横須賀|神奈川県|汐入",
     "image": {
-      "httpStatus": 502,
-      "status": "502",
-      "hasImage": false,
-      "hotelNo": "",
-      "hotelName": "",
-      "matchedBy": "",
-      "matchEvidence": [],
-      "transportError": "",
-      "rawExcerpt": "",
-      "attemptsUsed": 5
-    },
-    "affiliate": {
       "httpStatus": 200,
-      "hasRakuten": true,
-      "rakutenHotelNo": "84673",
-      "providers": [
-        "楽天トラベル"
+      "status": "matched",
+      "hasImage": true,
+      "hotelNo": "84673",
+      "hotelName": "メルキュールホテル横須賀",
+      "matchedBy": "hotelNoOverride",
+      "matchEvidence": [
+        "override"
       ],
       "transportError": "",
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "temporary_upstream_error"
+    "affiliate": null,
+    "causeCode": "matched"
   },
   {
     "index": 426,
@@ -10898,8 +10802,8 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:セントラルホテル横須賀|神奈川県|横須賀中央",
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -10907,7 +10811,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -10918,7 +10822,7 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "temporary_upstream_error"
   },
   {
     "index": 428,
@@ -11411,27 +11315,21 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:ホテルウィングインターナショナル相模原|神奈川県|上溝",
     "image": {
-      "httpStatus": 502,
-      "status": "502",
-      "hasImage": false,
-      "hotelNo": "",
-      "hotelName": "",
-      "matchedBy": "",
-      "matchEvidence": [],
-      "transportError": "",
-      "rawExcerpt": "",
-      "attemptsUsed": 5
-    },
-    "affiliate": {
       "httpStatus": 200,
-      "hasRakuten": false,
-      "rakutenHotelNo": "",
-      "providers": [],
+      "status": "matched",
+      "hasImage": true,
+      "hotelNo": "67257",
+      "hotelName": "KOKO STAY 相模原",
+      "matchedBy": "hotelNoOverride",
+      "matchEvidence": [
+        "override"
+      ],
       "transportError": "",
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "temporary_upstream_error"
+    "affiliate": null,
+    "causeCode": "matched"
   },
   {
     "index": 448,
@@ -11519,8 +11417,8 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:アイホテル橋本|神奈川県|橋本",
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -11528,7 +11426,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -11539,7 +11437,7 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "temporary_upstream_error"
   },
   {
     "index": 452,
@@ -12005,8 +11903,8 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:日和ホテル舞浜|千葉県|舞浜・新浦安",
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -12014,7 +11912,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -12025,7 +11923,7 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "temporary_upstream_error"
   },
   {
     "index": 471,
@@ -13619,8 +13517,8 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:浦和ワシントンホテル|埼玉県|浦和",
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -13628,7 +13526,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 2
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -13639,7 +13537,7 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "temporary_upstream_error"
   },
   {
     "index": 533,
@@ -13983,8 +13881,8 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:浦和ワシントンホテル|埼玉県|浦和",
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -13992,7 +13890,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 2
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -14003,7 +13901,7 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "temporary_upstream_error"
   },
   {
     "index": 547,
@@ -14166,8 +14064,8 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:ホテルリブマックス西川口駅前|埼玉県|西川口",
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -14175,7 +14073,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -14186,7 +14084,7 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "temporary_upstream_error"
   },
   {
     "index": 554,
@@ -14456,8 +14354,8 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:川越湯遊ランド・ホテル三光|埼玉県|本川越",
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -14465,7 +14363,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -14476,7 +14374,7 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "temporary_upstream_error"
   },
   {
     "index": 565,
@@ -16117,8 +16015,8 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:ホテルウィングインターナショナル札幌すすきの|北海道|すすきの",
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -16126,7 +16024,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -16137,7 +16035,7 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "temporary_upstream_error"
   },
   {
     "index": 630,
@@ -16250,8 +16148,8 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:ホテルウィングインターナショナル札幌すすきの|北海道|すすきの",
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -16259,7 +16157,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -16270,7 +16168,7 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "temporary_upstream_error"
   },
   {
     "index": 635,
@@ -16383,8 +16281,8 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:ホテルウィングインターナショナル札幌すすきの|北海道|すすきの",
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -16392,7 +16290,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -16403,7 +16301,7 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "temporary_upstream_error"
   },
   {
     "index": 640,
@@ -16516,8 +16414,8 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:ホテルウィングインターナショナル札幌すすきの|北海道|すすきの",
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -16525,7 +16423,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -16536,7 +16434,7 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "temporary_upstream_error"
   },
   {
     "index": 645,
@@ -16857,8 +16755,8 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:東横inn北海道函館駅前朝市|北海道|函館",
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -16866,7 +16764,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -16877,7 +16775,7 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "temporary_upstream_error"
   },
   {
     "index": 658,
@@ -16915,8 +16813,8 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:フレックステイイン函館駅前|北海道|函館",
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -16924,7 +16822,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 2
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -16935,7 +16833,7 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "temporary_upstream_error"
   },
   {
     "index": 660,
@@ -16948,8 +16846,8 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:jrイン帯広|北海道|帯広",
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -16957,7 +16855,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -16968,7 +16866,7 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "temporary_upstream_error"
   },
   {
     "index": 661,
@@ -17006,27 +16904,21 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:ホテルグランテラス帯広|北海道|帯広",
     "image": {
-      "httpStatus": 404,
-      "status": "ambiguous",
-      "hasImage": false,
-      "hotelNo": "",
-      "hotelName": "",
-      "matchedBy": "",
-      "matchEvidence": [],
-      "transportError": "",
-      "rawExcerpt": "",
-      "attemptsUsed": 1
-    },
-    "affiliate": {
       "httpStatus": 200,
-      "hasRakuten": false,
-      "rakutenHotelNo": "",
-      "providers": [],
+      "status": "matched",
+      "hasImage": true,
+      "hotelNo": "500",
+      "hotelName": "薬湯風呂 ホテルグランテラス帯広(BBHホテルグループ)",
+      "matchedBy": "hotelNoOverride",
+      "matchEvidence": [
+        "override"
+      ],
       "transportError": "",
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "multiple_candidates"
+    "affiliate": null,
+    "causeCode": "matched"
   },
   {
     "index": 663,
@@ -18284,8 +18176,8 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:ホテルメトロポリタン盛岡 new wing|岩手県|盛岡",
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -18293,7 +18185,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -18304,7 +18196,7 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "temporary_upstream_error"
   },
   {
     "index": 713,
@@ -18317,8 +18209,8 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:ホテルjin盛岡駅前|岩手県|盛岡",
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -18326,7 +18218,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -18337,7 +18229,7 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "temporary_upstream_error"
   },
   {
     "index": 714,
@@ -18425,8 +18317,8 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:ホテルメトロポリタン盛岡 new wing|岩手県|盛岡",
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -18434,7 +18326,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -18445,7 +18337,7 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "temporary_upstream_error"
   },
   {
     "index": 718,
@@ -18458,8 +18350,8 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:ホテルjin盛岡駅前|岩手県|盛岡",
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -18467,7 +18359,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -18478,7 +18370,7 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "temporary_upstream_error"
   },
   {
     "index": 719,
@@ -20745,8 +20637,8 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:プレミアホテル-cabin-松本|長野県|松本",
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -20754,7 +20646,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -20765,7 +20657,7 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "temporary_upstream_error"
   },
   {
     "index": 808,
@@ -20878,8 +20770,8 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:プレミアホテル-cabin-松本|長野県|松本",
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -20887,7 +20779,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -20898,7 +20790,7 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "temporary_upstream_error"
   },
   {
     "index": 813,
@@ -22684,8 +22576,8 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:コンフォートホテル名古屋名駅南|愛知県|名古屋",
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -22693,7 +22585,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -22704,7 +22596,7 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "temporary_upstream_error"
   },
   {
     "index": 884,
@@ -23605,8 +23497,8 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:ホテルジーハイブ三島|静岡県|三島",
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -23614,7 +23506,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -23625,7 +23517,7 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "temporary_upstream_error"
   },
   {
     "index": 919,
@@ -23688,8 +23580,8 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:ホテルミワ|静岡県|沼津",
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -23697,7 +23589,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -23708,7 +23600,7 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "temporary_upstream_error"
   },
   {
     "index": 922,
@@ -23796,8 +23688,8 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:ホテル西村|静岡県|富士",
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -23805,7 +23697,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -23816,7 +23708,7 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "temporary_upstream_error"
   },
   {
     "index": 926,
@@ -24769,8 +24661,8 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:東横inn大阪阿倍野天王寺|大阪府|天王寺",
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -24778,7 +24670,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -24789,7 +24681,7 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "temporary_upstream_error"
   },
   {
     "index": 964,
@@ -25284,8 +25176,8 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:東横inn大阪阿倍野天王寺|大阪府|天王寺",
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -25293,7 +25185,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -25304,7 +25196,7 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "temporary_upstream_error"
   },
   {
     "index": 984,
@@ -26004,8 +25896,8 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:ダイワロイネットホテル大阪堺東|大阪府|堺東",
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -26013,7 +25905,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -26024,7 +25916,7 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "temporary_upstream_error"
   },
   {
     "index": 1012,
@@ -26168,8 +26060,8 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:ワークホテルアネックス天神の湯|大阪府|高槻",
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -26177,7 +26069,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -26188,7 +26080,7 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "temporary_upstream_error"
   },
   {
     "index": 1018,
@@ -26409,8 +26301,8 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:ホテルウィングインターナショナルセレクト東大阪|大阪府|長田",
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -26418,7 +26310,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -26429,7 +26321,7 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "temporary_upstream_error"
   },
   {
     "index": 1027,
@@ -26470,8 +26362,8 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:sekai hotel fuse|大阪府|布施",
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -26479,7 +26371,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -26490,7 +26382,7 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "temporary_upstream_error"
   },
   {
     "index": 1029,
@@ -27277,8 +27169,8 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:ホテルクラウンパレス神戸|兵庫県|神戸",
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -27286,7 +27178,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -27297,7 +27189,7 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "temporary_upstream_error"
   },
   {
     "index": 1060,
@@ -27692,8 +27584,8 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:ホテルウィングインターナショナルプレミアム京都三条|京都府|三条・東山",
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -27701,7 +27593,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -27712,7 +27604,7 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "temporary_upstream_error"
   },
   {
     "index": 1076,
@@ -27725,8 +27617,8 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:ホテルマテリアル|京都府|東山",
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -27734,7 +27626,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 2
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -27745,7 +27637,7 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "temporary_upstream_error"
   },
   {
     "index": 1077,
@@ -27783,8 +27675,8 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:ホテルレガスタ京都東山三条|京都府|東山",
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -27792,7 +27684,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -27803,7 +27695,7 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "temporary_upstream_error"
   },
   {
     "index": 1079,
@@ -27841,8 +27733,8 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:ホテルウィングインターナショナルプレミアム京都三条|京都府|三条・東山",
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -27850,7 +27742,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -27861,7 +27753,7 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "temporary_upstream_error"
   },
   {
     "index": 1081,
@@ -27874,8 +27766,8 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:ホテルマテリアル|京都府|東山",
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -27883,7 +27775,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 2
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -27894,7 +27786,7 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "temporary_upstream_error"
   },
   {
     "index": 1082,
@@ -27932,8 +27824,8 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:ホテルレガスタ京都東山三条|京都府|東山",
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -27941,7 +27833,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -27952,7 +27844,7 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "temporary_upstream_error"
   },
   {
     "index": 1084,
@@ -28384,27 +28276,21 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:びわ湖ホテル|滋賀県|びわ湖浜大津",
     "image": {
-      "httpStatus": 502,
-      "status": "502",
-      "hasImage": false,
-      "hotelNo": "",
-      "hotelName": "",
-      "matchedBy": "",
-      "matchEvidence": [],
-      "transportError": "",
-      "rawExcerpt": "",
-      "attemptsUsed": 5
-    },
-    "affiliate": {
       "httpStatus": 200,
-      "hasRakuten": false,
-      "rakutenHotelNo": "",
-      "providers": [],
+      "status": "matched",
+      "hasImage": true,
+      "hotelNo": "4843",
+      "hotelName": "琵琶湖ホテル",
+      "matchedBy": "hotelNoOverride",
+      "matchEvidence": [
+        "override"
+      ],
       "transportError": "",
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "temporary_upstream_error"
+    "affiliate": null,
+    "causeCode": "matched"
   },
   {
     "index": 1101,
@@ -29361,27 +29247,21 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:呉森沢ホテル|広島県|呉",
     "image": {
-      "httpStatus": 502,
-      "status": "502",
-      "hasImage": false,
-      "hotelNo": "",
-      "hotelName": "",
-      "matchedBy": "",
-      "matchEvidence": [],
-      "transportError": "",
-      "rawExcerpt": "",
-      "attemptsUsed": 5
-    },
-    "affiliate": {
       "httpStatus": 200,
-      "hasRakuten": false,
-      "rakutenHotelNo": "",
-      "providers": [],
+      "status": "matched",
+      "hasImage": true,
+      "hotelNo": "68088",
+      "hotelName": "K.M.H Art hotel by Kure Morisawa",
+      "matchedBy": "hotelNoOverride",
+      "matchEvidence": [
+        "override"
+      ],
       "transportError": "",
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "temporary_upstream_error"
+    "affiliate": null,
+    "causeCode": "matched"
   },
   {
     "index": 1139,
@@ -29598,27 +29478,19 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:ホテルアクティブ!山口|山口県|新山口",
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
-      "hasImage": false,
-      "hotelNo": "",
-      "hotelName": "",
-      "matchedBy": "",
+      "httpStatus": 200,
+      "status": "matched",
+      "hasImage": true,
+      "hotelNo": "15761",
+      "hotelName": "ホテルアクティブ!山口",
+      "matchedBy": "exactName",
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "affiliate": {
-      "httpStatus": 200,
-      "hasRakuten": false,
-      "rakutenHotelNo": "",
-      "providers": [],
-      "transportError": "",
-      "rawExcerpt": "",
-      "attemptsUsed": 1
-    },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "affiliate": null,
+    "causeCode": "matched"
   },
   {
     "index": 1148,
@@ -30305,8 +30177,8 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:松山東急reiホテル|愛媛県|松山",
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -30314,7 +30186,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -30325,7 +30197,7 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "temporary_upstream_error"
   },
   {
     "index": 1175,
@@ -30571,8 +30443,8 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:ホテルウィングインターナショナルセレクト博多駅前|福岡県|博多",
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -30580,7 +30452,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -30591,7 +30463,7 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "temporary_upstream_error"
   },
   {
     "index": 1185,
@@ -30704,8 +30576,8 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:ホテルウィングインターナショナルセレクト博多駅前|福岡県|博多",
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -30713,7 +30585,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -30724,7 +30596,7 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "temporary_upstream_error"
   },
   {
     "index": 1190,
@@ -32242,8 +32114,8 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:東横inn沖縄那覇国際通り美栄橋駅|沖縄県|美栄橋",
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -32251,7 +32123,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -32262,7 +32134,7 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search"
+    "causeCode": "temporary_upstream_error"
   },
   {
     "index": 1250,
@@ -32325,27 +32197,21 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:ヴィラフォンテーヌ グランド 東京有明||有明駅から徒歩約4分",
     "image": {
-      "httpStatus": 404,
-      "status": "location_unverified",
-      "hasImage": false,
-      "hotelNo": "",
-      "hotelName": "",
-      "matchedBy": "",
-      "matchEvidence": [],
-      "transportError": "",
-      "rawExcerpt": "",
-      "attemptsUsed": 1
-    },
-    "affiliate": {
       "httpStatus": 200,
-      "hasRakuten": false,
-      "rakutenHotelNo": "",
-      "providers": [],
+      "status": "matched",
+      "hasImage": true,
+      "hotelNo": "178230",
+      "hotelName": "住友不動産ホテル ヴィラフォンテーヌグランド東京有明",
+      "matchedBy": "hotelNoOverride",
+      "matchEvidence": [
+        "override"
+      ],
       "transportError": "",
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "location_unverified"
+    "affiliate": null,
+    "causeCode": "matched"
   },
   {
     "index": 1253,
@@ -32358,27 +32224,21 @@
     "storedRakutenHotelNo": "",
     "requestKey": "name:nohga hotel ueno tokyo||東京メトロ上野駅から徒歩約3分",
     "image": {
-      "httpStatus": 404,
-      "status": "location_unverified",
-      "hasImage": false,
-      "hotelNo": "",
-      "hotelName": "",
-      "matchedBy": "",
-      "matchEvidence": [],
-      "transportError": "",
-      "rawExcerpt": "",
-      "attemptsUsed": 1
-    },
-    "affiliate": {
       "httpStatus": 200,
-      "hasRakuten": false,
-      "rakutenHotelNo": "",
-      "providers": [],
+      "status": "matched",
+      "hasImage": true,
+      "hotelNo": "167837",
+      "hotelName": "NOHGA HOTEL UENO TOKYO(ノーガホテル上野東京)",
+      "matchedBy": "hotelNoOverride",
+      "matchEvidence": [
+        "override"
+      ],
       "transportError": "",
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "location_unverified"
+    "affiliate": null,
+    "causeCode": "matched"
   },
   {
     "index": 1254,

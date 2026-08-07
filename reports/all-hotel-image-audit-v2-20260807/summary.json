@@ -1,55 +1,57 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-08-07T04:51:36.858Z",
+  "generatedAt": "2026-08-07T07:26:59.713Z",
   "totalRecords": 1256,
   "uniqueRequestKeys": 750,
   "duplicateRecordsSharingRequests": 506,
-  "recordsMatched": 1165,
-  "recordsFailed": 91,
-  "recordSuccessRate": 92.75,
-  "uniqueMatched": 695,
-  "uniqueFailed": 55,
+  "recordsMatched": 1187,
+  "recordsFailed": 69,
+  "recordSuccessRate": 94.51,
+  "uniqueMatched": 709,
+  "uniqueFailed": 41,
   "recordCountsByCause": {
-    "matched": 1165,
-    "not_found_by_current_rakuten_search": 74,
-    "multiple_candidates": 9,
-    "temporary_upstream_error": 5,
-    "location_unverified": 3
+    "matched": 1187,
+    "temporary_upstream_error": 63,
+    "multiple_candidates": 1,
+    "not_found_by_current_rakuten_search": 4,
+    "location_unverified": 1
   },
   "uniqueCountsByCause": {
-    "matched": 695,
-    "not_found_by_current_rakuten_search": 44,
-    "multiple_candidates": 4,
-    "temporary_upstream_error": 4,
-    "location_unverified": 3
+    "matched": 709,
+    "temporary_upstream_error": 35,
+    "multiple_candidates": 1,
+    "not_found_by_current_rakuten_search": 4,
+    "location_unverified": 1
   },
   "recordCountsByStatus": {
-    "502": 5,
-    "matched": 1165,
-    "not_found": 74,
-    "ambiguous": 9,
-    "location_unverified": 3
+    "502": 63,
+    "matched": 1187,
+    "ambiguous": 1,
+    "not_found": 4,
+    "location_unverified": 1
   },
   "uniqueCountsByStatus": {
-    "502": 4,
-    "matched": 695,
-    "not_found": 44,
-    "ambiguous": 4,
-    "location_unverified": 3
+    "502": 35,
+    "matched": 709,
+    "ambiguous": 1,
+    "not_found": 4,
+    "location_unverified": 1
   },
   "recordCountsByMatchedBy": {
     "hotelNo": 16,
     "containedNameLocation": 140,
-    "exactName": 1002,
+    "exactName": 1004,
+    "hotelNoOverride": 20,
     "normalizedNameLocation": 7
   },
   "uniqueCountsByMatchedBy": {
     "hotelNo": 6,
     "containedNameLocation": 103,
-    "exactName": 579,
+    "exactName": 581,
+    "hotelNoOverride": 12,
     "normalizedNameLocation": 7
   },
-  "failedUniqueWithRakutenAffiliateLink": 1,
-  "failedUniqueWithoutRakutenAffiliateLink": 54,
+  "failedUniqueWithRakutenAffiliateLink": 0,
+  "failedUniqueWithoutRakutenAffiliateLink": 41,
   "shardCount": 30
 }

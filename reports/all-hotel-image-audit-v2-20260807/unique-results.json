@@ -306,30 +306,24 @@
     ],
     "duplicateGroupSize": 1,
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
-      "hasImage": false,
-      "hotelNo": "",
-      "hotelName": "",
-      "matchedBy": "",
-      "matchEvidence": [],
-      "transportError": "",
-      "rawExcerpt": "",
-      "attemptsUsed": 1
-    },
-    "affiliate": {
       "httpStatus": 200,
-      "hasRakuten": false,
-      "rakutenHotelNo": "",
-      "providers": [],
+      "status": "matched",
+      "hasImage": true,
+      "hotelNo": "146864",
+      "hotelName": "KOKO HOTEL 新宿四谷",
+      "matchedBy": "hotelNoOverride",
+      "matchEvidence": [
+        "override"
+      ],
       "transportError": "",
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search",
+    "affiliate": null,
+    "causeCode": "matched",
     "retry": {
       "attempted": true,
-      "attemptedAt": "2026-08-06T23:34:47.491Z",
+      "attemptedAt": "2026-08-07T04:52:15.087Z",
       "previousCauseCode": "not_found_by_current_rakuten_search",
       "previousHasImage": false,
       "attemptsPerRequest": 5
@@ -381,30 +375,24 @@
     ],
     "duplicateGroupSize": 4,
     "image": {
-      "httpStatus": 404,
-      "status": "ambiguous",
-      "hasImage": false,
-      "hotelNo": "",
-      "hotelName": "",
-      "matchedBy": "",
-      "matchEvidence": [],
-      "transportError": "",
-      "rawExcerpt": "",
-      "attemptsUsed": 1
-    },
-    "affiliate": {
       "httpStatus": 200,
-      "hasRakuten": false,
-      "rakutenHotelNo": "",
-      "providers": [],
+      "status": "matched",
+      "hasImage": true,
+      "hotelNo": "240",
+      "hotelName": "the b 赤坂(ザビー あかさか)",
+      "matchedBy": "hotelNoOverride",
+      "matchEvidence": [
+        "override"
+      ],
       "transportError": "",
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "multiple_candidates",
+    "affiliate": null,
+    "causeCode": "matched",
     "retry": {
       "attempted": true,
-      "attemptedAt": "2026-08-06T23:34:52.617Z",
+      "attemptedAt": "2026-08-07T04:52:17.155Z",
       "previousCauseCode": "multiple_candidates",
       "previousHasImage": false,
       "attemptsPerRequest": 5
@@ -603,30 +591,24 @@
     ],
     "duplicateGroupSize": 2,
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
-      "hasImage": false,
-      "hotelNo": "",
-      "hotelName": "",
-      "matchedBy": "",
-      "matchEvidence": [],
-      "transportError": "",
-      "rawExcerpt": "",
-      "attemptsUsed": 1
-    },
-    "affiliate": {
       "httpStatus": 200,
-      "hasRakuten": false,
-      "rakutenHotelNo": "",
-      "providers": [],
+      "status": "matched",
+      "hasImage": true,
+      "hotelNo": "462",
+      "hotelName": "KOKO HOTEL 後楽園",
+      "matchedBy": "hotelNoOverride",
+      "matchEvidence": [
+        "override"
+      ],
       "transportError": "",
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search",
+    "affiliate": null,
+    "causeCode": "matched",
     "retry": {
       "attempted": true,
-      "attemptedAt": "2026-08-06T23:34:56.729Z",
+      "attemptedAt": "2026-08-07T04:52:18.906Z",
       "previousCauseCode": "not_found_by_current_rakuten_search",
       "previousHasImage": false,
       "attemptsPerRequest": 5
@@ -1859,30 +1841,24 @@
     ],
     "duplicateGroupSize": 3,
     "image": {
-      "httpStatus": 404,
-      "status": "ambiguous",
-      "hasImage": false,
-      "hotelNo": "",
-      "hotelName": "",
-      "matchedBy": "",
-      "matchEvidence": [],
-      "transportError": "",
-      "rawExcerpt": "",
-      "attemptsUsed": 1
-    },
-    "affiliate": {
       "httpStatus": 200,
-      "hasRakuten": false,
-      "rakutenHotelNo": "",
-      "providers": [],
+      "status": "matched",
+      "hasImage": true,
+      "hotelNo": "41708",
+      "hotelName": "東急ステイ渋谷 (道玄坂上)",
+      "matchedBy": "hotelNoOverride",
+      "matchEvidence": [
+        "override"
+      ],
       "transportError": "",
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "multiple_candidates",
+    "affiliate": null,
+    "causeCode": "matched",
     "retry": {
       "attempted": true,
-      "attemptedAt": "2026-08-06T23:35:31.434Z",
+      "attemptedAt": "2026-08-07T04:52:39.077Z",
       "previousCauseCode": "multiple_candidates",
       "previousHasImage": false,
       "attemptsPerRequest": 5
@@ -1969,8 +1945,8 @@
     ],
     "duplicateGroupSize": 5,
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -1978,7 +1954,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -1989,10 +1965,10 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search",
+    "causeCode": "temporary_upstream_error",
     "retry": {
       "attempted": true,
-      "attemptedAt": "2026-08-06T23:35:35.577Z",
+      "attemptedAt": "2026-08-07T04:57:00.450Z",
       "previousCauseCode": "not_found_by_current_rakuten_search",
       "previousHasImage": false,
       "attemptsPerRequest": 5
@@ -2134,30 +2110,24 @@
     ],
     "duplicateGroupSize": 2,
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
-      "hasImage": false,
-      "hotelNo": "",
-      "hotelName": "",
-      "matchedBy": "",
-      "matchEvidence": [],
-      "transportError": "",
-      "rawExcerpt": "",
-      "attemptsUsed": 3
-    },
-    "affiliate": {
       "httpStatus": 200,
-      "hasRakuten": false,
-      "rakutenHotelNo": "",
-      "providers": [],
+      "status": "matched",
+      "hasImage": true,
+      "hotelNo": "167724",
+      "hotelName": "ザ ノット 東京新宿",
+      "matchedBy": "hotelNoOverride",
+      "matchEvidence": [
+        "override"
+      ],
       "transportError": "",
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search",
+    "affiliate": null,
+    "causeCode": "matched",
     "retry": {
       "attempted": true,
-      "attemptedAt": "2026-08-06T23:37:43.552Z",
+      "attemptedAt": "2026-08-07T04:57:02.511Z",
       "previousCauseCode": "not_found_by_current_rakuten_search",
       "previousHasImage": false,
       "attemptsPerRequest": 5
@@ -2185,8 +2155,8 @@
     ],
     "duplicateGroupSize": 9,
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -2194,7 +2164,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -2205,10 +2175,10 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search",
+    "causeCode": "temporary_upstream_error",
     "retry": {
       "attempted": true,
-      "attemptedAt": "2026-08-06T23:37:46.936Z",
+      "attemptedAt": "2026-08-07T05:01:27.309Z",
       "previousCauseCode": "not_found_by_current_rakuten_search",
       "previousHasImage": false,
       "attemptsPerRequest": 5
@@ -2994,8 +2964,8 @@
     ],
     "duplicateGroupSize": 2,
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -3003,7 +2973,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -3014,10 +2984,10 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search",
+    "causeCode": "temporary_upstream_error",
     "retry": {
       "attempted": true,
-      "attemptedAt": "2026-08-06T23:37:58.649Z",
+      "attemptedAt": "2026-08-07T05:05:56.468Z",
       "previousCauseCode": "not_found_by_current_rakuten_search",
       "previousHasImage": false,
       "attemptsPerRequest": 5
@@ -3038,8 +3008,8 @@
     ],
     "duplicateGroupSize": 2,
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -3047,7 +3017,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 4
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -3058,10 +3028,10 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search",
+    "causeCode": "temporary_upstream_error",
     "retry": {
       "attempted": true,
-      "attemptedAt": "2026-08-06T23:41:07.335Z",
+      "attemptedAt": "2026-08-07T05:10:13.310Z",
       "previousCauseCode": "not_found_by_current_rakuten_search",
       "previousHasImage": false,
       "attemptsPerRequest": 5
@@ -3503,30 +3473,22 @@
     ],
     "duplicateGroupSize": 1,
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
-      "hasImage": false,
-      "hotelNo": "",
-      "hotelName": "",
-      "matchedBy": "",
+      "httpStatus": 200,
+      "status": "matched",
+      "hasImage": true,
+      "hotelNo": "16772",
+      "hotelName": "TOKIO’s HOTEL",
+      "matchedBy": "exactName",
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "affiliate": {
-      "httpStatus": 200,
-      "hasRakuten": false,
-      "rakutenHotelNo": "",
-      "providers": [],
-      "transportError": "",
-      "rawExcerpt": "",
-      "attemptsUsed": 1
-    },
-    "causeCode": "not_found_by_current_rakuten_search",
+    "affiliate": null,
+    "causeCode": "matched",
     "retry": {
       "attempted": true,
-      "attemptedAt": "2026-08-06T23:41:24.701Z",
+      "attemptedAt": "2026-08-07T05:10:28.595Z",
       "previousCauseCode": "not_found_by_current_rakuten_search",
       "previousHasImage": false,
       "attemptsPerRequest": 5
@@ -3684,8 +3646,8 @@
     ],
     "duplicateGroupSize": 1,
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -3693,7 +3655,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -3704,10 +3666,10 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search",
+    "causeCode": "temporary_upstream_error",
     "retry": {
       "attempted": true,
-      "attemptedAt": "2026-08-06T23:41:29.770Z",
+      "attemptedAt": "2026-08-07T05:14:39.736Z",
       "previousCauseCode": "not_found_by_current_rakuten_search",
       "previousHasImage": false,
       "attemptsPerRequest": 5
@@ -4002,8 +3964,8 @@
     ],
     "duplicateGroupSize": 2,
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -4011,7 +3973,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -4022,10 +3984,10 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search",
+    "causeCode": "temporary_upstream_error",
     "retry": {
       "attempted": true,
-      "attemptedAt": "2026-08-06T23:41:42.277Z",
+      "attemptedAt": "2026-08-07T05:19:11.197Z",
       "previousCauseCode": "not_found_by_current_rakuten_search",
       "previousHasImage": false,
       "attemptsPerRequest": 5
@@ -4967,32 +4929,24 @@
     ],
     "duplicateGroupSize": 2,
     "image": {
-      "httpStatus": 502,
-      "status": "502",
-      "hasImage": false,
-      "hotelNo": "",
-      "hotelName": "",
-      "matchedBy": "",
-      "matchEvidence": [],
-      "transportError": "",
-      "rawExcerpt": "",
-      "attemptsUsed": 5
-    },
-    "affiliate": {
       "httpStatus": 200,
-      "hasRakuten": true,
-      "rakutenHotelNo": "84673",
-      "providers": [
-        "楽天トラベル"
+      "status": "matched",
+      "hasImage": true,
+      "hotelNo": "84673",
+      "hotelName": "メルキュールホテル横須賀",
+      "matchedBy": "hotelNoOverride",
+      "matchEvidence": [
+        "override"
       ],
       "transportError": "",
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "temporary_upstream_error",
+    "affiliate": null,
+    "causeCode": "matched",
     "retry": {
       "attempted": true,
-      "attemptedAt": "2026-08-06T23:46:01.510Z",
+      "attemptedAt": "2026-08-07T05:19:24.795Z",
       "previousCauseCode": "temporary_upstream_error",
       "previousHasImage": false,
       "attemptsPerRequest": 5
@@ -5042,8 +4996,8 @@
     ],
     "duplicateGroupSize": 2,
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -5051,7 +5005,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -5062,10 +5016,10 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search",
+    "causeCode": "temporary_upstream_error",
     "retry": {
       "attempted": true,
-      "attemptedAt": "2026-08-06T23:46:04.404Z",
+      "attemptedAt": "2026-08-07T05:23:35.001Z",
       "previousCauseCode": "not_found_by_current_rakuten_search",
       "previousHasImage": false,
       "attemptsPerRequest": 5
@@ -5490,30 +5444,24 @@
     ],
     "duplicateGroupSize": 1,
     "image": {
-      "httpStatus": 502,
-      "status": "502",
-      "hasImage": false,
-      "hotelNo": "",
-      "hotelName": "",
-      "matchedBy": "",
-      "matchEvidence": [],
-      "transportError": "",
-      "rawExcerpt": "",
-      "attemptsUsed": 5
-    },
-    "affiliate": {
       "httpStatus": 200,
-      "hasRakuten": false,
-      "rakutenHotelNo": "",
-      "providers": [],
+      "status": "matched",
+      "hasImage": true,
+      "hotelNo": "67257",
+      "hotelName": "KOKO STAY 相模原",
+      "matchedBy": "hotelNoOverride",
+      "matchEvidence": [
+        "override"
+      ],
       "transportError": "",
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "temporary_upstream_error",
+    "affiliate": null,
+    "causeCode": "matched",
     "retry": {
       "attempted": true,
-      "attemptedAt": "2026-08-06T23:50:24.386Z",
+      "attemptedAt": "2026-08-07T05:23:45.404Z",
       "previousCauseCode": "temporary_upstream_error",
       "previousHasImage": false,
       "attemptsPerRequest": 5
@@ -5617,8 +5565,8 @@
     ],
     "duplicateGroupSize": 1,
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -5626,7 +5574,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -5637,10 +5585,10 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search",
+    "causeCode": "temporary_upstream_error",
     "retry": {
       "attempted": true,
-      "attemptedAt": "2026-08-06T23:50:27.137Z",
+      "attemptedAt": "2026-08-07T05:27:56.510Z",
       "previousCauseCode": "not_found_by_current_rakuten_search",
       "previousHasImage": false,
       "attemptsPerRequest": 5
@@ -6136,8 +6084,8 @@
     ],
     "duplicateGroupSize": 1,
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -6145,7 +6093,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -6156,10 +6104,10 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search",
+    "causeCode": "temporary_upstream_error",
     "retry": {
       "attempted": true,
-      "attemptedAt": "2026-08-06T23:50:40.808Z",
+      "attemptedAt": "2026-08-07T05:32:19.518Z",
       "previousCauseCode": "not_found_by_current_rakuten_search",
       "previousHasImage": false,
       "attemptsPerRequest": 5
@@ -6573,7 +6521,7 @@
     "causeCode": "multiple_candidates",
     "retry": {
       "attempted": true,
-      "attemptedAt": "2026-08-06T23:50:43.656Z",
+      "attemptedAt": "2026-08-07T05:32:23.300Z",
       "previousCauseCode": "multiple_candidates",
       "previousHasImage": false,
       "attemptsPerRequest": 5
@@ -7114,7 +7062,7 @@
     "causeCode": "not_found_by_current_rakuten_search",
     "retry": {
       "attempted": true,
-      "attemptedAt": "2026-08-06T23:50:56.271Z",
+      "attemptedAt": "2026-08-07T05:32:39.192Z",
       "previousCauseCode": "not_found_by_current_rakuten_search",
       "previousHasImage": false,
       "attemptsPerRequest": 5
@@ -7406,8 +7354,8 @@
     ],
     "duplicateGroupSize": 2,
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -7415,7 +7363,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 2
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -7426,11 +7374,11 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search",
+    "causeCode": "temporary_upstream_error",
     "retry": {
       "attempted": true,
-      "attemptedAt": "2026-08-06T23:52:01.701Z",
-      "previousCauseCode": "temporary_upstream_error",
+      "attemptedAt": "2026-08-07T05:36:50.915Z",
+      "previousCauseCode": "not_found_by_current_rakuten_search",
       "previousHasImage": false,
       "attemptsPerRequest": 5
     }
@@ -7712,8 +7660,8 @@
     ],
     "duplicateGroupSize": 1,
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -7721,7 +7669,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -7732,10 +7680,10 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search",
+    "causeCode": "temporary_upstream_error",
     "retry": {
       "attempted": true,
-      "attemptedAt": "2026-08-06T23:52:13.983Z",
+      "attemptedAt": "2026-08-07T05:41:12.372Z",
       "previousCauseCode": "not_found_by_current_rakuten_search",
       "previousHasImage": false,
       "attemptsPerRequest": 5
@@ -8045,8 +7993,8 @@
     ],
     "duplicateGroupSize": 1,
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -8054,7 +8002,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -8065,10 +8013,10 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search",
+    "causeCode": "temporary_upstream_error",
     "retry": {
       "attempted": true,
-      "attemptedAt": "2026-08-06T23:52:16.804Z",
+      "attemptedAt": "2026-08-07T05:45:23.277Z",
       "previousCauseCode": "not_found_by_current_rakuten_search",
       "previousHasImage": false,
       "attemptsPerRequest": 5
@@ -8223,7 +8171,7 @@
     "causeCode": "location_unverified",
     "retry": {
       "attempted": true,
-      "attemptedAt": "2026-08-06T23:52:19.574Z",
+      "attemptedAt": "2026-08-07T05:45:26.740Z",
       "previousCauseCode": "location_unverified",
       "previousHasImage": false,
       "attemptsPerRequest": 5
@@ -9495,8 +9443,8 @@
     ],
     "duplicateGroupSize": 4,
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -9504,7 +9452,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -9515,10 +9463,10 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search",
+    "causeCode": "temporary_upstream_error",
     "retry": {
       "attempted": true,
-      "attemptedAt": "2026-08-06T23:52:55.640Z",
+      "attemptedAt": "2026-08-07T05:50:02.121Z",
       "previousCauseCode": "not_found_by_current_rakuten_search",
       "previousHasImage": false,
       "attemptsPerRequest": 5
@@ -9882,8 +9830,8 @@
     ],
     "duplicateGroupSize": 1,
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -9891,7 +9839,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -9902,10 +9850,10 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search",
+    "causeCode": "temporary_upstream_error",
     "retry": {
       "attempted": true,
-      "attemptedAt": "2026-08-06T23:53:08.953Z",
+      "attemptedAt": "2026-08-07T05:54:38.171Z",
       "previousCauseCode": "not_found_by_current_rakuten_search",
       "previousHasImage": false,
       "attemptsPerRequest": 5
@@ -9953,8 +9901,8 @@
     ],
     "duplicateGroupSize": 1,
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -9962,7 +9910,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 2
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -9973,10 +9921,10 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search",
+    "causeCode": "temporary_upstream_error",
     "retry": {
       "attempted": true,
-      "attemptedAt": "2026-08-06T23:54:15.453Z",
+      "attemptedAt": "2026-08-07T05:58:48.644Z",
       "previousCauseCode": "not_found_by_current_rakuten_search",
       "previousHasImage": false,
       "attemptsPerRequest": 5
@@ -9996,8 +9944,8 @@
     ],
     "duplicateGroupSize": 1,
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -10005,7 +9953,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -10016,10 +9964,10 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search",
+    "causeCode": "temporary_upstream_error",
     "retry": {
       "attempted": true,
-      "attemptedAt": "2026-08-06T23:54:20.144Z",
+      "attemptedAt": "2026-08-07T06:02:59.026Z",
       "previousCauseCode": "not_found_by_current_rakuten_search",
       "previousHasImage": false,
       "attemptsPerRequest": 5
@@ -10067,30 +10015,24 @@
     ],
     "duplicateGroupSize": 1,
     "image": {
-      "httpStatus": 404,
-      "status": "ambiguous",
-      "hasImage": false,
-      "hotelNo": "",
-      "hotelName": "",
-      "matchedBy": "",
-      "matchEvidence": [],
-      "transportError": "",
-      "rawExcerpt": "",
-      "attemptsUsed": 1
-    },
-    "affiliate": {
       "httpStatus": 200,
-      "hasRakuten": false,
-      "rakutenHotelNo": "",
-      "providers": [],
+      "status": "matched",
+      "hasImage": true,
+      "hotelNo": "500",
+      "hotelName": "薬湯風呂 ホテルグランテラス帯広(BBHホテルグループ)",
+      "matchedBy": "hotelNoOverride",
+      "matchEvidence": [
+        "override"
+      ],
       "transportError": "",
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "multiple_candidates",
+    "affiliate": null,
+    "causeCode": "matched",
     "retry": {
       "attempted": true,
-      "attemptedAt": "2026-08-06T23:54:24.108Z",
+      "attemptedAt": "2026-08-07T06:03:00.741Z",
       "previousCauseCode": "multiple_candidates",
       "previousHasImage": false,
       "attemptsPerRequest": 5
@@ -11208,8 +11150,8 @@
     ],
     "duplicateGroupSize": 2,
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -11217,7 +11159,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -11228,10 +11170,10 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search",
+    "causeCode": "temporary_upstream_error",
     "retry": {
       "attempted": true,
-      "attemptedAt": "2026-08-06T23:54:38.887Z",
+      "attemptedAt": "2026-08-07T06:07:25.709Z",
       "previousCauseCode": "not_found_by_current_rakuten_search",
       "previousHasImage": false,
       "attemptsPerRequest": 5
@@ -11252,8 +11194,8 @@
     ],
     "duplicateGroupSize": 2,
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -11261,7 +11203,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -11272,10 +11214,10 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search",
+    "causeCode": "temporary_upstream_error",
     "retry": {
       "attempted": true,
-      "attemptedAt": "2026-08-06T23:54:43.725Z",
+      "attemptedAt": "2026-08-07T06:11:36.551Z",
       "previousCauseCode": "not_found_by_current_rakuten_search",
       "previousHasImage": false,
       "attemptsPerRequest": 5
@@ -12640,7 +12582,7 @@
     "causeCode": "not_found_by_current_rakuten_search",
     "retry": {
       "attempted": true,
-      "attemptedAt": "2026-08-06T23:55:11.700Z",
+      "attemptedAt": "2026-08-07T06:12:00.747Z",
       "previousCauseCode": "not_found_by_current_rakuten_search",
       "previousHasImage": false,
       "attemptsPerRequest": 5
@@ -12863,8 +12805,8 @@
     ],
     "duplicateGroupSize": 2,
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -12872,7 +12814,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -12883,10 +12825,10 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search",
+    "causeCode": "temporary_upstream_error",
     "retry": {
       "attempted": true,
-      "attemptedAt": "2026-08-06T23:55:27.399Z",
+      "attemptedAt": "2026-08-07T06:16:29.497Z",
       "previousCauseCode": "not_found_by_current_rakuten_search",
       "previousHasImage": false,
       "attemptsPerRequest": 5
@@ -14264,8 +14206,8 @@
     ],
     "duplicateGroupSize": 1,
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -14273,7 +14215,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -14284,10 +14226,10 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search",
+    "causeCode": "temporary_upstream_error",
     "retry": {
       "attempted": true,
-      "attemptedAt": "2026-08-06T23:55:42.440Z",
+      "attemptedAt": "2026-08-07T06:20:55.191Z",
       "previousCauseCode": "not_found_by_current_rakuten_search",
       "previousHasImage": false,
       "attemptsPerRequest": 5
@@ -15297,8 +15239,8 @@
     ],
     "duplicateGroupSize": 1,
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -15306,7 +15248,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -15317,10 +15259,10 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search",
+    "causeCode": "temporary_upstream_error",
     "retry": {
       "attempted": true,
-      "attemptedAt": "2026-08-06T23:56:19.458Z",
+      "attemptedAt": "2026-08-07T06:25:32.914Z",
       "previousCauseCode": "not_found_by_current_rakuten_search",
       "previousHasImage": false,
       "attemptsPerRequest": 5
@@ -15396,8 +15338,8 @@
     ],
     "duplicateGroupSize": 1,
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -15405,7 +15347,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -15416,10 +15358,10 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search",
+    "causeCode": "temporary_upstream_error",
     "retry": {
       "attempted": true,
-      "attemptedAt": "2026-08-06T23:56:24.375Z",
+      "attemptedAt": "2026-08-07T06:29:43.300Z",
       "previousCauseCode": "not_found_by_current_rakuten_search",
       "previousHasImage": false,
       "attemptsPerRequest": 5
@@ -15523,8 +15465,8 @@
     ],
     "duplicateGroupSize": 1,
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -15532,7 +15474,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -15543,10 +15485,10 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search",
+    "causeCode": "temporary_upstream_error",
     "retry": {
       "attempted": true,
-      "attemptedAt": "2026-08-06T23:56:29.300Z",
+      "attemptedAt": "2026-08-07T06:33:53.518Z",
       "previousCauseCode": "not_found_by_current_rakuten_search",
       "previousHasImage": false,
       "attemptsPerRequest": 5
@@ -16098,8 +16040,8 @@
     ],
     "duplicateGroupSize": 2,
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -16107,7 +16049,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -16118,10 +16060,10 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search",
+    "causeCode": "temporary_upstream_error",
     "retry": {
       "attempted": true,
-      "attemptedAt": "2026-08-06T23:56:58.548Z",
+      "attemptedAt": "2026-08-07T06:38:19.578Z",
       "previousCauseCode": "not_found_by_current_rakuten_search",
       "previousHasImage": false,
       "attemptsPerRequest": 5
@@ -16487,8 +16429,8 @@
     ],
     "duplicateGroupSize": 1,
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -16496,7 +16438,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -16507,10 +16449,10 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search",
+    "causeCode": "temporary_upstream_error",
     "retry": {
       "attempted": true,
-      "attemptedAt": "2026-08-06T23:57:03.522Z",
+      "attemptedAt": "2026-08-07T06:42:30.281Z",
       "previousCauseCode": "not_found_by_current_rakuten_search",
       "previousHasImage": false,
       "attemptsPerRequest": 5
@@ -16676,8 +16618,8 @@
     ],
     "duplicateGroupSize": 1,
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -16685,7 +16627,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -16696,10 +16638,10 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search",
+    "causeCode": "temporary_upstream_error",
     "retry": {
       "attempted": true,
-      "attemptedAt": "2026-08-06T23:57:22.754Z",
+      "attemptedAt": "2026-08-07T06:46:58.990Z",
       "previousCauseCode": "not_found_by_current_rakuten_search",
       "previousHasImage": false,
       "attemptsPerRequest": 5
@@ -16798,7 +16740,7 @@
     "causeCode": "not_found_by_current_rakuten_search",
     "retry": {
       "attempted": true,
-      "attemptedAt": "2026-08-06T23:57:27.856Z",
+      "attemptedAt": "2026-08-07T06:47:03.081Z",
       "previousCauseCode": "not_found_by_current_rakuten_search",
       "previousHasImage": false,
       "attemptsPerRequest": 5
@@ -16958,8 +16900,8 @@
     ],
     "duplicateGroupSize": 1,
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -16967,7 +16909,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -16978,10 +16920,10 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search",
+    "causeCode": "temporary_upstream_error",
     "retry": {
       "attempted": true,
-      "attemptedAt": "2026-08-06T23:57:31.870Z",
+      "attemptedAt": "2026-08-07T06:51:24.136Z",
       "previousCauseCode": "not_found_by_current_rakuten_search",
       "previousHasImage": false,
       "attemptsPerRequest": 5
@@ -17032,8 +16974,8 @@
     ],
     "duplicateGroupSize": 1,
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -17041,7 +16983,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -17052,10 +16994,10 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search",
+    "causeCode": "temporary_upstream_error",
     "retry": {
       "attempted": true,
-      "attemptedAt": "2026-08-06T23:57:35.281Z",
+      "attemptedAt": "2026-08-07T06:55:40.842Z",
       "previousCauseCode": "not_found_by_current_rakuten_search",
       "previousHasImage": false,
       "attemptsPerRequest": 5
@@ -17893,8 +17835,8 @@
     ],
     "duplicateGroupSize": 1,
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -17902,7 +17844,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -17913,10 +17855,10 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search",
+    "causeCode": "temporary_upstream_error",
     "retry": {
       "attempted": true,
-      "attemptedAt": "2026-08-06T23:57:50.291Z",
+      "attemptedAt": "2026-08-07T07:00:03.323Z",
       "previousCauseCode": "not_found_by_current_rakuten_search",
       "previousHasImage": false,
       "attemptsPerRequest": 5
@@ -18137,8 +18079,8 @@
     ],
     "duplicateGroupSize": 2,
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -18146,7 +18088,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -18157,10 +18099,10 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search",
+    "causeCode": "temporary_upstream_error",
     "retry": {
       "attempted": true,
-      "attemptedAt": "2026-08-06T23:58:03.011Z",
+      "attemptedAt": "2026-08-07T07:04:33.273Z",
       "previousCauseCode": "not_found_by_current_rakuten_search",
       "previousHasImage": false,
       "attemptsPerRequest": 5
@@ -18181,8 +18123,8 @@
     ],
     "duplicateGroupSize": 2,
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -18190,7 +18132,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 2
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -18201,10 +18143,10 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search",
+    "causeCode": "temporary_upstream_error",
     "retry": {
       "attempted": true,
-      "attemptedAt": "2026-08-06T23:59:09.565Z",
+      "attemptedAt": "2026-08-07T07:08:43.821Z",
       "previousCauseCode": "not_found_by_current_rakuten_search",
       "previousHasImage": false,
       "attemptsPerRequest": 5
@@ -18254,8 +18196,8 @@
     ],
     "duplicateGroupSize": 2,
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -18263,7 +18205,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -18274,10 +18216,10 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search",
+    "causeCode": "temporary_upstream_error",
     "retry": {
       "attempted": true,
-      "attemptedAt": "2026-08-06T23:59:14.238Z",
+      "attemptedAt": "2026-08-07T07:12:54.157Z",
       "previousCauseCode": "not_found_by_current_rakuten_search",
       "previousHasImage": false,
       "attemptsPerRequest": 5
@@ -18765,30 +18707,24 @@
     ],
     "duplicateGroupSize": 1,
     "image": {
-      "httpStatus": 502,
-      "status": "502",
-      "hasImage": false,
-      "hotelNo": "",
-      "hotelName": "",
-      "matchedBy": "",
-      "matchEvidence": [],
-      "transportError": "",
-      "rawExcerpt": "",
-      "attemptsUsed": 5
-    },
-    "affiliate": {
       "httpStatus": 200,
-      "hasRakuten": false,
-      "rakutenHotelNo": "",
-      "providers": [],
+      "status": "matched",
+      "hasImage": true,
+      "hotelNo": "4843",
+      "hotelName": "琵琶湖ホテル",
+      "matchedBy": "hotelNoOverride",
+      "matchEvidence": [
+        "override"
+      ],
       "transportError": "",
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "temporary_upstream_error",
+    "affiliate": null,
+    "causeCode": "matched",
     "retry": {
       "attempted": true,
-      "attemptedAt": "2026-08-07T00:03:25.713Z",
+      "attemptedAt": "2026-08-07T07:12:55.801Z",
       "previousCauseCode": "temporary_upstream_error",
       "previousHasImage": false,
       "attemptsPerRequest": 5
@@ -19728,30 +19664,24 @@
     ],
     "duplicateGroupSize": 1,
     "image": {
-      "httpStatus": 502,
-      "status": "502",
-      "hasImage": false,
-      "hotelNo": "",
-      "hotelName": "",
-      "matchedBy": "",
-      "matchEvidence": [],
-      "transportError": "",
-      "rawExcerpt": "",
-      "attemptsUsed": 5
-    },
-    "affiliate": {
       "httpStatus": 200,
-      "hasRakuten": false,
-      "rakutenHotelNo": "",
-      "providers": [],
+      "status": "matched",
+      "hasImage": true,
+      "hotelNo": "68088",
+      "hotelName": "K.M.H Art hotel by Kure Morisawa",
+      "matchedBy": "hotelNoOverride",
+      "matchEvidence": [
+        "override"
+      ],
       "transportError": "",
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "temporary_upstream_error",
+    "affiliate": null,
+    "causeCode": "matched",
     "retry": {
       "attempted": true,
-      "attemptedAt": "2026-08-07T00:08:03.336Z",
+      "attemptedAt": "2026-08-07T07:13:14.409Z",
       "previousCauseCode": "temporary_upstream_error",
       "previousHasImage": false,
       "attemptsPerRequest": 5
@@ -19999,30 +19929,22 @@
     ],
     "duplicateGroupSize": 1,
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
-      "hasImage": false,
-      "hotelNo": "",
-      "hotelName": "",
-      "matchedBy": "",
+      "httpStatus": 200,
+      "status": "matched",
+      "hasImage": true,
+      "hotelNo": "15761",
+      "hotelName": "ホテルアクティブ!山口",
+      "matchedBy": "exactName",
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "affiliate": {
-      "httpStatus": 200,
-      "hasRakuten": false,
-      "rakutenHotelNo": "",
-      "providers": [],
-      "transportError": "",
-      "rawExcerpt": "",
-      "attemptsUsed": 1
-    },
-    "causeCode": "not_found_by_current_rakuten_search",
+    "affiliate": null,
+    "causeCode": "matched",
     "retry": {
       "attempted": true,
-      "attemptedAt": "2026-08-07T00:08:07.303Z",
+      "attemptedAt": "2026-08-07T07:13:17.269Z",
       "previousCauseCode": "not_found_by_current_rakuten_search",
       "previousHasImage": false,
       "attemptsPerRequest": 5
@@ -20794,8 +20716,8 @@
     ],
     "duplicateGroupSize": 1,
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -20803,7 +20725,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -20814,10 +20736,10 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search",
+    "causeCode": "temporary_upstream_error",
     "retry": {
       "attempted": true,
-      "attemptedAt": "2026-08-07T00:08:22.171Z",
+      "attemptedAt": "2026-08-07T07:17:41.425Z",
       "previousCauseCode": "not_found_by_current_rakuten_search",
       "previousHasImage": false,
       "attemptsPerRequest": 5
@@ -21104,8 +21026,8 @@
     ],
     "duplicateGroupSize": 2,
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -21113,7 +21035,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -21124,10 +21046,10 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search",
+    "causeCode": "temporary_upstream_error",
     "retry": {
       "attempted": true,
-      "attemptedAt": "2026-08-07T00:08:26.090Z",
+      "attemptedAt": "2026-08-07T07:22:02.192Z",
       "previousCauseCode": "not_found_by_current_rakuten_search",
       "previousHasImage": false,
       "attemptsPerRequest": 5
@@ -22399,8 +22321,8 @@
     ],
     "duplicateGroupSize": 1,
     "image": {
-      "httpStatus": 404,
-      "status": "not_found",
+      "httpStatus": 502,
+      "status": "502",
       "hasImage": false,
       "hotelNo": "",
       "hotelName": "",
@@ -22408,7 +22330,7 @@
       "matchEvidence": [],
       "transportError": "",
       "rawExcerpt": "",
-      "attemptsUsed": 1
+      "attemptsUsed": 5
     },
     "affiliate": {
       "httpStatus": 200,
@@ -22419,11 +22341,11 @@
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "not_found_by_current_rakuten_search",
+    "causeCode": "temporary_upstream_error",
     "retry": {
       "attempted": true,
-      "attemptedAt": "2026-08-07T00:09:10.827Z",
-      "previousCauseCode": "temporary_upstream_error",
+      "attemptedAt": "2026-08-07T07:26:43.326Z",
+      "previousCauseCode": "not_found_by_current_rakuten_search",
       "previousHasImage": false,
       "attemptsPerRequest": 5
     }
@@ -22498,30 +22420,24 @@
     ],
     "duplicateGroupSize": 1,
     "image": {
-      "httpStatus": 404,
-      "status": "location_unverified",
-      "hasImage": false,
-      "hotelNo": "",
-      "hotelName": "",
-      "matchedBy": "",
-      "matchEvidence": [],
-      "transportError": "",
-      "rawExcerpt": "",
-      "attemptsUsed": 1
-    },
-    "affiliate": {
       "httpStatus": 200,
-      "hasRakuten": false,
-      "rakutenHotelNo": "",
-      "providers": [],
+      "status": "matched",
+      "hasImage": true,
+      "hotelNo": "178230",
+      "hotelName": "住友不動産ホテル ヴィラフォンテーヌグランド東京有明",
+      "matchedBy": "hotelNoOverride",
+      "matchEvidence": [
+        "override"
+      ],
       "transportError": "",
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "location_unverified",
+    "affiliate": null,
+    "causeCode": "matched",
     "retry": {
       "attempted": true,
-      "attemptedAt": "2026-08-07T00:09:14.751Z",
+      "attemptedAt": "2026-08-07T07:26:45.019Z",
       "previousCauseCode": "location_unverified",
       "previousHasImage": false,
       "attemptsPerRequest": 5
@@ -22541,30 +22457,24 @@
     ],
     "duplicateGroupSize": 1,
     "image": {
-      "httpStatus": 404,
-      "status": "location_unverified",
-      "hasImage": false,
-      "hotelNo": "",
-      "hotelName": "",
-      "matchedBy": "",
-      "matchEvidence": [],
-      "transportError": "",
-      "rawExcerpt": "",
-      "attemptsUsed": 1
-    },
-    "affiliate": {
       "httpStatus": 200,
-      "hasRakuten": false,
-      "rakutenHotelNo": "",
-      "providers": [],
+      "status": "matched",
+      "hasImage": true,
+      "hotelNo": "167837",
+      "hotelName": "NOHGA HOTEL UENO TOKYO(ノーガホテル上野東京)",
+      "matchedBy": "hotelNoOverride",
+      "matchEvidence": [
+        "override"
+      ],
       "transportError": "",
       "rawExcerpt": "",
       "attemptsUsed": 1
     },
-    "causeCode": "location_unverified",
+    "affiliate": null,
+    "causeCode": "matched",
     "retry": {
       "attempted": true,
-      "attemptedAt": "2026-08-07T00:09:18.237Z",
+      "attemptedAt": "2026-08-07T07:26:46.707Z",
       "previousCauseCode": "location_unverified",
       "previousHasImage": false,
       "attemptsPerRequest": 5
@@ -22607,7 +22517,7 @@
     "causeCode": "not_found_by_current_rakuten_search",
     "retry": {
       "attempted": true,
-      "attemptedAt": "2026-08-07T00:09:21.798Z",
+      "attemptedAt": "2026-08-07T07:26:51.223Z",
       "previousCauseCode": "not_found_by_current_rakuten_search",
       "previousHasImage": false,
       "attemptsPerRequest": 5
