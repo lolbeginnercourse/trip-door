@@ -1,9 +1,18 @@
 {
   "row_count": 750,
+  "unique_id_count": 750,
   "status_counts": {
-    "verified": 10,
-    "needs_review": 725,
-    "partial": 15
+    "verified": 286,
+    "needs_review": 407,
+    "partial": 57
   },
-  "complete": true
+  "warning_counts": {
+    "transit_parse_failed": 54,
+    "hotel_station_differs_from_existing": 68,
+    "venue_access_unverified": 345,
+    "transit_missing_station": 345,
+    "hotel_walk_unverified": 333
+  },
+  "complete": true,
+  "verification_mode": "10_parallel_web_shards"
 }
