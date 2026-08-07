@@ -1,0 +1,30 @@
+{
+  "checked_at": "2026-08-07T22:19:00+09:00",
+  "mode": "ordinary_web_search",
+  "results": [
+    {"id":"stage-010-1","venue_nearest_station":"日比谷","venue_station_to_venue_walk_min":1,"transit_duration_min":0,"transfer_count":0,"source_urls":["https://www.nissaytheatre.or.jp/access/"]},
+    {"id":"stage-043-1","venue_nearest_station":"渋谷","venue_station_to_venue_walk_min":5,"transit_duration_min":0,"transfer_count":0,"source_urls":["https://shibu-cul.jp/access"]},
+    {"id":"stage-043-2","venue_nearest_station":"渋谷","venue_station_to_venue_walk_min":5,"transit_duration_min":0,"transfer_count":0,"source_urls":["https://shibu-cul.jp/access"]},
+    {"id":"stage-053-1","venue_nearest_station":"三鷹","venue_station_to_venue_walk_min":1,"transit_duration_min":0,"transfer_count":0,"source_urls":["https://www.musashino.or.jp/k_theatre/1002068/1002070/1004012/1006398.html"]},
+    {"id":"stage-053-2","venue_nearest_station":"三鷹","venue_station_to_venue_walk_min":1,"transit_duration_min":0,"transfer_count":0,"source_urls":["https://www.musashino.or.jp/k_theatre/1002068/1002070/1004012/1006398.html"]},
+    {"id":"stage-063-1","venue_nearest_station":"王子","venue_station_to_venue_walk_min":2,"transit_duration_min":0,"transfer_count":0,"source_urls":["https://www.hokutopia.jp/access/"]},
+    {"id":"stage-063-2","venue_nearest_station":"王子","venue_station_to_venue_walk_min":2,"transit_duration_min":0,"transfer_count":0,"source_urls":["https://www.hokutopia.jp/access/"]},
+    {"id":"stage-077-1","venue_nearest_station":"桜木町","venue_station_to_venue_walk_min":7,"transit_duration_min":0,"transfer_count":0,"source_urls":["https://pia-arena-mm.jp/access/"]},
+    {"id":"stage-077-2","venue_nearest_station":"桜木町","venue_station_to_venue_walk_min":7,"transit_duration_min":0,"transfer_count":0,"source_urls":["https://pia-arena-mm.jp/access/"]},
+    {"id":"stage-085-1","venue_nearest_station":"汐入","venue_station_to_venue_walk_min":1,"transit_duration_min":0,"transfer_count":0,"source_urls":["https://www.yokosuka-arts.or.jp/information/access/"]},
+    {"id":"stage-107-1","venue_nearest_station":"南浦和","venue_station_to_venue_walk_min":7,"transit_duration_min":0,"transfer_count":0,"source_urls":["https://saitama-culture.jp/culturecenter/"]},
+    {"id":"stage-119-1","venue_nearest_station":"つくば","venue_station_to_venue_walk_min":5,"transit_duration_min":0,"transfer_count":0,"source_urls":["https://www.tcf.or.jp/novahall/access/"]},
+    {"id":"stage-119-2","venue_nearest_station":"つくば","venue_station_to_venue_walk_min":5,"transit_duration_min":0,"transfer_count":0,"source_urls":["https://www.tcf.or.jp/novahall/access/"]},
+    {"id":"stage-119-3","venue_nearest_station":"つくば","venue_station_to_venue_walk_min":5,"transit_duration_min":0,"transfer_count":0,"source_urls":["https://www.tcf.or.jp/novahall/access/"]},
+    {"id":"stage-123-1","venue_nearest_station":"前橋","venue_station_to_venue_walk_min":8,"transit_duration_min":0,"transfer_count":0,"source_urls":["https://maebashishibun.maebashi-cc.or.jp/access"]},
+    {"id":"stage-123-2","venue_nearest_station":"前橋","venue_station_to_venue_walk_min":8,"transit_duration_min":0,"transfer_count":0,"source_urls":["https://maebashishibun.maebashi-cc.or.jp/access"]},
+    {"id":"stage-123-3","venue_nearest_station":"前橋","venue_station_to_venue_walk_min":8,"transit_duration_min":0,"transfer_count":0,"source_urls":["https://maebashishibun.maebashi-cc.or.jp/access"]},
+    {"id":"stage-187-1","venue_nearest_station":"大阪梅田","venue_station_to_venue_walk_min":5,"transit_duration_min":0,"transfer_count":0,"source_urls":["https://www.umegei.com/matahari2021/"]},
+    {"id":"stage-187-2","venue_nearest_station":"大阪梅田","venue_station_to_venue_walk_min":5,"transit_duration_min":0,"transfer_count":0,"source_urls":["https://www.umegei.com/matahari2021/"]},
+    {"id":"stage-228-1","venue_nearest_station":"呉","venue_station_to_venue_walk_min":7,"transit_duration_min":0,"transfer_count":0,"source_urls":["https://www.kure-bunka.jp/?cn=100016"]},
+    {"id":"stage-228-2","venue_nearest_station":"呉","venue_station_to_venue_walk_min":7,"transit_duration_min":0,"transfer_count":0,"source_urls":["https://www.kure-bunka.jp/?cn=100016"]},
+    {"id":"stage-232-1","venue_nearest_station":"米子","venue_station_to_venue_walk_min":5,"transit_duration_min":0,"transfer_count":0,"source_urls":["https://www.bigship.or.jp/bigship/guest/15/"]},
+    {"id":"stage-232-2","venue_nearest_station":"米子","venue_station_to_venue_walk_min":5,"transit_duration_min":0,"transfer_count":0,"source_urls":["https://www.bigship.or.jp/bigship/guest/15/"]},
+    {"id":"stage-232-3","venue_nearest_station":"米子","venue_station_to_venue_walk_min":5,"transit_duration_min":0,"transfer_count":0,"source_urls":["https://www.bigship.or.jp/bigship/guest/15/"]}
+  ]
+}
