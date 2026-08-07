@@ -1,0 +1,118 @@
+name: Recheck remaining hotel detail reviews
+
+on:
+  push:
+    branches:
+      - research/hotel-details-750-20260807
+    paths:
+      - scripts/recheck_needs_review_hotel_details.py
+      - .github/workflows/hotel-detail-needs-review-recheck.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: hotel-detail-needs-review-recheck
+  cancel-in-progress: true
+
+jobs:
+  recheck:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    strategy:
+      fail-fast: false
+      max-parallel: 10
+      matrix:
+        shard: [0,1,2,3,4,5,6,7,8,9]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research/hotel-details-750-20260807
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Recheck current needs_review rows from web
+        shell: bash
+        run: |
+          mkdir -p recheck-output
+          python scripts/recheck_needs_review_hotel_details.py \
+            --shard-index "${{ matrix.shard }}" \
+            --shards 10 \
+            --output "recheck-output/shard_${{ matrix.shard }}.jsonl" \
+            2>&1 | tee "recheck-output/shard_${{ matrix.shard }}.log"
+      - name: Upload shard
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: hotel-needs-review-recheck-${{ matrix.shard }}
+          path: recheck-output/
+          if-no-files-found: warn
+          retention-days: 3
+
+  merge:
+    if: always()
+    needs: recheck
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research/hotel-details-750-20260807
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Download recheck shards
+        uses: actions/download-artifact@v4
+        with:
+          pattern: hotel-needs-review-recheck-*
+          path: recheck-shards
+          merge-multiple: false
+      - name: Merge rechecked rows and validate
+        shell: bash
+        run: |
+          python scripts/merge_parallel_hotel_verification.py --input-dir recheck-shards
+          python scripts/repair_transit_routes.py || true
+          python scripts/summarize_hotel_research.py || true
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p=Path('research/generated/hotel_detail_research_750.jsonl')
+          rows=[json.loads(x) for x in p.read_text(encoding='utf-8').splitlines() if x.strip()]
+          counts={}
+          warnings={}
+          for r in rows:
+              s=r.get('verification_status','unknown')
+              counts[s]=counts.get(s,0)+1
+              for w in r.get('warnings',[]):
+                  warnings[w]=warnings.get(w,0)+1
+          validation={
+              'row_count':len(rows),
+              'unique_id_count':len({r.get('id') for r in rows}),
+              'status_counts':counts,
+              'warning_counts':warnings,
+              'complete':len(rows)==750 and len({r.get('id') for r in rows})==750,
+              'verification_mode':'needs_review_10_parallel_recheck'
+          }
+          Path('research/generated/final_validation.json').write_text(json.dumps(validation,ensure_ascii=False,indent=2),encoding='utf-8')
+          print(json.dumps(validation,ensure_ascii=False,indent=2))
+          if not validation['complete']:
+              raise SystemExit('750-row validation failed')
+          PY
+      - name: Commit recheck result
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin research/hotel-details-750-20260807 || true
+          git add -f research/generated/hotel_detail_research_750.jsonl \
+            research/generated/research_progress.json \
+            research/generated/final_validation.json \
+            research/generated/parallel_verification_summary.json \
+            research/generated/hotel_access_cache.jsonl \
+            research/generated/venue_access_cache.jsonl 2>/dev/null || true
+          if ! git diff --cached --quiet; then
+            git commit -m "Recheck remaining hotel detail reviews"
+            git push origin HEAD:research/hotel-details-750-20260807
+          fi
