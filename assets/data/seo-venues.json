@@ -3,7 +3,7 @@
   "venues": [
     {
       "category": "stage",
-      "match": { "field": "venueId", "value": "t-st-galaxy-theatre" },
+      "match": { "field": "venueId", "value": "stage-001" },
       "slug": "tennozu-ginga-theatre",
       "name": "天王洲 銀河劇場",
       "prefecture": "東京都",
@@ -17,7 +17,7 @@
     },
     {
       "category": "stage",
-      "match": { "field": "venueId", "value": "t-st-meijiza" },
+      "match": { "field": "venueId", "value": "stage-011" },
       "slug": "meijiza",
       "name": "明治座",
       "prefecture": "東京都",
