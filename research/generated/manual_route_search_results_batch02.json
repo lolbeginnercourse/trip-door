@@ -1,0 +1,144 @@
+{
+  "checked_at": "2026-08-07T23:06:45+09:00",
+  "mode": "ordinary_web_search",
+  "results": [
+    {
+      "id": "stage-002-1",
+      "venue_nearest_station": "大井競馬場前",
+      "venue_station_to_venue_walk_min": 5,
+      "transit_duration_min": 20,
+      "transfer_count": 1,
+      "source_urls": [
+        "https://theater-h.jp/access/",
+        "https://ekitan.com/transit/route/sf-1687/st-1684",
+        "https://www.oursinn-hankyu.co.jp/access/"
+      ],
+      "note": "大井町から大井競馬場前はりんかい線・東京モノレールで約20分、乗換1回。"
+    },
+    {
+      "id": "stage-002-2",
+      "venue_nearest_station": "大井競馬場前",
+      "venue_station_to_venue_walk_min": 5,
+      "transit_duration_min": 20,
+      "transfer_count": 1,
+      "source_urls": [
+        "https://theater-h.jp/access/",
+        "https://ekitan.com/transit/route/sf-1687/st-1684",
+        "https://www.viainn.com/oimachi/access/"
+      ],
+      "note": "大井町から大井競馬場前はりんかい線・東京モノレールで約20分、乗換1回。"
+    },
+    {
+      "id": "stage-002-3",
+      "venue_nearest_station": "大井競馬場前",
+      "venue_station_to_venue_walk_min": 5,
+      "transit_duration_min": 19,
+      "transfer_count": 0,
+      "source_urls": [
+        "https://theater-h.jp/access/",
+        "https://ekitan.com/transit/bus-section/sf-1730/st-1684"
+      ],
+      "note": "大森駅から京急バス森22系統で大井競馬場駅前へ向かう実用経路。徒歩を含み約19分、乗換0回。"
+    },
+    {
+      "id": "stage-010-2",
+      "hotel_nearest_station": "銀座",
+      "hotel_to_station_walk_min": 3,
+      "venue_nearest_station": "日比谷",
+      "venue_station_to_venue_walk_min": 1,
+      "transit_duration_min": 1,
+      "transfer_count": 0,
+      "source_urls": [
+        "https://www.ginza-bellevue.com/access/",
+        "https://www.nissaytheatre.or.jp/access/",
+        "https://transit.yahoo.co.jp/search/result/%E6%97%A5%E6%AF%94%E8%B0%B7-%E9%8A%80%E5%BA%A7"
+      ],
+      "note": "ホテルは銀座駅C2・C3出口から徒歩3分。日生劇場は日比谷駅A13出口から徒歩1分。銀座―日比谷は日比谷線1駅、約1分、乗換0回。"
+    },
+    {
+      "id": "stage-010-3",
+      "hotel_nearest_station": "内幸町",
+      "hotel_to_station_walk_min": 2,
+      "venue_nearest_station": "日比谷",
+      "venue_station_to_venue_walk_min": 1,
+      "transit_duration_min": 1,
+      "transfer_count": 0,
+      "source_urls": [
+        "https://www.daiwaroynet.jp/shinbashi/access/",
+        "https://www.nissaytheatre.or.jp/access/",
+        "https://transit.yahoo.co.jp/search/result/%E5%86%85%E5%B9%B8%E7%94%BA-%E6%97%A5%E6%AF%94%E8%B0%B7"
+      ],
+      "note": "ホテル最寄りとして都営三田線内幸町駅A2出口徒歩約2分を採用。内幸町―日比谷は三田線1駅約1分、乗換0回。"
+    },
+    {
+      "id": "stage-043-3",
+      "hotel_nearest_station": "渋谷",
+      "hotel_to_station_walk_min": 12,
+      "venue_nearest_station": "渋谷",
+      "venue_station_to_venue_walk_min": 5,
+      "transit_duration_min": 0,
+      "transfer_count": 0,
+      "source_urls": [
+        "https://www.youtube.com/watch?v=TZcuczqOlGY",
+        "https://shibu-cul.jp/access"
+      ],
+      "note": "渋谷クレストンホテルは渋谷駅ハチ公口から徒歩約12分。文化総合センター大和田も渋谷駅から徒歩5分のため同一駅扱い。"
+    },
+    {
+      "id": "stage-060-1",
+      "venue_nearest_station": "中野",
+      "venue_station_to_venue_walk_min": 8,
+      "transit_duration_min": 0,
+      "transfer_count": 0,
+      "source_urls": [
+        "https://www.city.tokyo-nakano.lg.jp/shisetsu/bunka/hole/zero.html"
+      ],
+      "note": "なかのZEROはJR中野駅南口から徒歩8分。ホテル側も中野駅のため同一駅扱い。"
+    },
+    {
+      "id": "stage-060-2",
+      "hotel_nearest_station": "高円寺",
+      "hotel_to_station_walk_min": 1,
+      "venue_nearest_station": "中野",
+      "venue_station_to_venue_walk_min": 8,
+      "transit_duration_min": 2,
+      "transfer_count": 0,
+      "source_urls": [
+        "https://www.hotelmets.jp/koenji/access.html",
+        "https://www.city.tokyo-nakano.lg.jp/shisetsu/bunka/hole/zero.html",
+        "https://transit.yahoo.co.jp/search/result/%E9%AB%98%E5%86%86%E5%AF%BA-%E4%B8%AD%E9%87%8E%28%E6%9D%B1%E4%BA%AC%E9%83%BD%29"
+      ],
+      "note": "高円寺―中野はJRで約2分、乗換0回。"
+    },
+    {
+      "id": "stage-060-3",
+      "hotel_nearest_station": "南阿佐ケ谷",
+      "hotel_to_station_walk_min": 2,
+      "venue_nearest_station": "中野",
+      "venue_station_to_venue_walk_min": 8,
+      "transit_duration_min": 15,
+      "transfer_count": 1,
+      "source_urls": [
+        "https://www.route-inn.co.jp/hotel_list/tokyo/index_hotel_id_599/facilitiesetc/",
+        "https://www.city.tokyo-nakano.lg.jp/shisetsu/bunka/hole/zero.html",
+        "https://ekitan.com/transit/route/sf-3091/st-2654"
+      ],
+      "note": "南阿佐ケ谷―中野は荻窪経由の例で約15分、乗換1回。"
+    },
+    {
+      "id": "stage-063-3",
+      "hotel_nearest_station": "赤羽",
+      "hotel_to_station_walk_min": 1,
+      "venue_nearest_station": "王子",
+      "venue_station_to_venue_walk_min": 2,
+      "transit_duration_min": 5,
+      "transfer_count": 0,
+      "source_urls": [
+        "https://www.hotelmets.jp/akabane/access.html",
+        "https://www.hokutopia.jp/access/",
+        "https://transit.yahoo.co.jp/search/result/%E8%B5%A4%E7%BE%BD-%E7%8E%8B%E5%AD%90"
+      ],
+      "note": "赤羽―王子はJR京浜東北線で約5分、乗換0回。"
+    }
+  ]
+}
