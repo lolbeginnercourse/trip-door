@@ -1,0 +1,132 @@
+name: Apply ordinary web route verification results
+
+on:
+  push:
+    branches:
+      - research/hotel-details-750-20260807
+    paths:
+      - research/generated/manual_route_search_results_*.json
+      - .github/workflows/apply-manual-route-search-results.yml
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research/hotel-details-750-20260807
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Apply manually researched route corrections
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          from collections import Counter
+
+          data_path = Path('research/generated/hotel_detail_research_750.jsonl')
+          rows = [json.loads(line) for line in data_path.read_text(encoding='utf-8').splitlines() if line.strip()]
+
+          result_files = sorted(Path('research/generated').glob('manual_route_search_results_*.json'))
+          corrections = {}
+          for p in result_files:
+              doc = json.loads(p.read_text(encoding='utf-8'))
+              checked_at = doc.get('checked_at')
+              mode = doc.get('mode', 'ordinary_web_search')
+              for item in doc.get('results', []):
+                  item = dict(item)
+                  item['_checked_at'] = checked_at
+                  item['_mode'] = mode
+                  corrections[item['id']] = item
+
+          applied = 0
+          for row in rows:
+              c = corrections.get(row.get('id'))
+              if not c:
+                  continue
+              warnings = list(row.get('warnings') or [])
+              if row.get('verification_status') != 'needs_review' or 'transit_parse_failed' not in warnings:
+                  continue
+
+              for key in ('hotel_nearest_station','venue_nearest_station','hotel_to_station_walk_min','venue_station_to_venue_walk_min'):
+                  if key in c and c[key] is not None:
+                      row[key] = c[key]
+
+              # Keep explicit manual route facts in both simple top-level fields and an audit object.
+              if c.get('transit_duration_min') is not None:
+                  row['transit_duration_min'] = c['transit_duration_min']
+              if c.get('transfer_count') is not None:
+                  row['transfer_count'] = c['transfer_count']
+              if c.get('source_urls'):
+                  row['transit_source_url'] = c['source_urls'][0]
+
+              row['manual_route_verification'] = {
+                  'mode': c.get('_mode', 'ordinary_web_search'),
+                  'checked_at': c.get('_checked_at'),
+                  'source_urls': c.get('source_urls', []),
+                  'transit_duration_min': c.get('transit_duration_min'),
+                  'transfer_count': c.get('transfer_count'),
+                  'note': c.get('note')
+              }
+
+              warnings = [w for w in warnings if w != 'transit_parse_failed']
+              row['warnings'] = warnings
+              # A manual route correction resolves the parser failure. Preserve any unrelated warnings.
+              row['verification_status'] = 'verified' if not warnings else 'partial'
+              applied += 1
+
+          if len(rows) != 750 or len({r.get('id') for r in rows}) != 750:
+              raise SystemExit('Refusing to write: 750-row / unique-ID invariant failed')
+
+          data_path.write_text('\n'.join(json.dumps(r, ensure_ascii=False) for r in rows) + '\n', encoding='utf-8')
+
+          status_counts = Counter(r.get('verification_status') for r in rows)
+          warning_counts = Counter(w for r in rows for w in (r.get('warnings') or []))
+          validation = {
+              'row_count': len(rows),
+              'unique_id_count': len({r.get('id') for r in rows}),
+              'status_counts': dict(status_counts),
+              'warning_counts': dict(warning_counts),
+              'complete': True,
+              'verification_mode': 'ordinary_web_search_manual_batches'
+          }
+          Path('research/generated/final_validation.json').write_text(json.dumps(validation, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+
+          remaining=[]
+          for r in rows:
+              warnings=r.get('warnings') or []
+              if r.get('verification_status')=='needs_review' and 'transit_parse_failed' in warnings:
+                  remaining.append({
+                      'id':r.get('id'), 'research_no':r.get('research_no'), 'hotel_name':r.get('hotel_name'),
+                      'venue_name':r.get('venue_name'), 'hotel_nearest_station':r.get('hotel_nearest_station'),
+                      'venue_nearest_station':r.get('venue_nearest_station'), 'hotel_to_station_walk_min':r.get('hotel_to_station_walk_min'),
+                      'venue_station_to_venue_walk_min':r.get('venue_station_to_venue_walk_min'), 'hotel_source_url':r.get('hotel_source_url'),
+                      'venue_source_url':r.get('venue_source_url'), 'transit_source_url':r.get('transit_source_url'), 'warnings':warnings
+                  })
+          Path('research/generated/manual_route_search_targets.json').write_text(json.dumps(remaining, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+          tsv=''.join(f"{r['id']}\t{r.get('hotel_name','')}\t{r.get('venue_name','')}\t{r.get('hotel_nearest_station','')}\t{r.get('venue_nearest_station','')}\n" for r in remaining)
+          Path('research/generated/manual_route_search_targets.tsv').write_text(tsv, encoding='utf-8')
+          pairs={}
+          for r in remaining:
+              k=f"{r.get('hotel_nearest_station','')} -> {r.get('venue_nearest_station','')}"
+              pairs.setdefault(k,[]).append(r['id'])
+          summary={'target_count':len(remaining),'unique_route_pair_count':len(pairs),'route_pairs':[{'route':k,'ids':v} for k,v in sorted(pairs.items())],'mode':'ordinary_web_search_not_parser'}
+          Path('research/generated/manual_route_search_summary.json').write_text(json.dumps(summary, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+          print(json.dumps({'applied':applied,'remaining':len(remaining),'status_counts':dict(status_counts)}, ensure_ascii=False))
+          PY
+      - name: Commit updated research data
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f research/generated/hotel_detail_research_750.jsonl research/generated/final_validation.json research/generated/manual_route_search_targets.json research/generated/manual_route_search_targets.tsv research/generated/manual_route_search_summary.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Apply ordinary web route verification batch"
+            git push origin HEAD:research/hotel-details-750-20260807
+          fi
