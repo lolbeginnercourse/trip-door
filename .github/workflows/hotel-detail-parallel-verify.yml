@@ -116,3 +116,5 @@ jobs:
             git commit -m "Merge parallel web verification for 750 hotel details"
             git push origin HEAD:research/hotel-details-750-20260807
           fi
+
+# rerun-pass: 2 unresolved-only 2026-08-07T20:41+09:00
