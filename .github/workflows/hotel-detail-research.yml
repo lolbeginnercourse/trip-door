@@ -14,7 +14,7 @@ permissions:
 jobs:
   research:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
         with:
@@ -22,12 +22,39 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Research validation batch 1-25
-        run: python scripts/research_hotel_details.py --start 1 --end 25
-      - name: Commit research batch
+      - name: Research validation batch 1-5
+        id: research
+        shell: bash
+        run: |
+          set +e
+          python scripts/research_hotel_details.py --start 1 --end 5 > research_run.log 2>&1
+          code=$?
+          echo "exit_code=$code" >> "$GITHUB_OUTPUT"
+          tail -n 200 research_run.log || true
+          python - <<'PY'
+          import json, os
+          from datetime import datetime, timezone
+          from pathlib import Path
+          p=Path('research/generated/research_run_status.json')
+          p.parent.mkdir(parents=True, exist_ok=True)
+          p.write_text(json.dumps({
+            'exit_code': int(os.environ.get('RESEARCH_EXIT_CODE','0')),
+            'run_range': '1-5',
+            'checked_at_utc': datetime.now(timezone.utc).isoformat(),
+            'log_tail': Path('research_run.log').read_text(encoding='utf-8',errors='ignore')[-12000:],
+          }, ensure_ascii=False, indent=2), encoding='utf-8')
+          PY
+        env:
+          RESEARCH_EXIT_CODE: ${{ steps.research.outputs.exit_code }}
+      - name: Persist research checkpoint
+        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add research/generated/hotel_access_cache.jsonl research/generated/venue_access_cache.jsonl research/generated/hotel_detail_research_750.jsonl research/generated/research_progress.json
-          git commit -m "Research hotel details 1-25" || exit 0
+          git add -f research/generated/hotel_access_cache.jsonl research/generated/venue_access_cache.jsonl research/generated/hotel_detail_research_750.jsonl research/generated/research_progress.json research/generated/research_run_status.json 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "No research output to commit"
+            exit 0
+          fi
+          git commit -m "Checkpoint hotel detail research 1-5"
           git push
