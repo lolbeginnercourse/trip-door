@@ -41,7 +41,35 @@
       "stationAccess": "JR京葉線 海浜幕張駅から徒歩約5分",
       "selectionNote": "大型イベント終了後の混雑も考え、徒歩圏だけでなく移動の単純さと休息の取りやすさを比較します。",
       "sourceUrl": "https://www.m-messe.co.jp/access/",
-      "indexable": true
+      "indexable": false
+    },
+    {
+      "category": "esports",
+      "match": { "field": "venues", "value": "ariake" },
+      "slug": "tokyo-garden-theater",
+      "name": "東京ガーデンシアター",
+      "prefecture": "東京都",
+      "city": "江東区",
+      "address": "東京都江東区有明2-1-6",
+      "nearestStation": "有明駅",
+      "stationAccess": "ゆりかもめ 有明駅 2B出口から徒歩4分／りんかい線 国際展示場駅 A出口から徒歩7分",
+      "selectionNote": "有明エリアでイベント終了後の徒歩移動と、食事・休息の取りやすさを比較します。",
+      "sourceUrl": "https://www.shopping-sumitomo-rd.com/tokyo_garden_theater/access/",
+      "indexable": false
+    },
+    {
+      "category": "esports",
+      "match": { "field": "venues", "value": "bigsite" },
+      "slug": "tokyo-big-sight",
+      "name": "東京ビッグサイト",
+      "prefecture": "東京都",
+      "city": "江東区",
+      "address": "東京都江東区有明3-11-1",
+      "nearestStation": "東京ビッグサイト駅",
+      "stationAccess": "ゆりかもめ 東京ビッグサイト駅から徒歩約3分／りんかい線 国際展示場駅から徒歩約7分",
+      "selectionNote": "大型イベント後の混雑を考え、会場近接だけでなく駅への戻りやすさと休息条件を比較します。",
+      "sourceUrl": "https://www.bigsight.jp/visitor/access/",
+      "indexable": false
     }
   ]
 }
