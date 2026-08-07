@@ -2,13 +2,15 @@
   "row_count": 750,
   "unique_id_count": 750,
   "status_counts": {
-    "verified": 651,
-    "partial": 73,
-    "needs_review": 26
+    "verified": 657,
+    "partial": 77,
+    "needs_review": 16
   },
   "warning_counts": {
     "hotel_station_differs_from_existing": 76,
-    "transit_parse_failed": 26
+    "hotel_closed_since_2025-08-31": 1,
+    "non_rail_access_taxi_recommended": 3,
+    "transit_parse_failed": 16
   },
   "complete": true,
   "verification_mode": "ordinary_web_search_manual_batches"
