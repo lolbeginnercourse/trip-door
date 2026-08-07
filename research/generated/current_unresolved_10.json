@@ -1,963 +1,775 @@
-[
-  {
-    "research_no": 202,
-    "id": "stage-068-1",
-    "venueId": "stage-068",
-    "venueNumber": 68,
-    "rank": 1,
-    "genre": "stage",
-    "hotel_name": "ホテル トレンド 浅草",
-    "venue_name": "浅草花劇場",
-    "prefecture": "東京都",
-    "area": "浅草",
-    "hotel_nearest_station": "浅草",
-    "hotel_to_station_walk_min": 1,
-    "hotel_address": null,
-    "hotel_source_url": "https://hotel-trend.jp/asakusa/",
-    "hotel_source_type": "official",
-    "hotel_search_url": null,
-    "venue_nearest_station": "つくばエクスプレスの浅草",
-    "venue_station_to_venue_walk_min": 3,
-    "venue_address": null,
-    "venue_source_url": "https://www.hanayashiki-kagekijo.com/access/",
-    "venue_source_type": "official",
-    "venue_search_url": null,
-    "venue_access_alternatives": [
-      {
-        "station": "つくばエクスプレスの浅草",
-        "walk_min": 3,
-        "context": "寄り駅は、 つくばエクスプレス「浅草」駅、もしくは地下鉄銀座線、地下鉄浅草線、東武スカイツリーライン「浅草」駅 です。 つくばエクスプレスの浅草駅からは徒歩約3分、他の浅草駅からは徒歩約5分程で到着します。2016/06/13 アクセス情報を解説！ 花やしき の駐車場や最寄り 駅 は？ - アソビュー！ アソビュー！ https://www.asoview.com"
-      },
-      {
-        "station": "他の浅草",
-        "walk_min": 5,
-        "context": "しくは地下鉄銀座線、地下鉄浅草線、東武スカイツリーライン「浅草」駅 です。 つくばエクスプレスの浅草駅からは徒歩約3分、他の浅草駅からは徒歩約5分程で到着します。2016/06/13 アクセス情報を解説！ 花やしき の駐車場や最寄り 駅 は？ - アソビュー！ アソビュー！ https://www.asoview.com > note 浅草花屋敷の"
-      },
-      {
-        "station": "他の浅草",
-        "walk_min": 3,
-        "context": "しくは地下鉄銀座線、地下鉄浅草線、東武スカイツリーライン「浅草」駅 です。 つくばエクスプレスの浅草駅からは徒歩約3分、他の浅草駅からは徒歩約5分程で到着します。2016/06/13 アクセス情報を解説！ 花やしき の駐車場や最寄り 駅 は？ - アソビュー！ アソビュー！ https://www.asoview.com > note 浅草花屋敷の"
-      },
-      {
-        "station": "浅草",
-        "walk_min": 10,
-        "context": "電話番号 03-5759-8009 公式ウェブサイト https://asakusa-kokono.com/ アクセス 東京メトロ銀座線浅草駅1番出口から 徒歩 10分 都営浅草線浅草駅A4出口から 徒歩 10分 つくばエクスプレス浅草駅A1出口から 徒歩 5分 ほか3行 浅草九劇 - たいとう文化マルシェ たいとう文化マルシェ https://www.cul"
-      },
-      {
-        "station": "つくばエクスプレス浅草",
-        "walk_min": 5,
-        "context": "no.com/ アクセス 東京メトロ銀座線浅草駅1番出口から 徒歩 10分 都営浅草線浅草駅A4出口から 徒歩 10分 つくばエクスプレス浅草駅A1出口から 徒歩 5分 ほか3行 浅草九劇 - たいとう文化マルシェ たいとう文化マルシェ https://www.culture.city.taito.lg.jp > facilities 浅草九劇の最寄り駅はどこで"
-      },
-      {
-        "station": "つくばエクスプレス浅草",
-        "walk_min": 10,
-        "context": "no.com/ アクセス 東京メトロ銀座線浅草駅1番出口から 徒歩 10分 都営浅草線浅草駅A4出口から 徒歩 10分 つくばエクスプレス浅草駅A1出口から 徒歩 5分 ほか3行 浅草九劇 - たいとう文化マルシェ たいとう文化マルシェ https://www.culture.city.taito.lg.jp > facilities 浅草九劇の最寄り駅はどこで"
-      },
-      {
-        "station": "浅草ホッピー通りはどの",
-        "walk_min": 3,
-        "context": "/www.culture.city.taito.lg.jp > facilities 浅草九劇の最寄り駅はどこですか？ 浅草ホッピー通りはどの駅から歩いていくことができますか？ 浅草六区酒場 ホッピー通り店 住所 東京都 台東区浅草1-39-7 アクセス つくばエクスプレス 浅草駅 A1番出口 徒歩 3分 地下鉄銀座線 浅草駅 6番出口 徒歩 6分 浅草六区酒場"
-      },
-      {
-        "station": "浅草",
-        "walk_min": 3,
-        "context": "くことができますか？ 浅草六区酒場 ホッピー通り店 住所 東京都 台東区浅草1-39-7 アクセス つくばエクスプレス 浅草駅 A1番出口 徒歩 3分 地下鉄銀座線 浅草駅 6番出口 徒歩 6分 浅草六区酒場 ホッピー通り店 地図 - 楽天ぐるなび ぐるなび https://r.gnavi.co.jp > map 浅草ホッピー通りはどの駅から歩"
-      },
-      {
-        "station": "浅草",
-        "walk_min": 6,
-        "context": "り店 住所 東京都 台東区浅草1-39-7 アクセス つくばエクスプレス 浅草駅 A1番出口 徒歩 3分 地下鉄銀座線 浅草駅 6番出口 徒歩 6分 浅草六区酒場 ホッピー通り店 地図 - 楽天ぐるなび ぐるなび https://r.gnavi.co.jp > map 浅草ホッピー通りはどの駅から歩いていくことができますか？ AIに聞いてみよう"
-      }
-    ],
-    "station_to_station_min": null,
-    "transfer_count": null,
-    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E6%B5%85%E8%8D%89&to=%E3%81%A4%E3%81%8F%E3%81%B0%E3%82%A8%E3%82%AF%E3%82%B9%E3%83%97%E3%83%AC%E3%82%B9%E3%81%AE%E6%B5%85%E8%8D%89&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
-    "total_access_min": null,
-    "access_display": "浅草駅まで徒歩1分",
-    "existing_access_estimate": "浅草中心部・徒歩圏",
-    "price_estimate": "11,000円(目安)",
-    "price_range_estimate": "約9,000~13,500円",
-    "plan_estimate": "素泊まり・スタンダード/室数限定セールの安い一般客室",
-    "room_type_estimate": "シングル/セミダブルの一般客室(1名利用)",
-    "cancellation_estimate": "プランごとに異なる通常プランは前日~当日から取消料が発生する場合が多い早割・事前決済・セールは返金不可の場合あり予約画面の条件を優先",
-    "verification_status": "needs_review",
-    "warnings": [
-      "transit_parse_failed"
-    ],
-    "checked_at": "2026-08-07T17:12:45+09:00",
-    "hotel_parallel_evidence_type": "search_snippet",
-    "hotel_parallel_evidence": "貸駐車場 タイムズ駐車場 https://times-info.net > 東京都 > 台東区 東京 メトロ銀座線 · 浅草駅 · 稲荷町駅 · 上野駅 · 上野広小路駅 · 神田駅 · 京橋駅 · 末広町駅 ... ホテルトレンド浅草 田原町から 徒歩 約1分のタイムズ寿第10、 徒歩 約3分の ... ホテルトレンド浅草 ｜ 東京都 【ビジ",
-    "venue_parallel_evidence_type": "search_snippet",
-    "venue_parallel_evidence": "寄り駅は、 つくばエクスプレス「浅草」駅、もしくは地下鉄銀座線、地下鉄浅草線、東武スカイツリーライン「浅草」駅 です。 つくばエクスプレスの浅草駅からは徒歩約3分、他の浅草駅からは徒歩約5分程で到着します。2016/06/13 アクセス情報を解説！ 花やしき の駐車場や最寄り 駅 は？ - アソビュー！ アソビュー！ https://www.asoview.com",
-    "parallel_verified_at": "2026-08-07T21:28:15+09:00",
-    "needs_review_rechecked_at": "2026-08-07T21:28:15+09:00"
-  },
-  {
-    "research_no": 203,
-    "id": "stage-068-2",
-    "venueId": "stage-068",
-    "venueNumber": 68,
-    "rank": 2,
-    "genre": "stage",
-    "hotel_name": "アパホテル〈浅草 田原町駅前〉",
-    "venue_name": "浅草花劇場",
-    "prefecture": "東京都",
-    "area": "浅草",
-    "hotel_nearest_station": "田原町・浅草",
-    "hotel_to_station_walk_min": 1,
-    "hotel_address": null,
-    "hotel_source_url": "https://www.apahotel.com/hotel/syutoken/tokyo/asakusa-tawaramachi-ekimae/",
-    "hotel_source_type": "official",
-    "hotel_search_url": null,
-    "venue_nearest_station": "つくばエクスプレスの浅草",
-    "venue_station_to_venue_walk_min": 3,
-    "venue_address": null,
-    "venue_source_url": "https://www.hanayashiki-kagekijo.com/access/",
-    "venue_source_type": "official",
-    "venue_search_url": null,
-    "venue_access_alternatives": [
-      {
-        "station": "つくばエクスプレスの浅草",
-        "walk_min": 3,
-        "context": "寄り駅は、 つくばエクスプレス「浅草」駅、もしくは地下鉄銀座線、地下鉄浅草線、東武スカイツリーライン「浅草」駅 です。 つくばエクスプレスの浅草駅からは徒歩約3分、他の浅草駅からは徒歩約5分程で到着します。2016/06/13 アクセス情報を解説！ 花やしき の駐車場や最寄り 駅 は？ - アソビュー！ アソビュー！ https://www.asoview.com"
-      },
-      {
-        "station": "他の浅草",
-        "walk_min": 5,
-        "context": "しくは地下鉄銀座線、地下鉄浅草線、東武スカイツリーライン「浅草」駅 です。 つくばエクスプレスの浅草駅からは徒歩約3分、他の浅草駅からは徒歩約5分程で到着します。2016/06/13 アクセス情報を解説！ 花やしき の駐車場や最寄り 駅 は？ - アソビュー！ アソビュー！ https://www.asoview.com > note 浅草花屋敷の"
-      },
-      {
-        "station": "他の浅草",
-        "walk_min": 3,
-        "context": "しくは地下鉄銀座線、地下鉄浅草線、東武スカイツリーライン「浅草」駅 です。 つくばエクスプレスの浅草駅からは徒歩約3分、他の浅草駅からは徒歩約5分程で到着します。2016/06/13 アクセス情報を解説！ 花やしき の駐車場や最寄り 駅 は？ - アソビュー！ アソビュー！ https://www.asoview.com > note 浅草花屋敷の"
-      },
-      {
-        "station": "浅草",
-        "walk_min": 10,
-        "context": "電話番号 03-5759-8009 公式ウェブサイト https://asakusa-kokono.com/ アクセス 東京メトロ銀座線浅草駅1番出口から 徒歩 10分 都営浅草線浅草駅A4出口から 徒歩 10分 つくばエクスプレス浅草駅A1出口から 徒歩 5分 ほか3行 浅草九劇 - たいとう文化マルシェ たいとう文化マルシェ https://www.cul"
-      },
-      {
-        "station": "つくばエクスプレス浅草",
-        "walk_min": 5,
-        "context": "no.com/ アクセス 東京メトロ銀座線浅草駅1番出口から 徒歩 10分 都営浅草線浅草駅A4出口から 徒歩 10分 つくばエクスプレス浅草駅A1出口から 徒歩 5分 ほか3行 浅草九劇 - たいとう文化マルシェ たいとう文化マルシェ https://www.culture.city.taito.lg.jp > facilities 浅草九劇の最寄り駅はどこで"
-      },
-      {
-        "station": "つくばエクスプレス浅草",
-        "walk_min": 10,
-        "context": "no.com/ アクセス 東京メトロ銀座線浅草駅1番出口から 徒歩 10分 都営浅草線浅草駅A4出口から 徒歩 10分 つくばエクスプレス浅草駅A1出口から 徒歩 5分 ほか3行 浅草九劇 - たいとう文化マルシェ たいとう文化マルシェ https://www.culture.city.taito.lg.jp > facilities 浅草九劇の最寄り駅はどこで"
-      },
-      {
-        "station": "浅草ホッピー通りはどの",
-        "walk_min": 3,
-        "context": "/www.culture.city.taito.lg.jp > facilities 浅草九劇の最寄り駅はどこですか？ 浅草ホッピー通りはどの駅から歩いていくことができますか？ 浅草六区酒場 ホッピー通り店 住所 東京都 台東区浅草1-39-7 アクセス つくばエクスプレス 浅草駅 A1番出口 徒歩 3分 地下鉄銀座線 浅草駅 6番出口 徒歩 6分 浅草六区酒場"
-      },
-      {
-        "station": "浅草",
-        "walk_min": 3,
-        "context": "くことができますか？ 浅草六区酒場 ホッピー通り店 住所 東京都 台東区浅草1-39-7 アクセス つくばエクスプレス 浅草駅 A1番出口 徒歩 3分 地下鉄銀座線 浅草駅 6番出口 徒歩 6分 浅草六区酒場 ホッピー通り店 地図 - 楽天ぐるなび ぐるなび https://r.gnavi.co.jp > map 浅草ホッピー通りはどの駅から歩"
-      },
-      {
-        "station": "浅草",
-        "walk_min": 6,
-        "context": "り店 住所 東京都 台東区浅草1-39-7 アクセス つくばエクスプレス 浅草駅 A1番出口 徒歩 3分 地下鉄銀座線 浅草駅 6番出口 徒歩 6分 浅草六区酒場 ホッピー通り店 地図 - 楽天ぐるなび ぐるなび https://r.gnavi.co.jp > map 浅草ホッピー通りはどの駅から歩いていくことができますか？ AIに聞いてみよう"
-      }
-    ],
-    "station_to_station_min": null,
-    "transfer_count": null,
-    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E7%94%B0%E5%8E%9F%E7%94%BA%E3%83%BB%E6%B5%85%E8%8D%89&to=%E3%81%A4%E3%81%8F%E3%81%B0%E3%82%A8%E3%82%AF%E3%82%B9%E3%83%97%E3%83%AC%E3%82%B9%E3%81%AE%E6%B5%85%E8%8D%89&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
-    "total_access_min": null,
-    "access_display": "田原町・浅草駅まで徒歩1分",
-    "existing_access_estimate": "徒歩圏",
-    "price_estimate": "16,000円(目安)",
-    "price_range_estimate": "約13,500~19,500円",
-    "plan_estimate": "素泊まり・スタンダード/室数限定セールの安い一般客室",
-    "room_type_estimate": "シングル/セミダブルの一般客室(1名利用)",
-    "cancellation_estimate": "プランごとに異なる通常プランは前日~当日から取消料が発生する場合が多い早割・事前決済・セールは返金不可の場合あり予約画面の条件を優先",
-    "verification_status": "needs_review",
-    "warnings": [
-      "transit_parse_failed"
-    ],
-    "checked_at": "2026-08-07T17:12:45+09:00",
-    "hotel_parallel_evidence_type": "search_snippet",
-    "hotel_parallel_evidence": "\" 徒歩 東京都 」に順番も含め完全に一致するウェブページは見つかりませんでした。 「 アパホテル〈浅草 田原町駅前〉 田原町・浅草駅 徒歩 東京都 」を含む検索結果を表示しています。 Yahoo!トラベル アパホテル〈浅草 田原町駅前〉 誰でも10％お得 ふるさと納税 対象 道案内 公式サイト 銀座線田原町駅より徒歩約1分。浅草寺も徒歩圏内、上野まで",
-    "venue_parallel_evidence_type": "search_snippet",
-    "venue_parallel_evidence": "寄り駅は、 つくばエクスプレス「浅草」駅、もしくは地下鉄銀座線、地下鉄浅草線、東武スカイツリーライン「浅草」駅 です。 つくばエクスプレスの浅草駅からは徒歩約3分、他の浅草駅からは徒歩約5分程で到着します。2016/06/13 アクセス情報を解説！ 花やしき の駐車場や最寄り 駅 は？ - アソビュー！ アソビュー！ https://www.asoview.com",
-    "parallel_verified_at": "2026-08-07T21:28:17+09:00",
-    "needs_review_rechecked_at": "2026-08-07T21:28:17+09:00"
-  },
-  {
-    "research_no": 204,
-    "id": "stage-068-3",
-    "venueId": "stage-068",
-    "venueNumber": 68,
-    "rank": 3,
-    "genre": "stage",
-    "hotel_name": "ホテルウィングインターナショナルセレクト浅草駒形",
-    "venue_name": "浅草花劇場",
-    "prefecture": "東京都",
-    "area": "浅草",
-    "hotel_nearest_station": "浅草・蔵前",
-    "hotel_to_station_walk_min": 4,
-    "hotel_address": null,
-    "hotel_source_url": "https://map.yahoo.co.jp/search?q=%22%E3%83%9B%E3%83%86%E3%83%AB%E3%82%A6%E3%82%A3%E3%83%B3%E3%82%B0%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%8A%E3%82%B7%E3%83%A7%E3%83%8A%E3%83%AB%E3%82%BB%E3%83%AC%E3%82%AF%E3%83%88%E6%B5%85%E8%8D%89%E9%A7%92%E5%BD%A2%22+%22%E6%B5%85%E8%8D%89%E3%83%BB%E8%94%B5%E5%89%8D%E9%A7%85%22+%E5%BE%92%E6%AD%A9+%E6%9D%B1%E4%BA%AC%E9%83%BD&maptype=basic&fr=sydd_p-locallist-default-header_lol-more_ttl&from_srv=search_web",
-    "hotel_source_type": "official",
-    "hotel_search_url": null,
-    "venue_nearest_station": "つくばエクスプレスの浅草",
-    "venue_station_to_venue_walk_min": 3,
-    "venue_address": null,
-    "venue_source_url": "https://www.hanayashiki-kagekijo.com/access/",
-    "venue_source_type": "official",
-    "venue_search_url": null,
-    "venue_access_alternatives": [
-      {
-        "station": "つくばエクスプレスの浅草",
-        "walk_min": 3,
-        "context": "寄り駅は、 つくばエクスプレス「浅草」駅、もしくは地下鉄銀座線、地下鉄浅草線、東武スカイツリーライン「浅草」駅 です。 つくばエクスプレスの浅草駅からは徒歩約3分、他の浅草駅からは徒歩約5分程で到着します。2016/06/13 アクセス情報を解説！ 花やしき の駐車場や最寄り 駅 は？ - アソビュー！ アソビュー！ https://www.asoview.com"
-      },
-      {
-        "station": "他の浅草",
-        "walk_min": 5,
-        "context": "しくは地下鉄銀座線、地下鉄浅草線、東武スカイツリーライン「浅草」駅 です。 つくばエクスプレスの浅草駅からは徒歩約3分、他の浅草駅からは徒歩約5分程で到着します。2016/06/13 アクセス情報を解説！ 花やしき の駐車場や最寄り 駅 は？ - アソビュー！ アソビュー！ https://www.asoview.com > note 浅草花屋敷の"
-      },
-      {
-        "station": "他の浅草",
-        "walk_min": 3,
-        "context": "しくは地下鉄銀座線、地下鉄浅草線、東武スカイツリーライン「浅草」駅 です。 つくばエクスプレスの浅草駅からは徒歩約3分、他の浅草駅からは徒歩約5分程で到着します。2016/06/13 アクセス情報を解説！ 花やしき の駐車場や最寄り 駅 は？ - アソビュー！ アソビュー！ https://www.asoview.com > note 浅草花屋敷の"
-      },
-      {
-        "station": "浅草",
-        "walk_min": 10,
-        "context": "電話番号 03-5759-8009 公式ウェブサイト https://asakusa-kokono.com/ アクセス 東京メトロ銀座線浅草駅1番出口から 徒歩 10分 都営浅草線浅草駅A4出口から 徒歩 10分 つくばエクスプレス浅草駅A1出口から 徒歩 5分 ほか3行 浅草九劇 - たいとう文化マルシェ たいとう文化マルシェ https://www.cul"
-      },
-      {
-        "station": "つくばエクスプレス浅草",
-        "walk_min": 5,
-        "context": "no.com/ アクセス 東京メトロ銀座線浅草駅1番出口から 徒歩 10分 都営浅草線浅草駅A4出口から 徒歩 10分 つくばエクスプレス浅草駅A1出口から 徒歩 5分 ほか3行 浅草九劇 - たいとう文化マルシェ たいとう文化マルシェ https://www.culture.city.taito.lg.jp > facilities 浅草九劇の最寄り駅はどこで"
-      },
-      {
-        "station": "つくばエクスプレス浅草",
-        "walk_min": 10,
-        "context": "no.com/ アクセス 東京メトロ銀座線浅草駅1番出口から 徒歩 10分 都営浅草線浅草駅A4出口から 徒歩 10分 つくばエクスプレス浅草駅A1出口から 徒歩 5分 ほか3行 浅草九劇 - たいとう文化マルシェ たいとう文化マルシェ https://www.culture.city.taito.lg.jp > facilities 浅草九劇の最寄り駅はどこで"
-      },
-      {
-        "station": "浅草ホッピー通りはどの",
-        "walk_min": 3,
-        "context": "/www.culture.city.taito.lg.jp > facilities 浅草九劇の最寄り駅はどこですか？ 浅草ホッピー通りはどの駅から歩いていくことができますか？ 浅草六区酒場 ホッピー通り店 住所 東京都 台東区浅草1-39-7 アクセス つくばエクスプレス 浅草駅 A1番出口 徒歩 3分 地下鉄銀座線 浅草駅 6番出口 徒歩 6分 浅草六区酒場"
-      },
-      {
-        "station": "浅草",
-        "walk_min": 3,
-        "context": "くことができますか？ 浅草六区酒場 ホッピー通り店 住所 東京都 台東区浅草1-39-7 アクセス つくばエクスプレス 浅草駅 A1番出口 徒歩 3分 地下鉄銀座線 浅草駅 6番出口 徒歩 6分 浅草六区酒場 ホッピー通り店 地図 - 楽天ぐるなび ぐるなび https://r.gnavi.co.jp > map 浅草ホッピー通りはどの駅から歩"
-      },
-      {
-        "station": "浅草",
-        "walk_min": 6,
-        "context": "り店 住所 東京都 台東区浅草1-39-7 アクセス つくばエクスプレス 浅草駅 A1番出口 徒歩 3分 地下鉄銀座線 浅草駅 6番出口 徒歩 6分 浅草六区酒場 ホッピー通り店 地図 - 楽天ぐるなび ぐるなび https://r.gnavi.co.jp > map 浅草ホッピー通りはどの駅から歩いていくことができますか？ AIに聞いてみよう"
-      }
-    ],
-    "station_to_station_min": null,
-    "transfer_count": null,
-    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E6%B5%85%E8%8D%89%E3%83%BB%E8%94%B5%E5%89%8D&to=%E3%81%A4%E3%81%8F%E3%81%B0%E3%82%A8%E3%82%AF%E3%82%B9%E3%83%97%E3%83%AC%E3%82%B9%E3%81%AE%E6%B5%85%E8%8D%89&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
-    "total_access_min": null,
-    "access_display": "浅草・蔵前駅まで徒歩4分",
-    "existing_access_estimate": "徒歩圏",
-    "price_estimate": "13,500円(目安)",
-    "price_range_estimate": "約11,500~16,500円",
-    "plan_estimate": "素泊まり・スタンダード/室数限定セールの安い一般客室",
-    "room_type_estimate": "シングル/セミダブルの一般客室(1名利用)",
-    "cancellation_estimate": "プランごとに異なる通常プランは前日~当日から取消料が発生する場合が多い早割・事前決済・セールは返金不可の場合あり予約画面の条件を優先",
-    "verification_status": "needs_review",
-    "warnings": [
-      "transit_parse_failed"
-    ],
-    "checked_at": "2026-08-07T17:12:45+09:00",
-    "hotel_parallel_evidence_type": "search_snippet",
-    "hotel_parallel_evidence": " - goodlife179 2026/7/25 Yahoo!マップ ホテルウィングインターナショナルセレクト浅草駒形 浅草・蔵前駅 東京都 の 徒歩 施設一覧の地図 地図から探す 徒歩徒歩亭の画像 1 徒歩徒歩亭 中華料理店 / 四ツ谷駅徒歩4分 営業時間外 - 営業開始 11:00（土） 3.93 / 25件 住所： 東京都新宿区四谷三栄町6-3",
-    "venue_parallel_evidence_type": "search_snippet",
-    "venue_parallel_evidence": "寄り駅は、 つくばエクスプレス「浅草」駅、もしくは地下鉄銀座線、地下鉄浅草線、東武スカイツリーライン「浅草」駅 です。 つくばエクスプレスの浅草駅からは徒歩約3分、他の浅草駅からは徒歩約5分程で到着します。2016/06/13 アクセス情報を解説！ 花やしき の駐車場や最寄り 駅 は？ - アソビュー！ アソビュー！ https://www.asoview.com",
-    "parallel_verified_at": "2026-08-07T21:28:18+09:00",
-    "needs_review_rechecked_at": "2026-08-07T21:28:18+09:00"
-  },
-  {
-    "research_no": 231,
-    "id": "stage-077-3",
-    "venueId": "stage-077",
-    "venueNumber": 77,
-    "rank": 3,
-    "genre": "stage",
-    "hotel_name": "相鉄フレッサイン 横浜桜木町",
-    "venue_name": "ぴあアリーナMM",
-    "prefecture": "神奈川県",
-    "area": "みなとみらい・桜木町",
-    "hotel_nearest_station": "馬車道",
-    "hotel_to_station_walk_min": 1,
-    "hotel_address": null,
-    "hotel_source_url": "https://sotetsu-hotels.com/fresa-inn/sakuragicho/",
-    "hotel_source_type": "official",
-    "hotel_search_url": null,
-    "venue_nearest_station": "ぴあアリーナMMに一番近い",
-    "venue_station_to_venue_walk_min": 7,
-    "venue_address": null,
-    "venue_source_url": "https://www.welcome.city.yokohama.jp/spot/details.php?bbid=835",
-    "venue_source_type": "official",
-    "venue_search_url": null,
-    "venue_access_alternatives": [
-      {
-        "station": "ぴあアリーナMMに一番近い",
-        "walk_min": 7,
-        "context": "182,000件 1ページ目 JavaScriptが無効です。ブラウザの設定でJavaScriptを有効にしてください ぴあアリーナMMに一番近い駅はどこですか？ ぴあアリーナMMに一番近い駅は、 みなとみらい線「みなとみらい駅」で、1番出口から徒歩約7分 です。 2025/03/13 ぴあアリーナMM へのアクセスは？ 最寄り の桜木町駅 ... matcha-j"
-      },
-      {
-        "station": "みなとみらい",
-        "walk_min": 7,
-        "context": "ptを有効にしてください ぴあアリーナMMに一番近い駅はどこですか？ ぴあアリーナMMに一番近い駅は、 みなとみらい線「みなとみらい駅」で、1番出口から徒歩約7分 です。 2025/03/13 ぴあアリーナMM へのアクセスは？ 最寄り の桜木町駅 ... matcha-jp.com https://matcha-jp.com > MATCHA > 神"
-      },
-      {
-        "station": "ぴあアリーナMMの一番近い",
-        "walk_min": 7,
-        "context": "あカード. ぴあアリーナMM . 〒220-0012 神奈川県 横浜市西区みなとみらい3-2-2 他の人はこちらも質問 ぴあアリーナMMの一番近い駅はどこですか？ ぴあアリーナMM 住所 220-0012 神奈川県 横浜市西区みなとみらい3-2-2 アクセス ・みなとみらい線「みなとみらい駅」 1番出口・5番出口より 徒歩 約7分・みなとみらい線「新高島駅」 2番出"
-      },
-      {
-        "station": "新高島",
-        "walk_min": 8,
-        "context": "とみらい3-2-2 アクセス ・みなとみらい線「みなとみらい駅」 1番出口・5番出口より 徒歩 約7分・みなとみらい線「新高島駅」 2番出口より 徒歩 約8分・JR「桜木町駅」 東口（南改札）より 徒歩 約8分・JR「横浜駅」 東口より 徒歩 約18分 ほか4行 ぴあアリーナMM - 【公式】横浜市観光情報サイト 【公式】横浜市観光情報サイト -"
-      },
-      {
-        "station": "新高島",
-        "walk_min": 7,
-        "context": "とみらい3-2-2 アクセス ・みなとみらい線「みなとみらい駅」 1番出口・5番出口より 徒歩 約7分・みなとみらい線「新高島駅」 2番出口より 徒歩 約8分・JR「桜木町駅」 東口（南改札）より 徒歩 約8分・JR「横浜駅」 東口より 徒歩 約18分 ほか4行 ぴあアリーナMM - 【公式】横浜市観光情報サイト 【公式】横浜市観光情報サイト -"
-      },
-      {
-        "station": "桜木町",
-        "walk_min": 8,
-        "context": "「みなとみらい駅」 1番出口・5番出口より 徒歩 約7分・みなとみらい線「新高島駅」 2番出口より 徒歩 約8分・JR「桜木町駅」 東口（南改札）より 徒歩 約8分・JR「横浜駅」 東口より 徒歩 約18分 ほか4行 ぴあアリーナMM - 【公式】横浜市観光情報サイト 【公式】横浜市観光情報サイト - 横浜市 https://www.welcom"
-      },
-      {
-        "station": "桜木町",
-        "walk_min": 7,
-        "context": "「みなとみらい駅」 1番出口・5番出口より 徒歩 約7分・みなとみらい線「新高島駅」 2番出口より 徒歩 約8分・JR「桜木町駅」 東口（南改札）より 徒歩 約8分・JR「横浜駅」 東口より 徒歩 約18分 ほか4行 ぴあアリーナMM - 【公式】横浜市観光情報サイト 【公式】横浜市観光情報サイト - 横浜市 https://www.welcom"
-      },
-      {
-        "station": "横浜",
-        "walk_min": 18,
-        "context": "7分・みなとみらい線「新高島駅」 2番出口より 徒歩 約8分・JR「桜木町駅」 東口（南改札）より 徒歩 約8分・JR「横浜駅」 東口より 徒歩 約18分 ほか4行 ぴあアリーナMM - 【公式】横浜市観光情報サイト 【公式】横浜市観光情報サイト - 横浜市 https://www.welcome.city.yokohama.jp > spot"
-      },
-      {
-        "station": "横浜",
-        "walk_min": 7,
-        "context": "7分・みなとみらい線「新高島駅」 2番出口より 徒歩 約8分・JR「桜木町駅」 東口（南改札）より 徒歩 約8分・JR「横浜駅」 東口より 徒歩 約18分 ほか4行 ぴあアリーナMM - 【公式】横浜市観光情報サイト 【公式】横浜市観光情報サイト - 横浜市 https://www.welcome.city.yokohama.jp > spot"
-      }
-    ],
-    "station_to_station_min": null,
-    "transfer_count": null,
-    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E9%A6%AC%E8%BB%8A%E9%81%93&to=%E3%81%B4%E3%81%82%E3%82%A2%E3%83%AA%E3%83%BC%E3%83%8AMM%E3%81%AB%E4%B8%80%E7%95%AA%E8%BF%91%E3%81%84&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
-    "total_access_min": null,
-    "access_display": "馬車道駅まで徒歩1分",
-    "existing_access_estimate": "主要駅周辺から鉄道・バス・徒歩で移動",
-    "price_estimate": "24,500円(目安)",
-    "price_range_estimate": "約20,500~30,500円",
-    "plan_estimate": "素泊まり・スタンダード/セール対象の安い一般客室",
-    "room_type_estimate": "シングル・セミダブル・スタンダードダブル等の一般客室(1名利用)",
-    "cancellation_estimate": "プランごとに異なる通常は前日~当日から取消料が発生する場合が多く、早割・事前決済は返金不可の場合あり予約画面を優先",
-    "verification_status": "needs_review",
-    "warnings": [
-      "transit_parse_failed"
-    ],
-    "checked_at": "2026-08-07T17:18:02+09:00",
-    "hotel_parallel_evidence_type": "search_snippet",
-    "hotel_parallel_evidence": " 2分 · JR京浜東北線 桜木町駅新南口改札 / 横浜市営地下鉄 ... 相鉄フレッサイン 横浜桜木町 【公式】 | 馬車道駅徒歩 1分の ... sotetsu-hotels.com https://sotetsu-hotels.com > fresa-inn > sakuragicho 相鉄フレッサイン 横浜桜木町 ; みなとみらい線 馬車",
-    "venue_parallel_evidence_type": "search_snippet",
-    "venue_parallel_evidence": "182,000件 1ページ目 JavaScriptが無効です。ブラウザの設定でJavaScriptを有効にしてください ぴあアリーナMMに一番近い駅はどこですか？ ぴあアリーナMMに一番近い駅は、 みなとみらい線「みなとみらい駅」で、1番出口から徒歩約7分 です。 2025/03/13 ぴあアリーナMM へのアクセスは？ 最寄り の桜木町駅 ... matcha-j",
-    "parallel_verified_at": "2026-08-07T21:28:21+09:00",
-    "needs_review_rechecked_at": "2026-08-07T21:28:21+09:00"
-  },
-  {
-    "research_no": 235,
-    "id": "stage-079-1",
-    "venueId": "stage-079",
-    "venueNumber": 79,
-    "rank": 1,
-    "genre": "stage",
-    "hotel_name": "横浜桜木町ワシントンホテル",
-    "venue_name": "KT Zepp Yokohama",
-    "prefecture": "神奈川県",
-    "area": "新高島・横浜駅東口",
-    "hotel_nearest_station": "桜木町",
-    "hotel_to_station_walk_min": 1,
-    "hotel_address": null,
-    "hotel_source_url": "https://washington-hotels.jp/yokohama/",
-    "hotel_source_type": "official",
-    "hotel_search_url": null,
-    "venue_nearest_station": "パシフィコ横浜はみなとみらい",
-    "venue_station_to_venue_walk_min": 5,
-    "venue_address": null,
-    "venue_source_url": "https://map.yahoo.co.jp/v3/place/koNlw1YftBM",
-    "venue_source_type": "official",
-    "venue_search_url": null,
-    "venue_access_alternatives": [
-      {
-        "station": "パシフィコ横浜はみなとみらい",
-        "walk_min": 5,
-        "context": "/mb.jorudan.co.jp > norikae KT Zepp Yokohamaの最寄りのバス停はどこですか？ パシフィコ横浜はみなとみらい駅から歩いて何分ですか？ パシフィコ横浜 アクセス情報 ・みなとみらい線「みなとみらい駅」から 徒歩 約5分・JR京浜東北・根岸線「桜木町駅」から 徒歩 約12分 送迎 なし 駐車場 なし パシフィコ横浜の施設詳細・アクセ"
-      },
-      {
-        "station": "みなとみらい",
-        "walk_min": 5,
-        "context": "停はどこですか？ パシフィコ横浜はみなとみらい駅から歩いて何分ですか？ パシフィコ横浜 アクセス情報 ・みなとみらい線「みなとみらい駅」から 徒歩 約5分・JR京浜東北・根岸線「桜木町駅」から 徒歩 約12分 送迎 なし 駐車場 なし パシフィコ横浜の施設詳細・アクセス｜EX ec.travel.jr-central.co.jp https://ec."
-      },
-      {
-        "station": "桜木町",
-        "walk_min": 12,
-        "context": "何分ですか？ パシフィコ横浜 アクセス情報 ・みなとみらい線「みなとみらい駅」から 徒歩 約5分・JR京浜東北・根岸線「桜木町駅」から 徒歩 約12分 送迎 なし 駐車場 なし パシフィコ横浜の施設詳細・アクセス｜EX ec.travel.jr-central.co.jp https://ec.travel.jr-central.co.jp > "
-      },
-      {
-        "station": "桜木町",
-        "walk_min": 5,
-        "context": "何分ですか？ パシフィコ横浜 アクセス情報 ・みなとみらい線「みなとみらい駅」から 徒歩 約5分・JR京浜東北・根岸線「桜木町駅」から 徒歩 約12分 送迎 なし 駐車場 なし パシフィコ横浜の施設詳細・アクセス｜EX ec.travel.jr-central.co.jp https://ec.travel.jr-central.co.jp > "
-      },
-      {
-        "station": "の新高島駅と横浜",
-        "walk_min": 2,
-        "context": "KT Zepp Yokohama\" 最寄り駅 徒歩 神奈川県 AI回答を見る ［KT Zepp横浜のアクセス］ 最寄駅 の新高島駅と横浜駅からの ... 個人的横浜 https://1201.yokohama > 横浜エリア > みなとみらい 2020/1/29 - KT Zepp Yokohama のアクセス · みなとみらい線「新高島駅↓」2番出口から"
-      },
-      {
-        "station": "新高島",
-        "walk_min": 2,
-        "context": "横浜エリア > みなとみらい 2020/1/29 - KT Zepp Yokohama のアクセス · みなとみらい線「新高島駅↓」2番出口から 徒歩 2分 · 各線「横浜駅↓」東口から 徒歩 12分 · 地下鉄ブルーライン線「高島町駅↓」 ... KT Zepp Yokohama へのアクセスは？ 最寄り駅 や横浜駅からの ... matcha"
-      },
-      {
-        "station": "横浜",
-        "walk_min": 12,
-        "context": " - KT Zepp Yokohama のアクセス · みなとみらい線「新高島駅↓」2番出口から 徒歩 2分 · 各線「横浜駅↓」東口から 徒歩 12分 · 地下鉄ブルーライン線「高島町駅↓」 ... KT Zepp Yokohama へのアクセスは？ 最寄り駅 や横浜駅からの ... matcha-jp.com https://matcha-"
-      },
-      {
-        "station": "横浜",
-        "walk_min": 2,
-        "context": " - KT Zepp Yokohama のアクセス · みなとみらい線「新高島駅↓」2番出口から 徒歩 2分 · 各線「横浜駅↓」東口から 徒歩 12分 · 地下鉄ブルーライン線「高島町駅↓」 ... KT Zepp Yokohama へのアクセスは？ 最寄り駅 や横浜駅からの ... matcha-jp.com https://matcha-"
-      },
-      {
-        "station": "高島町",
-        "walk_min": 2,
-        "context": "とみらい線「新高島駅↓」2番出口から 徒歩 2分 · 各線「横浜駅↓」東口から 徒歩 12分 · 地下鉄ブルーライン線「高島町駅↓」 ... KT Zepp Yokohama へのアクセスは？ 最寄り駅 や横浜駅からの ... matcha-jp.com https://matcha-jp.com > MATCHA > 神奈川県観光ガイド 202"
-      },
-      {
-        "station": "新高島",
-        "walk_min": 3,
-        "context": "https://map.yahoo.co.jp > place 神奈川県 横浜市西区みなとみらい4-3-6. コピー. 新高島駅2出口から 徒歩 約3分. 地図を見る. KT Zepp Yokohama . Yahoo!マップアプリでお店の位置をチェック · 営業時間は公演 ... 関連検索ワード kt zepp yokohama 周辺 kt z"
-      }
-    ],
-    "station_to_station_min": null,
-    "transfer_count": null,
-    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E6%A1%9C%E6%9C%A8%E7%94%BA&to=%E3%83%91%E3%82%B7%E3%83%95%E3%82%A3%E3%82%B3%E6%A8%AA%E6%B5%9C%E3%81%AF%E3%81%BF%E3%81%AA%E3%81%A8%E3%81%BF%E3%82%89%E3%81%84&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
-    "total_access_min": null,
-    "access_display": "桜木町駅まで徒歩1分",
-    "existing_access_estimate": "会場最寄りエリアまたは主要駅周辺徒歩・公共交通で移動",
-    "price_estimate": "20,000円(目安)",
-    "price_range_estimate": "約17,000~25,000円",
-    "plan_estimate": "素泊まり・スタンダード/セール対象の安い一般客室",
-    "room_type_estimate": "シングル・セミダブル・スタンダードダブル等の一般客室(1名利用)",
-    "cancellation_estimate": "プランごとに異なる通常は前日~当日から取消料が発生する場合が多く、早割・事前決済は返金不可の場合あり予約画面を優先",
-    "verification_status": "needs_review",
-    "warnings": [
-      "transit_parse_failed"
-    ],
-    "checked_at": "2026-08-07T17:18:25+09:00",
-    "hotel_parallel_evidence_type": "search_snippet",
-    "hotel_parallel_evidence": "shington-hotels.jp > yokohama > access 横浜桜木町ワシントンホテル ... JR 桜木町駅 からホテルまでは 徒歩 約1分。 1. JR 桜木町駅 南改札を出て左（みなとみらい地区方向）に進みます。 2. 桜木町駅 を出てすぐ、目 ... 横浜桜木町ワシントンホテル 【公式サイト】｜アクセス抜群な ... w",
-    "venue_parallel_evidence_type": "search_snippet",
-    "venue_parallel_evidence": "/mb.jorudan.co.jp > norikae KT Zepp Yokohamaの最寄りのバス停はどこですか？ パシフィコ横浜はみなとみらい駅から歩いて何分ですか？ パシフィコ横浜 アクセス情報 ・みなとみらい線「みなとみらい駅」から 徒歩 約5分・JR京浜東北・根岸線「桜木町駅」から 徒歩 約12分 送迎 なし 駐車場 なし パシフィコ横浜の施設詳細・アクセ",
-    "parallel_verified_at": "2026-08-07T21:28:22+09:00",
-    "needs_review_rechecked_at": "2026-08-07T21:28:22+09:00"
-  },
-  {
-    "research_no": 236,
-    "id": "stage-079-2",
-    "venueId": "stage-079",
-    "venueNumber": 79,
-    "rank": 2,
-    "genre": "stage",
-    "hotel_name": "ニューオータニイン横浜プレミアム",
-    "venue_name": "KT Zepp Yokohama",
-    "prefecture": "神奈川県",
-    "area": "新高島・横浜駅東口",
-    "hotel_nearest_station": "桜木町",
-    "hotel_to_station_walk_min": 1,
-    "hotel_address": null,
-    "hotel_source_url": "https://www.newotani-innyokohama.jp/access/",
-    "hotel_source_type": "official",
-    "hotel_search_url": null,
-    "venue_nearest_station": "パシフィコ横浜はみなとみらい",
-    "venue_station_to_venue_walk_min": 5,
-    "venue_address": null,
-    "venue_source_url": "https://map.yahoo.co.jp/v3/place/koNlw1YftBM",
-    "venue_source_type": "official",
-    "venue_search_url": null,
-    "venue_access_alternatives": [
-      {
-        "station": "パシフィコ横浜はみなとみらい",
-        "walk_min": 5,
-        "context": "/mb.jorudan.co.jp > norikae KT Zepp Yokohamaの最寄りのバス停はどこですか？ パシフィコ横浜はみなとみらい駅から歩いて何分ですか？ パシフィコ横浜 アクセス情報 ・みなとみらい線「みなとみらい駅」から 徒歩 約5分・JR京浜東北・根岸線「桜木町駅」から 徒歩 約12分 送迎 なし 駐車場 なし パシフィコ横浜の施設詳細・アクセ"
-      },
-      {
-        "station": "みなとみらい",
-        "walk_min": 5,
-        "context": "停はどこですか？ パシフィコ横浜はみなとみらい駅から歩いて何分ですか？ パシフィコ横浜 アクセス情報 ・みなとみらい線「みなとみらい駅」から 徒歩 約5分・JR京浜東北・根岸線「桜木町駅」から 徒歩 約12分 送迎 なし 駐車場 なし パシフィコ横浜の施設詳細・アクセス｜EX ec.travel.jr-central.co.jp https://ec."
-      },
-      {
-        "station": "桜木町",
-        "walk_min": 12,
-        "context": "何分ですか？ パシフィコ横浜 アクセス情報 ・みなとみらい線「みなとみらい駅」から 徒歩 約5分・JR京浜東北・根岸線「桜木町駅」から 徒歩 約12分 送迎 なし 駐車場 なし パシフィコ横浜の施設詳細・アクセス｜EX ec.travel.jr-central.co.jp https://ec.travel.jr-central.co.jp > "
-      },
-      {
-        "station": "桜木町",
-        "walk_min": 5,
-        "context": "何分ですか？ パシフィコ横浜 アクセス情報 ・みなとみらい線「みなとみらい駅」から 徒歩 約5分・JR京浜東北・根岸線「桜木町駅」から 徒歩 約12分 送迎 なし 駐車場 なし パシフィコ横浜の施設詳細・アクセス｜EX ec.travel.jr-central.co.jp https://ec.travel.jr-central.co.jp > "
-      },
-      {
-        "station": "の新高島駅と横浜",
-        "walk_min": 2,
-        "context": "KT Zepp Yokohama\" 最寄り駅 徒歩 神奈川県 AI回答を見る ［KT Zepp横浜のアクセス］ 最寄駅 の新高島駅と横浜駅からの ... 個人的横浜 https://1201.yokohama > 横浜エリア > みなとみらい 2020/1/29 - KT Zepp Yokohama のアクセス · みなとみらい線「新高島駅↓」2番出口から"
-      },
-      {
-        "station": "新高島",
-        "walk_min": 2,
-        "context": "横浜エリア > みなとみらい 2020/1/29 - KT Zepp Yokohama のアクセス · みなとみらい線「新高島駅↓」2番出口から 徒歩 2分 · 各線「横浜駅↓」東口から 徒歩 12分 · 地下鉄ブルーライン線「高島町駅↓」 ... KT Zepp Yokohama へのアクセスは？ 最寄り駅 や横浜駅からの ... matcha"
-      },
-      {
-        "station": "横浜",
-        "walk_min": 12,
-        "context": " - KT Zepp Yokohama のアクセス · みなとみらい線「新高島駅↓」2番出口から 徒歩 2分 · 各線「横浜駅↓」東口から 徒歩 12分 · 地下鉄ブルーライン線「高島町駅↓」 ... KT Zepp Yokohama へのアクセスは？ 最寄り駅 や横浜駅からの ... matcha-jp.com https://matcha-"
-      },
-      {
-        "station": "横浜",
-        "walk_min": 2,
-        "context": " - KT Zepp Yokohama のアクセス · みなとみらい線「新高島駅↓」2番出口から 徒歩 2分 · 各線「横浜駅↓」東口から 徒歩 12分 · 地下鉄ブルーライン線「高島町駅↓」 ... KT Zepp Yokohama へのアクセスは？ 最寄り駅 や横浜駅からの ... matcha-jp.com https://matcha-"
-      },
-      {
-        "station": "高島町",
-        "walk_min": 2,
-        "context": "とみらい線「新高島駅↓」2番出口から 徒歩 2分 · 各線「横浜駅↓」東口から 徒歩 12分 · 地下鉄ブルーライン線「高島町駅↓」 ... KT Zepp Yokohama へのアクセスは？ 最寄り駅 や横浜駅からの ... matcha-jp.com https://matcha-jp.com > MATCHA > 神奈川県観光ガイド 202"
-      },
-      {
-        "station": "新高島",
-        "walk_min": 3,
-        "context": "https://map.yahoo.co.jp > place 神奈川県 横浜市西区みなとみらい4-3-6. コピー. 新高島駅2出口から 徒歩 約3分. 地図を見る. KT Zepp Yokohama . Yahoo!マップアプリでお店の位置をチェック · 営業時間は公演 ... 関連検索ワード kt zepp yokohama 周辺 kt z"
-      }
-    ],
-    "station_to_station_min": null,
-    "transfer_count": null,
-    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E6%A1%9C%E6%9C%A8%E7%94%BA&to=%E3%83%91%E3%82%B7%E3%83%95%E3%82%A3%E3%82%B3%E6%A8%AA%E6%B5%9C%E3%81%AF%E3%81%BF%E3%81%AA%E3%81%A8%E3%81%BF%E3%82%89%E3%81%84&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
-    "total_access_min": null,
-    "access_display": "桜木町駅まで徒歩1分",
-    "existing_access_estimate": "会場最寄りエリアまたは主要駅周辺徒歩・公共交通で移動",
-    "price_estimate": "31,000円(目安)",
-    "price_range_estimate": "約26,000~38,500円",
-    "plan_estimate": "素泊まり・スタンダード/セール対象の安い一般客室",
-    "room_type_estimate": "シングル・セミダブル・スタンダードダブル等の一般客室(1名利用)",
-    "cancellation_estimate": "プランごとに異なる通常は前日~当日から取消料が発生する場合が多く、早割・事前決済は返金不可の場合あり予約画面を優先",
-    "verification_status": "needs_review",
-    "warnings": [
-      "transit_parse_failed"
-    ],
-    "checked_at": "2026-08-07T17:18:25+09:00",
-    "hotel_parallel_evidence_type": "search_snippet",
-    "hotel_parallel_evidence": "-innyokohama.jp > access ホテル ニューオータニイン横浜プレミアム は、JR京浜東北線・根岸線 桜木町駅徒歩 1分（駅直結）のホテルです。ニューオータニグループならではのお食事・おもてなしで ... 【横浜 ホテル】 ニューオータニイン横浜プレミアム ｜ホテル ... ニューオータニイン横浜プレミアム https://ww",
-    "venue_parallel_evidence_type": "search_snippet",
-    "venue_parallel_evidence": "/mb.jorudan.co.jp > norikae KT Zepp Yokohamaの最寄りのバス停はどこですか？ パシフィコ横浜はみなとみらい駅から歩いて何分ですか？ パシフィコ横浜 アクセス情報 ・みなとみらい線「みなとみらい駅」から 徒歩 約5分・JR京浜東北・根岸線「桜木町駅」から 徒歩 約12分 送迎 なし 駐車場 なし パシフィコ横浜の施設詳細・アクセ",
-    "parallel_verified_at": "2026-08-07T21:28:07+09:00",
-    "needs_review_rechecked_at": "2026-08-07T21:28:07+09:00"
-  },
-  {
-    "research_no": 237,
-    "id": "stage-079-3",
-    "venueId": "stage-079",
-    "venueNumber": 79,
-    "rank": 3,
-    "genre": "stage",
-    "hotel_name": "相鉄フレッサイン 横浜桜木町",
-    "venue_name": "KT Zepp Yokohama",
-    "prefecture": "神奈川県",
-    "area": "新高島・横浜駅東口",
-    "hotel_nearest_station": "馬車道",
-    "hotel_to_station_walk_min": 1,
-    "hotel_address": null,
-    "hotel_source_url": "https://sotetsu-hotels.com/fresa-inn/sakuragicho/",
-    "hotel_source_type": "official",
-    "hotel_search_url": null,
-    "venue_nearest_station": "パシフィコ横浜はみなとみらい",
-    "venue_station_to_venue_walk_min": 5,
-    "venue_address": null,
-    "venue_source_url": "https://map.yahoo.co.jp/v3/place/koNlw1YftBM",
-    "venue_source_type": "official",
-    "venue_search_url": null,
-    "venue_access_alternatives": [
-      {
-        "station": "パシフィコ横浜はみなとみらい",
-        "walk_min": 5,
-        "context": "/mb.jorudan.co.jp > norikae KT Zepp Yokohamaの最寄りのバス停はどこですか？ パシフィコ横浜はみなとみらい駅から歩いて何分ですか？ パシフィコ横浜 アクセス情報 ・みなとみらい線「みなとみらい駅」から 徒歩 約5分・JR京浜東北・根岸線「桜木町駅」から 徒歩 約12分 送迎 なし 駐車場 なし パシフィコ横浜の施設詳細・アクセ"
-      },
-      {
-        "station": "みなとみらい",
-        "walk_min": 5,
-        "context": "停はどこですか？ パシフィコ横浜はみなとみらい駅から歩いて何分ですか？ パシフィコ横浜 アクセス情報 ・みなとみらい線「みなとみらい駅」から 徒歩 約5分・JR京浜東北・根岸線「桜木町駅」から 徒歩 約12分 送迎 なし 駐車場 なし パシフィコ横浜の施設詳細・アクセス｜EX ec.travel.jr-central.co.jp https://ec."
-      },
-      {
-        "station": "桜木町",
-        "walk_min": 12,
-        "context": "何分ですか？ パシフィコ横浜 アクセス情報 ・みなとみらい線「みなとみらい駅」から 徒歩 約5分・JR京浜東北・根岸線「桜木町駅」から 徒歩 約12分 送迎 なし 駐車場 なし パシフィコ横浜の施設詳細・アクセス｜EX ec.travel.jr-central.co.jp https://ec.travel.jr-central.co.jp > "
-      },
-      {
-        "station": "桜木町",
-        "walk_min": 5,
-        "context": "何分ですか？ パシフィコ横浜 アクセス情報 ・みなとみらい線「みなとみらい駅」から 徒歩 約5分・JR京浜東北・根岸線「桜木町駅」から 徒歩 約12分 送迎 なし 駐車場 なし パシフィコ横浜の施設詳細・アクセス｜EX ec.travel.jr-central.co.jp https://ec.travel.jr-central.co.jp > "
-      },
-      {
-        "station": "の新高島駅と横浜",
-        "walk_min": 2,
-        "context": "KT Zepp Yokohama\" 最寄り駅 徒歩 神奈川県 AI回答を見る ［KT Zepp横浜のアクセス］ 最寄駅 の新高島駅と横浜駅からの ... 個人的横浜 https://1201.yokohama > 横浜エリア > みなとみらい 2020/1/29 - KT Zepp Yokohama のアクセス · みなとみらい線「新高島駅↓」2番出口から"
-      },
-      {
-        "station": "新高島",
-        "walk_min": 2,
-        "context": "横浜エリア > みなとみらい 2020/1/29 - KT Zepp Yokohama のアクセス · みなとみらい線「新高島駅↓」2番出口から 徒歩 2分 · 各線「横浜駅↓」東口から 徒歩 12分 · 地下鉄ブルーライン線「高島町駅↓」 ... KT Zepp Yokohama へのアクセスは？ 最寄り駅 や横浜駅からの ... matcha"
-      },
-      {
-        "station": "横浜",
-        "walk_min": 12,
-        "context": " - KT Zepp Yokohama のアクセス · みなとみらい線「新高島駅↓」2番出口から 徒歩 2分 · 各線「横浜駅↓」東口から 徒歩 12分 · 地下鉄ブルーライン線「高島町駅↓」 ... KT Zepp Yokohama へのアクセスは？ 最寄り駅 や横浜駅からの ... matcha-jp.com https://matcha-"
-      },
-      {
-        "station": "横浜",
-        "walk_min": 2,
-        "context": " - KT Zepp Yokohama のアクセス · みなとみらい線「新高島駅↓」2番出口から 徒歩 2分 · 各線「横浜駅↓」東口から 徒歩 12分 · 地下鉄ブルーライン線「高島町駅↓」 ... KT Zepp Yokohama へのアクセスは？ 最寄り駅 や横浜駅からの ... matcha-jp.com https://matcha-"
-      },
-      {
-        "station": "高島町",
-        "walk_min": 2,
-        "context": "とみらい線「新高島駅↓」2番出口から 徒歩 2分 · 各線「横浜駅↓」東口から 徒歩 12分 · 地下鉄ブルーライン線「高島町駅↓」 ... KT Zepp Yokohama へのアクセスは？ 最寄り駅 や横浜駅からの ... matcha-jp.com https://matcha-jp.com > MATCHA > 神奈川県観光ガイド 202"
-      },
-      {
-        "station": "新高島",
-        "walk_min": 3,
-        "context": "https://map.yahoo.co.jp > place 神奈川県 横浜市西区みなとみらい4-3-6. コピー. 新高島駅2出口から 徒歩 約3分. 地図を見る. KT Zepp Yokohama . Yahoo!マップアプリでお店の位置をチェック · 営業時間は公演 ... 関連検索ワード kt zepp yokohama 周辺 kt z"
-      }
-    ],
-    "station_to_station_min": null,
-    "transfer_count": null,
-    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E9%A6%AC%E8%BB%8A%E9%81%93&to=%E3%83%91%E3%82%B7%E3%83%95%E3%82%A3%E3%82%B3%E6%A8%AA%E6%B5%9C%E3%81%AF%E3%81%BF%E3%81%AA%E3%81%A8%E3%81%BF%E3%82%89%E3%81%84&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
-    "total_access_min": null,
-    "access_display": "馬車道駅まで徒歩1分",
-    "existing_access_estimate": "主要駅周辺から鉄道・バス・徒歩で移動",
-    "price_estimate": "24,500円(目安)",
-    "price_range_estimate": "約20,500~30,500円",
-    "plan_estimate": "素泊まり・スタンダード/セール対象の安い一般客室",
-    "room_type_estimate": "シングル・セミダブル・スタンダードダブル等の一般客室(1名利用)",
-    "cancellation_estimate": "プランごとに異なる通常は前日~当日から取消料が発生する場合が多く、早割・事前決済は返金不可の場合あり予約画面を優先",
-    "verification_status": "needs_review",
-    "warnings": [
-      "transit_parse_failed"
-    ],
-    "checked_at": "2026-08-07T17:18:25+09:00",
-    "hotel_parallel_evidence_type": "search_snippet",
-    "hotel_parallel_evidence": " 2分 · JR京浜東北線 桜木町駅新南口改札 / 横浜市営地下鉄 ... 相鉄フレッサイン 横浜桜木町 【公式】 | 馬車道駅徒歩 1分の ... sotetsu-hotels.com https://sotetsu-hotels.com > fresa-inn > sakuragicho 相鉄フレッサイン 横浜桜木町 ; みなとみらい線 馬車",
-    "venue_parallel_evidence_type": "search_snippet",
-    "venue_parallel_evidence": "/mb.jorudan.co.jp > norikae KT Zepp Yokohamaの最寄りのバス停はどこですか？ パシフィコ横浜はみなとみらい駅から歩いて何分ですか？ パシフィコ横浜 アクセス情報 ・みなとみらい線「みなとみらい駅」から 徒歩 約5分・JR京浜東北・根岸線「桜木町駅」から 徒歩 約12分 送迎 なし 駐車場 なし パシフィコ横浜の施設詳細・アクセ",
-    "parallel_verified_at": "2026-08-07T21:28:09+09:00",
-    "needs_review_rechecked_at": "2026-08-07T21:28:09+09:00"
-  },
-  {
-    "research_no": 238,
-    "id": "stage-080-1",
-    "venueId": "stage-080",
-    "venueNumber": 80,
-    "rank": 1,
-    "genre": "stage",
-    "hotel_name": "ホテルJALシティ関内 横浜",
-    "venue_name": "横浜BUNTAI",
-    "prefecture": "神奈川県",
-    "area": "関内・伊勢佐木長者町",
-    "hotel_nearest_station": "日本大通り",
-    "hotel_to_station_walk_min": 2,
-    "hotel_address": null,
-    "hotel_source_url": "https://www.kannai-yokohama.jalcity.co.jp/access/",
-    "hotel_source_type": "official",
-    "hotel_search_url": null,
-    "venue_nearest_station": "関内駅・横浜市営地下鉄の伊勢佐木長者町",
-    "venue_station_to_venue_walk_min": 5,
-    "venue_address": null,
-    "venue_source_url": "https://1201.yokohama/yokohama-buntai-access/#:~:text=%E3%80%8C%E6%A8%AA%E6%B5%9CBUNTAI%E3%80%8DJR%E9%96%A2%E5%86%85%E9%A7%85,%E5%8D%97%E5%8F%A3%E3%80%8D%E3%82%92%E5%88%A9%E7%94%A8%E3%81%97%E3%81%BE%E3%81%99%E3%80%82&text=%E9%A7%85%E3%82%92%E5%87%BA%E3%81%A6%E5%B7%A6%E6%8A%98,%E3%81%9D%E3%81%AE%E3%81%BE%E3%81%BE%E7%9B%B4%E9%80%B2%E3%80%82&text=%E6%A8%AA%E6%B5%9CBUNTAI%E3%81%AB%E5%88%B0%E7%9D%80%E3%81%A7%E3%81%99%E3%80%82",
-    "venue_source_type": "official",
-    "venue_search_url": null,
-    "venue_access_alternatives": [
-      {
-        "station": "関内駅・横浜市営地下鉄の伊勢佐木長者町",
-        "walk_min": 5,
-        "context": "iptを有効にしてください 神奈川県横浜市中区に位置する横浜BUNTAIは、約5,000席を有する多目的アリーナです。 JR関内駅・横浜市営地下鉄の伊勢佐木長者町駅から徒歩約5分 と、非常にアクセスの良いコンサート会場でもあります。 2025/05/30 JR関内駅・地下鉄伊勢佐木長者町駅から約5分で到着！ 多目的 ... バス比較なび https://www.bushikaku."
-      },
-      {
-        "station": "伊勢佐木長者町",
-        "walk_min": 4,
-        "context": "UNTAI からのお知らせ～ · 4.1. \"BLUE WAVE CAFE\" 4月営業日のお知らせ · 3.1 ... 伊勢佐木長者町駅下車 徒歩 4分関内駅下車 徒歩 8分. GOOGLE MAP. CONTACT. お ... 他の人はこちらも質問 横浜BUNTAIは何番出口から出ればいいですか？ ・ 南口改札(一番横浜スタジアム寄り) から約200"
-      },
-      {
-        "station": "4分関内",
-        "walk_min": 8,
-        "context": " · 4.1. \"BLUE WAVE CAFE\" 4月営業日のお知らせ · 3.1 ... 伊勢佐木長者町駅下車 徒歩 4分関内駅下車 徒歩 8分. GOOGLE MAP. CONTACT. お ... 他の人はこちらも質問 横浜BUNTAIは何番出口から出ればいいですか？ ・ 南口改札(一番横浜スタジアム寄り) から約200mでBUNTAIです("
-      },
-      {
-        "station": "何",
-        "walk_min": 5,
-        "context": "ps://www.kkday.com > blog > asia-japan-kanagawa-yo... 横浜中華街 何駅で降りるの？ 地下鉄関内駅から横浜BUNTAIへ行くには？ 「横浜BUNTAI」JR関内駅からのアクセス（徒歩5分） JR京浜東北・根岸線「関内駅（徒歩5分）」を使用する場合は、 「南口」を利用します。 駅を出て左折しま"
-      },
-      {
-        "station": "地下鉄関内",
-        "walk_min": 5,
-        "context": "kkday.com > blog > asia-japan-kanagawa-yo... 横浜中華街 何駅で降りるの？ 地下鉄関内駅から横浜BUNTAIへ行くには？ 「横浜BUNTAI」JR関内駅からのアクセス（徒歩5分） JR京浜東北・根岸線「関内駅（徒歩5分）」を使用する場合は、 「南口」を利用します。 駅を出て左折します。 そのまま直進。 横浜"
-      },
-      {
-        "station": "関内",
-        "walk_min": 5,
-        "context": "agawa-yo... 横浜中華街 何駅で降りるの？ 地下鉄関内駅から横浜BUNTAIへ行くには？ 「横浜BUNTAI」JR関内駅からのアクセス（徒歩5分） JR京浜東北・根岸線「関内駅（徒歩5分）」を使用する場合は、 「南口」を利用します。 駅を出て左折します。 そのまま直進。 横浜BUNTAIに到着です 。2025/07/16 横浜BUNTAI"
-      },
-      {
-        "station": "地下鉄関内",
-        "walk_min": 6,
-        "context": "佐木 ... 個人的横浜 https://1201.yokohama > yokohama-buntai-access 地下鉄関内駅から横浜BUNTAIへ行くには？ 横浜武道館の最寄り駅はどこですか？ 基本情報 名称 横浜武道館ヨコハマブドウカン 住所 神奈川県 横浜市中区翁町２丁目９－１０ 電話番号 045-226-2100 最寄駅 「伊勢佐木長者"
-      },
-      {
-        "station": "伊勢佐木長者町",
-        "walk_min": 6,
-        "context": "浜武道館ヨコハマブドウカン 住所 神奈川県 横浜市中区翁町２丁目９－１０ 電話番号 045-226-2100 最寄駅 「伊勢佐木長者町駅」から 徒歩 6分 、 「関内駅」から 徒歩 8分 最寄バス停 「長者町１丁目＜横浜市営バス＞」から 徒歩 2分 、 「長者町一丁目＜京浜急行バス＞」から 徒歩 3分 横浜武道館への行き方／アクセス - 駅探 駅探 ht"
-      },
-      {
-        "station": "関内",
-        "walk_min": 8,
-        "context": " 横浜市中区翁町２丁目９－１０ 電話番号 045-226-2100 最寄駅 「伊勢佐木長者町駅」から 徒歩 6分 、 「関内駅」から 徒歩 8分 最寄バス停 「長者町１丁目＜横浜市営バス＞」から 徒歩 2分 、 「長者町一丁目＜京浜急行バス＞」から 徒歩 3分 横浜武道館への行き方／アクセス - 駅探 駅探 https://ekitan.com"
-      },
-      {
-        "station": "関内",
-        "walk_min": 6,
-        "context": " 横浜市中区翁町２丁目９－１０ 電話番号 045-226-2100 最寄駅 「伊勢佐木長者町駅」から 徒歩 6分 、 「関内駅」から 徒歩 8分 最寄バス停 「長者町１丁目＜横浜市営バス＞」から 徒歩 2分 、 「長者町一丁目＜京浜急行バス＞」から 徒歩 3分 横浜武道館への行き方／アクセス - 駅探 駅探 https://ekitan.com"
-      }
-    ],
-    "station_to_station_min": null,
-    "transfer_count": null,
-    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E6%97%A5%E6%9C%AC%E5%A4%A7%E9%80%9A%E3%82%8A&to=%E9%96%A2%E5%86%85%E9%A7%85%E3%83%BB%E6%A8%AA%E6%B5%9C%E5%B8%82%E5%96%B6%E5%9C%B0%E4%B8%8B%E9%89%84%E3%81%AE%E4%BC%8A%E5%8B%A2%E4%BD%90%E6%9C%A8%E9%95%B7%E8%80%85%E7%94%BA&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
-    "total_access_min": null,
-    "access_display": "日本大通り駅まで徒歩2分",
-    "existing_access_estimate": "会場最寄りエリアまたは主要駅周辺徒歩・公共交通で移動",
-    "price_estimate": "23,000円(目安)",
-    "price_range_estimate": "約19,500~28,500円",
-    "plan_estimate": "素泊まり・スタンダード/セール対象の安い一般客室",
-    "room_type_estimate": "シングル・セミダブル・スタンダードダブル等の一般客室(1名利用)",
-    "cancellation_estimate": "プランごとに異なる通常は前日~当日から取消料が発生する場合が多く、早割・事前決済は返金不可の場合あり予約画面を優先",
-    "verification_status": "needs_review",
-    "warnings": [
-      "transit_parse_failed"
-    ],
-    "checked_at": "2026-08-07T17:18:36+09:00",
-    "hotel_parallel_evidence_type": "search_snippet",
-    "hotel_parallel_evidence": "関内 横浜 誰でも10％お得 ふるさと納税 対象 道案内 公式サイト 浪漫あふれる港町YOKOHAMA。みなとみらい線「日本大通り駅」から徒歩約2分、JR「関内駅」から徒歩約10分。横浜中華街や元町、みなとみらいエリアが徒歩圏内と横浜の旅の拠点として最適。 料金比較 機械的に検索結果を表示することやデータ更新の遅れにより、価格などの情報が正確でない場",
-    "venue_parallel_evidence_type": "search_snippet",
-    "venue_parallel_evidence": "iptを有効にしてください 神奈川県横浜市中区に位置する横浜BUNTAIは、約5,000席を有する多目的アリーナです。 JR関内駅・横浜市営地下鉄の伊勢佐木長者町駅から徒歩約5分 と、非常にアクセスの良いコンサート会場でもあります。 2025/05/30 JR関内駅・地下鉄伊勢佐木長者町駅から約5分で到着！ 多目的 ... バス比較なび https://www.bushikaku.",
-    "parallel_verified_at": "2026-08-07T21:28:10+09:00",
-    "needs_review_rechecked_at": "2026-08-07T21:28:10+09:00"
-  },
-  {
-    "research_no": 239,
-    "id": "stage-080-2",
-    "venueId": "stage-080",
-    "venueNumber": 80,
-    "rank": 2,
-    "genre": "stage",
-    "hotel_name": "コンフォートホテル横浜関内",
-    "venue_name": "横浜BUNTAI",
-    "prefecture": "神奈川県",
-    "area": "関内・伊勢佐木長者町",
-    "hotel_nearest_station": "関内",
-    "hotel_to_station_walk_min": 1,
-    "hotel_address": null,
-    "hotel_source_url": "https://www.welcome.city.yokohama.jp/hotel/detail.php?hotel_id=27",
-    "hotel_source_type": "official",
-    "hotel_search_url": null,
-    "venue_nearest_station": "関内駅・横浜市営地下鉄の伊勢佐木長者町",
-    "venue_station_to_venue_walk_min": 5,
-    "venue_address": null,
-    "venue_source_url": "https://1201.yokohama/yokohama-buntai-access/#:~:text=%E3%80%8C%E6%A8%AA%E6%B5%9CBUNTAI%E3%80%8DJR%E9%96%A2%E5%86%85%E9%A7%85,%E5%8D%97%E5%8F%A3%E3%80%8D%E3%82%92%E5%88%A9%E7%94%A8%E3%81%97%E3%81%BE%E3%81%99%E3%80%82&text=%E9%A7%85%E3%82%92%E5%87%BA%E3%81%A6%E5%B7%A6%E6%8A%98,%E3%81%9D%E3%81%AE%E3%81%BE%E3%81%BE%E7%9B%B4%E9%80%B2%E3%80%82&text=%E6%A8%AA%E6%B5%9CBUNTAI%E3%81%AB%E5%88%B0%E7%9D%80%E3%81%A7%E3%81%99%E3%80%82",
-    "venue_source_type": "official",
-    "venue_search_url": null,
-    "venue_access_alternatives": [
-      {
-        "station": "関内駅・横浜市営地下鉄の伊勢佐木長者町",
-        "walk_min": 5,
-        "context": "iptを有効にしてください 神奈川県横浜市中区に位置する横浜BUNTAIは、約5,000席を有する多目的アリーナです。 JR関内駅・横浜市営地下鉄の伊勢佐木長者町駅から徒歩約5分 と、非常にアクセスの良いコンサート会場でもあります。 2025/05/30 JR関内駅・地下鉄伊勢佐木長者町駅から約5分で到着！ 多目的 ... バス比較なび https://www.bushikaku."
-      },
-      {
-        "station": "伊勢佐木長者町",
-        "walk_min": 4,
-        "context": "UNTAI からのお知らせ～ · 4.1. \"BLUE WAVE CAFE\" 4月営業日のお知らせ · 3.1 ... 伊勢佐木長者町駅下車 徒歩 4分関内駅下車 徒歩 8分. GOOGLE MAP. CONTACT. お ... 他の人はこちらも質問 横浜BUNTAIは何番出口から出ればいいですか？ ・ 南口改札(一番横浜スタジアム寄り) から約200"
-      },
-      {
-        "station": "4分関内",
-        "walk_min": 8,
-        "context": " · 4.1. \"BLUE WAVE CAFE\" 4月営業日のお知らせ · 3.1 ... 伊勢佐木長者町駅下車 徒歩 4分関内駅下車 徒歩 8分. GOOGLE MAP. CONTACT. お ... 他の人はこちらも質問 横浜BUNTAIは何番出口から出ればいいですか？ ・ 南口改札(一番横浜スタジアム寄り) から約200mでBUNTAIです("
-      },
-      {
-        "station": "何",
-        "walk_min": 5,
-        "context": "ps://www.kkday.com > blog > asia-japan-kanagawa-yo... 横浜中華街 何駅で降りるの？ 地下鉄関内駅から横浜BUNTAIへ行くには？ 「横浜BUNTAI」JR関内駅からのアクセス（徒歩5分） JR京浜東北・根岸線「関内駅（徒歩5分）」を使用する場合は、 「南口」を利用します。 駅を出て左折しま"
-      },
-      {
-        "station": "地下鉄関内",
-        "walk_min": 5,
-        "context": "kkday.com > blog > asia-japan-kanagawa-yo... 横浜中華街 何駅で降りるの？ 地下鉄関内駅から横浜BUNTAIへ行くには？ 「横浜BUNTAI」JR関内駅からのアクセス（徒歩5分） JR京浜東北・根岸線「関内駅（徒歩5分）」を使用する場合は、 「南口」を利用します。 駅を出て左折します。 そのまま直進。 横浜"
-      },
-      {
-        "station": "関内",
-        "walk_min": 5,
-        "context": "agawa-yo... 横浜中華街 何駅で降りるの？ 地下鉄関内駅から横浜BUNTAIへ行くには？ 「横浜BUNTAI」JR関内駅からのアクセス（徒歩5分） JR京浜東北・根岸線「関内駅（徒歩5分）」を使用する場合は、 「南口」を利用します。 駅を出て左折します。 そのまま直進。 横浜BUNTAIに到着です 。2025/07/16 横浜BUNTAI"
-      },
-      {
-        "station": "地下鉄関内",
-        "walk_min": 6,
-        "context": "佐木 ... 個人的横浜 https://1201.yokohama > yokohama-buntai-access 地下鉄関内駅から横浜BUNTAIへ行くには？ 横浜武道館の最寄り駅はどこですか？ 基本情報 名称 横浜武道館ヨコハマブドウカン 住所 神奈川県 横浜市中区翁町２丁目９－１０ 電話番号 045-226-2100 最寄駅 「伊勢佐木長者"
-      },
-      {
-        "station": "伊勢佐木長者町",
-        "walk_min": 6,
-        "context": "浜武道館ヨコハマブドウカン 住所 神奈川県 横浜市中区翁町２丁目９－１０ 電話番号 045-226-2100 最寄駅 「伊勢佐木長者町駅」から 徒歩 6分 、 「関内駅」から 徒歩 8分 最寄バス停 「長者町１丁目＜横浜市営バス＞」から 徒歩 2分 、 「長者町一丁目＜京浜急行バス＞」から 徒歩 3分 横浜武道館への行き方／アクセス - 駅探 駅探 ht"
-      },
-      {
-        "station": "関内",
-        "walk_min": 8,
-        "context": " 横浜市中区翁町２丁目９－１０ 電話番号 045-226-2100 最寄駅 「伊勢佐木長者町駅」から 徒歩 6分 、 「関内駅」から 徒歩 8分 最寄バス停 「長者町１丁目＜横浜市営バス＞」から 徒歩 2分 、 「長者町一丁目＜京浜急行バス＞」から 徒歩 3分 横浜武道館への行き方／アクセス - 駅探 駅探 https://ekitan.com"
-      },
-      {
-        "station": "関内",
-        "walk_min": 6,
-        "context": " 横浜市中区翁町２丁目９－１０ 電話番号 045-226-2100 最寄駅 「伊勢佐木長者町駅」から 徒歩 6分 、 「関内駅」から 徒歩 8分 最寄バス停 「長者町１丁目＜横浜市営バス＞」から 徒歩 2分 、 「長者町一丁目＜京浜急行バス＞」から 徒歩 3分 横浜武道館への行き方／アクセス - 駅探 駅探 https://ekitan.com"
-      }
-    ],
-    "station_to_station_min": null,
-    "transfer_count": null,
-    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E9%96%A2%E5%86%85&to=%E9%96%A2%E5%86%85%E9%A7%85%E3%83%BB%E6%A8%AA%E6%B5%9C%E5%B8%82%E5%96%B6%E5%9C%B0%E4%B8%8B%E9%89%84%E3%81%AE%E4%BC%8A%E5%8B%A2%E4%BD%90%E6%9C%A8%E9%95%B7%E8%80%85%E7%94%BA&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
-    "total_access_min": null,
-    "access_display": "関内駅まで徒歩1分",
-    "existing_access_estimate": "会場最寄りエリアまたは主要駅周辺徒歩・公共交通で移動",
-    "price_estimate": "14,500円(目安)",
-    "price_range_estimate": "約12,000~18,000円",
-    "plan_estimate": "素泊まり・スタンダード/セール対象の安い一般客室",
-    "room_type_estimate": "シングル・セミダブル・スタンダードダブル等の一般客室(1名利用)",
-    "cancellation_estimate": "プランごとに異なる通常は前日~当日から取消料が発生する場合が多く、早割・事前決済は返金不可の場合あり予約画面を優先",
-    "verification_status": "needs_review",
-    "warnings": [
-      "transit_parse_failed"
-    ],
-    "checked_at": "2026-08-07T17:18:36+09:00",
-    "hotel_parallel_evidence_type": "search_snippet",
-    "hotel_parallel_evidence": "ォートホテル横浜関内 コンフォートホテル横浜関内 の地図・アクセス情報。 神奈川県 横浜市中区住吉町3－33、◇地下鉄 関内駅 3番出口 徒歩 1分◇JR 関内駅 北口 徒歩 3分◇みなとみらい線馬車 ... コンフォートホテル横浜関内 （2026年3月31日 ... 楽天トラベル https://travel.rakuten.co.jp > ",
-    "venue_parallel_evidence_type": "search_snippet",
-    "venue_parallel_evidence": "iptを有効にしてください 神奈川県横浜市中区に位置する横浜BUNTAIは、約5,000席を有する多目的アリーナです。 JR関内駅・横浜市営地下鉄の伊勢佐木長者町駅から徒歩約5分 と、非常にアクセスの良いコンサート会場でもあります。 2025/05/30 JR関内駅・地下鉄伊勢佐木長者町駅から約5分で到着！ 多目的 ... バス比較なび https://www.bushikaku.",
-    "parallel_verified_at": "2026-08-07T21:28:12+09:00",
-    "needs_review_rechecked_at": "2026-08-07T21:28:12+09:00"
-  },
-  {
-    "research_no": 240,
-    "id": "stage-080-3",
-    "venueId": "stage-080",
-    "venueNumber": 80,
-    "rank": 3,
-    "genre": "stage",
-    "hotel_name": "ダイワロイネットホテル横浜公園",
-    "venue_name": "横浜BUNTAI",
-    "prefecture": "神奈川県",
-    "area": "関内・伊勢佐木長者町",
-    "hotel_nearest_station": "関内",
-    "hotel_to_station_walk_min": 7,
-    "hotel_address": null,
-    "hotel_source_url": "https://www.daiwaroynet.jp/yokohama-koen/access/",
-    "hotel_source_type": "official",
-    "hotel_search_url": null,
-    "venue_nearest_station": "関内駅・横浜市営地下鉄の伊勢佐木長者町",
-    "venue_station_to_venue_walk_min": 5,
-    "venue_address": null,
-    "venue_source_url": "https://1201.yokohama/yokohama-buntai-access/#:~:text=%E3%80%8C%E6%A8%AA%E6%B5%9CBUNTAI%E3%80%8DJR%E9%96%A2%E5%86%85%E9%A7%85,%E5%8D%97%E5%8F%A3%E3%80%8D%E3%82%92%E5%88%A9%E7%94%A8%E3%81%97%E3%81%BE%E3%81%99%E3%80%82&text=%E9%A7%85%E3%82%92%E5%87%BA%E3%81%A6%E5%B7%A6%E6%8A%98,%E3%81%9D%E3%81%AE%E3%81%BE%E3%81%BE%E7%9B%B4%E9%80%B2%E3%80%82&text=%E6%A8%AA%E6%B5%9CBUNTAI%E3%81%AB%E5%88%B0%E7%9D%80%E3%81%A7%E3%81%99%E3%80%82",
-    "venue_source_type": "official",
-    "venue_search_url": null,
-    "venue_access_alternatives": [
-      {
-        "station": "関内駅・横浜市営地下鉄の伊勢佐木長者町",
-        "walk_min": 5,
-        "context": "iptを有効にしてください 神奈川県横浜市中区に位置する横浜BUNTAIは、約5,000席を有する多目的アリーナです。 JR関内駅・横浜市営地下鉄の伊勢佐木長者町駅から徒歩約5分 と、非常にアクセスの良いコンサート会場でもあります。 2025/05/30 JR関内駅・地下鉄伊勢佐木長者町駅から約5分で到着！ 多目的 ... バス比較なび https://www.bushikaku."
-      },
-      {
-        "station": "伊勢佐木長者町",
-        "walk_min": 4,
-        "context": "UNTAI からのお知らせ～ · 4.1. \"BLUE WAVE CAFE\" 4月営業日のお知らせ · 3.1 ... 伊勢佐木長者町駅下車 徒歩 4分関内駅下車 徒歩 8分. GOOGLE MAP. CONTACT. お ... 他の人はこちらも質問 横浜BUNTAIは何番出口から出ればいいですか？ ・ 南口改札(一番横浜スタジアム寄り) から約200"
-      },
-      {
-        "station": "4分関内",
-        "walk_min": 8,
-        "context": " · 4.1. \"BLUE WAVE CAFE\" 4月営業日のお知らせ · 3.1 ... 伊勢佐木長者町駅下車 徒歩 4分関内駅下車 徒歩 8分. GOOGLE MAP. CONTACT. お ... 他の人はこちらも質問 横浜BUNTAIは何番出口から出ればいいですか？ ・ 南口改札(一番横浜スタジアム寄り) から約200mでBUNTAIです("
-      },
-      {
-        "station": "何",
-        "walk_min": 5,
-        "context": "ps://www.kkday.com > blog > asia-japan-kanagawa-yo... 横浜中華街 何駅で降りるの？ 地下鉄関内駅から横浜BUNTAIへ行くには？ 「横浜BUNTAI」JR関内駅からのアクセス（徒歩5分） JR京浜東北・根岸線「関内駅（徒歩5分）」を使用する場合は、 「南口」を利用します。 駅を出て左折しま"
-      },
-      {
-        "station": "地下鉄関内",
-        "walk_min": 5,
-        "context": "kkday.com > blog > asia-japan-kanagawa-yo... 横浜中華街 何駅で降りるの？ 地下鉄関内駅から横浜BUNTAIへ行くには？ 「横浜BUNTAI」JR関内駅からのアクセス（徒歩5分） JR京浜東北・根岸線「関内駅（徒歩5分）」を使用する場合は、 「南口」を利用します。 駅を出て左折します。 そのまま直進。 横浜"
-      },
-      {
-        "station": "関内",
-        "walk_min": 5,
-        "context": "agawa-yo... 横浜中華街 何駅で降りるの？ 地下鉄関内駅から横浜BUNTAIへ行くには？ 「横浜BUNTAI」JR関内駅からのアクセス（徒歩5分） JR京浜東北・根岸線「関内駅（徒歩5分）」を使用する場合は、 「南口」を利用します。 駅を出て左折します。 そのまま直進。 横浜BUNTAIに到着です 。2025/07/16 横浜BUNTAI"
-      },
-      {
-        "station": "地下鉄関内",
-        "walk_min": 6,
-        "context": "佐木 ... 個人的横浜 https://1201.yokohama > yokohama-buntai-access 地下鉄関内駅から横浜BUNTAIへ行くには？ 横浜武道館の最寄り駅はどこですか？ 基本情報 名称 横浜武道館ヨコハマブドウカン 住所 神奈川県 横浜市中区翁町２丁目９－１０ 電話番号 045-226-2100 最寄駅 「伊勢佐木長者"
-      },
-      {
-        "station": "伊勢佐木長者町",
-        "walk_min": 6,
-        "context": "浜武道館ヨコハマブドウカン 住所 神奈川県 横浜市中区翁町２丁目９－１０ 電話番号 045-226-2100 最寄駅 「伊勢佐木長者町駅」から 徒歩 6分 、 「関内駅」から 徒歩 8分 最寄バス停 「長者町１丁目＜横浜市営バス＞」から 徒歩 2分 、 「長者町一丁目＜京浜急行バス＞」から 徒歩 3分 横浜武道館への行き方／アクセス - 駅探 駅探 ht"
-      },
-      {
-        "station": "関内",
-        "walk_min": 8,
-        "context": " 横浜市中区翁町２丁目９－１０ 電話番号 045-226-2100 最寄駅 「伊勢佐木長者町駅」から 徒歩 6分 、 「関内駅」から 徒歩 8分 最寄バス停 「長者町１丁目＜横浜市営バス＞」から 徒歩 2分 、 「長者町一丁目＜京浜急行バス＞」から 徒歩 3分 横浜武道館への行き方／アクセス - 駅探 駅探 https://ekitan.com"
-      },
-      {
-        "station": "関内",
-        "walk_min": 6,
-        "context": " 横浜市中区翁町２丁目９－１０ 電話番号 045-226-2100 最寄駅 「伊勢佐木長者町駅」から 徒歩 6分 、 「関内駅」から 徒歩 8分 最寄バス停 「長者町１丁目＜横浜市営バス＞」から 徒歩 2分 、 「長者町一丁目＜京浜急行バス＞」から 徒歩 3分 横浜武道館への行き方／アクセス - 駅探 駅探 https://ekitan.com"
-      }
-    ],
-    "station_to_station_min": null,
-    "transfer_count": null,
-    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E9%96%A2%E5%86%85&to=%E9%96%A2%E5%86%85%E9%A7%85%E3%83%BB%E6%A8%AA%E6%B5%9C%E5%B8%82%E5%96%B6%E5%9C%B0%E4%B8%8B%E9%89%84%E3%81%AE%E4%BC%8A%E5%8B%A2%E4%BD%90%E6%9C%A8%E9%95%B7%E8%80%85%E7%94%BA&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
-    "total_access_min": null,
-    "access_display": "関内駅まで徒歩7分",
-    "existing_access_estimate": "主要駅周辺から鉄道・バス・徒歩で移動",
-    "price_estimate": "23,000円(目安)",
-    "price_range_estimate": "約19,500~28,500円",
-    "plan_estimate": "素泊まり・スタンダード/セール対象の安い一般客室",
-    "room_type_estimate": "シングル・セミダブル・スタンダードダブル等の一般客室(1名利用)",
-    "cancellation_estimate": "プランごとに異なる通常は前日~当日から取消料が発生する場合が多く、早割・事前決済は返金不可の場合あり予約画面を優先",
-    "verification_status": "needs_review",
-    "warnings": [
-      "transit_parse_failed",
-      "hotel_station_differs_from_existing"
-    ],
-    "checked_at": "2026-08-07T17:18:36+09:00",
-    "hotel_parallel_evidence_type": "source_page",
-    "hotel_parallel_evidence": "ービス アクセス・周辺情報 フォトギャラリー FAQ トピックス 口コミを読む ACCESS アクセス・周辺情報 JR「関内駅」南口より徒歩約7分 1938 年の竣工から約70 年間使用されてきた歴史的建築物「ストロングビル」を建て替え、低層部に創建当時の外観デザインを復元。その歴史の深さや横浜らしさを「継承」しつつ、現代のニーズと「融合」させ",
-    "venue_parallel_evidence_type": "search_snippet",
-    "venue_parallel_evidence": "iptを有効にしてください 神奈川県横浜市中区に位置する横浜BUNTAIは、約5,000席を有する多目的アリーナです。 JR関内駅・横浜市営地下鉄の伊勢佐木長者町駅から徒歩約5分 と、非常にアクセスの良いコンサート会場でもあります。 2025/05/30 JR関内駅・地下鉄伊勢佐木長者町駅から約5分で到着！ 多目的 ... バス比較なび https://www.bushikaku.",
-    "parallel_verified_at": "2026-08-07T21:28:15+09:00",
-    "needs_review_rechecked_at": "2026-08-07T21:28:15+09:00"
-  }
-]
+{
+  "remaining_count": 26,
+  "batch": [
+    {
+      "research_no": 254,
+      "id": "stage-085-2",
+      "venueId": "stage-085",
+      "venueNumber": 85,
+      "rank": 2,
+      "genre": "stage",
+      "hotel_name": "ホテルニューヨコスカ",
+      "venue_name": "横須賀芸術劇場",
+      "prefecture": "神奈川県",
+      "area": "汐入・横須賀中央",
+      "hotel_nearest_station": "横須賀中央",
+      "hotel_to_station_walk_min": 5,
+      "hotel_address": null,
+      "hotel_source_url": "https://map.apahotel.com/map/160",
+      "hotel_source_type": "official",
+      "hotel_search_url": null,
+      "venue_nearest_station": "京浜急行汐入",
+      "venue_station_to_venue_walk_min": 1,
+      "venue_address": null,
+      "venue_source_url": "https://www.yokosuka-arts.or.jp/information/access/",
+      "venue_source_type": "official",
+      "venue_search_url": null,
+      "venue_access_alternatives": [
+        {
+          "station": "京浜急行汐入",
+          "walk_min": 1,
+          "context": ",300件 1ページ目 JavaScriptが無効です。ブラウザの設定でJavaScriptを有効にしてください 回答 京浜急行汐入駅前徒歩1分。 JR横須賀駅徒歩8分 。 横浜横須賀自動車道路「横須賀インターチェンジ」から本町山中有料道路経由、有料道路終点から300m先、コースカベイサイドストアーズ向かい側右手の白い建物。 横須賀芸術劇場 の行き方を"
+        },
+        {
+          "station": "横須賀",
+          "walk_min": 8,
+          "context": "vaScriptが無効です。ブラウザの設定でJavaScriptを有効にしてください 回答 京浜急行汐入駅前徒歩1分。 JR横須賀駅徒歩8分 。 横浜横須賀自動車道路「横須賀インターチェンジ」から本町山中有料道路経由、有料道路終点から300m先、コースカベイサイドストアーズ向かい側右手の白い建物。 横須賀芸術劇場 の行き方を知りたい 横須賀市 htt"
+        },
+        {
+          "station": "横須賀",
+          "walk_min": 1,
+          "context": "or.jp > information > access 横須賀芸術劇場 ... 「京浜急行汐入駅」から 徒歩 1分、「JR横須賀駅」から 徒歩 8分です。 路線図. 他の人はこちらも質問 横須賀芸術劇場の最寄り駅はどこですか？ 電車でのアクセス 「京浜急行汐入駅」から徒歩1分、「JR横須賀駅」から徒歩8分 です。 アクセス - 横須賀芸術劇場 横須"
+        },
+        {
+          "station": "関内",
+          "walk_min": 14,
+          "context": "ccess 横須賀芸術劇場の最寄り駅はどこですか？ 横浜芸術劇場の最寄り駅はどこですか？ 横浜市営地下鉄ブルーライン「 関内駅 」からご来場の場合（徒歩14分） KAAT 神奈川 芸術劇場 アクセスガイド - 劇団四季 劇団四季 https://www.shiki.jp > theatres > yokohama > accessguide 横"
+        },
+        {
+          "station": "横須賀中央",
+          "walk_min": 15,
+          "context": "場の最寄り駅はどこですか？ 横須賀の米軍基地の最寄駅は？ イベント詳細 住所 横須賀市泊町1米海軍横須賀基地 アクセス 京急横須賀中央駅より 徒歩 15分 TEL 046-822-8301 スカナビｉ (10：00～18：00） 備考 情報が変更になっている場合がありますので、詳細は直接施設へお問合せください。 米海軍横須賀基地関連イベント｜音楽、スポー"
+        },
+        {
+          "station": "横須賀中央",
+          "walk_min": 7,
+          "context": "どこですか？ 横須賀市役所本庁舎 電話番号 046-822-4000 ファクス番号 046-822-2539 アクセス 京急横須賀中央駅から 徒歩 7分 住所 238-8550 横須賀市小川町11 横須賀市役所本庁舎 横須賀市 https://www.city.yokosuka.kanagawa.jp > sisetu 横須賀市役所の最寄り駅はどこですか"
+        },
+        {
+          "station": "汐入",
+          "walk_min": 3,
+          "context": "lan.net > ... > 横須賀・三浦 > 横須賀市 横須賀芸術劇場 に関するよくある質問 · (1)京急線利用、汐入駅下車（ 徒歩 3分） · (2)JR横須賀線利用、JR横須賀駅下車（ 徒歩 8分）. 評価： 4 - 64件のレビュー 横須賀芸術劇場 | 横須賀市の劇場・アクセス・地図 - NAVITIME NAVITIME http"
+        },
+        {
+          "station": "横須賀",
+          "walk_min": 3,
+          "context": "市 横須賀芸術劇場 に関するよくある質問 · (1)京急線利用、汐入駅下車（ 徒歩 3分） · (2)JR横須賀線利用、JR横須賀駅下車（ 徒歩 8分）. 評価： 4 - 64件のレビュー 横須賀芸術劇場 | 横須賀市の劇場・アクセス・地図 - NAVITIME NAVITIME https://www.navitime.co.jp > ... > "
+        },
+        {
+          "station": "汐入",
+          "walk_min": 4,
+          "context": "5.281452,139.662913 ; タグ: #劇場 ; 時間: イベントによる ; 料金: イベントによる ; 汐入駅: 徒歩 4分. 横須賀芸術劇場 - 横須賀市観光情報 横須賀市観光情報 https://www.cocoyoko.net > spot > gekizyo JR横須賀駅下車、 徒歩 ... （事前連絡が必要です。） 施"
+        },
+        {
+          "station": "逸見",
+          "walk_min": 1,
+          "context": "線） · 徒歩 ルート · 横須賀中央駅（京急本線） · 徒歩 ルート · 横須賀駅（横須賀線） · 徒歩 ルート · 逸見駅（京急本線） · 徒歩 ... 横須賀芸術劇場 - Yahoo!トラベル Yahoo!トラベル https://travel.yahoo.co.jp > ... > 神奈川 観光 > 横須賀 観光 神奈川県 ／横須賀・汐"
+        }
+      ],
+      "station_to_station_min": null,
+      "transfer_count": null,
+      "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E6%A8%AA%E9%A0%88%E8%B3%80%E4%B8%AD%E5%A4%AE&to=%E4%BA%AC%E6%B5%9C%E6%80%A5%E8%A1%8C%E6%B1%90%E5%85%A5&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+      "total_access_min": null,
+      "access_display": "横須賀中央駅まで徒歩5分",
+      "existing_access_estimate": "会場最寄りエリアまたは主要駅周辺徒歩・公共交通で移動",
+      "price_estimate": "18,000円(目安)",
+      "price_range_estimate": "約15,000~22,500円",
+      "plan_estimate": "素泊まり・スタンダード/セール対象の安い一般客室",
+      "room_type_estimate": "シングル・セミダブル・スタンダードダブル等の一般客室(1名利用)",
+      "cancellation_estimate": "プランごとに異なる通常は前日~当日から取消料が発生する場合が多く、早割・事前決済は返金不可の場合あり予約画面を優先",
+      "verification_status": "needs_review",
+      "warnings": [
+        "transit_parse_failed"
+      ],
+      "checked_at": "2026-08-07T17:20:33+09:00",
+      "hotel_parallel_evidence_type": "search_snippet",
+      "hotel_parallel_evidence": "wyokosuka.co.jp > access ホテルニューヨコスカ までのアクセスのご案内。京浜急行線「汐入駅」「 横須賀中央駅 」から 徒歩 約5分でアクセス良好の立地です。 ご宿泊予約｜ ホテルニューヨコスカ - ふるなびトラベル予約 ふるなびトラベル予約 https://travel.furunavi.jp > ... > 横須賀・三浦 そ",
+      "venue_parallel_evidence_type": "search_snippet",
+      "venue_parallel_evidence": ",300件 1ページ目 JavaScriptが無効です。ブラウザの設定でJavaScriptを有効にしてください 回答 京浜急行汐入駅前徒歩1分。 JR横須賀駅徒歩8分 。 横浜横須賀自動車道路「横須賀インターチェンジ」から本町山中有料道路経由、有料道路終点から300m先、コースカベイサイドストアーズ向かい側右手の白い建物。 横須賀芸術劇場 の行き方を",
+      "parallel_verified_at": "2026-08-07T21:28:18+09:00",
+      "needs_review_rechecked_at": "2026-08-07T21:28:18+09:00"
+    },
+    {
+      "research_no": 255,
+      "id": "stage-085-3",
+      "venueId": "stage-085",
+      "venueNumber": 85,
+      "rank": 3,
+      "genre": "stage",
+      "hotel_name": "セントラルホテル横須賀",
+      "venue_name": "横須賀芸術劇場",
+      "prefecture": "神奈川県",
+      "area": "汐入・横須賀中央",
+      "hotel_nearest_station": "横須賀中央",
+      "hotel_to_station_walk_min": 1,
+      "hotel_address": null,
+      "hotel_source_url": "https://www.instagram.com/central_hotel_yokosuka/",
+      "hotel_source_type": "official",
+      "hotel_search_url": null,
+      "venue_nearest_station": "京浜急行汐入",
+      "venue_station_to_venue_walk_min": 1,
+      "venue_address": null,
+      "venue_source_url": "https://www.yokosuka-arts.or.jp/information/access/",
+      "venue_source_type": "official",
+      "venue_search_url": null,
+      "venue_access_alternatives": [
+        {
+          "station": "京浜急行汐入",
+          "walk_min": 1,
+          "context": ",300件 1ページ目 JavaScriptが無効です。ブラウザの設定でJavaScriptを有効にしてください 回答 京浜急行汐入駅前徒歩1分。 JR横須賀駅徒歩8分 。 横浜横須賀自動車道路「横須賀インターチェンジ」から本町山中有料道路経由、有料道路終点から300m先、コースカベイサイドストアーズ向かい側右手の白い建物。 横須賀芸術劇場 の行き方を"
+        },
+        {
+          "station": "横須賀",
+          "walk_min": 8,
+          "context": "vaScriptが無効です。ブラウザの設定でJavaScriptを有効にしてください 回答 京浜急行汐入駅前徒歩1分。 JR横須賀駅徒歩8分 。 横浜横須賀自動車道路「横須賀インターチェンジ」から本町山中有料道路経由、有料道路終点から300m先、コースカベイサイドストアーズ向かい側右手の白い建物。 横須賀芸術劇場 の行き方を知りたい 横須賀市 htt"
+        },
+        {
+          "station": "横須賀",
+          "walk_min": 1,
+          "context": "or.jp > information > access 横須賀芸術劇場 ... 「京浜急行汐入駅」から 徒歩 1分、「JR横須賀駅」から 徒歩 8分です。 路線図. 他の人はこちらも質問 横須賀芸術劇場の最寄り駅はどこですか？ 電車でのアクセス 「京浜急行汐入駅」から徒歩1分、「JR横須賀駅」から徒歩8分 です。 アクセス - 横須賀芸術劇場 横須"
+        },
+        {
+          "station": "関内",
+          "walk_min": 14,
+          "context": "ccess 横須賀芸術劇場の最寄り駅はどこですか？ 横浜芸術劇場の最寄り駅はどこですか？ 横浜市営地下鉄ブルーライン「 関内駅 」からご来場の場合（徒歩14分） KAAT 神奈川 芸術劇場 アクセスガイド - 劇団四季 劇団四季 https://www.shiki.jp > theatres > yokohama > accessguide 横"
+        },
+        {
+          "station": "横須賀中央",
+          "walk_min": 15,
+          "context": "場の最寄り駅はどこですか？ 横須賀の米軍基地の最寄駅は？ イベント詳細 住所 横須賀市泊町1米海軍横須賀基地 アクセス 京急横須賀中央駅より 徒歩 15分 TEL 046-822-8301 スカナビｉ (10：00～18：00） 備考 情報が変更になっている場合がありますので、詳細は直接施設へお問合せください。 米海軍横須賀基地関連イベント｜音楽、スポー"
+        },
+        {
+          "station": "横須賀中央",
+          "walk_min": 7,
+          "context": "どこですか？ 横須賀市役所本庁舎 電話番号 046-822-4000 ファクス番号 046-822-2539 アクセス 京急横須賀中央駅から 徒歩 7分 住所 238-8550 横須賀市小川町11 横須賀市役所本庁舎 横須賀市 https://www.city.yokosuka.kanagawa.jp > sisetu 横須賀市役所の最寄り駅はどこですか"
+        },
+        {
+          "station": "汐入",
+          "walk_min": 3,
+          "context": "lan.net > ... > 横須賀・三浦 > 横須賀市 横須賀芸術劇場 に関するよくある質問 · (1)京急線利用、汐入駅下車（ 徒歩 3分） · (2)JR横須賀線利用、JR横須賀駅下車（ 徒歩 8分）. 評価： 4 - 64件のレビュー 横須賀芸術劇場 | 横須賀市の劇場・アクセス・地図 - NAVITIME NAVITIME http"
+        },
+        {
+          "station": "横須賀",
+          "walk_min": 3,
+          "context": "市 横須賀芸術劇場 に関するよくある質問 · (1)京急線利用、汐入駅下車（ 徒歩 3分） · (2)JR横須賀線利用、JR横須賀駅下車（ 徒歩 8分）. 評価： 4 - 64件のレビュー 横須賀芸術劇場 | 横須賀市の劇場・アクセス・地図 - NAVITIME NAVITIME https://www.navitime.co.jp > ... > "
+        },
+        {
+          "station": "汐入",
+          "walk_min": 4,
+          "context": "5.281452,139.662913 ; タグ: #劇場 ; 時間: イベントによる ; 料金: イベントによる ; 汐入駅: 徒歩 4分. 横須賀芸術劇場 - 横須賀市観光情報 横須賀市観光情報 https://www.cocoyoko.net > spot > gekizyo JR横須賀駅下車、 徒歩 ... （事前連絡が必要です。） 施"
+        },
+        {
+          "station": "逸見",
+          "walk_min": 1,
+          "context": "線） · 徒歩 ルート · 横須賀中央駅（京急本線） · 徒歩 ルート · 横須賀駅（横須賀線） · 徒歩 ルート · 逸見駅（京急本線） · 徒歩 ... 横須賀芸術劇場 - Yahoo!トラベル Yahoo!トラベル https://travel.yahoo.co.jp > ... > 神奈川 観光 > 横須賀 観光 神奈川県 ／横須賀・汐"
+        }
+      ],
+      "station_to_station_min": null,
+      "transfer_count": null,
+      "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E6%A8%AA%E9%A0%88%E8%B3%80%E4%B8%AD%E5%A4%AE&to=%E4%BA%AC%E6%B5%9C%E6%80%A5%E8%A1%8C%E6%B1%90%E5%85%A5&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+      "total_access_min": null,
+      "access_display": "横須賀中央駅まで徒歩1分",
+      "existing_access_estimate": "主要駅周辺から鉄道・バス・徒歩で移動",
+      "price_estimate": "18,000円(目安)",
+      "price_range_estimate": "約15,000~22,500円",
+      "plan_estimate": "素泊まり・スタンダード/セール対象の安い一般客室",
+      "room_type_estimate": "シングル・セミダブル・スタンダードダブル等の一般客室(1名利用)",
+      "cancellation_estimate": "プランごとに異なる通常は前日~当日から取消料が発生する場合が多く、早割・事前決済は返金不可の場合あり予約画面を優先",
+      "verification_status": "needs_review",
+      "warnings": [
+        "transit_parse_failed"
+      ],
+      "checked_at": "2026-08-07T17:20:43+09:00",
+      "hotel_parallel_evidence_type": "search_snippet",
+      "hotel_parallel_evidence": " > 横須賀 セントラルホテル 横須賀 の宿泊・予約情報・2名税込9700円～。【 ... ・ 徒歩 で1分 京浜急行 横須賀中央駅 の下にあります♪ · 南国亭 横須賀中央店の写真. 評価： 3.8 - 1,909件のレビュー 他の人はこちらも質問 セントラルホテル横須賀の最寄駅はどこですか？ 横須賀 中央 駅 下車徒歩1分です。 JR 横須賀 線",
+      "venue_parallel_evidence_type": "search_snippet",
+      "venue_parallel_evidence": ",300件 1ページ目 JavaScriptが無効です。ブラウザの設定でJavaScriptを有効にしてください 回答 京浜急行汐入駅前徒歩1分。 JR横須賀駅徒歩8分 。 横浜横須賀自動車道路「横須賀インターチェンジ」から本町山中有料道路経由、有料道路終点から300m先、コースカベイサイドストアーズ向かい側右手の白い建物。 横須賀芸術劇場 の行き方を",
+      "parallel_verified_at": "2026-08-07T21:28:19+09:00",
+      "needs_review_rechecked_at": "2026-08-07T21:28:19+09:00"
+    },
+    {
+      "research_no": 320,
+      "id": "stage-107-2",
+      "venueId": "stage-107",
+      "venueNumber": 107,
+      "rank": 2,
+      "genre": "stage",
+      "hotel_name": "JR東日本ホテルメッツ 浦和",
+      "venue_name": "さいたま市文化センター 大ホール",
+      "prefecture": "埼玉県",
+      "area": "南浦和",
+      "hotel_nearest_station": "浦和",
+      "hotel_to_station_walk_min": 1,
+      "hotel_address": null,
+      "hotel_source_url": "https://www.hotelmets.jp/urawa/",
+      "hotel_source_type": "official",
+      "hotel_search_url": null,
+      "venue_nearest_station": "路線",
+      "venue_station_to_venue_walk_min": 7,
+      "venue_address": null,
+      "venue_source_url": "https://www.mapion.co.jp/phonebook/M04101/11108/0000UWB1_001pa/",
+      "venue_source_type": "official",
+      "venue_search_url": null,
+      "venue_access_alternatives": [
+        {
+          "station": "路線",
+          "walk_min": 7,
+          "context": "riptが無効です。ブラウザの設定でJavaScriptを有効にしてください さいたま市文化センター （ 大ホール ） 路線・駅名 出口・時間 JR京浜東北線・武蔵野線 南浦和駅 西口より 徒歩 約７分 https://www.sapientica.com/application/activities/... SAPIX小学部 https://w"
+        },
+        {
+          "station": "南浦和",
+          "walk_min": 7,
+          "context": "iptを有効にしてください さいたま市文化センター （ 大ホール ） 路線・駅名 出口・時間 JR京浜東北線・武蔵野線 南浦和駅 西口より 徒歩 約７分 https://www.sapientica.com/application/activities/... SAPIX小学部 https://www.sapientica.com > activ"
+        },
+        {
+          "station": "大宮",
+          "walk_min": 3,
+          "context": "all (さいたま市民会館おおみや) 大ホール 1 . さいたま市大宮区大門町2-118 大宮門街4-8F. 2 . 【大宮駅をご利用の場合】 ＪＲ線・ニューシャトルほか 大宮駅東口より 徒歩 3分 ※専用の駐車場等はございません。 お車でお越しの場合は、有料の大宮門街駐車場又は近隣の駐車場をご利用ください。 RaiBoC Hall (さいたま"
+        },
+        {
+          "station": "浦和",
+          "walk_min": 10,
+          "context": "o.com > live_place > detail RaiBoC Hall 大ホールへのアクセス方法は？ 埼玉県庁 浦和駅 何口？ 電車でのアクセス 浦和駅西口 から徒歩 10 分。 ※公共交通機関を御利用ください。 県庁 第3庁舎 講堂（4階）へのアクセス kankyo1.metro.tokyo.lg.jp https://www.kan"
+        },
+        {
+          "station": "浦和",
+          "walk_min": 6,
+          "context": "ps://www.kankyo1.metro.tokyo.lg.jp > large_scale > map 埼玉県庁 浦和駅 何口？ 埼玉会館は浦和駅のどの出口から出ればいいですか？ 住所：〒330-0063 埼玉県さいたま市浦和区高砂 3-1-4 ＪＲ浦和駅（西口） 下車 徒歩 6 分 ※県庁通り沿いの車寄せにある入り口からお入りください。"
+        },
+        {
+          "station": "埼玉会館は浦和",
+          "walk_min": 6,
+          "context": ".kankyo1.metro.tokyo.lg.jp > large_scale > map 埼玉県庁 浦和駅 何口？ 埼玉会館は浦和駅のどの出口から出ればいいですか？ 住所：〒330-0063 埼玉県さいたま市浦和区高砂 3-1-4 ＪＲ浦和駅（西口） 下車 徒歩 6 分 ※県庁通り沿いの車寄せにある入り口からお入りください。 埼玉会館 地図 住所 s"
+        },
+        {
+          "station": "ＪＲ浦和",
+          "walk_min": 6,
+          "context": "？ 埼玉会館は浦和駅のどの出口から出ればいいですか？ 住所：〒330-0063 埼玉県さいたま市浦和区高砂 3-1-4 ＪＲ浦和駅（西口） 下車 徒歩 6 分 ※県庁通り沿いの車寄せにある入り口からお入りください。 埼玉会館 地図 住所 saiboren.or.jp https://saiboren.or.jp > themes > assets "
+        }
+      ],
+      "station_to_station_min": null,
+      "transfer_count": null,
+      "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E6%B5%A6%E5%92%8C&to=%E8%B7%AF%E7%B7%9A&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+      "total_access_min": null,
+      "access_display": "浦和駅まで徒歩1分",
+      "existing_access_estimate": "会場最寄りエリアまたは主要駅周辺徒歩・公共交通で移動",
+      "price_estimate": "20,500円(目安)",
+      "price_range_estimate": "約17,000~25,500円",
+      "plan_estimate": "素泊まり・スタンダード/セール対象の安い一般客室",
+      "room_type_estimate": "シングル・セミダブル・スタンダードダブル等の一般客室(1名利用)",
+      "cancellation_estimate": "プランごとに異なる通常は前日~当日から取消料が発生する場合が多く、早割・事前決済は返金不可の場合あり予約画面を優先",
+      "verification_status": "needs_review",
+      "warnings": [
+        "transit_parse_failed"
+      ],
+      "checked_at": "2026-08-07T17:35:14+09:00",
+      "hotel_parallel_evidence_type": "search_snippet",
+      "hotel_parallel_evidence": "メッツ 浦和 【公式】 JR東日本ホテルメッツ https://www.hotelmets.jp > urawa JR 浦和駅 西口より 徒歩 1分の駅近ホテル. JR東日本ホテルメッツ 浦和 . 公式でのご予約 ... JR東日本ホテルメッツ 浦和 . 〒330-0063 埼玉県 さいたま市浦和区高砂1-16-7 JR東日本ホテルメッツ 浦和",
+      "venue_parallel_evidence_type": "search_snippet",
+      "venue_parallel_evidence": "riptが無効です。ブラウザの設定でJavaScriptを有効にしてください さいたま市文化センター （ 大ホール ） 路線・駅名 出口・時間 JR京浜東北線・武蔵野線 南浦和駅 西口より 徒歩 約７分 https://www.sapientica.com/application/activities/... SAPIX小学部 https://w",
+      "parallel_verified_at": "2026-08-07T21:28:22+09:00",
+      "needs_review_rechecked_at": "2026-08-07T21:28:22+09:00"
+    },
+    {
+      "research_no": 321,
+      "id": "stage-107-3",
+      "venueId": "stage-107",
+      "venueNumber": 107,
+      "rank": 3,
+      "genre": "stage",
+      "hotel_name": "浦和ワシントンホテル",
+      "venue_name": "さいたま市文化センター 大ホール",
+      "prefecture": "埼玉県",
+      "area": "南浦和",
+      "hotel_nearest_station": "浦和",
+      "hotel_to_station_walk_min": 3,
+      "hotel_address": null,
+      "hotel_source_url": "https://washington-hotels.jp/urawa/page/notice.html#:~:text=%E6%B5%A6%E5%92%8C%E3%83%AF%E3%82%B7%E3%83%B3%E3%83%88%E3%83%B3%E3%83%9B%E3%83%86%E3%83%AB%E3%80%90%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88,%E9%A7%85%E8%A5%BF%E5%8F%A3%20%E5%BE%92%E6%AD%A93%E5%88%86",
+      "hotel_source_type": "official",
+      "hotel_search_url": null,
+      "venue_nearest_station": "路線",
+      "venue_station_to_venue_walk_min": 7,
+      "venue_address": null,
+      "venue_source_url": "https://www.mapion.co.jp/phonebook/M04101/11108/0000UWB1_001pa/",
+      "venue_source_type": "official",
+      "venue_search_url": null,
+      "venue_access_alternatives": [
+        {
+          "station": "路線",
+          "walk_min": 7,
+          "context": "riptが無効です。ブラウザの設定でJavaScriptを有効にしてください さいたま市文化センター （ 大ホール ） 路線・駅名 出口・時間 JR京浜東北線・武蔵野線 南浦和駅 西口より 徒歩 約７分 https://www.sapientica.com/application/activities/... SAPIX小学部 https://w"
+        },
+        {
+          "station": "南浦和",
+          "walk_min": 7,
+          "context": "iptを有効にしてください さいたま市文化センター （ 大ホール ） 路線・駅名 出口・時間 JR京浜東北線・武蔵野線 南浦和駅 西口より 徒歩 約７分 https://www.sapientica.com/application/activities/... SAPIX小学部 https://www.sapientica.com > activ"
+        },
+        {
+          "station": "大宮",
+          "walk_min": 3,
+          "context": "all (さいたま市民会館おおみや) 大ホール 1 . さいたま市大宮区大門町2-118 大宮門街4-8F. 2 . 【大宮駅をご利用の場合】 ＪＲ線・ニューシャトルほか 大宮駅東口より 徒歩 3分 ※専用の駐車場等はございません。 お車でお越しの場合は、有料の大宮門街駐車場又は近隣の駐車場をご利用ください。 RaiBoC Hall (さいたま"
+        },
+        {
+          "station": "浦和",
+          "walk_min": 10,
+          "context": "o.com > live_place > detail RaiBoC Hall 大ホールへのアクセス方法は？ 埼玉県庁 浦和駅 何口？ 電車でのアクセス 浦和駅西口 から徒歩 10 分。 ※公共交通機関を御利用ください。 県庁 第3庁舎 講堂（4階）へのアクセス kankyo1.metro.tokyo.lg.jp https://www.kan"
+        },
+        {
+          "station": "浦和",
+          "walk_min": 6,
+          "context": "ps://www.kankyo1.metro.tokyo.lg.jp > large_scale > map 埼玉県庁 浦和駅 何口？ 埼玉会館は浦和駅のどの出口から出ればいいですか？ 住所：〒330-0063 埼玉県さいたま市浦和区高砂 3-1-4 ＪＲ浦和駅（西口） 下車 徒歩 6 分 ※県庁通り沿いの車寄せにある入り口からお入りください。"
+        },
+        {
+          "station": "埼玉会館は浦和",
+          "walk_min": 6,
+          "context": ".kankyo1.metro.tokyo.lg.jp > large_scale > map 埼玉県庁 浦和駅 何口？ 埼玉会館は浦和駅のどの出口から出ればいいですか？ 住所：〒330-0063 埼玉県さいたま市浦和区高砂 3-1-4 ＪＲ浦和駅（西口） 下車 徒歩 6 分 ※県庁通り沿いの車寄せにある入り口からお入りください。 埼玉会館 地図 住所 s"
+        },
+        {
+          "station": "ＪＲ浦和",
+          "walk_min": 6,
+          "context": "？ 埼玉会館は浦和駅のどの出口から出ればいいですか？ 住所：〒330-0063 埼玉県さいたま市浦和区高砂 3-1-4 ＪＲ浦和駅（西口） 下車 徒歩 6 分 ※県庁通り沿いの車寄せにある入り口からお入りください。 埼玉会館 地図 住所 saiboren.or.jp https://saiboren.or.jp > themes > assets "
+        }
+      ],
+      "station_to_station_min": null,
+      "transfer_count": null,
+      "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E6%B5%A6%E5%92%8C&to=%E8%B7%AF%E7%B7%9A&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+      "total_access_min": null,
+      "access_display": "浦和駅まで徒歩3分",
+      "existing_access_estimate": "主要駅周辺から鉄道・バス・徒歩で移動",
+      "price_estimate": "16,500円(目安)",
+      "price_range_estimate": "約14,000~20,500円",
+      "plan_estimate": "素泊まり・スタンダード/セール対象の安い一般客室",
+      "room_type_estimate": "シングル・セミダブル・スタンダードダブル等の一般客室(1名利用)",
+      "cancellation_estimate": "プランごとに異なる通常は前日~当日から取消料が発生する場合が多く、早割・事前決済は返金不可の場合あり予約画面を優先",
+      "verification_status": "needs_review",
+      "warnings": [
+        "transit_parse_failed"
+      ],
+      "checked_at": "2026-08-07T17:35:25+09:00",
+      "hotel_parallel_evidence_type": "search_snippet",
+      "hotel_parallel_evidence": "00件 1ページ目 JavaScriptが無効です。ブラウザの設定でJavaScriptを有効にしてください アクセス JR浦和駅より徒歩約3分 。 立体駐車場に入らないお車または満車の際は、提携駐車場（※1）もしくは近隣コインパーキングを恐れ入りますがご実費でご利用下さいませ。 何卒ご理解賜ります様お願い申し上げます。 浦和ワシントンホテル | ",
+      "venue_parallel_evidence_type": "search_snippet",
+      "venue_parallel_evidence": "riptが無効です。ブラウザの設定でJavaScriptを有効にしてください さいたま市文化センター （ 大ホール ） 路線・駅名 出口・時間 JR京浜東北線・武蔵野線 南浦和駅 西口より 徒歩 約７分 https://www.sapientica.com/application/activities/... SAPIX小学部 https://w",
+      "parallel_verified_at": "2026-08-07T21:28:24+09:00",
+      "needs_review_rechecked_at": "2026-08-07T21:28:24+09:00"
+    },
+    {
+      "research_no": 331,
+      "id": "stage-111-1",
+      "venueId": "stage-111",
+      "venueNumber": 111,
+      "rank": 1,
+      "genre": "stage",
+      "hotel_name": "東横INN北戸田駅東口",
+      "venue_name": "戸田市文化会館",
+      "prefecture": "埼玉県",
+      "area": "戸田",
+      "hotel_nearest_station": "北戸田",
+      "hotel_to_station_walk_min": 2,
+      "hotel_address": null,
+      "hotel_source_url": "https://www.toyoko-inn.com/search/detail/00343/",
+      "hotel_source_type": "official",
+      "hotel_search_url": null,
+      "venue_nearest_station": "各",
+      "venue_station_to_venue_walk_min": 10,
+      "venue_address": null,
+      "venue_source_url": "https://toda-zaidan.org/bunkakaikan/shisetsu_bk/access_bk/",
+      "venue_source_type": "official",
+      "venue_search_url": null,
+      "venue_access_alternatives": [
+        {
+          "station": "各",
+          "walk_min": 10,
+          "context": "_bk ... 戸田市文化会館 〉施設案内 〉アクセス・駐車場. アクセス・駐車場. 電車・バスのご案内. JR埼京線（各駅停車）戸田駅東口 徒歩 約10分. JR京浜東北線 蕨駅西口の場合. 国際 ... 他の人はこちらも質問 戸田文化会館の最寄り駅はどこですか？ 戸田駅東口 。 戸田駅東口の前の道を進みます。 道に入る手前の掲示板にも戸田"
+        },
+        {
+          "station": "戸田",
+          "walk_min": 10,
+          "context": ".. 戸田市文化会館 〉施設案内 〉アクセス・駐車場. アクセス・駐車場. 電車・バスのご案内. JR埼京線（各駅停車）戸田駅東口 徒歩 約10分. JR京浜東北線 蕨駅西口の場合. 国際 ... 他の人はこちらも質問 戸田文化会館の最寄り駅はどこですか？ 戸田駅東口 。 戸田駅東口の前の道を進みます。 道に入る手前の掲示板にも戸田市文化会館へ"
+        },
+        {
+          "station": "蕨",
+          "walk_min": 10,
+          "context": "駐車場. アクセス・駐車場. 電車・バスのご案内. JR埼京線（各駅停車）戸田駅東口 徒歩 約10分. JR京浜東北線 蕨駅西口の場合. 国際 ... 他の人はこちらも質問 戸田文化会館の最寄り駅はどこですか？ 戸田駅東口 。 戸田駅東口の前の道を進みます。 道に入る手前の掲示板にも戸田市文化会館へのアクセス方法が記載されています。2019/"
+        },
+        {
+          "station": "戸田",
+          "walk_min": 7,
+          "context": "市文化会館 ホール アクセス案内 …すべて表示 · 戸田市コミュニティバス 川岸循環「戸田市役所」下車すぐ · 埼京線「戸田駅」から 徒歩 7分. 戸田市文化会館 の周辺地図・アクセス・電話番号 乗換案内NEXT https://mb.jorudan.co.jp > norikae 埼玉県 戸田市上戸田4丁目8-1にある 戸田市文化会館 (集会"
+        },
+        {
+          "station": "蕨",
+          "walk_min": 7,
+          "context": "戸田市 上戸田 4丁目8－1. お問い合わせ. 048 ... JR埼京線「戸田駅東口下車」 徒歩 7分JR京浜東北線「蕨駅」よりバス 下笹目 ... 戸田市文化会館 | 戸田市のイベントホール/公会堂 ... - NAVITIME NAVITIME https://www.navitime.co.jp > poi アクセス情報. 戸田市文化"
+        }
+      ],
+      "station_to_station_min": null,
+      "transfer_count": null,
+      "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E5%8C%97%E6%88%B8%E7%94%B0&to=%E5%90%84&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+      "total_access_min": null,
+      "access_display": "北戸田駅まで徒歩2分",
+      "existing_access_estimate": "会場最寄りエリアまたは主要駅周辺徒歩・公共交通で移動",
+      "price_estimate": "12,500円(目安)",
+      "price_range_estimate": "約10,500~15,500円",
+      "plan_estimate": "素泊まり・スタンダード/セール対象の安い一般客室",
+      "room_type_estimate": "シングル・セミダブル・スタンダードダブル等の一般客室(1名利用)",
+      "cancellation_estimate": "プランごとに異なる通常は前日~当日から取消料が発生する場合が多く、早割・事前決済は返金不可の場合あり予約画面を優先",
+      "verification_status": "needs_review",
+      "warnings": [
+        "transit_parse_failed"
+      ],
+      "checked_at": "2026-08-07T17:37:49+09:00",
+      "hotel_parallel_evidence_type": "search_snippet",
+      "hotel_parallel_evidence": "ル ... 東横イン https://www.toyoko-inn.com > ホテル一覧 東横INN北戸田駅東口 は 北戸田駅 から 徒歩 2分。当サイトからの予約が最安値！ ... アクセス. 〒335-0021 埼玉県 戸田市新曽1981-1. Googleマップ. 電車でお越しの方. Yahoo!マップ \" 東横INN北戸田駅東口 北戸田",
+      "venue_parallel_evidence_type": "search_snippet",
+      "venue_parallel_evidence": "_bk ... 戸田市文化会館 〉施設案内 〉アクセス・駐車場. アクセス・駐車場. 電車・バスのご案内. JR埼京線（各駅停車）戸田駅東口 徒歩 約10分. JR京浜東北線 蕨駅西口の場合. 国際 ... 他の人はこちらも質問 戸田文化会館の最寄り駅はどこですか？ 戸田駅東口 。 戸田駅東口の前の道を進みます。 道に入る手前の掲示板にも戸田",
+      "parallel_verified_at": "2026-08-07T21:28:25+09:00",
+      "needs_review_rechecked_at": "2026-08-07T21:28:25+09:00"
+    },
+    {
+      "research_no": 376,
+      "id": "stage-126-1",
+      "venueId": "stage-126",
+      "venueNumber": 126,
+      "rank": 1,
+      "genre": "stage",
+      "hotel_name": "JRイン札幌北2条",
+      "venue_name": "札幌文化芸術劇場 hitaru",
+      "prefecture": "北海道",
+      "area": "札幌・大通",
+      "hotel_nearest_station": "札幌・大通",
+      "hotel_to_station_walk_min": 2,
+      "hotel_address": null,
+      "hotel_source_url": "https://www.gutabi.jp/hotel/base/936#:~:text=%E5%9C%B0%E4%B8%8B%E9%89%84%E6%9D%B1%E8%B1%8A%E7%B7%9A%E3%81%AE%E3%81%95%E3%81%A3%E3%81%BD%E3%82%8D,%E3%83%93%E3%82%B8%E3%83%8D%E3%82%B9%E5%88%A9%E7%94%A8%E3%81%AB%E3%82%82%E4%BE%BF%E5%88%A9%EF%BC%81",
+      "hotel_source_type": "official",
+      "hotel_search_url": null,
+      "venue_nearest_station": "札駅から大通",
+      "venue_station_to_venue_walk_min": 10,
+      "venue_address": null,
+      "venue_source_url": "https://www.bushikaku.net/expedition/venue/access/060097/",
+      "venue_source_type": "official",
+      "venue_search_url": null,
+      "venue_access_alternatives": [
+        {
+          "station": "札駅から大通",
+          "walk_min": 10,
+          "context": "こそ札幌 https://www.sapporo.travel > spot > facility > chikaho 札駅から大通駅まで徒歩で何分ですか？ 札幌駅から時計台まで徒歩で何分かかりますか？ 札幌駅北口を出て、南方向へ向かい大通方面を目指します。 おおよそ8〜10分で時計台に到着します。 信号待ちや歩行ペースにもよりますが、 駅から約600"
+        },
+        {
+          "station": "札幌",
+          "walk_min": 10,
+          "context": "pporo.travel > spot > facility > chikaho 札駅から大通駅まで徒歩で何分ですか？ 札幌駅から時計台まで徒歩で何分かかりますか？ 札幌駅北口を出て、南方向へ向かい大通方面を目指します。 おおよそ8〜10分で時計台に到着します。 信号待ちや歩行ペースにもよりますが、 駅から約600〜800メートル、徒歩約10分"
+        },
+        {
+          "station": "札幌",
+          "walk_min": 17,
+          "context": "ト ... 北海道JOURNAL https://robata-hakodateyama.com > archives 札幌駅から時計台まで徒歩で何分かかりますか？ 札幌駅とファクトリーは徒歩で何分ですか？ 札幌駅より 徒歩約17分 、車で約5分。 FAQ よくあるご質問 - サッポロファクトリー サッポロファクトリー https://sapp"
+        },
+        {
+          "station": "大通",
+          "walk_min": 2,
+          "context": " 所在地. 札幌文化芸術劇場hitaru クリエイティブスタジオ · アクセス. 札幌市営地下鉄東西線、南北線、東豊線「大通駅」31番出口から 徒歩 約2分 · TEL · キャパシティ · 駐車場. JR札幌駅から 札幌文化芸術劇場hitaru にお越しの場合は ... X https://x.com > Sapporocomplaza > "
+        },
+        {
+          "station": "札幌",
+          "walk_min": 2,
+          "context": "札幌市営地下鉄東西線、南北線、東豊線「大通駅」31番出口から 徒歩 約2分 · TEL · キャパシティ · 駐車場. JR札幌駅から 札幌文化芸術劇場hitaru にお越しの場合は ... X https://x.com > Sapporocomplaza > status 2025/12/13 - JR札幌駅から 札幌文化芸術劇場hitaru "
+        },
+        {
+          "station": "さっぽろ",
+          "walk_min": 4,
+          "context": "aru (ヒタル) ( さっぽろぶんかげいじゅつげきじょう ひたる ) ; タグ: #劇場 ; 料金: 催事による ; さっぽろ駅: 22番口から 徒歩 4分 ; 大通駅: 31番口 ... 札幌文化芸術劇場 hitaru | 北海道 | 会場 | 公演 三菱UFJニコス チケットサービス https://mun-ticket.com > 公演 J"
+        },
+        {
+          "station": "大通",
+          "walk_min": 10,
+          "context": "ゅつげきじょう ひたる ) ; タグ: #劇場 ; 料金: 催事による ; さっぽろ駅: 22番口から 徒歩 4分 ; 大通駅: 31番口 ... 札幌文化芸術劇場 hitaru | 北海道 | 会場 | 公演 三菱UFJニコス チケットサービス https://mun-ticket.com > 公演 JR「札幌」駅南口から 徒歩 約10分; "
+        },
+        {
+          "station": "大通",
+          "walk_min": 4,
+          "context": "ゅつげきじょう ひたる ) ; タグ: #劇場 ; 料金: 催事による ; さっぽろ駅: 22番口から 徒歩 4分 ; 大通駅: 31番口 ... 札幌文化芸術劇場 hitaru | 北海道 | 会場 | 公演 三菱UFJニコス チケットサービス https://mun-ticket.com > 公演 JR「札幌」駅南口から 徒歩 約10分; "
+        }
+      ],
+      "station_to_station_min": null,
+      "transfer_count": null,
+      "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E6%9C%AD%E5%B9%8C%E3%83%BB%E5%A4%A7%E9%80%9A&to=%E6%9C%AD%E9%A7%85%E3%81%8B%E3%82%89%E5%A4%A7%E9%80%9A&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+      "total_access_min": null,
+      "access_display": "札幌・大通駅まで徒歩2分",
+      "existing_access_estimate": "会場最寄りエリアまたは主要駅周辺徒歩・公共交通で移動",
+      "price_estimate": "23,000円(目安)",
+      "price_range_estimate": "約19,500~28,500円",
+      "plan_estimate": "素泊まり・スタンダード/セール対象の安い一般客室",
+      "room_type_estimate": "シングル・セミダブル・スタンダードダブル等の一般客室(1名利用)",
+      "cancellation_estimate": "プランごとに異なる通常は前日~当日から取消料が発生する場合が多く、早割・事前決済は返金不可の場合あり予約画面を優先",
+      "verification_status": "needs_review",
+      "warnings": [
+        "transit_parse_failed"
+      ],
+      "checked_at": "2026-08-07T17:48:34+09:00",
+      "hotel_parallel_evidence_type": "search_snippet",
+      "hotel_parallel_evidence": ". 北海道 のスタッフが「 JRイン札幌北2条 」に泊まってきました！大 ... 札幌・大通 朝食が美味しいホテル 【 札幌・大通駅 エリア】スタッフが食べて厳選！ 他の人はこちらも質問 JRイン札幌北2条の最寄り駅はどこですか？ 地下鉄東豊線のさっぽろ駅 22番出口まで徒歩2分という好立地で、観光にもビジネス利用にも便利！ JRイン札幌北2条 の基",
+      "venue_parallel_evidence_type": "search_snippet",
+      "venue_parallel_evidence": "こそ札幌 https://www.sapporo.travel > spot > facility > chikaho 札駅から大通駅まで徒歩で何分ですか？ 札幌駅から時計台まで徒歩で何分かかりますか？ 札幌駅北口を出て、南方向へ向かい大通方面を目指します。 おおよそ8〜10分で時計台に到着します。 信号待ちや歩行ペースにもよりますが、 駅から約600",
+      "parallel_verified_at": "2026-08-07T21:28:16+09:00",
+      "needs_review_rechecked_at": "2026-08-07T21:28:16+09:00"
+    },
+    {
+      "research_no": 377,
+      "id": "stage-126-2",
+      "venueId": "stage-126",
+      "venueNumber": 126,
+      "rank": 2,
+      "genre": "stage",
+      "hotel_name": "ザ ノット 札幌",
+      "venue_name": "札幌文化芸術劇場 hitaru",
+      "prefecture": "北海道",
+      "area": "札幌・大通",
+      "hotel_nearest_station": "大通・すすきの",
+      "hotel_to_station_walk_min": 5,
+      "hotel_address": null,
+      "hotel_source_url": "https://ja.planetofhotels.com/ri-ben-/zha-huang-shi-/tao-house-di-xia-tie-karatu-bu-yue-30miao-zha-huang-da-tong-susukinoyi-zhi-tong-kong-gang-yaxiao-zun",
+      "hotel_source_type": "official",
+      "hotel_search_url": null,
+      "venue_nearest_station": "札駅から大通",
+      "venue_station_to_venue_walk_min": 10,
+      "venue_address": null,
+      "venue_source_url": "https://www.bushikaku.net/expedition/venue/access/060097/",
+      "venue_source_type": "official",
+      "venue_search_url": null,
+      "venue_access_alternatives": [
+        {
+          "station": "札駅から大通",
+          "walk_min": 10,
+          "context": "こそ札幌 https://www.sapporo.travel > spot > facility > chikaho 札駅から大通駅まで徒歩で何分ですか？ 札幌駅から時計台まで徒歩で何分かかりますか？ 札幌駅北口を出て、南方向へ向かい大通方面を目指します。 おおよそ8〜10分で時計台に到着します。 信号待ちや歩行ペースにもよりますが、 駅から約600"
+        },
+        {
+          "station": "札幌",
+          "walk_min": 10,
+          "context": "pporo.travel > spot > facility > chikaho 札駅から大通駅まで徒歩で何分ですか？ 札幌駅から時計台まで徒歩で何分かかりますか？ 札幌駅北口を出て、南方向へ向かい大通方面を目指します。 おおよそ8〜10分で時計台に到着します。 信号待ちや歩行ペースにもよりますが、 駅から約600〜800メートル、徒歩約10分"
+        },
+        {
+          "station": "札幌",
+          "walk_min": 17,
+          "context": "ト ... 北海道JOURNAL https://robata-hakodateyama.com > archives 札幌駅から時計台まで徒歩で何分かかりますか？ 札幌駅とファクトリーは徒歩で何分ですか？ 札幌駅より 徒歩約17分 、車で約5分。 FAQ よくあるご質問 - サッポロファクトリー サッポロファクトリー https://sapp"
+        },
+        {
+          "station": "大通",
+          "walk_min": 2,
+          "context": " 所在地. 札幌文化芸術劇場hitaru クリエイティブスタジオ · アクセス. 札幌市営地下鉄東西線、南北線、東豊線「大通駅」31番出口から 徒歩 約2分 · TEL · キャパシティ · 駐車場. JR札幌駅から 札幌文化芸術劇場hitaru にお越しの場合は ... X https://x.com > Sapporocomplaza > "
+        },
+        {
+          "station": "札幌",
+          "walk_min": 2,
+          "context": "札幌市営地下鉄東西線、南北線、東豊線「大通駅」31番出口から 徒歩 約2分 · TEL · キャパシティ · 駐車場. JR札幌駅から 札幌文化芸術劇場hitaru にお越しの場合は ... X https://x.com > Sapporocomplaza > status 2025/12/13 - JR札幌駅から 札幌文化芸術劇場hitaru "
+        },
+        {
+          "station": "さっぽろ",
+          "walk_min": 4,
+          "context": "aru (ヒタル) ( さっぽろぶんかげいじゅつげきじょう ひたる ) ; タグ: #劇場 ; 料金: 催事による ; さっぽろ駅: 22番口から 徒歩 4分 ; 大通駅: 31番口 ... 札幌文化芸術劇場 hitaru | 北海道 | 会場 | 公演 三菱UFJニコス チケットサービス https://mun-ticket.com > 公演 J"
+        },
+        {
+          "station": "大通",
+          "walk_min": 10,
+          "context": "ゅつげきじょう ひたる ) ; タグ: #劇場 ; 料金: 催事による ; さっぽろ駅: 22番口から 徒歩 4分 ; 大通駅: 31番口 ... 札幌文化芸術劇場 hitaru | 北海道 | 会場 | 公演 三菱UFJニコス チケットサービス https://mun-ticket.com > 公演 JR「札幌」駅南口から 徒歩 約10分; "
+        },
+        {
+          "station": "大通",
+          "walk_min": 4,
+          "context": "ゅつげきじょう ひたる ) ; タグ: #劇場 ; 料金: 催事による ; さっぽろ駅: 22番口から 徒歩 4分 ; 大通駅: 31番口 ... 札幌文化芸術劇場 hitaru | 北海道 | 会場 | 公演 三菱UFJニコス チケットサービス https://mun-ticket.com > 公演 JR「札幌」駅南口から 徒歩 約10分; "
+        }
+      ],
+      "station_to_station_min": null,
+      "transfer_count": null,
+      "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E5%A4%A7%E9%80%9A%E3%83%BB%E3%81%99%E3%81%99%E3%81%8D%E3%81%AE&to=%E6%9C%AD%E9%A7%85%E3%81%8B%E3%82%89%E5%A4%A7%E9%80%9A&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+      "total_access_min": null,
+      "access_display": "大通・すすきの駅まで徒歩5分",
+      "existing_access_estimate": "会場最寄りエリアまたは主要駅周辺徒歩・公共交通で移動",
+      "price_estimate": "23,000円(目安)",
+      "price_range_estimate": "約19,500~28,500円",
+      "plan_estimate": "素泊まり・スタンダード/セール対象の安い一般客室",
+      "room_type_estimate": "シングル・セミダブル・スタンダードダブル等の一般客室(1名利用)",
+      "cancellation_estimate": "プランごとに異なる通常は前日~当日から取消料が発生する場合が多く、早割・事前決済は返金不可の場合あり予約画面を優先",
+      "verification_status": "needs_review",
+      "warnings": [
+        "transit_parse_failed"
+      ],
+      "checked_at": "2026-08-07T17:48:45+09:00",
+      "hotel_parallel_evidence_type": "search_snippet",
+      "hotel_parallel_evidence": "JavaScriptが無効です。ブラウザの設定でJavaScriptを有効にしてください 【札幌】おしゃれホテル5選｜ 大通・すすきの駅 近＆写真映え ... Lemon8 https://www.lemon8-app.com > 札幌-ほかんす アクセス 北海道 札幌市中央区南2条西1-7-9 地下鉄 南北線「大通駅」より 徒歩 5分. 2. ザ ノッ",
+      "venue_parallel_evidence_type": "search_snippet",
+      "venue_parallel_evidence": "こそ札幌 https://www.sapporo.travel > spot > facility > chikaho 札駅から大通駅まで徒歩で何分ですか？ 札幌駅から時計台まで徒歩で何分かかりますか？ 札幌駅北口を出て、南方向へ向かい大通方面を目指します。 おおよそ8〜10分で時計台に到着します。 信号待ちや歩行ペースにもよりますが、 駅から約600",
+      "parallel_verified_at": "2026-08-07T21:28:18+09:00",
+      "needs_review_rechecked_at": "2026-08-07T21:28:18+09:00"
+    },
+    {
+      "research_no": 400,
+      "id": "stage-134-1",
+      "venueId": "stage-134",
+      "venueNumber": 134,
+      "rank": 1,
+      "genre": "stage",
+      "hotel_name": "ANAクラウンプラザホテル釧路",
+      "venue_name": "コーチャンフォー釧路文化ホール 大ホール",
+      "prefecture": "北海道",
+      "area": "釧路",
+      "hotel_nearest_station": "釧路",
+      "hotel_to_station_walk_min": 1,
+      "hotel_address": null,
+      "hotel_source_url": "https://www.anacpkushiro.com/access",
+      "hotel_source_type": "official",
+      "hotel_search_url": null,
+      "venue_nearest_station": "新富士",
+      "venue_station_to_venue_walk_min": 34,
+      "venue_address": null,
+      "venue_source_url": "https://www.mapion.co.jp/phonebook/M04101/01206/0000KCRS_001pa/",
+      "venue_source_type": "official",
+      "venue_search_url": null,
+      "venue_access_alternatives": [
+        {
+          "station": "新富士",
+          "walk_min": 34,
+          "context": " 2024/4/20 - 正式名称は釧路市民文化会館。 コーチャンフォー釧路文化ホール大ホール の座席表 ... JR 新富士駅 徒歩 34分. キャパ・定員, 大ホール 1,524席小ホール ... コーチャンフォー釧路文化ホール・大ホール - ライブ部 ライブ部 https://www.livebu.com > hall コーチャンフォー釧路"
+        }
+      ],
+      "station_to_station_min": null,
+      "transfer_count": null,
+      "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E9%87%A7%E8%B7%AF&to=%E6%96%B0%E5%AF%8C%E5%A3%AB&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+      "total_access_min": null,
+      "access_display": "釧路駅まで徒歩1分",
+      "existing_access_estimate": "会場最寄りエリアまたは主要駅周辺徒歩・公共交通で移動",
+      "price_estimate": "25,000円(目安)",
+      "price_range_estimate": "約21,000~31,000円",
+      "plan_estimate": "素泊まり・スタンダード/セール対象の安い一般客室",
+      "room_type_estimate": "シングル・セミダブル・スタンダードダブル等の一般客室(1名利用)",
+      "cancellation_estimate": "プランごとに異なる通常は前日~当日から取消料が発生する場合が多く、早割・事前決済は返金不可の場合あり予約画面を優先",
+      "verification_status": "needs_review",
+      "warnings": [
+        "transit_parse_failed"
+      ],
+      "checked_at": "2026-08-07T17:52:45+09:00",
+      "hotel_parallel_evidence_type": "search_snippet",
+      "hotel_parallel_evidence": "タクシーで3分。 徒歩 15分○釧路空港からホテル隣接 ... Yahoo!マップ \" ANAクラウンプラザホテル釧路 釧路駅 北海道 の 徒歩 施設一覧の地図 地図から探す ベッセルイン札幌中島公園の画像 1 ベッセルイン札幌中島公園 ホテル / 中島公園駅徒歩1分 4.4 / 317件 住所： 北海道札幌市中央区南九条西4丁目1番2号 TE",
+      "venue_parallel_evidence_type": "search_snippet",
+      "venue_parallel_evidence": " 2024/4/20 - 正式名称は釧路市民文化会館。 コーチャンフォー釧路文化ホール大ホール の座席表 ... JR 新富士駅 徒歩 34分. キャパ・定員, 大ホール 1,524席小ホール ... コーチャンフォー釧路文化ホール・大ホール - ライブ部 ライブ部 https://www.livebu.com > hall コーチャンフォー釧路",
+      "parallel_verified_at": "2026-08-07T21:28:20+09:00",
+      "needs_review_rechecked_at": "2026-08-07T21:28:20+09:00"
+    },
+    {
+      "research_no": 401,
+      "id": "stage-134-2",
+      "venueId": "stage-134",
+      "venueNumber": 134,
+      "rank": 2,
+      "genre": "stage",
+      "hotel_name": "コンフォートホテル釧路",
+      "venue_name": "コーチャンフォー釧路文化ホール 大ホール",
+      "prefecture": "北海道",
+      "area": "釧路",
+      "hotel_nearest_station": "釧路",
+      "hotel_to_station_walk_min": 2,
+      "hotel_address": null,
+      "hotel_source_url": "https://www.choice-hotels.jp/hotel/kushiro/access/",
+      "hotel_source_type": "official",
+      "hotel_search_url": null,
+      "venue_nearest_station": "新富士",
+      "venue_station_to_venue_walk_min": 34,
+      "venue_address": null,
+      "venue_source_url": "https://www.mapion.co.jp/phonebook/M04101/01206/0000KCRS_001pa/",
+      "venue_source_type": "official",
+      "venue_search_url": null,
+      "venue_access_alternatives": [
+        {
+          "station": "新富士",
+          "walk_min": 34,
+          "context": " 2024/4/20 - 正式名称は釧路市民文化会館。 コーチャンフォー釧路文化ホール大ホール の座席表 ... JR 新富士駅 徒歩 34分. キャパ・定員, 大ホール 1,524席小ホール ... コーチャンフォー釧路文化ホール・大ホール - ライブ部 ライブ部 https://www.livebu.com > hall コーチャンフォー釧路"
+        }
+      ],
+      "station_to_station_min": null,
+      "transfer_count": null,
+      "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E9%87%A7%E8%B7%AF&to=%E6%96%B0%E5%AF%8C%E5%A3%AB&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+      "total_access_min": null,
+      "access_display": "釧路駅まで徒歩2分",
+      "existing_access_estimate": "会場最寄りエリアまたは主要駅周辺徒歩・公共交通で移動",
+      "price_estimate": "12,500円(目安)",
+      "price_range_estimate": "約10,500~15,500円",
+      "plan_estimate": "素泊まり・スタンダード/セール対象の安い一般客室",
+      "room_type_estimate": "シングル・セミダブル・スタンダードダブル等の一般客室(1名利用)",
+      "cancellation_estimate": "プランごとに異なる通常は前日~当日から取消料が発生する場合が多く、早割・事前決済は返金不可の場合あり予約画面を優先",
+      "verification_status": "needs_review",
+      "warnings": [
+        "transit_parse_failed"
+      ],
+      "checked_at": "2026-08-07T17:53:52+09:00",
+      "hotel_parallel_evidence_type": "search_snippet",
+      "hotel_parallel_evidence": "riptを有効にしてください コンフォートホテル釧路 〒085-0015. 北海道 釧路市北大通１３丁目１－１ ＜JR 釧路駅 より 徒歩 2分＞JR 釧路駅 出口より左手方向、北大通沿い左手にホテルが見えます。 駅から 徒歩 5分以内 コンビニまで 徒歩 5分以内 有り（550円／泊） ※ 車以外 ⁄ 釧路空港からリムジンバスで 釧路駅 まで",
+      "venue_parallel_evidence_type": "search_snippet",
+      "venue_parallel_evidence": " 2024/4/20 - 正式名称は釧路市民文化会館。 コーチャンフォー釧路文化ホール大ホール の座席表 ... JR 新富士駅 徒歩 34分. キャパ・定員, 大ホール 1,524席小ホール ... コーチャンフォー釧路文化ホール・大ホール - ライブ部 ライブ部 https://www.livebu.com > hall コーチャンフォー釧路",
+      "parallel_verified_at": "2026-08-07T21:28:21+09:00",
+      "needs_review_rechecked_at": "2026-08-07T21:28:21+09:00"
+    },
+    {
+      "research_no": 402,
+      "id": "stage-134-3",
+      "venueId": "stage-134",
+      "venueNumber": 134,
+      "rank": 3,
+      "genre": "stage",
+      "hotel_name": "スーパーホテル釧路駅前",
+      "venue_name": "コーチャンフォー釧路文化ホール 大ホール",
+      "prefecture": "北海道",
+      "area": "釧路",
+      "hotel_nearest_station": "釧路",
+      "hotel_to_station_walk_min": 1,
+      "hotel_address": null,
+      "hotel_source_url": "https://www.superhotel.co.jp/s_hotels/kushiroekimae/",
+      "hotel_source_type": "official",
+      "hotel_search_url": null,
+      "venue_nearest_station": "新富士",
+      "venue_station_to_venue_walk_min": 34,
+      "venue_address": null,
+      "venue_source_url": "https://www.mapion.co.jp/phonebook/M04101/01206/0000KCRS_001pa/",
+      "venue_source_type": "official",
+      "venue_search_url": null,
+      "venue_access_alternatives": [
+        {
+          "station": "新富士",
+          "walk_min": 34,
+          "context": " 2024/4/20 - 正式名称は釧路市民文化会館。 コーチャンフォー釧路文化ホール大ホール の座席表 ... JR 新富士駅 徒歩 34分. キャパ・定員, 大ホール 1,524席小ホール ... コーチャンフォー釧路文化ホール・大ホール - ライブ部 ライブ部 https://www.livebu.com > hall コーチャンフォー釧路"
+        }
+      ],
+      "station_to_station_min": null,
+      "transfer_count": null,
+      "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E9%87%A7%E8%B7%AF&to=%E6%96%B0%E5%AF%8C%E5%A3%AB&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+      "total_access_min": null,
+      "access_display": "釧路駅まで徒歩1分",
+      "existing_access_estimate": "主要駅周辺から鉄道・バス・徒歩で移動",
+      "price_estimate": "12,500円(目安)",
+      "price_range_estimate": "約10,500~15,500円",
+      "plan_estimate": "素泊まり・スタンダード/セール対象の安い一般客室",
+      "room_type_estimate": "シングル・セミダブル・スタンダードダブル等の一般客室(1名利用)",
+      "cancellation_estimate": "プランごとに異なる通常は前日~当日から取消料が発生する場合が多く、早割・事前決済は返金不可の場合あり予約画面を優先",
+      "verification_status": "needs_review",
+      "warnings": [
+        "transit_parse_failed"
+      ],
+      "checked_at": "2026-08-07T17:54:02+09:00",
+      "hotel_parallel_evidence_type": "search_snippet",
+      "hotel_parallel_evidence": "約16,000件 1ページ目 JavaScriptが無効です。ブラウザの設定でJavaScriptを有効にしてください 釧路駅徒歩1分 、交通至便、自由な駐車と地元メニューの朝食 道東の経済、文化の中心地、釧路市。 釧路駅前バスターミナルに立地する交通アクセス抜群のホテルです。 もちろん駐車場も完備。 天然温泉 白鳥の湯 スーパーホテル釧路駅前",
+      "venue_parallel_evidence_type": "search_snippet",
+      "venue_parallel_evidence": " 2024/4/20 - 正式名称は釧路市民文化会館。 コーチャンフォー釧路文化ホール大ホール の座席表 ... JR 新富士駅 徒歩 34分. キャパ・定員, 大ホール 1,524席小ホール ... コーチャンフォー釧路文化ホール・大ホール - ライブ部 ライブ部 https://www.livebu.com > hall コーチャンフォー釧路",
+      "parallel_verified_at": "2026-08-07T21:28:23+09:00",
+      "needs_review_rechecked_at": "2026-08-07T21:28:23+09:00"
+    }
+  ]
+}
