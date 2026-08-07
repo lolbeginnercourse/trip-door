@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import json
 from pathlib import Path
-from collections import Counter
+from collections import Counter, defaultdict
 
 SRC = Path('assets/data/hotels.json')
 OUT = Path('research/generated')
@@ -26,7 +26,6 @@ if not candidates:
 
 collection_name, records = max(candidates, key=lambda kv: len(kv[1]))
 
-# Union of keys and simple type profile.
 key_counts = Counter()
 type_counts = {}
 for r in records:
@@ -34,18 +33,20 @@ for r in records:
         key_counts[k] += 1
         type_counts.setdefault(k, Counter())[type(v).__name__] += 1
 
+published = [r for r in records if r.get('isPublished', True)]
+unique_names = sorted({str(r.get('name','')).strip() for r in published if str(r.get('name','')).strip()})
+
 summary = {
     'source': str(SRC),
     'top_level_type': type(data).__name__,
     'candidate_collections': {k: len(v) for k, v in candidates},
     'selected_collection': collection_name,
     'record_count': len(records),
+    'published_record_count': len(published),
+    'unique_published_hotel_name_count': len(unique_names),
+    'unique_venue_id_count': len({r.get('venueId') for r in published if r.get('venueId')}),
     'keys': [
-        {
-            'key': k,
-            'present': key_counts[k],
-            'types': dict(type_counts[k]),
-        }
+        {'key': k, 'present': key_counts[k], 'types': dict(type_counts[k])}
         for k in sorted(key_counts)
     ],
     'sample_records': records[:3],
@@ -54,13 +55,11 @@ summary = {
     json.dumps(summary, ensure_ascii=False, indent=2), encoding='utf-8'
 )
 
-# One source record per line so the GitHub connector can fetch narrow line ranges.
 with (OUT / 'hotel_records.jsonl').open('w', encoding='utf-8') as f:
     for i, r in enumerate(records, 1):
         row = {'_row': i, **r}
         f.write(json.dumps(row, ensure_ascii=False, separators=(',', ':')) + '\n')
 
-# Create a compact key field inventory per row to find identifiers/name/venue/access fields.
 with (OUT / 'hotel_key_inventory.jsonl').open('w', encoding='utf-8') as f:
     for i, r in enumerate(records, 1):
         compact = {'_row': i}
@@ -73,9 +72,47 @@ with (OUT / 'hotel_key_inventory.jsonl').open('w', encoding='utf-8') as f:
                 if isinstance(v, (str, int, float, bool)) or v is None:
                     compact[k] = v
                 elif isinstance(v, (list, dict)):
-                    # Keep nested values only if modest in size.
                     s = json.dumps(v, ensure_ascii=False, separators=(',', ':'))
                     compact[k] = v if len(s) <= 3000 else f'<nested:{len(s)} chars>'
         f.write(json.dumps(compact, ensure_ascii=False, separators=(',', ':')) + '\n')
 
-print(f'Extracted {len(records)} records from {collection_name}')
+# Exact-name unique inventory. This preserves every venue relationship while giving
+# one research row per physical hotel name.
+by_name = defaultdict(list)
+for r in published:
+    name = str(r.get('name','')).strip()
+    if name:
+        by_name[name].append(r)
+
+with (OUT / 'unique_hotels.jsonl').open('w', encoding='utf-8') as f:
+    for i, name in enumerate(sorted(by_name), 1):
+        rs = by_name[name]
+        def uniq(key):
+            vals=[]
+            for r in rs:
+                v=r.get(key)
+                if v not in (None,'') and v not in vals:
+                    vals.append(v)
+            return vals
+        row = {
+            '_hotel_no': i,
+            'name': name,
+            'record_count': len(rs),
+            'ids': uniq('id'),
+            'genres': uniq('genre'),
+            'prefectures': uniq('prefecture'),
+            'areas': uniq('area'),
+            'stations': uniq('station'),
+            'venueIds': uniq('venueId'),
+            'venueLabels': uniq('venueLabel'),
+            'accessEstimates': uniq('accessEstimate'),
+            'priceEstimates': uniq('priceEstimate'),
+            'priceRangeEstimates': uniq('priceRangeEstimate'),
+            'hotelMapUrls': uniq('hotelMapUrl'),
+            'rakutenHotelNos': uniq('rakutenHotelNo'),
+            'jalanYadNos': uniq('jalanYadNo'),
+            'researchedAts': uniq('researchedAt'),
+        }
+        f.write(json.dumps(row, ensure_ascii=False, separators=(',', ':')) + '\n')
+
+print(f'Extracted {len(records)} relation records; {len(published)} published; {len(by_name)} unique published hotel names')
