@@ -6,6 +6,7 @@ on:
       - research/hotel-details-750-20260807
     paths:
       - scripts/extract_hotel_research_manifest.py
+      - scripts/test_hotel_research_network.py
       - .github/workflows/extract-hotel-research.yml
 
 permissions:
@@ -23,11 +24,13 @@ jobs:
           python-version: '3.12'
       - name: Extract source records
         run: python scripts/extract_hotel_research_manifest.py
+      - name: Probe research sources
+        run: python scripts/test_hotel_research_network.py
       - name: Commit generated manifest
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add research/generated/hotel_structure.json research/generated/hotel_records.jsonl research/generated/hotel_key_inventory.jsonl research/generated/unique_hotels.jsonl
+          git add research/generated/hotel_structure.json research/generated/hotel_records.jsonl research/generated/hotel_key_inventory.jsonl research/generated/unique_hotels.jsonl research/generated/network_probe.json
           if git diff --cached --quiet; then
             echo "No manifest changes"
             exit 0
