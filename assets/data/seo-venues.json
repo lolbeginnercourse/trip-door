@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "venues": [
+    {
+      "category": "stage",
+      "match": { "field": "venueId", "value": "t-st-galaxy-theatre" },
+      "slug": "tennozu-ginga-theatre",
+      "name": "天王洲 銀河劇場",
+      "prefecture": "東京都",
+      "city": "品川区",
+      "address": "東京都品川区東品川2-3-16 シーフォートスクエア内2階",
+      "nearestStation": "天王洲アイル駅",
+      "stationAccess": "東京モノレール 天王洲アイル駅から徒歩1分／りんかい線 天王洲アイル駅から徒歩5分",
+      "selectionNote": "終演後の移動時間と乗換回数を優先し、天王洲アイル周辺だけでなく乗換の少ないホテルも比較します。",
+      "sourceUrl": "https://www.gingeki.jp/access",
+      "indexable": true
+    },
+    {
+      "category": "stage",
+      "match": { "field": "venueId", "value": "t-st-meijiza" },
+      "slug": "meijiza",
+      "name": "明治座",
+      "prefecture": "東京都",
+      "city": "中央区",
+      "address": "東京都中央区日本橋浜町2丁目31番1号",
+      "nearestStation": "浜町駅",
+      "stationAccess": "都営新宿線 浜町駅 A2番出口すぐ／人形町駅から徒歩7分",
+      "selectionNote": "浜町・人形町周辺に加え、終演後に乗換を増やさず戻れるホテルを比較します。",
+      "sourceUrl": "https://www.meijiza.co.jp/access/",
+      "indexable": true
+    },
+    {
+      "category": "esports",
+      "match": { "field": "venues", "value": "makuhari" },
+      "slug": "makuhari-messe",
+      "name": "幕張メッセ",
+      "prefecture": "千葉県",
+      "city": "千葉市美浜区",
+      "address": "千葉県千葉市美浜区中瀬2-1",
+      "nearestStation": "海浜幕張駅",
+      "stationAccess": "JR京葉線 海浜幕張駅から徒歩約5分",
+      "selectionNote": "大型イベント終了後の混雑も考え、徒歩圏だけでなく移動の単純さと休息の取りやすさを比較します。",
+      "sourceUrl": "https://www.m-messe.co.jp/access/",
+      "indexable": true
+    }
+  ]
+}
