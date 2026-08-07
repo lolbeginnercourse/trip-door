@@ -1,0 +1,1128 @@
+[
+  {
+    "id": "stage-002-1",
+    "research_no": 4,
+    "hotel_name": "アワーズイン阪急",
+    "venue_name": "シアターH",
+    "hotel_nearest_station": "大井町",
+    "venue_nearest_station": "最寄",
+    "hotel_to_station_walk_min": 1,
+    "venue_station_to_venue_walk_min": 3,
+    "hotel_source_url": "https://www.oursinn-hankyu.co.jp/access/",
+    "venue_source_url": "https://www.bushikaku.net/expedition/venue/access/1400400/",
+    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E5%A4%A7%E4%BA%95%E7%94%BA&to=%E6%9C%80%E5%AF%84&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+    "warnings": [
+      "transit_parse_failed"
+    ]
+  },
+  {
+    "id": "stage-002-2",
+    "research_no": 5,
+    "hotel_name": "ヴィアイン品川大井町",
+    "venue_name": "シアターH",
+    "hotel_nearest_station": "大井町",
+    "venue_nearest_station": "最寄",
+    "hotel_to_station_walk_min": 2,
+    "venue_station_to_venue_walk_min": 3,
+    "hotel_source_url": "https://www.viainn.com/oimachi/access/#:~:text=JR%E5%A4%A7%E4%BA%95%E7%94%BA%E9%A7%85%E3%82%88%E3%82%8A%E5%BE%92%E6%AD%A93%E5%88%86&text=%E3%82%8A%E3%82%93%E3%81%8B%E3%81%84%E7%B7%9A%E3%80%8C%E5%A4%A7%E4%BA%95%E7%94%BA%E3%80%8D%E9%A7%85,%E5%88%86%E3%81%A7%E3%81%8A%E8%B6%8A%E3%81%97%E3%81%84%E3%81%9F%E3%81%A0%E3%81%91%E3%81%BE%E3%81%99%E3%80%82",
+    "venue_source_url": "https://www.bushikaku.net/expedition/venue/access/1400400/",
+    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E5%A4%A7%E4%BA%95%E7%94%BA&to=%E6%9C%80%E5%AF%84&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+    "warnings": [
+      "transit_parse_failed"
+    ]
+  },
+  {
+    "id": "stage-002-3",
+    "research_no": 6,
+    "hotel_name": "ホテルマイステイズプレミア大森",
+    "venue_name": "シアターH",
+    "hotel_nearest_station": "大森",
+    "venue_nearest_station": "最寄",
+    "hotel_to_station_walk_min": 5,
+    "venue_station_to_venue_walk_min": 3,
+    "hotel_source_url": "https://iconia.co.jp/location-hotel-mystays-premier-omori-tokyo",
+    "venue_source_url": "https://www.bushikaku.net/expedition/venue/access/1400400/",
+    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E5%A4%A7%E6%A3%AE&to=%E6%9C%80%E5%AF%84&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+    "warnings": [
+      "transit_parse_failed"
+    ]
+  },
+  {
+    "id": "stage-010-1",
+    "research_no": 28,
+    "hotel_name": "レム日比谷",
+    "venue_name": "日生劇場",
+    "hotel_nearest_station": "日比谷",
+    "venue_nearest_station": "千代田線・日比谷線・都営三田線日比谷",
+    "hotel_to_station_walk_min": 2,
+    "venue_station_to_venue_walk_min": 1,
+    "hotel_source_url": "https://www.hankyu-hotel.com/hotel/remm/hibiya/access#:~:text=%E6%9D%B1%E4%BA%AC%E3%83%A1%E3%83%88%E3%83%AD%E6%97%A5%E6%AF%94%E8%B0%B7%E7%B7%9A%E3%80%8C%E6%97%A5%E6%AF%94%E8%B0%B7,A5%E5%87%BA%E5%8F%A3%E5%BE%92%E6%AD%A91%E5%88%86",
+    "venue_source_url": "https://famifes.nissaytheatre.or.jp/access/",
+    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E6%97%A5%E6%AF%94%E8%B0%B7&to=%E5%8D%83%E4%BB%A3%E7%94%B0%E7%B7%9A%E3%83%BB%E6%97%A5%E6%AF%94%E8%B0%B7%E7%B7%9A%E3%83%BB%E9%83%BD%E5%96%B6%E4%B8%89%E7%94%B0%E7%B7%9A%E6%97%A5%E6%AF%94%E8%B0%B7&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+    "warnings": [
+      "transit_parse_failed",
+      "hotel_station_differs_from_existing"
+    ]
+  },
+  {
+    "id": "stage-010-2",
+    "research_no": 29,
+    "hotel_name": "銀座ベルビューホテル",
+    "venue_name": "日生劇場",
+    "hotel_nearest_station": "の",
+    "venue_nearest_station": "千代田線・日比谷線・都営三田線日比谷",
+    "hotel_to_station_walk_min": 3,
+    "venue_station_to_venue_walk_min": 1,
+    "hotel_source_url": "https://www.ginza-bellevue.com/access/#:~:text=%E9%8A%80%E5%BA%A7%E9%A7%85C%EF%BC%92%E3%83%BBC%EF%BC%93%E5%87%BA%E5%8F%A3,%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E3%81%97%E3%82%84%E3%81%99%E3%81%84%E3%83%AD%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%A7%E3%81%99%E3%80%82",
+    "venue_source_url": "https://famifes.nissaytheatre.or.jp/access/",
+    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E3%81%AE&to=%E5%8D%83%E4%BB%A3%E7%94%B0%E7%B7%9A%E3%83%BB%E6%97%A5%E6%AF%94%E8%B0%B7%E7%B7%9A%E3%83%BB%E9%83%BD%E5%96%B6%E4%B8%89%E7%94%B0%E7%B7%9A%E6%97%A5%E6%AF%94%E8%B0%B7&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+    "warnings": [
+      "transit_parse_failed",
+      "hotel_station_differs_from_existing"
+    ]
+  },
+  {
+    "id": "stage-010-3",
+    "research_no": 30,
+    "hotel_name": "ダイワロイネットホテル新橋",
+    "venue_name": "日生劇場",
+    "hotel_nearest_station": "新橋",
+    "venue_nearest_station": "千代田線・日比谷線・都営三田線日比谷",
+    "hotel_to_station_walk_min": 1,
+    "venue_station_to_venue_walk_min": 1,
+    "hotel_source_url": "https://www.daiwaroynet.jp/shinbashi/access/",
+    "venue_source_url": "https://famifes.nissaytheatre.or.jp/access/",
+    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E6%96%B0%E6%A9%8B&to=%E5%8D%83%E4%BB%A3%E7%94%B0%E7%B7%9A%E3%83%BB%E6%97%A5%E6%AF%94%E8%B0%B7%E7%B7%9A%E3%83%BB%E9%83%BD%E5%96%B6%E4%B8%89%E7%94%B0%E7%B7%9A%E6%97%A5%E6%AF%94%E8%B0%B7&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+    "warnings": [
+      "transit_parse_failed"
+    ]
+  },
+  {
+    "id": "stage-043-1",
+    "research_no": 127,
+    "hotel_name": "The OneFive Tokyo Shibuya",
+    "venue_name": "渋谷区文化総合センター大和田 さくらホール",
+    "hotel_nearest_station": "渋谷",
+    "venue_nearest_station": "さくらホールは渋谷",
+    "hotel_to_station_walk_min": 10,
+    "venue_station_to_venue_walk_min": 6,
+    "hotel_source_url": "https://onefivehotels.co.jp/hotels/theonefivetokyoshibuya",
+    "venue_source_url": "https://www.kaigi-select.com/search/room/detail/2030/",
+    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E6%B8%8B%E8%B0%B7&to=%E3%81%95%E3%81%8F%E3%82%89%E3%83%9B%E3%83%BC%E3%83%AB%E3%81%AF%E6%B8%8B%E8%B0%B7&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+    "warnings": [
+      "transit_parse_failed",
+      "hotel_station_differs_from_existing"
+    ]
+  },
+  {
+    "id": "stage-043-2",
+    "research_no": 128,
+    "hotel_name": "渋谷東武ホテル",
+    "venue_name": "渋谷区文化総合センター大和田 さくらホール",
+    "hotel_nearest_station": "渋谷",
+    "venue_nearest_station": "さくらホールは渋谷",
+    "hotel_to_station_walk_min": 7,
+    "venue_station_to_venue_walk_min": 6,
+    "hotel_source_url": "https://www.tobuhotel.co.jp/shibuya/",
+    "venue_source_url": "https://www.kaigi-select.com/search/room/detail/2030/",
+    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E6%B8%8B%E8%B0%B7&to=%E3%81%95%E3%81%8F%E3%82%89%E3%83%9B%E3%83%BC%E3%83%AB%E3%81%AF%E6%B8%8B%E8%B0%B7&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+    "warnings": [
+      "transit_parse_failed"
+    ]
+  },
+  {
+    "id": "stage-043-3",
+    "research_no": 129,
+    "hotel_name": "渋谷クレストンホテル",
+    "venue_name": "渋谷区文化総合センター大和田 さくらホール",
+    "hotel_nearest_station": "渋谷・神泉",
+    "venue_nearest_station": "さくらホールは渋谷",
+    "hotel_to_station_walk_min": 4,
+    "venue_station_to_venue_walk_min": 6,
+    "hotel_source_url": "https://hmihotelgroup.com/crestonhotel-shibuya/",
+    "venue_source_url": "https://www.kaigi-select.com/search/room/detail/2030/",
+    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E6%B8%8B%E8%B0%B7%E3%83%BB%E7%A5%9E%E6%B3%89&to=%E3%81%95%E3%81%8F%E3%82%89%E3%83%9B%E3%83%BC%E3%83%AB%E3%81%AF%E6%B8%8B%E8%B0%B7&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+    "warnings": [
+      "transit_parse_failed"
+    ]
+  },
+  {
+    "id": "stage-053-1",
+    "research_no": 157,
+    "hotel_name": "リッチモンドホテル東京武蔵野",
+    "venue_name": "武蔵野芸能劇場 小劇場",
+    "hotel_nearest_station": "三鷹",
+    "venue_nearest_station": "は三鷹",
+    "hotel_to_station_walk_min": 3,
+    "venue_station_to_venue_walk_min": 1,
+    "hotel_source_url": "http://richmondhotel.jp/musashino/access/",
+    "venue_source_url": "https://www.mapion.co.jp/phonebook/M04101/13203/0000MGGJ_001pa/",
+    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E4%B8%89%E9%B7%B9&to=%E3%81%AF%E4%B8%89%E9%B7%B9&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+    "warnings": [
+      "transit_parse_failed"
+    ]
+  },
+  {
+    "id": "stage-053-2",
+    "research_no": 158,
+    "hotel_name": "三鷹シティホテル",
+    "venue_name": "武蔵野芸能劇場 小劇場",
+    "hotel_nearest_station": "三鷹",
+    "venue_nearest_station": "は三鷹",
+    "hotel_to_station_walk_min": 5,
+    "venue_station_to_venue_walk_min": 1,
+    "hotel_source_url": "https://www.mitakacityhotel.jp/map",
+    "venue_source_url": "https://www.mapion.co.jp/phonebook/M04101/13203/0000MGGJ_001pa/",
+    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E4%B8%89%E9%B7%B9&to=%E3%81%AF%E4%B8%89%E9%B7%B9&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+    "warnings": [
+      "transit_parse_failed"
+    ]
+  },
+  {
+    "id": "stage-060-1",
+    "research_no": 178,
+    "hotel_name": "ビジネスホテル クレセント",
+    "venue_name": "なかのZERO 大ホール",
+    "hotel_nearest_station": "中野",
+    "venue_nearest_station": "路線",
+    "hotel_to_station_walk_min": 7,
+    "venue_station_to_venue_walk_min": 8,
+    "hotel_source_url": "https://x.com/h_cresc",
+    "venue_source_url": "https://www.sapientica.com/application/activities/analysis/map/01.html",
+    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E4%B8%AD%E9%87%8E&to=%E8%B7%AF%E7%B7%9A&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+    "warnings": [
+      "transit_parse_failed"
+    ]
+  },
+  {
+    "id": "stage-060-2",
+    "research_no": 179,
+    "hotel_name": "JR東日本ホテルメッツ 高円寺",
+    "venue_name": "なかのZERO 大ホール",
+    "hotel_nearest_station": "高円寺",
+    "venue_nearest_station": "路線",
+    "hotel_to_station_walk_min": 1,
+    "venue_station_to_venue_walk_min": 8,
+    "hotel_source_url": "https://www.hotelmets.jp/koenji/",
+    "venue_source_url": "https://www.sapientica.com/application/activities/analysis/map/01.html",
+    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E9%AB%98%E5%86%86%E5%AF%BA&to=%E8%B7%AF%E7%B7%9A&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+    "warnings": [
+      "transit_parse_failed"
+    ]
+  },
+  {
+    "id": "stage-060-3",
+    "research_no": 180,
+    "hotel_name": "ホテルルートイン東京阿佐ヶ谷",
+    "venue_name": "なかのZERO 大ホール",
+    "hotel_nearest_station": "南阿佐ヶ谷",
+    "venue_nearest_station": "路線",
+    "hotel_to_station_walk_min": 2,
+    "venue_station_to_venue_walk_min": 8,
+    "hotel_source_url": "https://www.route-inn.co.jp/hotel_list/tokyo/index_hotel_id_599/",
+    "venue_source_url": "https://www.sapientica.com/application/activities/analysis/map/01.html",
+    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E5%8D%97%E9%98%BF%E4%BD%90%E3%83%B6%E8%B0%B7&to=%E8%B7%AF%E7%B7%9A&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+    "warnings": [
+      "transit_parse_failed"
+    ]
+  },
+  {
+    "id": "stage-063-1",
+    "research_no": 187,
+    "hotel_name": "TOKIO's HOTEL",
+    "venue_name": "北とぴあ さくらホール",
+    "hotel_nearest_station": "王子",
+    "venue_nearest_station": "路線",
+    "hotel_to_station_walk_min": 1,
+    "venue_station_to_venue_walk_min": 2,
+    "hotel_source_url": "https://hotel-reviewn.com/hotel/16772/",
+    "venue_source_url": "https://www.sapientica.com/application/activities/analysis/map/24.html",
+    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E7%8E%8B%E5%AD%90&to=%E8%B7%AF%E7%B7%9A&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+    "warnings": [
+      "transit_parse_failed"
+    ]
+  },
+  {
+    "id": "stage-063-2",
+    "research_no": 188,
+    "hotel_name": "東横INN京浜東北線王子駅北口",
+    "venue_name": "北とぴあ さくらホール",
+    "hotel_nearest_station": "王子",
+    "venue_nearest_station": "路線",
+    "hotel_to_station_walk_min": 2,
+    "venue_station_to_venue_walk_min": 2,
+    "hotel_source_url": "https://www.toyoko-inn.com/search/detail/00280/",
+    "venue_source_url": "https://www.sapientica.com/application/activities/analysis/map/24.html",
+    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E7%8E%8B%E5%AD%90&to=%E8%B7%AF%E7%B7%9A&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+    "warnings": [
+      "transit_parse_failed"
+    ]
+  },
+  {
+    "id": "stage-063-3",
+    "research_no": 189,
+    "hotel_name": "JR東日本ホテルメッツ 赤羽",
+    "venue_name": "北とぴあ さくらホール",
+    "hotel_nearest_station": "赤羽",
+    "venue_nearest_station": "路線",
+    "hotel_to_station_walk_min": 1,
+    "venue_station_to_venue_walk_min": 2,
+    "hotel_source_url": "https://www.hotelmets.jp/akabane/#:~:text=01.%20%E9%A7%85%E8%BF%91%E3%81%AA%E7%AB%8B%E5%9C%B0,%E3%81%AB%E3%81%A8%E3%81%A6%E3%82%82%E4%BE%BF%E5%88%A9%E3%81%AA%E7%AB%8B%E5%9C%B0%E3%80%82",
+    "venue_source_url": "https://www.sapientica.com/application/activities/analysis/map/24.html",
+    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E8%B5%A4%E7%BE%BD&to=%E8%B7%AF%E7%B7%9A&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+    "warnings": [
+      "transit_parse_failed"
+    ]
+  },
+  {
+    "id": "stage-068-1",
+    "research_no": 202,
+    "hotel_name": "ホテル トレンド 浅草",
+    "venue_name": "浅草花劇場",
+    "hotel_nearest_station": "浅草",
+    "venue_nearest_station": "つくばエクスプレスの浅草",
+    "hotel_to_station_walk_min": 1,
+    "venue_station_to_venue_walk_min": 3,
+    "hotel_source_url": "https://hotel-trend.jp/asakusa/",
+    "venue_source_url": "https://www.hanayashiki-kagekijo.com/access/",
+    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E6%B5%85%E8%8D%89&to=%E3%81%A4%E3%81%8F%E3%81%B0%E3%82%A8%E3%82%AF%E3%82%B9%E3%83%97%E3%83%AC%E3%82%B9%E3%81%AE%E6%B5%85%E8%8D%89&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+    "warnings": [
+      "transit_parse_failed"
+    ]
+  },
+  {
+    "id": "stage-068-2",
+    "research_no": 203,
+    "hotel_name": "アパホテル〈浅草 田原町駅前〉",
+    "venue_name": "浅草花劇場",
+    "hotel_nearest_station": "田原町・浅草",
+    "venue_nearest_station": "つくばエクスプレスの浅草",
+    "hotel_to_station_walk_min": 1,
+    "venue_station_to_venue_walk_min": 3,
+    "hotel_source_url": "https://www.apahotel.com/hotel/syutoken/tokyo/asakusa-tawaramachi-ekimae/",
+    "venue_source_url": "https://www.hanayashiki-kagekijo.com/access/",
+    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E7%94%B0%E5%8E%9F%E7%94%BA%E3%83%BB%E6%B5%85%E8%8D%89&to=%E3%81%A4%E3%81%8F%E3%81%B0%E3%82%A8%E3%82%AF%E3%82%B9%E3%83%97%E3%83%AC%E3%82%B9%E3%81%AE%E6%B5%85%E8%8D%89&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+    "warnings": [
+      "transit_parse_failed"
+    ]
+  },
+  {
+    "id": "stage-068-3",
+    "research_no": 204,
+    "hotel_name": "ホテルウィングインターナショナルセレクト浅草駒形",
+    "venue_name": "浅草花劇場",
+    "hotel_nearest_station": "浅草・蔵前",
+    "venue_nearest_station": "つくばエクスプレスの浅草",
+    "hotel_to_station_walk_min": 4,
+    "venue_station_to_venue_walk_min": 3,
+    "hotel_source_url": "https://map.yahoo.co.jp/search?q=%22%E3%83%9B%E3%83%86%E3%83%AB%E3%82%A6%E3%82%A3%E3%83%B3%E3%82%B0%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%8A%E3%82%B7%E3%83%A7%E3%83%8A%E3%83%AB%E3%82%BB%E3%83%AC%E3%82%AF%E3%83%88%E6%B5%85%E8%8D%89%E9%A7%92%E5%BD%A2%22+%22%E6%B5%85%E8%8D%89%E3%83%BB%E8%94%B5%E5%89%8D%E9%A7%85%22+%E5%BE%92%E6%AD%A9+%E6%9D%B1%E4%BA%AC%E9%83%BD&maptype=basic&fr=sydd_p-locallist-default-header_lol-more_ttl&from_srv=search_web",
+    "venue_source_url": "https://www.hanayashiki-kagekijo.com/access/",
+    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E6%B5%85%E8%8D%89%E3%83%BB%E8%94%B5%E5%89%8D&to=%E3%81%A4%E3%81%8F%E3%81%B0%E3%82%A8%E3%82%AF%E3%82%B9%E3%83%97%E3%83%AC%E3%82%B9%E3%81%AE%E6%B5%85%E8%8D%89&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+    "warnings": [
+      "transit_parse_failed"
+    ]
+  },
+  {
+    "id": "stage-077-1",
+    "research_no": 229,
+    "hotel_name": "横浜桜木町ワシントンホテル",
+    "venue_name": "ぴあアリーナMM",
+    "hotel_nearest_station": "桜木町",
+    "venue_nearest_station": "ぴあアリーナMMに一番近い",
+    "hotel_to_station_walk_min": 1,
+    "venue_station_to_venue_walk_min": 7,
+    "hotel_source_url": "https://washington-hotels.jp/yokohama/",
+    "venue_source_url": "https://www.welcome.city.yokohama.jp/spot/details.php?bbid=835",
+    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E6%A1%9C%E6%9C%A8%E7%94%BA&to=%E3%81%B4%E3%81%82%E3%82%A2%E3%83%AA%E3%83%BC%E3%83%8AMM%E3%81%AB%E4%B8%80%E7%95%AA%E8%BF%91%E3%81%84&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+    "warnings": [
+      "transit_parse_failed"
+    ]
+  },
+  {
+    "id": "stage-077-2",
+    "research_no": 230,
+    "hotel_name": "ニューオータニイン横浜プレミアム",
+    "venue_name": "ぴあアリーナMM",
+    "hotel_nearest_station": "桜木町",
+    "venue_nearest_station": "ぴあアリーナMMに一番近い",
+    "hotel_to_station_walk_min": 1,
+    "venue_station_to_venue_walk_min": 7,
+    "hotel_source_url": "https://www.newotani-innyokohama.jp/access/",
+    "venue_source_url": "https://www.welcome.city.yokohama.jp/spot/details.php?bbid=835",
+    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E6%A1%9C%E6%9C%A8%E7%94%BA&to=%E3%81%B4%E3%81%82%E3%82%A2%E3%83%AA%E3%83%BC%E3%83%8AMM%E3%81%AB%E4%B8%80%E7%95%AA%E8%BF%91%E3%81%84&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+    "warnings": [
+      "transit_parse_failed"
+    ]
+  },
+  {
+    "id": "stage-077-3",
+    "research_no": 231,
+    "hotel_name": "相鉄フレッサイン 横浜桜木町",
+    "venue_name": "ぴあアリーナMM",
+    "hotel_nearest_station": "馬車道",
+    "venue_nearest_station": "ぴあアリーナMMに一番近い",
+    "hotel_to_station_walk_min": 1,
+    "venue_station_to_venue_walk_min": 7,
+    "hotel_source_url": "https://sotetsu-hotels.com/fresa-inn/sakuragicho/",
+    "venue_source_url": "https://www.welcome.city.yokohama.jp/spot/details.php?bbid=835",
+    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E9%A6%AC%E8%BB%8A%E9%81%93&to=%E3%81%B4%E3%81%82%E3%82%A2%E3%83%AA%E3%83%BC%E3%83%8AMM%E3%81%AB%E4%B8%80%E7%95%AA%E8%BF%91%E3%81%84&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+    "warnings": [
+      "transit_parse_failed"
+    ]
+  },
+  {
+    "id": "stage-079-1",
+    "research_no": 235,
+    "hotel_name": "横浜桜木町ワシントンホテル",
+    "venue_name": "KT Zepp Yokohama",
+    "hotel_nearest_station": "桜木町",
+    "venue_nearest_station": "パシフィコ横浜はみなとみらい",
+    "hotel_to_station_walk_min": 1,
+    "venue_station_to_venue_walk_min": 5,
+    "hotel_source_url": "https://washington-hotels.jp/yokohama/",
+    "venue_source_url": "https://map.yahoo.co.jp/v3/place/koNlw1YftBM",
+    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E6%A1%9C%E6%9C%A8%E7%94%BA&to=%E3%83%91%E3%82%B7%E3%83%95%E3%82%A3%E3%82%B3%E6%A8%AA%E6%B5%9C%E3%81%AF%E3%81%BF%E3%81%AA%E3%81%A8%E3%81%BF%E3%82%89%E3%81%84&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+    "warnings": [
+      "transit_parse_failed"
+    ]
+  },
+  {
+    "id": "stage-079-2",
+    "research_no": 236,
+    "hotel_name": "ニューオータニイン横浜プレミアム",
+    "venue_name": "KT Zepp Yokohama",
+    "hotel_nearest_station": "桜木町",
+    "venue_nearest_station": "パシフィコ横浜はみなとみらい",
+    "hotel_to_station_walk_min": 1,
+    "venue_station_to_venue_walk_min": 5,
+    "hotel_source_url": "https://www.newotani-innyokohama.jp/access/",
+    "venue_source_url": "https://map.yahoo.co.jp/v3/place/koNlw1YftBM",
+    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E6%A1%9C%E6%9C%A8%E7%94%BA&to=%E3%83%91%E3%82%B7%E3%83%95%E3%82%A3%E3%82%B3%E6%A8%AA%E6%B5%9C%E3%81%AF%E3%81%BF%E3%81%AA%E3%81%A8%E3%81%BF%E3%82%89%E3%81%84&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+    "warnings": [
+      "transit_parse_failed"
+    ]
+  },
+  {
+    "id": "stage-079-3",
+    "research_no": 237,
+    "hotel_name": "相鉄フレッサイン 横浜桜木町",
+    "venue_name": "KT Zepp Yokohama",
+    "hotel_nearest_station": "馬車道",
+    "venue_nearest_station": "パシフィコ横浜はみなとみらい",
+    "hotel_to_station_walk_min": 1,
+    "venue_station_to_venue_walk_min": 5,
+    "hotel_source_url": "https://sotetsu-hotels.com/fresa-inn/sakuragicho/",
+    "venue_source_url": "https://map.yahoo.co.jp/v3/place/koNlw1YftBM",
+    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E9%A6%AC%E8%BB%8A%E9%81%93&to=%E3%83%91%E3%82%B7%E3%83%95%E3%82%A3%E3%82%B3%E6%A8%AA%E6%B5%9C%E3%81%AF%E3%81%BF%E3%81%AA%E3%81%A8%E3%81%BF%E3%82%89%E3%81%84&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+    "warnings": [
+      "transit_parse_failed"
+    ]
+  },
+  {
+    "id": "stage-080-1",
+    "research_no": 238,
+    "hotel_name": "ホテルJALシティ関内 横浜",
+    "venue_name": "横浜BUNTAI",
+    "hotel_nearest_station": "日本大通り",
+    "venue_nearest_station": "関内駅・横浜市営地下鉄の伊勢佐木長者町",
+    "hotel_to_station_walk_min": 2,
+    "venue_station_to_venue_walk_min": 5,
+    "hotel_source_url": "https://www.kannai-yokohama.jalcity.co.jp/access/",
+    "venue_source_url": "https://1201.yokohama/yokohama-buntai-access/#:~:text=%E3%80%8C%E6%A8%AA%E6%B5%9CBUNTAI%E3%80%8DJR%E9%96%A2%E5%86%85%E9%A7%85,%E5%8D%97%E5%8F%A3%E3%80%8D%E3%82%92%E5%88%A9%E7%94%A8%E3%81%97%E3%81%BE%E3%81%99%E3%80%82&text=%E9%A7%85%E3%82%92%E5%87%BA%E3%81%A6%E5%B7%A6%E6%8A%98,%E3%81%9D%E3%81%AE%E3%81%BE%E3%81%BE%E7%9B%B4%E9%80%B2%E3%80%82&text=%E6%A8%AA%E6%B5%9CBUNTAI%E3%81%AB%E5%88%B0%E7%9D%80%E3%81%A7%E3%81%99%E3%80%82",
+    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E6%97%A5%E6%9C%AC%E5%A4%A7%E9%80%9A%E3%82%8A&to=%E9%96%A2%E5%86%85%E9%A7%85%E3%83%BB%E6%A8%AA%E6%B5%9C%E5%B8%82%E5%96%B6%E5%9C%B0%E4%B8%8B%E9%89%84%E3%81%AE%E4%BC%8A%E5%8B%A2%E4%BD%90%E6%9C%A8%E9%95%B7%E8%80%85%E7%94%BA&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+    "warnings": [
+      "transit_parse_failed"
+    ]
+  },
+  {
+    "id": "stage-080-2",
+    "research_no": 239,
+    "hotel_name": "コンフォートホテル横浜関内",
+    "venue_name": "横浜BUNTAI",
+    "hotel_nearest_station": "関内",
+    "venue_nearest_station": "関内駅・横浜市営地下鉄の伊勢佐木長者町",
+    "hotel_to_station_walk_min": 1,
+    "venue_station_to_venue_walk_min": 5,
+    "hotel_source_url": "https://www.welcome.city.yokohama.jp/hotel/detail.php?hotel_id=27",
+    "venue_source_url": "https://1201.yokohama/yokohama-buntai-access/#:~:text=%E3%80%8C%E6%A8%AA%E6%B5%9CBUNTAI%E3%80%8DJR%E9%96%A2%E5%86%85%E9%A7%85,%E5%8D%97%E5%8F%A3%E3%80%8D%E3%82%92%E5%88%A9%E7%94%A8%E3%81%97%E3%81%BE%E3%81%99%E3%80%82&text=%E9%A7%85%E3%82%92%E5%87%BA%E3%81%A6%E5%B7%A6%E6%8A%98,%E3%81%9D%E3%81%AE%E3%81%BE%E3%81%BE%E7%9B%B4%E9%80%B2%E3%80%82&text=%E6%A8%AA%E6%B5%9CBUNTAI%E3%81%AB%E5%88%B0%E7%9D%80%E3%81%A7%E3%81%99%E3%80%82",
+    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E9%96%A2%E5%86%85&to=%E9%96%A2%E5%86%85%E9%A7%85%E3%83%BB%E6%A8%AA%E6%B5%9C%E5%B8%82%E5%96%B6%E5%9C%B0%E4%B8%8B%E9%89%84%E3%81%AE%E4%BC%8A%E5%8B%A2%E4%BD%90%E6%9C%A8%E9%95%B7%E8%80%85%E7%94%BA&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+    "warnings": [
+      "transit_parse_failed"
+    ]
+  },
+  {
+    "id": "stage-080-3",
+    "research_no": 240,
+    "hotel_name": "ダイワロイネットホテル横浜公園",
+    "venue_name": "横浜BUNTAI",
+    "hotel_nearest_station": "関内",
+    "venue_nearest_station": "関内駅・横浜市営地下鉄の伊勢佐木長者町",
+    "hotel_to_station_walk_min": 7,
+    "venue_station_to_venue_walk_min": 5,
+    "hotel_source_url": "https://www.daiwaroynet.jp/yokohama-koen/access/",
+    "venue_source_url": "https://1201.yokohama/yokohama-buntai-access/#:~:text=%E3%80%8C%E6%A8%AA%E6%B5%9CBUNTAI%E3%80%8DJR%E9%96%A2%E5%86%85%E9%A7%85,%E5%8D%97%E5%8F%A3%E3%80%8D%E3%82%92%E5%88%A9%E7%94%A8%E3%81%97%E3%81%BE%E3%81%99%E3%80%82&text=%E9%A7%85%E3%82%92%E5%87%BA%E3%81%A6%E5%B7%A6%E6%8A%98,%E3%81%9D%E3%81%AE%E3%81%BE%E3%81%BE%E7%9B%B4%E9%80%B2%E3%80%82&text=%E6%A8%AA%E6%B5%9CBUNTAI%E3%81%AB%E5%88%B0%E7%9D%80%E3%81%A7%E3%81%99%E3%80%82",
+    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E9%96%A2%E5%86%85&to=%E9%96%A2%E5%86%85%E9%A7%85%E3%83%BB%E6%A8%AA%E6%B5%9C%E5%B8%82%E5%96%B6%E5%9C%B0%E4%B8%8B%E9%89%84%E3%81%AE%E4%BC%8A%E5%8B%A2%E4%BD%90%E6%9C%A8%E9%95%B7%E8%80%85%E7%94%BA&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+    "warnings": [
+      "transit_parse_failed",
+      "hotel_station_differs_from_existing"
+    ]
+  },
+  {
+    "id": "stage-085-1",
+    "research_no": 253,
+    "hotel_name": "メルキュール横須賀",
+    "venue_name": "横須賀芸術劇場",
+    "hotel_nearest_station": "汐入",
+    "venue_nearest_station": "京浜急行汐入",
+    "hotel_to_station_walk_min": 1,
+    "venue_station_to_venue_walk_min": 1,
+    "hotel_source_url": "https://www.kanagawa-kankou.or.jp/spot/7011",
+    "venue_source_url": "https://www.yokosuka-arts.or.jp/information/access/",
+    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E6%B1%90%E5%85%A5&to=%E4%BA%AC%E6%B5%9C%E6%80%A5%E8%A1%8C%E6%B1%90%E5%85%A5&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+    "warnings": [
+      "transit_parse_failed"
+    ]
+  },
+  {
+    "id": "stage-085-2",
+    "research_no": 254,
+    "hotel_name": "ホテルニューヨコスカ",
+    "venue_name": "横須賀芸術劇場",
+    "hotel_nearest_station": "横須賀中央",
+    "venue_nearest_station": "京浜急行汐入",
+    "hotel_to_station_walk_min": 5,
+    "venue_station_to_venue_walk_min": 1,
+    "hotel_source_url": "https://map.apahotel.com/map/160",
+    "venue_source_url": "https://www.yokosuka-arts.or.jp/information/access/",
+    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E6%A8%AA%E9%A0%88%E8%B3%80%E4%B8%AD%E5%A4%AE&to=%E4%BA%AC%E6%B5%9C%E6%80%A5%E8%A1%8C%E6%B1%90%E5%85%A5&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+    "warnings": [
+      "transit_parse_failed"
+    ]
+  },
+  {
+    "id": "stage-085-3",
+    "research_no": 255,
+    "hotel_name": "セントラルホテル横須賀",
+    "venue_name": "横須賀芸術劇場",
+    "hotel_nearest_station": "横須賀中央",
+    "venue_nearest_station": "京浜急行汐入",
+    "hotel_to_station_walk_min": 1,
+    "venue_station_to_venue_walk_min": 1,
+    "hotel_source_url": "https://www.instagram.com/central_hotel_yokosuka/",
+    "venue_source_url": "https://www.yokosuka-arts.or.jp/information/access/",
+    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E6%A8%AA%E9%A0%88%E8%B3%80%E4%B8%AD%E5%A4%AE&to=%E4%BA%AC%E6%B5%9C%E6%80%A5%E8%A1%8C%E6%B1%90%E5%85%A5&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+    "warnings": [
+      "transit_parse_failed"
+    ]
+  },
+  {
+    "id": "stage-107-1",
+    "research_no": 319,
+    "hotel_name": "ホテルニュー埼玉",
+    "venue_name": "さいたま市文化センター 大ホール",
+    "hotel_nearest_station": "南浦和",
+    "venue_nearest_station": "路線",
+    "hotel_to_station_walk_min": 1,
+    "venue_station_to_venue_walk_min": 7,
+    "hotel_source_url": "https://www.new-saitama.com/",
+    "venue_source_url": "https://www.mapion.co.jp/phonebook/M04101/11108/0000UWB1_001pa/",
+    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E5%8D%97%E6%B5%A6%E5%92%8C&to=%E8%B7%AF%E7%B7%9A&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+    "warnings": [
+      "transit_parse_failed"
+    ]
+  },
+  {
+    "id": "stage-107-2",
+    "research_no": 320,
+    "hotel_name": "JR東日本ホテルメッツ 浦和",
+    "venue_name": "さいたま市文化センター 大ホール",
+    "hotel_nearest_station": "浦和",
+    "venue_nearest_station": "路線",
+    "hotel_to_station_walk_min": 1,
+    "venue_station_to_venue_walk_min": 7,
+    "hotel_source_url": "https://www.hotelmets.jp/urawa/",
+    "venue_source_url": "https://www.mapion.co.jp/phonebook/M04101/11108/0000UWB1_001pa/",
+    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E6%B5%A6%E5%92%8C&to=%E8%B7%AF%E7%B7%9A&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+    "warnings": [
+      "transit_parse_failed"
+    ]
+  },
+  {
+    "id": "stage-107-3",
+    "research_no": 321,
+    "hotel_name": "浦和ワシントンホテル",
+    "venue_name": "さいたま市文化センター 大ホール",
+    "hotel_nearest_station": "浦和",
+    "venue_nearest_station": "路線",
+    "hotel_to_station_walk_min": 3,
+    "venue_station_to_venue_walk_min": 7,
+    "hotel_source_url": "https://washington-hotels.jp/urawa/page/notice.html#:~:text=%E6%B5%A6%E5%92%8C%E3%83%AF%E3%82%B7%E3%83%B3%E3%83%88%E3%83%B3%E3%83%9B%E3%83%86%E3%83%AB%E3%80%90%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88,%E9%A7%85%E8%A5%BF%E5%8F%A3%20%E5%BE%92%E6%AD%A93%E5%88%86",
+    "venue_source_url": "https://www.mapion.co.jp/phonebook/M04101/11108/0000UWB1_001pa/",
+    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E6%B5%A6%E5%92%8C&to=%E8%B7%AF%E7%B7%9A&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+    "warnings": [
+      "transit_parse_failed"
+    ]
+  },
+  {
+    "id": "stage-111-1",
+    "research_no": 331,
+    "hotel_name": "東横INN北戸田駅東口",
+    "venue_name": "戸田市文化会館",
+    "hotel_nearest_station": "北戸田",
+    "venue_nearest_station": "各",
+    "hotel_to_station_walk_min": 2,
+    "venue_station_to_venue_walk_min": 10,
+    "hotel_source_url": "https://www.toyoko-inn.com/search/detail/00343/",
+    "venue_source_url": "https://toda-zaidan.org/bunkakaikan/shisetsu_bk/access_bk/",
+    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E5%8C%97%E6%88%B8%E7%94%B0&to=%E5%90%84&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+    "warnings": [
+      "transit_parse_failed"
+    ]
+  },
+  {
+    "id": "stage-119-1",
+    "research_no": 355,
+    "hotel_name": "ダイワロイネットホテルつくば",
+    "venue_name": "ノバホール",
+    "hotel_nearest_station": "つくば",
+    "venue_nearest_station": "TXつくば",
+    "hotel_to_station_walk_min": 1,
+    "venue_station_to_venue_walk_min": 3,
+    "hotel_source_url": "https://www.daiwaroynet.jp/tsukuba/access/",
+    "venue_source_url": "https://www.ibarakiguide.jp/spot.php?mode=detail&code=956#:~:text=%E3%80%90%E9%9B%BB%E8%BB%8A%E3%80%91TX%E3%81%A4%E3%81%8F%E3%81%B0%E3%82%A8%E3%82%AF%E3%82%B9%E3%83%97%E3%83%AC%E3%82%B9%E3%81%A4%E3%81%8F%E3%81%B0,%E5%BA%83%E5%A0%B4%E5%87%BA%E5%8F%A3%E5%BE%92%E6%AD%A95%E5%88%86%E3%80%82",
+    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E3%81%A4%E3%81%8F%E3%81%B0&to=TX%E3%81%A4%E3%81%8F%E3%81%B0&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+    "warnings": [
+      "transit_parse_failed"
+    ]
+  },
+  {
+    "id": "stage-119-2",
+    "research_no": 356,
+    "hotel_name": "ホテル日航つくば",
+    "venue_name": "ノバホール",
+    "hotel_nearest_station": "つくば",
+    "venue_nearest_station": "TXつくば",
+    "hotel_to_station_walk_min": 2,
+    "venue_station_to_venue_walk_min": 3,
+    "hotel_source_url": "https://okura.com/ja/japan/tsukuba/hotel-nikko-tsukuba/",
+    "venue_source_url": "https://www.ibarakiguide.jp/spot.php?mode=detail&code=956#:~:text=%E3%80%90%E9%9B%BB%E8%BB%8A%E3%80%91TX%E3%81%A4%E3%81%8F%E3%81%B0%E3%82%A8%E3%82%AF%E3%82%B9%E3%83%97%E3%83%AC%E3%82%B9%E3%81%A4%E3%81%8F%E3%81%B0,%E5%BA%83%E5%A0%B4%E5%87%BA%E5%8F%A3%E5%BE%92%E6%AD%A95%E5%88%86%E3%80%82",
+    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E3%81%A4%E3%81%8F%E3%81%B0&to=TX%E3%81%A4%E3%81%8F%E3%81%B0&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+    "warnings": [
+      "transit_parse_failed"
+    ]
+  },
+  {
+    "id": "stage-119-3",
+    "research_no": 357,
+    "hotel_name": "ホテルJALシティつくば",
+    "venue_name": "ノバホール",
+    "hotel_nearest_station": "つくば",
+    "venue_nearest_station": "TXつくば",
+    "hotel_to_station_walk_min": 2,
+    "venue_station_to_venue_walk_min": 3,
+    "hotel_source_url": "https://www.tsukuba.hoteljalcity.com/",
+    "venue_source_url": "https://www.ibarakiguide.jp/spot.php?mode=detail&code=956#:~:text=%E3%80%90%E9%9B%BB%E8%BB%8A%E3%80%91TX%E3%81%A4%E3%81%8F%E3%81%B0%E3%82%A8%E3%82%AF%E3%82%B9%E3%83%97%E3%83%AC%E3%82%B9%E3%81%A4%E3%81%8F%E3%81%B0,%E5%BA%83%E5%A0%B4%E5%87%BA%E5%8F%A3%E5%BE%92%E6%AD%A95%E5%88%86%E3%80%82",
+    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E3%81%A4%E3%81%8F%E3%81%B0&to=TX%E3%81%A4%E3%81%8F%E3%81%B0&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+    "warnings": [
+      "transit_parse_failed"
+    ]
+  },
+  {
+    "id": "stage-123-1",
+    "research_no": 367,
+    "hotel_name": "天然温泉 妙義の湯 ドーミーイン前橋",
+    "venue_name": "昌賢学園まえばしホール 大ホール",
+    "hotel_nearest_station": "前橋",
+    "venue_nearest_station": "は前橋",
+    "hotel_to_station_walk_min": 2,
+    "venue_station_to_venue_walk_min": 5,
+    "hotel_source_url": "https://dormy-hotels.com/dormyinn/hotels/maebashi/service/#:~:text=%E3%83%89%E3%83%BC%E3%83%9F%E3%83%BC%E3%82%A4%E3%83%B3%E3%81%AE%E5%A4%9C%E9%B3%B4%E3%81%8D%E3%81%9D%E3%81%B0,%E3%81%9C%E3%81%B2%E3%81%8A%E5%8F%AC%E3%81%97%E4%B8%8A%E3%81%8C%E3%82%8A%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84%E3%81%BE%E3%81%9B%EF%BC%81",
+    "venue_source_url": "https://www.mapion.co.jp/phonebook/M04101/10201/0000MBK1_001pa/",
+    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E5%89%8D%E6%A9%8B&to=%E3%81%AF%E5%89%8D%E6%A9%8B&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+    "warnings": [
+      "transit_parse_failed"
+    ]
+  },
+  {
+    "id": "stage-123-2",
+    "research_no": 368,
+    "hotel_name": "コンフォートホテル前橋",
+    "venue_name": "昌賢学園まえばしホール 大ホール",
+    "hotel_nearest_station": "前橋",
+    "venue_nearest_station": "は前橋",
+    "hotel_to_station_walk_min": 2,
+    "venue_station_to_venue_walk_min": 5,
+    "hotel_source_url": "https://www.choice-hotels.jp/hotel/maebashi/access/#:~:text=%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E3%83%BB%E9%A7%90%E8%BB%8A%E5%A0%B4%20ACCESS%EF%BC%86PARKING&text=%E9%9B%BB%E8%BB%8A%E3%81%A7%E3%81%8A%E8%B6%8A%E3%81%97%E3%81%AE%E6%96%B9,I.C%E3%82%88%E3%82%8A%E7%B4%8415%E5%88%86%E3%80%82",
+    "venue_source_url": "https://www.mapion.co.jp/phonebook/M04101/10201/0000MBK1_001pa/",
+    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E5%89%8D%E6%A9%8B&to=%E3%81%AF%E5%89%8D%E6%A9%8B&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+    "warnings": [
+      "transit_parse_failed"
+    ]
+  },
+  {
+    "id": "stage-123-3",
+    "research_no": 369,
+    "hotel_name": "アパホテル〈前橋駅北〉",
+    "venue_name": "昌賢学園まえばしホール 大ホール",
+    "hotel_nearest_station": "前橋",
+    "venue_nearest_station": "は前橋",
+    "hotel_to_station_walk_min": 1,
+    "venue_station_to_venue_walk_min": 5,
+    "hotel_source_url": "https://www.apahotel.com/hotel/syutoken/gunma/maebashieki-kita/",
+    "venue_source_url": "https://www.mapion.co.jp/phonebook/M04101/10201/0000MBK1_001pa/",
+    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E5%89%8D%E6%A9%8B&to=%E3%81%AF%E5%89%8D%E6%A9%8B&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+    "warnings": [
+      "transit_parse_failed"
+    ]
+  },
+  {
+    "id": "stage-126-1",
+    "research_no": 376,
+    "hotel_name": "JRイン札幌北2条",
+    "venue_name": "札幌文化芸術劇場 hitaru",
+    "hotel_nearest_station": "札幌・大通",
+    "venue_nearest_station": "札駅から大通",
+    "hotel_to_station_walk_min": 2,
+    "venue_station_to_venue_walk_min": 10,
+    "hotel_source_url": "https://www.gutabi.jp/hotel/base/936#:~:text=%E5%9C%B0%E4%B8%8B%E9%89%84%E6%9D%B1%E8%B1%8A%E7%B7%9A%E3%81%AE%E3%81%95%E3%81%A3%E3%81%BD%E3%82%8D,%E3%83%93%E3%82%B8%E3%83%8D%E3%82%B9%E5%88%A9%E7%94%A8%E3%81%AB%E3%82%82%E4%BE%BF%E5%88%A9%EF%BC%81",
+    "venue_source_url": "https://www.bushikaku.net/expedition/venue/access/060097/",
+    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E6%9C%AD%E5%B9%8C%E3%83%BB%E5%A4%A7%E9%80%9A&to=%E6%9C%AD%E9%A7%85%E3%81%8B%E3%82%89%E5%A4%A7%E9%80%9A&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+    "warnings": [
+      "transit_parse_failed"
+    ]
+  },
+  {
+    "id": "stage-126-2",
+    "research_no": 377,
+    "hotel_name": "ザ ノット 札幌",
+    "venue_name": "札幌文化芸術劇場 hitaru",
+    "hotel_nearest_station": "大通・すすきの",
+    "venue_nearest_station": "札駅から大通",
+    "hotel_to_station_walk_min": 5,
+    "venue_station_to_venue_walk_min": 10,
+    "hotel_source_url": "https://ja.planetofhotels.com/ri-ben-/zha-huang-shi-/tao-house-di-xia-tie-karatu-bu-yue-30miao-zha-huang-da-tong-susukinoyi-zhi-tong-kong-gang-yaxiao-zun",
+    "venue_source_url": "https://www.bushikaku.net/expedition/venue/access/060097/",
+    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E5%A4%A7%E9%80%9A%E3%83%BB%E3%81%99%E3%81%99%E3%81%8D%E3%81%AE&to=%E6%9C%AD%E9%A7%85%E3%81%8B%E3%82%89%E5%A4%A7%E9%80%9A&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+    "warnings": [
+      "transit_parse_failed"
+    ]
+  },
+  {
+    "id": "stage-134-1",
+    "research_no": 400,
+    "hotel_name": "ANAクラウンプラザホテル釧路",
+    "venue_name": "コーチャンフォー釧路文化ホール 大ホール",
+    "hotel_nearest_station": "釧路",
+    "venue_nearest_station": "新富士",
+    "hotel_to_station_walk_min": 1,
+    "venue_station_to_venue_walk_min": 34,
+    "hotel_source_url": "https://www.anacpkushiro.com/access",
+    "venue_source_url": "https://www.mapion.co.jp/phonebook/M04101/01206/0000KCRS_001pa/",
+    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E9%87%A7%E8%B7%AF&to=%E6%96%B0%E5%AF%8C%E5%A3%AB&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+    "warnings": [
+      "transit_parse_failed"
+    ]
+  },
+  {
+    "id": "stage-134-2",
+    "research_no": 401,
+    "hotel_name": "コンフォートホテル釧路",
+    "venue_name": "コーチャンフォー釧路文化ホール 大ホール",
+    "hotel_nearest_station": "釧路",
+    "venue_nearest_station": "新富士",
+    "hotel_to_station_walk_min": 2,
+    "venue_station_to_venue_walk_min": 34,
+    "hotel_source_url": "https://www.choice-hotels.jp/hotel/kushiro/access/",
+    "venue_source_url": "https://www.mapion.co.jp/phonebook/M04101/01206/0000KCRS_001pa/",
+    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E9%87%A7%E8%B7%AF&to=%E6%96%B0%E5%AF%8C%E5%A3%AB&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+    "warnings": [
+      "transit_parse_failed"
+    ]
+  },
+  {
+    "id": "stage-134-3",
+    "research_no": 402,
+    "hotel_name": "スーパーホテル釧路駅前",
+    "venue_name": "コーチャンフォー釧路文化ホール 大ホール",
+    "hotel_nearest_station": "釧路",
+    "venue_nearest_station": "新富士",
+    "hotel_to_station_walk_min": 1,
+    "venue_station_to_venue_walk_min": 34,
+    "hotel_source_url": "https://www.superhotel.co.jp/s_hotels/kushiroekimae/",
+    "venue_source_url": "https://www.mapion.co.jp/phonebook/M04101/01206/0000KCRS_001pa/",
+    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E9%87%A7%E8%B7%AF&to=%E6%96%B0%E5%AF%8C%E5%A3%AB&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+    "warnings": [
+      "transit_parse_failed"
+    ]
+  },
+  {
+    "id": "stage-156-1",
+    "research_no": 466,
+    "hotel_name": "ホテルフォルツァ金沢",
+    "venue_name": "金沢歌劇座",
+    "hotel_nearest_station": "金沢",
+    "venue_nearest_station": "ＪＲ金沢",
+    "hotel_to_station_walk_min": 1,
+    "venue_station_to_venue_walk_min": 1,
+    "hotel_source_url": "https://www.hotelforza.jp/kanazawa/",
+    "venue_source_url": "https://www.hot-ishikawa.jp/spot/detail_4987.html",
+    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E9%87%91%E6%B2%A2&to=%EF%BC%AA%EF%BC%B2%E9%87%91%E6%B2%A2&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+    "warnings": [
+      "transit_parse_failed"
+    ]
+  },
+  {
+    "id": "stage-156-2",
+    "research_no": 467,
+    "hotel_name": "三井ガーデンホテル金沢",
+    "venue_name": "金沢歌劇座",
+    "hotel_nearest_station": "金沢",
+    "venue_nearest_station": "ＪＲ金沢",
+    "hotel_to_station_walk_min": 2,
+    "venue_station_to_venue_walk_min": 1,
+    "hotel_source_url": "https://www.gardenhotels.co.jp/kanazawa/access/",
+    "venue_source_url": "https://www.hot-ishikawa.jp/spot/detail_4987.html",
+    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E9%87%91%E6%B2%A2&to=%EF%BC%AA%EF%BC%B2%E9%87%91%E6%B2%A2&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+    "warnings": [
+      "transit_parse_failed"
+    ]
+  },
+  {
+    "id": "stage-156-3",
+    "research_no": 468,
+    "hotel_name": "東急ステイ金沢",
+    "venue_name": "金沢歌劇座",
+    "hotel_nearest_station": "金沢",
+    "venue_nearest_station": "ＪＲ金沢",
+    "hotel_to_station_walk_min": 1,
+    "venue_station_to_venue_walk_min": 1,
+    "hotel_source_url": "https://www.tokyustay.co.jp/news/docs/a6c28d9f014c22b97f5299acc8eceb0d1bf0a285.pdf",
+    "venue_source_url": "https://www.hot-ishikawa.jp/spot/detail_4987.html",
+    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E9%87%91%E6%B2%A2&to=%EF%BC%AA%EF%BC%B2%E9%87%91%E6%B2%A2&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+    "warnings": [
+      "transit_parse_failed"
+    ]
+  },
+  {
+    "id": "stage-187-1",
+    "research_no": 559,
+    "hotel_name": "ホテル阪急レスパイア大阪",
+    "venue_name": "梅田芸術劇場 メインホール",
+    "hotel_nearest_station": "大阪梅田",
+    "venue_nearest_station": "｢大阪梅田",
+    "hotel_to_station_walk_min": 3,
+    "venue_station_to_venue_walk_min": 3,
+    "hotel_source_url": "https://www.hankyu-hotel.com/hotel/respire/osaka",
+    "venue_source_url": "https://www.bushikaku.net/expedition/venue/access/5300290/",
+    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E5%A4%A7%E9%98%AA%E6%A2%85%E7%94%B0&to=%EF%BD%A2%E5%A4%A7%E9%98%AA%E6%A2%85%E7%94%B0&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+    "warnings": [
+      "transit_parse_failed"
+    ]
+  },
+  {
+    "id": "stage-187-2",
+    "research_no": 560,
+    "hotel_name": "ホテルインターゲート大阪 梅田",
+    "venue_name": "梅田芸術劇場 メインホール",
+    "hotel_nearest_station": "大阪梅田",
+    "venue_nearest_station": "｢大阪梅田",
+    "hotel_to_station_walk_min": 3,
+    "venue_station_to_venue_walk_min": 3,
+    "hotel_source_url": "https://www.intergatehotels.jp/osaka-umeda/facility/",
+    "venue_source_url": "https://www.bushikaku.net/expedition/venue/access/5300290/",
+    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E5%A4%A7%E9%98%AA%E6%A2%85%E7%94%B0&to=%EF%BD%A2%E5%A4%A7%E9%98%AA%E6%A2%85%E7%94%B0&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+    "warnings": [
+      "transit_parse_failed"
+    ]
+  },
+  {
+    "id": "stage-209-1",
+    "research_no": 625,
+    "hotel_name": "ANAクラウンプラザホテル神戸",
+    "venue_name": "AiiA 2.5 Theater Kobe",
+    "hotel_nearest_station": "新神戸",
+    "venue_nearest_station": "山麓",
+    "hotel_to_station_walk_min": 1,
+    "venue_station_to_venue_walk_min": 3,
+    "hotel_source_url": "https://www.anacrowneplaza-kobe.jp/access/",
+    "venue_source_url": "https://okepi.net/gmap/tt/1394",
+    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E6%96%B0%E7%A5%9E%E6%88%B8&to=%E5%B1%B1%E9%BA%93&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+    "warnings": [
+      "transit_parse_failed"
+    ]
+  },
+  {
+    "id": "stage-209-2",
+    "research_no": 626,
+    "hotel_name": "ホテルピエナ神戸",
+    "venue_name": "AiiA 2.5 Theater Kobe",
+    "hotel_nearest_station": "三宮・新神戸",
+    "venue_nearest_station": "山麓",
+    "hotel_to_station_walk_min": 9,
+    "venue_station_to_venue_walk_min": 3,
+    "hotel_source_url": "https://travel.guideme.jp/hotel_detail_214.html",
+    "venue_source_url": "https://okepi.net/gmap/tt/1394",
+    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E4%B8%89%E5%AE%AE%E3%83%BB%E6%96%B0%E7%A5%9E%E6%88%B8&to=%E5%B1%B1%E9%BA%93&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+    "warnings": [
+      "transit_parse_failed"
+    ]
+  },
+  {
+    "id": "stage-209-3",
+    "research_no": 627,
+    "hotel_name": "神戸北野ホテル",
+    "venue_name": "AiiA 2.5 Theater Kobe",
+    "hotel_nearest_station": "北野・三宮",
+    "venue_nearest_station": "山麓",
+    "hotel_to_station_walk_min": 5,
+    "venue_station_to_venue_walk_min": 3,
+    "hotel_source_url": "https://map.yahoo.co.jp/search?q=%22%E7%A5%9E%E6%88%B8%E5%8C%97%E9%87%8E%E3%83%9B%E3%83%86%E3%83%AB%22+%22%E5%8C%97%E9%87%8E%E3%83%BB%E4%B8%89%E5%AE%AE%E9%A7%85%22+%E5%BE%92%E6%AD%A9+%E5%85%B5%E5%BA%AB%E7%9C%8C&maptype=basic&fr=sydd_p-locallist-default-header_lol-more_ttl&from_srv=search_web",
+    "venue_source_url": "https://okepi.net/gmap/tt/1394",
+    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E5%8C%97%E9%87%8E%E3%83%BB%E4%B8%89%E5%AE%AE&to=%E5%B1%B1%E9%BA%93&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+    "warnings": [
+      "transit_parse_failed"
+    ]
+  },
+  {
+    "id": "stage-225-1",
+    "research_no": 673,
+    "hotel_name": "三井ガーデンホテル広島",
+    "venue_name": "広島文化学園HBGホール",
+    "hotel_nearest_station": "広島",
+    "venue_nearest_station": "HBGホールから広島",
+    "hotel_to_station_walk_min": 1,
+    "venue_station_to_venue_walk_min": 10,
+    "hotel_source_url": "https://d51498.com/hotel/822401131/%B9%AD%C5%E7%28%C3%E6%B6%E8%29&sort=-IT",
+    "venue_source_url": "https://h-bkk.jp/hall/",
+    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E5%BA%83%E5%B3%B6&to=HBG%E3%83%9B%E3%83%BC%E3%83%AB%E3%81%8B%E3%82%89%E5%BA%83%E5%B3%B6&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+    "warnings": [
+      "transit_parse_failed",
+      "hotel_station_differs_from_existing"
+    ]
+  },
+  {
+    "id": "stage-225-2",
+    "research_no": 674,
+    "hotel_name": "ダイワロイネットホテル広島",
+    "venue_name": "広島文化学園HBGホール",
+    "hotel_nearest_station": "広島・中区",
+    "venue_nearest_station": "HBGホールから広島",
+    "hotel_to_station_walk_min": 3,
+    "venue_station_to_venue_walk_min": 10,
+    "hotel_source_url": "https://www.daiwaroynet.jp/hiroshima/access/",
+    "venue_source_url": "https://h-bkk.jp/hall/",
+    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E5%BA%83%E5%B3%B6%E3%83%BB%E4%B8%AD%E5%8C%BA&to=HBG%E3%83%9B%E3%83%BC%E3%83%AB%E3%81%8B%E3%82%89%E5%BA%83%E5%B3%B6&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+    "warnings": [
+      "transit_parse_failed"
+    ]
+  },
+  {
+    "id": "stage-225-3",
+    "research_no": 675,
+    "hotel_name": "ホテルインターゲート広島",
+    "venue_name": "広島文化学園HBGホール",
+    "hotel_nearest_station": "広島",
+    "venue_nearest_station": "HBGホールから広島",
+    "hotel_to_station_walk_min": 3,
+    "venue_station_to_venue_walk_min": 10,
+    "hotel_source_url": "https://www.intergatehotels.jp/hiroshima/facility/",
+    "venue_source_url": "https://h-bkk.jp/hall/",
+    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E5%BA%83%E5%B3%B6&to=HBG%E3%83%9B%E3%83%BC%E3%83%AB%E3%81%8B%E3%82%89%E5%BA%83%E5%B3%B6&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+    "warnings": [
+      "transit_parse_failed",
+      "hotel_station_differs_from_existing"
+    ]
+  },
+  {
+    "id": "stage-228-1",
+    "research_no": 682,
+    "hotel_name": "呉阪急ホテル",
+    "venue_name": "呉信用金庫ホール",
+    "hotel_nearest_station": "呉",
+    "venue_nearest_station": "◇JR呉",
+    "hotel_to_station_walk_min": 1,
+    "venue_station_to_venue_walk_min": 7,
+    "hotel_source_url": "https://www.instagram.com/kurehankyu_hotel_official/",
+    "venue_source_url": "https://www.bushikaku.net/expedition/venue/access/7370010/",
+    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E5%91%89&to=%E2%97%87JR%E5%91%89&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+    "warnings": [
+      "transit_parse_failed"
+    ]
+  },
+  {
+    "id": "stage-228-2",
+    "research_no": 683,
+    "hotel_name": "コンフォートホテル呉",
+    "venue_name": "呉信用金庫ホール",
+    "hotel_nearest_station": "呉",
+    "venue_nearest_station": "◇JR呉",
+    "hotel_to_station_walk_min": 2,
+    "venue_station_to_venue_walk_min": 7,
+    "hotel_source_url": "https://www.choice-hotels.jp/hotel/kure/access/#:~:text=%E9%9B%BB%E8%BB%8A%E3%81%A7%E3%81%8A%E8%B6%8A%E3%81%97%E3%81%AE%E6%96%B9,IC%E3%82%88%E3%82%8A%E7%B4%845%E5%88%86%E3%80%82",
+    "venue_source_url": "https://www.bushikaku.net/expedition/venue/access/7370010/",
+    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E5%91%89&to=%E2%97%87JR%E5%91%89&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+    "warnings": [
+      "transit_parse_failed"
+    ]
+  },
+  {
+    "id": "stage-228-3",
+    "research_no": 684,
+    "hotel_name": "クレイトンベイホテル",
+    "venue_name": "呉信用金庫ホール",
+    "hotel_nearest_station": "呉",
+    "venue_nearest_station": "◇JR呉",
+    "hotel_to_station_walk_min": 15,
+    "venue_station_to_venue_walk_min": 7,
+    "hotel_source_url": "https://www.clayton-bay.jp/access/",
+    "venue_source_url": "https://www.bushikaku.net/expedition/venue/access/7370010/",
+    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E5%91%89&to=%E2%97%87JR%E5%91%89&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+    "warnings": [
+      "transit_parse_failed"
+    ]
+  },
+  {
+    "id": "stage-229-1",
+    "research_no": 685,
+    "hotel_name": "福山ニューキャッスルホテル",
+    "venue_name": "ふくやま芸術文化ホール リーデンローズ 大ホール",
+    "hotel_nearest_station": "福山",
+    "venue_nearest_station": "ＪＲ福山",
+    "hotel_to_station_walk_min": 1,
+    "venue_station_to_venue_walk_min": 2,
+    "hotel_source_url": "https://www.new-castle.net/",
+    "venue_source_url": "https://www.mapion.co.jp/phonebook/M04101/34207/0000RDR1_001pa/",
+    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E7%A6%8F%E5%B1%B1&to=%EF%BC%AA%EF%BC%B2%E7%A6%8F%E5%B1%B1&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+    "warnings": [
+      "transit_parse_failed"
+    ]
+  },
+  {
+    "id": "stage-229-2",
+    "research_no": 686,
+    "hotel_name": "ダイワロイネットホテル福山駅前",
+    "venue_name": "ふくやま芸術文化ホール リーデンローズ 大ホール",
+    "hotel_nearest_station": "福山",
+    "venue_nearest_station": "ＪＲ福山",
+    "hotel_to_station_walk_min": 1,
+    "venue_station_to_venue_walk_min": 2,
+    "hotel_source_url": "https://www.daiwaroynet.jp/fukuyama-ekimae/access/",
+    "venue_source_url": "https://www.mapion.co.jp/phonebook/M04101/34207/0000RDR1_001pa/",
+    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E7%A6%8F%E5%B1%B1&to=%EF%BC%AA%EF%BC%B2%E7%A6%8F%E5%B1%B1&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+    "warnings": [
+      "transit_parse_failed"
+    ]
+  },
+  {
+    "id": "stage-229-3",
+    "research_no": 687,
+    "hotel_name": "リッチモンドホテル福山駅前",
+    "venue_name": "ふくやま芸術文化ホール リーデンローズ 大ホール",
+    "hotel_nearest_station": "福山",
+    "venue_nearest_station": "ＪＲ福山",
+    "hotel_to_station_walk_min": 2,
+    "venue_station_to_venue_walk_min": 2,
+    "hotel_source_url": "http://richmondhotel.jp/fukuyama/access/",
+    "venue_source_url": "https://www.mapion.co.jp/phonebook/M04101/34207/0000RDR1_001pa/",
+    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E7%A6%8F%E5%B1%B1&to=%EF%BC%AA%EF%BC%B2%E7%A6%8F%E5%B1%B1&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+    "warnings": [
+      "transit_parse_failed"
+    ]
+  },
+  {
+    "id": "stage-232-1",
+    "research_no": 694,
+    "hotel_name": "ANAクラウンプラザホテル米子",
+    "venue_name": "米子コンベンションセンター BiG SHiP 多目的ホール",
+    "hotel_nearest_station": "米子",
+    "venue_nearest_station": "は米子",
+    "hotel_to_station_walk_min": 8,
+    "venue_station_to_venue_walk_min": 5,
+    "hotel_source_url": "https://www.instagram.com/anacrowneplazayonago/",
+    "venue_source_url": "https://www.mapion.co.jp/phonebook/M04101/31202/0000YONT_001pa/",
+    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E7%B1%B3%E5%AD%90&to=%E3%81%AF%E7%B1%B3%E5%AD%90&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+    "warnings": [
+      "transit_parse_failed"
+    ]
+  },
+  {
+    "id": "stage-232-2",
+    "research_no": 695,
+    "hotel_name": "グリーンリッチホテル米子駅前",
+    "venue_name": "米子コンベンションセンター BiG SHiP 多目的ホール",
+    "hotel_nearest_station": "米子",
+    "venue_nearest_station": "は米子",
+    "hotel_to_station_walk_min": 3,
+    "venue_station_to_venue_walk_min": 5,
+    "hotel_source_url": "https://greenrichhotels.jp/yonago/",
+    "venue_source_url": "https://www.mapion.co.jp/phonebook/M04101/31202/0000YONT_001pa/",
+    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E7%B1%B3%E5%AD%90&to=%E3%81%AF%E7%B1%B3%E5%AD%90&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+    "warnings": [
+      "transit_parse_failed"
+    ]
+  },
+  {
+    "id": "stage-232-3",
+    "research_no": 696,
+    "hotel_name": "東横INN米子駅前",
+    "venue_name": "米子コンベンションセンター BiG SHiP 多目的ホール",
+    "hotel_nearest_station": "米子",
+    "venue_nearest_station": "は米子",
+    "hotel_to_station_walk_min": 2,
+    "venue_station_to_venue_walk_min": 5,
+    "hotel_source_url": "https://www.toyoko-inn.com/search/detail/00161/",
+    "venue_source_url": "https://www.mapion.co.jp/phonebook/M04101/31202/0000YONT_001pa/",
+    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E7%B1%B3%E5%AD%90&to=%E3%81%AF%E7%B1%B3%E5%AD%90&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+    "warnings": [
+      "transit_parse_failed"
+    ]
+  },
+  {
+    "id": "stage-250-1",
+    "research_no": 748,
+    "hotel_name": "ホテル コレクティブ",
+    "venue_name": "那覇文化芸術劇場なはーと 大劇場",
+    "hotel_nearest_station": "国際通り",
+    "venue_nearest_station": "県庁前",
+    "hotel_to_station_walk_min": 10,
+    "venue_station_to_venue_walk_min": 6,
+    "hotel_source_url": "https://doubletree-naha.hiltonjapan.co.jp/info#:~:text=%E3%82%B7%E3%83%A7%E3%83%83%E3%83%94%E3%83%B3%E3%82%B0%E3%82%84%E3%81%8A%E9%A3%9F%E4%BA%8B%E3%82%92,%E3%81%AB%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E3%81%8C%E3%81%A7%E3%81%8D%E3%81%BE%E3%81%99%E3%80%82",
+    "venue_source_url": "https://www.mapion.co.jp/phonebook/M04101/47201/0000NBG1_001pa/",
+    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E5%9B%BD%E9%9A%9B%E9%80%9A%E3%82%8A&to=%E7%9C%8C%E5%BA%81%E5%89%8D&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+    "warnings": [
+      "transit_parse_failed"
+    ]
+  },
+  {
+    "id": "stage-250-2",
+    "research_no": 749,
+    "hotel_name": "ダイワロイネットホテル那覇国際通り",
+    "venue_name": "那覇文化芸術劇場なはーと 大劇場",
+    "hotel_nearest_station": "牧志",
+    "venue_nearest_station": "県庁前",
+    "hotel_to_station_walk_min": 1,
+    "venue_station_to_venue_walk_min": 6,
+    "hotel_source_url": "https://www.daiwaroynet.jp/naha-kokusaidori/access/",
+    "venue_source_url": "https://www.mapion.co.jp/phonebook/M04101/47201/0000NBG1_001pa/",
+    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E7%89%A7%E5%BF%97&to=%E7%9C%8C%E5%BA%81%E5%89%8D&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+    "warnings": [
+      "transit_parse_failed"
+    ]
+  },
+  {
+    "id": "stage-250-3",
+    "research_no": 750,
+    "hotel_name": "ホテルグレイスリー那覇",
+    "venue_name": "那覇文化芸術劇場なはーと 大劇場",
+    "hotel_nearest_station": "国際通り",
+    "venue_nearest_station": "県庁前",
+    "hotel_to_station_walk_min": 1,
+    "venue_station_to_venue_walk_min": 6,
+    "hotel_source_url": "https://ranrantour.jp/hotel/47grc/#:~:text=%E3%82%86%E3%81%84%E3%83%AC%E3%83%BC%E3%83%AB%E7%9C%8C%E5%BA%81%E5%89%8D%E9%A7%85,%E3%81%AE%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E6%8A%9C%E7%BE%A4%E3%81%AA%E3%83%9B%E3%83%86%E3%83%AB%E3%80%82",
+    "venue_source_url": "https://www.mapion.co.jp/phonebook/M04101/47201/0000NBG1_001pa/",
+    "transit_source_url": "https://transit.yahoo.co.jp/search/result?from=%E5%9B%BD%E9%9A%9B%E9%80%9A%E3%82%8A&to=%E7%9C%8C%E5%BA%81%E5%89%8D&type=1&ticket=ic&y=2026&m=08&d=07&hh=12&m1=0&m2=0",
+    "warnings": [
+      "transit_parse_failed"
+    ]
+  }
+]
