@@ -1,0 +1,77 @@
+name: SEO fix generator idempotence
+
+on:
+  push:
+    branches:
+      - agent/seo-static-pages
+    paths:
+      - ".github/workflows/seo-fix-idempotence.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout work branch
+        uses: actions/checkout@v4
+        with:
+          ref: agent/seo-static-pages
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Patch idempotent top-page link handling
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p = Path('scripts/build-seo-pages.mjs')
+          s = p.read_text(encoding='utf-8')
+          old = '''async function patchTopPage() {
+            const file = path.join(ROOT, "index.html");
+            const original = await fs.readFile(file, "utf8");
+            const stageMatches = (original.match(/href="\\/\\?category=stage"/g) || []).length;
+            const esportsMatches = (original.match(/href="\\/\\?category=esports"/g) || []).length;
+            if (!stageMatches || !esportsMatches) throw new Error("Expected category query links were not found in index.html");
+            const updated = original
+              .replaceAll('href="/?category=stage"', 'href="/stage/"')
+              .replaceAll('href="/?category=esports"', 'href="/esports/"');
+            await fs.writeFile(file, updated, "utf8");
+            return { stageMatches, esportsMatches };
+          }
+          '''
+          new = '''async function patchTopPage() {
+            const file = path.join(ROOT, "index.html");
+            const original = await fs.readFile(file, "utf8");
+            const oldStageMatches = (original.match(/href="\\/\\?category=stage"/g) || []).length;
+            const oldEsportsMatches = (original.match(/href="\\/\\?category=esports"/g) || []).length;
+            const staticStageMatches = (original.match(/href="\\/stage\\/"/g) || []).length;
+            const staticEsportsMatches = (original.match(/href="\\/esports\\/"/g) || []).length;
+            if (!oldStageMatches && !staticStageMatches) throw new Error("No stage category links were found in index.html");
+            if (!oldEsportsMatches && !staticEsportsMatches) throw new Error("No esports category links were found in index.html");
+            const updated = original
+              .replaceAll('href="/?category=stage"', 'href="/stage/"')
+              .replaceAll('href="/?category=esports"', 'href="/esports/"');
+            await fs.writeFile(file, updated, "utf8");
+            return {
+              oldStageMatches,
+              oldEsportsMatches,
+              staticStageMatchesAfter: (updated.match(/href="\\/stage\\/"/g) || []).length,
+              staticEsportsMatchesAfter: (updated.match(/href="\\/esports\\/"/g) || []).length
+            };
+          }
+          '''
+          if old not in s:
+              raise SystemExit('Expected patchTopPage block not found; refusing to patch')
+          p.write_text(s.replace(old, new, 1), encoding='utf-8')
+          PY
+
+      - name: Commit patch
+        run: |
+          git add scripts/build-seo-pages.mjs
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Make SEO generator idempotent [seo-fix]"
+          git push origin HEAD:agent/seo-static-pages
