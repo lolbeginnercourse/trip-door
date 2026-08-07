@@ -1,0 +1,24 @@
+{
+  "generatedAt": "2026-08-08T02:49:32+09:00",
+  "researchRows": 750,
+  "researchUniqueIds": 750,
+  "researchStatusCounts": {
+    "verified": 672,
+    "partial": 78
+  },
+  "productionRecords": 750,
+  "productionUniqueIds": 750,
+  "coverageCounts": {
+    "complete": 672,
+    "limited": 78
+  },
+  "availabilityCounts": {
+    "active": 749,
+    "closed": 1
+  },
+  "recordsWithHeroMinutes": 641,
+  "recordsWithSources": 750,
+  "missingBaseHotelIds": [],
+  "internalFieldsExcluded": true,
+  "complete": true
+}
