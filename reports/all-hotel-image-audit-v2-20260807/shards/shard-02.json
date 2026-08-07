@@ -2,7 +2,7 @@
   "schemaVersion": 3,
   "complete": true,
   "phase": "retry",
-  "generatedAt": "2026-08-06T23:37:46.936Z",
+  "generatedAt": "2026-08-07T05:01:27.309Z",
   "shardIndex": 2,
   "shardSize": 25,
   "start": 50,
@@ -319,30 +319,24 @@
       ],
       "duplicateGroupSize": 3,
       "image": {
-        "httpStatus": 404,
-        "status": "ambiguous",
-        "hasImage": false,
-        "hotelNo": "",
-        "hotelName": "",
-        "matchedBy": "",
-        "matchEvidence": [],
-        "transportError": "",
-        "rawExcerpt": "",
-        "attemptsUsed": 1
-      },
-      "affiliate": {
         "httpStatus": 200,
-        "hasRakuten": false,
-        "rakutenHotelNo": "",
-        "providers": [],
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "41708",
+        "hotelName": "東急ステイ渋谷 (道玄坂上)",
+        "matchedBy": "hotelNoOverride",
+        "matchEvidence": [
+          "override"
+        ],
         "transportError": "",
         "rawExcerpt": "",
         "attemptsUsed": 1
       },
-      "causeCode": "multiple_candidates",
+      "affiliate": null,
+      "causeCode": "matched",
       "retry": {
         "attempted": true,
-        "attemptedAt": "2026-08-06T23:35:31.434Z",
+        "attemptedAt": "2026-08-07T04:52:39.077Z",
         "previousCauseCode": "multiple_candidates",
         "previousHasImage": false,
         "attemptsPerRequest": 5
@@ -429,8 +423,8 @@
       ],
       "duplicateGroupSize": 5,
       "image": {
-        "httpStatus": 404,
-        "status": "not_found",
+        "httpStatus": 502,
+        "status": "502",
         "hasImage": false,
         "hotelNo": "",
         "hotelName": "",
@@ -438,7 +432,7 @@
         "matchEvidence": [],
         "transportError": "",
         "rawExcerpt": "",
-        "attemptsUsed": 1
+        "attemptsUsed": 5
       },
       "affiliate": {
         "httpStatus": 200,
@@ -449,10 +443,10 @@
         "rawExcerpt": "",
         "attemptsUsed": 1
       },
-      "causeCode": "not_found_by_current_rakuten_search",
+      "causeCode": "temporary_upstream_error",
       "retry": {
         "attempted": true,
-        "attemptedAt": "2026-08-06T23:35:35.577Z",
+        "attemptedAt": "2026-08-07T04:57:00.450Z",
         "previousCauseCode": "not_found_by_current_rakuten_search",
         "previousHasImage": false,
         "attemptsPerRequest": 5
@@ -594,30 +588,24 @@
       ],
       "duplicateGroupSize": 2,
       "image": {
-        "httpStatus": 404,
-        "status": "not_found",
-        "hasImage": false,
-        "hotelNo": "",
-        "hotelName": "",
-        "matchedBy": "",
-        "matchEvidence": [],
-        "transportError": "",
-        "rawExcerpt": "",
-        "attemptsUsed": 3
-      },
-      "affiliate": {
         "httpStatus": 200,
-        "hasRakuten": false,
-        "rakutenHotelNo": "",
-        "providers": [],
+        "status": "matched",
+        "hasImage": true,
+        "hotelNo": "167724",
+        "hotelName": "ザ ノット 東京新宿",
+        "matchedBy": "hotelNoOverride",
+        "matchEvidence": [
+          "override"
+        ],
         "transportError": "",
         "rawExcerpt": "",
         "attemptsUsed": 1
       },
-      "causeCode": "not_found_by_current_rakuten_search",
+      "affiliate": null,
+      "causeCode": "matched",
       "retry": {
         "attempted": true,
-        "attemptedAt": "2026-08-06T23:37:43.552Z",
+        "attemptedAt": "2026-08-07T04:57:02.511Z",
         "previousCauseCode": "not_found_by_current_rakuten_search",
         "previousHasImage": false,
         "attemptsPerRequest": 5
@@ -645,8 +633,8 @@
       ],
       "duplicateGroupSize": 9,
       "image": {
-        "httpStatus": 404,
-        "status": "not_found",
+        "httpStatus": 502,
+        "status": "502",
         "hasImage": false,
         "hotelNo": "",
         "hotelName": "",
@@ -654,7 +642,7 @@
         "matchEvidence": [],
         "transportError": "",
         "rawExcerpt": "",
-        "attemptsUsed": 1
+        "attemptsUsed": 5
       },
       "affiliate": {
         "httpStatus": 200,
@@ -665,10 +653,10 @@
         "rawExcerpt": "",
         "attemptsUsed": 1
       },
-      "causeCode": "not_found_by_current_rakuten_search",
+      "causeCode": "temporary_upstream_error",
       "retry": {
         "attempted": true,
-        "attemptedAt": "2026-08-06T23:37:46.936Z",
+        "attemptedAt": "2026-08-07T05:01:27.309Z",
         "previousCauseCode": "not_found_by_current_rakuten_search",
         "previousHasImage": false,
         "attemptsPerRequest": 5
