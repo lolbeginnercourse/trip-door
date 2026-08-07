@@ -1,0 +1,22 @@
+{
+  "duckduckgo": {
+    "status": 202,
+    "length": 14325,
+    "prefix": "<!-- <!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\"> -->\n<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n    <link rel=\"canonical\" href=\"https://duckduckgo.com/\">\n    <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=1\">\n    <meta name=\"referrer\" content=\"origin\">\n    <title>\n        DuckDuckGo\n    </title>\n    <link rel=\"pre"
+  },
+  "google": {
+    "status": 200,
+    "length": 90722,
+    "prefix": "<!DOCTYPE html><html lang=\"en\"><head><title>Google Search</title><style>body{background-color:#fff}</style><script nonce=\"s239cVDc_U0oiRjoRloAYw\">window.google = window.google || {};window.google.c = window.google.c || {cap:0};</script></head><body><noscript><style>table,div,span,p{display:none}</style><meta content=\"0;url=/httpservice/retry/enablejs?sei=7H91aofyO4XrmLQPkNXnsAo\" http-equiv=\"refresh\"><div style=\"display:block\">Please click <a href=\"/httpservice/retry/enablejs?sei=7H91aofyO4XrmLQP"
+  },
+  "yahoo_jp": {
+    "status": 200,
+    "length": 19758,
+    "prefix": "<!DOCTYPE html><html lang=\"ja\" prefix=\"og: https://ogp.me/ns#\"><head><meta name=\"description\" content=\"Yahoo!検索による「スーパーホテル品川 新馬場 最寄り駅 徒歩 公式」のウェブ検索結果です。\"/><meta name=\"keywords\" content=\"スーパーホテル品川 新馬場 最寄り駅 徒歩 公式\"/><meta name=\"robots\" content=\"nofollow,noarchive\"/><meta name=\"viewport\" content=\"initial-scale=1.0, maximum-scale=5.0, width=device-width, user-scalable=yes\"/><title>「スーパーホテル品川 新馬場 最寄り駅 徒歩 公式」の検索結果 - Yahoo!検索</title><meta name=\"format-detection\" content=\"telephone=no, address=no\"/><meta "
+  },
+  "nominatim": {
+    "status": 200,
+    "length": 2,
+    "prefix": "[]"
+  }
+}
