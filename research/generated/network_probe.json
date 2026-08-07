@@ -1,22 +1,87 @@
 {
-  "duckduckgo": {
-    "status": 202,
-    "length": 14325,
-    "prefix": "<!-- <!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\"> -->\n<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n    <link rel=\"canonical\" href=\"https://duckduckgo.com/\">\n    <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=1\">\n    <meta name=\"referrer\" content=\"origin\">\n    <title>\n        DuckDuckGo\n    </title>\n    <link rel=\"pre"
-  },
-  "google": {
-    "status": 200,
-    "length": 90722,
-    "prefix": "<!DOCTYPE html><html lang=\"en\"><head><title>Google Search</title><style>body{background-color:#fff}</style><script nonce=\"s239cVDc_U0oiRjoRloAYw\">window.google = window.google || {};window.google.c = window.google.c || {cap:0};</script></head><body><noscript><style>table,div,span,p{display:none}</style><meta content=\"0;url=/httpservice/retry/enablejs?sei=7H91aofyO4XrmLQPkNXnsAo\" http-equiv=\"refresh\"><div style=\"display:block\">Please click <a href=\"/httpservice/retry/enablejs?sei=7H91aofyO4XrmLQP"
-  },
   "yahoo_jp": {
     "status": 200,
-    "length": 19758,
-    "prefix": "<!DOCTYPE html><html lang=\"ja\" prefix=\"og: https://ogp.me/ns#\"><head><meta name=\"description\" content=\"Yahoo!検索による「スーパーホテル品川 新馬場 最寄り駅 徒歩 公式」のウェブ検索結果です。\"/><meta name=\"keywords\" content=\"スーパーホテル品川 新馬場 最寄り駅 徒歩 公式\"/><meta name=\"robots\" content=\"nofollow,noarchive\"/><meta name=\"viewport\" content=\"initial-scale=1.0, maximum-scale=5.0, width=device-width, user-scalable=yes\"/><title>「スーパーホテル品川 新馬場 最寄り駅 徒歩 公式」の検索結果 - Yahoo!検索</title><meta name=\"format-detection\" content=\"telephone=no, address=no\"/><meta "
+    "length": 599741,
+    "selected_links": [],
+    "time_matches": [],
+    "text_sample": "「スーパーホテル品川 新馬場 最寄り駅 徒歩 公式」の検索結果 - Yahoo!検索 var TLDataContext = { ual : { pageview : { opttype : 'pc', content_id : '', id_type : '', nopv : 'false', mtestid : '', ss_join_id : '505ae7b7-4cc4-4d28-9328-2b93b5a1119e', ss_join_id_type : '', hierarchy_id : '2114736003' }, search : { opttype : 'pc', result_query : 'スーパーホテル品川 新馬場 最寄り駅 徒歩 公式', origin_query : 'スーパーホテル品川 新馬場 最寄り駅 徒歩 公式', current_page : '1', ss_join_id : '505ae7b7-4cc4-4d28-9328-2b93b5a1119e', ss_join_id_type : '', entities : [{id: '29188391', score: '-0.32301864'},{id: '28161598', score: '-0.96537906'},{id: '28102748', score: '-1.1112671'}], mtestid : '', page_type: 'result' } } }; body{-webkit-text-size-adjust:100%}article,aside,audio,blockquote,body,dd,dialog,div,dl,dt,fieldset,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,input,li,mark,menu,nav,ol,p,pre,section,time,ul,video{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-weight:400;font-size:100%}ol li,ul li{list-style:none}article,aside,details,dialog,figcaption,figure,footer,header,hgroup,nav,section{display:block}table{margin:0;padding:0;border-collapse:collapse;border-spacing:0}caption{text-align:left}code,del,input,ins,kbd,pre,samp,select,table,textarea,var{font-size:100%}address,cite,del,dfn,em,ins,samp,th,var{font-style:normal;font-weight:400}a img{border:0}fieldset{border:none}html{font-size:10px}body{font-family:Arial,Hiragino Kaku Gothic ProN,sans-serif;word-wrap:break-word;overflow-wrap:break-word}[tabindex]{-webkit-tap-highlight-color:rgba(0,0,0,0)}a:li"
   },
-  "nominatim": {
+  "transit_yahoo": {
     "status": 200,
-    "length": 2,
-    "prefix": "[]"
+    "length": 77132,
+    "selected_links": [
+      {
+        "href": "/",
+        "text": "乗換案内"
+      },
+      {
+        "href": "/search/result/%E6%96%B0%E9%A6%AC%E5%A0%B4-%E5%A4%A9%E7%8E%8B%E6%B4%B2%E3%82%A2%E3%82%A4%E3%83%AB",
+        "text": "乗換案内 新馬場から天王洲アイル"
+      },
+      {
+        "href": "/search/result?from=%E6%96%B0%E9%A6%AC%E5%A0%B4&to=%E5%A4%A9%E7%8E%8B%E6%B4%B2%E3%82%A2%E3%82%A4%E3%83%AB&type=1&ticket=ic&s=2&ws=3&expkind=1&y=2026&m=08&d=07&hh=15&m1=5&m2=0",
+        "text": "楽乗換回数順"
+      },
+      {
+        "href": "/station/22752",
+        "text": "新馬場"
+      },
+      {
+        "href": "/station/22825",
+        "text": "天王洲アイル"
+      },
+      {
+        "href": "/station/22752",
+        "text": "新馬場"
+      },
+      {
+        "href": "/station/22825",
+        "text": "天王洲アイル"
+      },
+      {
+        "href": "/station/22752",
+        "text": "新馬場"
+      },
+      {
+        "href": "/station/22825",
+        "text": "天王洲アイル"
+      },
+      {
+        "href": "/station/22752",
+        "text": "新馬場"
+      },
+      {
+        "href": "/station/22825",
+        "text": "天王洲アイル"
+      },
+      {
+        "href": "/smartphone/app/?referrer=yjtransit_pc_rightlink",
+        "text": "乗換案内アプリ"
+      },
+      {
+        "href": "https://itunes.apple.com/app/apple-store/id291676451?pt=13834&ct=yjtransit_pc_footer&mt=8",
+        "text": "Yahoo!乗換案内 時刻表、運行情報、乗り換え検索をダウンロードする"
+      },
+      {
+        "href": "https://yahoo.jp/N5UItD",
+        "text": "Yahoo!乗換案内 時刻表、運行情報、乗り換え検索をダウンロードする"
+      },
+      {
+        "href": "/",
+        "text": "乗換案内"
+      }
+    ],
+    "time_matches": [
+      "イル 1本前 2026年08月07日(金) 15:50 出発 1本後 早 到着時刻順 楽 乗換回数順 安 料金の安い順 ルート 1 15:57 → 16:25 28分 567 円 乗換： 2 回 早 楽 ルート 2 15:52 → 16:25 33分 505 円 乗換： 2 回 早 楽 安 ルート 3 15:52 → 16:25 33分 567 円 乗換： 2 回",
+      " 早 楽 6 件中 1 ～ 3 件を表示しています。 次の3件 ルート 1 早 楽 15:57 発→ 16:25 着 28分 （乗車 14分 ） 乗換： 2 回 IC優先： 567 円 7.8km ルート保存 定期券 ルート共有 印刷する 定期の種類 通勤 オフピーク 通学（大学） 通学（高校） 通学（中学） 1 か月 21,000 円 3 か月 59,82",
+      "21 大井町 16:23 品川シーサイド 567円 16:25 着 天王洲アイル 時刻表 出口 地図 ルート 2 早 楽 安 15:52 発→ 16:25 着 33分 （乗車 10分 ） 乗換： 2 回 IC優先： 505 円 6.5km ルート保存 定期券 ルート共有 印刷する 定期の種類 通勤 オフピーク 通学（大学） 通学（高校） 通学（中学） 1 か月 1",
+      "2 番線 2 駅 16:23 品川シーサイド 210円 16:25 着 天王洲アイル 時刻表 出口 地図 ルート 3 早 楽 15:52 発→ 16:25 着 33分 （乗車 14分 ） 乗換： 2 回 IC優先： 567 円 7.8km ルート保存 定期券 ルート共有 印刷する 定期の種類 通勤 オフピーク 通学（大学） 通学（高校） 通学（中学） 1 か月 2",
+      "6時 7時 8時 9時 10時 11時 12時 13時 14時 15時 16時 17時 18時 19時 20時 21時 22時 23時 24時 25時 26時 0分 1分 2分 3分 4分 5分 6分 7分 8分 9分 10分 11分 12分 13分 14分 15分 16分 17分 18分 19分 20分 21分 22分 23分 24分 25分 26分 27分 ",
+      "28分 29分 30分 31分 32分 33分 34分 35分 36分 37分 38分 39分 40分 41分 42分 43分 44分 45分 46分 47分 48分 49分 50分 51分 52分 53分 54分 55分 56分 57分 58分 59分 出発 到着 始発 終電 指定なし 運賃 種別 ICカード（全国共通）優先 ICカード（地方独自）優先 現金（き",
+      "st\":[{\"summaryInfo\":{\"departureTime\":\"15:57\",\"arrivalTime\":\"16:25\",\"totalTime\":\"28分\",\"totalPrice\":\"567\",\"totalPriceDetail\":null,\"timeOnBoard\":\"14分\",\"transferCount\":\"2\",\"isFast\":true,\"",
+      "\"}]},{\"summaryInfo\":{\"departureTime\":\"15:52\",\"arrivalTime\":\"16:25\",\"totalTime\":\"33分\",\"totalPrice\":\"505\",\"totalPriceDetail\":null,\"timeOnBoard\":\"10分\",\"transferCount\":\"2\",\"isFast\":true,\"",
+      "\"}]},{\"summaryInfo\":{\"departureTime\":\"15:52\",\"arrivalTime\":\"16:25\",\"totalTime\":\"33分\",\"totalPrice\":\"567\",\"totalPriceDetail\":null,\"timeOnBoard\":\"14分\",\"transferCount\":\"2\",\"isFast\":true,\""
+    ],
+    "text_sample": "新馬場から天王洲アイルへの乗換案内 - Yahoo!路線情報 var TLDataContext = {\"ual\":{\"pageview\":{\"opttype\":\"pc\",\"content_id\":\"\",\"id_type\":\"\",\"nopv\":\"false\",\"mtestid\":\"\",\"ss_join_id\":\"\",\"ss_join_id_type\":\"\"},\"search\":{\"opttype\":\"pc\",\"result_query\":\"天王洲アイル\",\"origin_query\":\"天王洲アイル\",\"current_page\":1,\"ss_join_id\":\"e3658064-a00a-46ac-a0d6-ff60ac64fa2b\",\"ss_join_id_type\":\"\",\"entities\":\"\",\"mtestid\":\"\"}}}; window.yacmds = window.yacmds || []; window.ya = window.ya || function(){yacmds.push(arguments)}; ya('init', 'e798d227675d4cb49fd09a2042d033a3', '186f1261-d66f-4bad-bf67-11b68af246fc'); ya('hit', 'pageview,webPerformance'); {\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"路線情報トップ\",\"item\":\"https://transit.yahoo.co.jp/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"乗換案内 新馬場から天王洲アイル\",\"item\":\"https://transit.yahoo.co.jp/search/result/%E6%96%B0%E9%A6%AC%E5%A0%B4-%E5%A4%A9%E7%8E%8B%E6%B4%B2%E3%82%A2%E3%82%A4%E3%83%AB\"}]]} YAHOO = window.YAHOO || {}; YAHOO.JP = YAHOO.JP || {}; YAHOO.JP.templa = YAHOO.JP.templa || {}; YAHOO.JP.templa.param = {\"device_id\":\"pc\",\"domain\":\"transit\",\"mh_logo_width\":215,\"mh_logo_height\":34,\"mh_logo_alt\":\"Yahoo!路線情報\",\"mh_login_done\":\"https://transit.yahoo.co.jp/search/result?from=%E6%96%B0%E9%A6%AC%E5%A0%B4&to=%E5%A4%A9%E7%8E%8B%E6%B4%B2%E3%82%A2%E3%82%A4%E3%83%AB&type=1&ticket=ic\"}; 路線情報（乗換案内・時刻表・路線図） 道路交通情報 地図 路線情報 乗換案内 運行情報 駅情報 時刻表 情報対応履歴 路線図(Yahoo!マップ) マイページ - 各種設定・確認 現在位置： 路線情報トップ &gt; 乗換案内 新馬場から天王洲アイル 新馬場 → 天王洲アイル 1本前 "
   }
 }
