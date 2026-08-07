@@ -1,0 +1,93 @@
+name: Fix hotel detail loader cache on main
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/fix-hotel-detail-loader-main.yml
+
+permissions:
+  contents: write
+
+jobs:
+  patch-loader:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Force-load enhanced hotel detail assets
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+          import re
+
+          index = Path('index.html')
+          text = index.read_text(encoding='utf-8')
+
+          css_link = '  <link rel="stylesheet" href="assets/css/hotel-detail.css?v=20260808-2" data-hotel-detail-style>'
+          if 'data-hotel-detail-style' not in text:
+              if '</head>' not in text:
+                  raise SystemExit('index.html head closing tag not found')
+              text = text.replace('</head>', css_link + '\n</head>', 1)
+          else:
+              text = re.sub(r'\s*<link[^>]+data-hotel-detail-style[^>]*>\s*', '\n' + css_link + '\n', text, count=1)
+
+          text = text.replace('assets/js/app.js?v=20260806-4', 'assets/js/app.js?v=20260808-2')
+          text = text.replace('assets/js/app.js?v=20260808-1', 'assets/js/app.js?v=20260808-2')
+
+          detail_script = '  <script src="assets/js/hotel-detail.js?v=20260808-2" defer data-hotel-detail-script></script>'
+          if 'data-hotel-detail-script' not in text:
+              app_script = '  <script src="assets/js/app.js?v=20260808-2" defer></script>'
+              if app_script not in text:
+                  raise SystemExit('fresh app.js script tag not found')
+              text = text.replace(app_script, app_script + '\n' + detail_script, 1)
+
+          index.write_text(text, encoding='utf-8')
+
+          app = Path('assets/js/app.js')
+          text = app.read_text(encoding='utf-8')
+          text = text.replace('assets/css/hotel-detail.css?v=20260808-1', 'assets/css/hotel-detail.css?v=20260808-2')
+          text = text.replace('assets/js/hotel-detail.js?v=20260808-1', 'assets/js/hotel-detail.js?v=20260808-2')
+          text = text.replace('assets/js/app-core.js?v=20260806-1', 'assets/js/app-core.js?v=20260808-2')
+          app.write_text(text, encoding='utf-8')
+          PY
+
+      - name: Validate loader wiring
+        shell: bash
+        run: |
+          set -euo pipefail
+          node --check assets/js/app.js
+          node --check assets/js/hotel-detail.js
+          python - <<'PY'
+          from pathlib import Path
+          index = Path('index.html').read_text(encoding='utf-8')
+          app = Path('assets/js/app.js').read_text(encoding='utf-8')
+          detail = Path('assets/js/hotel-detail.js').read_text(encoding='utf-8')
+          assert 'assets/js/app.js?v=20260808-2' in index
+          assert 'assets/js/hotel-detail.js?v=20260808-2' in index
+          assert 'data-hotel-detail-script' in index
+          assert 'assets/css/hotel-detail.css?v=20260808-2' in index
+          assert 'data-hotel-detail-style' in index
+          assert 'assets/js/app-core.js?v=20260808-2' in app
+          assert 'assets/js/hotel-detail.js?v=20260808-2' in app
+          assert 'event.stopImmediatePropagation()' in detail
+          assert 'detail-visual' not in detail
+          print('hotel detail loader wiring validated')
+          PY
+
+      - name: Commit loader fix
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html assets/js/app.js
+          git commit -m "Force-load enhanced hotel detail UI"
+          git push origin HEAD:main
