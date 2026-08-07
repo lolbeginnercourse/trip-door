@@ -1,0 +1,33 @@
+name: Research hotel details 750
+
+on:
+  push:
+    branches:
+      - research/hotel-details-750-20260807
+    paths:
+      - scripts/research_hotel_details.py
+      - .github/workflows/hotel-detail-research.yml
+
+permissions:
+  contents: write
+
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Research validation batch 1-25
+        run: python scripts/research_hotel_details.py --start 1 --end 25
+      - name: Commit research batch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add research/generated/hotel_access_cache.jsonl research/generated/venue_access_cache.jsonl research/generated/hotel_detail_research_750.jsonl research/generated/research_progress.json
+          git commit -m "Research hotel details 1-25" || exit 0
+          git push
