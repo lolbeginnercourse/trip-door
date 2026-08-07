@@ -9,6 +9,14 @@ on:
       - "assets/data/seo-venues.json"
       - "scripts/seo-inventory.mjs"
       - ".github/workflows/seo-inventory.yml"
+  pull_request:
+    branches:
+      - main
+    paths:
+      - "assets/data/hotels.json"
+      - "assets/data/seo-venues.json"
+      - "scripts/seo-inventory.mjs"
+      - ".github/workflows/seo-inventory.yml"
   workflow_dispatch:
 
 permissions:
