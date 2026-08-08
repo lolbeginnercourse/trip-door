@@ -1,0 +1,35 @@
+name: Audit Jalan hotel name URL mapping
+
+on:
+  push:
+    branches:
+      - research/hotel-details-750-20260807
+    paths:
+      - .github/workflows/audit-jalan-name-url-mapping.yml
+      - scripts/audit_jalan_name_url_mapping.py
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research/hotel-details-750-20260807
+          fetch-depth: 0
+      - name: Run independent live Jalan audit
+        run: python scripts/audit_jalan_name_url_mapping.py
+      - name: Commit audit outputs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add research/generated/jalan_name_url_audit_750.csv research/generated/jalan_name_url_suspicious.csv research/generated/jalan_name_url_audit_summary.json
+          if git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git commit -m "audit: validate Jalan hotel name URL mappings"
+            git push origin HEAD:research/hotel-details-750-20260807
+          fi
