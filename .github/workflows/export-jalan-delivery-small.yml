@@ -1,0 +1,47 @@
+name: Export compact Jalan delivery CSV
+
+on:
+  push:
+    branches:
+      - research/hotel-details-750-20260807
+    paths:
+      - .github/workflows/export-jalan-delivery-small.yml
+
+permissions:
+  contents: write
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research/hotel-details-750-20260807
+      - name: Build compact delivery and transfer chunks
+        run: |
+          python - <<'PY'
+          import csv,base64,gzip,hashlib,json
+          from pathlib import Path
+          src=Path('research/generated/jalan_links_750_final.csv')
+          with src.open(encoding='utf-8',newline='') as f: rows=list(csv.DictReader(f))
+          fields=['research_no','id','hotel_name','jalan_url','verification_status','verification_note']
+          out=Path('research/generated/jalan_links_750_delivery.csv')
+          with out.open('w',encoding='utf-8-sig',newline='') as f:
+              w=csv.DictWriter(f,fieldnames=fields,extrasaction='ignore'); w.writeheader(); w.writerows(rows)
+          raw=out.read_bytes(); b64=base64.b64encode(gzip.compress(raw,9)).decode('ascii')
+          d=Path('research/generated/jalan_delivery_chunks'); d.mkdir(parents=True,exist_ok=True)
+          for p in d.glob('part_*.txt'): p.unlink()
+          size=1800
+          parts=[b64[i:i+size] for i in range(0,len(b64),size)]
+          for i,s in enumerate(parts): (d/f'part_{i:02d}.txt').write_text(s,encoding='ascii')
+          meta={'parts':len(parts),'base64_chars':len(b64),'raw_bytes':len(raw),'sha256':hashlib.sha256(raw).hexdigest(),'row_count':len(rows)}
+          (d/'meta.json').write_text(json.dumps(meta,indent=2)+'\n')
+          print(meta)
+          PY
+      - name: Commit compact delivery
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add research/generated/jalan_links_750_delivery.csv research/generated/jalan_delivery_chunks
+          git commit -m "Export compact Jalan 750 delivery CSV" || exit 0
+          git push origin HEAD:research/hotel-details-750-20260807
