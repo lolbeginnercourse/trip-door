@@ -1,22 +1,21 @@
 name: Apply Jalan affiliate links
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - ".github/workflows/apply-jalan-links.yml"
+  pull_request:
+    types: [opened, synchronize, reopened]
 
 permissions:
   contents: write
 
 jobs:
   apply:
+    if: github.event.pull_request.head.repo.full_name == github.repository
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: Checkout work branch
         uses: actions/checkout@v4
         with:
+          ref: ${{ github.event.pull_request.head.ref }}
           fetch-depth: 1
 
       - name: Replace Jalan links by hotel name
@@ -33,6 +32,7 @@ jobs:
           import urllib.parse
 
           DATA_PATH = Path("assets/data/hotels.json")
+          REPORT_PATH = Path("scripts/jalan-update-report.json")
           PARTS = [Path(f"scripts/.jalan-map-{i}") for i in range(1, 6)]
           encoded = "".join(part.read_text(encoding="utf-8").strip() for part in PARTS)
           mapping_payload = json.loads(gzip.decompress(base64.b64decode(encoded)).decode("utf-8"))
@@ -80,10 +80,8 @@ jobs:
               before = copy.deepcopy(hotel)
               had_existing_jalan = valid_http_url(hotel.get("jalan"))
 
-              # Current app-core.js and hotel-detail.js both read this direct field.
               hotel["jalan"] = url
 
-              # Preserve non-Jalan entries exactly, replacing only Jalan entries.
               if isinstance(hotel.get("affiliateLinks"), list):
                   original = hotel["affiliateLinks"]
                   rebuilt = []
@@ -95,20 +93,14 @@ jobs:
                               inserted = True
                           continue
                       rebuilt.append(item)
-
                   if not inserted:
-                      # An empty affiliateLinks array is truthy in JavaScript and
-                      # suppresses the direct fallback. Preserve the existing
-                      # Rakuten URL value, then add only the requested Jalan link.
                       if not rebuilt and valid_http_url(hotel.get("rakuten")):
                           rebuilt.append({"provider": "楽天トラベル", "url": hotel["rakuten"]})
                       rebuilt.append({"provider": "じゃらん", "url": url})
-
                   if rebuilt != original:
                       hotel["affiliateLinks"] = rebuilt
                       updated_array_entries += 1
 
-              # Preserve compatibility with older rows that used `links`.
               if isinstance(hotel.get("links"), list):
                   original = hotel["links"]
                   rebuilt = []
@@ -139,15 +131,7 @@ jobs:
                       added_jalan += 1
 
           missing = sorted(mapping[key]["name"] for key in mapping.keys() - matched_keys)
-
-          if len(matched_keys) < 300:
-              raise SystemExit(
-                  f"Safety stop: only {len(matched_keys)} of {len(mapping)} supplied hotels matched repository data"
-              )
-
-          DATA_PATH.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-
-          print("JALAN_UPDATE_REPORT=" + json.dumps({
+          report = {
               "sourceRows": 750,
               "sourceUniqueHotels": len(mapping),
               "repositoryRows": len(hotels),
@@ -159,7 +143,14 @@ jobs:
               "affiliateArrayRowsUpdated": updated_array_entries,
               "unmatchedUniqueHotels": len(missing),
               "unmatchedHotelNames": missing,
-          }, ensure_ascii=False))
+          }
+
+          if len(matched_keys) < 300:
+              raise SystemExit(f"Safety stop: only {len(matched_keys)} of {len(mapping)} supplied hotels matched repository data")
+
+          DATA_PATH.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+          REPORT_PATH.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+          print("JALAN_UPDATE_REPORT=" + json.dumps(report, ensure_ascii=False))
           PY
 
       - name: Validate JSON and Jalan URLs
@@ -186,15 +177,15 @@ jobs:
           print(f"Validated static Jalan rows: {static_rows}")
           PY
 
-      - name: Commit hotel link changes
+      - name: Commit work branch changes
         shell: bash
         run: |
-          if git diff --quiet -- assets/data/hotels.json; then
-            echo "No hotel data changes were required."
+          if git diff --quiet -- assets/data/hotels.json scripts/jalan-update-report.json; then
+            echo "No changes were required."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/data/hotels.json
+          git add assets/data/hotels.json scripts/jalan-update-report.json
           git commit -m "Replace Jalan affiliate links by hotel name"
-          git push origin HEAD:main
+          git push origin HEAD:${{ github.event.pull_request.head.ref }}
