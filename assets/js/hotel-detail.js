@@ -10,6 +10,10 @@
   const kicker = dialog.querySelector(".section-kicker");
   let details = new Map();
   let hotels = new Map();
+  let gameDetails = [];
+  let gameDetailByExact = new Map();
+  let gameDetailByHotelVenue = new Map();
+  let gameDetailByHotelRank = new Map();
   let lastTrigger = null;
 
   const el = (tag, className, text) => {
@@ -42,6 +46,231 @@
     const date = new Date(value);
     if (Number.isNaN(date.getTime())) return String(value).slice(0, 10).replaceAll("-", "/");
     return new Intl.DateTimeFormat("ja-JP", { year: "numeric", month: "numeric", day: "numeric" }).format(date);
+  };
+
+  const normalizeLookup = value => String(value || "")
+    .normalize("NFKC")
+    .toLowerCase()
+    .replace(/[ \t\r\n　・･\-‐‑‒–—―_〈〉＜＞<>【】\[\]（）()]/g, "");
+
+  const canonicalVenue = value => {
+    const normalized = normalizeLookup(value);
+    const aliases = {
+      [normalizeLookup("千葉JPFドーム")]: normalizeLookup("TIPSTAR DOME CHIBA"),
+      [normalizeLookup("千葉JPFドーム（旧 TIPSTAR DOME CHIBA）")]: normalizeLookup("TIPSTAR DOME CHIBA"),
+      [normalizeLookup("沖縄サントリーアリーナ")]: normalizeLookup("沖縄アリーナ"),
+      [normalizeLookup("沖縄サントリーアリーナ（沖縄アリーナ）")]: normalizeLookup("沖縄アリーナ")
+    };
+    return aliases[normalized] || normalized;
+  };
+
+  const gameVenueLabel = value => ({
+    "TIPSTAR DOME CHIBA": "千葉JPFドーム（旧 TIPSTAR DOME CHIBA）",
+    "沖縄アリーナ": "沖縄サントリーアリーナ（沖縄アリーナ）"
+  }[value] || value);
+
+  const numberIn = value => {
+    const match = String(value || "").match(/(\d+)/);
+    return match ? Number(match[1]) : null;
+  };
+
+  const travelModeFromLabel = label => {
+    const text = String(label || "");
+    if (text.includes("徒歩")) return "walk";
+    if (text.includes("バス")) return "bus";
+    if (text.includes("タクシー") || text.includes("車")) return "taxi";
+    if (["電車", "地下鉄", "JR", "モノレール", "鉄道", "線"].some(key => text.includes(key))) return "rail";
+    return "mixed";
+  };
+
+  const parseGameRoute = value => {
+    const lines = String(value || "").replace(/\r\n/g, "\n").split("\n").filter(line => line.trim());
+    const chunks = [];
+    let current = null;
+    lines.forEach(line => {
+      const match = line.match(/^\s*\d+\.\s*(.*)$/);
+      if (match) {
+        if (current) chunks.push(current);
+        current = { head: match[1].trim(), subs: [] };
+      } else if (current) {
+        current.subs.push(line.trim());
+      }
+    });
+    if (current) chunks.push(current);
+
+    return chunks.map(chunk => {
+      if (chunk.head.startsWith("●")) {
+        return { kind: "place", label: chunk.head.replace(/^●\s*/, "") };
+      }
+      if (["乗換", "i", "案内", "注意"].includes(chunk.head)) {
+        const extra = chunk.subs.length ? `：${chunk.subs.join(" ")}` : "";
+        return { kind: "note", label: `${chunk.head}${extra}` };
+      }
+
+      let minutes = null;
+      const detailParts = [];
+      chunk.subs.forEach(sub => {
+        const match = sub.match(/約?\s*(\d+)\s*分/);
+        if (match && minutes === null) {
+          minutes = Number(match[1]);
+          const residual = sub.replace(/約?\s*\d+\s*分/, "").trim();
+          if (residual) detailParts.push(residual);
+        } else {
+          detailParts.push(sub);
+        }
+      });
+
+      const step = {
+        kind: "travel",
+        mode: travelModeFromLabel(chunk.head),
+        label: chunk.head
+      };
+      if (Number.isFinite(minutes)) step.minutes = minutes;
+      if (detailParts.length) step.detail = detailParts.join(" ");
+      return step;
+    });
+  };
+
+  const decodeGameDetails = payload => {
+    const dictionary = payload?.d || {};
+    const rows = Array.isArray(payload?.z) ? payload.z : [];
+    const hotelNames = dictionary.h || [];
+    const venues = dictionary.v || [];
+    const heroTexts = dictionary.x || [];
+    const stations = dictionary.s || [];
+    const plans = dictionary.p || [];
+    const rooms = dictionary.r || [];
+    const cancellations = dictionary.c || [];
+    const roles = dictionary.o || [];
+    const notes = dictionary.a || [];
+    const routes = dictionary.q || [];
+    const checkedAt = payload?.date || null;
+    const modes = ["walk", "rail", "bus", "taxi", "mixed", "unknown"];
+    const money = value => Number.isFinite(value) ? `${new Intl.NumberFormat("ja-JP").format(value)}円（目安）` : null;
+    const range = (min, max) => Number.isFinite(min) && Number.isFinite(max)
+      ? `約${new Intl.NumberFormat("ja-JP").format(min)}～${new Intl.NumberFormat("ja-JP").format(max)}円`
+      : null;
+
+    return rows.map(row => {
+      const [
+        hotelIndex, venueIndex, rank, heroIndex, modeIndex,
+        hotelStationIndex, hotelWalkMin, transferCount, venueStationIndex, venueWalkMin,
+        routeRef, noteIndex, roleIndex, priceEstimate, priceMin, priceMax,
+        planIndex, roomIndex, cancellationIndex
+      ] = row;
+      const hotelName = hotelNames[hotelIndex] || "";
+      const venueName = venues[venueIndex] || "";
+      const displayVenue = gameVenueLabel(venueName);
+      const heroText = heroTexts[heroIndex] || "";
+      const mode = modes[modeIndex] || "unknown";
+      const suitability = roles[roleIndex] || "";
+
+      let routeSteps;
+      if (Number(routeRef) < 0) {
+        const simpleMode = modes[Math.abs(Number(routeRef)) - 1] || mode;
+        const minutes = numberIn(heroText);
+        routeSteps = [
+          { kind: "place", label: hotelName },
+          {
+            kind: "travel",
+            mode: simpleMode,
+            label: simpleMode === "taxi" ? "タクシー／車" : modeLabel(simpleMode),
+            ...(Number.isFinite(minutes) ? { minutes } : {}),
+            detail: `${displayVenue}まで`
+          },
+          { kind: "place", label: displayVenue }
+        ];
+      } else {
+        routeSteps = parseGameRoute(routes[routeRef] || "");
+      }
+
+      return {
+        hotelName,
+        venueName: displayVenue,
+        rank,
+        lookup: { hotelName, venueName, rank },
+        coverage: "full",
+        availability: "active",
+        suppressBooking: true,
+        access: {
+          heroMin: numberIn(heroText),
+          heroText,
+          mode,
+          hotelStation: stations[hotelStationIndex] || null,
+          hotelWalkMin: Number.isFinite(hotelWalkMin) ? hotelWalkMin : null,
+          transferCount: Number.isFinite(transferCount) ? transferCount : null,
+          venueStation: stations[venueStationIndex] || null,
+          venueWalkMin: Number.isFinite(venueWalkMin) ? venueWalkMin : null,
+          routeSteps,
+          note: notes[noteIndex] || ""
+        },
+        stay: {
+          priceEstimate: money(priceEstimate),
+          priceRange: range(priceMin, priceMax),
+          plan: plans[planIndex] || null,
+          roomType: rooms[roomIndex] || null,
+          cancellation: cancellations[cancellationIndex] || null
+        },
+        fit: {
+          role: `${displayVenue}周辺の候補${rank}`,
+          summary: `${suitability}${suitability ? "。" : ""}指定日の確定在庫価格ではなく、既存調査の公開料金帯・ホテル格・地域相場などを基にした、1名素泊まりの安い～標準客室の予約目安。`
+        },
+        bookingChecks: ["会場へのアクセス", "料金目安", "プランごとのキャンセル条件"],
+        checkedAt,
+        sources: []
+      };
+    });
+  };
+
+  const addUniqueLookup = (map, key, detail) => {
+    if (!key) return;
+    if (!map.has(key)) {
+      map.set(key, detail);
+      return;
+    }
+    const current = map.get(key);
+    if (current !== detail) map.set(key, null);
+  };
+
+  const indexGameDetails = records => {
+    gameDetails = Array.isArray(records) ? records.filter(Boolean) : [];
+    gameDetailByExact = new Map();
+    gameDetailByHotelVenue = new Map();
+    gameDetailByHotelRank = new Map();
+
+    gameDetails.forEach(detail => {
+      const lookup = detail.lookup || {};
+      const hotelName = normalizeLookup(lookup.hotelName || detail.hotelName);
+      const venueName = canonicalVenue(lookup.venueName || detail.venueName);
+      const rank = Number(lookup.rank ?? detail.rank);
+      if (!hotelName || !venueName) return;
+
+      gameDetailByExact.set(`${hotelName}|${venueName}|${Number.isFinite(rank) ? rank : ""}`, detail);
+      addUniqueLookup(gameDetailByHotelVenue, `${hotelName}|${venueName}`, detail);
+      if (Number.isFinite(rank)) addUniqueLookup(gameDetailByHotelRank, `${hotelName}|${rank}`, detail);
+    });
+  };
+
+  const findGameDetail = hotel => {
+    if (!hotel) return null;
+    const hotelName = normalizeLookup(hotel.name);
+    const venueName = canonicalVenue(hotel.venueLabel || hotel.venueName);
+    const rank = Number(hotel.rank);
+    if (!hotelName) return null;
+
+    if (venueName && Number.isFinite(rank)) {
+      const exact = gameDetailByExact.get(`${hotelName}|${venueName}|${rank}`);
+      if (exact) return exact;
+    }
+    if (venueName) {
+      const byVenue = gameDetailByHotelVenue.get(`${hotelName}|${venueName}`);
+      if (byVenue) return byVenue;
+    }
+    if (Number.isFinite(rank)) {
+      const byRank = gameDetailByHotelRank.get(`${hotelName}|${rank}`);
+      if (byRank) return byRank;
+    }
+    return null;
   };
 
   const readCompareIds = () => {
@@ -93,16 +322,20 @@
     sources: []
   });
 
+  const loadJson = (path, label) => fetch(path, { cache: "no-cache", headers: { Accept: "application/json" } })
+    .then(async response => {
+      if (!response.ok) throw new Error(`${label} HTTP ${response.status}`);
+      return response.json();
+    });
+
   const loadData = (async () => {
-    const [detailResult, hotelResult] = await Promise.allSettled([
-      fetch("assets/data/hotel-details.json", { cache: "no-cache", headers: { Accept: "application/json" } }).then(async response => {
-        if (!response.ok) throw new Error(`hotel-details HTTP ${response.status}`);
-        return response.json();
-      }),
-      fetch("assets/data/hotels.json", { cache: "no-cache", headers: { Accept: "application/json" } }).then(async response => {
-        if (!response.ok) throw new Error(`hotels HTTP ${response.status}`);
-        return response.json();
-      })
+    const [detailResult, hotelResult, ...gameResults] = await Promise.allSettled([
+      loadJson("assets/data/hotel-details.json", "hotel-details"),
+      loadJson("assets/data/hotels.json", "hotels"),
+      loadJson("assets/data/game-hotel-details-1.json", "game-hotel-details-1"),
+      loadJson("assets/data/game-hotel-details-2.json", "game-hotel-details-2"),
+      loadJson("assets/data/game-hotel-details-3.json", "game-hotel-details-3"),
+      loadJson("assets/data/game-hotel-details-4.json", "game-hotel-details-4")
     ]);
 
     if (detailResult.status === "fulfilled") {
@@ -111,6 +344,16 @@
     } else {
       console.warn("Hotel detail data could not be loaded", detailResult.reason);
     }
+
+    const decodedGameDetails = [];
+    gameResults.forEach((result, index) => {
+      if (result.status === "fulfilled") {
+        decodedGameDetails.push(...decodeGameDetails(result.value));
+      } else {
+        console.warn(`Game hotel detail chunk ${index + 1} could not be loaded`, result.reason);
+      }
+    });
+    indexGameDetails(decodedGameDetails);
 
     if (hotelResult.status === "fulfilled") {
       const rows = hotelResult.value?.hotels;
@@ -137,15 +380,22 @@
     return alert;
   };
 
+  const stationLabel = value => {
+    const text = String(value || "").trim();
+    if (!text) return "";
+    return /(駅|停留所|バス停|空港|港)$/.test(text) ? text : `${text}駅`;
+  };
+
   const renderAccessHero = detail => {
     const access = detail.access || {};
     const card = el("section", `hd-access${detail.coverage === "limited" ? " hd-access--limited" : ""}`);
     const copy = el("div", "hd-access__copy");
     copy.append(el("p", "hd-access__eyebrow", `${detail.venueName}へのアクセス`));
 
-    if (Number.isFinite(access.heroMin)) {
+    if (access.heroText || Number.isFinite(access.heroMin)) {
       const time = el("p", "hd-access__time");
-      time.append(el("span", "", "約"), el("strong", "", String(access.heroMin)), el("span", "", "分"));
+      const shown = access.heroText ? String(access.heroText) : String(access.heroMin);
+      time.append(el("span", "", "約"), el("strong", "", shown), el("span", "", "分"));
       copy.append(time, el("p", "hd-access__caption", "ホテルから会場までの確認済み目安"));
     } else {
       copy.append(
@@ -164,9 +414,9 @@
       item.append(el("span", "hd-access-fact__label", label), el("strong", "", value));
       facts.append(item);
     };
-    if (Number.isFinite(access.hotelWalkMin) && access.hotelStation) addFact(`${access.hotelStation}駅まで`, `徒歩${access.hotelWalkMin}分`);
+    if (Number.isFinite(access.hotelWalkMin) && access.hotelStation) addFact(`${stationLabel(access.hotelStation)}まで`, `徒歩${access.hotelWalkMin}分`);
     if (Number.isFinite(access.transferCount)) addFact("乗換", `${access.transferCount}回`);
-    if (access.venueStation) addFact("会場最寄り", `${access.venueStation}駅`);
+    if (access.venueStation) addFact("会場最寄り", stationLabel(access.venueStation));
     if (Number.isFinite(access.venueWalkMin)) addFact("駅から会場", `徒歩${access.venueWalkMin}分`);
     if (facts.childElementCount) card.append(facts);
 
@@ -309,6 +559,13 @@
       return;
     }
 
+    // Game/streamer hotel details intentionally keep Rakuten/Jalan URLs unset for now.
+    // Preserve the stage/2.5D behavior by suppressing booking only on records that opt in.
+    if (detail.suppressBooking === true) {
+      container.append(actions);
+      return;
+    }
+
     const booking = el("div", "hd-actions__booking");
     booking.setAttribute("aria-label", "予約サイト");
     actions.append(booking);
@@ -375,10 +632,13 @@
 
     await loadData;
     const hotel = hotels.get(id) || null;
-    const detail = details.get(id) || fallbackDetail(hotel || { id, name: title.textContent });
+    const researched = details.get(id) || findGameDetail(hotel);
+    const detail = researched
+      ? { ...researched, id, hotelName: researched.hotelName || hotel?.name || title.textContent }
+      : fallbackDetail(hotel || { id, name: title.textContent });
     await render(detail, hotel);
 
-    try { window.dataLayer?.push({ event: "hotel_detail_open", hotel_id: id, detail_source: details.has(id) ? "research" : "fallback" }); } catch { /* noop */ }
+    try { window.dataLayer?.push({ event: "hotel_detail_open", hotel_id: id, detail_source: researched ? "research" : "fallback" }); } catch { /* noop */ }
   };
 
   document.addEventListener("click", event => {
