@@ -1,0 +1,109 @@
+name: Export Jalan URLs 750
+
+on:
+  push:
+    branches:
+      - export/jalan-urls-750-20260808
+    paths:
+      - .github/workflows/export-jalan-urls-750.yml
+
+permissions:
+  contents: write
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: export/jalan-urls-750-20260808
+
+      - name: Build 750-row Jalan URL export
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import csv, json, re
+          from pathlib import Path
+
+          src = Path('assets/data/hotels.json')
+          data = json.loads(src.read_text(encoding='utf-8'))
+          records = data['hotels'] if isinstance(data, dict) and isinstance(data.get('hotels'), list) else data
+          target = [r for r in records if r.get('isPublished', True) and isinstance(r.get('rank'), int) and 1 <= r['rank'] <= 3 and r.get('venueId')]
+          target.sort(key=lambda r: (r.get('venueNumber', 999999), r.get('rank', 99), r.get('id', '')))
+          assert len(target) == 750, len(target)
+          assert len({r.get('id') for r in target}) == 750
+
+          def valid_url(value):
+              return isinstance(value, str) and value.startswith(('https://', 'http://'))
+
+          def jalan_url(row):
+              # 1) Use an explicit URL already stored in the record.
+              if valid_url(row.get('jalan')):
+                  return row['jalan'], 'existing_jalan_url'
+              for link in row.get('affiliateLinks') or []:
+                  if not isinstance(link, dict):
+                      continue
+                  provider = str(link.get('provider') or '').lower()
+                  url = link.get('url')
+                  if ('じゃらん' in provider or 'jalan' in provider) and valid_url(url):
+                      return url, 'existing_affiliate_url'
+              # 2) If only the Jalan yad number is stored, use Jalan's standard hotel-detail URL pattern.
+              yad = row.get('jalanYadNo')
+              if yad not in (None, ''):
+                  s = str(yad).strip()
+                  m = re.search(r'(\d{4,})', s)
+                  if m:
+                      return f'https://www.jalan.net/yad{m.group(1)}/', 'generated_from_jalanYadNo'
+              return '', 'missing'
+
+          outdir = Path('exports')
+          outdir.mkdir(exist_ok=True)
+          csv_path = outdir / 'jalan_urls_750.csv'
+          json_path = outdir / 'jalan_urls_750.json'
+          rows = []
+          for no, row in enumerate(target, 1):
+              url, source = jalan_url(row)
+              rows.append({
+                  'no': no,
+                  'id': row.get('id', ''),
+                  'hotel_name': row.get('name', ''),
+                  'venue_name': row.get('venueLabel', ''),
+                  'venue_id': row.get('venueId', ''),
+                  'venue_number': row.get('venueNumber', ''),
+                  'rank': row.get('rank', ''),
+                  'jalan_yad_no': row.get('jalanYadNo', '') or '',
+                  'jalan_url': url,
+                  'url_source': source,
+              })
+
+          fields = ['no','id','hotel_name','venue_name','venue_id','venue_number','rank','jalan_yad_no','jalan_url','url_source']
+          with csv_path.open('w', encoding='utf-8-sig', newline='') as f:
+              w = csv.DictWriter(f, fieldnames=fields)
+              w.writeheader(); w.writerows(rows)
+          json_path.write_text(json.dumps(rows, ensure_ascii=False, indent=2), encoding='utf-8')
+
+          counts = {}
+          for r in rows:
+              counts[r['url_source']] = counts.get(r['url_source'], 0) + 1
+          summary = {
+              'rows': len(rows),
+              'unique_ids': len({r['id'] for r in rows}),
+              'with_jalan_url': sum(bool(r['jalan_url']) for r in rows),
+              'missing_jalan_url': sum(not bool(r['jalan_url']) for r in rows),
+              'url_source_counts': counts,
+          }
+          (outdir / 'jalan_urls_750_summary.json').write_text(json.dumps(summary, ensure_ascii=False, indent=2), encoding='utf-8')
+          print(json.dumps(summary, ensure_ascii=False))
+          PY
+
+      - name: Commit export files
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add exports/jalan_urls_750.csv exports/jalan_urls_750.json exports/jalan_urls_750_summary.json
+          git commit -m "Export Jalan URLs for 750 hotel detail records"
+          git push origin HEAD:export/jalan-urls-750-20260808
