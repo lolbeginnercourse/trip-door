@@ -1,0 +1,110 @@
+name: Export booking URLs 750
+
+on:
+  push:
+    branches:
+      - export/booking-urls-750-20260808
+    paths:
+      - .github/workflows/export-booking-urls-750.yml
+
+permissions:
+  contents: write
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: export/booking-urls-750-20260808
+
+      - name: Build 750-row booking URL CSV
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import csv, json
+          from collections import Counter
+          from pathlib import Path
+
+          src = Path('assets/data/hotels.json')
+          data = json.loads(src.read_text(encoding='utf-8'))
+          records = data['hotels'] if isinstance(data, dict) and isinstance(data.get('hotels'), list) else data
+          target = [r for r in records if r.get('isPublished', True) is not False and isinstance(r.get('rank'), int) and 1 <= r['rank'] <= 3 and r.get('venueId')]
+          target.sort(key=lambda r:(r.get('venueNumber',999999), r.get('rank',99), r.get('id','')))
+          assert len(target) == 750, len(target)
+
+          def affiliate_url(r, provider_key):
+              for item in (r.get('affiliateLinks') or []):
+                  if not isinstance(item, dict):
+                      continue
+                  provider = str(item.get('provider','')).lower()
+                  url = str(item.get('url','')).strip()
+                  if url.startswith('http') and provider_key in provider:
+                      return url, 'affiliateLinks'
+              direct_keys = {
+                  'rakuten': ['rakuten','rakutenUrl','rakuten_url'],
+                  'jalan': ['jalan','jalanUrl','jalan_url'],
+              }[provider_key]
+              for key in direct_keys:
+                  url = str(r.get(key) or '').strip()
+                  if url.startswith('http'):
+                      return url, key
+              if provider_key == 'rakuten':
+                  no = str(r.get('rakutenHotelNo') or '').strip()
+                  if no:
+                      return f'https://travel.rakuten.co.jp/HOTEL/{no}/{no}.html', 'generated_from_rakutenHotelNo'
+              else:
+                  no = str(r.get('jalanYadNo') or '').strip()
+                  if no:
+                      return f'https://www.jalan.net/yad{no}/', 'generated_from_jalanYadNo'
+              return '', 'missing'
+
+          outdir = Path('exports'); outdir.mkdir(exist_ok=True)
+          rows=[]; rc=Counter(); jc=Counter()
+          for i,r in enumerate(target,1):
+              rakuten_url, rakuten_source = affiliate_url(r,'rakuten')
+              jalan_url, jalan_source = affiliate_url(r,'jalan')
+              rc[rakuten_source]+=1; jc[jalan_source]+=1
+              rows.append({
+                  'no':i,
+                  'id':r.get('id',''),
+                  'hotel_name':r.get('name',''),
+                  'venue_name':r.get('venueLabel',''),
+                  'venue_id':r.get('venueId',''),
+                  'venue_number':r.get('venueNumber',''),
+                  'rank':r.get('rank',''),
+                  'rakuten_hotel_no':r.get('rakutenHotelNo','') or '',
+                  'rakuten_url':rakuten_url,
+                  'rakuten_url_source':rakuten_source,
+                  'jalan_yad_no':r.get('jalanYadNo','') or '',
+                  'jalan_url':jalan_url,
+                  'jalan_url_source':jalan_source,
+              })
+          fields=list(rows[0].keys())
+          with (outdir/'booking_urls_750.csv').open('w',encoding='utf-8-sig',newline='') as f:
+              w=csv.DictWriter(f,fieldnames=fields); w.writeheader(); w.writerows(rows)
+          summary={
+              'rows':len(rows),
+              'unique_ids':len({r['id'] for r in rows}),
+              'with_rakuten_url':sum(bool(r['rakuten_url']) for r in rows),
+              'missing_rakuten_url':sum(not r['rakuten_url'] for r in rows),
+              'with_jalan_url':sum(bool(r['jalan_url']) for r in rows),
+              'missing_jalan_url':sum(not r['jalan_url'] for r in rows),
+              'rakuten_url_source_counts':dict(rc),
+              'jalan_url_source_counts':dict(jc),
+          }
+          (outdir/'booking_urls_750_summary.json').write_text(json.dumps(summary,ensure_ascii=False,indent=2),encoding='utf-8')
+          print(json.dumps(summary,ensure_ascii=False,indent=2))
+          PY
+
+      - name: Commit export
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add exports/booking_urls_750.csv exports/booking_urls_750_summary.json
+          git commit -m "Add combined Rakuten and Jalan URL export for 750 rows" || exit 0
+          git push origin HEAD:export/booking-urls-750-20260808
