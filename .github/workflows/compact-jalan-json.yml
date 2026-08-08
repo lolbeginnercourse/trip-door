@@ -1,4 +1,4 @@
-name: Compact Jalan hotel JSON
+name: Compact and verify Jalan hotel JSON
 
 on:
   pull_request:
@@ -8,7 +8,7 @@ permissions:
   contents: write
 
 jobs:
-  compact:
+  verify:
     if: github.event.pull_request.head.repo.full_name == github.repository && startsWith(github.event.pull_request.head.ref, 'jalan-format-cleanup-')
     runs-on: ubuntu-latest
     steps:
@@ -18,54 +18,68 @@ jobs:
           ref: ${{ github.event.pull_request.head.ref }}
           fetch-depth: 1
 
-      - name: Report close matches for supplied unmatched hotel names
+      - name: Fetch pre-change backup
+        shell: bash
+        run: git fetch origin backup-before-jalan-link-update-20260808-1834 --depth=1
+
+      - name: Verify only Jalan fields changed
         shell: bash
         run: |
+          git show FETCH_HEAD:assets/data/hotels.json > /tmp/hotels-before.json
           python3 - <<'PY'
-          import difflib, json, re, unicodedata
+          import copy, json, urllib.parse
           from pathlib import Path
 
-          data = json.loads(Path('assets/data/hotels.json').read_text(encoding='utf-8'))
-          names = sorted({str(h.get('name') or '') for h in data.get('hotels', []) if h.get('name')})
-          targets = [
-              'スーパーホテル大津駅前',
-              '天然温泉白樺の湯 ドーミーイン帯広',
-              '東横INN 松本駅東口',
-          ]
+          before = json.loads(Path('/tmp/hotels-before.json').read_text(encoding='utf-8'))
+          after = json.loads(Path('assets/data/hotels.json').read_text(encoding='utf-8'))
 
-          def n(s):
-              s = unicodedata.normalize('NFKC', s).lower()
-              return re.sub(r'[\s\u3000・･·\.。,:：;；\'’`´\-‐‑‒–—―ー_/\\()（）\[\]【】「」『』〈〉《》]', '', s)
+          if len(before.get('hotels', [])) != len(after.get('hotels', [])):
+              raise SystemExit('Hotel row count changed')
 
-          normalized = {n(name): name for name in names}
-          keys = list(normalized)
-          for target in targets:
-              close = difflib.get_close_matches(n(target), keys, n=8, cutoff=0.45)
-              print('UNMATCHED_TARGET:', target)
-              for key in close:
-                  print('  CANDIDATE:', normalized[key], 'RATIO=', round(difflib.SequenceMatcher(None, n(target), key).ratio(), 4))
+          def strip_jalan(doc):
+              doc = copy.deepcopy(doc)
+              for hotel in doc.get('hotels', []):
+                  if isinstance(hotel, dict):
+                      hotel.pop('jalan', None)
+              return doc
+
+          if strip_jalan(before) != strip_jalan(after):
+              raise SystemExit('Safety failure: a non-Jalan semantic field changed')
+
+          changes = []
+          for old, new in zip(before['hotels'], after['hotels']):
+              old_url = old.get('jalan') if isinstance(old, dict) else None
+              new_url = new.get('jalan') if isinstance(new, dict) else None
+              if old_url != new_url:
+                  decoded = urllib.parse.unquote(str(new_url or '')).lower()
+                  if not str(new_url or '').startswith('https://ck.jp.ap.valuecommerce.com/servlet/referral?'):
+                      raise SystemExit(f'Changed Jalan URL is not ValueCommerce affiliate URL: {new.get("name")}')
+                  if 'www.jalan.net/yad' not in decoded:
+                      raise SystemExit(f'Changed Jalan URL does not target a Jalan hotel page: {new.get("name")}')
+                  changes.append((new.get('name'), old_url, new_url))
+
+          if len(changes) != 800:
+              raise SystemExit(f'Expected exactly 800 changed Jalan rows, got {len(changes)}')
+
+          replaced = sum(1 for _, old, _ in changes if old)
+          added = sum(1 for _, old, _ in changes if not old)
+          print('NON_JALAN_FIELDS_IDENTICAL=true')
+          print('JALAN_CHANGED_ROWS=' + str(len(changes)))
+          print('JALAN_REPLACED_ROWS=' + str(replaced))
+          print('JALAN_ADDED_ROWS=' + str(added))
           PY
 
-      - name: Restore compact JSON formatting only
+      - name: Restore compact JSON formatting
         shell: bash
         run: |
           node - <<'NODE'
           const fs = require('fs');
           const path = 'assets/data/hotels.json';
-          const before = fs.statSync(path).size;
           const data = JSON.parse(fs.readFileSync(path, 'utf8'));
           fs.writeFileSync(path, JSON.stringify(data), 'utf8');
-          const after = fs.statSync(path).size;
-          console.log(`JSON_SIZE_BEFORE=${before}`);
-          console.log(`JSON_SIZE_AFTER=${after}`);
           NODE
 
-      - name: Verify semantic JSON is valid
-        shell: bash
-        run: |
-          node -e "const fs=require('fs'); const d=JSON.parse(fs.readFileSync('assets/data/hotels.json','utf8')); if(!Array.isArray(d.hotels)||d.hotels.length!==1256) process.exit(1); console.log('HOTEL_ROWS='+d.hotels.length)"
-
-      - name: Commit compact formatting
+      - name: Commit formatting only if needed
         shell: bash
         run: |
           if git diff --quiet -- assets/data/hotels.json; then
