@@ -1,0 +1,11 @@
+{
+  "row_count": 750,
+  "unique_hotels": 467,
+  "unique_verified_jalan_urls": 0,
+  "status_counts": {
+    "needs_review": 529,
+    "not_found": 221
+  },
+  "blank_jalan_url_count": 750,
+  "completed_at": "2026-08-08T16:29:07+09:00"
+}
