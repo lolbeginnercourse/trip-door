@@ -1,0 +1,76 @@
+name: Jalan 748 final strict update
+
+on:
+  create:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    if: github.event.ref_type == 'branch' && github.event.ref == 'jalan-748-final-trigger-20260808'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Apply exact supplied mapping only
+        shell: bash
+        run: |
+          node <<'NODE'
+          const fs=require('fs'), zlib=require('zlib');
+          const dbPath='assets/data/hotels.json', mapPath='.github/tmp/jalan-748-map.br64';
+          const raw=fs.readFileSync(dbPath,'utf8');
+          const before=JSON.parse(raw), data=JSON.parse(raw);
+          const mapping=JSON.parse(zlib.brotliDecompressSync(Buffer.from(fs.readFileSync(mapPath,'utf8').trim(),'base64')).toString('utf8'));
+          if(!Array.isArray(mapping)||mapping.length!==748) throw Error('mapping count != 748');
+          const rows=Array.isArray(data)?data:(data.hotels||data.data||data.items);
+          if(!Array.isArray(rows)) throw Error('hotel rows not found');
+          const norm=v=>String(v??'').normalize('NFKC').replace(/[\u00a0\u3000]/g,' ').replace(/\s+/gu,' ').trim().toLowerCase();
+          const compact=v=>norm(v).replace(/\s+/gu,'');
+          const sourceKeys=new Set();
+          for(const x of mapping){
+            if(!x||typeof x.name!=='string'||typeof x.url!=='string') throw Error('malformed mapping');
+            const k=norm(x.name); if(!k||sourceKeys.has(k)) throw Error('duplicate source: '+x.name); sourceKeys.add(k);
+            const u=new URL(x.url), vc=u.searchParams.get('vc_url');
+            if(u.protocol!=='https:'||u.hostname!=='ck.jp.ap.valuecommerce.com'||u.pathname!=='/servlet/referral'||!vc) throw Error('bad affiliate url: '+x.name);
+            const t=new URL(vc); if(t.protocol!=='https:'||t.hostname!=='www.jalan.net') throw Error('bad Jalan target: '+x.name);
+          }
+          const keys=['name','hotelName','hotel_name'];
+          const scores=keys.map(key=>({key,score:mapping.filter(x=>rows.some(r=>r&&typeof r[key]==='string'&&norm(r[key])===norm(x.name))).length})).sort((a,b)=>b.score-a.score);
+          const nameKey=scores[0].key; if(!scores[0].score) throw Error('hotel name key not found');
+          const mk=fn=>{const m=new Map(); for(const r of rows){if(!r||typeof r[nameKey]!=='string')continue; const k=fn(r[nameKey]); if(!m.has(k))m.set(k,[]); m.get(k).push(r);} return m};
+          const rawMap=mk(v=>v), normMap=mk(norm), compactMap=mk(compact);
+          const distinct=a=>[...new Set(a.map(r=>r[nameKey]))];
+          let exact=0,normalized=0,compactN=0,matchedRows=0,changed=0,replaced=0,added=0,same=0;
+          const unmatched=[], ambiguous=[], matched=[];
+          for(const x of mapping){
+            let c=rawMap.get(x.name)||[], mode='exact';
+            if(!c.length){c=normMap.get(norm(x.name))||[]; mode='normalized'; if(c.length&&distinct(c).length!==1){ambiguous.push({source:x.name,mode,candidates:distinct(c)});continue;}}
+            if(!c.length){c=compactMap.get(compact(x.name))||[]; mode='compact-whitespace'; if(c.length&&distinct(c).length!==1){ambiguous.push({source:x.name,mode,candidates:distinct(c)});continue;}}
+            if(!c.length){unmatched.push(x.name);continue;}
+            matched.push(x.name); if(mode==='exact')exact++; else if(mode==='normalized')normalized++; else compactN++; matchedRows+=c.length;
+            for(const r of c){if(r.jalan===x.url){same++;continue;} const had=typeof r.jalan==='string'&&r.jalan.length>0; if(had)replaced++; else added++; r.jalan=x.url; changed++;}
+          }
+          if(ambiguous.length) throw Error('ambiguous matches: '+JSON.stringify(ambiguous));
+          if(matched.length<Math.floor(748*0.80)) throw Error(`safety stop: ${matched.length}/748 matched`);
+          const strip=v=>Array.isArray(v)?v.map(strip):(v&&typeof v==='object'?Object.fromEntries(Object.entries(v).filter(([k])=>k!=='jalan').map(([k,x])=>[k,strip(x)])):v);
+          if(JSON.stringify(strip(before))!==JSON.stringify(strip(data))) throw Error('non-Jalan field changed');
+          fs.writeFileSync(dbPath,JSON.stringify(data));
+          const verify=JSON.parse(fs.readFileSync(dbPath,'utf8'));
+          if(JSON.stringify(strip(before))!==JSON.stringify(strip(verify))) throw Error('post-write non-Jalan mismatch');
+          for(const x of mapping){const c=rows.filter(r=>r&&typeof r[nameKey]==='string'&&(r[nameKey]===x.name||norm(r[nameKey])===norm(x.name)||compact(r[nameKey])===compact(x.name))); if(c.length&&c.some(r=>r.jalan!==x.url)) throw Error('URL verification failed: '+x.name);}
+          const report={sourceEntries:748,dbRows:rows.length,nameKey,scores,matchedUnique:matched.length,exactUnique:exact,normalizedUnique:normalized,compactWhitespaceUnique:compactN,matchedRows,changedRows:changed,replacedExistingJalanRows:replaced,addedJalanRows:added,alreadySameRows:same,unmatchedCount:unmatched.length,unmatched,ambiguousCount:ambiguous.length,nonJalanFieldsIdentical:true};
+          fs.writeFileSync('/tmp/jalan-report.json',JSON.stringify(report,null,2)); console.log('JALAN_748_REPORT_START'); console.log(JSON.stringify(report,null,2)); console.log('JALAN_748_REPORT_END');
+          NODE
+          cat /tmp/jalan-report.json >> "$GITHUB_STEP_SUMMARY"
+      - name: Commit clean verified result branch
+        shell: bash
+        run: |
+          rm -f .github/tmp/jalan-748-map.br64 .github/workflows/jalan-748-update.yml .github/workflows/jalan-748-final.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b jalan-affiliate-748-result-final-20260808
+          git add assets/data/hotels.json .github/tmp/jalan-748-map.br64 .github/workflows/jalan-748-update.yml .github/workflows/jalan-748-final.yml
+          git commit -m "Apply verified supplied 748 Jalan affiliate links"
+          git push origin HEAD:jalan-affiliate-748-result-final-20260808
