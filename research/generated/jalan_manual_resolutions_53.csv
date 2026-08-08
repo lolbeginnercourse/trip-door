@@ -1,0 +1,54 @@
+research_no,jalan_url,jalan_hotel_name,resolution_status,resolution_note,reference_url
+9,https://www.jalan.net/yad370441/,KOKO HOTEL 新宿四谷,rebranded_current_page,旧ホテルウィングインターナショナルプレミアム東京四谷と同一エリア・駅の現行じゃらん施設ページとして採用,https://www.jalan.net/yad370441/
+17,https://www.jalan.net/yad317436/,KOKO HOTEL 後楽園,rebranded_current_page,旧ホテルウィングインターナショナル後楽園と同一エリア・駅の現行じゃらん施設ページとして採用,https://www.jalan.net/yad317436/
+20,https://www.jalan.net/yad317436/,KOKO HOTEL 後楽園,rebranded_current_page,旧ホテルウィングインターナショナル後楽園と同一エリア・駅の現行じゃらん施設ページとして採用,https://www.jalan.net/yad317436/
+52,https://www.jalan.net/yad365524/,ヴィラフォンテーヌ東京大手町｜住友不動産,manual_verified,表記差のみ。都道府県・最寄り駅が一致するじゃらん施設ページ,https://www.jalan.net/yad365524/
+69,https://www.jalan.net/yad329696/,東急ステイ渋谷（道玄坂上）,manual_verified,渋谷の別館との混同を避け道玄坂上の施設を採用。都道府県・駅一致,https://www.jalan.net/yad329696/
+70,https://www.jalan.net/yad375986/,ザ・ワンファイブ東京渋谷,manual_verified,英語表記The OneFive Tokyo Shibuyaと日本語表記の差のみ。地域・駅一致,https://www.jalan.net/yad375986/
+73,https://www.jalan.net/yad375986/,ザ・ワンファイブ東京渋谷,manual_verified,英語表記The OneFive Tokyo Shibuyaと日本語表記の差のみ。地域・駅一致,https://www.jalan.net/yad375986/
+76,,,no_current_jalan_link,現在のじゃらん施設ページを検索・照合したが確定できず。誤リンクを避けるため空欄,
+79,,,no_current_jalan_link,現在のじゃらん施設ページを検索・照合したが確定できず。誤リンクを避けるため空欄,
+93,https://www.jalan.net/yad329696/,東急ステイ渋谷（道玄坂上）,manual_verified,渋谷の別館との混同を避け道玄坂上の施設を採用。都道府県・駅一致,https://www.jalan.net/yad329696/
+96,https://www.jalan.net/yad329696/,東急ステイ渋谷（道玄坂上）,manual_verified,渋谷の別館との混同を避け道玄坂上の施設を採用。都道府県・駅一致,https://www.jalan.net/yad329696/
+116,https://www.jalan.net/yad383484/,the b 赤坂（ザビーあかさか）,manual_verified,施設名本体が一致し都道府県・最寄り駅も一致,https://www.jalan.net/yad383484/
+119,https://www.jalan.net/yad383484/,the b 赤坂（ザビーあかさか）,manual_verified,施設名本体が一致し都道府県・最寄り駅も一致,https://www.jalan.net/yad383484/
+124,https://www.jalan.net/yad375986/,ザ・ワンファイブ東京渋谷,manual_verified,英語表記The OneFive Tokyo Shibuyaと日本語表記の差のみ。地域・駅一致,https://www.jalan.net/yad375986/
+127,https://www.jalan.net/yad375986/,ザ・ワンファイブ東京渋谷,manual_verified,英語表記The OneFive Tokyo Shibuyaと日本語表記の差のみ。地域・駅一致,https://www.jalan.net/yad375986/
+130,https://www.jalan.net/yad375986/,ザ・ワンファイブ東京渋谷,manual_verified,英語表記The OneFive Tokyo Shibuyaと日本語表記の差のみ。地域・駅一致,https://www.jalan.net/yad375986/
+187,,,no_current_jalan_link,TOKIO's HOTELの現行営業は確認できるが現在のじゃらん施設ページは確定できず。誤リンクを避けるため空欄,
+194,https://www.jalan.net/yad351481/,ネストホテルオルト目黒駅前,rebranded_current_page,旧ホテルミッドイン目黒駅前の検索結果から同一地域・目黒駅の現行じゃらん施設ページとして採用,https://www.jalan.net/yad351481/
+201,https://www.jalan.net/yad357688/,KOKO HOTEL 浅草駒形,rebranded_current_page,旧ホテルウィングインターナショナルセレクト浅草駒形と同一地域・駅の現行じゃらん施設ページとして採用,https://www.jalan.net/yad357688/
+204,https://www.jalan.net/yad357688/,KOKO HOTEL 浅草駒形,rebranded_current_page,旧ホテルウィングインターナショナルセレクト浅草駒形と同一地域・駅の現行じゃらん施設ページとして採用,https://www.jalan.net/yad357688/
+219,https://www.jalan.net/yad354515/,京急ＥＸイン羽田[天空橋駅前Ａ２出口徒歩３分],manual_verified,施設名本体・天空橋駅が一致。同名系列施設との混同を除外,https://www.jalan.net/yad354515/
+270,https://www.jalan.net/yad334192/,KOKO STAY 相模原,rebranded_current_page,旧ホテルウィングインターナショナル相模原と同一地域・上溝駅の現行じゃらん施設ページとして採用,https://www.jalan.net/yad334192/
+272,https://www.jalan.net/yad367436/,アパホテル〈相模原橋本駅東〉,rebranded_current_page,アイホテル橋本の検索結果から橋本駅・神奈川県が一致する現行じゃらん施設ページとして採用,https://www.jalan.net/yad367436/
+294,https://www.jalan.net/yad323070/,アーバンホテル東京 新松戸,rebranded_current_page,新松戸ステーションホテルの検索結果から新松戸駅・千葉県が一致する現行じゃらん施設ページとして採用,https://www.jalan.net/yad323070/
+312,https://www.jalan.net/yad348715/,クロス・ウェーブ船橋,manual_verified,X wave 船橋とクロス・ウェーブ船橋の表記差。船橋駅・千葉県一致,https://www.jalan.net/yad348715/
+321,https://www.jalan.net/yad397986/,浦和ワシントンホテル,manual_verified_web,じゃらん現行ページをWeb検索で再確認。宿番号397986・浦和駅西口徒歩約3分,https://www.jalan.net/yad397986/
+329,https://www.jalan.net/yad397986/,浦和ワシントンホテル,manual_verified_web,じゃらん現行ページをWeb検索で再確認。宿番号397986・浦和駅西口徒歩約3分,https://www.jalan.net/yad397986/
+392,https://www.jalan.net/yad326154/,KOKO HOTEL 旭川駅前（旧 ホテルウィング旭川駅前）,rebranded_current_page,じゃらん施設名自体に旧ホテルウィング旭川駅前と明記され同一施設を確認,https://www.jalan.net/yad326154/
+397,,,closed_no_current_link,JRイン帯広は閉館情報があり現在のじゃらん施設ページを確定できないため空欄,
+399,https://www.jalan.net/yad310153/,薬湯風呂 ホテルグランテラス帯広（BBHホテルグループ）,manual_verified,ホテルグランテラス帯広の施設名本体・帯広駅・北海道が一致,https://www.jalan.net/yad310153/
+429,https://www.jalan.net/yad309556/,ホテルメトロポリタン盛岡 ニューウイング,manual_verified,NEW WINGとニューウイングの表記差。盛岡駅・岩手県一致,https://www.jalan.net/yad309556/
+432,https://www.jalan.net/yad309556/,ホテルメトロポリタン盛岡 ニューウイング,manual_verified,NEW WINGとニューウイングの表記差。盛岡駅・岩手県一致,https://www.jalan.net/yad309556/
+486,,,closed_no_current_link,プレミアホテル-CABIN-松本は2024年12月31日のチェックアウトをもって営業終了。現行リンクなし,https://kenhotels.com/news/news12.html
+489,,,closed_no_current_link,プレミアホテル-CABIN-松本は2024年12月31日のチェックアウトをもって営業終了。現行リンクなし,https://kenhotels.com/news/news12.html
+554,https://www.jalan.net/yad312372/,ＫＯＫＯ ＨＯＴＥＬ 沼津駅前,rebranded_current_page,ホテルミワの検索結果から沼津駅・静岡県が一致する現行じゃらん施設ページとして採用,https://www.jalan.net/yad312372/
+556,,,needs_manual_review,検索で得た候補が函館パークホテルで都道府県・駅とも不一致。誤リンクを除外し空欄,
+568,https://www.jalan.net/yad350686/,ホテル京阪 天満橋駅前,manual_verified,施設名完全一致・大阪府・天満橋駅一致,https://www.jalan.net/yad350686/
+571,https://www.jalan.net/yad350686/,ホテル京阪 天満橋駅前,manual_verified,施設名完全一致・大阪府・天満橋駅一致,https://www.jalan.net/yad350686/
+574,https://www.jalan.net/yad350686/,ホテル京阪 天満橋駅前,manual_verified,施設名完全一致・大阪府・天満橋駅一致,https://www.jalan.net/yad350686/
+592,https://www.jalan.net/yad350686/,ホテル京阪 天満橋駅前,manual_verified,施設名完全一致・大阪府・天満橋駅一致,https://www.jalan.net/yad350686/
+595,https://www.jalan.net/yad350686/,ホテル京阪 天満橋駅前,manual_verified,施設名完全一致・大阪府・天満橋駅一致,https://www.jalan.net/yad350686/
+598,https://www.jalan.net/yad350686/,ホテル京阪 天満橋駅前,manual_verified,施設名完全一致・大阪府・天満橋駅一致,https://www.jalan.net/yad350686/
+613,https://www.jalan.net/yad397608/,大江戸温泉物語Premium 箕面観光ホテル,manual_verified_web,じゃらん現行ページをWeb検索で再確認。宿番号397608・箕面駅徒歩約5分,https://www.jalan.net/yad397608/
+617,https://www.jalan.net/yad338064/,KOKO HOTEL 東大阪,rebranded_current_page,旧ホテルウィングインターナショナルセレクト東大阪と同一地域・長田駅の現行じゃらん施設ページとして採用,https://www.jalan.net/yad338064/
+623,https://www.jalan.net/yad332153/,THE SINGULARI HOTEL ＆ SKYSPA at Universal Studios Japan,manual_verified,日本語・英語表記差のみ。ユニバーサルシティ駅・大阪府一致,https://www.jalan.net/yad332153/
+646,https://www.jalan.net/yad330793/,KOKO HOTEL 京都三条,rebranded_current_page,旧ホテルウィングインターナショナルプレミアム京都三条と同一地域・三条/東山駅の現行じゃらん施設ページとして採用,https://www.jalan.net/yad330793/
+647,https://www.jalan.net/yad354346/,ＨＯＴＥＬ ＭＡＴＥＲＩＡＬ,manual_verified,日本語カタカナと英字表記の差のみ。京都府・東山駅一致,https://www.jalan.net/yad354346/
+649,https://www.jalan.net/yad330793/,KOKO HOTEL 京都三条,rebranded_current_page,旧ホテルウィングインターナショナルプレミアム京都三条と同一地域・三条/東山駅の現行じゃらん施設ページとして採用,https://www.jalan.net/yad330793/
+650,https://www.jalan.net/yad354346/,ＨＯＴＥＬ ＭＡＴＥＲＩＡＬ,manual_verified,日本語カタカナと英字表記の差のみ。京都府・東山駅一致,https://www.jalan.net/yad354346/
+661,https://www.jalan.net/yad379554/,琵琶湖ホテル,manual_verified,びわ湖/琵琶湖の表記差のみ。滋賀県・びわ湖浜大津エリア一致,https://www.jalan.net/yad379554/
+662,,,no_current_jalan_link,HOTEL 講 大津百町の公式営業は確認できるが現在のじゃらん施設ページは確定できず。誤リンクを避けるため空欄,https://hotel-koo.com/concept/
+693,https://www.jalan.net/yad386217/,天然温泉「旅人の湯」 ホテルルートイン松江,manual_verified,施設名本体・島根県・松江駅が一致,https://www.jalan.net/yad386217/
+706,https://www.jalan.net/yad322158/,ANAクラウンプラザホテル高知by IHG,rebranded_current_page,旧ザ クラウンパレス新阪急高知の検索結果から高知エリア・駅が一致する現行じゃらん施設ページとして採用,https://www.jalan.net/yad322158/
