@@ -1,0 +1,103 @@
+name: Research Jalan links for exact 750 hotels
+
+on:
+  push:
+    branches:
+      - research/hotel-details-750-20260807
+    paths:
+      - .github/workflows/research-jalan-links-750.yml
+
+permissions:
+  contents: write
+
+env:
+  BRANCH: research/hotel-details-750-20260807
+
+jobs:
+  research:
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0,1,2,3,4,5,6,7,8,9]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ env.BRANCH }}
+      - name: Research shard
+        shell: bash
+        run: |
+          START=$(( ${{ matrix.shard }} * 75 + 1 ))
+          END=$(( START + 74 ))
+          python scripts/research_jalan_links.py \
+            --start "$START" --end "$END" \
+            --output "research/generated/jalan_shard_${{ matrix.shard }}.csv"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: jalan-shard-${{ matrix.shard }}
+          path: research/generated/jalan_shard_${{ matrix.shard }}.csv
+          retention-days: 2
+
+  merge:
+    needs: research
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ env.BRANCH }}
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: jalan-shard-*
+          path: research/generated/jalan_downloads
+      - name: Merge and validate all 750 rows
+        run: |
+          python - <<'PY'
+          import csv, json
+          from pathlib import Path
+          from datetime import datetime, timezone, timedelta
+          JST=timezone(timedelta(hours=9))
+          files=sorted(Path('research/generated/jalan_downloads').glob('jalan-shard-*/*.csv'))
+          if len(files)!=10:
+              raise SystemExit(f'expected 10 shard files, got {len(files)}')
+          rows=[]
+          fieldnames=None
+          for p in files:
+              with p.open(encoding='utf-8',newline='') as f:
+                  rr=list(csv.DictReader(f))
+                  if fieldnames is None: fieldnames=list(rr[0].keys()) if rr else []
+                  rows.extend(rr)
+          rows.sort(key=lambda r:int(r['research_no']))
+          if len(rows)!=750:
+              raise SystemExit(f'expected 750 rows, got {len(rows)}')
+          nums=[int(r['research_no']) for r in rows]
+          if nums!=list(range(1,751)):
+              raise SystemExit('research_no sequence is incomplete or duplicated')
+          out=Path('research/generated/jalan_links_750.csv')
+          with out.open('w',encoding='utf-8',newline='') as f:
+              w=csv.DictWriter(f,fieldnames=fieldnames); w.writeheader(); w.writerows(rows)
+          counts={}
+          for r in rows: counts[r['verification_status']]=counts.get(r['verification_status'],0)+1
+          unique_urls=len({r['jalan_url'] for r in rows if r['jalan_url']})
+          unique_hotels=len({(r['hotel_name'],r['prefecture']) for r in rows})
+          summary={
+              'row_count':len(rows),
+              'unique_hotels':unique_hotels,
+              'unique_verified_jalan_urls':unique_urls,
+              'status_counts':counts,
+              'blank_jalan_url_count':sum(1 for r in rows if not r['jalan_url']),
+              'completed_at':datetime.now(JST).isoformat(timespec='seconds')
+          }
+          Path('research/generated/jalan_links_750_summary.json').write_text(json.dumps(summary,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          print(json.dumps(summary,ensure_ascii=False,indent=2))
+          PY
+      - name: Commit final CSV and summary
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add research/generated/jalan_links_750.csv research/generated/jalan_links_750_summary.json
+          if git diff --cached --quiet; then
+            echo "No changes"
+            exit 0
+          fi
+          git commit -m "Research and verify Jalan links for exact 750 hotels"
+          git push origin HEAD:${BRANCH}
