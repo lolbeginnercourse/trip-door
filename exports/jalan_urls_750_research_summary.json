@@ -1,0 +1,9 @@
+{
+  "rows": 750,
+  "unique_hotels": 466,
+  "rows_with_jalan_url": 16,
+  "rows_missing_jalan_url": 734,
+  "unique_hotels_with_jalan_url": 7,
+  "unique_hotels_missing_jalan_url": 459,
+  "mode": "10_parallel_shards_search_engines_plus_jalan_page_title_verification"
+}
