@@ -1,0 +1,72 @@
+name: Research last 8 unresolved Jalan links
+
+on:
+  push:
+    branches:
+      - research/hotel-details-750-20260807
+    paths:
+      - .github/workflows/research-jalan-last-8.yml
+
+permissions:
+  contents: write
+
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research/hotel-details-750-20260807
+      - name: Exhaustive contextual search for last 8
+        run: |
+          python - <<'PY'
+          import csv,json,time,sys
+          from pathlib import Path
+          sys.path.insert(0,'scripts')
+          import research_jalan_links_v2 as j
+          targets={76,79,187,397,486,489,556,662}
+          with open('research/generated/jalan_target_manifest.csv',encoding='utf-8-sig',newline='') as f:
+              rows=[r for r in csv.DictReader(f) if int(r['research_no']) in targets]
+          cache={}; out=[]
+          for r in rows:
+              key=(r['hotel_name'],r['prefecture'],r['station'])
+              if key in cache:
+                  z=dict(cache[key]); z['research_no']=r['research_no']; z['id']=r['id']; out.append(z); continue
+              queries=[
+                f'"{r["hotel_name"]}" じゃらん',
+                f'"{r["hotel_name"]}" site:jalan.net/yad',
+                f'"{r["hotel_name"]}" {r["prefecture"]} {r["station"]} じゃらん',
+                f'{r["hotel_name"]} {r["prefecture"]} 宿泊 じゃらん',
+                f'{r["hotel_name"]} {r["area"]} じゃらん 宿番号',
+              ]
+              urls=[]; searches=[]; errors=[]
+              for q in queries:
+                  try:
+                      su,raw,links=j.yahoo_search(q); searches.append(su)
+                      for u in j.canonical_yad_urls(raw,links):
+                          if u not in urls: urls.append(u)
+                  except Exception as e: errors.append(repr(e))
+                  time.sleep(.15)
+              evals=[]
+              for u in urls[:15]:
+                  ev=j.evaluate_candidate(r,u); evals.append(ev); time.sleep(.08)
+              evals.sort(key=lambda x:x['score'],reverse=True)
+              rec={**r,'all_queries':' | '.join(queries),'search_urls':' | '.join(searches),'candidates_json':json.dumps(evals,ensure_ascii=False),'candidate_count':len(evals),'error':' | '.join(errors)}
+              if evals:
+                  rec.update({'best_url':evals[0]['url'],'best_jalan_name':evals[0]['jalan_hotel_name'],'best_score':evals[0]['score'],'best_name_similarity':evals[0]['name_similarity'],'best_prefecture_match':evals[0]['prefecture_match'],'best_station_match':evals[0]['station_match']})
+              else:
+                  rec.update({'best_url':'','best_jalan_name':'','best_score':'','best_name_similarity':'','best_prefecture_match':'','best_station_match':''})
+              cache[key]=dict(rec); out.append(rec)
+              print(json.dumps({'no':r['research_no'],'hotel':r['hotel_name'],'count':len(evals),'best':rec['best_url'],'name':rec['best_jalan_name'],'score':rec['best_score'],'pref':rec['best_prefecture_match'],'station':rec['best_station_match']},ensure_ascii=False),flush=True)
+          fields=['research_no','id','hotel_name','prefecture','area','station','best_url','best_jalan_name','best_score','best_name_similarity','best_prefecture_match','best_station_match','candidate_count','all_queries','search_urls','candidates_json','error']
+          p=Path('research/generated/jalan_last_8_exhaustive.csv')
+          with p.open('w',encoding='utf-8',newline='') as f:
+              w=csv.DictWriter(f,fieldnames=fields,extrasaction='ignore'); w.writeheader(); w.writerows(out)
+          PY
+      - name: Commit result
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add research/generated/jalan_last_8_exhaustive.csv
+          git commit -m "Exhaustively recheck last 8 Jalan links" || exit 0
+          git push origin HEAD:research/hotel-details-750-20260807
