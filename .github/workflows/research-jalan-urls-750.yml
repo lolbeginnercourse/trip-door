@@ -51,3 +51,4 @@ jobs:
             git commit -m 'Research Jalan URLs for 750 hotel rows'
             git push origin HEAD:export/booking-urls-750-20260808
           fi
+# trigger: 2026-08-08
