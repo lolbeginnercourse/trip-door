@@ -1,0 +1,79 @@
+name: Compact Jalan hotel JSON
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: write
+
+jobs:
+  compact:
+    if: github.event.pull_request.head.repo.full_name == github.repository && startsWith(github.event.pull_request.head.ref, 'jalan-format-cleanup-')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout cleanup branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+          fetch-depth: 1
+
+      - name: Report close matches for supplied unmatched hotel names
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import difflib, json, re, unicodedata
+          from pathlib import Path
+
+          data = json.loads(Path('assets/data/hotels.json').read_text(encoding='utf-8'))
+          names = sorted({str(h.get('name') or '') for h in data.get('hotels', []) if h.get('name')})
+          targets = [
+              'スーパーホテル大津駅前',
+              '天然温泉白樺の湯 ドーミーイン帯広',
+              '東横INN 松本駅東口',
+          ]
+
+          def n(s):
+              s = unicodedata.normalize('NFKC', s).lower()
+              return re.sub(r'[\s\u3000・･·\.。,:：;；\'’`´\-‐‑‒–—―ー_/\\()（）\[\]【】「」『』〈〉《》]', '', s)
+
+          normalized = {n(name): name for name in names}
+          keys = list(normalized)
+          for target in targets:
+              close = difflib.get_close_matches(n(target), keys, n=8, cutoff=0.45)
+              print('UNMATCHED_TARGET:', target)
+              for key in close:
+                  print('  CANDIDATE:', normalized[key], 'RATIO=', round(difflib.SequenceMatcher(None, n(target), key).ratio(), 4))
+          PY
+
+      - name: Restore compact JSON formatting only
+        shell: bash
+        run: |
+          node - <<'NODE'
+          const fs = require('fs');
+          const path = 'assets/data/hotels.json';
+          const before = fs.statSync(path).size;
+          const data = JSON.parse(fs.readFileSync(path, 'utf8'));
+          fs.writeFileSync(path, JSON.stringify(data), 'utf8');
+          const after = fs.statSync(path).size;
+          console.log(`JSON_SIZE_BEFORE=${before}`);
+          console.log(`JSON_SIZE_AFTER=${after}`);
+          NODE
+
+      - name: Verify semantic JSON is valid
+        shell: bash
+        run: |
+          node -e "const fs=require('fs'); const d=JSON.parse(fs.readFileSync('assets/data/hotels.json','utf8')); if(!Array.isArray(d.hotels)||d.hotels.length!==1256) process.exit(1); console.log('HOTEL_ROWS='+d.hotels.length)"
+
+      - name: Commit compact formatting
+        shell: bash
+        run: |
+          if git diff --quiet -- assets/data/hotels.json; then
+            echo 'No formatting change required.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add assets/data/hotels.json
+          git commit -m 'Restore compact hotel JSON formatting'
+          git push origin HEAD:${{ github.event.pull_request.head.ref }}
