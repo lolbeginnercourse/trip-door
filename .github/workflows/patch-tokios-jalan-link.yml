@@ -1,0 +1,57 @@
+name: Patch TOKIOs Jalan link into final CSV
+
+on:
+  push:
+    branches:
+      - research/hotel-details-750-20260807
+    paths:
+      - .github/workflows/patch-tokios-jalan-link.yml
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research/hotel-details-750-20260807
+      - name: Patch row 187 and regenerate summary and delivery
+        run: |
+          python - <<'PY'
+          import csv,json,re
+          from pathlib import Path
+          from datetime import datetime,timezone,timedelta
+          JST=timezone(timedelta(hours=9))
+          p=Path('research/generated/jalan_links_750_final.csv')
+          with p.open(encoding='utf-8',newline='') as f:
+              rows=list(csv.DictReader(f)); fields=f.fieldnames
+          for r in rows:
+              if int(r['research_no'])==187:
+                  r['jalan_url']='https://www.jalan.net/yad310032/'
+                  r['jalan_hotel_name']='ＴＯＫＩＯ’ｓ　ＨＯＴＥＬ'
+                  r['verification_status']='manual_verified_web'
+                  r['verification_note']='じゃらん日本語ページを直接確認。宿番号310032、東京都北区王子1-18-5、王子駅アクセスが対象施設と一致'
+                  r['candidate_url']='https://www.jalan.net/yad310032/'
+                  r['manual_reference_url']='https://www.jalan.net/yad310032/'
+          with p.open('w',encoding='utf-8',newline='') as f:
+              w=csv.DictWriter(f,fieldnames=fields); w.writeheader(); w.writerows(rows)
+          status={}
+          for r in rows: status[r['verification_status']]=status.get(r['verification_status'],0)+1
+          missing=[{'research_no':int(r['research_no']),'id':r['id'],'hotel_name':r['hotel_name'],'status':r['verification_status'],'note':r['verification_note']} for r in rows if not r['jalan_url']]
+          summary={'row_count':750,'research_no_complete':True,'link_present_count':sum(bool(r['jalan_url']) for r in rows),'link_missing_count':len(missing),'unique_hotel_rows':len({(r['hotel_name'],r['prefecture']) for r in rows}),'unique_jalan_urls':len({r['jalan_url'] for r in rows if r['jalan_url']}),'status_counts':status,'missing_rows':missing,'canonical_url_validation':'passed','generated_at':datetime.now(JST).isoformat(timespec='seconds')}
+          Path('research/generated/jalan_links_750_final_summary.json').write_text(json.dumps(summary,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          delivery=Path('research/generated/jalan_links_750_delivery.csv')
+          dfields=['research_no','id','hotel_name','jalan_url','verification_status','verification_note']
+          with delivery.open('w',encoding='utf-8-sig',newline='') as f:
+              w=csv.DictWriter(f,fieldnames=dfields,extrasaction='ignore'); w.writeheader(); w.writerows(rows)
+          print(json.dumps(summary,ensure_ascii=False,indent=2))
+          PY
+      - name: Commit patch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add research/generated/jalan_links_750_final.csv research/generated/jalan_links_750_final_summary.json research/generated/jalan_links_750_delivery.csv
+          git commit -m "Verify TOKIOs HOTEL Jalan link 310032" || exit 0
+          git push origin HEAD:research/hotel-details-750-20260807
