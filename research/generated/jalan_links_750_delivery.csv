@@ -1,0 +1,751 @@
+﻿research_no,id,hotel_name,jalan_url,verification_status,verification_note
+1,stage-001-1,東横INN品川港南口天王洲アイル,https://www.jalan.net/yad390736/,verified,hotel name matches Jalan page; location context consistent
+2,stage-001-2,ANAホリデイ・イン東京ベイ,https://www.jalan.net/yad349696/,verified,hotel name matches Jalan page; location context consistent
+3,stage-001-3,スーパーホテル品川・新馬場,https://www.jalan.net/yad304182/,verified,hotel name matches Jalan page; location context consistent
+4,stage-002-1,アワーズイン阪急,https://www.jalan.net/yad302472/,verified,hotel name matches Jalan page; location context consistent
+5,stage-002-2,ヴィアイン品川大井町,https://www.jalan.net/yad317259/,verified,hotel name matches Jalan page; location context consistent
+6,stage-002-3,ホテルマイステイズプレミア大森,https://www.jalan.net/yad314382/,verified,hotel name matches Jalan page; location context consistent
+7,stage-003-1,日本青年館ホテル,https://www.jalan.net/yad335762/,verified,hotel name matches Jalan page; location context consistent
+8,stage-003-2,東急ステイ青山プレミア,https://www.jalan.net/yad381958/,verified,hotel name matches Jalan page; location context consistent
+9,stage-003-3,ホテルウィングインターナショナルプレミアム東京四谷,https://www.jalan.net/yad370441/,rebranded_current_page,旧ホテルウィングインターナショナルプレミアム東京四谷と同一エリア・駅の現行じゃらん施設ページとして採用
+10,stage-004-1,ホテルグランドシティ,https://www.jalan.net/yad317472/,verified,hotel name matches Jalan page; location context consistent
+11,stage-004-2,ホテルリソル池袋,https://www.jalan.net/yad386545/,verified,hotel name matches Jalan page; location context consistent
+12,stage-004-3,京王プレッソイン池袋,https://www.jalan.net/yad333355/,verified,hotel name matches Jalan page; location context consistent
+13,stage-005-1,ホテルグランドシティ,https://www.jalan.net/yad317472/,verified,hotel name matches Jalan page; location context consistent
+14,stage-005-2,ホテルリソル池袋,https://www.jalan.net/yad386545/,verified,hotel name matches Jalan page; location context consistent
+15,stage-005-3,京王プレッソイン池袋,https://www.jalan.net/yad333355/,verified,hotel name matches Jalan page; location context consistent
+16,stage-006-1,リッチモンドホテル東京水道橋,https://www.jalan.net/yad332210/,verified,hotel name matches Jalan page; location context consistent
+17,stage-006-2,ホテルウィングインターナショナル後楽園,https://www.jalan.net/yad317436/,rebranded_current_page,旧ホテルウィングインターナショナル後楽園と同一エリア・駅の現行じゃらん施設ページとして採用
+18,stage-006-3,the b 水道橋,https://www.jalan.net/yad369889/,verified,hotel name matches Jalan page; location context consistent
+19,stage-007-1,リッチモンドホテル東京水道橋,https://www.jalan.net/yad332210/,verified,hotel name matches Jalan page; location context consistent
+20,stage-007-2,ホテルウィングインターナショナル後楽園,https://www.jalan.net/yad317436/,rebranded_current_page,旧ホテルウィングインターナショナル後楽園と同一エリア・駅の現行じゃらん施設ページとして採用
+21,stage-007-3,the b 水道橋,https://www.jalan.net/yad369889/,verified,hotel name matches Jalan page; location context consistent
+22,stage-008-1,ホテルサンライト新宿,https://www.jalan.net/yad343909/,verified,hotel name matches Jalan page; location context consistent
+23,stage-008-2,新宿アーバンホテル,https://www.jalan.net/yad321016/,verified,hotel name matches Jalan page; location context consistent
+24,stage-008-3,ホテルアマネク新宿歌舞伎町,https://www.jalan.net/yad357994/,verified,hotel name matches Jalan page; location context consistent
+25,stage-009-1,ホテル ヴィラフォンテーヌ グランド 東京有明,https://www.jalan.net/yad379750/,verified_fuzzy,hotel name is a fuzzy/renamed match; location context consistent
+26,stage-009-2,相鉄グランドフレッサ 東京ベイ有明,https://www.jalan.net/yad350291/,verified,hotel name matches Jalan page; location context consistent
+27,stage-009-3,ファーイーストビレッジホテル東京有明,https://www.jalan.net/yad320700/,verified,hotel name matches Jalan page; location context consistent
+28,stage-010-1,レム日比谷,https://www.jalan.net/yad334400/,verified,hotel name matches Jalan page; location context consistent
+29,stage-010-2,銀座ベルビューホテル,https://www.jalan.net/yad303626/,verified,hotel name matches Jalan page; location context consistent
+30,stage-010-3,ダイワロイネットホテル新橋,https://www.jalan.net/yad344290/,verified,hotel name matches Jalan page; location context consistent
+31,stage-011-1,東横INN日本橋浜町明治座前,https://www.jalan.net/yad380797/,verified,hotel name matches Jalan page; location context consistent
+32,stage-011-2,アパホテル〈人形町駅北〉,https://www.jalan.net/yad323155/,verified,hotel name matches Jalan page; location context consistent
+33,stage-011-3,コンフォートホテル東京東日本橋,https://www.jalan.net/yad379871/,verified,hotel name matches Jalan page; location context consistent
+34,stage-012-1,相鉄フレッサイン 銀座三丁目,https://www.jalan.net/yad398781/,verified,hotel name matches Jalan page; location context consistent
+35,stage-012-2,ホテルモントレ銀座,https://www.jalan.net/yad347902/,verified,hotel name matches Jalan page; location context consistent
+36,stage-012-3,ダイワロイネットホテル東京京橋 PREMIER,https://www.jalan.net/yad370598/,verified,hotel name matches Jalan page; location context consistent
+37,stage-013-1,レム日比谷,https://www.jalan.net/yad334400/,verified,hotel name matches Jalan page; location context consistent
+38,stage-013-2,銀座ベルビューホテル,https://www.jalan.net/yad303626/,verified,hotel name matches Jalan page; location context consistent
+39,stage-013-3,ダイワロイネットホテル新橋,https://www.jalan.net/yad344290/,verified,hotel name matches Jalan page; location context consistent
+40,stage-014-1,品川プリンスホテル イーストタワー,https://www.jalan.net/yad353540/,verified,hotel name matches Jalan page; location context consistent
+41,stage-014-2,京急EXホテル高輪,https://www.jalan.net/yad349259/,verified,hotel name matches Jalan page; location context consistent
+42,stage-014-3,アパホテル〈品川 泉岳寺駅前〉,https://www.jalan.net/yad354769/,verified,hotel name matches Jalan page; location context consistent
+43,stage-015-1,品川プリンスホテル イーストタワー,https://www.jalan.net/yad353540/,verified,hotel name matches Jalan page; location context consistent
+44,stage-015-2,京急EXホテル高輪,https://www.jalan.net/yad349259/,verified,hotel name matches Jalan page; location context consistent
+45,stage-015-3,アパホテル〈品川 泉岳寺駅前〉,https://www.jalan.net/yad354769/,verified,hotel name matches Jalan page; location context consistent
+46,stage-016-1,レム六本木,https://www.jalan.net/yad382341/,verified,hotel name matches Jalan page; location context consistent
+47,stage-016-2,相鉄フレッサイン 東京六本木,https://www.jalan.net/yad364444/,verified,hotel name matches Jalan page; location context consistent
+48,stage-016-3,コンフォートイン東京六本木,https://www.jalan.net/yad330535/,verified,hotel name matches Jalan page; location context consistent
+49,stage-017-1,レム日比谷,https://www.jalan.net/yad334400/,verified,hotel name matches Jalan page; location context consistent
+50,stage-017-2,銀座ベルビューホテル,https://www.jalan.net/yad303626/,verified,hotel name matches Jalan page; location context consistent
+51,stage-017-3,ダイワロイネットホテル新橋,https://www.jalan.net/yad344290/,verified,hotel name matches Jalan page; location context consistent
+52,stage-018-1,ホテルヴィラフォンテーヌ東京大手町,https://www.jalan.net/yad365524/,manual_verified,表記差のみ。都道府県・最寄り駅が一致するじゃらん施設ページ
+53,stage-018-2,相鉄フレッサイン 神田大手町,https://www.jalan.net/yad359984/,verified,hotel name matches Jalan page; location context consistent
+54,stage-018-3,グランドセントラルホテル,https://www.jalan.net/yad323236/,verified,hotel name matches Jalan page; location context consistent
+55,stage-019-1,レム日比谷,https://www.jalan.net/yad334400/,verified,hotel name matches Jalan page; location context consistent
+56,stage-019-2,銀座ベルビューホテル,https://www.jalan.net/yad303626/,verified,hotel name matches Jalan page; location context consistent
+57,stage-019-3,ダイワロイネットホテル新橋,https://www.jalan.net/yad344290/,verified,hotel name matches Jalan page; location context consistent
+58,stage-020-1,レム日比谷,https://www.jalan.net/yad334400/,verified,hotel name matches Jalan page; location context consistent
+59,stage-020-2,銀座ベルビューホテル,https://www.jalan.net/yad303626/,verified,hotel name matches Jalan page; location context consistent
+60,stage-020-3,ダイワロイネットホテル新橋,https://www.jalan.net/yad344290/,verified,hotel name matches Jalan page; location context consistent
+61,stage-021-1,レム日比谷,https://www.jalan.net/yad334400/,verified,hotel name matches Jalan page; location context consistent
+62,stage-021-2,銀座ベルビューホテル,https://www.jalan.net/yad303626/,verified,hotel name matches Jalan page; location context consistent
+63,stage-021-3,ダイワロイネットホテル新橋,https://www.jalan.net/yad344290/,verified,hotel name matches Jalan page; location context consistent
+64,stage-022-1,相鉄フレッサイン 銀座三丁目,https://www.jalan.net/yad398781/,verified,hotel name matches Jalan page; location context consistent
+65,stage-022-2,ホテルモントレ銀座,https://www.jalan.net/yad347902/,verified,hotel name matches Jalan page; location context consistent
+66,stage-022-3,ダイワロイネットホテル東京京橋 PREMIER,https://www.jalan.net/yad370598/,verified,hotel name matches Jalan page; location context consistent
+67,stage-023-1,the b 三軒茶屋,https://www.jalan.net/yad323781/,verified,hotel name matches Jalan page; location context consistent
+68,stage-023-2,東急ステイ用賀,https://www.jalan.net/yad376499/,verified,hotel name matches Jalan page; location context consistent
+69,stage-023-3,東急ステイ渋谷,https://www.jalan.net/yad329696/,manual_verified,渋谷の別館との混同を避け道玄坂上の施設を採用。都道府県・駅一致
+70,stage-024-1,The OneFive Tokyo Shibuya,https://www.jalan.net/yad375986/,manual_verified,英語表記The OneFive Tokyo Shibuyaと日本語表記の差のみ。地域・駅一致
+71,stage-024-2,渋谷東武ホテル,https://www.jalan.net/yad316476/,verified,hotel name matches Jalan page; location context consistent
+72,stage-024-3,渋谷クレストンホテル,https://www.jalan.net/yad312949/,verified,hotel name matches Jalan page; location context consistent
+73,stage-025-1,The OneFive Tokyo Shibuya,https://www.jalan.net/yad375986/,manual_verified,英語表記The OneFive Tokyo Shibuyaと日本語表記の差のみ。地域・駅一致
+74,stage-025-2,渋谷東武ホテル,https://www.jalan.net/yad316476/,verified,hotel name matches Jalan page; location context consistent
+75,stage-025-3,渋谷クレストンホテル,https://www.jalan.net/yad312949/,verified,hotel name matches Jalan page; location context consistent
+76,stage-026-1,ART HOTELS SHIBUYA,,no_current_jalan_link,現在のじゃらん施設ページを検索・照合したが確定できず。誤リンクを避けるため空欄
+77,stage-026-2,THE KNOT TOKYO Shinjuku,https://www.jalan.net/yad327330/,verified,hotel name matches Jalan page; location context consistent
+78,stage-026-3,アパホテル&リゾート〈西新宿五丁目駅タワー〉,https://www.jalan.net/yad301471/,verified,hotel name matches Jalan page; location context consistent
+79,stage-027-1,ART HOTELS SHIBUYA,,no_current_jalan_link,現在のじゃらん施設ページを検索・照合したが確定できず。誤リンクを避けるため空欄
+80,stage-027-2,THE KNOT TOKYO Shinjuku,https://www.jalan.net/yad327330/,verified,hotel name matches Jalan page; location context consistent
+81,stage-027-3,アパホテル&リゾート〈西新宿五丁目駅タワー〉,https://www.jalan.net/yad301471/,verified,hotel name matches Jalan page; location context consistent
+82,stage-028-1,ホテルサンシティ池袋,https://www.jalan.net/yad363660/,verified,hotel name matches Jalan page; location context consistent
+83,stage-028-2,ホテルアーバン,https://www.jalan.net/yad329080/,verified,hotel name matches Jalan page; location context consistent
+84,stage-028-3,スーパーホテルPremier池袋天然温泉,https://www.jalan.net/yad316663/,verified,hotel name matches Jalan page; location context consistent
+85,stage-029-1,ホテルサンシティ池袋,https://www.jalan.net/yad363660/,verified,hotel name matches Jalan page; location context consistent
+86,stage-029-2,ホテルアーバン,https://www.jalan.net/yad329080/,verified,hotel name matches Jalan page; location context consistent
+87,stage-029-3,スーパーホテルPremier池袋天然温泉,https://www.jalan.net/yad316663/,verified,hotel name matches Jalan page; location context consistent
+88,stage-030-1,ホテルサンシティ池袋,https://www.jalan.net/yad363660/,verified,hotel name matches Jalan page; location context consistent
+89,stage-030-2,ホテルアーバン,https://www.jalan.net/yad329080/,verified,hotel name matches Jalan page; location context consistent
+90,stage-030-3,スーパーホテルPremier池袋天然温泉,https://www.jalan.net/yad316663/,verified,hotel name matches Jalan page; location context consistent
+91,stage-031-1,the b 三軒茶屋,https://www.jalan.net/yad323781/,verified,hotel name matches Jalan page; location context consistent
+92,stage-031-2,東急ステイ用賀,https://www.jalan.net/yad376499/,verified,hotel name matches Jalan page; location context consistent
+93,stage-031-3,東急ステイ渋谷,https://www.jalan.net/yad329696/,manual_verified,渋谷の別館との混同を避け道玄坂上の施設を採用。都道府県・駅一致
+94,stage-032-1,the b 三軒茶屋,https://www.jalan.net/yad323781/,verified,hotel name matches Jalan page; location context consistent
+95,stage-032-2,東急ステイ用賀,https://www.jalan.net/yad376499/,verified,hotel name matches Jalan page; location context consistent
+96,stage-032-3,東急ステイ渋谷,https://www.jalan.net/yad329696/,manual_verified,渋谷の別館との混同を避け道玄坂上の施設を採用。都道府県・駅一致
+97,stage-033-1,ホテルサンライト新宿,https://www.jalan.net/yad343909/,verified,hotel name matches Jalan page; location context consistent
+98,stage-033-2,新宿アーバンホテル,https://www.jalan.net/yad321016/,verified,hotel name matches Jalan page; location context consistent
+99,stage-033-3,ホテルアマネク新宿歌舞伎町,https://www.jalan.net/yad357994/,verified,hotel name matches Jalan page; location context consistent
+100,stage-034-1,ホテルサンルートプラザ新宿,https://www.jalan.net/yad351204/,verified,hotel name matches Jalan page; location context consistent
+101,stage-034-2,JR九州ホテル ブラッサム新宿,https://www.jalan.net/yad391743/,verified,hotel name matches Jalan page; location context consistent
+102,stage-034-3,京王プレッソイン新宿,https://www.jalan.net/yad399872/,verified,hotel name matches Jalan page; location context consistent
+103,stage-035-1,ホテルサンルートプラザ新宿,https://www.jalan.net/yad351204/,verified,hotel name matches Jalan page; location context consistent
+104,stage-035-2,JR九州ホテル ブラッサム新宿,https://www.jalan.net/yad391743/,verified,hotel name matches Jalan page; location context consistent
+105,stage-035-3,京王プレッソイン新宿,https://www.jalan.net/yad399872/,verified,hotel name matches Jalan page; location context consistent
+106,stage-036-1,ホテルサンライト新宿,https://www.jalan.net/yad343909/,verified,hotel name matches Jalan page; location context consistent
+107,stage-036-2,新宿アーバンホテル,https://www.jalan.net/yad321016/,verified,hotel name matches Jalan page; location context consistent
+108,stage-036-3,ホテルアマネク新宿歌舞伎町,https://www.jalan.net/yad357994/,verified,hotel name matches Jalan page; location context consistent
+109,stage-037-1,ホテルサンライト新宿,https://www.jalan.net/yad343909/,verified,hotel name matches Jalan page; location context consistent
+110,stage-037-2,新宿アーバンホテル,https://www.jalan.net/yad321016/,verified,hotel name matches Jalan page; location context consistent
+111,stage-037-3,ホテルアマネク新宿歌舞伎町,https://www.jalan.net/yad357994/,verified,hotel name matches Jalan page; location context consistent
+112,stage-038-1,ホテルサンライト新宿,https://www.jalan.net/yad343909/,verified,hotel name matches Jalan page; location context consistent
+113,stage-038-2,新宿アーバンホテル,https://www.jalan.net/yad321016/,verified,hotel name matches Jalan page; location context consistent
+114,stage-038-3,ホテルアマネク新宿歌舞伎町,https://www.jalan.net/yad357994/,verified,hotel name matches Jalan page; location context consistent
+115,stage-039-1,ホテルアジア会館,https://www.jalan.net/yad344328/,verified,hotel name matches Jalan page; location context consistent
+116,stage-039-2,the b 赤坂,https://www.jalan.net/yad383484/,manual_verified,施設名本体が一致し都道府県・最寄り駅も一致
+117,stage-039-3,ホテルモントレ赤坂,https://www.jalan.net/yad380660/,verified,hotel name matches Jalan page; location context consistent
+118,stage-040-1,ホテルアジア会館,https://www.jalan.net/yad344328/,verified,hotel name matches Jalan page; location context consistent
+119,stage-040-2,the b 赤坂,https://www.jalan.net/yad383484/,manual_verified,施設名本体が一致し都道府県・最寄り駅も一致
+120,stage-040-3,ホテルモントレ赤坂,https://www.jalan.net/yad380660/,verified,hotel name matches Jalan page; location context consistent
+121,stage-041-1,相鉄フレッサイン 銀座三丁目,https://www.jalan.net/yad398781/,verified,hotel name matches Jalan page; location context consistent
+122,stage-041-2,ホテルモントレ銀座,https://www.jalan.net/yad347902/,verified,hotel name matches Jalan page; location context consistent
+123,stage-041-3,ダイワロイネットホテル東京京橋 PREMIER,https://www.jalan.net/yad370598/,verified,hotel name matches Jalan page; location context consistent
+124,stage-042-1,The OneFive Tokyo Shibuya,https://www.jalan.net/yad375986/,manual_verified,英語表記The OneFive Tokyo Shibuyaと日本語表記の差のみ。地域・駅一致
+125,stage-042-2,渋谷東武ホテル,https://www.jalan.net/yad316476/,verified,hotel name matches Jalan page; location context consistent
+126,stage-042-3,渋谷クレストンホテル,https://www.jalan.net/yad312949/,verified,hotel name matches Jalan page; location context consistent
+127,stage-043-1,The OneFive Tokyo Shibuya,https://www.jalan.net/yad375986/,manual_verified,英語表記The OneFive Tokyo Shibuyaと日本語表記の差のみ。地域・駅一致
+128,stage-043-2,渋谷東武ホテル,https://www.jalan.net/yad316476/,verified,hotel name matches Jalan page; location context consistent
+129,stage-043-3,渋谷クレストンホテル,https://www.jalan.net/yad312949/,verified,hotel name matches Jalan page; location context consistent
+130,stage-044-1,The OneFive Tokyo Shibuya,https://www.jalan.net/yad375986/,manual_verified,英語表記The OneFive Tokyo Shibuyaと日本語表記の差のみ。地域・駅一致
+131,stage-044-2,渋谷東武ホテル,https://www.jalan.net/yad316476/,verified,hotel name matches Jalan page; location context consistent
+132,stage-044-3,渋谷クレストンホテル,https://www.jalan.net/yad312949/,verified,hotel name matches Jalan page; location context consistent
+133,stage-045-1,アーバイン東京・上野 北千住,https://www.jalan.net/yad381076/,verified,hotel name matches Jalan page; location context consistent
+134,stage-045-2,ホテル ココ・グラン北千住,https://www.jalan.net/yad323264/,verified,hotel name matches Jalan page; location context consistent
+135,stage-045-3,ホテルリブマックス東京綾瀬駅前,https://www.jalan.net/yad359437/,verified,hotel name matches Jalan page; location context consistent
+136,stage-046-1,スマイルホテル東京綾瀬駅前,https://www.jalan.net/yad386875/,verified,hotel name matches Jalan page; location context consistent
+137,stage-046-2,ホテルリブマックス東京綾瀬駅前,https://www.jalan.net/yad359437/,verified,hotel name matches Jalan page; location context consistent
+138,stage-046-3,アーバイン東京・上野 北千住,https://www.jalan.net/yad381076/,verified,hotel name matches Jalan page; location context consistent
+139,stage-047-1,くれたけイン東京船堀,https://www.jalan.net/yad367968/,verified,hotel name matches Jalan page; location context consistent
+140,stage-047-2,レンブラントスタイル東京西葛西,https://www.jalan.net/yad398420/,verified,hotel name matches Jalan page; location context consistent
+141,stage-047-3,アパホテル〈TKP東京西葛西〉,https://www.jalan.net/yad317197/,verified,hotel name matches Jalan page; location context consistent
+142,stage-048-1,スマイルホテル東京新小岩,https://www.jalan.net/yad318472/,verified,hotel name matches Jalan page; location context consistent
+143,stage-048-2,スーパーホテル東京・JR新小岩,https://www.jalan.net/yad330980/,verified,hotel name matches Jalan page; location context consistent
+144,stage-048-3,サイプレスイン東京,https://www.jalan.net/yad360845/,verified,hotel name matches Jalan page; location context consistent
+145,stage-049-1,スマイルホテル東京新小岩,https://www.jalan.net/yad318472/,verified,hotel name matches Jalan page; location context consistent
+146,stage-049-2,スーパーホテル東京・JR新小岩,https://www.jalan.net/yad330980/,verified,hotel name matches Jalan page; location context consistent
+147,stage-049-3,サイプレスイン東京,https://www.jalan.net/yad360845/,verified,hotel name matches Jalan page; location context consistent
+148,stage-050-1,フレックステイイン江古田,https://www.jalan.net/yad378405/,verified,hotel name matches Jalan page; location context consistent
+149,stage-050-2,ホテルカデンツァ東京,https://www.jalan.net/yad318646/,verified,hotel name matches Jalan page; location context consistent
+150,stage-050-3,和光市東武ホテル,https://www.jalan.net/yad370584/,verified,hotel name matches Jalan page; location context consistent
+151,stage-051-1,フレックステイイン江古田,https://www.jalan.net/yad378405/,verified,hotel name matches Jalan page; location context consistent
+152,stage-051-2,ホテルカデンツァ東京,https://www.jalan.net/yad318646/,verified,hotel name matches Jalan page; location context consistent
+153,stage-051-3,和光市東武ホテル,https://www.jalan.net/yad370584/,verified,hotel name matches Jalan page; location context consistent
+154,stage-052-1,吉祥寺東急REIホテル,https://www.jalan.net/yad311450/,verified,hotel name matches Jalan page; location context consistent
+155,stage-052-2,吉祥寺エクセルホテル東急,https://www.jalan.net/yad364620/,verified,hotel name matches Jalan page; location context consistent
+156,stage-052-3,リッチモンドホテル東京武蔵野,https://www.jalan.net/yad328441/,verified,hotel name matches Jalan page; location context consistent
+157,stage-053-1,リッチモンドホテル東京武蔵野,https://www.jalan.net/yad328441/,verified,hotel name matches Jalan page; location context consistent
+158,stage-053-2,三鷹シティホテル,https://www.jalan.net/yad398198/,verified,hotel name matches Jalan page; location context consistent
+159,stage-053-3,JR東日本ホテルメッツ 武蔵境,https://www.jalan.net/yad306355/,verified,hotel name matches Jalan page; location context consistent
+160,stage-054-1,リッチモンドホテル東京武蔵野,https://www.jalan.net/yad328441/,verified,hotel name matches Jalan page; location context consistent
+161,stage-054-2,三鷹シティホテル,https://www.jalan.net/yad398198/,verified,hotel name matches Jalan page; location context consistent
+162,stage-054-3,JR東日本ホテルメッツ 武蔵境,https://www.jalan.net/yad306355/,verified,hotel name matches Jalan page; location context consistent
+163,stage-055-1,JR東日本ホテルメッツ 高円寺,https://www.jalan.net/yad360888/,verified,hotel name matches Jalan page; location context consistent
+164,stage-055-2,ビジネスホテル クレセント,https://www.jalan.net/yad326133/,verified,hotel name matches Jalan page; location context consistent
+165,stage-055-3,ホテルルートイン東京阿佐ヶ谷,https://www.jalan.net/yad340828/,verified,hotel name matches Jalan page; location context consistent
+166,stage-056-1,JR東日本ホテルメッツ 高円寺,https://www.jalan.net/yad360888/,verified,hotel name matches Jalan page; location context consistent
+167,stage-056-2,ビジネスホテル クレセント,https://www.jalan.net/yad326133/,verified,hotel name matches Jalan page; location context consistent
+168,stage-056-3,ホテルルートイン東京阿佐ヶ谷,https://www.jalan.net/yad340828/,verified,hotel name matches Jalan page; location context consistent
+169,stage-057-1,ビジネスホテル クレセント,https://www.jalan.net/yad326133/,verified,hotel name matches Jalan page; location context consistent
+170,stage-057-2,JR東日本ホテルメッツ 高円寺,https://www.jalan.net/yad360888/,verified,hotel name matches Jalan page; location context consistent
+171,stage-057-3,ホテルルートイン東京阿佐ヶ谷,https://www.jalan.net/yad340828/,verified,hotel name matches Jalan page; location context consistent
+172,stage-058-1,ビジネスホテル クレセント,https://www.jalan.net/yad326133/,verified,hotel name matches Jalan page; location context consistent
+173,stage-058-2,JR東日本ホテルメッツ 高円寺,https://www.jalan.net/yad360888/,verified,hotel name matches Jalan page; location context consistent
+174,stage-058-3,ホテルルートイン東京阿佐ヶ谷,https://www.jalan.net/yad340828/,verified,hotel name matches Jalan page; location context consistent
+175,stage-059-1,ビジネスホテル クレセント,https://www.jalan.net/yad326133/,verified,hotel name matches Jalan page; location context consistent
+176,stage-059-2,JR東日本ホテルメッツ 高円寺,https://www.jalan.net/yad360888/,verified,hotel name matches Jalan page; location context consistent
+177,stage-059-3,ホテルルートイン東京阿佐ヶ谷,https://www.jalan.net/yad340828/,verified,hotel name matches Jalan page; location context consistent
+178,stage-060-1,ビジネスホテル クレセント,https://www.jalan.net/yad326133/,verified,hotel name matches Jalan page; location context consistent
+179,stage-060-2,JR東日本ホテルメッツ 高円寺,https://www.jalan.net/yad360888/,verified,hotel name matches Jalan page; location context consistent
+180,stage-060-3,ホテルルートイン東京阿佐ヶ谷,https://www.jalan.net/yad340828/,verified,hotel name matches Jalan page; location context consistent
+181,stage-061-1,ビジネスホテル クレセント,https://www.jalan.net/yad326133/,verified,hotel name matches Jalan page; location context consistent
+182,stage-061-2,JR東日本ホテルメッツ 高円寺,https://www.jalan.net/yad360888/,verified,hotel name matches Jalan page; location context consistent
+183,stage-061-3,ホテルルートイン東京阿佐ヶ谷,https://www.jalan.net/yad340828/,verified,hotel name matches Jalan page; location context consistent
+184,stage-062-1,ホテルグランドシティ,https://www.jalan.net/yad317472/,verified,hotel name matches Jalan page; location context consistent
+185,stage-062-2,ホテルリソル池袋,https://www.jalan.net/yad386545/,verified,hotel name matches Jalan page; location context consistent
+186,stage-062-3,京王プレッソイン池袋,https://www.jalan.net/yad333355/,verified,hotel name matches Jalan page; location context consistent
+187,stage-063-1,TOKIO's HOTEL,,no_current_jalan_link,TOKIO's HOTELの現行営業は確認できるが現在のじゃらん施設ページは確定できず。誤リンクを避けるため空欄
+188,stage-063-2,東横INN京浜東北線王子駅北口,https://www.jalan.net/yad378762/,verified,hotel name matches Jalan page; location context consistent
+189,stage-063-3,JR東日本ホテルメッツ 赤羽,https://www.jalan.net/yad312583/,verified,hotel name matches Jalan page; location context consistent
+190,stage-064-1,ホテルカデンツァ東京,https://www.jalan.net/yad318646/,verified,hotel name matches Jalan page; location context consistent
+191,stage-064-2,和光市東武ホテル,https://www.jalan.net/yad370584/,verified,hotel name matches Jalan page; location context consistent
+192,stage-064-3,東横INN和光市駅前,https://www.jalan.net/yad329704/,verified,hotel name matches Jalan page; location context consistent
+193,stage-065-1,東急ステイ目黒・祐天寺,https://www.jalan.net/yad322009/,verified,hotel name matches Jalan page; location context consistent
+194,stage-065-2,ホテルミッドイン目黒駅前,https://www.jalan.net/yad351481/,rebranded_current_page,旧ホテルミッドイン目黒駅前の検索結果から同一地域・目黒駅の現行じゃらん施設ページとして採用
+195,stage-065-3,ホテルアベスト目黒,https://www.jalan.net/yad375748/,verified,hotel name matches Jalan page; location context consistent
+196,stage-066-1,ホテルマイステイズ蒲田,https://www.jalan.net/yad328010/,verified,hotel name matches Jalan page; location context consistent
+197,stage-066-2,ビジネスイン和,https://www.jalan.net/yad380776/,verified,hotel name matches Jalan page; location context consistent
+198,stage-066-3,グランパークホテル パネックス東京,https://www.jalan.net/yad332385/,verified,hotel name matches Jalan page; location context consistent
+199,stage-067-1,ホテル トレンド 浅草,https://www.jalan.net/yad337634/,verified,hotel name matches Jalan page; location context consistent
+200,stage-067-2,アパホテル〈浅草 田原町駅前〉,https://www.jalan.net/yad347008/,verified,hotel name matches Jalan page; location context consistent
+201,stage-067-3,ホテルウィングインターナショナルセレクト浅草駒形,https://www.jalan.net/yad357688/,rebranded_current_page,旧ホテルウィングインターナショナルセレクト浅草駒形と同一地域・駅の現行じゃらん施設ページとして採用
+202,stage-068-1,ホテル トレンド 浅草,https://www.jalan.net/yad337634/,verified,hotel name matches Jalan page; location context consistent
+203,stage-068-2,アパホテル〈浅草 田原町駅前〉,https://www.jalan.net/yad347008/,verified,hotel name matches Jalan page; location context consistent
+204,stage-068-3,ホテルウィングインターナショナルセレクト浅草駒形,https://www.jalan.net/yad357688/,rebranded_current_page,旧ホテルウィングインターナショナルセレクト浅草駒形と同一地域・駅の現行じゃらん施設ページとして採用
+205,stage-069-1,スーパーホテル品川・新馬場,https://www.jalan.net/yad304182/,verified,hotel name matches Jalan page; location context consistent
+206,stage-069-2,東横INN品川港南口天王洲アイル,https://www.jalan.net/yad390736/,verified,hotel name matches Jalan page; location context consistent
+207,stage-069-3,アパホテル〈品川 泉岳寺駅前〉,https://www.jalan.net/yad354769/,verified,hotel name matches Jalan page; location context consistent
+208,stage-070-1,ホテルグランドシティ,https://www.jalan.net/yad317472/,verified,hotel name matches Jalan page; location context consistent
+209,stage-070-2,ホテルリソル池袋,https://www.jalan.net/yad386545/,verified,hotel name matches Jalan page; location context consistent
+210,stage-070-3,京王プレッソイン池袋,https://www.jalan.net/yad333355/,verified,hotel name matches Jalan page; location context consistent
+211,stage-071-1,アパホテル〈上野駅前〉,https://www.jalan.net/yad309641/,verified,hotel name matches Jalan page; location context consistent
+212,stage-071-2,上野ホテル,https://www.jalan.net/yad349496/,verified,hotel name matches Jalan page; location context consistent
+213,stage-071-3,ベッセルイン上野入谷駅前,https://www.jalan.net/yad316610/,verified,hotel name matches Jalan page; location context consistent
+214,stage-072-1,ホテルエミシア東京立川,https://www.jalan.net/yad322793/,verified,hotel name matches Jalan page; location context consistent
+215,stage-072-2,立川リージェントホテル,https://www.jalan.net/yad378921/,verified,hotel name matches Jalan page; location context consistent
+216,stage-072-3,ホテルマイステイズ立川,https://www.jalan.net/yad314924/,verified,hotel name matches Jalan page; location context consistent
+217,stage-073-1,京急EXイン 羽田イノベーションシティ,https://www.jalan.net/yad317988/,verified,hotel name matches Jalan page; location context consistent
+218,stage-073-2,ホテルメトロポリタン 羽田,https://www.jalan.net/yad308818/,verified,hotel name matches Jalan page; location context consistent
+219,stage-073-3,京急EXイン 羽田,https://www.jalan.net/yad354515/,manual_verified,施設名本体・天空橋駅が一致。同名系列施設との混同を除外
+220,stage-074-1,東横INN鶯谷駅前,https://www.jalan.net/yad356514/,verified,hotel name matches Jalan page; location context consistent
+221,stage-074-2,ホテルセレッソ,https://www.jalan.net/yad304178/,verified,hotel name matches Jalan page; location context consistent
+222,stage-074-3,ベッセルイン上野入谷駅前,https://www.jalan.net/yad316610/,verified,hotel name matches Jalan page; location context consistent
+223,stage-075-1,ホテルJALシティ関内 横浜,https://www.jalan.net/yad362892/,verified,hotel name matches Jalan page; location context consistent
+224,stage-075-2,コンフォートホテル横浜関内,https://www.jalan.net/yad332780/,verified,hotel name matches Jalan page; location context consistent
+225,stage-075-3,ダイワロイネットホテル横浜公園,https://www.jalan.net/yad385556/,verified,hotel name matches Jalan page; location context consistent
+226,stage-076-1,ホテルJALシティ関内 横浜,https://www.jalan.net/yad362892/,verified,hotel name matches Jalan page; location context consistent
+227,stage-076-2,コンフォートホテル横浜関内,https://www.jalan.net/yad332780/,verified,hotel name matches Jalan page; location context consistent
+228,stage-076-3,ダイワロイネットホテル横浜公園,https://www.jalan.net/yad385556/,verified,hotel name matches Jalan page; location context consistent
+229,stage-077-1,横浜桜木町ワシントンホテル,https://www.jalan.net/yad322644/,verified,hotel name matches Jalan page; location context consistent
+230,stage-077-2,ニューオータニイン横浜プレミアム,https://www.jalan.net/yad362198/,verified,hotel name matches Jalan page; location context consistent
+231,stage-077-3,相鉄フレッサイン 横浜桜木町,https://www.jalan.net/yad369618/,verified,hotel name matches Jalan page; location context consistent
+232,stage-078-1,横浜桜木町ワシントンホテル,https://www.jalan.net/yad322644/,verified,hotel name matches Jalan page; location context consistent
+233,stage-078-2,ニューオータニイン横浜プレミアム,https://www.jalan.net/yad362198/,verified,hotel name matches Jalan page; location context consistent
+234,stage-078-3,相鉄フレッサイン 横浜桜木町,https://www.jalan.net/yad369618/,verified,hotel name matches Jalan page; location context consistent
+235,stage-079-1,横浜桜木町ワシントンホテル,https://www.jalan.net/yad322644/,verified,hotel name matches Jalan page; location context consistent
+236,stage-079-2,ニューオータニイン横浜プレミアム,https://www.jalan.net/yad362198/,verified,hotel name matches Jalan page; location context consistent
+237,stage-079-3,相鉄フレッサイン 横浜桜木町,https://www.jalan.net/yad369618/,verified,hotel name matches Jalan page; location context consistent
+238,stage-080-1,ホテルJALシティ関内 横浜,https://www.jalan.net/yad362892/,verified,hotel name matches Jalan page; location context consistent
+239,stage-080-2,コンフォートホテル横浜関内,https://www.jalan.net/yad332780/,verified,hotel name matches Jalan page; location context consistent
+240,stage-080-3,ダイワロイネットホテル横浜公園,https://www.jalan.net/yad385556/,verified,hotel name matches Jalan page; location context consistent
+241,stage-081-1,ホテルJALシティ関内 横浜,https://www.jalan.net/yad362892/,verified,hotel name matches Jalan page; location context consistent
+242,stage-081-2,コンフォートホテル横浜関内,https://www.jalan.net/yad332780/,verified,hotel name matches Jalan page; location context consistent
+243,stage-081-3,ダイワロイネットホテル横浜公園,https://www.jalan.net/yad385556/,verified,hotel name matches Jalan page; location context consistent
+244,stage-082-1,ホテルJALシティ関内 横浜,https://www.jalan.net/yad362892/,verified,hotel name matches Jalan page; location context consistent
+245,stage-082-2,コンフォートホテル横浜関内,https://www.jalan.net/yad332780/,verified,hotel name matches Jalan page; location context consistent
+246,stage-082-3,ダイワロイネットホテル横浜公園,https://www.jalan.net/yad385556/,verified,hotel name matches Jalan page; location context consistent
+247,stage-083-1,横浜桜木町ワシントンホテル,https://www.jalan.net/yad322644/,verified,hotel name matches Jalan page; location context consistent
+248,stage-083-2,ニューオータニイン横浜プレミアム,https://www.jalan.net/yad362198/,verified,hotel name matches Jalan page; location context consistent
+249,stage-083-3,相鉄フレッサイン 横浜桜木町,https://www.jalan.net/yad369618/,verified,hotel name matches Jalan page; location context consistent
+250,stage-084-1,横浜桜木町ワシントンホテル,https://www.jalan.net/yad322644/,verified,hotel name matches Jalan page; location context consistent
+251,stage-084-2,ニューオータニイン横浜プレミアム,https://www.jalan.net/yad362198/,verified,hotel name matches Jalan page; location context consistent
+252,stage-084-3,相鉄フレッサイン 横浜桜木町,https://www.jalan.net/yad369618/,verified,hotel name matches Jalan page; location context consistent
+253,stage-085-1,メルキュール横須賀,https://www.jalan.net/yad364572/,verified_fuzzy,hotel name is a fuzzy/renamed match; location context consistent
+254,stage-085-2,ホテルニューヨコスカ,https://www.jalan.net/yad325291/,verified,hotel name matches Jalan page; location context consistent
+255,stage-085-3,セントラルホテル横須賀,https://www.jalan.net/yad308664/,verified,hotel name matches Jalan page; location context consistent
+256,stage-086-1,メルキュール横須賀,https://www.jalan.net/yad364572/,verified_fuzzy,hotel name is a fuzzy/renamed match; location context consistent
+257,stage-086-2,ホテルニューヨコスカ,https://www.jalan.net/yad325291/,verified,hotel name matches Jalan page; location context consistent
+258,stage-086-3,セントラルホテル横須賀,https://www.jalan.net/yad308664/,verified,hotel name matches Jalan page; location context consistent
+259,stage-087-1,川崎日航ホテル,https://www.jalan.net/yad322153/,verified,hotel name matches Jalan page; location context consistent
+260,stage-087-2,JR東日本ホテルメッツ 川崎,https://www.jalan.net/yad319398/,verified,hotel name matches Jalan page; location context consistent
+261,stage-087-3,相鉄フレッサイン 川崎駅東口,https://www.jalan.net/yad364516/,verified,hotel name matches Jalan page; location context consistent
+262,stage-088-1,川崎日航ホテル,https://www.jalan.net/yad322153/,verified,hotel name matches Jalan page; location context consistent
+263,stage-088-2,JR東日本ホテルメッツ 川崎,https://www.jalan.net/yad319398/,verified,hotel name matches Jalan page; location context consistent
+264,stage-088-3,相鉄フレッサイン 川崎駅東口,https://www.jalan.net/yad364516/,verified,hotel name matches Jalan page; location context consistent
+265,stage-089-1,ホテルモリノ新百合丘,https://www.jalan.net/yad319930/,verified,hotel name matches Jalan page; location context consistent
+266,stage-089-2,ホテルリソル町田,https://www.jalan.net/yad306138/,verified,hotel name matches Jalan page; location context consistent
+267,stage-089-3,レンブラントホテル東京町田,https://www.jalan.net/yad344307/,verified,hotel name matches Jalan page; location context consistent
+268,stage-090-1,小田急ホテルセンチュリー相模大野,https://www.jalan.net/yad327534/,verified,hotel name matches Jalan page; location context consistent
+269,stage-090-2,ホテルクラウンヒルズ相模原,https://www.jalan.net/yad321546/,verified,hotel name matches Jalan page; location context consistent
+270,stage-090-3,ホテルウィングインターナショナル相模原,https://www.jalan.net/yad334192/,rebranded_current_page,旧ホテルウィングインターナショナル相模原と同一地域・上溝駅の現行じゃらん施設ページとして採用
+271,stage-091-1,アパホテル〈相模原 橋本駅前〉,https://www.jalan.net/yad309326/,verified,hotel name matches Jalan page; location context consistent
+272,stage-091-2,アイホテル橋本,https://www.jalan.net/yad367436/,rebranded_current_page,アイホテル橋本の検索結果から橋本駅・神奈川県が一致する現行じゃらん施設ページとして採用
+273,stage-091-3,橋本パークホテル,https://www.jalan.net/yad310732/,verified,hotel name matches Jalan page; location context consistent
+274,stage-092-1,相鉄フレッサイン 鎌倉大船駅笠間口,https://www.jalan.net/yad333858/,verified,hotel name matches Jalan page; location context consistent
+275,stage-092-2,相鉄フレッサイン 鎌倉大船駅東口,https://www.jalan.net/yad387314/,verified,hotel name matches Jalan page; location context consistent
+276,stage-092-3,JR東日本ホテルメッツ かまくら大船,https://www.jalan.net/yad316007/,verified,hotel name matches Jalan page; location context consistent
+277,stage-093-1,東横INN小田原駅東口,https://www.jalan.net/yad383120/,verified,hotel name matches Jalan page; location context consistent
+278,stage-093-2,天成園 小田原駅 別館,https://www.jalan.net/yad384718/,verified,hotel name matches Jalan page; location context consistent
+279,stage-093-3,小田原ターミナルホテル,https://www.jalan.net/yad337701/,verified,hotel name matches Jalan page; location context consistent
+280,stage-094-1,東横INN湘南平塚駅北口1,https://www.jalan.net/yad376827/,verified,hotel name matches Jalan page; location context consistent
+281,stage-094-2,東横INN湘南平塚駅北口2,https://www.jalan.net/yad396704/,verified,hotel name matches Jalan page; location context consistent
+282,stage-094-3,3S HOTEL HIRATSUKA,https://www.jalan.net/yad319414/,verified,hotel name matches Jalan page; location context consistent
+283,stage-095-1,日和ホテル舞浜,https://www.jalan.net/yad339506/,verified_fuzzy,hotel name is a fuzzy/renamed match; location context consistent
+284,stage-095-2,ホテルマイステイズ舞浜,https://www.jalan.net/yad314138/,verified,hotel name matches Jalan page; location context consistent
+285,stage-095-3,変なホテル舞浜 東京ベイ,https://www.jalan.net/yad374965/,verified,hotel name matches Jalan page; location context consistent
+286,stage-096-1,アパホテル&リゾート〈東京ベイ幕張〉,https://www.jalan.net/yad350664/,verified,hotel name matches Jalan page; location context consistent
+287,stage-096-2,ホテルスプリングス幕張プレミア,https://www.jalan.net/yad369189/,verified,hotel name matches Jalan page; location context consistent
+288,stage-096-3,ホテルフランクス,https://www.jalan.net/yad321749/,verified,hotel name matches Jalan page; location context consistent
+289,stage-097-1,市川グランドホテル,https://www.jalan.net/yad320441/,verified,hotel name matches Jalan page; location context consistent
+290,stage-097-2,スーパーホテル東西線・市川・妙典駅前,https://www.jalan.net/yad320571/,verified,hotel name matches Jalan page; location context consistent
+291,stage-097-3,東横INN西船橋原木インター,https://www.jalan.net/yad383235/,verified,hotel name matches Jalan page; location context consistent
+292,stage-098-1,東横INN松戸駅東口,https://www.jalan.net/yad364124/,verified,hotel name matches Jalan page; location context consistent
+293,stage-098-2,ホテルルートイン北松戸駅前,https://www.jalan.net/yad319715/,verified,hotel name matches Jalan page; location context consistent
+294,stage-098-3,新松戸ステーションホテル,https://www.jalan.net/yad323070/,rebranded_current_page,新松戸ステーションホテルの検索結果から新松戸駅・千葉県が一致する現行じゃらん施設ページとして採用
+295,stage-099-1,ダイワロイネットホテル千葉中央,https://www.jalan.net/yad326515/,verified,hotel name matches Jalan page; location context consistent
+296,stage-099-2,京成ホテルミラマーレ,https://www.jalan.net/yad316278/,verified,hotel name matches Jalan page; location context consistent
+297,stage-099-3,アパホテル〈千葉中央駅前〉,https://www.jalan.net/yad309713/,verified,hotel name matches Jalan page; location context consistent
+298,stage-100-1,ダイワロイネットホテル千葉中央,https://www.jalan.net/yad326515/,verified,hotel name matches Jalan page; location context consistent
+299,stage-100-2,京成ホテルミラマーレ,https://www.jalan.net/yad316278/,verified,hotel name matches Jalan page; location context consistent
+300,stage-100-3,アパホテル〈千葉中央駅前〉,https://www.jalan.net/yad309713/,verified,hotel name matches Jalan page; location context consistent
+301,stage-101-1,ダイワロイネットホテル千葉中央,https://www.jalan.net/yad326515/,verified,hotel name matches Jalan page; location context consistent
+302,stage-101-2,京成ホテルミラマーレ,https://www.jalan.net/yad316278/,verified,hotel name matches Jalan page; location context consistent
+303,stage-101-3,アパホテル〈千葉中央駅前〉,https://www.jalan.net/yad309713/,verified,hotel name matches Jalan page; location context consistent
+304,stage-102-1,浦安サンホテル,https://www.jalan.net/yad360504/,verified,hotel name matches Jalan page; location context consistent
+305,stage-102-2,BAY HOTEL 浦安駅前,https://www.jalan.net/yad332498/,verified,hotel name matches Jalan page; location context consistent
+306,stage-102-3,マイステイズ新浦安コンファレンスセンター,https://www.jalan.net/yad380068/,verified,hotel name matches Jalan page; location context consistent
+307,stage-103-1,相鉄フレッサイン 千葉柏,https://www.jalan.net/yad379284/,verified,hotel name matches Jalan page; location context consistent
+308,stage-103-2,ザ・クレストホテル柏,https://www.jalan.net/yad320077/,verified,hotel name matches Jalan page; location context consistent
+309,stage-103-3,東横INN柏駅西口,https://www.jalan.net/yad325315/,verified,hotel name matches Jalan page; location context consistent
+310,stage-104-1,JR東日本ホテルメッツ 船橋,https://www.jalan.net/yad319502/,verified,hotel name matches Jalan page; location context consistent
+311,stage-104-2,ホテルフローラ船橋,https://www.jalan.net/yad334045/,verified,hotel name matches Jalan page; location context consistent
+312,stage-104-3,X wave 船橋,https://www.jalan.net/yad348715/,manual_verified,X wave 船橋とクロス・ウェーブ船橋の表記差。船橋駅・千葉県一致
+313,stage-105-1,パレスホテル大宮,https://www.jalan.net/yad319907/,verified,hotel name matches Jalan page; location context consistent
+314,stage-105-2,ダイワロイネットホテル大宮西口,https://www.jalan.net/yad340083/,verified,hotel name matches Jalan page; location context consistent
+315,stage-105-3,カンデオホテルズ大宮,https://www.jalan.net/yad361737/,verified,hotel name matches Jalan page; location context consistent
+316,stage-106-1,パレスホテル大宮,https://www.jalan.net/yad319907/,verified,hotel name matches Jalan page; location context consistent
+317,stage-106-2,ダイワロイネットホテル大宮西口,https://www.jalan.net/yad340083/,verified,hotel name matches Jalan page; location context consistent
+318,stage-106-3,カンデオホテルズ大宮,https://www.jalan.net/yad361737/,verified,hotel name matches Jalan page; location context consistent
+319,stage-107-1,ホテルニュー埼玉,https://www.jalan.net/yad357309/,verified,hotel name matches Jalan page; location context consistent
+320,stage-107-2,JR東日本ホテルメッツ 浦和,https://www.jalan.net/yad385408/,verified,hotel name matches Jalan page; location context consistent
+321,stage-107-3,浦和ワシントンホテル,https://www.jalan.net/yad397986/,manual_verified_web,じゃらん現行ページをWeb検索で再確認。宿番号397986・浦和駅西口徒歩約3分
+322,stage-108-1,東横INNさいたま新都心,https://www.jalan.net/yad301522/,verified,hotel name matches Jalan page; location context consistent
+323,stage-108-2,ホテルメトロポリタンさいたま新都心,https://www.jalan.net/yad389464/,verified,hotel name matches Jalan page; location context consistent
+324,stage-108-3,アパホテル〈さいたま新都心駅北〉,https://www.jalan.net/yad315417/,verified,hotel name matches Jalan page; location context consistent
+325,stage-109-1,東横INNさいたま新都心,https://www.jalan.net/yad301522/,verified,hotel name matches Jalan page; location context consistent
+326,stage-109-2,ホテルメトロポリタンさいたま新都心,https://www.jalan.net/yad389464/,verified,hotel name matches Jalan page; location context consistent
+327,stage-109-3,アパホテル〈さいたま新都心駅北〉,https://www.jalan.net/yad315417/,verified,hotel name matches Jalan page; location context consistent
+328,stage-110-1,JR東日本ホテルメッツ 浦和,https://www.jalan.net/yad385408/,verified,hotel name matches Jalan page; location context consistent
+329,stage-110-2,浦和ワシントンホテル,https://www.jalan.net/yad397986/,manual_verified_web,じゃらん現行ページをWeb検索で再確認。宿番号397986・浦和駅西口徒歩約3分
+330,stage-110-3,ロイヤルパインズホテル浦和,https://www.jalan.net/yad330988/,verified,hotel name matches Jalan page; location context consistent
+331,stage-111-1,東横INN北戸田駅東口,https://www.jalan.net/yad368499/,verified,hotel name matches Jalan page; location context consistent
+332,stage-111-2,東横INN西川口駅,https://www.jalan.net/yad308785/,verified,hotel name matches Jalan page; location context consistent
+333,stage-111-3,西川口ステーションホテル ステイラウンジ,https://www.jalan.net/yad348776/,verified,hotel name matches Jalan page; location context consistent
+334,stage-112-1,和光市東武ホテル,https://www.jalan.net/yad370584/,verified,hotel name matches Jalan page; location context consistent
+335,stage-112-2,東横INN北朝霞駅西口,https://www.jalan.net/yad314581/,verified,hotel name matches Jalan page; location context consistent
+336,stage-112-3,スマイルホテル北朝霞,https://www.jalan.net/yad314505/,verified,hotel name matches Jalan page; location context consistent
+337,stage-113-1,川越東武ホテル,https://www.jalan.net/yad374288/,verified,hotel name matches Jalan page; location context consistent
+338,stage-113-2,川越プリンスホテル,https://www.jalan.net/yad305876/,verified,hotel name matches Jalan page; location context consistent
+339,stage-113-3,スーパーホテル埼玉・川越,https://www.jalan.net/yad397364/,verified,hotel name matches Jalan page; location context consistent
+340,stage-114-1,東横INN三郷中央駅前,https://www.jalan.net/yad369932/,verified,hotel name matches Jalan page; location context consistent
+341,stage-114-2,ホテルサンクローバー三郷,https://www.jalan.net/yad382711/,verified,hotel name matches Jalan page; location context consistent
+342,stage-114-3,東横INN八潮駅前,https://www.jalan.net/yad381970/,verified,hotel name matches Jalan page; location context consistent
+343,stage-115-1,所沢パークホテル,https://www.jalan.net/yad326366/,verified,hotel name matches Jalan page; location context consistent
+344,stage-115-2,久米川ウィングホテル,https://www.jalan.net/yad326418/,verified_fuzzy,hotel name is a fuzzy/renamed match; location context consistent
+345,stage-115-3,ビジネスホテル マーキュリー,https://www.jalan.net/yad356334/,verified,hotel name matches Jalan page; location context consistent
+346,stage-116-1,所沢パークホテル,https://www.jalan.net/yad326366/,verified,hotel name matches Jalan page; location context consistent
+347,stage-116-2,久米川ウィングホテル,https://www.jalan.net/yad326418/,verified_fuzzy,hotel name is a fuzzy/renamed match; location context consistent
+348,stage-116-3,ビジネスホテル マーキュリー,https://www.jalan.net/yad356334/,verified,hotel name matches Jalan page; location context consistent
+349,stage-117-1,ダイワロイネットホテル水戸,https://www.jalan.net/yad314882/,verified,hotel name matches Jalan page; location context consistent
+350,stage-117-2,JR東日本ホテルメッツ 水戸,https://www.jalan.net/yad318263/,verified,hotel name matches Jalan page; location context consistent
+351,stage-117-3,水戸京成ホテル,https://www.jalan.net/yad304132/,verified,hotel name matches Jalan page; location context consistent
+352,stage-118-1,ダイワロイネットホテル水戸,https://www.jalan.net/yad314882/,verified,hotel name matches Jalan page; location context consistent
+353,stage-118-2,JR東日本ホテルメッツ 水戸,https://www.jalan.net/yad318263/,verified,hotel name matches Jalan page; location context consistent
+354,stage-118-3,水戸京成ホテル,https://www.jalan.net/yad304132/,verified,hotel name matches Jalan page; location context consistent
+355,stage-119-1,ダイワロイネットホテルつくば,https://www.jalan.net/yad386528/,verified,hotel name matches Jalan page; location context consistent
+356,stage-119-2,ホテル日航つくば,https://www.jalan.net/yad324335/,verified,hotel name matches Jalan page; location context consistent
+357,stage-119-3,ホテルJALシティつくば,https://www.jalan.net/yad317932/,verified,hotel name matches Jalan page; location context consistent
+358,stage-120-1,JR東日本ホテルメッツ 宇都宮,https://www.jalan.net/yad355222/,verified,hotel name matches Jalan page; location context consistent
+359,stage-120-2,ダイワロイネットホテル宇都宮,https://www.jalan.net/yad326434/,verified,hotel name matches Jalan page; location context consistent
+360,stage-120-3,リッチモンドホテル宇都宮駅前,https://www.jalan.net/yad330314/,verified,hotel name matches Jalan page; location context consistent
+361,stage-121-1,JR東日本ホテルメッツ 宇都宮,https://www.jalan.net/yad355222/,verified,hotel name matches Jalan page; location context consistent
+362,stage-121-2,ダイワロイネットホテル宇都宮,https://www.jalan.net/yad326434/,verified,hotel name matches Jalan page; location context consistent
+363,stage-121-3,リッチモンドホテル宇都宮駅前,https://www.jalan.net/yad330314/,verified,hotel name matches Jalan page; location context consistent
+364,stage-122-1,ホテルメトロポリタン高崎,https://www.jalan.net/yad321008/,verified,hotel name matches Jalan page; location context consistent
+365,stage-122-2,ホテルココ・グラン高崎,https://www.jalan.net/yad353664/,verified,hotel name matches Jalan page; location context consistent
+366,stage-122-3,アパホテル〈高崎駅前〉,https://www.jalan.net/yad308306/,verified,hotel name matches Jalan page; location context consistent
+367,stage-123-1,天然温泉 妙義の湯 ドーミーイン前橋,https://www.jalan.net/yad384626/,verified,hotel name matches Jalan page; location context consistent
+368,stage-123-2,コンフォートホテル前橋,https://www.jalan.net/yad336608/,verified,hotel name matches Jalan page; location context consistent
+369,stage-123-3,アパホテル〈前橋駅北〉,https://www.jalan.net/yad365045/,verified,hotel name matches Jalan page; location context consistent
+370,stage-124-1,東横INN群馬太田駅南口,https://www.jalan.net/yad371125/,verified,hotel name matches Jalan page; location context consistent
+371,stage-124-2,ホテルルートインGrand太田駅前,https://www.jalan.net/yad375883/,verified,hotel name matches Jalan page; location context consistent
+372,stage-124-3,太田グランドホテル,https://www.jalan.net/yad380626/,verified,hotel name matches Jalan page; location context consistent
+373,stage-125-1,東横INN桐生駅南口,https://www.jalan.net/yad332423/,verified,hotel name matches Jalan page; location context consistent
+374,stage-125-2,エースホテル,https://www.jalan.net/yad334335/,verified,hotel name matches Jalan page; location context consistent
+375,stage-125-3,パークイン桐生,https://www.jalan.net/yad327116/,verified,hotel name matches Jalan page; location context consistent
+376,stage-126-1,JRイン札幌北2条,https://www.jalan.net/yad367273/,verified,hotel name matches Jalan page; location context consistent
+377,stage-126-2,ザ ノット 札幌,https://www.jalan.net/yad349825/,verified,hotel name matches Jalan page; location context consistent
+378,stage-126-3,札幌ビューホテル大通公園,https://www.jalan.net/yad324274/,verified,hotel name matches Jalan page; location context consistent
+379,stage-127-1,JRイン札幌北2条,https://www.jalan.net/yad367273/,verified,hotel name matches Jalan page; location context consistent
+380,stage-127-2,ザ ノット 札幌,https://www.jalan.net/yad349825/,verified,hotel name matches Jalan page; location context consistent
+381,stage-127-3,札幌ビューホテル大通公園,https://www.jalan.net/yad324274/,verified,hotel name matches Jalan page; location context consistent
+382,stage-128-1,JRイン札幌北2条,https://www.jalan.net/yad367273/,verified,hotel name matches Jalan page; location context consistent
+383,stage-128-2,ザ ノット 札幌,https://www.jalan.net/yad349825/,verified,hotel name matches Jalan page; location context consistent
+384,stage-128-3,札幌ビューホテル大通公園,https://www.jalan.net/yad324274/,verified,hotel name matches Jalan page; location context consistent
+385,stage-129-1,JRイン札幌北2条,https://www.jalan.net/yad367273/,verified,hotel name matches Jalan page; location context consistent
+386,stage-129-2,ザ ノット 札幌,https://www.jalan.net/yad349825/,verified,hotel name matches Jalan page; location context consistent
+387,stage-129-3,札幌ビューホテル大通公園,https://www.jalan.net/yad324274/,verified,hotel name matches Jalan page; location context consistent
+388,stage-130-1,ベッセルイン札幌中島公園,https://www.jalan.net/yad382870/,verified,hotel name matches Jalan page; location context consistent
+389,stage-130-2,イビススタイルズ札幌,https://www.jalan.net/yad342812/,verified,hotel name matches Jalan page; location context consistent
+390,stage-130-3,ホテルマイステイズ札幌中島公園,https://www.jalan.net/yad327707/,verified,hotel name matches Jalan page; location context consistent
+391,stage-131-1,JRイン旭川,https://www.jalan.net/yad327682/,verified,hotel name matches Jalan page; location context consistent
+392,stage-131-2,ホテルウィングインターナショナル旭川駅前,https://www.jalan.net/yad326154/,rebranded_current_page,じゃらん施設名自体に旧ホテルウィング旭川駅前と明記され同一施設を確認
+393,stage-131-3,ワイズホテル旭川駅前,https://www.jalan.net/yad367376/,verified,hotel name matches Jalan page; location context consistent
+394,stage-132-1,JRイン函館,https://www.jalan.net/yad319815/,verified,hotel name matches Jalan page; location context consistent
+395,stage-132-2,プレミアホテル-CABIN PRESIDENT-函館,https://www.jalan.net/yad327575/,verified,hotel name matches Jalan page; location context consistent
+396,stage-132-3,東横INN北海道函館駅前朝市,https://www.jalan.net/yad388704/,verified_fuzzy,hotel name is a fuzzy/renamed match; location context consistent
+397,stage-133-1,JRイン帯広,,closed_no_current_link,JRイン帯広は閉館情報があり現在のじゃらん施設ページを確定できないため空欄
+398,stage-133-2,リッチモンドホテル帯広駅前,https://www.jalan.net/yad352474/,verified,hotel name matches Jalan page; location context consistent
+399,stage-133-3,ホテルグランテラス帯広,https://www.jalan.net/yad310153/,manual_verified,ホテルグランテラス帯広の施設名本体・帯広駅・北海道が一致
+400,stage-134-1,ANAクラウンプラザホテル釧路,https://www.jalan.net/yad311807/,verified,hotel name matches Jalan page; location context consistent
+401,stage-134-2,コンフォートホテル釧路,https://www.jalan.net/yad338020/,verified,hotel name matches Jalan page; location context consistent
+402,stage-134-3,スーパーホテル釧路駅前,https://www.jalan.net/yad360972/,verified,hotel name matches Jalan page; location context consistent
+403,stage-135-1,ホテルJALシティ仙台,https://www.jalan.net/yad317271/,verified,hotel name matches Jalan page; location context consistent
+404,stage-135-2,ダイワロイネットホテル仙台西口 PREMIER,https://www.jalan.net/yad377180/,verified,hotel name matches Jalan page; location context consistent
+405,stage-135-3,コンフォートホテル仙台西口,https://www.jalan.net/yad385284/,verified,hotel name matches Jalan page; location context consistent
+406,stage-136-1,ホテル定禅寺,https://www.jalan.net/yad382812/,verified,hotel name matches Jalan page; location context consistent
+407,stage-136-2,アパホテル〈仙台勾当台公園〉,https://www.jalan.net/yad362752/,verified,hotel name matches Jalan page; location context consistent
+408,stage-136-3,ホテルプレミアムグリーンソブリン,https://www.jalan.net/yad329258/,verified,hotel name matches Jalan page; location context consistent
+409,stage-137-1,仙台ロイヤルパークホテル,https://www.jalan.net/yad330751/,verified,hotel name matches Jalan page; location context consistent
+410,stage-137-2,ホテルルートイン仙台泉インター,https://www.jalan.net/yad304664/,verified,hotel name matches Jalan page; location context consistent
+411,stage-137-3,スマイルホテル仙台泉インター,https://www.jalan.net/yad327712/,verified,hotel name matches Jalan page; location context consistent
+412,stage-138-1,ホテル定禅寺,https://www.jalan.net/yad382812/,verified,hotel name matches Jalan page; location context consistent
+413,stage-138-2,アパホテル〈仙台勾当台公園〉,https://www.jalan.net/yad362752/,verified,hotel name matches Jalan page; location context consistent
+414,stage-138-3,ホテルプレミアムグリーンソブリン,https://www.jalan.net/yad329258/,verified,hotel name matches Jalan page; location context consistent
+415,stage-139-1,ホテルグリーンシティ,https://www.jalan.net/yad313534/,verified,hotel name matches Jalan page; location context consistent
+416,stage-139-2,アパホテル〈仙台勾当台公園〉,https://www.jalan.net/yad362752/,verified,hotel name matches Jalan page; location context consistent
+417,stage-139-3,ホテル定禅寺,https://www.jalan.net/yad382812/,verified,hotel name matches Jalan page; location context consistent
+418,stage-140-1,ダイワロイネットホテル郡山駅前,https://www.jalan.net/yad340972/,verified,hotel name matches Jalan page; location context consistent
+419,stage-140-2,ホテルグローバルビュー郡山,https://www.jalan.net/yad392141/,verified,hotel name matches Jalan page; location context consistent
+420,stage-140-3,コンフォートホテル郡山,https://www.jalan.net/yad319852/,verified,hotel name matches Jalan page; location context consistent
+421,stage-141-1,ホテルルートインいわき駅前,https://www.jalan.net/yad306494/,verified,hotel name matches Jalan page; location context consistent
+422,stage-141-2,東横INNいわき駅前,https://www.jalan.net/yad373085/,verified,hotel name matches Jalan page; location context consistent
+423,stage-141-3,サンライズインいわき,https://www.jalan.net/yad368925/,verified,hotel name matches Jalan page; location context consistent
+424,stage-142-1,リッチモンドホテル秋田駅前,https://www.jalan.net/yad371528/,verified,hotel name matches Jalan page; location context consistent
+425,stage-142-2,ホテルメトロポリタン秋田,https://www.jalan.net/yad329656/,verified,hotel name matches Jalan page; location context consistent
+426,stage-142-3,ANAクラウンプラザホテル秋田,https://www.jalan.net/yad313423/,verified,hotel name matches Jalan page; location context consistent
+427,stage-143-1,リッチモンドホテル盛岡駅前,https://www.jalan.net/yad331739/,verified,hotel name matches Jalan page; location context consistent
+428,stage-143-2,ダイワロイネットホテル盛岡駅前,https://www.jalan.net/yad351773/,verified,hotel name matches Jalan page; location context consistent
+429,stage-143-3,ホテルメトロポリタン盛岡 NEW WING,https://www.jalan.net/yad309556/,manual_verified,NEW WINGとニューウイングの表記差。盛岡駅・岩手県一致
+430,stage-144-1,リッチモンドホテル盛岡駅前,https://www.jalan.net/yad331739/,verified,hotel name matches Jalan page; location context consistent
+431,stage-144-2,ダイワロイネットホテル盛岡駅前,https://www.jalan.net/yad351773/,verified,hotel name matches Jalan page; location context consistent
+432,stage-144-3,ホテルメトロポリタン盛岡 NEW WING,https://www.jalan.net/yad309556/,manual_verified,NEW WINGとニューウイングの表記差。盛岡駅・岩手県一致
+433,stage-145-1,ダイワロイネットホテル青森,https://www.jalan.net/yad304122/,verified,hotel name matches Jalan page; location context consistent
+434,stage-145-2,ホテルJALシティ青森,https://www.jalan.net/yad335975/,verified,hotel name matches Jalan page; location context consistent
+435,stage-145-3,リッチモンドホテル青森,https://www.jalan.net/yad362925/,verified,hotel name matches Jalan page; location context consistent
+436,stage-146-1,ダイワロイネットホテル山形駅前,https://www.jalan.net/yad326892/,verified,hotel name matches Jalan page; location context consistent
+437,stage-146-2,ホテルメトロポリタン山形,https://www.jalan.net/yad313105/,verified,hotel name matches Jalan page; location context consistent
+438,stage-146-3,コンフォートホテル山形,https://www.jalan.net/yad346600/,verified,hotel name matches Jalan page; location context consistent
+439,stage-147-1,ホテルフォルクローロ高畠,https://www.jalan.net/yad318885/,verified,hotel name matches Jalan page; location context consistent
+440,stage-147-2,ホテルモントビュー米沢,https://www.jalan.net/yad308308/,verified,hotel name matches Jalan page; location context consistent
+441,stage-147-3,東横INN米沢駅前,https://www.jalan.net/yad386247/,verified,hotel name matches Jalan page; location context consistent
+442,stage-148-1,ホテル日航新潟,https://www.jalan.net/yad387312/,verified,hotel name matches Jalan page; location context consistent
+443,stage-148-2,アパホテル&リゾート〈新潟駅前大通〉,https://www.jalan.net/yad397576/,verified,hotel name matches Jalan page; location context consistent
+444,stage-148-3,JR東日本ホテルメッツ 新潟,https://www.jalan.net/yad335918/,verified,hotel name matches Jalan page; location context consistent
+445,stage-149-1,ホテル日航新潟,https://www.jalan.net/yad387312/,verified,hotel name matches Jalan page; location context consistent
+446,stage-149-2,アパホテル&リゾート〈新潟駅前大通〉,https://www.jalan.net/yad397576/,verified,hotel name matches Jalan page; location context consistent
+447,stage-149-3,JR東日本ホテルメッツ 新潟,https://www.jalan.net/yad335918/,verified,hotel name matches Jalan page; location context consistent
+448,stage-150-1,ホテル日航新潟,https://www.jalan.net/yad387312/,verified,hotel name matches Jalan page; location context consistent
+449,stage-150-2,アパホテル&リゾート〈新潟駅前大通〉,https://www.jalan.net/yad397576/,verified,hotel name matches Jalan page; location context consistent
+450,stage-150-3,JR東日本ホテルメッツ 新潟,https://www.jalan.net/yad335918/,verified,hotel name matches Jalan page; location context consistent
+451,stage-151-1,ホテルニューオータニ長岡,https://www.jalan.net/yad301332/,verified,hotel name matches Jalan page; location context consistent
+452,stage-151-2,JR東日本ホテルメッツ 長岡,https://www.jalan.net/yad375795/,verified,hotel name matches Jalan page; location context consistent
+453,stage-151-3,ホテル法華クラブ新潟長岡,https://www.jalan.net/yad336795/,verified,hotel name matches Jalan page; location context consistent
+454,stage-152-1,ダイワロイネットホテル富山駅前,https://www.jalan.net/yad366765/,verified,hotel name matches Jalan page; location context consistent
+455,stage-152-2,ホテルJALシティ富山,https://www.jalan.net/yad361004/,verified,hotel name matches Jalan page; location context consistent
+456,stage-152-3,富山エクセルホテル東急,https://www.jalan.net/yad315174/,verified,hotel name matches Jalan page; location context consistent
+457,stage-153-1,ダイワロイネットホテル富山駅前,https://www.jalan.net/yad366765/,verified,hotel name matches Jalan page; location context consistent
+458,stage-153-2,ホテルJALシティ富山,https://www.jalan.net/yad361004/,verified,hotel name matches Jalan page; location context consistent
+459,stage-153-3,富山エクセルホテル東急,https://www.jalan.net/yad315174/,verified,hotel name matches Jalan page; location context consistent
+460,stage-154-1,ダイワロイネットホテル富山駅前,https://www.jalan.net/yad366765/,verified,hotel name matches Jalan page; location context consistent
+461,stage-154-2,ホテルJALシティ富山,https://www.jalan.net/yad361004/,verified,hotel name matches Jalan page; location context consistent
+462,stage-154-3,富山エクセルホテル東急,https://www.jalan.net/yad315174/,verified,hotel name matches Jalan page; location context consistent
+463,stage-155-1,ホテルフォルツァ金沢,https://www.jalan.net/yad378719/,verified,hotel name matches Jalan page; location context consistent
+464,stage-155-2,三井ガーデンホテル金沢,https://www.jalan.net/yad334419/,verified,hotel name matches Jalan page; location context consistent
+465,stage-155-3,東急ステイ金沢,https://www.jalan.net/yad329525/,verified,hotel name matches Jalan page; location context consistent
+466,stage-156-1,ホテルフォルツァ金沢,https://www.jalan.net/yad378719/,verified,hotel name matches Jalan page; location context consistent
+467,stage-156-2,三井ガーデンホテル金沢,https://www.jalan.net/yad334419/,verified,hotel name matches Jalan page; location context consistent
+468,stage-156-3,東急ステイ金沢,https://www.jalan.net/yad329525/,verified,hotel name matches Jalan page; location context consistent
+469,stage-157-1,ホテルフォルツァ金沢,https://www.jalan.net/yad378719/,verified,hotel name matches Jalan page; location context consistent
+470,stage-157-2,三井ガーデンホテル金沢,https://www.jalan.net/yad334419/,verified,hotel name matches Jalan page; location context consistent
+471,stage-157-3,東急ステイ金沢,https://www.jalan.net/yad329525/,verified,hotel name matches Jalan page; location context consistent
+472,stage-158-1,コートヤード・バイ・マリオット福井,https://www.jalan.net/yad361196/,verified,hotel name matches Jalan page; location context consistent
+473,stage-158-2,ホテルフジタ福井,https://www.jalan.net/yad382628/,verified,hotel name matches Jalan page; location context consistent
+474,stage-158-3,ドーミーインPREMIUM福井,https://www.jalan.net/yad373624/,verified,hotel name matches Jalan page; location context consistent
+475,stage-159-1,コートヤード・バイ・マリオット福井,https://www.jalan.net/yad361196/,verified,hotel name matches Jalan page; location context consistent
+476,stage-159-2,ホテルフジタ福井,https://www.jalan.net/yad382628/,verified,hotel name matches Jalan page; location context consistent
+477,stage-159-3,ドーミーインPREMIUM福井,https://www.jalan.net/yad373624/,verified,hotel name matches Jalan page; location context consistent
+478,stage-160-1,天然温泉 勝運の湯 ドーミーイン甲府丸の内,https://www.jalan.net/yad359575/,verified,hotel name matches Jalan page; location context consistent
+479,stage-160-2,東横INN甲府駅南口2,https://www.jalan.net/yad309094/,verified_fuzzy,hotel name is a fuzzy/renamed match; location context consistent
+480,stage-160-3,古名屋ホテル,https://www.jalan.net/yad324167/,verified,hotel name matches Jalan page; location context consistent
+481,stage-161-1,河口湖ホテル,https://www.jalan.net/yad362240/,verified,hotel name matches Jalan page; location context consistent
+482,stage-161-2,東横INN富士河口湖大橋,https://www.jalan.net/yad372158/,verified,hotel name matches Jalan page; location context consistent
+483,stage-161-3,ホテルルートイン河口湖,https://www.jalan.net/yad325352/,verified,hotel name matches Jalan page; location context consistent
+484,stage-162-1,いろはグランホテル松本駅前,https://www.jalan.net/yad315575/,verified,hotel name matches Jalan page; location context consistent
+485,stage-162-2,リッチモンドホテル松本,https://www.jalan.net/yad327177/,verified,hotel name matches Jalan page; location context consistent
+486,stage-162-3,プレミアホテル-CABIN-松本,,closed_no_current_link,プレミアホテル-CABIN-松本は2024年12月31日のチェックアウトをもって営業終了。現行リンクなし
+487,stage-163-1,いろはグランホテル松本駅前,https://www.jalan.net/yad315575/,verified,hotel name matches Jalan page; location context consistent
+488,stage-163-2,リッチモンドホテル松本,https://www.jalan.net/yad327177/,verified,hotel name matches Jalan page; location context consistent
+489,stage-163-3,プレミアホテル-CABIN-松本,,closed_no_current_link,プレミアホテル-CABIN-松本は2024年12月31日のチェックアウトをもって営業終了。現行リンクなし
+490,stage-164-1,ホテルメトロポリタン長野,https://www.jalan.net/yad314560/,verified,hotel name matches Jalan page; location context consistent
+491,stage-164-2,長野東急REIホテル,https://www.jalan.net/yad350498/,verified,hotel name matches Jalan page; location context consistent
+492,stage-164-3,チサングランド長野,https://www.jalan.net/yad324498/,verified,hotel name matches Jalan page; location context consistent
+493,stage-165-1,西鉄ホテル クルーム名古屋,https://www.jalan.net/yad391346/,verified,hotel name matches Jalan page; location context consistent
+494,stage-165-2,ベッセルイン栄駅前,https://www.jalan.net/yad387545/,verified,hotel name matches Jalan page; location context consistent
+495,stage-165-3,ホテルマイステイズ名古屋錦,https://www.jalan.net/yad321267/,verified,hotel name matches Jalan page; location context consistent
+496,stage-166-1,リッチモンドホテル名古屋納屋橋,https://www.jalan.net/yad349602/,verified,hotel name matches Jalan page; location context consistent
+497,stage-166-2,ホテルJALシティ名古屋 錦,https://www.jalan.net/yad391804/,verified,hotel name matches Jalan page; location context consistent
+498,stage-166-3,名古屋クラウンホテル,https://www.jalan.net/yad334176/,verified,hotel name matches Jalan page; location context consistent
+499,stage-167-1,西鉄ホテル クルーム名古屋,https://www.jalan.net/yad391346/,verified,hotel name matches Jalan page; location context consistent
+500,stage-167-2,ベッセルイン栄駅前,https://www.jalan.net/yad387545/,verified,hotel name matches Jalan page; location context consistent
+501,stage-167-3,ホテルマイステイズ名古屋錦,https://www.jalan.net/yad321267/,verified,hotel name matches Jalan page; location context consistent
+502,stage-168-1,名古屋笠寺ホテル,https://www.jalan.net/yad328800/,verified,hotel name matches Jalan page; location context consistent
+503,stage-168-2,コンフォートホテル名古屋金山,https://www.jalan.net/yad332985/,verified,hotel name matches Jalan page; location context consistent
+504,stage-168-3,名鉄イン名古屋金山,https://www.jalan.net/yad300820/,verified,hotel name matches Jalan page; location context consistent
+505,stage-169-1,ANAクラウンプラザホテルグランコート名古屋,https://www.jalan.net/yad318988/,verified,hotel name matches Jalan page; location context consistent
+506,stage-169-2,コンフォートホテル名古屋金山,https://www.jalan.net/yad332985/,verified,hotel name matches Jalan page; location context consistent
+507,stage-169-3,名鉄イン名古屋金山,https://www.jalan.net/yad300820/,verified,hotel name matches Jalan page; location context consistent
+508,stage-170-1,西鉄ホテル クルーム名古屋,https://www.jalan.net/yad391346/,verified,hotel name matches Jalan page; location context consistent
+509,stage-170-2,ベッセルイン栄駅前,https://www.jalan.net/yad387545/,verified,hotel name matches Jalan page; location context consistent
+510,stage-170-3,ホテルマイステイズ名古屋錦,https://www.jalan.net/yad321267/,verified,hotel name matches Jalan page; location context consistent
+511,stage-171-1,西鉄ホテル クルーム名古屋,https://www.jalan.net/yad391346/,verified,hotel name matches Jalan page; location context consistent
+512,stage-171-2,ベッセルイン栄駅前,https://www.jalan.net/yad387545/,verified,hotel name matches Jalan page; location context consistent
+513,stage-171-3,ホテルマイステイズ名古屋錦,https://www.jalan.net/yad321267/,verified,hotel name matches Jalan page; location context consistent
+514,stage-172-1,ホテルメルパルク名古屋,https://www.jalan.net/yad310334/,verified,hotel name matches Jalan page; location context consistent
+515,stage-172-2,ホテルルートイン名古屋今池駅前,https://www.jalan.net/yad376712/,verified,hotel name matches Jalan page; location context consistent
+516,stage-172-3,ホテルルブラ王山,https://www.jalan.net/yad346057/,verified,hotel name matches Jalan page; location context consistent
+517,stage-173-1,ホテルアソシア豊橋,https://www.jalan.net/yad324526/,verified,hotel name matches Jalan page; location context consistent
+518,stage-173-2,コンフォートホテル豊橋,https://www.jalan.net/yad389996/,verified,hotel name matches Jalan page; location context consistent
+519,stage-173-3,東横INN豊橋駅東口,https://www.jalan.net/yad324457/,verified,hotel name matches Jalan page; location context consistent
+520,stage-174-1,ホテルアソシア豊橋,https://www.jalan.net/yad324526/,verified,hotel name matches Jalan page; location context consistent
+521,stage-174-2,コンフォートホテル豊橋,https://www.jalan.net/yad389996/,verified,hotel name matches Jalan page; location context consistent
+522,stage-174-3,東横INN豊橋駅東口,https://www.jalan.net/yad324457/,verified,hotel name matches Jalan page; location context consistent
+523,stage-175-1,名鉄イン刈谷,https://www.jalan.net/yad347760/,verified,hotel name matches Jalan page; location context consistent
+524,stage-175-2,コンフォートホテル刈谷,https://www.jalan.net/yad379010/,verified,hotel name matches Jalan page; location context consistent
+525,stage-175-3,アクセスイン刈谷,https://www.jalan.net/yad386118/,verified,hotel name matches Jalan page; location context consistent
+526,stage-176-1,ザ・カトーホテル,https://www.jalan.net/yad330154/,verified,hotel name matches Jalan page; location context consistent
+527,stage-176-2,ルートイングランティア東海 Spa & Relaxation,https://www.jalan.net/yad366684/,verified,hotel name matches Jalan page; location context consistent
+528,stage-176-3,東海シティホテル,https://www.jalan.net/yad369707/,verified,hotel name matches Jalan page; location context consistent
+529,stage-177-1,ダイワロイネットホテル名古屋太閤通口,https://www.jalan.net/yad341332/,verified,hotel name matches Jalan page; location context consistent
+530,stage-177-2,ヴィアイン名古屋新幹線口,https://www.jalan.net/yad367046/,verified,hotel name matches Jalan page; location context consistent
+531,stage-177-3,名鉄イン名古屋駅前,https://www.jalan.net/yad376064/,verified,hotel name matches Jalan page; location context consistent
+532,stage-178-1,ダイワロイネットホテル岐阜,https://www.jalan.net/yad305036/,verified,hotel name matches Jalan page; location context consistent
+533,stage-178-2,ホテルリソル岐阜,https://www.jalan.net/yad311944/,verified,hotel name matches Jalan page; location context consistent
+534,stage-178-3,ドーミーイン岐阜駅前,https://www.jalan.net/yad384888/,verified,hotel name matches Jalan page; location context consistent
+535,stage-179-1,ホテルルートイン多治見インター,https://www.jalan.net/yad322204/,verified,hotel name matches Jalan page; location context consistent
+536,stage-179-2,オースタット国際ホテル多治見,https://www.jalan.net/yad317704/,verified,hotel name matches Jalan page; location context consistent
+537,stage-179-3,ホテル多治見ヒルズ マイルーム店,https://www.jalan.net/yad379530/,verified,hotel name matches Jalan page; location context consistent
+538,stage-180-1,ホテルグリーンパーク津,https://www.jalan.net/yad358764/,verified,hotel name matches Jalan page; location context consistent
+539,stage-180-2,ドーミーイン津,https://www.jalan.net/yad390063/,verified,hotel name matches Jalan page; location context consistent
+540,stage-180-3,三交イン津駅前,https://www.jalan.net/yad398705/,verified,hotel name matches Jalan page; location context consistent
+541,stage-181-1,都ホテル 四日市,https://www.jalan.net/yad346919/,verified,hotel name matches Jalan page; location context consistent
+542,stage-181-2,三交イン四日市駅前,https://www.jalan.net/yad340471/,verified,hotel name matches Jalan page; location context consistent
+543,stage-181-3,コンフォートホテル四日市,https://www.jalan.net/yad348158/,verified,hotel name matches Jalan page; location context consistent
+544,stage-182-1,ホテルクエスト清水,https://www.jalan.net/yad342831/,verified,hotel name matches Jalan page; location context consistent
+545,stage-182-2,東横INN静岡清水駅前,https://www.jalan.net/yad330777/,verified,hotel name matches Jalan page; location context consistent
+546,stage-182-3,シーグランデ清水ステーションホテル,https://www.jalan.net/yad313999/,verified,hotel name matches Jalan page; location context consistent
+547,stage-183-1,オークラアクトシティホテル浜松,https://www.jalan.net/yad356928/,verified,hotel name matches Jalan page; location context consistent
+548,stage-183-2,ダイワロイネットホテル浜松,https://www.jalan.net/yad373772/,verified,hotel name matches Jalan page; location context consistent
+549,stage-183-3,コンフォートホテル浜松,https://www.jalan.net/yad397166/,verified,hotel name matches Jalan page; location context consistent
+550,stage-184-1,富士山三島東急ホテル,https://www.jalan.net/yad385507/,verified,hotel name matches Jalan page; location context consistent
+551,stage-184-2,ドーミーイン三島,https://www.jalan.net/yad313094/,verified,hotel name matches Jalan page; location context consistent
+552,stage-184-3,東横INN富士山三島駅,https://www.jalan.net/yad387850/,verified,hotel name matches Jalan page; location context consistent
+553,stage-185-1,ダイワロイネットホテルぬまづ,https://www.jalan.net/yad367804/,verified,hotel name matches Jalan page; location context consistent
+554,stage-185-2,ホテルミワ,https://www.jalan.net/yad312372/,rebranded_current_page,ホテルミワの検索結果から沼津駅・静岡県が一致する現行じゃらん施設ページとして採用
+555,stage-185-3,ココチホテル沼津,https://www.jalan.net/yad361864/,verified,hotel name matches Jalan page; location context consistent
+556,stage-186-1,ホテル西村,,needs_manual_review,検索で得た候補が函館パークホテルで都道府県・駅とも不一致。誤リンクを除外し空欄
+557,stage-186-2,くれたけイン富士山,https://www.jalan.net/yad338220/,verified,hotel name matches Jalan page; location context consistent
+558,stage-186-3,ホテルルートイン富士中央公園東,https://www.jalan.net/yad315926/,verified,hotel name matches Jalan page; location context consistent
+559,stage-187-1,ホテル阪急レスパイア大阪,https://www.jalan.net/yad304150/,verified,hotel name matches Jalan page; location context consistent
+560,stage-187-2,ホテルインターゲート大阪 梅田,https://www.jalan.net/yad333950/,verified,hotel name matches Jalan page; location context consistent
+561,stage-187-3,アパホテル&リゾート〈大阪梅田駅タワー〉,https://www.jalan.net/yad307700/,verified,hotel name matches Jalan page; location context consistent
+562,stage-188-1,ホテル阪急レスパイア大阪,https://www.jalan.net/yad304150/,verified,hotel name matches Jalan page; location context consistent
+563,stage-188-2,ホテルインターゲート大阪 梅田,https://www.jalan.net/yad333950/,verified,hotel name matches Jalan page; location context consistent
+564,stage-188-3,アパホテル&リゾート〈大阪梅田駅タワー〉,https://www.jalan.net/yad307700/,verified,hotel name matches Jalan page; location context consistent
+565,stage-189-1,ホテル阪急レスパイア大阪,https://www.jalan.net/yad304150/,verified,hotel name matches Jalan page; location context consistent
+566,stage-189-2,ホテルインターゲート大阪 梅田,https://www.jalan.net/yad333950/,verified,hotel name matches Jalan page; location context consistent
+567,stage-189-3,アパホテル&リゾート〈大阪梅田駅タワー〉,https://www.jalan.net/yad307700/,verified,hotel name matches Jalan page; location context consistent
+568,stage-190-1,ホテル京阪 天満橋駅前,https://www.jalan.net/yad350686/,manual_verified,施設名完全一致・大阪府・天満橋駅一致
+569,stage-190-2,アパホテル〈大阪谷町四丁目駅前〉,https://www.jalan.net/yad325328/,verified,hotel name matches Jalan page; location context consistent
+570,stage-190-3,ホテル・ザ・ルーテル,https://www.jalan.net/yad307470/,verified,hotel name matches Jalan page; location context consistent
+571,stage-191-1,ホテル京阪 天満橋駅前,https://www.jalan.net/yad350686/,manual_verified,施設名完全一致・大阪府・天満橋駅一致
+572,stage-191-2,アパホテル〈大阪谷町四丁目駅前〉,https://www.jalan.net/yad325328/,verified,hotel name matches Jalan page; location context consistent
+573,stage-191-3,ホテル・ザ・ルーテル,https://www.jalan.net/yad307470/,verified,hotel name matches Jalan page; location context consistent
+574,stage-192-1,ホテル京阪 天満橋駅前,https://www.jalan.net/yad350686/,manual_verified,施設名完全一致・大阪府・天満橋駅一致
+575,stage-192-2,アパホテル〈大阪谷町四丁目駅前〉,https://www.jalan.net/yad325328/,verified,hotel name matches Jalan page; location context consistent
+576,stage-192-3,ホテル・ザ・ルーテル,https://www.jalan.net/yad307470/,verified,hotel name matches Jalan page; location context consistent
+577,stage-193-1,都シティ 大阪天王寺,https://www.jalan.net/yad348176/,verified,hotel name matches Jalan page; location context consistent
+578,stage-193-2,ヴィアインあべの天王寺,https://www.jalan.net/yad310538/,verified,hotel name matches Jalan page; location context consistent
+579,stage-193-3,アパホテル〈天王寺駅前〉,https://www.jalan.net/yad315071/,verified,hotel name matches Jalan page; location context consistent
+580,stage-194-1,相鉄フレッサイン 大阪なんば駅前,https://www.jalan.net/yad335175/,verified,hotel name matches Jalan page; location context consistent
+581,stage-194-2,ホテルグレイスリー大阪なんば,https://www.jalan.net/yad330578/,verified,hotel name matches Jalan page; location context consistent
+582,stage-194-3,アパホテル〈なんば駅東〉,https://www.jalan.net/yad389677/,verified,hotel name matches Jalan page; location context consistent
+583,stage-195-1,ヴィアインプライム心斎橋四ツ橋,https://www.jalan.net/yad341583/,verified,hotel name matches Jalan page; location context consistent
+584,stage-195-2,ハートンホテル心斎橋,https://www.jalan.net/yad320736/,verified,hotel name matches Jalan page; location context consistent
+585,stage-195-3,ホテルマイステイズ心斎橋,https://www.jalan.net/yad321467/,verified,hotel name matches Jalan page; location context consistent
+586,stage-196-1,ホテル阪急レスパイア大阪,https://www.jalan.net/yad304150/,verified,hotel name matches Jalan page; location context consistent
+587,stage-196-2,ホテルインターゲート大阪 梅田,https://www.jalan.net/yad333950/,verified,hotel name matches Jalan page; location context consistent
+588,stage-196-3,アパホテル&リゾート〈大阪梅田駅タワー〉,https://www.jalan.net/yad307700/,verified,hotel name matches Jalan page; location context consistent
+589,stage-197-1,都シティ 大阪天王寺,https://www.jalan.net/yad348176/,verified,hotel name matches Jalan page; location context consistent
+590,stage-197-2,ヴィアインあべの天王寺,https://www.jalan.net/yad310538/,verified,hotel name matches Jalan page; location context consistent
+591,stage-197-3,アパホテル〈天王寺駅前〉,https://www.jalan.net/yad315071/,verified,hotel name matches Jalan page; location context consistent
+592,stage-198-1,ホテル京阪 天満橋駅前,https://www.jalan.net/yad350686/,manual_verified,施設名完全一致・大阪府・天満橋駅一致
+593,stage-198-2,アパホテル〈大阪谷町四丁目駅前〉,https://www.jalan.net/yad325328/,verified,hotel name matches Jalan page; location context consistent
+594,stage-198-3,ホテル・ザ・ルーテル,https://www.jalan.net/yad307470/,verified,hotel name matches Jalan page; location context consistent
+595,stage-199-1,ホテル京阪 天満橋駅前,https://www.jalan.net/yad350686/,manual_verified,施設名完全一致・大阪府・天満橋駅一致
+596,stage-199-2,アパホテル〈大阪谷町四丁目駅前〉,https://www.jalan.net/yad325328/,verified,hotel name matches Jalan page; location context consistent
+597,stage-199-3,ホテル・ザ・ルーテル,https://www.jalan.net/yad307470/,verified,hotel name matches Jalan page; location context consistent
+598,stage-200-1,ホテル京阪 天満橋駅前,https://www.jalan.net/yad350686/,manual_verified,施設名完全一致・大阪府・天満橋駅一致
+599,stage-200-2,アパホテル〈大阪谷町四丁目駅前〉,https://www.jalan.net/yad325328/,verified,hotel name matches Jalan page; location context consistent
+600,stage-200-3,ホテル・ザ・ルーテル,https://www.jalan.net/yad307470/,verified,hotel name matches Jalan page; location context consistent
+601,stage-201-1,ホテル阪急レスパイア大阪,https://www.jalan.net/yad304150/,verified,hotel name matches Jalan page; location context consistent
+602,stage-201-2,ホテルインターゲート大阪 梅田,https://www.jalan.net/yad333950/,verified,hotel name matches Jalan page; location context consistent
+603,stage-201-3,アパホテル&リゾート〈大阪梅田駅タワー〉,https://www.jalan.net/yad307700/,verified,hotel name matches Jalan page; location context consistent
+604,stage-202-1,相鉄フレッサイン 大阪なんば駅前,https://www.jalan.net/yad335175/,verified,hotel name matches Jalan page; location context consistent
+605,stage-202-2,ホテルグレイスリー大阪なんば,https://www.jalan.net/yad330578/,verified,hotel name matches Jalan page; location context consistent
+606,stage-202-3,アパホテル〈なんば駅東〉,https://www.jalan.net/yad389677/,verified,hotel name matches Jalan page; location context consistent
+607,stage-203-1,ホテル アゴーラ リージェンシー 大阪堺,https://www.jalan.net/yad392864/,verified,hotel name matches Jalan page; location context consistent
+608,stage-203-2,ダイワロイネットホテル大阪堺東,https://www.jalan.net/yad358825/,verified_fuzzy,hotel name is a fuzzy/renamed match; location context consistent
+609,stage-203-3,コンフォートホテル堺,https://www.jalan.net/yad386745/,verified,hotel name matches Jalan page; location context consistent
+610,stage-204-1,ホテルアベストグランデ高槻,https://www.jalan.net/yad311732/,verified,hotel name matches Jalan page; location context consistent
+611,stage-204-2,高槻W&Mホテル,https://www.jalan.net/yad310603/,verified,hotel name matches Jalan page; location context consistent
+612,stage-204-3,ワークホテルアネックス天神の湯,https://www.jalan.net/yad310619/,verified,hotel name matches Jalan page; location context consistent
+613,stage-205-1,大江戸温泉物語 箕面観光ホテル,https://www.jalan.net/yad397608/,manual_verified_web,じゃらん現行ページをWeb検索で再確認。宿番号397608・箕面駅徒歩約5分
+614,stage-205-2,新大阪江坂東急REIホテル,https://www.jalan.net/yad321471/,verified,hotel name matches Jalan page; location context consistent
+615,stage-205-3,サニーストンホテル,https://www.jalan.net/yad321466/,verified,hotel name matches Jalan page; location context consistent
+616,stage-206-1,リッチモンドホテル東大阪,https://www.jalan.net/yad316640/,verified,hotel name matches Jalan page; location context consistent
+617,stage-206-2,ホテルウィングインターナショナルセレクト東大阪,https://www.jalan.net/yad338064/,rebranded_current_page,旧ホテルウィングインターナショナルセレクト東大阪と同一地域・長田駅の現行じゃらん施設ページとして採用
+618,stage-206-3,U・コミュニティホテル,https://www.jalan.net/yad335180/,verified,hotel name matches Jalan page; location context consistent
+619,stage-207-1,ホテルA.P,https://www.jalan.net/yad320141/,verified,hotel name matches Jalan page; location context consistent
+620,stage-207-2,東横INN大阪伊丹空港,https://www.jalan.net/yad343786/,verified,hotel name matches Jalan page; location context consistent
+621,stage-207-3,グリーンリッチホテル大阪空港前,https://www.jalan.net/yad338432/,verified,hotel name matches Jalan page; location context consistent
+622,stage-208-1,ラ・ジェント・ホテル大阪ベイ,https://www.jalan.net/yad392884/,verified,hotel name matches Jalan page; location context consistent
+623,stage-208-2,ザ シンギュラリ ホテル&スカイスパ アット ユニバーサル・スタジオ・ジャパン,https://www.jalan.net/yad332153/,manual_verified,日本語・英語表記差のみ。ユニバーサルシティ駅・大阪府一致
+624,stage-208-3,ホテル京阪 ユニバーサル・タワー,https://www.jalan.net/yad302815/,verified,hotel name matches Jalan page; location context consistent
+625,stage-209-1,ANAクラウンプラザホテル神戸,https://www.jalan.net/yad331340/,verified,hotel name matches Jalan page; location context consistent
+626,stage-209-2,ホテルピエナ神戸,https://www.jalan.net/yad320806/,verified,hotel name matches Jalan page; location context consistent
+627,stage-209-3,神戸北野ホテル,https://www.jalan.net/yad325790/,verified,hotel name matches Jalan page; location context consistent
+628,stage-210-1,神戸ルミナスホテル三宮,https://www.jalan.net/yad359879/,verified,hotel name matches Jalan page; location context consistent
+629,stage-210-2,ダイワロイネットホテル神戸三宮 PREMIER,https://www.jalan.net/yad398630/,verified,hotel name matches Jalan page; location context consistent
+630,stage-210-3,コンフォートホテルERA神戸三宮,https://www.jalan.net/yad313503/,verified,hotel name matches Jalan page; location context consistent
+631,stage-211-1,ホテルヒューイット甲子園,https://www.jalan.net/yad323764/,verified,hotel name matches Jalan page; location context consistent
+632,stage-211-2,ホテル甲子園,https://www.jalan.net/yad319201/,verified,hotel name matches Jalan page; location context consistent
+633,stage-211-3,都ホテル 尼崎,https://www.jalan.net/yad353164/,verified,hotel name matches Jalan page; location context consistent
+634,stage-212-1,神戸ホテルジュラク,https://www.jalan.net/yad354378/,verified,hotel name matches Jalan page; location context consistent
+635,stage-212-2,センチュリオンホテル グランド神戸駅前,https://www.jalan.net/yad376156/,verified,hotel name matches Jalan page; location context consistent
+636,stage-212-3,神戸シティガーデンズホテル,https://www.jalan.net/yad312217/,verified,hotel name matches Jalan page; location context consistent
+637,stage-213-1,神戸ルミナスホテル三宮,https://www.jalan.net/yad359879/,verified,hotel name matches Jalan page; location context consistent
+638,stage-213-2,ダイワロイネットホテル神戸三宮 PREMIER,https://www.jalan.net/yad398630/,verified,hotel name matches Jalan page; location context consistent
+639,stage-213-3,コンフォートホテルERA神戸三宮,https://www.jalan.net/yad313503/,verified,hotel name matches Jalan page; location context consistent
+640,stage-214-1,ホテルモントレ姫路,https://www.jalan.net/yad359234/,verified,hotel name matches Jalan page; location context consistent
+641,stage-214-2,ダイワロイネットホテル姫路,https://www.jalan.net/yad351448/,verified,hotel name matches Jalan page; location context consistent
+642,stage-214-3,リッチモンドホテル姫路,https://www.jalan.net/yad339890/,verified,hotel name matches Jalan page; location context consistent
+643,stage-215-1,都ホテル 尼崎,https://www.jalan.net/yad353164/,verified,hotel name matches Jalan page; location context consistent
+644,stage-215-2,ホテルヴィスキオ尼崎,https://www.jalan.net/yad320322/,verified,hotel name matches Jalan page; location context consistent
+645,stage-215-3,尼崎プラザホテル 阪神尼崎,https://www.jalan.net/yad376618/,verified,hotel name matches Jalan page; location context consistent
+646,stage-216-1,ホテルウィングインターナショナルプレミアム京都三条,https://www.jalan.net/yad330793/,rebranded_current_page,旧ホテルウィングインターナショナルプレミアム京都三条と同一地域・三条/東山駅の現行じゃらん施設ページとして採用
+647,stage-216-2,ホテルマテリアル,https://www.jalan.net/yad354346/,manual_verified,日本語カタカナと英字表記の差のみ。京都府・東山駅一致
+648,stage-216-3,ウェスティン都ホテル京都,https://www.jalan.net/yad361088/,verified,hotel name matches Jalan page; location context consistent
+649,stage-217-1,ホテルウィングインターナショナルプレミアム京都三条,https://www.jalan.net/yad330793/,rebranded_current_page,旧ホテルウィングインターナショナルプレミアム京都三条と同一地域・三条/東山駅の現行じゃらん施設ページとして採用
+650,stage-217-2,ホテルマテリアル,https://www.jalan.net/yad354346/,manual_verified,日本語カタカナと英字表記の差のみ。京都府・東山駅一致
+651,stage-217-3,ウェスティン都ホテル京都,https://www.jalan.net/yad361088/,verified,hotel name matches Jalan page; location context consistent
+652,stage-218-1,都ホテル 京都八条,https://www.jalan.net/yad310077/,verified,hotel name matches Jalan page; location context consistent
+653,stage-218-2,ダイワロイネットホテル京都テラス八条 PREMIER,https://www.jalan.net/yad306786/,verified,hotel name matches Jalan page; location context consistent
+654,stage-218-3,ヴィアインプライム京都駅八条口,https://www.jalan.net/yad367740/,verified,hotel name matches Jalan page; location context consistent
+655,stage-219-1,ホテルミュッセ京都四条河原町名鉄,https://www.jalan.net/yad391887/,verified,hotel name matches Jalan page; location context consistent
+656,stage-219-2,京都セントラルイン,https://www.jalan.net/yad353137/,verified,hotel name matches Jalan page; location context consistent
+657,stage-219-3,ホテルフォルツァ京都四条河原町,https://www.jalan.net/yad397375/,verified,hotel name matches Jalan page; location context consistent
+658,stage-220-1,ホテル日航奈良,https://www.jalan.net/yad399780/,verified,hotel name matches Jalan page; location context consistent
+659,stage-220-2,ダイワロイネットホテル奈良,https://www.jalan.net/yad308728/,verified,hotel name matches Jalan page; location context consistent
+660,stage-220-3,天然温泉 吉野桜の湯 御宿 野乃 奈良,https://www.jalan.net/yad347886/,verified,hotel name matches Jalan page; location context consistent
+661,stage-221-1,びわ湖ホテル,https://www.jalan.net/yad379554/,manual_verified,びわ湖/琵琶湖の表記差のみ。滋賀県・びわ湖浜大津エリア一致
+662,stage-221-2,HOTEL 講 大津百町,,no_current_jalan_link,HOTEL 講 大津百町の公式営業は確認できるが現在のじゃらん施設ページは確定できず。誤リンクを避けるため空欄
+663,stage-221-3,東横INN京都琵琶湖大津,https://www.jalan.net/yad383697/,verified,hotel name matches Jalan page; location context consistent
+664,stage-222-1,ダイワロイネットホテル和歌山,https://www.jalan.net/yad318333/,verified,hotel name matches Jalan page; location context consistent
+665,stage-222-2,天然温泉 紀州の湯 ドーミーインPREMIUM和歌山,https://www.jalan.net/yad380232/,verified,hotel name matches Jalan page; location context consistent
+666,stage-222-3,コンフォートホテル和歌山,https://www.jalan.net/yad379936/,verified,hotel name matches Jalan page; location context consistent
+667,stage-223-1,三井ガーデンホテル岡山,https://www.jalan.net/yad322766/,verified,hotel name matches Jalan page; location context consistent
+668,stage-223-2,ダイワロイネットホテル岡山駅前,https://www.jalan.net/yad304172/,verified,hotel name matches Jalan page; location context consistent
+669,stage-223-3,ホテルグランヴィア岡山,https://www.jalan.net/yad318144/,verified,hotel name matches Jalan page; location context consistent
+670,stage-224-1,倉敷アイビースクエア,https://www.jalan.net/yad315803/,verified,hotel name matches Jalan page; location context consistent
+671,stage-224-2,ロイヤルパークホテル倉敷,https://www.jalan.net/yad354682/,verified,hotel name matches Jalan page; location context consistent
+672,stage-224-3,センチュリオンホテル&スパ倉敷,https://www.jalan.net/yad302526/,verified,hotel name matches Jalan page; location context consistent
+673,stage-225-1,三井ガーデンホテル広島,https://www.jalan.net/yad391095/,verified,hotel name matches Jalan page; location context consistent
+674,stage-225-2,ダイワロイネットホテル広島,https://www.jalan.net/yad378150/,verified,hotel name matches Jalan page; location context consistent
+675,stage-225-3,ホテルインターゲート広島,https://www.jalan.net/yad342016/,verified,hotel name matches Jalan page; location context consistent
+676,stage-226-1,ホテルスイート広島 白島,https://www.jalan.net/yad306604/,verified,hotel name matches Jalan page; location context consistent
+677,stage-226-2,ヴィアインプライム広島新幹線口,https://www.jalan.net/yad337466/,verified,hotel name matches Jalan page; location context consistent
+678,stage-226-3,ダイワロイネットホテル広島駅前,https://www.jalan.net/yad365410/,verified,hotel name matches Jalan page; location context consistent
+679,stage-227-1,三井ガーデンホテル広島,https://www.jalan.net/yad391095/,verified,hotel name matches Jalan page; location context consistent
+680,stage-227-2,ダイワロイネットホテル広島,https://www.jalan.net/yad378150/,verified,hotel name matches Jalan page; location context consistent
+681,stage-227-3,ホテルインターゲート広島,https://www.jalan.net/yad342016/,verified,hotel name matches Jalan page; location context consistent
+682,stage-228-1,呉阪急ホテル,https://www.jalan.net/yad320802/,verified,hotel name matches Jalan page; location context consistent
+683,stage-228-2,コンフォートホテル呉,https://www.jalan.net/yad330900/,verified,hotel name matches Jalan page; location context consistent
+684,stage-228-3,クレイトンベイホテル,https://www.jalan.net/yad358100/,verified,hotel name matches Jalan page; location context consistent
+685,stage-229-1,福山ニューキャッスルホテル,https://www.jalan.net/yad321232/,verified,hotel name matches Jalan page; location context consistent
+686,stage-229-2,ダイワロイネットホテル福山駅前,https://www.jalan.net/yad377029/,verified,hotel name matches Jalan page; location context consistent
+687,stage-229-3,リッチモンドホテル福山駅前,https://www.jalan.net/yad339594/,verified,hotel name matches Jalan page; location context consistent
+688,stage-230-1,コンフォートホテル新山口,https://www.jalan.net/yad339664/,verified,hotel name matches Jalan page; location context consistent
+689,stage-230-2,東横INN新山口駅新幹線口,https://www.jalan.net/yad347583/,verified,hotel name matches Jalan page; location context consistent
+690,stage-230-3,ホテルアクティブ!山口,https://www.jalan.net/yad345205/,verified,hotel name matches Jalan page; location context consistent
+691,stage-231-1,松江エクセルホテル東急,https://www.jalan.net/yad378620/,verified,hotel name matches Jalan page; location context consistent
+692,stage-231-2,ドーミーインEXPRESS松江,https://www.jalan.net/yad377442/,verified,hotel name matches Jalan page; location context consistent
+693,stage-231-3,ホテルルートイン松江,https://www.jalan.net/yad386217/,manual_verified,施設名本体・島根県・松江駅が一致
+694,stage-232-1,ANAクラウンプラザホテル米子,https://www.jalan.net/yad331034/,verified,hotel name matches Jalan page; location context consistent
+695,stage-232-2,グリーンリッチホテル米子駅前,https://www.jalan.net/yad337668/,verified,hotel name matches Jalan page; location context consistent
+696,stage-232-3,東横INN米子駅前,https://www.jalan.net/yad326150/,verified,hotel name matches Jalan page; location context consistent
+697,stage-233-1,JRホテルクレメント高松,https://www.jalan.net/yad302830/,verified,hotel name matches Jalan page; location context consistent
+698,stage-233-2,ダイワロイネットホテル高松,https://www.jalan.net/yad345014/,verified,hotel name matches Jalan page; location context consistent
+699,stage-233-3,コンフォートホテル高松,https://www.jalan.net/yad304080/,verified,hotel name matches Jalan page; location context consistent
+700,stage-234-1,JRホテルクレメント徳島,https://www.jalan.net/yad312572/,verified,hotel name matches Jalan page; location context consistent
+701,stage-234-2,ダイワロイネットホテル徳島駅前,https://www.jalan.net/yad370940/,verified,hotel name matches Jalan page; location context consistent
+702,stage-234-3,スマイルホテル徳島,https://www.jalan.net/yad307165/,verified,hotel name matches Jalan page; location context consistent
+703,stage-235-1,ANAクラウンプラザホテル松山,https://www.jalan.net/yad310390/,verified,hotel name matches Jalan page; location context consistent
+704,stage-235-2,ダイワロイネットホテル松山,https://www.jalan.net/yad389020/,verified,hotel name matches Jalan page; location context consistent
+705,stage-235-3,コンフォートホテル松山,https://www.jalan.net/yad324324/,verified,hotel name matches Jalan page; location context consistent
+706,stage-236-1,ザ クラウンパレス新阪急高知,https://www.jalan.net/yad322158/,rebranded_current_page,旧ザ クラウンパレス新阪急高知の検索結果から高知エリア・駅が一致する現行じゃらん施設ページとして採用
+707,stage-236-2,ドーミーイン高知,https://www.jalan.net/yad384040/,verified,hotel name matches Jalan page; location context consistent
+708,stage-236-3,コンフォートホテル高知,https://www.jalan.net/yad317306/,verified,hotel name matches Jalan page; location context consistent
+709,stage-237-1,三井ガーデンホテル福岡祇園,https://www.jalan.net/yad384068/,verified,hotel name matches Jalan page; location context consistent
+710,stage-237-2,西鉄ホテル クルーム博多祇園 櫛田神社前,https://www.jalan.net/yad356362/,verified,hotel name matches Jalan page; location context consistent
+711,stage-237-3,ホテルリソルトリニティ博多,https://www.jalan.net/yad356316/,verified,hotel name matches Jalan page; location context consistent
+712,stage-238-1,三井ガーデンホテル福岡祇園,https://www.jalan.net/yad384068/,verified,hotel name matches Jalan page; location context consistent
+713,stage-238-2,西鉄ホテル クルーム博多祇園 櫛田神社前,https://www.jalan.net/yad356362/,verified,hotel name matches Jalan page; location context consistent
+714,stage-238-3,ホテルリソルトリニティ博多,https://www.jalan.net/yad356316/,verified,hotel name matches Jalan page; location context consistent
+715,stage-239-1,ホテル博多プレイス,https://www.jalan.net/yad346759/,verified,hotel name matches Jalan page; location context consistent
+716,stage-239-2,ザ・ワンファイブマリン福岡,https://www.jalan.net/yad344616/,verified,hotel name matches Jalan page; location context consistent
+717,stage-239-3,ホテルニューガイア上呉服,https://www.jalan.net/yad373877/,verified,hotel name matches Jalan page; location context consistent
+718,stage-240-1,ホテル博多プレイス,https://www.jalan.net/yad346759/,verified,hotel name matches Jalan page; location context consistent
+719,stage-240-2,ザ・ワンファイブマリン福岡,https://www.jalan.net/yad344616/,verified,hotel name matches Jalan page; location context consistent
+720,stage-240-3,ホテルニューガイア上呉服,https://www.jalan.net/yad373877/,verified,hotel name matches Jalan page; location context consistent
+721,stage-241-1,JR九州ステーションホテル小倉,https://www.jalan.net/yad341343/,verified,hotel name matches Jalan page; location context consistent
+722,stage-241-2,ダイワロイネットホテル小倉駅前,https://www.jalan.net/yad386180/,verified,hotel name matches Jalan page; location context consistent
+723,stage-241-3,クインテッサホテル小倉 Comic & Books,https://www.jalan.net/yad332917/,verified,hotel name matches Jalan page; location context consistent
+724,stage-242-1,JR九州ステーションホテル小倉,https://www.jalan.net/yad341343/,verified,hotel name matches Jalan page; location context consistent
+725,stage-242-2,ダイワロイネットホテル小倉駅前,https://www.jalan.net/yad386180/,verified,hotel name matches Jalan page; location context consistent
+726,stage-242-3,クインテッサホテル小倉 Comic & Books,https://www.jalan.net/yad332917/,verified,hotel name matches Jalan page; location context consistent
+727,stage-243-1,ザ・セレクトン久留米,https://www.jalan.net/yad380511/,verified,hotel name matches Jalan page; location context consistent
+728,stage-243-2,グリーンリッチホテル久留米,https://www.jalan.net/yad317845/,verified,hotel name matches Jalan page; location context consistent
+729,stage-243-3,久留米ワシントンホテルプラザ,https://www.jalan.net/yad311805/,verified,hotel name matches Jalan page; location context consistent
+730,stage-244-1,KOKO HOTEL Premier 熊本,https://www.jalan.net/yad334744/,verified,hotel name matches Jalan page; location context consistent
+731,stage-244-2,ダイワロイネットホテル熊本銀座通り PREMIER,https://www.jalan.net/yad308775/,verified,hotel name matches Jalan page; location context consistent
+732,stage-244-3,三井ガーデンホテル熊本,https://www.jalan.net/yad316105/,verified,hotel name matches Jalan page; location context consistent
+733,stage-245-1,KOKO HOTEL Premier 熊本,https://www.jalan.net/yad334744/,verified,hotel name matches Jalan page; location context consistent
+734,stage-245-2,ダイワロイネットホテル熊本銀座通り PREMIER,https://www.jalan.net/yad308775/,verified,hotel name matches Jalan page; location context consistent
+735,stage-245-3,三井ガーデンホテル熊本,https://www.jalan.net/yad316105/,verified,hotel name matches Jalan page; location context consistent
+736,stage-246-1,JR九州ホテル ブラッサム大分,https://www.jalan.net/yad339266/,verified,hotel name matches Jalan page; location context consistent
+737,stage-246-2,ダイワロイネットホテル大分,https://www.jalan.net/yad342480/,verified,hotel name matches Jalan page; location context consistent
+738,stage-246-3,ホテル日航大分 オアシスタワー,https://www.jalan.net/yad338475/,verified,hotel name matches Jalan page; location context consistent
+739,stage-247-1,JR九州ホテル長崎,https://www.jalan.net/yad318707/,verified,hotel name matches Jalan page; location context consistent
+740,stage-247-2,ホテルフォルツァ長崎,https://www.jalan.net/yad308596/,verified,hotel name matches Jalan page; location context consistent
+741,stage-247-3,ドーミーインPREMIUM長崎駅前,https://www.jalan.net/yad396693/,verified,hotel name matches Jalan page; location context consistent
+742,stage-248-1,JR九州ホテル宮崎,https://www.jalan.net/yad361436/,verified,hotel name matches Jalan page; location context consistent
+743,stage-248-2,コンフォートホテル宮崎,https://www.jalan.net/yad369616/,verified,hotel name matches Jalan page; location context consistent
+744,stage-248-3,ドーミーイン宮崎,https://www.jalan.net/yad398448/,verified,hotel name matches Jalan page; location context consistent
+745,stage-249-1,JR九州ホテル鹿児島,https://www.jalan.net/yad399054/,verified,hotel name matches Jalan page; location context consistent
+746,stage-249-2,ソラリア西鉄ホテル鹿児島,https://www.jalan.net/yad346291/,verified,hotel name matches Jalan page; location context consistent
+747,stage-249-3,ダイワロイネットホテル鹿児島天文館 PREMIER,https://www.jalan.net/yad388886/,verified,hotel name matches Jalan page; location context consistent
+748,stage-250-1,ホテル コレクティブ,https://www.jalan.net/yad382520/,verified,hotel name matches Jalan page; location context consistent
+749,stage-250-2,ダイワロイネットホテル那覇国際通り,https://www.jalan.net/yad304700/,verified,hotel name matches Jalan page; location context consistent
+750,stage-250-3,ホテルグレイスリー那覇,https://www.jalan.net/yad306815/,verified,hotel name matches Jalan page; location context consistent
