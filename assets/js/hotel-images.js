@@ -240,8 +240,25 @@
         actions.append(booking);
       }
 
-      const jalanLinks = [...booking.querySelectorAll("a")].filter(isJalanLink);
+      const allLinks = [...booking.querySelectorAll("a")];
+      const jalanLinks = allLinks.filter(isJalanLink);
+      const otherBookingLinks = allLinks.filter(link => !isJalanLink(link));
       let jalan = jalanLinks.find(link => link.dataset.jalanAffiliateOverride === "true") || jalanLinks[0] || null;
+      const expectedClass = `button ${otherBookingLinks.length ? "button--secondary" : "button--primary"}`;
+      const expectedText = "じゃらんで空室を確認";
+      const expectedRel = "noopener noreferrer sponsored";
+
+      const stable = jalan
+        && jalan.dataset.jalanAffiliateOverride === "true"
+        && jalanLinks.length === 1
+        && jalan.getAttribute("href") === url
+        && jalan.className === expectedClass
+        && jalan.textContent === expectedText
+        && jalan.target === "_blank"
+        && jalan.rel === expectedRel
+        && jalan.dataset.analyticsBound === "true"
+        && booking.lastElementChild === jalan;
+      if (stable) return;
 
       jalanLinks.forEach(link => {
         if (link !== jalan) link.remove();
@@ -252,13 +269,12 @@
         booking.append(jalan);
       }
 
-      const otherBookingLinks = [...booking.querySelectorAll("a")].filter(link => link !== jalan);
-      jalan.className = `button ${otherBookingLinks.length ? "button--secondary" : "button--primary"}`;
-      jalan.textContent = "じゃらんで空室を確認";
-      jalan.href = url;
-      jalan.target = "_blank";
-      jalan.rel = "noopener noreferrer sponsored";
-      jalan.dataset.jalanAffiliateOverride = "true";
+      if (jalan.className !== expectedClass) jalan.className = expectedClass;
+      if (jalan.textContent !== expectedText) jalan.textContent = expectedText;
+      if (jalan.getAttribute("href") !== url) jalan.setAttribute("href", url);
+      if (jalan.target !== "_blank") jalan.target = "_blank";
+      if (jalan.rel !== expectedRel) jalan.rel = expectedRel;
+      if (jalan.dataset.jalanAffiliateOverride !== "true") jalan.dataset.jalanAffiliateOverride = "true";
 
       if (booking.lastElementChild !== jalan) booking.append(jalan);
 
