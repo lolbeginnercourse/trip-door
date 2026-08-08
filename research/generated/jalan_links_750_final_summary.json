@@ -1,0 +1,78 @@
+{
+  "row_count": 750,
+  "research_no_complete": true,
+  "link_present_count": 742,
+  "link_missing_count": 8,
+  "unique_hotel_rows": 467,
+  "unique_jalan_urls": 460,
+  "status_counts": {
+    "verified": 688,
+    "rebranded_current_page": 15,
+    "verified_fuzzy": 9,
+    "manual_verified": 27,
+    "no_current_jalan_link": 4,
+    "manual_verified_web": 3,
+    "closed_no_current_link": 3,
+    "needs_manual_review": 1
+  },
+  "missing_rows": [
+    {
+      "research_no": 76,
+      "id": "stage-026-1",
+      "hotel_name": "ART HOTELS SHIBUYA",
+      "status": "no_current_jalan_link",
+      "note": "現在のじゃらん施設ページを検索・照合したが確定できず。誤リンクを避けるため空欄"
+    },
+    {
+      "research_no": 79,
+      "id": "stage-027-1",
+      "hotel_name": "ART HOTELS SHIBUYA",
+      "status": "no_current_jalan_link",
+      "note": "現在のじゃらん施設ページを検索・照合したが確定できず。誤リンクを避けるため空欄"
+    },
+    {
+      "research_no": 187,
+      "id": "stage-063-1",
+      "hotel_name": "TOKIO's HOTEL",
+      "status": "no_current_jalan_link",
+      "note": "TOKIO's HOTELの現行営業は確認できるが現在のじゃらん施設ページは確定できず。誤リンクを避けるため空欄"
+    },
+    {
+      "research_no": 397,
+      "id": "stage-133-1",
+      "hotel_name": "JRイン帯広",
+      "status": "closed_no_current_link",
+      "note": "JRイン帯広は閉館情報があり現在のじゃらん施設ページを確定できないため空欄"
+    },
+    {
+      "research_no": 486,
+      "id": "stage-162-3",
+      "hotel_name": "プレミアホテル-CABIN-松本",
+      "status": "closed_no_current_link",
+      "note": "プレミアホテル-CABIN-松本は2024年12月31日のチェックアウトをもって営業終了。現行リンクなし"
+    },
+    {
+      "research_no": 489,
+      "id": "stage-163-3",
+      "hotel_name": "プレミアホテル-CABIN-松本",
+      "status": "closed_no_current_link",
+      "note": "プレミアホテル-CABIN-松本は2024年12月31日のチェックアウトをもって営業終了。現行リンクなし"
+    },
+    {
+      "research_no": 556,
+      "id": "stage-186-1",
+      "hotel_name": "ホテル西村",
+      "status": "needs_manual_review",
+      "note": "検索で得た候補が函館パークホテルで都道府県・駅とも不一致。誤リンクを除外し空欄"
+    },
+    {
+      "research_no": 662,
+      "id": "stage-221-2",
+      "hotel_name": "HOTEL 講 大津百町",
+      "status": "no_current_jalan_link",
+      "note": "HOTEL 講 大津百町の公式営業は確認できるが現在のじゃらん施設ページは確定できず。誤リンクを避けるため空欄"
+    }
+  ],
+  "canonical_url_validation": "passed",
+  "generated_at": "2026-08-08T16:38:22+09:00"
+}
