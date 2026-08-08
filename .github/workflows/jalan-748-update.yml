@@ -3,7 +3,7 @@ name: Jalan 748 strict update
 on:
   push:
     branches:
-      - jalan-affiliate-748-20260808
+      - main
 
 permissions:
   contents: write
@@ -99,13 +99,11 @@ jobs:
             add(byCompact, compact(row[nameKey]), row);
           }
 
-          const beforeJalan = new Map(rows.map((r, i) => [i, r && Object.prototype.hasOwnProperty.call(r, 'jalan') ? r.jalan : undefined]));
           const unmatched = [];
           const ambiguous = [];
           const matchedNames = [];
           let exactUnique = 0, normalizedUnique = 0, compactUnique = 0;
           let matchedRows = 0, changedRows = 0, replacedRows = 0, addedRows = 0, alreadySameRows = 0;
-
           const distinctRawNames = (candidates) => [...new Set(candidates.map(r => r[nameKey]))];
 
           for (const item of mapping) {
@@ -203,12 +201,13 @@ jobs:
           node /tmp/update-jalan.js
           cat /tmp/jalan-748-report.json >> "$GITHUB_STEP_SUMMARY"
 
-      - name: Commit only final hotel database change
+      - name: Commit verified result to isolated branch
         run: |
           rm -f .github/tmp/jalan-748-map.br64
           rm -f .github/workflows/jalan-748-update.yml
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b jalan-affiliate-748-result-20260808
           git add assets/data/hotels.json .github/tmp/jalan-748-map.br64 .github/workflows/jalan-748-update.yml
           git commit -m "Apply supplied 748 Jalan affiliate links"
-          git push origin HEAD
+          git push origin HEAD:jalan-affiliate-748-result-20260808
