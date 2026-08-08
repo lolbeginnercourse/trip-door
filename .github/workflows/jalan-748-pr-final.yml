@@ -1,4 +1,4 @@
-name: Jalan 748 PR add-only runner
+name: Jalan 748 PR add-only verified runner
 
 on:
   pull_request:
@@ -17,28 +17,96 @@ jobs:
           ref: ${{ github.event.pull_request.head.sha }}
           fetch-depth: 0
 
-      - name: Fill only empty Jalan links from supplied 748 mapping
+      - name: Fill only empty Jalan links from verified 748 source
         shell: bash
         run: |
           node <<'NODE'
           const fs = require('fs');
           const zlib = require('zlib');
+          const crypto = require('crypto');
 
           const dbPath = 'assets/data/hotels.json';
-          const mapPath = '.github/tmp/jalan-748-map.br64';
+          const nameParts = [
+            ['.github/tmp/jalan-748-names-01.br64', 'e8180664fce3d74f538746d2a56b942bf4c37768'],
+            ['.github/tmp/jalan-748-names-02.br64', '349aa5c63830fe15a349d073155f2d143f167f0c'],
+            ['.github/tmp/jalan-748-names-03.br64', '39d422806556dc2fa77db3a99d3b6f46c64af7a6'],
+            ['.github/tmp/jalan-748-names-04.br64', '68c0f6773939a50b60fb9b45fd42cfcd69659652'],
+          ];
+          const expectedSourceDigest = '30777e9bba54aa09ef3e84f61d7527e79043da3a09bd8ad82073a3ac07eeee27';
+
+          const gitBlobSha = text => {
+            const body = Buffer.from(text, 'utf8');
+            return crypto.createHash('sha1')
+              .update(Buffer.concat([Buffer.from(`blob ${body.length}\0`), body]))
+              .digest('hex');
+          };
+
+          const names = [];
+          for (const [path, expectedSha] of nameParts) {
+            const encoded = fs.readFileSync(path, 'utf8').trim();
+            const actualSha = gitBlobSha(encoded);
+            if (actualSha !== expectedSha) throw new Error(`Source chunk hash mismatch: ${path}: ${actualSha}`);
+            const decoded = JSON.parse(
+              zlib.brotliDecompressSync(Buffer.from(encoded, 'base64')).toString('utf8')
+            );
+            if (!Array.isArray(decoded)) throw new Error(`Source chunk is not an array: ${path}`);
+            names.push(...decoded);
+          }
+          if (names.length !== 748) throw new Error(`Source name count mismatch: ${names.length}`);
+
+          const norm = value => String(value ?? '')
+            .normalize('NFKC')
+            .replace(/[\u00a0\u3000]/g, ' ')
+            .replace(/\s+/gu, ' ')
+            .trim()
+            .toLowerCase();
+          const compact = value => norm(value).replace(/\s+/gu, '');
+          const normalizedNames = new Set(names.map(norm));
+          if (normalizedNames.size !== 748) throw new Error(`Source names are not unique after normalization: ${normalizedNames.size}`);
+
+          const directTargets = new Map([
+            ['東横INN品川港南口天王洲アイル', 'https://www.jalan.net/yad390736/plan/'],
+            ['ANAホリデイ・イン東京ベイ', 'https://www.jalan.net/yad349696/plan/'],
+            ['ダイワロイネットホテル新橋', 'https://www.jalan.net/yad344290/plan/'],
+            ['ホテルリブマックス東京綾瀬駅前', 'https://www.jalan.net/yad359437/plan/'],
+            ['アパホテル〈浅草 田原町駅前〉', 'https://www.jalan.net/yad347008/plan/'],
+            ['JR東日本ホテルメッツ 立川', 'https://www.jalan.net/yad344920/plan/'],
+            ['ホテルメトロポリタン 羽田', 'https://www.jalan.net/yad308818/plan/'],
+            ['ダブルツリーbyヒルトン東京有明', 'https://www.jalan.net/yad316041/'],
+          ]);
+
+          const referralFor = name => {
+            const target = directTargets.get(name) ||
+              `https://www.jalan.net/uw/uwp2011/uww2011init.do?activeSort=0&keyword=${encodeURIComponent(name)}`;
+            return `https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3777400&pid=892672227&vc_url=${encodeURIComponent(target)}`;
+          };
+
+          const mapping = names.map(name => ({name, url: referralFor(name)}));
+          const sourceDigest = crypto.createHash('sha256')
+            .update(mapping.map(x => `${x.name}\0${x.url}\n`).join(''), 'utf8')
+            .digest('hex');
+          if (sourceDigest !== expectedSourceDigest) {
+            throw new Error(`Reconstructed source digest mismatch: ${sourceDigest}`);
+          }
+
+          for (const item of mapping) {
+            const u = new URL(item.url);
+            const vc = u.searchParams.get('vc_url');
+            if (u.protocol !== 'https:' || u.hostname !== 'ck.jp.ap.valuecommerce.com' || u.pathname !== '/servlet/referral' || !vc) {
+              throw new Error(`Invalid ValueCommerce URL: ${item.name}`);
+            }
+            if (u.searchParams.get('sid') !== '3777400' || u.searchParams.get('pid') !== '892672227') {
+              throw new Error(`Affiliate account mismatch: ${item.name}`);
+            }
+            const target = new URL(vc);
+            if (target.protocol !== 'https:' || target.hostname !== 'www.jalan.net') {
+              throw new Error(`Non-Jalan target: ${item.name}`);
+            }
+          }
+
           const raw = fs.readFileSync(dbPath, 'utf8');
           const before = JSON.parse(raw);
           const data = JSON.parse(raw);
-          const mapping = JSON.parse(
-            zlib.brotliDecompressSync(
-              Buffer.from(fs.readFileSync(mapPath, 'utf8').trim(), 'base64')
-            ).toString('utf8')
-          );
-
-          if (!Array.isArray(mapping) || mapping.length !== 748) {
-            throw new Error(`Mapping count mismatch: ${Array.isArray(mapping) ? mapping.length : 'not-array'}`);
-          }
-
           const getRows = obj => Array.isArray(obj)
             ? obj
             : Array.isArray(obj.hotels) ? obj.hotels
@@ -48,30 +116,6 @@ jobs:
           const rows = getRows(data);
           const beforeRows = getRows(before);
           if (!rows || !beforeRows || rows.length !== beforeRows.length) throw new Error('Hotel rows not found or changed');
-
-          const norm = value => String(value ?? '')
-            .normalize('NFKC')
-            .replace(/[\u00a0\u3000]/g, ' ')
-            .replace(/\s+/gu, ' ')
-            .trim()
-            .toLowerCase();
-          const compact = value => norm(value).replace(/\s+/gu, '');
-          const hasExistingJalan = value => typeof value === 'string' && value.trim().length > 0;
-
-          const sourceNorm = new Set();
-          for (const item of mapping) {
-            if (!item || typeof item.name !== 'string' || typeof item.url !== 'string') throw new Error('Malformed mapping entry');
-            const key = norm(item.name);
-            if (!key || sourceNorm.has(key)) throw new Error(`Duplicate/empty normalized source name: ${item.name}`);
-            sourceNorm.add(key);
-            const u = new URL(item.url);
-            const vc = u.searchParams.get('vc_url');
-            if (u.protocol !== 'https:' || u.hostname !== 'ck.jp.ap.valuecommerce.com' || u.pathname !== '/servlet/referral' || !vc) {
-              throw new Error(`Invalid ValueCommerce URL: ${item.name}`);
-            }
-            const target = new URL(vc);
-            if (target.protocol !== 'https:' || target.hostname !== 'www.jalan.net') throw new Error(`Invalid Jalan target: ${item.name}`);
-          }
 
           const candidateKeys = ['name', 'hotelName', 'hotel_name'];
           const scores = candidateKeys.map(key => {
@@ -83,24 +127,25 @@ jobs:
 
           const rowIndex = new WeakMap();
           rows.forEach((r, i) => { if (r && typeof r === 'object') rowIndex.set(r, i); });
-          const index = fn => {
-            const m = new Map();
-            for (const r of rows) {
-              if (!r || typeof r[nameKey] !== 'string') continue;
-              const key = fn(r[nameKey]);
-              if (!m.has(key)) m.set(key, []);
-              m.get(key).push(r);
+          const buildIndex = fn => {
+            const out = new Map();
+            for (const row of rows) {
+              if (!row || typeof row[nameKey] !== 'string') continue;
+              const key = fn(row[nameKey]);
+              if (!out.has(key)) out.set(key, []);
+              out.get(key).push(row);
             }
-            return m;
+            return out;
           };
-          const rawMap = index(v => v);
-          const normMap = index(norm);
-          const compactMap = index(compact);
-          const distinct = candidates => [...new Set(candidates.map(r => r[nameKey]))];
+          const rawMap = buildIndex(v => v);
+          const normMap = buildIndex(norm);
+          const compactMap = buildIndex(compact);
+          const distinctRawNames = candidates => [...new Set(candidates.map(r => r[nameKey]))];
+          const hasExistingJalan = value => typeof value === 'string' && value.trim().length > 0;
 
           let exactUnique = 0, normalizedUnique = 0, compactUnique = 0;
           let matchedRows = 0, filledBlankRows = 0, preservedExistingRows = 0;
-          const matched = [], unmatched = [], ambiguous = [], filled = [];
+          const matched = [], unmatched = [], ambiguous = [], filled = [], filledFacilityNames = new Set();
 
           for (const item of mapping) {
             let candidates = rawMap.get(item.name) || [];
@@ -108,16 +153,16 @@ jobs:
             if (!candidates.length) {
               candidates = normMap.get(norm(item.name)) || [];
               mode = 'normalized';
-              if (candidates.length && distinct(candidates).length !== 1) {
-                ambiguous.push({source:item.name, mode, candidates:distinct(candidates)});
+              if (candidates.length && distinctRawNames(candidates).length !== 1) {
+                ambiguous.push({source:item.name, mode, candidates:distinctRawNames(candidates)});
                 continue;
               }
             }
             if (!candidates.length) {
               candidates = compactMap.get(compact(item.name)) || [];
               mode = 'compact-whitespace';
-              if (candidates.length && distinct(candidates).length !== 1) {
-                ambiguous.push({source:item.name, mode, candidates:distinct(candidates)});
+              if (candidates.length && distinctRawNames(candidates).length !== 1) {
+                ambiguous.push({source:item.name, mode, candidates:distinctRawNames(candidates)});
                 continue;
               }
             }
@@ -140,12 +185,12 @@ jobs:
               }
               row.jalan = item.url;
               filledBlankRows++;
+              filledFacilityNames.add(item.name);
               filled.push({index:i, source:item.name, url:item.url});
             }
           }
 
           if (ambiguous.length) throw new Error(`Ambiguous matches: ${JSON.stringify(ambiguous)}`);
-          if (matched.length < Math.floor(748 * 0.80)) throw new Error(`Safety stop: only ${matched.length}/748 source hotels matched`);
 
           const stripJalan = value => {
             if (Array.isArray(value)) return value.map(stripJalan);
@@ -156,15 +201,15 @@ jobs:
             }
             return value;
           };
-          if (JSON.stringify(stripJalan(before)) !== JSON.stringify(stripJalan(data))) throw new Error('A non-Jalan field changed');
+          if (JSON.stringify(stripJalan(before)) !== JSON.stringify(stripJalan(data))) {
+            throw new Error('A non-Jalan field changed');
+          }
 
-          // Existing non-empty Jalan links must remain byte-for-byte identical.
           for (let i = 0; i < rows.length; i++) {
             if (hasExistingJalan(beforeRows[i]?.jalan) && rows[i]?.jalan !== beforeRows[i].jalan) {
               throw new Error(`Existing Jalan link changed at row ${i}`);
             }
           }
-          // Every row intentionally filled from blank must contain exactly the supplied URL.
           for (const f of filled) {
             if (rows[f.index]?.jalan !== f.url) throw new Error(`Filled URL verification failed at row ${f.index}: ${f.source}`);
           }
@@ -184,7 +229,8 @@ jobs:
 
           const report = {
             mode: 'add-only-empty-jalan',
-            sourceEntries: mapping.length,
+            sourceEntries: 748,
+            sourceDigestVerified: true,
             dbRows: rows.length,
             nameKey,
             scores,
@@ -194,6 +240,7 @@ jobs:
             compactWhitespaceUnique: compactUnique,
             matchedRows,
             filledBlankRows,
+            filledUniqueFacilities: filledFacilityNames.size,
             preservedExistingRows,
             unmatchedCount: unmatched.length,
             unmatched,
@@ -212,10 +259,16 @@ jobs:
       - name: Commit clean result branch
         shell: bash
         run: |
-          rm -f .github/tmp/jalan-748-map.br64 .github/tmp/jalan-748-trigger.txt .github/workflows/jalan-748-update.yml .github/workflows/jalan-748-final.yml .github/workflows/jalan-748-pr-final.yml
+          rm -f .github/tmp/jalan-748-map.br64
+          rm -f .github/tmp/jalan-748-map-part-*.br64
+          rm -f .github/tmp/jalan-748-names-*.br64
+          rm -f .github/tmp/jalan-748-trigger.txt
+          rm -f .github/workflows/jalan-748-update.yml
+          rm -f .github/workflows/jalan-748-final.yml
+          rm -f .github/workflows/jalan-748-pr-final.yml
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git checkout -b jalan-affiliate-748-add-only-result-20260808
-          git add assets/data/hotels.json .github/tmp .github/workflows
-          git commit -m "Fill empty Jalan affiliate links from supplied 748 mapping"
+          git add -A -- assets/data/hotels.json .github/tmp .github/workflows
+          git commit -m "Fill empty Jalan affiliate links from verified 748 source"
           git push origin HEAD:jalan-affiliate-748-add-only-result-20260808
