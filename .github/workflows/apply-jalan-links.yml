@@ -1,0 +1,200 @@
+name: Apply Jalan affiliate links
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/apply-jalan-links.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Replace Jalan links by hotel name
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import base64
+          import copy
+          import gzip
+          import json
+          import re
+          import unicodedata
+          import urllib.parse
+
+          DATA_PATH = Path("assets/data/hotels.json")
+          PARTS = [Path(f"scripts/.jalan-map-{i}") for i in range(1, 6)]
+          encoded = "".join(part.read_text(encoding="utf-8").strip() for part in PARTS)
+          mapping_payload = json.loads(gzip.decompress(base64.b64decode(encoded)).decode("utf-8"))
+          mapping = mapping_payload["links"]
+
+          def normalize(value):
+              value = unicodedata.normalize("NFKC", str(value or "")).lower()
+              value = value.replace("&", "and")
+              return re.sub(r"[\s\u3000・･·\.。,:：;；'’`´\-‐‑‒–—―ー_/\\()（）\[\]【】「」『』〈〉《》]", "", value)
+
+          def is_jalan_link(item):
+              if not isinstance(item, dict):
+                  return False
+              provider = str(item.get("provider") or "").lower()
+              url = str(item.get("url") or "")
+              decoded = urllib.parse.unquote(url).lower()
+              return "じゃらん" in provider or "jalan" in provider or "jalan.net" in decoded
+
+          def valid_http_url(value):
+              return isinstance(value, str) and value.startswith(("https://", "http://"))
+
+          data = json.loads(DATA_PATH.read_text(encoding="utf-8"))
+          hotels = data.get("hotels")
+          if not isinstance(hotels, list):
+              raise SystemExit("assets/data/hotels.json does not contain a hotels array")
+
+          matched_keys = set()
+          matched_rows = 0
+          changed_rows = 0
+          replaced_existing_jalan = 0
+          added_jalan = 0
+          updated_array_entries = 0
+
+          for hotel in hotels:
+              if not isinstance(hotel, dict) or not hotel.get("name"):
+                  continue
+              key = normalize(hotel["name"])
+              target = mapping.get(key)
+              if not target:
+                  continue
+
+              matched_keys.add(key)
+              matched_rows += 1
+              url = target["url"]
+              before = copy.deepcopy(hotel)
+              had_existing_jalan = valid_http_url(hotel.get("jalan"))
+
+              # Current app-core.js and hotel-detail.js both read this direct field.
+              hotel["jalan"] = url
+
+              # Preserve non-Jalan entries exactly, replacing only Jalan entries.
+              if isinstance(hotel.get("affiliateLinks"), list):
+                  original = hotel["affiliateLinks"]
+                  rebuilt = []
+                  inserted = False
+                  for item in original:
+                      if is_jalan_link(item):
+                          if not inserted:
+                              rebuilt.append({"provider": "じゃらん", "url": url})
+                              inserted = True
+                          continue
+                      rebuilt.append(item)
+
+                  if not inserted:
+                      # An empty affiliateLinks array is truthy in JavaScript and
+                      # suppresses the direct fallback. Preserve the existing
+                      # Rakuten URL value, then add only the requested Jalan link.
+                      if not rebuilt and valid_http_url(hotel.get("rakuten")):
+                          rebuilt.append({"provider": "楽天トラベル", "url": hotel["rakuten"]})
+                      rebuilt.append({"provider": "じゃらん", "url": url})
+
+                  if rebuilt != original:
+                      hotel["affiliateLinks"] = rebuilt
+                      updated_array_entries += 1
+
+              # Preserve compatibility with older rows that used `links`.
+              if isinstance(hotel.get("links"), list):
+                  original = hotel["links"]
+                  rebuilt = []
+                  inserted = False
+                  for item in original:
+                      if is_jalan_link(item):
+                          if not inserted:
+                              rebuilt.append({"provider": "じゃらん", "url": url})
+                              inserted = True
+                          continue
+                      rebuilt.append(item)
+                  if not inserted:
+                      rebuilt.append({"provider": "じゃらん", "url": url})
+                  if rebuilt != original:
+                      hotel["links"] = rebuilt
+                      updated_array_entries += 1
+
+              if hotel != before:
+                  changed_rows += 1
+                  prior_array_had_jalan = any(
+                      is_jalan_link(item)
+                      for field in ("affiliateLinks", "links")
+                      for item in (before.get(field) if isinstance(before.get(field), list) else [])
+                  )
+                  if had_existing_jalan or prior_array_had_jalan:
+                      replaced_existing_jalan += 1
+                  else:
+                      added_jalan += 1
+
+          missing = sorted(mapping[key]["name"] for key in mapping.keys() - matched_keys)
+
+          if len(matched_keys) < 300:
+              raise SystemExit(
+                  f"Safety stop: only {len(matched_keys)} of {len(mapping)} supplied hotels matched repository data"
+              )
+
+          DATA_PATH.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+          print("JALAN_UPDATE_REPORT=" + json.dumps({
+              "sourceRows": 750,
+              "sourceUniqueHotels": len(mapping),
+              "repositoryRows": len(hotels),
+              "matchedUniqueHotels": len(matched_keys),
+              "matchedRows": matched_rows,
+              "changedRows": changed_rows,
+              "replacedExistingJalanRows": replaced_existing_jalan,
+              "addedJalanRows": added_jalan,
+              "affiliateArrayRowsUpdated": updated_array_entries,
+              "unmatchedUniqueHotels": len(missing),
+              "unmatchedHotelNames": missing,
+          }, ensure_ascii=False))
+          PY
+
+      - name: Validate JSON and Jalan URLs
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import json
+          import urllib.parse
+          from pathlib import Path
+
+          data = json.loads(Path("assets/data/hotels.json").read_text(encoding="utf-8"))
+          bad = []
+          static_rows = 0
+          for hotel in data.get("hotels", []):
+              url = hotel.get("jalan")
+              if not url:
+                  continue
+              static_rows += 1
+              decoded = urllib.parse.unquote(url)
+              if not url.startswith("https://ck.jp.ap.valuecommerce.com/servlet/referral?") or "www.jalan.net/yad" not in decoded:
+                  bad.append({"name": hotel.get("name"), "url": url})
+          if bad:
+              raise SystemExit(f"Invalid Jalan links detected: {bad[:5]}")
+          print(f"Validated static Jalan rows: {static_rows}")
+          PY
+
+      - name: Commit hotel link changes
+        shell: bash
+        run: |
+          if git diff --quiet -- assets/data/hotels.json; then
+            echo "No hotel data changes were required."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/data/hotels.json
+          git commit -m "Replace Jalan affiliate links by hotel name"
+          git push origin HEAD:main
