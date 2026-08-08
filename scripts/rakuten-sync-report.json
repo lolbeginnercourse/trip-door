@@ -1,0 +1,541 @@
+{
+  "generatedAt": "2026-08-08T07:48:02.934Z",
+  "totalListingRows": 1256,
+  "uniqueFacilities": 748,
+  "matchedFacilities": 715,
+  "unmatchedFacilities": 33,
+  "updatedListingRows": 1201,
+  "unmatched": [
+    {
+      "name": "ホテルウィングインターナショナルプレミアム東京四谷",
+      "prefecture": "東京都",
+      "listingRows": 1,
+      "reason": "low_score",
+      "candidates": [
+        {
+          "hotelNo": "168389",
+          "hotelName": "ホテル京阪　東京四谷",
+          "address": "東京都新宿区四谷1-24",
+          "score": 51
+        }
+      ]
+    },
+    {
+      "name": "ホテルウィングインターナショナル後楽園",
+      "prefecture": "東京都",
+      "listingRows": 2,
+      "reason": "low_score",
+      "candidates": [
+        {
+          "hotelNo": "167278",
+          "hotelName": "春日の湯　ドーミーイン後楽園（ドーミーイン・御宿野乃　ホテルズグループ）",
+          "address": "東京都文京区本郷4-23-14",
+          "score": 46
+        },
+        {
+          "hotelNo": "104689",
+          "hotelName": "ホテルリブマックスＢＵＤＧＥＴ後楽園",
+          "address": "東京都文京区小石川3-1-2",
+          "score": 44
+        },
+        {
+          "hotelNo": "166431",
+          "hotelName": "ヴィアイン飯田橋後楽園（ＪＲ西日本グループ）",
+          "address": "東京都新宿区新小川町4番11号",
+          "score": 39
+        }
+      ]
+    },
+    {
+      "name": "東横INN東京大手町A1",
+      "prefecture": "東京都",
+      "listingRows": 1,
+      "reason": "Rakuten API returned HTTP 404",
+      "candidates": []
+    },
+    {
+      "name": "The OneFive Tokyo Shibuya",
+      "prefecture": "東京都",
+      "listingRows": 5,
+      "reason": "Rakuten API returned HTTP 404",
+      "candidates": []
+    },
+    {
+      "name": "アパホテル&リゾート〈西新宿五丁目駅タワー〉",
+      "prefecture": "東京都",
+      "listingRows": 9,
+      "reason": "Rakuten API returned HTTP 404",
+      "candidates": []
+    },
+    {
+      "name": "JR東日本ホテルメッツ プレミア 亀戸",
+      "prefecture": "東京都",
+      "listingRows": 2,
+      "reason": "low_score",
+      "candidates": [
+        {
+          "hotelNo": "176544",
+          "hotelName": "ＪＲ東日本ホテルメッツ　プレミア　秋葉原",
+          "address": "東京都千代田区外神田一丁目17-4",
+          "score": 93
+        }
+      ]
+    },
+    {
+      "name": "ホテルミッドイン目黒駅前",
+      "prefecture": "東京都",
+      "listingRows": 1,
+      "reason": "Rakuten API returned HTTP 404",
+      "candidates": []
+    },
+    {
+      "name": "上野ホテル",
+      "prefecture": "東京都",
+      "listingRows": 1,
+      "reason": "low_score",
+      "candidates": [
+        {
+          "hotelNo": "193896",
+          "hotelName": "茶庵上野ホテル　＾",
+          "address": "東京都台東区東上野3-12-3　茶庵上野ホテル",
+          "score": 83
+        },
+        {
+          "hotelNo": "180625",
+          "hotelName": "寅ホテル　上野",
+          "address": "東京都台東区上野1-9-3",
+          "score": 78
+        },
+        {
+          "hotelNo": "176730",
+          "hotelName": "ホテル泊屋　上野",
+          "address": "東京都台東区東上野4-20-4",
+          "score": 73
+        }
+      ]
+    },
+    {
+      "name": "ホテルウィングインターナショナル相模原",
+      "prefecture": "神奈川県",
+      "listingRows": 1,
+      "reason": "low_score",
+      "candidates": [
+        {
+          "hotelNo": "171895",
+          "hotelName": "アパホテル〈相模原橋本駅東〉",
+          "address": "神奈川県相模原市緑区橋本3-14-14",
+          "score": 54
+        },
+        {
+          "hotelNo": "165986",
+          "hotelName": "アパホテル〈相模原　古淵駅前〉",
+          "address": "神奈川県相模原市南区古淵3-9-8",
+          "score": 54
+        },
+        {
+          "hotelNo": "143287",
+          "hotelName": "アパホテル〈相模原　橋本駅前〉",
+          "address": "神奈川県相模原市緑区橋本6-4-12",
+          "score": 54
+        }
+      ]
+    },
+    {
+      "name": "アイホテル橋本",
+      "prefecture": "神奈川県",
+      "listingRows": 1,
+      "reason": "low_score",
+      "candidates": [
+        {
+          "hotelNo": "4618",
+          "hotelName": "橋本パークホテル",
+          "address": "神奈川県相模原市緑区橋本3-4-4",
+          "score": 65
+        },
+        {
+          "hotelNo": "171895",
+          "hotelName": "アパホテル〈相模原橋本駅東〉",
+          "address": "神奈川県相模原市緑区橋本3-14-14",
+          "score": 53
+        },
+        {
+          "hotelNo": "143287",
+          "hotelName": "アパホテル〈相模原　橋本駅前〉",
+          "address": "神奈川県相模原市緑区橋本6-4-12",
+          "score": 53
+        }
+      ]
+    },
+    {
+      "name": "CVS・BAY HOTEL",
+      "prefecture": "千葉県",
+      "listingRows": 1,
+      "reason": "ambiguous",
+      "candidates": [
+        {
+          "hotelNo": "84838",
+          "hotelName": "ＣＶＳ・ＢＡＹ　ＨＯＴＥＬ　本館（ＣＶＳ・ベイホテル本館）",
+          "address": "千葉県市川市塩浜2-33-1",
+          "score": 116
+        },
+        {
+          "hotelNo": "151173",
+          "hotelName": "ＣＶＳ・ＢＡＹ　ＨＯＴＥＬ新館（ＣＶＳ・ベイホテル新館）",
+          "address": "千葉県市川市塩浜2-3-8",
+          "score": 116
+        }
+      ]
+    },
+    {
+      "name": "マイステイズ新浦安コンファレンスセンター",
+      "prefecture": "千葉県",
+      "listingRows": 1,
+      "reason": "Rakuten API returned HTTP 404",
+      "candidates": []
+    },
+    {
+      "name": "X wave 船橋",
+      "prefecture": "千葉県",
+      "listingRows": 1,
+      "reason": "Rakuten API returned HTTP 404",
+      "candidates": []
+    },
+    {
+      "name": "浦和ワシントンホテル",
+      "prefecture": "埼玉県",
+      "listingRows": 2,
+      "reason": "low_score",
+      "candidates": [
+        {
+          "hotelNo": "198503",
+          "hotelName": "ホテルグローバルビュー浦和",
+          "address": "埼玉県さいたま市浦和区高砂2-1-19",
+          "score": 50
+        },
+        {
+          "hotelNo": "11044",
+          "hotelName": "ロイヤルパインズホテル浦和",
+          "address": "埼玉県さいたま市浦和区仲町2-5-1",
+          "score": 48
+        },
+        {
+          "hotelNo": "1706",
+          "hotelName": "ＪＲ東日本ホテルメッツ浦和",
+          "address": "埼玉県さいたま市浦和区高砂1-16-7",
+          "score": 48
+        }
+      ]
+    },
+    {
+      "name": "ホテルリブマックス西川口駅前",
+      "prefecture": "埼玉県",
+      "listingRows": 1,
+      "reason": "low_score",
+      "candidates": [
+        {
+          "hotelNo": "160706",
+          "hotelName": "ＣＯＣＯ　ＳＴＡＹ　西川口駅前",
+          "address": "埼玉県川口市西川口1-9-7",
+          "score": 52
+        }
+      ]
+    },
+    {
+      "name": "川越湯遊ランド・ホテル三光",
+      "prefecture": "埼玉県",
+      "listingRows": 1,
+      "reason": "Rakuten API returned HTTP 404",
+      "candidates": []
+    },
+    {
+      "name": "ホテルウィングインターナショナル札幌すすきの",
+      "prefecture": "北海道",
+      "listingRows": 4,
+      "reason": "low_score",
+      "candidates": [
+        {
+          "hotelNo": "179365",
+          "hotelName": "クインテッサホテル札幌すすきの",
+          "address": "北海道札幌市中央区南6条西4-1-2",
+          "score": 67
+        },
+        {
+          "hotelNo": "140800",
+          "hotelName": "アパホテル〈札幌すすきの駅西〉",
+          "address": "北海道札幌市中央区南4条西7丁目1-1",
+          "score": 65
+        },
+        {
+          "hotelNo": "140844",
+          "hotelName": "アパホテル〈札幌すすきの駅前〉",
+          "address": "北海道札幌市中央区南4条西2丁目2-5",
+          "score": 65
+        }
+      ]
+    },
+    {
+      "name": "フレックステイイン函館駅前",
+      "prefecture": "北海道",
+      "listingRows": 1,
+      "reason": "low_score",
+      "candidates": [
+        {
+          "hotelNo": "168451",
+          "hotelName": "フォーポイント　フレックス　ｂｙ　シェラトン　函館駅",
+          "address": "北海道函館市若松町18-19",
+          "score": 65
+        },
+        {
+          "hotelNo": "177009",
+          "hotelName": "ラ・ジェント・ステイ函館駅前",
+          "address": "北海道函館市若松町12-8",
+          "score": 60
+        },
+        {
+          "hotelNo": "183179",
+          "hotelName": "ホテルマイステイズ函館駅前",
+          "address": "北海道函館市若松町20-11",
+          "score": 58
+        }
+      ]
+    },
+    {
+      "name": "JRイン帯広",
+      "prefecture": "北海道",
+      "listingRows": 1,
+      "reason": "Rakuten API returned HTTP 404",
+      "candidates": []
+    },
+    {
+      "name": "プレミアホテル-CABIN-松本",
+      "prefecture": "長野県",
+      "listingRows": 2,
+      "reason": "Rakuten API returned HTTP 404",
+      "candidates": []
+    },
+    {
+      "name": "ホテルジーハイブ三島",
+      "prefecture": "静岡県",
+      "listingRows": 1,
+      "reason": "Rakuten API returned HTTP 404",
+      "candidates": []
+    },
+    {
+      "name": "ホテルミワ",
+      "prefecture": "静岡県",
+      "listingRows": 1,
+      "reason": "low_score",
+      "candidates": [
+        {
+          "hotelNo": "1395",
+          "hotelName": "ホテル明治屋",
+          "address": "静岡県浜松市中央区佐藤1-1-30",
+          "score": 61
+        },
+        {
+          "hotelNo": "9501",
+          "hotelName": "大江戸温泉物語Ｐｒｅｍｉｕｍ　伊東ホテルニュー岡部",
+          "address": "静岡県伊東市桜木町2-1-1",
+          "score": 37
+        },
+        {
+          "hotelNo": "30048",
+          "hotelName": "ホテル四季の蔵　高台から海を臨む　貸切温泉のペットリゾート",
+          "address": "静岡県賀茂郡河津町峰1169-13",
+          "score": 36
+        }
+      ]
+    },
+    {
+      "name": "ホテル西村",
+      "prefecture": "静岡県",
+      "listingRows": 1,
+      "reason": "prefecture_mismatch",
+      "candidates": [
+        {
+          "hotelNo": "10863",
+          "hotelName": "千草ホテル",
+          "address": "福岡県北九州市八幡東区西本町1-1-1",
+          "score": -40
+        },
+        {
+          "hotelNo": "14007",
+          "hotelName": "城崎温泉　西村屋ホテル招月庭",
+          "address": "兵庫県豊岡市城崎町湯島1016-2",
+          "score": -50
+        },
+        {
+          "hotelNo": "107866",
+          "hotelName": "美輝の里　ホテル美輝",
+          "address": "岐阜県下呂市馬瀬西村1695",
+          "score": -51
+        }
+      ]
+    },
+    {
+      "name": "東横INN大阪阿倍野天王寺",
+      "prefecture": "大阪府",
+      "listingRows": 2,
+      "reason": "Rakuten API returned HTTP 404",
+      "candidates": []
+    },
+    {
+      "name": "ダイワロイネットホテル大阪堺東",
+      "prefecture": "大阪府",
+      "listingRows": 1,
+      "reason": "Rakuten API returned HTTP 404",
+      "candidates": []
+    },
+    {
+      "name": "ワークホテルアネックス天神の湯",
+      "prefecture": "大阪府",
+      "listingRows": 1,
+      "reason": "Rakuten API returned HTTP 404",
+      "candidates": []
+    },
+    {
+      "name": "ホテルウィングインターナショナルセレクト東大阪",
+      "prefecture": "大阪府",
+      "listingRows": 1,
+      "reason": "low_score",
+      "candidates": [
+        {
+          "hotelNo": "188829",
+          "hotelName": "ザ・セレクトン東大阪長田駅前",
+          "address": "大阪府東大阪市長田東2-4-50",
+          "score": 49
+        },
+        {
+          "hotelNo": "68172",
+          "hotelName": "八尾ターミナルホテル　ウィークリーセブン",
+          "address": "大阪府八尾市東本町3-7-13",
+          "score": 47
+        },
+        {
+          "hotelNo": "1590",
+          "hotelName": "リッチモンドホテル東大阪",
+          "address": "大阪府東大阪市長田中1-3-16",
+          "score": 45
+        }
+      ]
+    },
+    {
+      "name": "ホテルクラウンパレス神戸",
+      "prefecture": "兵庫県",
+      "listingRows": 1,
+      "reason": "low_score",
+      "candidates": [
+        {
+          "hotelNo": "1648",
+          "hotelName": "ホテルオークラ神戸",
+          "address": "兵庫県神戸市中央区波止場町2-1  メリケンパーク内",
+          "score": 61
+        },
+        {
+          "hotelNo": "15432",
+          "hotelName": "ホテルプラザ神戸",
+          "address": "兵庫県神戸市東灘区向洋町中2-9-1",
+          "score": 52
+        },
+        {
+          "hotelNo": "5521",
+          "hotelName": "神戸ポートピアホテル",
+          "address": "兵庫県神戸市中央区港島中町6-10-1",
+          "score": 50
+        }
+      ]
+    },
+    {
+      "name": "ホテルウィングインターナショナルプレミアム京都三条",
+      "prefecture": "京都府",
+      "listingRows": 2,
+      "reason": "low_score",
+      "candidates": [
+        {
+          "hotelNo": "189068",
+          "hotelName": "三井ガーデンホテル京都三条プレミア",
+          "address": "京都府京都市中京区三条通東洞院東入菱屋町45-1",
+          "score": 59
+        },
+        {
+          "hotelNo": "151303",
+          "hotelName": "ホテルグレイスリー京都三条",
+          "address": "京都府京都市中京区六角通寺町東入桜之町420番",
+          "score": 49
+        },
+        {
+          "hotelNo": "130499",
+          "hotelName": "ザ　ロイヤルパークホテル　京都三条",
+          "address": "京都府京都市中京区三条通河原町東入ル中島町74",
+          "score": 47
+        }
+      ]
+    },
+    {
+      "name": "びわ湖ホテル",
+      "prefecture": "滋賀県",
+      "listingRows": 1,
+      "reason": "low_score",
+      "candidates": [
+        {
+          "hotelNo": "16700",
+          "hotelName": "ホテルピアザびわ湖",
+          "address": "滋賀県大津市におの浜1-1-20（ピアザ淡海内）",
+          "score": 74
+        },
+        {
+          "hotelNo": "16068",
+          "hotelName": "びわ湖大津プリンスホテル",
+          "address": "滋賀県大津市におの浜4-7-7",
+          "score": 65
+        },
+        {
+          "hotelNo": "1175",
+          "hotelName": "アパホテル〈びわ湖　瀬田駅前〉",
+          "address": "滋賀県大津市大萱1-16-1",
+          "score": 65
+        }
+      ]
+    },
+    {
+      "name": "松山東急REIホテル",
+      "prefecture": "愛媛県",
+      "listingRows": 1,
+      "reason": "Rakuten API returned HTTP 404",
+      "candidates": []
+    },
+    {
+      "name": "ザ クラウンパレス新阪急高知",
+      "prefecture": "高知県",
+      "listingRows": 1,
+      "reason": "Rakuten API returned HTTP 404",
+      "candidates": []
+    },
+    {
+      "name": "ホテルウィングインターナショナルセレクト博多駅前",
+      "prefecture": "福岡県",
+      "listingRows": 2,
+      "reason": "low_score",
+      "candidates": [
+        {
+          "hotelNo": "10979",
+          "hotelName": "博多駅前エスビーホテル",
+          "address": "福岡県福岡市博多区博多駅前1-14-3",
+          "score": 51
+        },
+        {
+          "hotelNo": "165238",
+          "hotelName": "ネストホテル博多駅前",
+          "address": "福岡県福岡市博多区博多駅前2-11-27",
+          "score": 51
+        },
+        {
+          "hotelNo": "160902",
+          "hotelName": "スマイルホテル博多駅前",
+          "address": "福岡県福岡市博多区博多駅前3-8-18",
+          "score": 50
+        }
+      ]
+    }
+  ]
+}
