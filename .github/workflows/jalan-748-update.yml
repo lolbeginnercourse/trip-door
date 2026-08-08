@@ -1,0 +1,213 @@
+name: Jalan 748 strict update
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  update-jalan-links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Strictly apply supplied Jalan affiliate links
+        run: |
+          cat > /tmp/update-jalan.js <<'NODE'
+          const fs = require('fs');
+          const zlib = require('zlib');
+
+          const dbPath = 'assets/data/hotels.json';
+          const mapPath = '.github/tmp/jalan-748-map.br64';
+          const raw = fs.readFileSync(dbPath, 'utf8');
+          const before = JSON.parse(raw);
+          const data = JSON.parse(raw);
+          const mapping = JSON.parse(
+            zlib.brotliDecompressSync(
+              Buffer.from(fs.readFileSync(mapPath, 'utf8').trim(), 'base64')
+            ).toString('utf8')
+          );
+
+          if (!Array.isArray(mapping) || mapping.length !== 748) {
+            throw new Error(`Mapping count mismatch: ${Array.isArray(mapping) ? mapping.length : 'not-array'}`);
+          }
+
+          const rows = Array.isArray(data)
+            ? data
+            : Array.isArray(data.hotels)
+              ? data.hotels
+              : Array.isArray(data.data)
+                ? data.data
+                : Array.isArray(data.items)
+                  ? data.items
+                  : null;
+          if (!rows) throw new Error('Could not identify hotel row array');
+
+          const norm = (value) => String(value ?? '')
+            .normalize('NFKC')
+            .replace(/[\u00a0\u3000]/g, ' ')
+            .replace(/\s+/gu, ' ')
+            .trim()
+            .toLowerCase();
+          const compact = (value) => norm(value).replace(/\s+/gu, '');
+
+          const sourceNorm = new Set();
+          for (const item of mapping) {
+            if (!item || typeof item.name !== 'string' || typeof item.url !== 'string') {
+              throw new Error('Malformed mapping entry');
+            }
+            const key = norm(item.name);
+            if (!key || sourceNorm.has(key)) throw new Error(`Duplicate/empty normalized source name: ${item.name}`);
+            sourceNorm.add(key);
+            const u = new URL(item.url);
+            const vc = u.searchParams.get('vc_url');
+            if (u.protocol !== 'https:' || u.hostname !== 'ck.jp.ap.valuecommerce.com' || u.pathname !== '/servlet/referral' || !vc) {
+              throw new Error(`Invalid ValueCommerce URL for ${item.name}`);
+            }
+            const target = new URL(vc);
+            if (target.protocol !== 'https:' || target.hostname !== 'www.jalan.net') {
+              throw new Error(`Non-Jalan target for ${item.name}`);
+            }
+          }
+
+          const candidateKeys = ['name', 'hotelName', 'hotel_name'];
+          const scores = candidateKeys.map((key) => {
+            const vals = new Set(rows.filter(r => r && typeof r[key] === 'string').map(r => norm(r[key])));
+            let score = 0;
+            for (const item of mapping) if (vals.has(norm(item.name))) score++;
+            return {key, score};
+          }).sort((a,b) => b.score - a.score);
+          const nameKey = scores[0].key;
+          if (scores[0].score === 0) throw new Error(`No hotel-name key matched. Scores: ${JSON.stringify(scores)}`);
+
+          const byRaw = new Map();
+          const byNorm = new Map();
+          const byCompact = new Map();
+          const add = (map, key, row) => {
+            if (!map.has(key)) map.set(key, []);
+            map.get(key).push(row);
+          };
+          for (const row of rows) {
+            if (!row || typeof row[nameKey] !== 'string') continue;
+            add(byRaw, row[nameKey], row);
+            add(byNorm, norm(row[nameKey]), row);
+            add(byCompact, compact(row[nameKey]), row);
+          }
+
+          const unmatched = [];
+          const ambiguous = [];
+          const matchedNames = [];
+          let exactUnique = 0, normalizedUnique = 0, compactUnique = 0;
+          let matchedRows = 0, changedRows = 0, replacedRows = 0, addedRows = 0, alreadySameRows = 0;
+          const distinctRawNames = (candidates) => [...new Set(candidates.map(r => r[nameKey]))];
+
+          for (const item of mapping) {
+            let candidates = byRaw.get(item.name) || [];
+            let mode = 'exact';
+            if (!candidates.length) {
+              candidates = byNorm.get(norm(item.name)) || [];
+              mode = 'normalized';
+              if (candidates.length && distinctRawNames(candidates).length !== 1) {
+                ambiguous.push({source: item.name, mode, candidates: distinctRawNames(candidates)});
+                continue;
+              }
+            }
+            if (!candidates.length) {
+              candidates = byCompact.get(compact(item.name)) || [];
+              mode = 'compact-whitespace';
+              if (candidates.length && distinctRawNames(candidates).length !== 1) {
+                ambiguous.push({source: item.name, mode, candidates: distinctRawNames(candidates)});
+                continue;
+              }
+            }
+            if (!candidates.length) {
+              unmatched.push(item.name);
+              continue;
+            }
+
+            if (mode === 'exact') exactUnique++;
+            else if (mode === 'normalized') normalizedUnique++;
+            else compactUnique++;
+            matchedNames.push(item.name);
+            matchedRows += candidates.length;
+
+            for (const row of candidates) {
+              const had = Object.prototype.hasOwnProperty.call(row, 'jalan') && typeof row.jalan === 'string' && row.jalan.length > 0;
+              if (row.jalan === item.url) {
+                alreadySameRows++;
+                continue;
+              }
+              if (had) replacedRows++; else addedRows++;
+              row.jalan = item.url;
+              changedRows++;
+            }
+          }
+
+          const matchedUnique = matchedNames.length;
+          if (matchedUnique < Math.floor(mapping.length * 0.80)) {
+            throw new Error(`Safety stop: only ${matchedUnique}/748 source hotels matched`);
+          }
+
+          const stripJalan = (value) => {
+            if (Array.isArray(value)) return value.map(stripJalan);
+            if (value && typeof value === 'object') {
+              const out = {};
+              for (const [k,v] of Object.entries(value)) if (k !== 'jalan') out[k] = stripJalan(v);
+              return out;
+            }
+            return value;
+          };
+          if (JSON.stringify(stripJalan(before)) !== JSON.stringify(stripJalan(data))) {
+            throw new Error('Safety verification failed: a non-Jalan field changed');
+          }
+
+          fs.writeFileSync(dbPath, JSON.stringify(data));
+          const verify = JSON.parse(fs.readFileSync(dbPath, 'utf8'));
+          if (JSON.stringify(stripJalan(before)) !== JSON.stringify(stripJalan(verify))) {
+            throw new Error('Post-write verification failed');
+          }
+
+          const report = {
+            sourceEntries: mapping.length,
+            dbRows: rows.length,
+            selectedNameKey: nameKey,
+            initialKeyScores: scores,
+            matchedUnique,
+            exactUnique,
+            normalizedUnique,
+            compactWhitespaceUnique: compactUnique,
+            matchedRows,
+            changedRows,
+            replacedExistingJalanRows: replacedRows,
+            addedJalanRows: addedRows,
+            alreadySameRows,
+            unmatchedCount: unmatched.length,
+            unmatched,
+            ambiguousCount: ambiguous.length,
+            ambiguous,
+            nonJalanFieldsIdentical: true
+          };
+          fs.writeFileSync('/tmp/jalan-748-report.json', JSON.stringify(report, null, 2));
+          console.log('JALAN_748_REPORT_START');
+          console.log(JSON.stringify(report, null, 2));
+          console.log('JALAN_748_REPORT_END');
+          NODE
+
+          node /tmp/update-jalan.js
+          cat /tmp/jalan-748-report.json >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Commit verified result to isolated branch
+        run: |
+          rm -f .github/tmp/jalan-748-map.br64
+          rm -f .github/workflows/jalan-748-update.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b jalan-affiliate-748-result-20260808
+          git add assets/data/hotels.json .github/tmp/jalan-748-map.br64 .github/workflows/jalan-748-update.yml
+          git commit -m "Apply supplied 748 Jalan affiliate links"
+          git push origin HEAD:jalan-affiliate-748-result-20260808
