@@ -1,0 +1,81 @@
+name: Finalize Jalan links 750 CSV
+
+on:
+  push:
+    branches:
+      - research/hotel-details-750-20260807
+    paths:
+      - .github/workflows/finalize-jalan-links-750.yml
+      - research/generated/jalan_manual_resolutions_53.csv
+
+permissions:
+  contents: write
+
+jobs:
+  finalize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research/hotel-details-750-20260807
+      - name: Merge automated and manual validation
+        run: |
+          python - <<'PY'
+          import csv,json,re
+          from pathlib import Path
+          from datetime import datetime,timezone,timedelta
+          JST=timezone(timedelta(hours=9))
+          base=Path('research/generated/jalan_links_750_v3.csv')
+          manual=Path('research/generated/jalan_manual_resolutions_53.csv')
+          with base.open(encoding='utf-8',newline='') as f:
+              rows=list(csv.DictReader(f))
+          with manual.open(encoding='utf-8',newline='') as f:
+              fixes={int(r['research_no']):r for r in csv.DictReader(f)}
+          if len(rows)!=750: raise SystemExit(f'expected 750 base rows, got {len(rows)}')
+          if len(fixes)!=53: raise SystemExit(f'expected 53 manual rows, got {len(fixes)}')
+          for r in rows:
+              n=int(r['research_no'])
+              if n in fixes:
+                  x=fixes[n]
+                  r['jalan_url']=x['jalan_url']
+                  r['jalan_hotel_name']=x['jalan_hotel_name']
+                  r['verification_status']=x['resolution_status']
+                  r['verification_note']=x['resolution_note']
+                  r['candidate_url']=x['jalan_url'] or r.get('candidate_url','')
+                  r['manual_reference_url']=x['reference_url']
+              else:
+                  r['manual_reference_url']=''
+          rows.sort(key=lambda r:int(r['research_no']))
+          if [int(r['research_no']) for r in rows]!=list(range(1,751)):
+              raise SystemExit('research_no must be exactly 1..750')
+          bad=[r for r in rows if r['jalan_url'] and not re.fullmatch(r'https://www\.jalan\.net/yad\d+/',r['jalan_url'])]
+          if bad: raise SystemExit(f'noncanonical Jalan URLs found: {len(bad)}')
+          fields=['research_no','id','hotel_name','prefecture','area','station','venueId','venueNumber','venue_name','rank','genre','jalan_url','jalan_hotel_name','verification_status','verification_note','name_similarity','prefecture_match','station_match','search_url','candidate_url','manual_reference_url','checked_at']
+          out=Path('research/generated/jalan_links_750_final.csv')
+          with out.open('w',encoding='utf-8',newline='') as f:
+              w=csv.DictWriter(f,fieldnames=fields,extrasaction='ignore'); w.writeheader(); w.writerows(rows)
+          status={}
+          for r in rows: status[r['verification_status']]=status.get(r['verification_status'],0)+1
+          missing=[{'research_no':int(r['research_no']),'id':r['id'],'hotel_name':r['hotel_name'],'status':r['verification_status'],'note':r['verification_note']} for r in rows if not r['jalan_url']]
+          summary={
+              'row_count':len(rows),
+              'research_no_complete':True,
+              'link_present_count':sum(bool(r['jalan_url']) for r in rows),
+              'link_missing_count':len(missing),
+              'unique_hotel_rows':len({(r['hotel_name'],r['prefecture']) for r in rows}),
+              'unique_jalan_urls':len({r['jalan_url'] for r in rows if r['jalan_url']}),
+              'status_counts':status,
+              'missing_rows':missing,
+              'canonical_url_validation':'passed',
+              'generated_at':datetime.now(JST).isoformat(timespec='seconds')
+          }
+          Path('research/generated/jalan_links_750_final_summary.json').write_text(json.dumps(summary,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          print(json.dumps(summary,ensure_ascii=False,indent=2))
+          PY
+      - name: Commit final CSV
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add research/generated/jalan_links_750_final.csv research/generated/jalan_links_750_final_summary.json
+          git commit -m "Finalize verified Jalan links for 750 hotel rows" || exit 0
+          git push origin HEAD:research/hotel-details-750-20260807
