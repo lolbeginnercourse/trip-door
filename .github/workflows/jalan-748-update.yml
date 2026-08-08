@@ -1,15 +1,14 @@
 name: Jalan 748 strict update
 
 on:
-  push:
-    branches:
-      - main
+  create:
 
 permissions:
   contents: write
 
 jobs:
   update-jalan-links:
+    if: github.event.ref_type == 'branch' && github.event.ref == 'jalan-748-trigger-20260808'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
