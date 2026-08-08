@@ -181,3 +181,131 @@
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", install, { once: true });
   else install();
 })();
+
+(() => {
+  "use strict";
+
+  const DATA_URL = "assets/data/jalan-affiliate-overrides.json?v=20260809-1";
+  let affiliateConfig = null;
+  let affiliateMap = new Map();
+  let applying = false;
+
+  const normalizeHotelName = value => String(value || "")
+    .normalize("NFKC")
+    .toLowerCase()
+    .replace(/[ \t\r\n　・･\-‐‑‒–—―_〈〉＜＞<>【】\[\]（）()]/g, "");
+
+  const buildAffiliateUrl = yadNo => {
+    if (!affiliateConfig || !/^\d+$/.test(String(yadNo || ""))) return "";
+    const target = `https://www.jalan.net/yad${yadNo}/`;
+    const params = new URLSearchParams({
+      sid: String(affiliateConfig.sid || ""),
+      pid: String(affiliateConfig.pid || ""),
+      vc_url: target
+    });
+    return `https://ck.jp.ap.valuecommerce.com/servlet/referral?${params.toString()}`;
+  };
+
+  const isJalanLink = anchor => {
+    if (!(anchor instanceof HTMLAnchorElement)) return false;
+    const label = String(anchor.textContent || "");
+    const href = String(anchor.getAttribute("href") || anchor.href || "");
+    return label.includes("じゃらん")
+      || /jalan\.net/i.test(href)
+      || (/ck\.jp\.ap\.valuecommerce\.com/i.test(href) && /vc_url=.*jalan/i.test(href));
+  };
+
+  const applyOverride = () => {
+    if (applying || !affiliateMap.size) return;
+    const dialog = document.querySelector("[data-detail-dialog]");
+    const content = document.querySelector("[data-detail-content]");
+    const title = document.querySelector("[data-detail-title]");
+    if (!dialog?.open || !content || !title) return;
+
+    const yadNo = affiliateMap.get(normalizeHotelName(title.textContent));
+    if (!yadNo) return;
+    const url = buildAffiliateUrl(yadNo);
+    if (!url) return;
+
+    const actions = content.querySelector(".hd-actions");
+    if (!actions || actions.querySelector(".hd-actions__closed")) return;
+
+    applying = true;
+    try {
+      let booking = actions.querySelector(".hd-actions__booking");
+      if (!booking) {
+        booking = document.createElement("div");
+        booking.className = "hd-actions__booking";
+        booking.setAttribute("aria-label", "予約サイト");
+        actions.append(booking);
+      }
+
+      const jalanLinks = [...booking.querySelectorAll("a")].filter(isJalanLink);
+      let jalan = jalanLinks.find(link => link.dataset.jalanAffiliateOverride === "true") || jalanLinks[0] || null;
+
+      jalanLinks.forEach(link => {
+        if (link !== jalan) link.remove();
+      });
+
+      if (!jalan) {
+        jalan = document.createElement("a");
+        booking.append(jalan);
+      }
+
+      const otherBookingLinks = [...booking.querySelectorAll("a")].filter(link => link !== jalan);
+      jalan.className = `button ${otherBookingLinks.length ? "button--secondary" : "button--primary"}`;
+      jalan.textContent = "じゃらんで空室を確認";
+      jalan.href = url;
+      jalan.target = "_blank";
+      jalan.rel = "noopener noreferrer sponsored";
+      jalan.dataset.jalanAffiliateOverride = "true";
+
+      if (booking.lastElementChild !== jalan) booking.append(jalan);
+
+      if (jalan.dataset.analyticsBound !== "true") {
+        jalan.dataset.analyticsBound = "true";
+        jalan.addEventListener("click", () => {
+          try {
+            const hotelId = content.querySelector(".hd-detail")?.dataset.hotelId || "";
+            window.dataLayer?.push({ event: "affiliate_click", hotel_id: hotelId, provider: "じゃらん", source: "hotel_detail" });
+          } catch { /* noop */ }
+        });
+      }
+    } finally {
+      applying = false;
+    }
+  };
+
+  const loadOverrides = () => fetch(DATA_URL, { cache: "no-cache", headers: { Accept: "application/json" } })
+    .then(response => {
+      if (!response.ok) throw new Error(`jalan_affiliate_data_${response.status}`);
+      return response.json();
+    })
+    .then(payload => {
+      affiliateConfig = payload && typeof payload === "object" ? payload : null;
+      const rows = affiliateConfig?.hotels;
+      affiliateMap = rows && typeof rows === "object"
+        ? new Map(Object.entries(rows).map(([name, yadNo]) => [normalizeHotelName(name), String(yadNo)]))
+        : new Map();
+      applyOverride();
+    })
+    .catch(error => {
+      console.warn("Jalan affiliate override data could not be loaded", error);
+    });
+
+  const install = () => {
+    const content = document.querySelector("[data-detail-content]");
+    const dialog = document.querySelector("[data-detail-dialog]");
+    if (!content || !dialog) return;
+
+    const observer = new MutationObserver(() => applyOverride());
+    observer.observe(content, { childList: true, subtree: true, attributes: true, attributeFilter: ["href"] });
+    dialog.addEventListener("close", () => {
+      applying = false;
+    });
+    void loadOverrides();
+  };
+
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", install, { once: true });
+  else install();
+})();
