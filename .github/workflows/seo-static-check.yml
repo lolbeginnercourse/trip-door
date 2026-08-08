@@ -1,0 +1,62 @@
+name: SEO static check
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+    paths:
+      - "assets/data/hotels.json"
+      - "assets/data/seo-venues.json"
+      - "assets/css/seo-pages.css"
+      - "scripts/build-seo-pages.mjs"
+      - "scripts/validate-seo-data.mjs"
+      - "index.html"
+      - "sitemap.xml"
+      - "stage/**"
+      - "esports/**"
+      - ".github/workflows/seo-static-check.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Validate SEO source data
+        run: node scripts/validate-seo-data.mjs
+
+      - name: Generate static SEO pages
+        run: node scripts/build-seo-pages.mjs
+
+      - name: Upload generated preview
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: seo-static-preview
+          path: |
+            index.html
+            sitemap.xml
+            stage/
+            esports/
+            assets/css/seo-pages.css
+            artifacts/seo-build/
+          if-no-files-found: error
+          retention-days: 7
+
+      - name: Verify generated files are committed
+        run: |
+          git add -N stage esports 2>/dev/null || true
+          git diff --exit-code -- index.html sitemap.xml stage esports
