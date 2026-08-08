@@ -1,0 +1,10 @@
+{
+  "rows": 750,
+  "unique_ids": 750,
+  "with_jalan_url": 14,
+  "missing_jalan_url": 736,
+  "url_source_counts": {
+    "generated_from_jalanYadNo": 14,
+    "missing": 736
+  }
+}
