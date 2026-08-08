@@ -1,0 +1,72 @@
+name: Export Jalan target manifest
+
+on:
+  push:
+    branches:
+      - research/hotel-details-750-20260807
+    paths:
+      - .github/workflows/export-jalan-target-manifest.yml
+
+permissions:
+  contents: write
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research/hotel-details-750-20260807
+      - name: Export exact 750 target rows
+        run: |
+          python - <<'PY'
+          import csv, json
+          from pathlib import Path
+
+          src = Path('assets/data/hotels.json')
+          data = json.loads(src.read_text(encoding='utf-8'))
+          records = data['hotels'] if isinstance(data, dict) else data
+          targets = [
+              r for r in records
+              if r.get('isPublished', True)
+              and isinstance(r.get('rank'), int)
+              and 1 <= r['rank'] <= 3
+              and r.get('venueId')
+          ]
+          targets.sort(key=lambda r: (r.get('venueNumber', 999999), r.get('rank', 99), r.get('id', '')))
+          if len(targets) != 750:
+              raise SystemExit(f'expected 750 targets, got {len(targets)}')
+
+          out = Path('research/generated/jalan_target_manifest.csv')
+          out.parent.mkdir(parents=True, exist_ok=True)
+          fields = ['research_no','id','hotel_name','prefecture','area','station','venueId','venueNumber','venue_name','rank','genre']
+          with out.open('w', encoding='utf-8', newline='') as f:
+              w = csv.DictWriter(f, fieldnames=fields)
+              w.writeheader()
+              for i, r in enumerate(targets, 1):
+                  w.writerow({
+                      'research_no': i,
+                      'id': r.get('id'),
+                      'hotel_name': r.get('name'),
+                      'prefecture': r.get('prefecture'),
+                      'area': r.get('area'),
+                      'station': r.get('station'),
+                      'venueId': r.get('venueId'),
+                      'venueNumber': r.get('venueNumber'),
+                      'venue_name': r.get('venueLabel'),
+                      'rank': r.get('rank'),
+                      'genre': r.get('genre'),
+                  })
+          print(f'wrote {len(targets)} rows to {out}')
+          PY
+      - name: Commit generated manifest
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add research/generated/jalan_target_manifest.csv
+          if git diff --cached --quiet; then
+            echo "No changes"
+            exit 0
+          fi
+          git commit -m "Export exact 750-hotel Jalan target manifest"
+          git push origin HEAD:research/hotel-details-750-20260807
