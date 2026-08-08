@@ -9,8 +9,8 @@
   "productionRecords": 750,
   "productionUniqueIds": 750,
   "coverageCounts": {
-    "complete": 672,
-    "limited": 78
+    "complete": 641,
+    "limited": 109
   },
   "availabilityCounts": {
     "active": 749,
@@ -20,5 +20,12 @@
   "recordsWithSources": 750,
   "missingBaseHotelIds": [],
   "internalFieldsExcluded": true,
-  "complete": true
+  "complete": true,
+  "targetedAuditPatch": {
+    "changedRecordCount": 56,
+    "stationFixes": 6,
+    "transferCountsHidden": 19,
+    "missingHeroDowngradedToLimited": 31,
+    "scope": "only_fast_audit_flagged_records"
+  }
 }
