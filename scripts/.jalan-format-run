@@ -1,1 +1,1 @@
-Trigger one-time compact JSON cleanup and unmatched-name report.
+Trigger final Jalan-only semantic verification against pre-change backup.
