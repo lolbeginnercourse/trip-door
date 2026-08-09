@@ -1,12 +1,9 @@
-# trigger: direct-root-ogp
 name: Patch root OGP metadata
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - .github/workflows/patch-root-og.yml
+  pull_request_target:
+    types:
+      - opened
 
 permissions:
   contents: write
@@ -15,9 +12,10 @@ jobs:
   patch-root-ogp:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout trusted main branch only
         uses: actions/checkout@v4
         with:
+          ref: main
           fetch-depth: 0
 
       - name: Insert OGP directly into index.html
@@ -73,7 +71,7 @@ jobs:
           vercel.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
           PY
 
-      - name: Commit direct OGP metadata
+      - name: Commit direct OGP metadata to main
         run: |
           if git diff --quiet; then
             echo "No changes needed"
@@ -83,4 +81,4 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add index.html vercel.json
           git commit -m "Add OGP metadata directly to root page"
-          git push origin main
+          git push origin HEAD:main
