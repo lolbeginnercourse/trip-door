@@ -1,7 +1,7 @@
 (() => {
   "use strict";
 
-  const DATA_URL = "assets/data/hotels.json?v=20260802-2";
+  const DATA_URL = "/assets/data/hotels.json?v=20260802-2";
   const API_URL = "/api/hotel-image";
   const requestCache = new Map();
   const observedCards = new WeakSet();
@@ -122,7 +122,7 @@
 
   async function hydrateCard(card) {
     if (!(card instanceof HTMLElement) || card.dataset.hotelImageStatus) return;
-    const visual = card.querySelector(".hotel-card__image");
+    const visual = card.querySelector(".hotel-card__image, .hotel-detail__image");
     if (!visual || visual.querySelector("img")) {
       card.dataset.hotelImageStatus = "existing";
       return;
@@ -130,7 +130,7 @@
 
     card.dataset.hotelImageStatus = "loading";
     const hotelMap = await loadHotelMap();
-    const hotel = hotelMap.get(card.dataset.hotelId || "");
+    const hotel = hotelMap.get(card.dataset.hotelId || card.dataset.hotelImageId || "");
     if (!hotel?.name) {
       card.dataset.hotelImageStatus = "unavailable";
       return;
@@ -162,8 +162,8 @@
   }
 
   function scan(root = document) {
-    if (root instanceof HTMLElement && root.matches(".hotel-card[data-hotel-id]")) observeCard(root);
-    root.querySelectorAll?.(".hotel-card[data-hotel-id]").forEach(observeCard);
+    if (root instanceof HTMLElement && root.matches(".hotel-card[data-hotel-id], [data-hotel-image-id]")) observeCard(root);
+    root.querySelectorAll?.(".hotel-card[data-hotel-id], [data-hotel-image-id]").forEach(observeCard);
   }
 
   function install() {

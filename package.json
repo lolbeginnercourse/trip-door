@@ -1,0 +1,10 @@
+{
+  "name": "stayscene-static-site",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-static-pages.mjs",
+    "build:sample": "node scripts/build-static-pages.mjs --sample",
+    "check:static": "node scripts/check-static-pages.mjs"
+  }
+}
