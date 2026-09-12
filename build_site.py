@@ -79,7 +79,7 @@ def contains_forbidden(*values):
 
 def is_public_detail(item):
     if not isinstance(item,dict) or item.get('status') not in PUBLIC_STATUSES: return False
-    note=str(item.get('note') or '').strip()
+    note=str(item.get('note') or item.get('value') or '').strip()
     return bool(note) and not contains_forbidden(item.get('note'),item.get('value'),item.get('scope'))
 
 def is_public_source(source):
@@ -89,7 +89,7 @@ def is_public_source(source):
 def public_detail_items(r):
     items=[]
     for key,item in (r.get('details') or {}).items():
-        if is_public_detail(item): items.append((key,str(item.get('note') or '').strip(),item))
+        if is_public_detail(item): items.append((key,str(item.get('note') or item.get('value') or '').strip(),item))
     for item in r.get('evidenceReports') or []:
         if is_public_detail(item):
             key=str(item.get('key') or '').strip()
@@ -108,7 +108,7 @@ def group_html(r,title,keys,desc,exclude_keys=None,seen_text=None):
         if key in exclude_keys: continue
         item=drec(r,key)
         if not is_public_detail(item): continue
-        text=str(item.get('note') or '').strip()
+        text=str(item.get('note') or item.get('value') or '').strip()
         if not text or text in seen: continue
         seen.add(text)
         fields.append(field_html(key,text))
