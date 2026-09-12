@@ -8,7 +8,7 @@ ROOT=Path(__file__).resolve().parent
 INDEX=ROOT/'index.html'; DATA=ROOT/'data'/'hotels.json'
 ERRORS=[]; WARNS=[]
 EXCLUDE={'index.pre-interaction-backup.html'}
-VALID_STATUS={'確認済み','条件付き','未確認'}
+VALID_STATUS={'確認済み','条件付き','報告あり','未確認'}
 class AuditParser(HTMLParser):
     def __init__(self): super().__init__(); self.ids=[]; self.links=[]
     def handle_starttag(self,tag,attrs):
