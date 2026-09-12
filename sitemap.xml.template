@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>{{BASE_URL}}/</loc></url>
+  <url><loc>{{BASE_URL}}/hotels/</loc></url>
+  <url><loc>{{BASE_URL}}/hotels/hennna-haneda-oshikatsu/</loc></url>
+  <url><loc>{{BASE_URL}}/hotels/shinjuku-prince-oshikatsu/</loc></url>
+  <url><loc>{{BASE_URL}}/hotels/metropolitan-ikebukuro-oshikatsu/</loc></url>
+  <url><loc>{{BASE_URL}}/editorial-policy.html</loc></url>
+  <url><loc>{{BASE_URL}}/affiliate-disclosure.html</loc></url>
+  <url><loc>{{BASE_URL}}/operator.html</loc></url>
+  <url><loc>{{BASE_URL}}/terms.html</loc></url>
+  <url><loc>{{BASE_URL}}/privacy.html</loc></url>
+  <url><loc>{{BASE_URL}}/external-transmission.html</loc></url>
+</urlset>

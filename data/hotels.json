@@ -1,0 +1,391 @@
+[
+  {
+    "id": "hennna-haneda-oshikatsu",
+    "hotel": "変なホテル東京 羽田",
+    "room": "推し活応援ルーム",
+    "area": "東京・羽田",
+    "station": "京急大鳥居駅より徒歩7分",
+    "address": {
+      "postalCode": "144-0033",
+      "region": "東京都",
+      "locality": "大田区",
+      "street": "東糀谷2-11-18"
+    },
+    "colors": [
+      "赤",
+      "青",
+      "緑",
+      "黄",
+      "紫",
+      "ピンク",
+      "白",
+      "オレンジ"
+    ],
+    "checked": "2026-09-12",
+    "officialUrl": "https://www.hennnahotel.com/haneda/news/4242/",
+    "bookingLinks": {
+      "rakuten": "",
+      "jalan": ""
+    },
+    "summary": "装飾やBlu-rayなど、一部の推し活対応は公式情報で確認できます。一方、祭壇寸法・ケーキ持込・荷物預かりなどは未確認のまま分離しています。",
+    "venueRoutes": [
+      {
+        "venue": "羽田空港",
+        "status": "未確認",
+        "totalMinutes": null,
+        "walkMinutes": null,
+        "transfers": null,
+        "note": "会場・空港までの所要時間は経路調査後に公開",
+        "checkedAt": null,
+        "sourceUrl": "",
+        "nextReviewAt": null
+      }
+    ],
+    "officialContext": "公式の推し活向け客室案内で確認した対応",
+    "occupancy": {
+      "minGuests": null,
+      "maxGuests": null,
+      "soloAllowed": "未確認",
+      "note": "利用可能人数は予約サイトの最新情報で確認"
+    },
+    "details": {
+      "装飾可否": {
+        "status": "確認済み",
+        "note": "推し活応援ルームとして装飾利用を公式案内",
+        "scope": "推し活応援ルーム",
+        "sourceIds": [
+          "hennna-haneda-oshikatsu-src-1"
+        ],
+        "checkedAt": "2026-09-12",
+        "nextReviewAt": "2026-12-11"
+      },
+      "マスキングテープ": {
+        "status": "確認済み",
+        "note": "装飾用マスキングテープを用意",
+        "scope": "推し活応援ルーム",
+        "sourceIds": [
+          "hennna-haneda-oshikatsu-src-1"
+        ],
+        "checkedAt": "2026-09-12",
+        "nextReviewAt": "2026-12-11"
+      },
+      "バルーン": {
+        "status": "確認済み",
+        "note": "約50色のバルーンを案内",
+        "scope": "推し活応援ルーム",
+        "sourceIds": [
+          "hennna-haneda-oshikatsu-src-1"
+        ],
+        "checkedAt": "2026-09-12",
+        "nextReviewAt": "2026-12-11"
+      },
+      "Blu-ray": {
+        "status": "確認済み",
+        "note": "Blu-rayレコーダーを客室に設置",
+        "scope": "推し活応援ルーム",
+        "sourceIds": [
+          "hennna-haneda-oshikatsu-src-1"
+        ],
+        "checkedAt": "2026-09-12",
+        "nextReviewAt": "2026-12-11"
+      },
+      "キャスト": {
+        "status": "確認済み",
+        "note": "Google Chromecastを設置",
+        "scope": "推し活応援ルーム",
+        "sourceIds": [
+          "hennna-haneda-oshikatsu-src-1"
+        ],
+        "checkedAt": "2026-09-12",
+        "nextReviewAt": "2026-12-11"
+      },
+      "推し色照明": {
+        "status": "確認済み",
+        "note": "約1,600万色から設定できる照明を案内",
+        "scope": "推し活応援ルーム",
+        "sourceIds": [
+          "hennna-haneda-oshikatsu-src-2"
+        ],
+        "checkedAt": "2026-09-12",
+        "nextReviewAt": "2026-12-11"
+      },
+      "ケーキスタンド": {
+        "status": "確認済み",
+        "note": "ケーキスタンドを客室備品として案内",
+        "scope": "推し活応援ルーム",
+        "sourceIds": [
+          "hennna-haneda-oshikatsu-src-1"
+        ],
+        "checkedAt": "2026-09-12",
+        "nextReviewAt": "2026-12-11"
+      },
+      "食器・カトラリー": {
+        "status": "確認済み",
+        "note": "カトラリー・カップ類を客室備品として案内",
+        "scope": "推し活応援ルーム",
+        "sourceIds": [
+          "hennna-haneda-oshikatsu-src-1"
+        ],
+        "checkedAt": "2026-09-12",
+        "nextReviewAt": "2026-12-11"
+      }
+    },
+    "sources": [
+      {
+        "label": "ホテル公式「推し活応援プラン」",
+        "url": "https://www.hennnahotel.com/haneda/news/4242/",
+        "note": "バルーン、マスキングテープ、Blu-ray、Chromecast等を確認",
+        "id": "hennna-haneda-oshikatsu-src-1",
+        "checkedAt": "2026-09-12"
+      },
+      {
+        "label": "変なホテルグループ公式ニュース",
+        "url": "https://www.hennnahotel.com/news/3760/",
+        "note": "装飾、照明を確認",
+        "id": "hennna-haneda-oshikatsu-src-2",
+        "checkedAt": "2026-09-12"
+      },
+      {
+        "label": "ホテル公式 アクセス",
+        "url": "https://www.hennnahotel.com/haneda/access/",
+        "note": "住所と大鳥居駅からのアクセスを確認",
+        "id": "hennna-haneda-oshikatsu-src-3",
+        "checkedAt": "2026-09-12"
+      }
+    ],
+    "reviewCycleDays": 90
+  },
+  {
+    "id": "shinjuku-prince-oshikatsu",
+    "hotel": "新宿プリンスホテル",
+    "room": "推し活ステイ対象客室",
+    "area": "東京・新宿",
+    "station": "西武新宿駅直結 / 新宿駅徒歩5分",
+    "address": {
+      "postalCode": "160-8487",
+      "region": "東京都",
+      "locality": "新宿区",
+      "street": "歌舞伎町1-30-1"
+    },
+    "colors": [
+      "赤",
+      "青",
+      "緑",
+      "黄",
+      "紫",
+      "ピンク",
+      "白",
+      "オレンジ"
+    ],
+    "checked": "2026-09-12",
+    "officialUrl": "https://www.princehotels.co.jp/shinjuku/lp/oshikatsu/",
+    "bookingLinks": {
+      "rakuten": "",
+      "jalan": ""
+    },
+    "summary": "推しカラー装飾は公式に確認できます。持込装飾の貼付方法、再生機器、端子、祭壇寸法は未確認です。",
+    "venueRoutes": [
+      {
+        "venue": "東京ドーム",
+        "status": "未確認",
+        "totalMinutes": null,
+        "walkMinutes": null,
+        "transfers": null,
+        "note": "所要時間・乗換回数は経路調査後に公開",
+        "checkedAt": null,
+        "sourceUrl": "",
+        "nextReviewAt": null
+      }
+    ],
+    "officialContext": "公式の推し活向け宿泊案内で確認した対応",
+    "occupancy": {
+      "minGuests": null,
+      "maxGuests": null,
+      "soloAllowed": "未確認",
+      "note": "利用可能人数は予約サイトの最新情報で確認"
+    },
+    "details": {
+      "装飾可否": {
+        "status": "条件付き",
+        "note": "ホテル側が推しカラー装飾を用意。持込装飾の可否・方法は要確認",
+        "scope": "推し活ステイ対象客室",
+        "sourceIds": [
+          "shinjuku-prince-oshikatsu-src-1"
+        ],
+        "checkedAt": "2026-09-12",
+        "nextReviewAt": "2026-12-11"
+      },
+      "バルーン": {
+        "status": "条件付き",
+        "note": "誕生日装飾・推しカラー装飾あり。バルーン内容はプラン条件を確認",
+        "scope": "推し活ステイ対象客室",
+        "sourceIds": [
+          "shinjuku-prince-oshikatsu-src-1"
+        ],
+        "checkedAt": "2026-09-12",
+        "nextReviewAt": "2026-12-11"
+      }
+    },
+    "sources": [
+      {
+        "label": "新宿プリンスホテル公式「特別な推し活」",
+        "url": "https://www.princehotels.co.jp/shinjuku/lp/oshikatsu/",
+        "note": "客室の推しカラー装飾、ペンライトを確認",
+        "id": "shinjuku-prince-oshikatsu-src-1",
+        "checkedAt": "2026-09-12"
+      },
+      {
+        "label": "公式宿泊プラン詳細",
+        "url": "https://rsv.princehotels.co.jp/cgi-bin/ihonex/stay/plan_information.cgi?form=jp&hid=008&plancd=3PBOSERDRN32",
+        "note": "装飾・誕生日対応を確認",
+        "id": "shinjuku-prince-oshikatsu-src-2",
+        "checkedAt": "2026-09-12"
+      },
+      {
+        "label": "ホテル公式 アクセス",
+        "url": "https://www.princehotels.co.jp/shinjuku/access/",
+        "note": "住所、西武新宿駅直結、新宿駅から徒歩5分を確認",
+        "id": "shinjuku-prince-oshikatsu-src-3",
+        "checkedAt": "2026-09-12"
+      }
+    ],
+    "reviewCycleDays": 90
+  },
+  {
+    "id": "metropolitan-ikebukuro-oshikatsu",
+    "hotel": "ホテルメトロポリタン",
+    "room": "推し活ステイ対象客室",
+    "area": "東京・池袋",
+    "station": "池袋駅西口（南）から徒歩3分",
+    "address": {
+      "postalCode": "171-8505",
+      "region": "東京都",
+      "locality": "豊島区",
+      "street": "西池袋1-6-1"
+    },
+    "colors": [
+      "赤",
+      "青",
+      "緑",
+      "黄",
+      "紫",
+      "ピンク",
+      "白",
+      "オレンジ",
+      "黒"
+    ],
+    "checked": "2026-09-12",
+    "officialUrl": "https://ikebukuro.metropolitan.jp/stay/plan/oshikatsu.html",
+    "bookingLinks": {
+      "rakuten": "",
+      "jalan": ""
+    },
+    "summary": "推し色ケーキとBlu-ray貸出が公式に明示されています。バルーンはオプション。装飾方法・展示寸法・荷物条件は要確認です。",
+    "venueRoutes": [
+      {
+        "venue": "東京ドーム",
+        "status": "未確認",
+        "totalMinutes": null,
+        "walkMinutes": null,
+        "transfers": null,
+        "note": "所要時間・乗換回数は経路調査後に公開",
+        "checkedAt": null,
+        "sourceUrl": "",
+        "nextReviewAt": null
+      }
+    ],
+    "officialContext": "公式の推し活向け宿泊案内で確認した対応",
+    "occupancy": {
+      "minGuests": null,
+      "maxGuests": null,
+      "soloAllowed": "未確認",
+      "note": "利用可能人数は予約サイトの最新情報で確認"
+    },
+    "details": {
+      "装飾可否": {
+        "status": "条件付き",
+        "note": "推し色バルーンのオプションあり。持込装飾の貼付方法は要確認",
+        "scope": "推し活ステイ対象客室",
+        "sourceIds": [
+          "metropolitan-ikebukuro-oshikatsu-src-1"
+        ],
+        "checkedAt": "2026-09-12",
+        "nextReviewAt": "2026-12-11"
+      },
+      "バルーン": {
+        "status": "確認済み",
+        "note": "推し色バルーンのオプションを公式案内",
+        "scope": "推し活ステイ対象客室",
+        "sourceIds": [
+          "metropolitan-ikebukuro-oshikatsu-src-1"
+        ],
+        "checkedAt": "2026-09-12",
+        "nextReviewAt": "2026-12-11"
+      },
+      "Blu-ray": {
+        "status": "確認済み",
+        "note": "Blu-rayプレーヤー無料貸出を公式案内",
+        "scope": "推し活ステイ対象客室",
+        "sourceIds": [
+          "metropolitan-ikebukuro-oshikatsu-src-1"
+        ],
+        "checkedAt": "2026-09-12",
+        "nextReviewAt": "2026-12-11"
+      },
+      "動画配信": {
+        "status": "条件付き",
+        "note": "スマートテレビで動画配信サービスを利用可能。利用条件は要確認",
+        "scope": "推し活ステイ対象客室",
+        "sourceIds": [
+          "metropolitan-ikebukuro-oshikatsu-src-1"
+        ],
+        "checkedAt": "2026-09-12",
+        "nextReviewAt": "2026-12-11"
+      },
+      "ホテル提供ケーキ": {
+        "status": "確認済み",
+        "note": "推し活ステイ用ケーキ付きプラン",
+        "scope": "推し活ステイ対象客室",
+        "sourceIds": [
+          "metropolitan-ikebukuro-oshikatsu-src-1"
+        ],
+        "checkedAt": "2026-09-12",
+        "nextReviewAt": "2026-12-11"
+      },
+      "推し色ケーキ": {
+        "status": "確認済み",
+        "note": "9色から選べる推し色ケーキを公式案内",
+        "scope": "推し活ステイ対象客室",
+        "sourceIds": [
+          "metropolitan-ikebukuro-oshikatsu-src-1"
+        ],
+        "checkedAt": "2026-09-12",
+        "nextReviewAt": "2026-12-11"
+      }
+    },
+    "sources": [
+      {
+        "label": "ホテルメトロポリタン公式 推し活ステイ",
+        "url": "https://ikebukuro.metropolitan.jp/stay/plan/oshikatsu.html",
+        "note": "推し色ケーキ、バルーン、Blu-rayプレーヤー、スマートテレビを確認",
+        "id": "metropolitan-ikebukuro-oshikatsu-src-1",
+        "checkedAt": "2026-09-12"
+      },
+      {
+        "label": "ホテル公式 宿泊案内",
+        "url": "https://ikebukuro.metropolitan.jp/stay/",
+        "note": "池袋駅西口（南）から徒歩3分を確認",
+        "id": "metropolitan-ikebukuro-oshikatsu-src-2",
+        "checkedAt": "2026-09-12"
+      },
+      {
+        "label": "ホテル公式 アクセス",
+        "url": "https://ikebukuro.metropolitan.jp/access/",
+        "note": "住所と池袋駅からのアクセスを確認",
+        "id": "metropolitan-ikebukuro-oshikatsu-src-3",
+        "checkedAt": "2026-09-12"
+      }
+    ],
+    "reviewCycleDays": 90
+  }
+]
