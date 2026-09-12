@@ -205,7 +205,7 @@ def hero_media_html(r):
     image=next((str(v).strip() for v in candidates if isinstance(v,str) and re.match(r'^https?://',v.strip(),re.I)), '')
     if image:
         return f'<figure class="hero-media"><img src="{esc(image)}" alt="{esc(r.get("hotel"))}の掲載画像" loading="eager" decoding="async"></figure>'
-    return f'<figure class="hero-media"><div class="image-placeholder"><span>HOTEL</span><strong>ホテル外観</strong><small>{esc(r.get("area"))} / {esc(r.get("station"))}</small></div></figure>'
+    return '<figure class="hero-media"><div class="image-placeholder"><span>HOTEL</span><strong>ホテル外観</strong><small>掲載画像</small></div></figure>'
 
 def embed_records(records):
     text=INDEX.read_text(encoding='utf-8')
