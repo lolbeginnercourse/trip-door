@@ -205,7 +205,7 @@ def hero_media_html(r):
     image=next((str(v).strip() for v in candidates if isinstance(v,str) and re.match(r'^https?://',v.strip(),re.I)), '')
     if image:
         return f'<figure class="hero-media"><img src="{esc(image)}" alt="{esc(r.get("hotel"))}の掲載画像" loading="eager" decoding="async"></figure>'
-    return '<figure class="hero-media"><div class="image-placeholder"><span>PHOTO</span><strong>外観画像未登録</strong><small>公式素材を確認後に掲載</small></div></figure>'
+    return f'<figure class="hero-media"><div class="image-placeholder"><span>HOTEL</span><strong>ホテル外観</strong><small>{esc(r.get("area"))} / {esc(r.get("station"))}</small></div></figure>'
 
 def embed_records(records):
     text=INDEX.read_text(encoding='utf-8')
@@ -288,8 +288,14 @@ def build_detail_public(r,records):
         if any(is_public_detail(drec(r,key)) for key in group_keys):
             reason_titles.append(group_title)
     reason_html=''
+    reason_phrases={
+        '映像を見る':'映像を見るための設備情報',
+        'グッズを広げる・撮影する':'グッズを広げたり撮影したりするための情報',
+        'ケーキ・飲食':'ケーキや飲食に関する情報',
+        '遠征時の身支度':'遠征時の身支度に関する情報'
+    }
     if len(reason_titles)>=2:
-        reason_html='<section class=\"section\"><h2>このホテルが遠征候補になる理由</h2><ul>'+''.join(f'<li>{esc(text)}の情報が確認できます。</li>' for text in reason_titles)+'</ul></section>'
+        reason_html='<section class=\"section\"><h2>このホテルが遠征候補になる理由</h2><ul>'+''.join(f'<li>{esc(reason_phrases.get(text,text))}があります。</li>' for text in reason_titles)+'</ul></section>'
     seen_text=set()
     groups=''.join(group_html(r,*group,seen_text=seen_text) for group in PUBLIC_GROUPS)
     access=venue_html(r)
